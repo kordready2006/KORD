@@ -1,0 +1,152 @@
+{
+ "portsmouth|The Taylored Cookie & Bakery": {
+  "source": "https://tayloredcookie.com/pages/static-menu",
+  "items": [
+   {
+    "name": "Chocolate Chunk",
+    "price": "$1.50",
+    "section": "Cookies"
+   },
+   {
+    "name": "Oatmeal Raisin",
+    "price": "$1.50",
+    "section": "Cookies"
+   },
+   {
+    "name": "Peanut Butter",
+    "price": "$1.50",
+    "section": "Cookies"
+   },
+   {
+    "name": "Peanut Butter Blossom",
+    "price": "$1.50",
+    "section": "Cookies"
+   },
+   {
+    "name": "School House",
+    "price": "$1.50",
+    "section": "Cookies"
+   },
+   {
+    "name": "Fruit Bars",
+    "price": "$1.50",
+    "section": "Cookies"
+   },
+   {
+    "name": "Double Doozies",
+    "price": "$4.00",
+    "section": "Cookies"
+   },
+   {
+    "name": "Coconut Macaroon",
+    "price": "$2.50",
+    "section": "Cookies"
+   },
+   {
+    "name": "Mexican Wedding",
+    "price": "$2.00",
+    "section": "Cookies"
+   },
+   {
+    "name": "Sugar Cookie",
+    "price": "$2.50",
+    "section": "Cookies"
+   },
+   {
+    "name": "Pull Apart Cinnamon Rolls",
+    "price": "$10.00",
+    "section": "Pastries"
+   },
+   {
+    "name": "Sticky Buns",
+    "price": "$14.00",
+    "section": "Pastries"
+   },
+   {
+    "name": "Pecan Rolls",
+    "price": "$4.75",
+    "section": "Pastries"
+   },
+   {
+    "name": "Cinnamon Rolls",
+    "price": "$4.25",
+    "section": "Pastries"
+   },
+   {
+    "name": "Apple Fritters",
+    "price": "$4.25",
+    "section": "Pastries"
+   },
+   {
+    "name": "Butterfly Rolls",
+    "price": "$4.75",
+    "section": "Pastries"
+   },
+   {
+    "name": "Fruit Filled Danish",
+    "price": "$4.25",
+    "section": "Pastries"
+   },
+   {
+    "name": "Turnovers",
+    "price": "$4.00",
+    "section": "Pastries"
+   },
+   {
+    "name": "Palmiers",
+    "price": "$3.50",
+    "section": "Pastries"
+   },
+   {
+    "name": "Brownies",
+    "price": "$2.50",
+    "section": "Pastries"
+   },
+   {
+    "name": "Crème Horns",
+    "price": "$3.50",
+    "section": "Pastries"
+   },
+   {
+    "name": "Long Johns",
+    "price": "$2.00",
+    "section": "Donuts"
+   },
+   {
+    "name": "Ring donuts",
+    "price": "$2.00",
+    "section": "Donuts"
+   },
+   {
+    "name": "Bizmarts",
+    "price": "$2.50",
+    "section": "Donuts"
+   },
+   {
+    "name": "Dinner Rolls ............... 6 for",
+    "price": "$6.00",
+    "section": "Breads"
+   },
+   {
+    "name": "White Bread",
+    "price": "$6.00",
+    "section": "Breads"
+   },
+   {
+    "name": "Jalepeno Cheddar",
+    "price": "$8.50",
+    "section": "Breads"
+   },
+   {
+    "name": "Rosemary Olive Oil",
+    "price": "$8.50",
+    "section": "Breads"
+   },
+   {
+    "name": "Jalepeno Cheddar Buns",
+    "price": "$10.00",
+    "section": "Breads"
+   }
+  ]
+ }
+}

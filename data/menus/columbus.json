@@ -6443,5 +6443,695 @@
     "section": "lattes"
    }
   ]
+ },
+ "columbus|Bexley Pizza Plus": {
+  "source": "https://www.bexleypizzaplus.com/wp-content/uploads/2025/12/BEXLEY-PIZZA-PLUS-MENU-updated-5_28_23-Google-Docs.pdf",
+  "items": [
+   {
+    "name": "Maximum Pep",
+    "price": "$9.70",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Six Cheese",
+    "price": "$10.80",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Margherita",
+    "price": "$10.80",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "All American",
+    "price": "$10.80",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Hawaiian",
+    "price": "$10.80",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Greek",
+    "price": "$11.90",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Lorraine",
+    "price": "$11.90",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Mega Meat",
+    "price": "$11.90",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Three Mushroom",
+    "price": "$11.90",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Ultimate",
+    "price": "$11.90",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Red Eye",
+    "price": "$13.00",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Pizzazz",
+    "price": "$13.00",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Piccante",
+    "price": "$13.00",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Cacciatora",
+    "price": "$13.00",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Farmer’s Market",
+    "price": "$13.00",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Primavera Plus",
+    "price": "$13.00",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Veggie",
+    "price": "$13.00",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Carbonara",
+    "price": "$14.10",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Supreme",
+    "price": "$14.10",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Mexican",
+    "price": "$14.10",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "Cajun",
+    "price": "$14.10",
+    "section": "Specialty Red Pizzas"
+   },
+   {
+    "name": "White",
+    "price": "$8.60",
+    "section": "Specialty White Pizzas"
+   },
+   {
+    "name": "Chicken Broccoli",
+    "price": "$11.90",
+    "section": "Specialty White Pizzas"
+   },
+   {
+    "name": "Philly Steak",
+    "price": "$13.00",
+    "section": "Specialty White Pizzas"
+   },
+   {
+    "name": "Steak Portabella",
+    "price": "$13.00",
+    "section": "Specialty White Pizzas"
+   },
+   {
+    "name": "Co2",
+    "price": "$13.00",
+    "section": "Specialty White Pizzas"
+   },
+   {
+    "name": "Veggie Blanco",
+    "price": "$14.10",
+    "section": "Specialty White Pizzas"
+   },
+   {
+    "name": "Florentine",
+    "price": "$14.10",
+    "section": "Specialty White Pizzas"
+   },
+   {
+    "name": "9” Italian",
+    "price": "$10.45",
+    "section": "Subs"
+   },
+   {
+    "name": "6” Italian",
+    "price": "$5.30",
+    "section": "Subs"
+   },
+   {
+    "name": "Super Italian",
+    "price": "$13.55",
+    "section": "Subs"
+   },
+   {
+    "name": "Spicy Italian",
+    "price": "$11.50",
+    "section": "Subs"
+   },
+   {
+    "name": "Club",
+    "price": "$12.95",
+    "section": "Subs"
+   },
+   {
+    "name": "Meatball",
+    "price": "$11.50",
+    "section": "Subs"
+   },
+   {
+    "name": "Ham & Cheese",
+    "price": "$10.45",
+    "section": "Subs"
+   },
+   {
+    "name": "Turkey & Cheese",
+    "price": "$10.45",
+    "section": "Subs"
+   },
+   {
+    "name": "Steak & Cheese",
+    "price": "$12.00",
+    "section": "Subs"
+   },
+   {
+    "name": "Chicken",
+    "price": "$11.50",
+    "section": "Subs"
+   },
+   {
+    "name": "Chicken Parmesan",
+    "price": "$12.00",
+    "section": "Subs"
+   },
+   {
+    "name": "Pizza Sub",
+    "price": "$13.15",
+    "section": "Subs"
+   },
+   {
+    "name": "Greek Pizza Sub",
+    "price": "$15.90",
+    "section": "Subs"
+   },
+   {
+    "name": "Garlic Bread W/ Cheese",
+    "price": "$8.40",
+    "section": "Subs"
+   },
+   {
+    "name": "Side",
+    "price": "$5.80",
+    "section": "Fresh Salads"
+   },
+   {
+    "name": "Chef",
+    "price": "$12.30",
+    "section": "Fresh Salads"
+   },
+   {
+    "name": "Caesar",
+    "price": "$12.30",
+    "section": "Fresh Salads"
+   },
+   {
+    "name": "Deluxe Chef",
+    "price": "$13.85",
+    "section": "Fresh Salads"
+   },
+   {
+    "name": "Party Salad",
+    "price": "$38.80",
+    "section": "Fresh Salads"
+   },
+   {
+    "name": "Cheesecake",
+    "price": "$5.30",
+    "section": "Chips & Desserts"
+   },
+   {
+    "name": "Oreo Cheesecake",
+    "price": "$5.30",
+    "section": "Chips & Desserts"
+   },
+   {
+    "name": "Brownie",
+    "price": "$2.40",
+    "section": "Chips & Desserts"
+   },
+   {
+    "name": "Cookie",
+    "price": "$1.60",
+    "section": "Chips & Desserts"
+   },
+   {
+    "name": "6” Italian Sub, Chips & Pepsi",
+    "price": "$6.65",
+    "section": "Lunch Specials"
+   },
+   {
+    "name": "9” Italian Sub, Chips & Pepsi",
+    "price": "$11.50",
+    "section": "Lunch Specials"
+   },
+   {
+    "name": "Spicy Italian Sub, Chips & Pepsi",
+    "price": "$12.60",
+    "section": "Lunch Specials"
+   },
+   {
+    "name": "Meatball Sub, Chips & Pepsi",
+    "price": "$12.60",
+    "section": "Lunch Specials"
+   },
+   {
+    "name": "8” 1-Item Pizza & Pepsi",
+    "price": "$1.10",
+    "section": "Lunch Specials"
+   }
+  ]
+ },
+ "columbus|Domo Sushi Kitchen Bar": {
+  "source": "https://domoskb.com/menu",
+  "items": [
+   {
+    "name": "Miso Soup",
+    "price": "$3",
+    "section": "Appetizers"
+   },
+   {
+    "name": "House Salad",
+    "price": "$5",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Seaweed Salad",
+    "price": "$7",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Edamame",
+    "price": "$7",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Agadashi Tofu",
+    "price": "$9",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Domo Wings",
+    "price": "$15",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Karrage",
+    "price": "$17",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Salmon Crudo",
+    "price": "$21",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Tuna Crudo",
+    "price": "$23",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Hamachi Crudo",
+    "price": "$25",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Toro Tartar",
+    "price": "$35",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Harumaki",
+    "price": "$8",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Gyoza",
+    "price": "$11",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Crab Rangoons",
+    "price": "$13",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Vegetable Tempura",
+    "price": "$11",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Domo Crab Salad",
+    "price": "$13",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Crispy Rice",
+    "price": "$16",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Domo Loaded Fries",
+    "price": "$15",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Sushi Panini",
+    "price": "$16",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Bang Bang Shrimp",
+    "price": "$18",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Soft Shell Crab",
+    "price": "$20",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Calamari",
+    "price": "$20",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Page",
+    "price": "$3",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Teriyaki",
+    "price": "$17",
+    "section": "Entrees"
+   },
+   {
+    "name": "Hibachi Style Fried Rice",
+    "price": "$15",
+    "section": "Entrees"
+   },
+   {
+    "name": "Pad Thai",
+    "price": "$15",
+    "section": "Entrees"
+   },
+   {
+    "name": "Kalbi",
+    "price": "$37",
+    "section": "Entrees"
+   },
+   {
+    "name": "Beef Bulgogi",
+    "price": "$29",
+    "section": "Entrees"
+   },
+   {
+    "name": "Bento Box",
+    "price": "$22",
+    "section": "Entrees"
+   },
+   {
+    "name": "Creamy Udon Carbonara",
+    "price": "$24",
+    "section": "Entrees"
+   },
+   {
+    "name": "Nabayaki Udon",
+    "price": "$19",
+    "section": "Entrees"
+   },
+   {
+    "name": "Spicy Pork Stir Fry",
+    "price": "$25",
+    "section": "Entrees"
+   },
+   {
+    "name": "Tonkatsu",
+    "price": "$25",
+    "section": "Entrees"
+   },
+   {
+    "name": "Katsudon",
+    "price": "$22",
+    "section": "Entrees"
+   },
+   {
+    "name": "Yaki Udon Stir Fry",
+    "price": "$15",
+    "section": "Entrees"
+   },
+   {
+    "name": "Spicy Shrimp Stir Fry",
+    "price": "$23",
+    "section": "Entrees"
+   },
+   {
+    "name": "Turbo Combo",
+    "price": "$22",
+    "section": "Sushi Entree"
+   },
+   {
+    "name": "Chirashi",
+    "price": "$49",
+    "section": "Sushi Entree"
+   },
+   {
+    "name": "Nigiri Deluxe",
+    "price": "$69",
+    "section": "Sushi Entree"
+   },
+   {
+    "name": "Jido Combo",
+    "price": "$26",
+    "section": "Sushi Entree"
+   },
+   {
+    "name": "Sashimi Deluxe",
+    "price": "$81",
+    "section": "Sushi Entree"
+   },
+   {
+    "name": "Tuna (Maguro)",
+    "price": "$5",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Bluefin Tuna (Hon Maguro)",
+    "price": "$9",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Bluefin Tuna Mid Belly (Chu Toro)",
+    "price": "$11",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Bluefin Tuna Belly (Toro)",
+    "price": "$13",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Salmon (Sake)",
+    "price": "$5",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Supreme Cali Roll",
+    "price": "$13",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Yellowtail (Hamachi)",
+    "price": "$6",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Spicy Tuna",
+    "price": "$12",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Bass (Suzuki)",
+    "price": "$4",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Spicy Salmon",
+    "price": "$10",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Shrimp (Ebi)",
+    "price": "$4",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Philadelphia Roll",
+    "price": "$11",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Flounder (Hirame)",
+    "price": "$5",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Salmon Avo Roll",
+    "price": "$11",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Sea Bream (Madai)",
+    "price": "$7",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Mackerel (Saba)",
+    "price": "$5",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Octopus (Tako)",
+    "price": "$6",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Smoked Salmon",
+    "price": "$4",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Egg (Tamago)",
+    "price": "$4",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Crab (Lump crab)",
+    "price": "$7",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Salmon Skin Roll",
+    "price": "$15",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Tobiko (Flying Fish Roe)",
+    "price": "$4",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Masago (Smelt Roe)",
+    "price": "$4",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Ikura (Salmon Roe)",
+    "price": "$7",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Scallop (Hotate)",
+    "price": "$8",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Japanese Urchin (Uni)",
+    "price": "$18",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Sweet Shrimp (Ama Ebi)",
+    "price": "$9",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Surf Clam (Hokkigai)",
+    "price": "$5",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Squid (Sudamae Ika)",
+    "price": "$5",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Eel (Unagi)",
+    "price": "$6",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Spider Roll",
+    "price": "$16",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Crab Stick (Kani Kama)",
+    "price": "$4",
+    "section": "Nigiri / Sashimi"
+   },
+   {
+    "name": "Baked Cali Roll",
+    "price": "$15",
+    "section": "Vegetable"
+   },
+   {
+    "name": "Avocado Roll",
+    "price": "$7",
+    "section": "Vegetable"
+   },
+   {
+    "name": "Cucumber Roll",
+    "price": "$6",
+    "section": "Vegetable"
+   },
+   {
+    "name": "Asparagus Roll",
+    "price": "$7",
+    "section": "Vegetable"
+   },
+   {
+    "name": "Oshinko Roll",
+    "price": "$7",
+    "section": "Vegetable"
+   },
+   {
+    "name": "Kanpyo Roll",
+    "price": "$7",
+    "section": "Vegetable"
+   },
+   {
+    "name": "Sweet Potato Roll",
+    "price": "$8",
+    "section": "Vegetable"
+   }
+  ]
  }
 }

@@ -504,11 +504,11 @@
                 "Fri"
               ],
               "title": "$7 happy hour appetizers",
-              "details": "Happy hour Monday-Friday 2-4 PM with $7 appetizer pricing.",
+              "details": "Happy hour Monday-Friday 2-4 PM: $7 apps (elote, quesadilla sampler, nachos, flautas, queso and guacamole) and $7 drinks.",
               "price": "$7",
               "studentOnly": false,
-              "sourceUrl": "https://happyhourdaily.com/cleveland/",
-              "sourceDate": ""
+              "sourceUrl": "https://tacologist.net/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -657,25 +657,13 @@
           ]
         },
         {
-          "name": "Kantina",
-          "category": "Other",
-          "local": true,
-          "signature": false,
-          "address": "11303 Euclid Ave, Cleveland, OH 44106",
-          "website": "https://www.kantinakatering.com/",
-          "blurb": "Kosher restaurant in the Uptown district.",
-          "price": "$$",
-          "sourceUrl": "https://www.universitycircle.org/destinations/kantina",
-          "deals": []
-        },
-        {
           "name": "L'Albatros Brasserie + Bar",
           "category": "Other",
           "local": true,
           "signature": false,
           "address": "11401 Bellflower Road, Cleveland, OH 44106",
           "website": "https://www.albatrosbrasserie.com/",
-          "blurb": "Zack Bruell's French brasserie in a carriage house on the Case Western campus.",
+          "blurb": "Chef Zack Bruell's French brasserie on Bellflower Road on the Case Western campus.",
           "price": "$$$",
           "sourceUrl": "https://www.universitycircle.org/destinations/lalbatros-brasserie-bar",
           "deals": []
@@ -727,18 +715,6 @@
               "sourceDate": "2026-11"
             }
           ]
-        },
-        {
-          "name": "Lee's Seafood Boil",
-          "category": "Other",
-          "local": true,
-          "signature": false,
-          "address": "11460 Uptown Ave, Cleveland, OH 44106",
-          "website": "https://www.leeseafoodboil.com/",
-          "blurb": "Cajun seafood boil restaurant with an Uptown location.",
-          "price": "$$$",
-          "sourceUrl": "https://www.universitycircle.org/destinations/lees-seafood-boil",
-          "deals": []
         },
         {
           "name": "Lou's Tavern",
@@ -961,18 +937,6 @@
           "deals": []
         },
         {
-          "name": "Euro Wafel Bar",
-          "category": "Dessert & Ice Cream",
-          "local": true,
-          "signature": false,
-          "address": "11433 Mayfield Rd, Cleveland, OH 44106",
-          "website": "",
-          "blurb": "Late-night waffle bar on Mayfield Road.",
-          "price": "$",
-          "sourceUrl": "https://www.universitycircle.org/destinations/euro-wafel-bar",
-          "deals": []
-        },
-        {
           "name": "Affettati",
           "category": "Sandwiches & Subs",
           "local": true,
@@ -1013,7 +977,7 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "12038 Mayfield Rd, Cleveland, OH 44106",
           "website": "https://agostinosbistroandpub.com/",
           "blurb": "Bistro and pub listed in the Little Italy merchant directory.",
           "price": "$$",
@@ -1231,7 +1195,7 @@
           "signature": false,
           "address": "1302 Euclid Avenue, Cleveland, OH",
           "website": "https://somethinggoodcle.com/",
-          "blurb": "Playhouse Square food hall built around food, music and community.",
+          "blurb": "Playhouse Square social kitchen built around food, music and community.",
           "price": "$$",
           "sourceUrl": "https://somethinggoodcle.com/",
           "deals": []
@@ -2480,7 +2444,7 @@
           "signature": false,
           "address": "310 Park Ave, Kent, OH 44240",
           "website": "https://belltowerbrewing.com/",
-          "blurb": "Neighborhood craft brewery in a former church with a scratch kitchen and monthly free trivia.",
+          "blurb": "Neighborhood craft brewery with a scratch kitchen and free themed trivia on the first Wednesday of each month.",
           "price": "$$",
           "sourceUrl": "https://belltowerbrewing.com/",
           "deals": []
@@ -2595,7 +2559,7 @@
           "signature": false,
           "address": "141 E Summit St, Kent, OH 44240",
           "website": "https://www.boardandbevy.com/",
-          "blurb": "Board game lounge near campus with a food menu, drinks and a student discount on games.",
+          "blurb": "Board game lounge with a food menu, drinks and a student discount on game purchases.",
           "price": "$",
           "sourceUrl": "https://www.boardandbevy.com/",
           "deals": [
@@ -2659,7 +2623,7 @@
           "signature": false,
           "address": "436 E Main St, Kent, OH 44240",
           "website": "https://www.clebagelkent.com/",
-          "blurb": "Bagel cafe on East Main Street across from campus.",
+          "blurb": "Bagel cafe on East Main Street.",
           "price": "$",
           "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
           "deals": []
@@ -2683,7 +2647,7 @@
           "signature": false,
           "address": "163 W Erie St, Kent, OH 44240",
           "website": "",
-          "blurb": "Kitchen operating inside the Venice Cafe building on West Erie Street.",
+          "blurb": "Kitchen at 163 W Erie St, the same address as the Venice Cafe.",
           "price": "$$",
           "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
           "deals": []
@@ -2760,7 +2724,7 @@
           "signature": false,
           "address": "195 E Erie St, Kent, OH 44240",
           "website": "https://yourlaziza.com/",
-          "blurb": "Mediterranean-leaning craft kitchen that was the first restaurant to open in Acorn Alley.",
+          "blurb": "Craft kitchen on East Erie Street that was the first restaurant to open in Acorn Alley.",
           "price": "$$",
           "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
           "deals": []
@@ -2796,7 +2760,7 @@
           "signature": false,
           "address": "101 Crain Ave, Kent, OH 44240",
           "website": "https://northwaterbrewing.com/",
-          "blurb": "Craft brewery by the river with Good Day Oven pizza served Wednesday through Saturday.",
+          "blurb": "Craft brewery with Good Day Oven pizza served Wednesday through Saturday.",
           "price": "$$",
           "sourceUrl": "https://northwaterbrewing.com/",
           "deals": []
@@ -2976,23 +2940,7 @@
           "blurb": "Riverfront restaurant, craft bar and retail wine market.",
           "price": "$$$",
           "sourceUrl": "https://www.therivermerchantkent.com/",
-          "deals": [
-            {
-              "days": [
-                "Mon",
-                "Tue",
-                "Wed",
-                "Thu",
-                "Fri"
-              ],
-              "title": "Weekday bar happy hour",
-              "details": "Happy hour specials at the bar Monday-Friday 4-6 PM (items not listed on the site).",
-              "price": "",
-              "studentOnly": false,
-              "sourceUrl": "https://www.therivermerchantkent.com/",
-              "sourceDate": "2026-11"
-            }
-          ]
+          "deals": []
         },
         {
           "name": "The Nut House Pub & Grille",
@@ -3001,7 +2949,7 @@
           "signature": false,
           "address": "295 S Water St, Kent, OH 44240",
           "website": "https://www.facebook.com/profile.php?id=61583831576767",
-          "blurb": "Pub and grille in the South Water Street plaza next to Barrio.",
+          "blurb": "Pub and grille at 295 S Water St.",
           "price": "$$",
           "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
           "deals": []
@@ -3619,7 +3567,7 @@
           "signature": false,
           "address": "370 Paul Williams Ave, Akron, OH 44311",
           "website": "https://69taphouse.toast.site/",
-          "blurb": "Neighborhood bar by Canal Park with food, cocktails and game nights, open 2 PM to 2 AM daily.",
+          "blurb": "Neighborhood bar with food, cocktails and game nights, open 2 PM to 2 AM daily.",
           "price": "$$",
           "sourceUrl": "https://www.downtownakron.com/go/69-taphouse",
           "deals": []
@@ -3994,7 +3942,7 @@
           "signature": false,
           "address": "18 N High St, Akron, OH 44308",
           "website": "https://totallybakedpizza.net/",
-          "blurb": "Pizza shop in the Historic Arts District.",
+          "blurb": "Pizza shop on North High Street that bills itself as the best pizza in Akron, \"made with peace, love and flour power.\"",
           "price": "$",
           "sourceUrl": "https://www.downtownakron.com/go/totally-baked-pizza",
           "deals": []
@@ -4042,7 +3990,7 @@
           "signature": false,
           "address": "782 W Market St, Akron, OH 44303",
           "website": "https://aladdins.com/",
-          "blurb": "Highland Square outpost of the Ohio-based Lebanese-American chain known for pitas, hummus and smoothies.",
+          "blurb": "Highland Square location of the Aladdin's Lebanese-American restaurant group.",
           "price": "$$",
           "sourceUrl": "https://aladdins.com/",
           "deals": []
@@ -4881,7 +4829,7 @@
           "signature": false,
           "address": "3460 S. Meridian Rd., Youngstown, OH 44511",
           "website": "https://belleriaitalianrestaurant.com/",
-          "blurb": "Family-owned pizza and Italian restaurant on Wick Avenue just north of campus.",
+          "blurb": "Family-owned pizza and Italian restaurant on Wick Avenue.",
           "price": "$$",
           "sourceUrl": "https://exploremahoning.com/restaurant/belleria-pizza-italian-restaurant-youngstown/",
           "deals": []
@@ -4905,7 +4853,7 @@
           "signature": false,
           "address": "410 N Walnut St, Youngstown, OH 44505",
           "website": "https://www.youngstownmvr.com/",
-          "blurb": "Family-owned Italian restaurant and Youngstown tradition since 1927, a short walk from campus in Smoky Hollow.",
+          "blurb": "Family-owned Italian restaurant on North Walnut Street, a local tradition since 1927.",
           "price": "$$",
           "sourceUrl": "https://exploremahoning.com/restaurant/casseses-mvr/",
           "deals": []
@@ -4917,7 +4865,7 @@
           "signature": false,
           "address": "372 W Rayen Ave, Youngstown, OH 44502",
           "website": "https://charliestaplespittboss.com/",
-          "blurb": "Longtime Youngstown barbecue paired with a gaming lounge; accepts Pete's Points.",
+          "blurb": "Southern-style barbecue paired with an esports gaming lounge; accepts Pete's Points.",
           "price": "$$",
           "sourceUrl": "https://exploremahoning.com/restaurant/charlie-staples-barbecue-pitt-boss-esports-lounge/",
           "deals": []
@@ -4929,7 +4877,7 @@
           "signature": false,
           "address": "818 Elm St, Youngstown, OH 44505",
           "website": "https://www.facebook.com/culturehousecoffeeco/",
-          "blurb": "Coffee, cold brew, espresso and seasonal pastries on Elm Street north of campus.",
+          "blurb": "Coffee, cold brew, espresso and seasonal pastries on Elm Street.",
           "price": "$",
           "sourceUrl": "https://exploremahoning.com/restaurant/culturehouse-coffee-company/",
           "deals": []
@@ -4941,7 +4889,7 @@
           "signature": false,
           "address": "116 W Federal St, Youngstown, OH 44503",
           "website": "",
-          "blurb": "Convenience deli on West Federal known for Mediterranean foods and specialties.",
+          "blurb": "West Federal deli featuring Mediterranean specialties like hummus, tabouli and baba ghanouj.",
           "price": "$",
           "sourceUrl": "https://exploremahoning.com/restaurant/downtown-circle-deli/",
           "deals": []
@@ -4965,7 +4913,7 @@
           "signature": false,
           "address": "126 E Rayen Ave, Youngstown, OH 44503",
           "website": "https://www.noblecreaturebeer.com/",
-          "blurb": "Craft brewery in a former church with a scratch kitchen and 14 rotating house beers.",
+          "blurb": "Craft brewery and scratch kitchen in a 19th-century church in Smoky Hollow, with 14 rotating house beers.",
           "price": "$$",
           "sourceUrl": "https://exploremahoning.com/restaurant/noble-creature-wild-ales-lagers/",
           "deals": [
@@ -5037,7 +4985,7 @@
           "signature": false,
           "address": "924 Oak St, Youngstown, OH 44506",
           "website": "https://www.facebook.com/TheRoyalOaks/",
-          "blurb": "Long-running east side neighborhood bar and grill.",
+          "blurb": "Billed as the oldest bar in Youngstown, open for lunch and dinner and known for its ribs.",
           "price": "$",
           "sourceUrl": "https://exploremahoning.com/restaurant/the-royal-oaks/",
           "deals": []
