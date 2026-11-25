@@ -117,6 +117,13 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 .dcard { --c: var(--hot); display: grid; grid-template-columns: 118px minmax(0, 1fr); width: 100%; text-align: left; background: var(--card); border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; }
 .ph { position: relative; display: block; background: var(--c); min-height: 112px; }
 .ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ph.haslogo { background: #fff; }
+.ph.haslogo img { object-fit: contain; padding: 16px 16px 30px; }
+.mono { position: absolute; inset: 0 0 22px; display: grid; place-items: center; color: #fff; font: 800 34px var(--display); }
+.dcard.hero .ph.nophoto { aspect-ratio: 16 / 8; }
+.dcard.hero .ph.nophoto::after { display: none; }
+.dcard.hero .ph.haslogo img { padding: 34px 90px 40px; }
+.dcard.hero .mono { font-size: 64px; }
 .price { position: absolute; left: 8px; bottom: 8px; max-width: calc(100% - 16px); background: var(--sun); color: var(--sun-ink); font: 800 20px/1 var(--display); letter-spacing: -.02em; padding: 6px 9px; border-radius: 10px; transform: rotate(-4deg); box-shadow: 0 2px 0 rgba(0,0,0,.4); }
 .price.long { font-size: 13.5px; }
 .dbody { display: flex; flex-direction: column; justify-content: center; gap: 7px; padding: 12px 14px; min-width: 0; }
@@ -278,11 +285,11 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     if (!sp.local) h += '<span class="tag">Chain</span>';
     return h ? '<span class="tags">' + h + '</span>' : '';
   }
-  function photo(key) { var p = key && DATA.photos && DATA.photos[key]; return p ? p.src : ''; }
+  function photo(src) { return src || ''; }
   function ticket(x, hero) {
-    var st = stubText(x.d), ph = photo(x.d.photo || x.sp.photo);
+    var st = stubText(x.d), ph = photo(x.sp.photo);
     return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" style="--c:' + color(x.sp.category) + '">' +
-      '<span class="ph">' + (ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : '') +
+      '<span class="ph' + (ph ? '' : x.sp.logo ? ' nophoto haslogo' : ' nophoto') + '">' + (ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : x.sp.logo ? '<img alt="" loading="lazy" src="' + esc(x.sp.logo) + '">' : '<span class="mono">' + esc(initials(x.sp.name)) + '</span>') +
       (hero ? '<span class="flag">Cheapest ' + (S.day === TODAY ? 'today' : DAYNAME[S.day]) + '</span>' : '') +
       '<span class="price' + (st.length > 5 ? ' long' : '') + '">' + esc(st) + '</span></span>' +
       '<span class="dbody"><span class="dtitle">' + esc(x.d.title) + '</span>' +
@@ -311,7 +318,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
       h += ticket(list[0], true);
       if (list.length > 1) h += '<div class="sechead"><h2>More deals</h2><span>' + (list.length - 1) + '</span></div><div class="list">' + list.slice(1).map(function (x) { return ticket(x); }).join('') + '</div>';
     }
-    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Food photos show the kind of dish, not the restaurant\'s own plate.</p>';
+    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos come from each restaurant\'s own website.</p>';
   }
   function spotRow(sp) {
     var lo = spotLow(sp), n = (sp.deals || []).length, r = U.ratings[sp.id];
@@ -341,11 +348,6 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
       return '<button class="row" data-spot="' + esc(id) + '">' + logo(sp) + '<span class="mid"><h3>' + esc(sp.name) + '</h3><p><span class="mystars">' + '★'.repeat(U.ratings[id]) + '</span></p>' + (U.notes[id] ? '<p class="quote">' + esc(U.notes[id]) + '</p>' : '') + '</span></button>';
     }).join('') + '</div>' : '<div class="empty"><b>No reviews yet</b>Open any place and tap the stars.</div>';
     h += '<p class="note">Your profile and reviews are saved on this phone.</p>';
-    var keys = Object.keys(DATA.photos || {});
-    if (keys.length) h += '<details class="credits"><summary>Photo credits</summary><ul>' + keys.map(function (k) {
-      var p = DATA.photos[k], u = safeUrl(p.page);
-      return '<li>' + (u ? '<a target="_blank" rel="noopener" href="' + esc(u) + '">' + esc(p.title) + '</a>' : esc(p.title)) + ' by ' + esc(p.artist || 'unknown') + ', ' + esc(p.license) + ', via Wikimedia Commons</li>';
-    }).join('') + '</ul></details>';
     return h;
   }
 
