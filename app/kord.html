@@ -173,6 +173,24 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 /* tabs */
 .tabs { position: fixed; inset: auto 0 0; z-index: 6; background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); }
 .tabs .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+.dishes { display: flex; flex-direction: column; gap: 8px; }
+.dish { background: var(--card); border-radius: 14px; box-shadow: var(--shadow); overflow: hidden; }
+.dishhead { display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; text-align: left; padding: 12px 14px; }
+.dishhead .mname { font-weight: 700; }
+.dmeta { flex: none; text-align: right; font-size: 12.5px; color: var(--muted); font-weight: 700; }
+.dmeta .rateit { color: var(--link); }
+.dish.open .dishhead { border-bottom: 1px solid var(--line); }
+.dishbody { padding: 12px 14px 14px; display: flex; flex-direction: column; gap: 10px; }
+.yours { display: flex; align-items: center; justify-content: space-between; gap: 10px; font-weight: 700; font-size: 13px; }
+.stars.big button { font-size: 34px; }
+.cmt { font-size: 14px; }
+.cmt b { font-weight: 700; }
+.cmt small { color: var(--muted); }
+.cmt p { margin: 2px 0 0; overflow-wrap: anywhere; }
+.cmts { display: flex; flex-direction: column; gap: 10px; }
+.saying { background: var(--chip); border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 8px; }
+.saying > b { font: 800 14px var(--display); }
+#menuBox { display: flex; flex-direction: column; gap: 12px; }
 .mrow { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; border-top: 1px solid var(--line); }
 .mname { min-width: 0; font-weight: 500; overflow-wrap: anywhere; }
 .mname small { color: var(--muted); font-weight: 400; white-space: nowrap; }
@@ -197,6 +215,11 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 .sheetbody { overflow-y: auto; padding: 0 var(--gr) calc(24px + env(safe-area-inset-bottom, 0px)) var(--gl); display: flex; flex-direction: column; gap: 14px; }
 .spothead { display: flex; gap: 14px; align-items: center; }
 .spothead h2 { font-size: 26px; overflow-wrap: anywhere; }
+.sheetbody > * { flex: none; }
+.chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gl)) calc(-1 * var(--gr)); padding-inline: var(--gl) var(--gr); }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; padding: 8px 14px; border-radius: 999px; background: var(--chip); font-weight: 700; font-size: 13.5px; white-space: nowrap; }
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
 .week { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--card); }
 .wd { display: grid; grid-template-columns: 52px minmax(0, 1fr); border-top: 1px solid var(--line); }
 .wd:first-child { border-top: 0; }
@@ -245,9 +268,43 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   U.items = U.items || {}; U.custom = U.custom || {};
   /* Dish ratings: U.items[placeId][dish] = 1..5 on this phone. COMMUNITY[placeId][dish] = {sum, n} is where other students'
      ratings go once a shared ratings server is connected; every score below already combines the two. */
-  var COMMUNITY = {}, MENUS = null;
+  var COMMUNITY = {}, MENUS = null, SERVER = null, LOADED = {}, CMTS = {}, POLL = null;
+  U.comments = U.comments || {};
+  if (!U.device) {
+    U.device = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-8xxx-xxxxxxxxxxxx'.replace(/x/g, function () { return (Math.random() * 16 | 0).toString(16); });
+    save('kord.user', U);
+  }
+  /* Shared server (Supabase REST). Phones read two summary views and call three functions; see server/schema.sql. */
+  function api(path, body) {
+    if (!SERVER) return Promise.reject(new Error('no server'));
+    var h = { apikey: SERVER.key, Authorization: 'Bearer ' + SERVER.key };
+    if (body) h['Content-Type'] = 'application/json';
+    return fetch(SERVER.url + '/rest/v1/' + path, { method: body ? 'POST' : 'GET', headers: h, body: body ? JSON.stringify(body) : undefined }).then(function (r) {
+      return r.text().then(function (t) { if (!r.ok) throw new Error(t || r.status); return t ? JSON.parse(t) : null; });
+    });
+  }
+  function loadScores(then) {
+    var t = DATA && town(); if (!SERVER || !t) return;
+    api('dish_scores?select=place_id,dish,avg,n&town=eq.' + encodeURIComponent(t.id)).then(function (rows) {
+      t.spots.forEach(function (sp) { delete COMMUNITY[sp.id]; });
+      (rows || []).forEach(function (r) { (COMMUNITY[r.place_id] = COMMUNITY[r.place_id] || {})[r.dish] = { avg: +r.avg, n: +r.n }; });
+      LOADED[t.id] = true;
+      if (then) then();
+    }).catch(function () {});
+  }
+  function loadComments(id) {
+    if (!SERVER) return;
+    api('dish_comments?select=dish,name,body,created_at&order=created_at.desc&limit=80&place_id=eq.' + encodeURIComponent(id)).then(function (rows) {
+      CMTS[id] = rows || [];
+      if (S.open === id) paintComments(id);
+    }).catch(function () {});
+  }
   function myRate(id, item) { return (U.items[id] || {})[item] || 0; }
-  function itemScore(id, item) { var c = (COMMUNITY[id] || {})[item] || { sum: 0, n: 0 }, m = myRate(id, item), n = c.n + (m ? 1 : 0); return n ? { avg: (c.sum + m) / n, n: n } : null; }
+  function itemScore(id, item) {
+    var m = myRate(id, item), c = (COMMUNITY[id] || {})[item];
+    if (SERVER && LOADED[S.town] && c) return { avg: c.avg, n: c.n };
+    return m ? { avg: m, n: 1 } : null;
+  }
   function ratedItems(id) {
     var names = {}; Object.keys(U.items[id] || {}).forEach(function (k) { names[k] = 1; }); Object.keys(COMMUNITY[id] || {}).forEach(function (k) { names[k] = 1; });
     return Object.keys(names).map(function (k) { var sc = itemScore(id, k); return sc && { item: k, avg: sc.avg, n: sc.n }; }).filter(Boolean)
@@ -257,7 +314,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   function miniStars(id, item) {
     var r = myRate(id, item), h = '';
     for (var i = 1; i <= 5; i++) h += '<button class="' + (i <= r ? 'on' : '') + '" data-rate="' + i + '" data-id="' + esc(id) + '" data-item="' + esc(item) + '" aria-label="' + i + ' star' + (i > 1 ? 's' : '') + ' for ' + esc(item) + '">★</button>';
-    return '<span class="stars" role="group">' + h + '</span>';
+    return '<span class="stars big" role="group">' + h + '</span>';
   }
 
   function load(k, d) { try { var v = JSON.parse(localStorage.getItem(k)); return v && typeof v === 'object' ? v : d; } catch (e) { return d; } }
@@ -307,6 +364,8 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   }
   function spotLow(sp) { var lo = null; (sp.deals || []).forEach(function (d) { var p = priceNum(d.price || d.title); if (p != null && (lo == null || p < lo)) lo = p; }); return lo; }
   function travel(sp) { if (sp.mi == null) return ''; return sp.mi <= 0.8 ? Math.max(2, Math.round(sp.mi * 20)) + ' min walk' : Math.max(3, Math.round(sp.mi * 4)) + ' min drive'; }
+  /* Links out to a restaurant carry a KORD tag so the restaurant can see the orders KORD sends in its own analytics. */
+  function outLink(u) { try { var x = new URL(u); if (!x.searchParams.has('utm_source')) { x.searchParams.set('utm_source', 'kord'); x.searchParams.set('utm_medium', 'app'); x.searchParams.set('utm_campaign', 'deals'); } return x.href; } catch (e) { return u; } }
   function money(n) { return '$' + (n % 1 ? n.toFixed(2) : n); }
   function tagsHtml(sp, d) {
     var h = '';
@@ -375,7 +434,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
       return '<button class="row" data-spot="' + esc(r.sp.id) + '"><span class="rank">' + (i + 1) + '</span>' + logo(r.sp) + '<span class="mid"><h3>' + esc(r.x.item) + '</h3><p>' + esc(r.sp.name) + '</p></span>' +
         '<span class="end"><b>' + r.x.avg.toFixed(1) + '</b>' + r.x.n + ' rating' + (r.x.n > 1 ? 's' : '') + '</span></button>';
     }).join('') + '</div>' : '<div class="empty"><b>No dishes rated yet</b>Be the first. Open any place and rate what you got.</div>';
-    return h + '<p class="note">For now this counts ratings made on this phone. Ratings from every student combine here once the shared ratings server is connected.</p>';
+    return h + '<p class="note">' + (SERVER ? 'Scores combine ratings from every student using KORD at this school.' : 'For now this counts ratings made on this phone. Ratings from every student combine here once the shared ratings server is connected.') + '</p>';
   }
   function viewYou() {
     var mine = [];
@@ -389,7 +448,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     h += mine.length ? '<div class="list">' + mine.map(function (m) {
       return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + '★'.repeat(m.r) + '</span></span></button>';
     }).join('') + '</div>' : '<div class="empty"><b>Nothing rated yet</b>Open any place and tap the stars on what you ordered.</div>';
-    return h + '<p class="note">Your profile and ratings are saved on this phone.</p>';
+    return h + '<p class="note">' + (SERVER ? 'Your ratings and comments are shared with other students at your school. Your photo stays on this phone.' : 'Your profile and ratings are saved on this phone.') + '</p>';
   }
 
   function render() {
@@ -412,36 +471,68 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   }
 
   /* place sheet */
-  function closeSheet() { document.getElementById('sheetRoot').innerHTML = ''; }
+  function closeSheet() { document.getElementById('sheetRoot').innerHTML = ''; clearInterval(POLL); S.open = null; S.item = null; }
   function menuItems(sp) {
     var out = [], seen = {};
     function add(n, p, sec) { var k = String(n || '').trim().toLowerCase(); if (!k || seen[k]) return; seen[k] = 1; out.push({ n: String(n).trim(), p: p || '', s: sec }); }
-    (sp.deals || []).forEach(function (d) { add(d.title, d.price, 'This week\'s deals'); });
+    (sp.deals || []).forEach(function (d) { add(d.title, d.price, 'Deals'); });
     ((MENUS || {})[sp.id] || []).forEach(function (m) { add(m.n, m.p, m.s || 'Menu'); });
-    (U.custom[sp.id] || []).concat(Object.keys(U.items[sp.id] || {})).forEach(function (n) { add(n, '', 'Added by you'); });
+    var extra = (U.custom[sp.id] || []).concat(Object.keys(U.items[sp.id] || {}), Object.keys(COMMUNITY[sp.id] || {}));
+    cmtsFor(sp.id).forEach(function (c) { extra.push(c.dish); });
+    extra.forEach(function (n) { add(n, '', 'Added by students'); });
     return out;
+  }
+  function cmtsFor(id, dish) { var a = SERVER ? (CMTS[id] || []) : (U.comments[id] || []); return dish == null ? a : a.filter(function (c) { return c.dish === dish; }); }
+  function ago(ts) {
+    var m = Math.max(0, Math.round((Date.now() - new Date(ts).getTime()) / 60000));
+    return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : m < 1440 ? Math.round(m / 60) + ' hr ago' : Math.round(m / 1440) + ' d ago';
+  }
+  function cmtHtml(c, withDish) { return '<div class="cmt"><b>' + esc(c.name || 'Student') + '</b>' + (withDish ? ' on ' + esc(c.dish) : '') + ' <small>' + ago(c.created_at) + '</small><p>' + esc(c.body) + '</p></div>'; }
+  function cmtListHtml(id, dish) { var a = cmtsFor(id, dish); return a.length ? a.slice(0, 30).map(function (c) { return cmtHtml(c); }).join('') : '<p class="note">No comments yet. Be the first to say if it is worth it.</p>'; }
+  function sayingHtml(id) { var a = cmtsFor(id).slice(0, 2); return a.length ? '<div class="saying"><b>Students are saying</b>' + a.map(function (c) { return cmtHtml(c, true); }).join('') + '</div>' : ''; }
+  function paintComments(id) {
+    var say = document.getElementById('sayBox'), list = document.getElementById('cmtList');
+    if (say) say.innerHTML = sayingHtml(id);
+    if (list && S.item) list.innerHTML = cmtListHtml(id, S.item);
+  }
+  function dishRow(id, m) {
+    var open = S.item === m.n, sc = itemScore(id, m.n), nc = cmtsFor(id, m.n).length;
+    var meta = (sc ? '<span class="score">★ ' + sc.avg.toFixed(1) + '</span> (' + sc.n + ')' : '<span class="rateit">Rate it</span>') + (nc ? '<br>' + nc + ' comment' + (nc > 1 ? 's' : '') : '');
+    var h = '<div class="dish' + (open ? ' open' : '') + '"><button class="dishhead" data-dish="' + esc(m.n) + '" aria-expanded="' + open + '"><span class="mname">' + esc(m.n) + (m.p ? ' <small>' + esc(m.p) + '</small>' : '') + '</span><span class="dmeta">' + meta + '</span></button>';
+    if (open) h += '<div class="dishbody"><div class="yours"><span>Your rating</span>' + miniStars(id, m.n) + '</div><div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
+      '<div class="addrow"><input class="search" id="cmtIn" type="text" maxlength="280" placeholder="Worth it? Tell other students" aria-label="Write a comment"><button class="btn" id="cmtBtn" data-id="' + esc(id) + '">Post</button></div>' +
+      (SERVER ? '' : '<p class="note">Comments stay on this phone until the shared server is connected.</p>') + '</div>';
+    return h + '</div>';
   }
   function fillMenu(id) {
     var box = document.getElementById('menuBox'); if (!box) return;
-    var sp = SPOTS[id], q = (S.mq || '').toLowerCase(), items = menuItems(sp), top = ratedItems(id), h = '', last = null, shown = 0;
-    if (top.length) h += '<div class="toprated"><b>Top rated here</b>' + top.slice(0, 3).map(function (x, i) { return '<span>' + (i + 1) + '. ' + esc(x.item) + ' <em>★ ' + x.avg.toFixed(1) + '</em></span>'; }).join('') + '</div>';
-    if (items.length > 12) h += '<input class="search" id="menuSearch" type="search" placeholder="Find a dish" value="' + esc(S.mq || '') + '" aria-label="Find a dish">';
-    items.forEach(function (m) {
-      if (q && m.n.toLowerCase().indexOf(q) < 0) return;
-      if (m.s !== last) { h += '<div class="msec">' + esc(m.s) + '</div>'; last = m.s; }
-      shown++;
-      h += '<div class="mrow"><span class="mname">' + esc(m.n) + (m.p ? ' <small>' + esc(m.p) + '</small>' : '') + '</span>' + miniStars(id, m.n) + '</div>';
-    });
-    if (!shown) h += '<p class="note">' + (q ? 'No dish matches. Add it below.' : 'We do not have this menu yet. Add what you ordered below.') + '</p>';
-    h += '<div class="addrow"><input class="search" id="addItem" type="text" maxlength="60" placeholder="Got something else? Type it" aria-label="Add a dish"><button class="btn" id="addItemBtn" data-id="' + esc(id) + '">Add</button></div>';
+    var sp = SPOTS[id], q = (S.mq || '').toLowerCase(), items = menuItems(sp), top = ratedItems(id), secs = [], seen = {};
+    var draft = document.getElementById('cmtIn'); draft = draft ? draft.value : '';
+    items.forEach(function (m) { if (!seen[m.s]) { seen[m.s] = 1; secs.push(m.s); } });
+    if (top.length) secs.unshift('Top rated');
+    if (secs.indexOf(S.sec) < 0) S.sec = secs[0] || '';
+    var list = q ? items.filter(function (m) { return m.n.toLowerCase().indexOf(q) >= 0; }) :
+      S.sec === 'Top rated' ? top.map(function (x) { return items.filter(function (m) { return m.n === x.item; })[0] || { n: x.item, p: '', s: '' }; }) :
+      items.filter(function (m) { return m.s === S.sec; });
+    var h = '<div id="sayBox">' + sayingHtml(id) + '</div>' +
+      '<input class="search" id="menuSearch" type="search" placeholder="What did you get? Search the menu" value="' + esc(S.mq || '') + '" aria-label="Search the menu">';
+    if (!q && secs.length > 1) h += '<div class="chips">' + secs.map(function (c) { return '<button class="chip" data-sec="' + esc(c) + '" aria-pressed="' + (S.sec === c) + '">' + esc(c) + '</button>'; }).join('') + '</div>';
+    h += list.length ? '<div class="dishes">' + list.slice(0, 60).map(function (m) { return dishRow(id, m); }).join('') + '</div>' :
+      '<p class="note">' + (q ? 'No dish matches. Add it below.' : 'We do not have this menu yet. Add what you ordered below.') + '</p>';
+    h += '<div class="addrow"><input class="search" id="addItem" type="text" maxlength="60" placeholder="Not listed? Type what you got" aria-label="Add a dish"><button class="btn ghost" id="addItemBtn" data-id="' + esc(id) + '">Add</button></div>';
     box.innerHTML = h;
+    var again = document.getElementById('cmtIn'); if (again && draft) again.value = draft;
   }
   function spotSheet(id) {
     var sp = SPOTS[id]; if (!sp) return;
     var web = safeUrl(sp.website);
     var h = (photo(sp.photo) ? '<div class="banner" style="--c:' + color(sp.category) + '"><img alt="" src="' + esc(photo(sp.photo)) + '"></div>' : '') + '<div class="spothead">' + logo(sp, 'big') + '<div><h2>' + esc(sp.name) + '</h2><p class="sub">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</p>' + tagsHtml(sp) + '</div></div>';
     if (sp.blurb) h += '<p style="margin:0">' + esc(sp.blurb) + '</p>';
-    h += '<div class="btnrow">' + (web ? '<a class="btn hot" target="_blank" rel="noopener" href="' + esc(web) + '">Website</a>' : '<a class="btn hot" target="_blank" rel="noopener" href="https://www.google.com/search?q=' + encodeURIComponent(sp.name + ' ' + (sp.address || town().name + ' Ohio')) + '">Look it up</a>') +
+    var order = safeUrl(sp.order), look = 'https://www.google.com/search?q=' + encodeURIComponent(sp.name + ' ' + (sp.address || town().name + ' Ohio'));
+    h += '<div class="btnrow">' +
+      (order ? '<a class="btn hot" target="_blank" rel="noopener" data-order="' + esc(id) + '" href="' + esc(outLink(order)) + '">Order online</a>' : '') +
+      (web && web !== order ? '<a class="btn ' + (order ? 'ghost' : 'hot') + '" target="_blank" rel="noopener" data-order="' + esc(id) + '" href="' + esc(outLink(web)) + '">Website</a>' : '') +
+      (!web && !order ? '<a class="btn hot" target="_blank" rel="noopener" href="' + esc(look) + '">Look it up</a>' : '') +
       '<a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(sp.name + ' ' + (sp.address || town().name + ' Ohio')) + '">Directions</a></div>';
     if (sp.address) h += '<p class="note">' + esc(sp.address) + (travel(sp) ? ' · about ' + travel(sp) + ' from campus' : '') + '</p>';
     h += '<div class="sechead"><h2>Deals this week</h2></div>';
@@ -455,21 +546,47 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
         }).join('') + '</div></div>';
       }).join('') + '</div>';
     } else h += '<div class="empty">No weekly deal found here yet.</div>';
-    h += '<div><div class="sechead"><h2>Rate what you got</h2></div><p class="sub">Tap the stars next to the exact thing you ordered.</p></div><div id="menuBox"></div>';
+    h += '<div><div class="sechead"><h2>What is good here</h2></div><p class="sub">Pick a category or search, then tap a dish to rate it and read what other students said.</p></div><div id="menuBox"></div>';
     document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="' + esc(sp.name) + '"><div class="sheethead"><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody">' + h + '</div></div></div>';
-    S.mq = ''; S.open = id; fillMenu(id);
+    S.mq = ''; S.sec = ''; S.item = null; S.open = id; fillMenu(id);
+    clearInterval(POLL);
+    if (SERVER) { loadComments(id); loadScores(function () { if (S.open === id) fillMenu(id); }); POLL = setInterval(function () { if (S.open === id && !document.hidden) loadComments(id); }, 12000); }
     if (!MENUS) fetch('data/menus.json').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (m) { MENUS = m || {}; if (S.open === id) fillMenu(id); });
   }
 
   document.addEventListener('click', function (e) {
     var t = e.target.closest('button, a, [data-close]'); if (!t) return;
     if (t.matches('[data-close]') && (e.target === t || t.classList.contains('x'))) { closeSheet(); return render(); }
-    if (t.dataset.rate) { var id = t.dataset.id, it = t.dataset.item, n = +t.dataset.rate; U.items[id] = U.items[id] || {}; if (U.items[id][it] === n) delete U.items[id][it]; else U.items[id][it] = n; if (!Object.keys(U.items[id]).length) delete U.items[id]; save('kord.user', U); return fillMenu(id); }
+    if (t.dataset.order && SERVER) api('rpc/log_order', { p_device: U.device, p_town: S.town, p_place: t.dataset.order }).catch(function () {});
+    if (t.dataset.rate) {
+      var id = t.dataset.id, it = t.dataset.item, n = +t.dataset.rate; U.items[id] = U.items[id] || {};
+      if (U.items[id][it] === n) { delete U.items[id][it]; n = 0; } else U.items[id][it] = n;
+      if (!Object.keys(U.items[id]).length) delete U.items[id];
+      save('kord.user', U); fillMenu(id);
+      if (SERVER) api('rpc/rate_dish', { p_device: U.device, p_town: S.town, p_place: id, p_dish: it, p_stars: n }).then(function () { loadScores(function () { if (S.open === id) fillMenu(id); }); }).catch(function () {});
+      return;
+    }
+    if (t.dataset.sec) { S.sec = t.dataset.sec; S.item = null; return fillMenu(S.open); }
+    if (t.dataset.dish) { S.item = S.item === t.dataset.dish ? null : t.dataset.dish; return fillMenu(S.open); }
+    if (t.id === 'cmtBtn') {
+      var cin = document.getElementById('cmtIn'), body = (cin.value || '').trim(), pid = t.dataset.id, dish = S.item;
+      if (!body || !dish) return;
+      cin.value = '';
+      if (SERVER) {
+        (CMTS[pid] = CMTS[pid] || []).unshift({ dish: dish, name: U.name || 'Student', body: body, created_at: new Date().toISOString() });
+        api('rpc/add_comment', { p_device: U.device, p_town: S.town, p_place: pid, p_dish: dish, p_name: U.name || 'Student', p_body: body }).then(function () { loadComments(pid); })
+          .catch(function () { CMTS[pid].shift(); cin.value = body; paintComments(pid); });
+      } else {
+        (U.comments[pid] = U.comments[pid] || []).unshift({ dish: dish, name: U.name || 'You', body: body, created_at: new Date().toISOString() });
+        save('kord.user', U);
+      }
+      return fillMenu(pid);
+    }
     if (t.id === 'addItemBtn') { var box = document.getElementById('addItem'), name = (box.value || '').trim(); if (name) { var sid = t.dataset.id; U.custom[sid] = U.custom[sid] || []; if (U.custom[sid].indexOf(name) < 0) U.custom[sid].push(name); save('kord.user', U); S.mq = ''; fillMenu(sid); } return; }
     if (t.dataset.spot) return spotSheet(t.dataset.spot);
-    if (t.dataset.town) { S.town = t.dataset.town; S.picking = false; S.tab = 'deals'; S.q = ''; S.day = TODAY; render(); window.scrollTo(0, 0); return; }
+    if (t.dataset.town) { S.town = t.dataset.town; setTimeout(function () { loadScores(function () { if (!S.open) render(); }); }, 0); S.picking = false; S.tab = 'deals'; S.q = ''; S.day = TODAY; render(); window.scrollTo(0, 0); return; }
     if (t.dataset.day) { S.day = t.dataset.day; return render(); }
-    if (t.dataset.tab) { S.tab = t.dataset.tab; render(); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + S.tab); } catch (err) {} return; }
+    if (t.dataset.tab) { S.tab = t.dataset.tab; if (S.tab !== 'deals') loadScores(function () { if (!S.open) render(); }); render(); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + S.tab); } catch (err) {} return; }
     if (t.dataset.local) { S.localOnly = t.dataset.local === '1'; return render(); }
     if (t.id === 'swapBtn') { S.picking = true; render(); window.scrollTo(0, 0); }
   });
@@ -496,9 +613,12 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 
   fetch('data/kord.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
     DATA = d;
+    if (d.server && /^https:\/\//.test(d.server.url || '') && d.server.key) SERVER = { url: d.server.url.replace(/\/+$/, ''), key: d.server.key };
+    var dev = /[?&]server=(http[^&]+)/.exec(location.search); if (dev && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) SERVER = { url: decodeURIComponent(dev[1]), key: 'dev' };
     d.towns.forEach(function (t) { t.spots.forEach(function (s) { SPOTS[s.id] = s; }); });
     var h = (location.hash || '').slice(1); if (['deals', 'places', 'best', 'you'].indexOf(h) >= 0) S.tab = h;
     render();
+    loadScores(function () { if (!S.open) render(); });
   }).catch(function () {
     document.getElementById('view').innerHTML = '<div class="empty"><b>Could not load the deals</b>Check your connection and reopen KORD.</div>';
   });

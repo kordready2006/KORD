@@ -57,6 +57,9 @@ def miles(a, b):
     return 3958.8 * 2 * math.asin(math.sqrt(h))
 
 
+ORDER_RX = re.compile(r"toasttab|chownow|square\.site|squareup|clover\.com|olo\.com|spoton|popmenu|slicelife|owner\.com|ordering|//order\.|/order", re.I)
+
+
 def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower().replace("'", "").replace("’", "")).strip("-")
 
@@ -197,7 +200,7 @@ def main():
             '</head>\n<body>\n')
     tail = ("\n<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});</script>\n</body>\n</html>\n")
     # Menus: data/menus/<town>.json maps "town-id|place name" to its menu; the app loads them by place id.
-    menus, names = {}, {}
+    menus, names, order = {}, {}, {}
     for t in live:
         for sp in t["spots"]:
             names[t["id"] + "|" + norm(sp["name"])] = sp["id"]
@@ -210,6 +213,24 @@ def main():
                      and not re.match(r"(?i)\s*(add|extra|substitute|sub)\b|.*\b(gift card|party tray|catering|gratuity|t-shirt)\b", i["name"])][:120]
             if sid and items:
                 menus[sid] = items
+            if sid and ORDER_RX.search(m.get("source") or ""):
+                order[sid] = m["source"]
+    # "Order online" links: an online-ordering page found while reading the menu, a chain's own site, or a partner
+    # link from data/partners.json ({"town-id|Place name": "https://order-link-with-your-partner-code"}).
+    partners = json.load(open(os.path.join(ROOT, "data", "partners.json"))) if os.path.exists(os.path.join(ROOT, "data", "partners.json")) else {}
+    for t in live:
+        for sp in t["spots"]:
+            link = partners.get(t["id"] + "|" + sp["name"]) or order.get(sp["id"]) or ("" if sp["local"] else sp["website"])
+            if not link and ORDER_RX.search(sp["website"]):
+                link = sp["website"]
+            if link:
+                sp["order"] = link
+    server = json.load(open(os.path.join(ROOT, "data", "server.json"))) if os.path.exists(os.path.join(ROOT, "data", "server.json")) else {}
+    if server.get("url") and server.get("key"):
+        out["server"] = {"url": server["url"], "key": server["key"]}
+    with open(os.path.join(ROOT, "data", "kord.json"), "w") as f:
+        json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
+    print(sum(1 for t in live for sp in t["spots"] if sp.get("order")), "places with an order link; shared server", "ON" if out.get("server") else "not configured")
     with open(os.path.join(ROOT, "data", "menus.json"), "w") as f:
         json.dump(menus, f, ensure_ascii=False, separators=(",", ":"))
     print(len(menus), "menus,", sum(len(v) for v in menus.values()), "dishes")
