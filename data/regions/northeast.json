@@ -372,6 +372,112 @@
               "sourceDate": "2026-10"
             }
           ]
+        },
+        {
+          "name": "Republic Food + Drink",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Cleveland restaurant and bar in the Playhouse Square district.",
+          "price": "$$",
+          "sourceUrl": "https://playhousesquare.org/news/detail/happy-hours-around-the-district",
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Half-price appetizers happy hour",
+              "details": "50% off appetizers (and drinks) at the bar only, Tuesday-Friday 3-5 PM.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://clehappyhour.com/",
+              "sourceDate": "2026-04"
+            }
+          ]
+        },
+        {
+          "name": "Flight Social",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://flightsocialcle.com",
+          "blurb": "American restaurant and bar in downtown Cleveland.",
+          "price": "$$",
+          "sourceUrl": "https://flightsocialcle.com/",
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$10 lunch specials",
+              "details": "$10 lunch specials Tuesday-Friday 11 AM-6 PM.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://flightsocialcle.toast.site/happy-hour",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Cilantro Taqueria",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "2783 Euclid Heights Blvd, Cleveland Heights, OH",
+          "website": "https://www.cilantrotaqueria.com",
+          "blurb": "Counter-service taqueria in Coventry Village.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/cilantro-taqueria-coventry/r-d5a2a16d-98ed-4a06-99f1-3c01067ba6c5",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$12 Tuesday: 3 tacos + a drink",
+              "details": "Three tacos and a soft drink for $12 on Tuesdays (excludes lengua and seafood); in-person orders only.",
+              "price": "$12",
+              "studentOnly": false,
+              "sourceUrl": "https://cilantrotaqueria.com/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Tacologist",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "11409 Euclid Ave, Cleveland, OH",
+          "website": "https://tacologist.net",
+          "blurb": "Tacos, tequila and margaritas spot on Euclid Avenue in University Circle's Uptown.",
+          "price": "$$",
+          "sourceUrl": "https://www.yelp.com/biz/tacologist-tacos-tequila-margaritas-cleveland-3",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$7 happy hour appetizers",
+              "details": "Happy hour Monday-Friday 2-4 PM with $7 appetizer pricing.",
+              "price": "$7",
+              "studentOnly": false,
+              "sourceUrl": "https://happyhourdaily.com/cleveland/",
+              "sourceDate": ""
+            }
+          ]
         }
       ]
     },
@@ -1358,6 +1464,23 @@
               "studentOnly": false,
               "sourceUrl": "https://www.aol.com/news/budget-heres-where-daily-deals-150808487.html",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$8 student grilled cheese meal",
+              "details": "$8 grilled cheese meal with goldfish crackers and a soft drink for students while school is in session.",
+              "price": "$8",
+              "studentOnly": true,
+              "sourceUrl": "https://www.downtownakron.com/event/student-specials",
+              "sourceDate": "2025-11"
             }
           ]
         },
@@ -1675,7 +1798,7 @@
                 "Sun"
               ],
               "title": "20% off pretzels or wings with UA ID",
-              "details": "20% off an order of pretzels or an order of wings with a valid University of Akron ID card.",
+              "details": "20% off an order of pretzels or wings with a valid University of Akron ID; requires an additional appetizer, sandwich or entree purchase; dine-in only.",
               "price": "20% off",
               "studentOnly": true,
               "sourceUrl": "https://www.downtownakron.com/event/student-specials",
@@ -1707,6 +1830,43 @@
               "title": "10% off drinks with Zip Card",
               "details": "10% off drinks for students who present their UA Zip Card.",
               "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.downtownakron.com/event/student-specials",
+              "sourceDate": "2025-11"
+            }
+          ]
+        },
+        {
+          "name": "El Patrón Tequilería & Cuisine",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Akron Mexican restaurant with taco specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/event/downtown-akron-restaurant-specials-and-happy-hours",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Taco Tuesday: buy 3, get 1 free",
+              "details": "Buy three tacos, get one free on Tuesdays, 11:30 AM-9 PM.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/downtown-akron-restaurant-specials-and-happy-hours",
+              "sourceDate": "2025"
+            },
+            {
+              "days": [
+                "Sun",
+                "Tue",
+                "Thu"
+              ],
+              "title": "$10 student taco combo",
+              "details": "Tacos combo with a drink for $10 for students, all day Sunday, Tuesday and Thursday; listed as running August 15 to December 15.",
+              "price": "$10",
               "studentOnly": true,
               "sourceUrl": "https://www.downtownakron.com/event/student-specials",
               "sourceDate": "2025-11"
@@ -2494,12 +2654,12 @@
               "days": [
                 "Thu"
               ],
-              "title": "Thursday wing special",
-              "details": "10 wings and fries special with purchase of a drink on Thursdays.",
-              "price": "",
+              "title": "$10 Thursday wings and fries",
+              "details": "10 wings and fries for $10 with purchase of a drink on Thursdays; dine-in only.",
+              "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://www.varsityclubyoungstown.com/lineup/promotions/",
-              "sourceDate": "2026"
+              "sourceDate": "2026-06"
             },
             {
               "days": [
