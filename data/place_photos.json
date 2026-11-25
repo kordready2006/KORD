@@ -88,7 +88,7 @@
   "site": "https://homeslice419.com"
  },
  "hubbardgrille.com": {
-  "source": "https://www.hubbardgrille.com/assets/img/pages/home/hubbard-salmon-entree-slider-home.jpg",
+  "source": "https://www.hubbardgrille.com/assets/img/pages/home/hubbard-slider-night-bg.jpg",
   "site": "https://www.hubbardgrille.com"
  },
  "jackandbennys.com": {
@@ -224,7 +224,7 @@
   "site": "https://theoriginalvarsityclub.com"
  },
  "thepearlrestaurant.com": {
-  "source": "https://thepearlrestaurant.com/wp-content/uploads/2026/11/holiday-cakes-and-pies-tout-710x640-1.jpg",
+  "source": "https://thepearlrestaurant.com/wp-content/uploads/sb-instagram-feed-images/915422494_18396593500161706_223067938381287713_nfull.webp",
   "site": "https://thepearlrestaurant.com"
  },
  "thepigskin.com": {
@@ -282,5 +282,89 @@
  "penn-station.com": {
   "source": "https://www.penn-station.com/images/features/home_6menu600x450.jpg",
   "site": "https://www.penn-station.com"
+ },
+ "adriaticososu.com": {
+  "source": "https://adriaticososu.com/wp-content/uploads/2024/08/slide6_960x480.jpg",
+  "site": "https://adriaticososu.com"
+ },
+ "adriaticosuc.com": {
+  "source": "https://adriaticosuc.com/wp-content/uploads/2024/08/slide6_960x480.jpg",
+  "site": "https://adriaticosuc.com"
+ },
+ "barleyhouseakron.com": {
+  "source": "https://img1.wsimg.com/isteam/ip/7ee26429-7193-4e68-8d8c-d6fde062aa8a/9%20inch%20pizza.jpg/:/rs=w:1300,h:800",
+  "site": "https://barleyhouseakron.com"
+ },
+ "budddairyfoodhall.com": {
+  "source": "https://budddairyfoodhall.com/wp-content/uploads/2026/02/elevated-wood-fired-pizza-4-900x900.jpg",
+  "site": "https://budddairyfoodhall.com"
+ },
+ "standardhall.com": {
+  "source": "https://standardhall.com/wp-content/uploads/background-menu-dinner-jpg.webp",
+  "site": "https://standardhall.com"
+ },
+ "tacologist.net": {
+  "source": "https://img1.wsimg.com/isteam/ip/7efd6710-70ea-46d8-a8fd-985996806c4e/_T011613-p-3200.jpeg/:/rs=w:1535,m",
+  "site": "https://tacologist.net"
+ },
+ "archcitytavern.com": {
+  "source": "https://archcitytavern.com/wp-content/uploads/2020/12/Arch-city-burger.jpg",
+  "site": "https://archcitytavern.com"
+ },
+ "belinicucina.com": {
+  "source": "https://s3-media0.fl.yelpcdn.com/bphoto/SQUIDB8wMiDl6DCr0B5RFg/o.jpg",
+  "site": "https://belinicucina.com"
+ },
+ "bernardscolumbus.com": {
+  "source": "https://bernardscolumbus.com/wp-content/uploads/2022/10/Short-North-Bar-6.jpg",
+  "site": "https://bernardscolumbus.com"
+ },
+ "bullandbeargrille.com": {
+  "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/e9/611c8a04fb4a179b89a84e93b2f486/:original",
+  "site": "https://bullandbeargrille.com"
+ },
+ "columbusbodega.com": {
+  "source": "https://images.squarespace-cdn.com/content/v1/59a8c751f7e0ab390ac4ceeb/1754935222300-HCV31VLIVLGF23GFZT5Y/image-asset.jpeg?format=1500w",
+  "site": "https://www.columbusbodega.com"
+ },
+ "espressoair.com": {
+  "source": "https://espressoair.com/assets/fall/brownbutter.jpg",
+  "site": "https://espressoair.com"
+ },
+ "fornoshortnorth.com": {
+  "source": "https://fornoshortnorth.com/wp-content/uploads/home-experience-stone-fired-perfection-jpg.webp",
+  "site": "https://fornoshortnorth.com"
+ },
+ "koblegrill.com": {
+  "source": "https://koblegrill.com/wp-content/uploads/2023/06/k24.jpg",
+  "site": "https://koblegrill.com"
+ },
+ "localcantina.com": {
+  "source": "https://images.squarespace-cdn.com/content/v1/639a13c5f1356a1189df280d/64d734d5-dc2d-43e4-bfbe-48b0f46847f1/Untitled+-+June+12%2C+2026+at+09.27.49.png?format=500w",
+  "site": "https://www.localcantina.com"
+ },
+ "macspizzapub.com": {
+  "source": "https://macspizzapub.com/wp-content/uploads/2021/07/Macs-Pizza-2.jpg",
+  "site": "https://macspizzapub.com"
+ },
+ "obettys.com": {
+  "source": "https://www.obettys.com/uploads/3/1/3/6/31366095/facebook-thumbnail_orig.jpg",
+  "site": "https://www.obettys.com"
+ },
+ "oxfordsushiking.com": {
+  "source": "https://static.spotapps.co/website_images/ab_websites/331511_website_v1/catering_hp.png",
+  "site": "https://oxfordsushiking.com"
+ },
+ "taqueriamixteca.net": {
+  "source": "https://img1.wsimg.com/isteam/ip/90bde55f-cbe1-403d-938a-5db0941e98ee/8B71B9A3-DC22-4854-83F2-89C8D2761FD8.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1160,h:1160",
+  "site": "https://taqueriamixteca.net"
+ },
+ "thebakerscafefindlay.com": {
+  "source": "https://images.squarespace-cdn.com/content/v1/544d0953e4b0ddfd0e5f4067/1414351461225-BCN2EH3PKI3N9ZFEMY1X/1614228_729835970399030_2955597179241144524_o.jpg?format=2500w",
+  "site": "https://thebakerscafefindlay.com"
+ },
+ "trollpub.com": {
+  "source": "https://trollpub.com/includes/images/reviewBackground.jpg",
+  "site": "https://trollpub.com/dayton/"
  }
 }

@@ -70,7 +70,7 @@
   }
   function photo(src) { return src || ''; }
   function ticket(x, hero) {
-    var st = stubText(x.d), ph = photo(x.sp.photo);
+    var st = stubText(x.d), ph = photo(x.d.photo || x.sp.photo);
     return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" style="--c:' + color(x.sp.category) + '">' +
       '<span class="ph' + (ph ? '' : x.sp.logo ? ' nophoto haslogo' : ' nophoto') + '">' + (ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : x.sp.logo ? '<img alt="" loading="lazy" src="' + esc(x.sp.logo) + '">' : '<span class="mono">' + esc(initials(x.sp.name)) + '</span>') +
       (hero ? '<span class="flag">Cheapest ' + (S.day === TODAY ? 'today' : DAYNAME[S.day]) + '</span>' : '') +

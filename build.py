@@ -35,6 +35,12 @@ SCHOOLS = [
 ]
 
 
+# Dish keywords for deal-specific photos (photos/<host>--<dish>.jpg). First match wins.
+DISHES = [("stromboli", r"stromboli"), ("cheesesteak", r"cheesesteak"), ("shawarma", r"shawarma"), ("chilidog", r"chili dog|hot dog|coney"), ("fish", r"\bfish\b"),
+          ("taco", r"taco"), ("wings", r"wing"), ("gyro", r"gyro"), ("burger", r"burger"), ("pizza", r"pizza|slice"), ("sandwich", r"sandwich|\bsubs?\b"),
+          ("apps", r"appetizer|\bapps\b|sharable|shareable|snack|munchies|flatbread|happy hour|late.night")]
+
+
 def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower().replace("'", "").replace("’", "")).strip("-")
 
@@ -84,6 +90,8 @@ def main():
     sites = {}
     if os.path.exists(os.path.join(ROOT, "data", "websites.json")):
         sites = json.load(open(os.path.join(ROOT, "data", "websites.json")))
+    if os.path.exists(os.path.join(ROOT, "data", "websites2.json")):
+        sites.update(json.load(open(os.path.join(ROOT, "data", "websites2.json"))))
     towns, researched = {}, ""
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "regions", "*.json"))):
         reg = json.load(open(path))
@@ -126,6 +134,12 @@ def main():
                 sp["logo"] = "logos/spots/" + host + ".png"
             if host and os.path.exists(os.path.join(ROOT, "photos", host + ".jpg")):  # the restaurant's own photo, see data/place_photos.json
                 sp["photo"] = "photos/" + host + ".jpg"
+            for dl in sp["deals"]:  # a photo of the dish the deal is for, when the restaurant's site has one
+                text = (dl["title"] + " " + dl["details"]).lower()
+                for key, rx in DISHES:
+                    if host and re.search(rx, text) and os.path.exists(os.path.join(ROOT, "photos", host + "--" + key + ".jpg")):
+                        dl["photo"] = "photos/" + host + "--" + key + ".jpg"
+                        break
         del t["colleges"]
         live.append(t)
     out = {"researchedOn": researched, "towns": live}

@@ -1,0 +1,199 @@
+{
+ "adriaticososu.com": {
+  "pizza": {
+   "source": "https://adriaticososu.com/wp-content/uploads/2024/08/slide6_960x480.jpg"
+  }
+ },
+ "adriaticosuc.com": {
+  "pizza": {
+   "source": "https://adriaticosuc.com/wp-content/uploads/2024/08/slide6_960x480.jpg"
+  }
+ },
+ "barleyhouseakron.com": {
+  "burger": {
+   "source": "https://img1.wsimg.com/isteam/ip/7ee26429-7193-4e68-8d8c-d6fde062aa8a/BarleyHouse_ChsBurger_2880x2304.jpg/:/rs=w:1535,m"
+  },
+  "gyro": {
+   "source": "https://img1.wsimg.com/isteam/ip/7ee26429-7193-4e68-8d8c-d6fde062aa8a/Gyro.jpg/:/rs=w:1300,h:800"
+  },
+  "pizza": {
+   "source": "https://img1.wsimg.com/isteam/ip/7ee26429-7193-4e68-8d8c-d6fde062aa8a/9%20inch%20pizza.jpg/:/rs=w:1300,h:800"
+  }
+ },
+ "barrio-tacos.com": {
+  "taco": {
+   "source": "https://barrio-tacos.com/wp-content/uploads/2026/11/adient-2-768x960.png"
+  },
+  "apps": {
+   "source": "https://barrio-tacos.com/wp-content/uploads/2023/01/catering-spread.v2.jpg"
+  }
+ },
+ "eatdrinkcrave.com": {
+  "apps": {
+   "source": "https://images.squarespace-cdn.com/content/v1/6424e2b2db04494ff339e3d7/0eaa2287-1506-4560-856a-6527b3208d85/4-hand-with-rings-dipping-flatbread-pizza-into-orange-red-sauce-eat-drink-crave-2024.jpg?format=750w"
+  }
+ },
+ "eurogyro.com": {
+  "gyro": {
+   "source": "https://eurogyro.com/wp-content/uploads/2020/03/gyrosquare3.jpg"
+  },
+  "pizza": {
+   "source": "https://eurogyro.com/wp-content/uploads/2020/03/pizzasquare.jpg"
+  }
+ },
+ "franklinsquaredeli.com": {
+  "sandwich": {
+   "source": "https://www.franklinsquaredeli.com/images/REUBEN---NEW-YORKER---17.jpg"
+  }
+ },
+ "homeslice419.com": {
+  "pizza": {
+   "source": "https://www.homeslice419.com/maglev/assets/aa8fffe0-d5e2-4628-b2c4-cae5c9aeda35-7emrmvr8zhrv8smswo9ehc7xypyo.jpeg"
+  }
+ },
+ "hubbardgrille.com": {
+  "apps": {
+   "source": "https://www.hubbardgrille.com/assets/img/pages/home/hubbard-wing-night-bg.jpg"
+  }
+ },
+ "latenightslice.com": {
+  "pizza": {
+   "source": "https://images.squarespace-cdn.com/content/63b5aca8f9d3a332f91ee66c/39246b12-80b1-406f-b25e-951b3bc16b4b/_DSC5325.jpg"
+  }
+ },
+ "locations.condadotacos.com": {
+  "taco": {
+   "source": "https://a.mktgcdn.com/p/iN80Uh-Qa-8ym3oH50012djfsiBRjs6JeFRud7QAILc/1000x1000.jpg"
+  }
+ },
+ "martinosonvine.com": {
+  "stromboli": {
+   "source": "https://static.spotapps.co/website_images/ab_websites/83644_website/catering_right.jpg"
+  },
+  "cheesesteak": {
+   "source": "https://static.spotapps.co/spots/44/39d8ec36124a65a69cd27a66dab1a5/w926"
+  }
+ },
+ "mikesplacerestaurant.com": {
+  "burger": {
+   "source": "https://static.spotapps.co/website_images/ab_websites/85809_website/about_left_1.jpg"
+  }
+ },
+ "mrzubs.com": {
+  "wings": {
+   "source": "https://static.spotapps.co/spots/f9/404c0c6ce440399d4af71b07a87cbd/full"
+  }
+ },
+ "myrustybucket.com": {
+  "pizza": {
+   "source": "https://myrustybucket.com/wp-content/uploads/2026/08/gtp.jpg"
+  }
+ },
+ "northendathens.com": {
+  "taco": {
+   "source": "https://northendathens.com/wp-content/uploads/2021/01/northendathens_food_sq-750x750.jpg"
+  }
+ },
+ "plazamexicangrill.com": {
+  "taco": {
+   "source": "https://static.spotapps.co/spots/ee/5143fa210f4539ad50b0fe63cfbb97/full"
+  },
+  "apps": {
+   "source": "https://static.spotapps.co/spots/ce/ae7f2bedca456686db21860e690033/full"
+  }
+ },
+ "southside6.com": {
+  "shawarma": {
+   "source": "https://static.spacecrafted.com/ae7fae5db4514542b0ef4e5c02f81175/i/b9b39f69f0834c3480b8d9ea1659a4bb/1/4SoifmQp45JMgBnHjfgmz/Chicken_Shawrma_Sandwich_P1000269.png"
+  },
+  "chilidog": {
+   "source": "https://static.spacecrafted.com/ae7fae5db4514542b0ef4e5c02f81175/i/d058d2fe0e574437806de3c77abd569b/1/4SoifmQp45JMgBnHjfgmz/Chili_Dog_Fries_P1000221.png"
+  },
+  "burger": {
+   "source": "https://static.spacecrafted.com/ae7fae5db4514542b0ef4e5c02f81175/i/a737f03f350f463388bad07884d7d24b/1/4SoifmQp45JMgBnHjfgmz/Route%2025%20Burger.png"
+  },
+  "gyro": {
+   "source": "https://static.spacecrafted.com/ae7fae5db4514542b0ef4e5c02f81175/i/a5cd546cb3824415b43a13c20de5f479/1/4SoifmQp45JMgBnHjfgmz/Gyro_P1000181.png"
+  },
+  "fish": {
+   "source": "https://static.spacecrafted.com/ae7fae5db4514542b0ef4e5c02f81175/i/a0339a9237d740d3b83cf973e0662c1f/1/4SoifmQp45JMgBnHjfgmz/Fish_Fries2_P1000142.png"
+  },
+  "wings": {
+   "source": "https://static.spacecrafted.com/ae7fae5db4514542b0ef4e5c02f81175/i/b42d3e198a87426bb75af9272981b592/1/4SoifmQp45JMgBnHjfgmz/Chicken_Wings_P1000147.png"
+  }
+ },
+ "standardhall.com": {
+  "burger": {
+   "source": "https://standardhall.com/wp-content/uploads/background-menu-dinner-jpg.webp"
+  }
+ },
+ "tacologist.net": {
+  "apps": {
+   "source": "https://img1.wsimg.com/isteam/ip/7efd6710-70ea-46d8-a8fd-985996806c4e/guacamole-foto-heroe.jpg/:/cr=t:2.93%25,l:0%25,w:94.14%25,h:94.14%25/rs=w:1535,m"
+  }
+ },
+ "thepearlrestaurant.com": {
+  "burger": {
+   "source": "https://thepearlrestaurant.com/wp-content/uploads/sb-instagram-feed-images/915422494_18396593500161706_223067938381287713_nfull.webp"
+  }
+ },
+ "thepigskin.com": {
+  "burger": {
+   "source": "https://cdn.prod.website-files.com/5d965b7476e1ed469f070cf1/5d96649076e1ed62ea07c9ba_The%20Pigskin%20Hamburger.jpg"
+  }
+ },
+ "varsityclubyoungstown.com": {
+  "taco": {
+   "source": "https://www.varsityclubyoungstown.com/wp-content/uploads/vc-tacos.webp"
+  },
+  "wings": {
+   "source": "https://www.varsityclubyoungstown.com/wp-content/uploads/varsityclub-wings.jpg"
+  }
+ },
+ "archcitytavern.com": {
+  "burger": {
+   "source": "https://archcitytavern.com/wp-content/uploads/2020/12/Arch-city-burger.jpg"
+  },
+  "pizza": {
+   "source": "https://archcitytavern.com/wp-content/uploads/2026/03/pepp-and-cheese-pizza.jpg"
+  }
+ },
+ "bernardscolumbus.com": {
+  "burger": {
+   "source": "https://bernardscolumbus.com/wp-content/uploads/2022/10/Short-North-Bar-6.jpg"
+  }
+ },
+ "bullandbeargrille.com": {
+  "apps": {
+   "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/e9/611c8a04fb4a179b89a84e93b2f486/:original"
+  }
+ },
+ "columbusbodega.com": {
+  "taco": {
+   "source": "https://images.squarespace-cdn.com/content/v1/59a8c751f7e0ab390ac4ceeb/1752081872384-WRO5XQB90FLG3W14DMFJ/image-asset.jpeg?format=1500w"
+  },
+  "wings": {
+   "source": "https://images.squarespace-cdn.com/content/v1/59a8c751f7e0ab390ac4ceeb/1754066459729-Q8AOMMWPKF0WLNL5P8GD/image-asset.jpeg?format=1500w"
+  }
+ },
+ "fornoshortnorth.com": {
+  "pizza": {
+   "source": "https://fornoshortnorth.com/wp-content/uploads/home-experience-stone-fired-perfection-jpg.webp"
+  }
+ },
+ "localcantina.com": {
+  "taco": {
+   "source": "https://images.squarespace-cdn.com/content/v1/639a13c5f1356a1189df280d/64d734d5-dc2d-43e4-bfbe-48b0f46847f1/Untitled+-+June+12%2C+2026+at+09.27.49.png?format=500w"
+  }
+ },
+ "taqueriamixteca.net": {
+  "taco": {
+   "source": "https://img1.wsimg.com/isteam/ip/90bde55f-cbe1-403d-938a-5db0941e98ee/blob-a2be217.png/:/rs=w:1160,h:939"
+  }
+ },
+ "trollpub.com": {
+  "apps": {
+   "source": "https://trollpub.com/includes/images/reviewBackground.jpg"
+  }
+ }
+}
