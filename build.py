@@ -35,6 +35,29 @@ SCHOOLS = [
 ]
 
 
+# Which example food photo (data/photos.json) fits a deal or a place. First match wins.
+PHOTO_RULES = [(r"wing", "wings"), (r"taco", "tacos"), (r"calzone", "calzone"), (r"pizza|slice", "pizza"), (r"burger|smash", "burger"),
+               (r"burrito", "burrito"), (r"quesadilla", "quesadilla"), (r"enchilada", "enchiladas"), (r"nacho|queso|guac|salsa", "nachos"),
+               (r"pasta|spaghetti|lasagna", "pasta"), (r"\bmac\b|macaroni", "mac"), (r"sushi|\broll", "sushi"), (r"gyro", "gyro"),
+               (r"\bsubs?\b|sandwich|wrap|hoagie", "sandwich"), (r"tender|chicken|nugget", "chicken"), (r"prime rib|steak", "steak"),
+               (r"\bribs?\b|bbq|brisket", "bbq"), (r"coney|hot dog|\bdogs?\b", "hotdog"), (r"chili", "chili"), (r"donut|doughnut", "donut"),
+               (r"bagel", "bagel"), (r"coffee|latte|espresso", "coffee"), (r"cookie", "cookies"), (r"ice cream|custard|blizzard|cone|shake", "icecream"),
+               (r"boba|bubble tea|milk tea", "boba"), (r"pancake|breakfast|brunch", "breakfast"), (r"crostini|bruschetta", "crostini"),
+               (r"bowl", "bowl"), (r"salad", "salad"), (r"pretzel", "pretzel"), (r"fries", "fries"), (r"appetizer|\bapps\b|sharable|shareable", "apps"),
+               (r"ramen|noodle", "noodles"), (r"smoothie", "smoothie")]
+CAT_PHOTO = {"Pizza": "pizza", "Burgers": "burger", "Mexican": "tacos", "Sandwiches & Subs": "sandwich", "Wings & Chicken": "wings", "Asian": "asian",
+             "Boba & Tea": "boba", "Coffee & Bakery": "coffee", "Breakfast & Brunch": "breakfast", "Bar & Grill": "burger", "Dessert & Ice Cream": "icecream",
+             "BBQ": "bbq", "Mediterranean": "gyro", "Healthy & Bowls": "bowl", "Fast Food": "burger", "Other": "plate"}
+
+
+def pick_photo(text, photos):
+    t = text.lower()
+    for rx, key in PHOTO_RULES:
+        if key in photos and re.search(rx, t):
+            return key
+    return ""
+
+
 def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower().replace("'", "").replace("’", "")).strip("-")
 
@@ -81,6 +104,12 @@ def main():
         for c in json.load(open(chain_path))["chains"]:
             chains[norm(c["name"])] = c
 
+    sites, photos = {}, {}
+    if os.path.exists(os.path.join(ROOT, "data", "websites.json")):
+        sites = json.load(open(os.path.join(ROOT, "data", "websites.json")))
+    if os.path.exists(os.path.join(ROOT, "data", "photos.json")):
+        photos = {k: dict(v, src="photos/" + k + ".jpg") for k, v in json.load(open(os.path.join(ROOT, "data", "photos.json"))).items()
+                  if os.path.exists(os.path.join(ROOT, "photos", k + ".jpg"))}
     towns, researched = {}, ""
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "regions", "*.json"))):
         reg = json.load(open(path))
@@ -108,7 +137,7 @@ def main():
                 town["spots"].append({
                     "id": sid, "name": name, "category": s.get("category") if s.get("category") in CATS else "Other",
                     "local": bool(s.get("local")), "signature": bool(s.get("signature")), "address": s.get("address") or "",
-                    "website": s.get("website") or (chain or {}).get("website", "") or brand, "blurb": s.get("blurb") or "",
+                    "website": sites.get(t["id"] + "|" + s["name"]) or s.get("website") or (chain or {}).get("website", "") or brand, "blurb": s.get("blurb") or "",
                     "price": s.get("price") or "", "sourceUrl": s.get("sourceUrl") or "", "deals": deals})
 
     live = []
@@ -117,13 +146,20 @@ def main():
         t["school"] = {"name": name, "abbr": abbr, "color": col, "ink": ink, "url": url, "also": also}
         if os.path.exists(os.path.join(ROOT, "logos", "schools", tid + ".png")):
             t["school"]["logo"] = "logos/schools/" + tid + ".png"
+        for sp in t["spots"]:  # example food photos
+            cat = CAT_PHOTO.get(sp["category"], "plate")
+            sp["photo"] = pick_photo(sp["name"], photos) or (cat if cat in photos else "")
+            for dl in sp["deals"]:
+                key = pick_photo(dl["title"], photos) or pick_photo(dl["details"], photos)
+                if key:
+                    dl["photo"] = key
         for sp in t["spots"]:  # site icons fetched by tools/fetch_logos.py
             host = re.sub(r"^www\.", "", re.sub(r"^https?://([^/]+).*$", r"\1", sp["website"])) if sp["website"] else ""
             if host and os.path.exists(os.path.join(ROOT, "logos", "spots", host + ".png")):
                 sp["logo"] = "logos/spots/" + host + ".png"
         del t["colleges"]
         live.append(t)
-    out = {"researchedOn": researched, "towns": live}
+    out = {"researchedOn": researched, "photos": photos, "towns": live}
     with open(os.path.join(ROOT, "data", "kord.json"), "w") as f:
         json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
 

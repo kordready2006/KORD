@@ -113,7 +113,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 .tbody h3 { margin: 0; font: 800 17px/1.15 var(--display); letter-spacing: -.01em; }
 .tbody .at { font-weight: 700; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .tbody p { margin: 0; color: var(--muted); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 3px; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
 .tag { font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 2px 7px; border-radius: 6px; background: var(--chip); color: var(--muted); }
 .tag.sig { background: var(--sun); color: var(--sun-ink); }
 .tag.stu { background: var(--cobalt); color: #fff; }
@@ -128,6 +128,36 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 .ticket.hero .tbody p { color: inherit; opacity: .8; font-size: 14px; }
 .ticket.hero .tag { background: rgba(127,127,127,.3); color: inherit; }
 .list { display: flex; flex-direction: column; gap: 10px; }
+
+/* deal photo cards */
+.dcard { --c: var(--hot); display: grid; grid-template-columns: 118px minmax(0, 1fr); width: 100%; text-align: left; background: var(--card); border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; }
+.ph { position: relative; display: block; background: var(--c); min-height: 112px; }
+.ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.price { position: absolute; left: 8px; bottom: 8px; max-width: calc(100% - 16px); background: var(--sun); color: var(--sun-ink); font: 800 20px/1 var(--display); letter-spacing: -.02em; padding: 6px 9px; border-radius: 10px; transform: rotate(-4deg); box-shadow: 0 2px 0 rgba(0,0,0,.4); }
+.price.long { font-size: 13.5px; }
+.dbody { display: flex; flex-direction: column; justify-content: center; gap: 7px; padding: 12px 14px; min-width: 0; }
+.dtitle { font: 800 17px/1.15 var(--display); letter-spacing: -.01em; }
+.who { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.5px; min-width: 0; }
+.who > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.lg.sm { width: 26px; height: 26px; border-radius: 8px; font-size: 10px; }
+.lg.sm img { padding: 2px; }
+.lg img.cover { object-fit: cover; padding: 0; }
+.ddet { color: var(--muted); font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.dcard.hero { grid-template-columns: 1fr; }
+.dcard.hero .ph { aspect-ratio: 16 / 10; min-height: 0; }
+.dcard.hero .ph::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.4), rgba(0,0,0,0) 34%, rgba(0,0,0,0) 58%, rgba(0,0,0,.5)); }
+.dcard.hero .price { z-index: 1; left: 14px; bottom: 14px; font-size: 42px; padding: 8px 14px; border-radius: 14px; }
+.dcard.hero .price.long { font-size: 25px; }
+.flag { position: absolute; z-index: 1; left: 14px; top: 12px; background: var(--hot); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; }
+.dcard.hero .dbody { padding: 14px 16px 16px; gap: 9px; }
+.dcard.hero .dtitle { font-size: 24px; }
+.dcard.hero .who { font-size: 15px; }
+.dcard.hero .lg.sm { width: 34px; height: 34px; border-radius: 10px; }
+.banner { position: relative; height: 150px; border-radius: 16px; overflow: hidden; background: var(--c); flex: none; }
+.banner img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.credits { font-size: 12px; color: var(--muted); }
+.credits summary { font-weight: 700; cursor: pointer; padding: 6px 0; }
+.credits li { margin: 4px 0; overflow-wrap: anywhere; }
 
 /* place rows */
 .row { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; padding: 10px 12px; background: var(--card); border-radius: 14px; box-shadow: var(--shadow); }
@@ -230,6 +260,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   function logo(sp, cls) {
     var d = domain(sp.website), img = '';
     if (sp.logo) img = '<img alt="" loading="lazy" data-logo src="' + esc(sp.logo) + '">';
+    else if (photo(sp.photo)) img = '<img alt="" loading="lazy" class="cover" data-logo src="' + esc(photo(sp.photo)) + '">';
     else if (d && !NOLOGO.test(d + '.')) img = '<img alt="" loading="lazy" data-logo src="' + fav(d) + '">';
     return '<span class="lg ' + (cls || '') + '" style="--c:' + color(sp.category) + '"><span>' + esc(initials(sp.name)) + '</span>' + img + '</span>';
   }
@@ -261,13 +292,18 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     if (sp.signature) h += '<span class="tag sig">Student favorite</span>';
     if (d && d.studentOnly) h += '<span class="tag stu">Show student ID</span>';
     if (!sp.local) h += '<span class="tag">Chain</span>';
-    return h ? '<div class="tags">' + h + '</div>' : '';
+    return h ? '<span class="tags">' + h + '</span>' : '';
   }
+  function photo(key) { var p = key && DATA.photos && DATA.photos[key]; return p ? p.src : ''; }
   function ticket(x, hero) {
-    var st = stubText(x.d);
-    return '<button class="ticket' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" style="--c:' + color(x.sp.category) + '">' +
-      '<div class="stub"><b class="' + (st.length > 5 ? 'long' : '') + '">' + esc(st) + '</b>' + (hero ? '<small>Cheapest ' + (S.day === TODAY ? 'today' : DAYNAME[S.day]) + '</small>' : '') + '</div>' +
-      '<div class="tbody"><h3>' + esc(x.d.title) + '</h3><div class="at">' + esc(x.sp.name) + '</div>' + (hero ? '<p>' + esc(x.d.details) + '</p>' : '') + tagsHtml(x.sp, x.d) + '</div></button>';
+    var st = stubText(x.d), ph = photo(x.d.photo || x.sp.photo);
+    return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" style="--c:' + color(x.sp.category) + '">' +
+      '<span class="ph">' + (ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : '') +
+      (hero ? '<span class="flag">Cheapest ' + (S.day === TODAY ? 'today' : DAYNAME[S.day]) + '</span>' : '') +
+      '<span class="price' + (st.length > 5 ? ' long' : '') + '">' + esc(st) + '</span></span>' +
+      '<span class="dbody"><span class="dtitle">' + esc(x.d.title) + '</span>' +
+      '<span class="who">' + logo(x.sp, 'sm') + '<span>' + esc(x.sp.name) + '</span></span>' +
+      (hero ? '<span class="ddet">' + esc(x.d.details) + '</span>' : '') + tagsHtml(x.sp, x.d) + '</span></button>';
   }
 
   /* step 1: pick a school */
@@ -291,7 +327,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
       h += ticket(list[0], true);
       if (list.length > 1) h += '<div class="sechead"><h2>More deals</h2><span>' + (list.length - 1) + '</span></div><div class="list">' + list.slice(1).map(function (x) { return ticket(x); }).join('') + '</div>';
     }
-    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go.</p>';
+    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Food photos show the kind of dish, not the restaurant\'s own plate.</p>';
   }
   function spotRow(sp) {
     var lo = spotLow(sp), n = (sp.deals || []).length, r = U.ratings[sp.id];
@@ -320,7 +356,13 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
       var sp = SPOTS[id];
       return '<button class="row" data-spot="' + esc(id) + '">' + logo(sp) + '<span class="mid"><h3>' + esc(sp.name) + '</h3><p><span class="mystars">' + '★'.repeat(U.ratings[id]) + '</span></p>' + (U.notes[id] ? '<p class="quote">' + esc(U.notes[id]) + '</p>' : '') + '</span></button>';
     }).join('') + '</div>' : '<div class="empty"><b>No reviews yet</b>Open any place and tap the stars.</div>';
-    return h + '<p class="note">Your profile and reviews are saved on this phone.</p>';
+    h += '<p class="note">Your profile and reviews are saved on this phone.</p>';
+    var keys = Object.keys(DATA.photos || {});
+    if (keys.length) h += '<details class="credits"><summary>Photo credits</summary><ul>' + keys.map(function (k) {
+      var p = DATA.photos[k], u = safeUrl(p.page);
+      return '<li>' + (u ? '<a target="_blank" rel="noopener" href="' + esc(u) + '">' + esc(p.title) + '</a>' : esc(p.title)) + ' by ' + esc(p.artist || 'unknown') + ', ' + esc(p.license) + ', via Wikimedia Commons</li>';
+    }).join('') + '</ul></details>';
+    return h;
   }
 
   function render() {
@@ -348,7 +390,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   function spotSheet(id) {
     var sp = SPOTS[id]; if (!sp) return;
     var web = safeUrl(sp.website);
-    var h = '<div class="spothead">' + logo(sp, 'big') + '<div><h2>' + esc(sp.name) + '</h2><p class="sub">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</p>' + tagsHtml(sp) + '</div></div>';
+    var h = (photo(sp.photo) ? '<div class="banner" style="--c:' + color(sp.category) + '"><img alt="" src="' + esc(photo(sp.photo)) + '"></div>' : '') + '<div class="spothead">' + logo(sp, 'big') + '<div><h2>' + esc(sp.name) + '</h2><p class="sub">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</p>' + tagsHtml(sp) + '</div></div>';
     if (sp.blurb) h += '<p style="margin:0">' + esc(sp.blurb) + '</p>';
     h += '<div class="btnrow">' + (web ? '<a class="btn hot" target="_blank" rel="noopener" href="' + esc(web) + '">Website</a>' : '<a class="btn hot" target="_blank" rel="noopener" href="https://www.google.com/search?q=' + encodeURIComponent(sp.name + ' ' + (sp.address || town().name + ' Ohio')) + '">Look it up</a>') +
       '<a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(sp.name + ' ' + (sp.address || town().name + ' Ohio')) + '">Directions</a></div>';

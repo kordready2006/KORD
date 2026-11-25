@@ -1,0 +1,44 @@
+{
+ "wings": {
+  "title": "Buffalo wings-01",
+  "artist": "Clotee Pridgen Allochuku",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Buffalo_wings-01.jpg"
+ },
+ "tacos": {
+  "title": "Al pastor tacos (34965815632)",
+  "artist": "T.Tseng",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Al_pastor_tacos_(34965815632).jpg"
+ },
+ "burger": {
+  "title": "Cheeseburger and fries",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheeseburger_and_fries.jpg"
+ },
+ "burrito": {
+  "title": "Smothered breakfast burrito",
+  "artist": "Jeffrey Beall",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Smothered_breakfast_burrito.JPG"
+ },
+ "nachos": {
+  "title": "Nachos at Maya Restaurant - 2021-10-03 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Nachos_at_Maya_Restaurant_-_2021-10-03_-_Sarah_Stierch.jpg"
+ },
+ "apps": {
+  "title": "Fried Mozzarella Sticks at Millers Pub (301456962)",
+  "artist": "Kim Scarborough from Chicago, IL",
+  "license": "CC BY-SA 2.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Fried_Mozzarella_Sticks_at_Millers_Pub_(301456962).jpg"
+ },
+ "fries": {
+  "title": "Basket of French Fries",
+  "artist": "Ceeseven",
+  "license": "CC BY-SA 4.0",
+  "page": "https://commons.wikimedia.org/wiki/File:Basket_of_French_Fries.JPG"
+ }
+}
