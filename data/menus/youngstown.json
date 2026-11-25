@@ -1,0 +1,397 @@
+{
+ "youngstown|Bull & Bear Grille and Tavern": {
+  "source": "https://bullandbeargrille.com/food-menu",
+  "items": [
+   {
+    "name": "Hot Chips",
+    "price": "$8.95",
+    "section": "Starters"
+   },
+   {
+    "name": "Bull Chips",
+    "price": "$7.90",
+    "section": "Starters"
+   },
+   {
+    "name": "Bullbearian Pretzel",
+    "price": "$11.99",
+    "section": "Starters"
+   },
+   {
+    "name": "Pierogi",
+    "price": "$9.99",
+    "section": "Starters"
+   },
+   {
+    "name": "Wisconsin Cheese Curds",
+    "price": "$10.79",
+    "section": "Starters"
+   },
+   {
+    "name": "Pickle Chips",
+    "price": "$9.59",
+    "section": "Starters"
+   },
+   {
+    "name": "Cheese Sticks",
+    "price": "$9.99",
+    "section": "Starters"
+   },
+   {
+    "name": "Queso Cheese Dip",
+    "price": "$9.85",
+    "section": "Starters"
+   },
+   {
+    "name": "Loaded Chicken Nachos",
+    "price": "$11.99",
+    "section": "Starters"
+   },
+   {
+    "name": "BB sampler",
+    "price": "$16.99",
+    "section": "Starters"
+   },
+   {
+    "name": "Chips & Dip",
+    "price": "$7.45",
+    "section": "Starters"
+   },
+   {
+    "name": "Pulled Pork Nachos",
+    "price": "$15.95",
+    "section": "Starters"
+   },
+   {
+    "name": "Grilled Chicken",
+    "price": "$15.95",
+    "section": "Skewers"
+   },
+   {
+    "name": "Grilled Shrimp",
+    "price": "$17.95",
+    "section": "Skewers"
+   },
+   {
+    "name": "Filet Tips",
+    "price": "$17.95",
+    "section": "Skewers"
+   },
+   {
+    "name": "Mixed Grill",
+    "price": "$17.95",
+    "section": "Skewers"
+   },
+   {
+    "name": "Boneless",
+    "price": "",
+    "section": "Wings"
+   },
+   {
+    "name": "Traditional",
+    "price": "",
+    "section": "Wings"
+   },
+   {
+    "name": "Breaded Tenders",
+    "price": "",
+    "section": "Wings"
+   },
+   {
+    "name": "Gourmet Mac & Cheese",
+    "price": "$10.75",
+    "section": "Mac N Cheese"
+   },
+   {
+    "name": "Hot Buffalo Chicken",
+    "price": "$15.80",
+    "section": "Mac N Cheese"
+   },
+   {
+    "name": "Cheeseburger",
+    "price": "$15.80",
+    "section": "Mac N Cheese"
+   },
+   {
+    "name": "Buttered Lobster",
+    "price": "$16.90",
+    "section": "Mac N Cheese"
+   },
+   {
+    "name": "Brier Hill Pizza",
+    "price": "$12.89",
+    "section": "Pizza"
+   },
+   {
+    "name": "White Pizza",
+    "price": "$12.99",
+    "section": "Pizza"
+   },
+   {
+    "name": "Meat-Za Pizza",
+    "price": "$17.85",
+    "section": "Pizza"
+   },
+   {
+    "name": "Supreme Veggie Pizza",
+    "price": "$15.99",
+    "section": "Pizza"
+   },
+   {
+    "name": "'Roni Lovers Pizza",
+    "price": "$15.75",
+    "section": "Pizza"
+   },
+   {
+    "name": "Cheese Pizza",
+    "price": "$11.50",
+    "section": "Pizza"
+   },
+   {
+    "name": "BBQ Chicken Pizza",
+    "price": "$16.95",
+    "section": "Pizza"
+   },
+   {
+    "name": "Chicken Bacon Ranch Pizza",
+    "price": "$16.99",
+    "section": "Pizza"
+   },
+   {
+    "name": "Buffalo Chicken Ranch Pizza",
+    "price": "$16.99",
+    "section": "Pizza"
+   },
+   {
+    "name": "Classic Pepperoni",
+    "price": "$13.99",
+    "section": "Pizza"
+   },
+   {
+    "name": "THIN crust Pepperoni",
+    "price": "$16.80",
+    "section": "Pizza"
+   },
+   {
+    "name": "THIN crust cheese",
+    "price": "$14.75",
+    "section": "Pizza"
+   },
+   {
+    "name": "Lobster Roll",
+    "price": "$15.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Fish Sandwich",
+    "price": "$13.85",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Valley Steak Hoagie",
+    "price": "$14.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Rooster",
+    "price": "$12.85",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Hawaiian Chicken Sandwich",
+    "price": "$13.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Bacon Ranch",
+    "price": "$13.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Raspberry Bourbon Bull & Boar",
+    "price": "$14.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Bull & Bear Salad",
+    "price": "$14.99",
+    "section": "Salads"
+   },
+   {
+    "name": "Chicken Cobb Salad",
+    "price": "$15.89",
+    "section": "Salads"
+   },
+   {
+    "name": "Grilled Skewer Salad",
+    "price": "$14.75",
+    "section": "Salads"
+   },
+   {
+    "name": "Buffalo Chicken Salad",
+    "price": "$14.99",
+    "section": "Salads"
+   },
+   {
+    "name": "Berry Salad",
+    "price": "$15.85",
+    "section": "Salads"
+   },
+   {
+    "name": "Bull & Bear Side Salad",
+    "price": "$4.99",
+    "section": "Salads"
+   },
+   {
+    "name": "Bull Burger",
+    "price": "$14.50",
+    "section": "Burgers"
+   },
+   {
+    "name": "The Grizzly",
+    "price": "$15.99",
+    "section": "Burgers"
+   },
+   {
+    "name": "Rise N' Shine Burger",
+    "price": "$15.25",
+    "section": "Burgers"
+   },
+   {
+    "name": "Babe's Bacon Burger",
+    "price": "$15.99",
+    "section": "Burgers"
+   },
+   {
+    "name": "Farmhouse Burger",
+    "price": "$17.99",
+    "section": "Burgers"
+   },
+   {
+    "name": "Cheese Curd Burger",
+    "price": "$15.65",
+    "section": "Burgers"
+   },
+   {
+    "name": "Beyond Burger",
+    "price": "$14.75",
+    "section": "Burgers"
+   },
+   {
+    "name": "Bullpen Burger",
+    "price": "$16.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Fiesta Burger",
+    "price": "$15.99",
+    "section": "Burgers"
+   },
+   {
+    "name": "Seasoned Fries",
+    "price": "$4.99",
+    "section": "Sides"
+   },
+   {
+    "name": "Hot Chips (side)",
+    "price": "$3.99",
+    "section": "Sides"
+   },
+   {
+    "name": "White Cheddar Mac",
+    "price": "$4.99",
+    "section": "Sides"
+   },
+   {
+    "name": "Coleslaw",
+    "price": "$4.99",
+    "section": "Sides"
+   },
+   {
+    "name": "Onion Ring (side)",
+    "price": "$4.99",
+    "section": "Sides"
+   },
+   {
+    "name": "Side Salad",
+    "price": "$4.99",
+    "section": "Sides"
+   },
+   {
+    "name": "Fish Platter",
+    "price": "$16.85",
+    "section": "Entree's"
+   },
+   {
+    "name": "Strawberry Cheesecake",
+    "price": "$9.80",
+    "section": "Desserts"
+   },
+   {
+    "name": "Blueberry Cheesecake",
+    "price": "$9.80",
+    "section": "Desserts"
+   },
+   {
+    "name": "Turtle cheesecake",
+    "price": "$9.80",
+    "section": "Desserts"
+   },
+   {
+    "name": "Oreo Cheesecake",
+    "price": "$9.80",
+    "section": "Desserts"
+   },
+   {
+    "name": "Elephant Ear",
+    "price": "$9.75",
+    "section": "Desserts"
+   },
+   {
+    "name": "Deep fried cheesecake",
+    "price": "$10.50",
+    "section": "Desserts"
+   },
+   {
+    "name": "Blondie cookie skillet",
+    "price": "$8.75",
+    "section": "Desserts"
+   },
+   {
+    "name": "Hot fudge brownie skillet",
+    "price": "$8.75",
+    "section": "Desserts"
+   },
+   {
+    "name": "Cookies & Cream",
+    "price": "$7.95",
+    "section": "Skillets"
+   },
+   {
+    "name": "Triple Threat",
+    "price": "$7.95",
+    "section": "Skillets"
+   },
+   {
+    "name": "Blondie",
+    "price": "$7.95",
+    "section": "Skillets"
+   },
+   {
+    "name": "Hot Fudge Brownie",
+    "price": "$7.95",
+    "section": "Skillets"
+   },
+   {
+    "name": "Mint Chocolate Cip Brownie",
+    "price": "$7.95",
+    "section": "Skillets"
+   },
+   {
+    "name": "Ice Cream Cup",
+    "price": "$3.65",
+    "section": "Ice Cream"
+   }
+  ]
+ }
+}

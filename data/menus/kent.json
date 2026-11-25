@@ -1,0 +1,782 @@
+{
+ "kent|Mike's Place": {
+  "source": "https://mikesplacerestaurant.com/kent-mike-s-place-food-menu",
+  "items": [
+   {
+    "name": "All American Breakfast",
+    "price": "$11.99",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Keep Mamma Away from Those Spuds",
+    "price": "$9.99",
+    "section": "Breakfast"
+   },
+   {
+    "name": "The “Big Beefer” 10 Oz Strip Steak Breakfast",
+    "price": "$18.99",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Generic Ho - Hum Eggs & Hash Browns",
+    "price": "$8.99",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Tobin’s Teriyaki Chicken",
+    "price": "$14.99",
+    "section": "Flatbreads"
+   },
+   {
+    "name": "Hot Honey Flatbread",
+    "price": "$13.99",
+    "section": "Flatbreads"
+   },
+   {
+    "name": "Buffalo Chicken Flatrbead",
+    "price": "$12.99",
+    "section": "Flatbreads"
+   },
+   {
+    "name": "CBR Flatbread",
+    "price": "$12.99",
+    "section": "Flatbreads"
+   },
+   {
+    "name": "Cinnamon French Toast",
+    "price": "$9.99",
+    "section": "Pour Some Syrup On Me"
+   },
+   {
+    "name": "Cinnamon French Toast Meal",
+    "price": "$13.99",
+    "section": "Pour Some Syrup On Me"
+   },
+   {
+    "name": "Sweet Roll French Toast",
+    "price": "$12.99",
+    "section": "Pour Some Syrup On Me"
+   },
+   {
+    "name": "Homemade Cinnamon Sweet Roll",
+    "price": "$7.99",
+    "section": "Pour Some Syrup On Me"
+   },
+   {
+    "name": "Country Style Omelet",
+    "price": "$13.99",
+    "section": "Omelettes"
+   },
+   {
+    "name": "The Hangover Helper",
+    "price": "$14.99",
+    "section": "Omelettes"
+   },
+   {
+    "name": "The Brooklyn & Bronx Smasher",
+    "price": "$13.99",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Redneck Omelet",
+    "price": "$13.99",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Buffalo Mac & Cheese Quesadilla",
+    "price": "$11.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Get Loaded Tots",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Quesadilla",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Pickles",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Stanimal’s Southwestern Turkey Club",
+    "price": "$10.99",
+    "section": "Wrapped & Warped"
+   },
+   {
+    "name": "The Warped Migrant Madness",
+    "price": "$11.99",
+    "section": "Wrapped & Warped"
+   },
+   {
+    "name": "Mike’s Place BBQ Chicken Wrap",
+    "price": "$11.99",
+    "section": "Wrapped & Warped"
+   },
+   {
+    "name": "The Loaded Diaper “Chris Made Me Do It”",
+    "price": "$13.99",
+    "section": "Wrapped & Warped"
+   },
+   {
+    "name": "8 Piece Wing Dinner",
+    "price": "$11.99",
+    "section": "Jumbo Wings & More"
+   },
+   {
+    "name": "6 Piece Wing Basket",
+    "price": "$7.99",
+    "section": "Jumbo Wings & More"
+   },
+   {
+    "name": "10 Piece Wing Basket",
+    "price": "$10.99",
+    "section": "Jumbo Wings & More"
+   },
+   {
+    "name": "Basket of Tenders",
+    "price": "$10.99",
+    "section": "Jumbo Wings & More"
+   },
+   {
+    "name": "Mel, the Rock of Ole Philly",
+    "price": "$15.99",
+    "section": "Sumo The 12 Incher"
+   },
+   {
+    "name": "Farmer Mike’s Gourmet Concoction",
+    "price": "$16.99",
+    "section": "Sumo The 12 Incher"
+   },
+   {
+    "name": "Shaved Mavens 57 Way Steak Sandwich",
+    "price": "$14.99",
+    "section": "Sumo The 12 Incher"
+   },
+   {
+    "name": "Roman Shuffle “The Real Burger”",
+    "price": "$15.99",
+    "section": "Sumo The 12 Incher"
+   },
+   {
+    "name": "The Vulture",
+    "price": "$13.49",
+    "section": "Homemade & Fresh Burgers R US"
+   },
+   {
+    "name": "Geoff’s Finally Gone! Italian Burg Orgy",
+    "price": "$13.99",
+    "section": "Homemade & Fresh Burgers R US"
+   },
+   {
+    "name": "The Breakfast Burg Slammer",
+    "price": "$13.99",
+    "section": "Homemade & Fresh Burgers R US"
+   },
+   {
+    "name": "The Sriracha Yedi Pickle Monster Burg",
+    "price": "$13.99",
+    "section": "Homemade & Fresh Burgers R US"
+   },
+   {
+    "name": "Jedi Jan’s Sandwich of Meat Perversion",
+    "price": "$13.99",
+    "section": "Sandwich Section"
+   },
+   {
+    "name": "Nana K's Adult Grill Cheese",
+    "price": "$6.99",
+    "section": "Sandwich Section"
+   },
+   {
+    "name": "Smoothered Mac",
+    "price": "$10.99",
+    "section": "Sandwich Section"
+   },
+   {
+    "name": "Darn It! Mac’s in The Buff Again",
+    "price": "$10.99",
+    "section": "Sandwich Section"
+   },
+   {
+    "name": "Slow Cooked St. Louis Pork Ribs",
+    "price": "$17.99",
+    "section": "Award Winning BBQ Selections"
+   },
+   {
+    "name": "2 BBQ or Grilled Boneless Chicken Breast",
+    "price": "$13.99",
+    "section": "Award Winning BBQ Selections"
+   },
+   {
+    "name": "Smoked Beef Brisket with Mac & Cheese",
+    "price": "$16.99",
+    "section": "Award Winning BBQ Selections"
+   },
+   {
+    "name": "Rockin Reamans BBQ Lovers Sampler",
+    "price": "$24.99",
+    "section": "Award Winning BBQ Selections"
+   },
+   {
+    "name": "1/2# of Breaded Shrimp",
+    "price": "$16.99",
+    "section": "Hobe Sounds Fish Company"
+   },
+   {
+    "name": "The Reagga Reefers Seafood Combo",
+    "price": "$19.99",
+    "section": "Hobe Sounds Fish Company"
+   },
+   {
+    "name": "Baked Seasoned White Fish Filets",
+    "price": "$15.99",
+    "section": "Hobe Sounds Fish Company"
+   },
+   {
+    "name": "Basket of Boneless Tenders & Fries",
+    "price": "$13.99",
+    "section": "Items Below Receive One Dinner Side!"
+   },
+   {
+    "name": "Dougy’s “Bat out Of Hell” Meatloaf",
+    "price": "$14.99",
+    "section": "Items Below Receive One Dinner Side!"
+   },
+   {
+    "name": "Country Fried Steak Dinner",
+    "price": "$13.99",
+    "section": "Items Below Receive One Dinner Side!"
+   },
+   {
+    "name": "U.S Fries",
+    "price": "",
+    "section": "Sides"
+   },
+   {
+    "name": "Mashed Potatoes",
+    "price": "",
+    "section": "Sides"
+   },
+   {
+    "name": "Dinner Salad",
+    "price": "",
+    "section": "Sides"
+   },
+   {
+    "name": "Basket Curly Fries",
+    "price": "$2.00",
+    "section": "Premium Sides"
+   },
+   {
+    "name": "Basket of Onion Rings",
+    "price": "$2.00",
+    "section": "Premium Sides"
+   },
+   {
+    "name": "Basket Tater Tot & Ranch",
+    "price": "$2.00",
+    "section": "Premium Sides"
+   },
+   {
+    "name": "Italian Meatlovers Pasta",
+    "price": "$16.99",
+    "section": "Wild Pasta Creations & Pizza"
+   },
+   {
+    "name": "Tuscan Pasta Pollo Garganelli",
+    "price": "$16.99",
+    "section": "Wild Pasta Creations & Pizza"
+   },
+   {
+    "name": "Shrimp Tortelini",
+    "price": "$16.99",
+    "section": "Wild Pasta Creations & Pizza"
+   },
+   {
+    "name": "The Chef Supreme",
+    "price": "$12.99",
+    "section": "Light & Lean"
+   },
+   {
+    "name": "Hari Kari’s Kamikaze Oriental Salad",
+    "price": "$12.99",
+    "section": "Light & Lean"
+   },
+   {
+    "name": "Key West Jeff’s Grilled Chicken Salad",
+    "price": "$13.99",
+    "section": "Light & Lean"
+   },
+   {
+    "name": "Homemade Chicken Noodle",
+    "price": "$4.29",
+    "section": "Homemade Soups & Chili"
+   },
+   {
+    "name": "Homemade Beef Vegetable",
+    "price": "$4.29",
+    "section": "Homemade Soups & Chili"
+   },
+   {
+    "name": "Momma K’s Full of Beef Next Day Chil",
+    "price": "$4.69",
+    "section": "Homemade Soups & Chili"
+   },
+   {
+    "name": "Grilled Cheese",
+    "price": "$7.29",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Cheeseburger Sliders",
+    "price": "$7.29",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Personal Pizza Pie",
+    "price": "$7.29",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Luke’s Jedi Rebellion Dinner”",
+    "price": "$7.99",
+    "section": "Dinners"
+   },
+   {
+    "name": "Spaghetti & Marinara Sauce",
+    "price": "$7.99",
+    "section": "Dinners"
+   },
+   {
+    "name": "Macaroni & Cheese",
+    "price": "$7.99",
+    "section": "Dinners"
+   },
+   {
+    "name": "5 Pieces Basket",
+    "price": "$11.99",
+    "section": "Veggie Nation Wings!!!!"
+   },
+   {
+    "name": "8 Pieces Basket",
+    "price": "$14.99",
+    "section": "Veggie Nation Wings!!!!"
+   },
+   {
+    "name": "8 Pieces Wing Dinner",
+    "price": "$16.99",
+    "section": "Veggie Nation Wings!!!!"
+   },
+   {
+    "name": "Mama Houk’s Original Peanut Butter Pie",
+    "price": "$7.99",
+    "section": "Mega Desserts"
+   },
+   {
+    "name": "Lee’s Revenge (A Megazilla Dessert)",
+    "price": "$8.99",
+    "section": "Mega Desserts"
+   },
+   {
+    "name": "Waffle Ice Cream Sundae",
+    "price": "$8.99",
+    "section": "Mega Desserts"
+   },
+   {
+    "name": "Chicken & Waffles",
+    "price": "",
+    "section": "Did You Say Breakfast?!?!"
+   },
+   {
+    "name": "Meal 1",
+    "price": "",
+    "section": "Did You Say Breakfast?!?!"
+   },
+   {
+    "name": "Meal 2",
+    "price": "",
+    "section": "Did You Say Breakfast?!?!"
+   }
+  ]
+ },
+ "kent|Wild Goats Cafe": {
+  "source": "https://wildgoatscafe.com/food-menu",
+  "items": [
+   {
+    "name": "Complete Breakfast",
+    "price": "$16.99",
+    "section": "Breakfast Combos"
+   },
+   {
+    "name": "Kaldi's Breakfast",
+    "price": "$17.99",
+    "section": "Breakfast Combos"
+   },
+   {
+    "name": "Classic Breakfast",
+    "price": "$14.99",
+    "section": "Breakfast Combos"
+   },
+   {
+    "name": "El Cabro",
+    "price": "$17.49",
+    "section": "Breakfast Specialties"
+   },
+   {
+    "name": "Corned Beef Hash",
+    "price": "$16.49",
+    "section": "Breakfast Specialties"
+   },
+   {
+    "name": "Eggs Benny",
+    "price": "$16.49",
+    "section": "Breakfast Specialties"
+   },
+   {
+    "name": "Country Benny",
+    "price": "$16.49",
+    "section": "Breakfast Specialties"
+   },
+   {
+    "name": "Avocado Benny",
+    "price": "$16.49",
+    "section": "Breakfast Specialties"
+   },
+   {
+    "name": "The Clucker",
+    "price": "$17.79",
+    "section": "Breakfast Specialties"
+   },
+   {
+    "name": "The Alamo",
+    "price": "$16.49",
+    "section": "Signature S.O.B.’S"
+   },
+   {
+    "name": "Haymaker",
+    "price": "$16.49",
+    "section": "Signature S.O.B.’S"
+   },
+   {
+    "name": "South End",
+    "price": "$16.49",
+    "section": "Signature S.O.B.’S"
+   },
+   {
+    "name": "Wild Western",
+    "price": "$16.49",
+    "section": "Signature S.O.B.’S"
+   },
+   {
+    "name": "The Rec",
+    "price": "$16.49",
+    "section": "Signature S.O.B.’S"
+   },
+   {
+    "name": "Golden Flash",
+    "price": "$14.79",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Black Squirrel",
+    "price": "$14.79",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Toasty",
+    "price": "$14.79",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Rough Rider",
+    "price": "$14.79",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Cuyahoga Melt",
+    "price": "$13.79",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Monkey Paw",
+    "price": "$3.99",
+    "section": "Overnight Oats & Parfaits"
+   },
+   {
+    "name": "Berry Bowl",
+    "price": "$3.99",
+    "section": "Overnight Oats & Parfaits"
+   },
+   {
+    "name": "Buzzy Bee",
+    "price": "$3.99",
+    "section": "Overnight Oats & Parfaits"
+   },
+   {
+    "name": "Cozy Orchard",
+    "price": "$3.99",
+    "section": "Overnight Oats & Parfaits"
+   },
+   {
+    "name": "S'mores",
+    "price": "$3.99",
+    "section": "Overnight Oats & Parfaits"
+   },
+   {
+    "name": "The Short Stack",
+    "price": "$7.99",
+    "section": "Griddle Stacks"
+   },
+   {
+    "name": "The Full Stack",
+    "price": "$13.99",
+    "section": "Griddle Stacks"
+   },
+   {
+    "name": "Ohio Buckeye Stack",
+    "price": "$13.79",
+    "section": "Griddle Stacks"
+   },
+   {
+    "name": "Main Street Stack",
+    "price": "$13.79",
+    "section": "Griddle Stacks"
+   },
+   {
+    "name": "Very Berry Stack",
+    "price": "$13.79",
+    "section": "Griddle Stacks"
+   },
+   {
+    "name": "Fluffy Stuff Stack",
+    "price": "$13.79",
+    "section": "Griddle Stacks"
+   },
+   {
+    "name": "Chicken Curry",
+    "price": "",
+    "section": "Lunch Combo"
+   },
+   {
+    "name": "Tomato Pesto",
+    "price": "",
+    "section": "Lunch Combo"
+   },
+   {
+    "name": "The House Salad",
+    "price": "",
+    "section": "Lunch Combo"
+   },
+   {
+    "name": "Avo-Chickpea Salad",
+    "price": "",
+    "section": "Lunch Combo"
+   },
+   {
+    "name": "Sweet Harvest Salad",
+    "price": "",
+    "section": "Lunch Combo"
+   },
+   {
+    "name": "Southwest Salad",
+    "price": "",
+    "section": "Lunch Combo"
+   },
+   {
+    "name": "Classic Grilled Cheese",
+    "price": "$7.99",
+    "section": "Lunch Sands"
+   },
+   {
+    "name": "Avo Pesto Press",
+    "price": "",
+    "section": "Lunch Sands"
+   },
+   {
+    "name": "Veggie Melt",
+    "price": "",
+    "section": "Lunch Sands"
+   },
+   {
+    "name": "Smokey Apple",
+    "price": "",
+    "section": "Lunch Sands"
+   },
+   {
+    "name": "Ham & Swiss Melt",
+    "price": "",
+    "section": "Lunch Sands"
+   },
+   {
+    "name": "Turkey Melt",
+    "price": "",
+    "section": "Lunch Sands"
+   },
+   {
+    "name": "Club Sandwich",
+    "price": "",
+    "section": "Lunch Sands"
+   },
+   {
+    "name": "B.L.T.",
+    "price": "",
+    "section": "Lunch Sands"
+   },
+   {
+    "name": "Reuben",
+    "price": "",
+    "section": "Lunch Sands"
+   },
+   {
+    "name": "Classic Cheeseburger",
+    "price": "$8.79",
+    "section": "Signature Sands"
+   },
+   {
+    "name": "Garage Door Burger",
+    "price": "$10.99",
+    "section": "Signature Sands"
+   },
+   {
+    "name": "OG Patty Melt",
+    "price": "$10.99",
+    "section": "Signature Sands"
+   },
+   {
+    "name": "Garden Burger",
+    "price": "$10.99",
+    "section": "Signature Sands"
+   },
+   {
+    "name": "Gobble Gobbler",
+    "price": "$11.49",
+    "section": "Signature Sands"
+   },
+   {
+    "name": "Portabella Melt",
+    "price": "$10.99",
+    "section": "Signature Sands"
+   },
+   {
+    "name": "Smoked Gouda Wrap",
+    "price": "$11.99",
+    "section": "Signature Sands"
+   },
+   {
+    "name": "Buffalo Chicken Wrap",
+    "price": "$12.99",
+    "section": "Signature Sands"
+   },
+   {
+    "name": "Garden Hummus Wrap",
+    "price": "$11.99",
+    "section": "Signature Sands"
+   },
+   {
+    "name": "Seasoned French Fries",
+    "price": "$8.99",
+    "section": "Baskets & Platters"
+   },
+   {
+    "name": "Fried Pickle Chips",
+    "price": "$10.99",
+    "section": "Baskets & Platters"
+   },
+   {
+    "name": "Pretzel Bites",
+    "price": "$9.99",
+    "section": "Baskets & Platters"
+   },
+   {
+    "name": "Chicken Tenders",
+    "price": "$13.49",
+    "section": "Baskets & Platters"
+   },
+   {
+    "name": "Fried Cauliflower Wings",
+    "price": "$11.99",
+    "section": "Baskets & Platters"
+   },
+   {
+    "name": "Brussels Sprouts",
+    "price": "$12.99",
+    "section": "Baskets & Platters"
+   },
+   {
+    "name": "Snake Eyes Homefries",
+    "price": "$11.99",
+    "section": "Baskets & Platters"
+   },
+   {
+    "name": "Hummus & Veggies",
+    "price": "$11.99",
+    "section": "Baskets & Platters"
+   },
+   {
+    "name": "Creamy Cajun Pasta",
+    "price": "$18.79",
+    "section": "Dinners"
+   },
+   {
+    "name": "Pretzel-Crusted Chop",
+    "price": "$20.99",
+    "section": "Dinners"
+   },
+   {
+    "name": "Chicken Tender Meal",
+    "price": "$16.99",
+    "section": "Dinners"
+   },
+   {
+    "name": "My Evening Combo",
+    "price": "$17.99",
+    "section": "Dinners"
+   },
+   {
+    "name": "Mama's Chocolate Cake",
+    "price": "",
+    "section": "Desserts & Sweet Treats"
+   },
+   {
+    "name": "Goat Got My Apple Pie",
+    "price": "",
+    "section": "Desserts & Sweet Treats"
+   },
+   {
+    "name": "Slice of Heaven Cheesecake",
+    "price": "",
+    "section": "Desserts & Sweet Treats"
+   },
+   {
+    "name": "Ice Cream Sundae",
+    "price": "",
+    "section": "Desserts & Sweet Treats"
+   },
+   {
+    "name": "Seasonal Sweet Treat",
+    "price": "",
+    "section": "Seasonal Sweet Treat"
+   },
+   {
+    "name": "Giant Cinnamon Roll",
+    "price": "$4.99",
+    "section": "Other Sweet Stuff"
+   },
+   {
+    "name": "Milkshakes",
+    "price": "$5.99",
+    "section": "Other Sweet Stuff"
+   },
+   {
+    "name": "Large Fizzimoo",
+    "price": "$5.79",
+    "section": "Other Sweet Stuff"
+   }
+  ]
+ }
+}
