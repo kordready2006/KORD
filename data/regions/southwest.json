@@ -366,10 +366,10 @@
           "local": false,
           "signature": false,
           "address": "237 Calhoun St, Cincinnati, OH 45219",
-          "website": "",
+          "website": "https://locations.raisingcanes.com/oh/cincinnati/237-calhoun-street",
           "blurb": "Chicken finger chain on Calhoun across from UC.",
           "price": "$",
-          "sourceUrl": "https://redirect.foursquare.com/rb5453435/list/cheap-eats-lunchdinner",
+          "sourceUrl": "https://locations.raisingcanes.com/oh/cincinnati/237-calhoun-street",
           "deals": []
         },
         {
@@ -383,6 +383,78 @@
           "price": "$",
           "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
           "deals": []
+        },
+        {
+          "name": "Panera Bread",
+          "category": "Coffee & Bakery",
+          "local": false,
+          "signature": false,
+          "address": "120 Calhoun St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Bakery-cafe chain on Calhoun by UC.",
+          "price": "$$",
+          "sourceUrl": "https://sites.americanjewisharchives.org/media/docs/localRestaurants.pdf",
+          "deals": []
+        },
+        {
+          "name": "IHOP",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "206 Calhoun St, Cincinnati, OH 45219",
+          "website": "https://restaurants.ihop.com/en-us/oh/cincinnati/breakfast-206-calhoun-street-3797",
+          "blurb": "Pancake house chain on Calhoun.",
+          "price": "$$",
+          "sourceUrl": "https://restaurants.ihop.com/en-us/oh/cincinnati/breakfast-206-calhoun-street-3797",
+          "deals": []
+        },
+        {
+          "name": "Buffalo Wild Wings",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "200 Calhoun St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Wings and sports bar chain on Calhoun.",
+          "price": "$$",
+          "sourceUrl": "https://www.ubereats.com/psckup/dish/cincinnati-oh/nachos",
+          "deals": []
+        },
+        {
+          "name": "Tropical Smoothie Cafe",
+          "category": "Healthy & Bowls",
+          "local": false,
+          "signature": false,
+          "address": "214 Calhoun St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Smoothies, wraps and bowls on Calhoun.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/psckup/dish/cincinnati-oh/nachos",
+          "deals": []
+        },
+        {
+          "name": "BrewDog Cincinnati",
+          "category": "Bar & Grill",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "https://drink.brewdog.com/cincinnati",
+          "blurb": "Brewpub with weekly food nights.",
+          "price": "$$",
+          "sourceUrl": "https://drink.brewdog.com/cincinnati",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$3 Taco Tuesday",
+              "details": "$3 tacos every Tuesday (drink specials alongside).",
+              "price": "$3",
+              "studentOnly": false,
+              "sourceUrl": "https://drink.brewdog.com/cincinnati",
+              "sourceDate": ""
+            }
+          ]
         }
       ]
     },
@@ -396,7 +468,104 @@
           "url": "https://www.ucclermont.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Bean & Brew",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "97 E Main St, Batavia, OH 45103",
+          "website": "",
+          "blurb": "Cozy Main Street coffee spot with a varied menu.",
+          "price": "$",
+          "sourceUrl": "https://phoenix.aws.mapquest.com/us/ohio/bean-brew-424368502",
+          "deals": []
+        },
+        {
+          "name": "Grammas Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "154 E Main St, Batavia, OH",
+          "website": "",
+          "blurb": "Local pizza on East Main Street.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/batavia-oh",
+          "deals": []
+        },
+        {
+          "name": "Snappy Tomato Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "501 W Main St, Batavia, OH",
+          "website": "",
+          "blurb": "Regional pizza chain on West Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Batavia/30314",
+          "deals": []
+        },
+        {
+          "name": "Subway (UC Clermont)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "4200 Clermont College Dr, Batavia, OH",
+          "website": "",
+          "blurb": "Sub chain on the UC Clermont campus.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Batavia/30314",
+          "deals": []
+        },
+        {
+          "name": "Dunkin' (UC Clermont)",
+          "category": "Coffee & Bakery",
+          "local": false,
+          "signature": false,
+          "address": "4200 Clermont College Dr, Batavia, OH",
+          "website": "",
+          "blurb": "Coffee and donuts in the Edith Peters Jones Building on campus.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Batavia/30314",
+          "deals": []
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Burrito chain on Hospital Drive.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Batavia/30314",
+          "deals": []
+        },
+        {
+          "name": "Arby's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Roast beef fast food on Hospital Drive.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Batavia/30314",
+          "deals": []
+        },
+        {
+          "name": "Dairy Queen",
+          "category": "Dessert & Ice Cream",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Soft serve and fast food on Hospital Drive.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Batavia/30314",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "oxford",
@@ -931,6 +1100,101 @@
           "price": "$",
           "sourceUrl": "https://www.gettothebc.com/explore/hamilton/dining?page=2",
           "deals": []
+        },
+        {
+          "name": "Shooters Sports Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Sports grill with daily specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.journal-news.com/what-to-do/dining/3-food-items-ordered-most-so-far-at-new-shooters-sports-grill-hamilton/ACJ7KQACFJBBXNP3UZDHGDKJOI/",
+          "deals": [
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "Half-price appetizers",
+              "details": "Half-price select appetizers on Thursdays, per a Journal-News article.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.journal-news.com/what-to-do/dining/3-food-items-ordered-most-so-far-at-new-shooters-sports-grill-hamilton/ACJ7KQACFJBBXNP3UZDHGDKJOI/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Bronzie's Place",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Italian restaurant with weeknight specials.",
+          "price": "$$",
+          "sourceUrl": "https://wingbeerspecials.com/r/bronzies-place-hamilton",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Monday wing special",
+              "details": "Wing special listed at $10.45, after 5 PM, eat-in only. Third-party aggregator listing; confirm with the restaurant.",
+              "price": "$10.45",
+              "studentOnly": false,
+              "sourceUrl": "https://wingbeerspecials.com/r/bronzies-place-hamilton",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Wednesday pizza specials",
+              "details": "Pizza specials after 5 PM, eat-in only; prices not shown in the source.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://wingbeerspecials.com/r/bronzies-place-hamilton",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Sweden Creme",
+          "category": "Fast Food",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Walk-up spot noted for its popular Taco Tuesdays and street tacos.",
+          "price": "$",
+          "sourceUrl": "https://www.gettothebc.com/explore/hamilton/dining?page=3",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Taco Tuesday",
+              "details": "Popular Taco Tuesday with street tacos; price not stated in the source.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.gettothebc.com/explore/hamilton/dining?page=3",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Texas Roadhouse",
+          "category": "Other",
+          "local": false,
+          "signature": false,
+          "address": "1558 Main St, Hamilton, OH",
+          "website": "https://www.texasroadhouse.com/locations/65-hamiltonoh",
+          "blurb": "Steakhouse chain on Main Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.texasroadhouse.com/locations/65-hamiltonoh",
+          "deals": []
         }
       ]
     },
@@ -944,7 +1208,176 @@
           "url": "https://miamioh.edu/regionals"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "The Slice",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "1300 Central Ave, Middletown, OH",
+          "website": "",
+          "blurb": "Full restaurant and bar in the heart of downtown Middletown.",
+          "price": "$$",
+          "sourceUrl": "https://www.travelbutlercounty.com/explore/middletown/dining?page=2",
+          "deals": []
+        },
+        {
+          "name": "Combs Bar-B-Q Central",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "2223 Central Ave, Middletown, OH",
+          "website": "",
+          "blurb": "Barbecue lunch favorite billed as Middletown's best hidden gem.",
+          "price": "$",
+          "sourceUrl": "https://www.travelbutlercounty.com/explore/middletown/dining?page=2",
+          "deals": []
+        },
+        {
+          "name": "Triple Moon Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "1100 Central Ave, Middletown, OH",
+          "website": "",
+          "blurb": "Coffee shop at Central Avenue and Broad Street downtown.",
+          "price": "$",
+          "sourceUrl": "https://www.travelbutlercounty.com/explore/middletown/dining?page=2",
+          "deals": []
+        },
+        {
+          "name": "Central Pastry Shop",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "1518 Central Ave, Middletown, OH",
+          "website": "",
+          "blurb": "Longtime bakery and a stop on the Butler County Donut Trail.",
+          "price": "$",
+          "sourceUrl": "https://www.travelbutlercounty.com/explore/middletown/dining?page=2",
+          "deals": []
+        },
+        {
+          "name": "Starvin Marvin's",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "1131 Central Ave, Middletown, OH",
+          "website": "",
+          "blurb": "Comfort food: burgers, loaded fries, nachos and chicken.",
+          "price": "$",
+          "sourceUrl": "https://www.journal-news.com/news/new-restaurants-try-middletown-this-year/p5nTCAgQaALvu9vsyn9YwI",
+          "deals": []
+        },
+        {
+          "name": "The Cracked Pot Coffee and Crepes",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "2024 Central Ave, Middletown, OH",
+          "website": "",
+          "blurb": "Coffee with sweet and savory crepes.",
+          "price": "$",
+          "sourceUrl": "https://www.journal-news.com/news/new-restaurants-try-middletown-this-year/p5nTCAgQaALvu9vsyn9YwI",
+          "deals": []
+        },
+        {
+          "name": "Gracie's",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Big-city comfort food on Central Avenue.",
+          "price": "$$",
+          "sourceUrl": "https://www.daytondailynews.com/places/restaurant/worth-the-drive-big-city-comfort-small-town/dO3OQY4ReDjvjK1JXCs88L",
+          "deals": []
+        },
+        {
+          "name": "Skyline Chili",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "4341 Roosevelt Blvd, Middletown, OH 45044",
+          "website": "https://www.skylinechili.com",
+          "blurb": "Cincinnati-style chili: 3-ways and cheese coneys.",
+          "price": "$",
+          "sourceUrl": "https://locations.skylinechili.com/skyline-chili-dbfcdb0dd439",
+          "deals": []
+        },
+        {
+          "name": "Fricker's",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "4810 Roosevelt Blvd, Middletown, OH",
+          "website": "",
+          "blurb": "Dayton-born wings and sports bar chain.",
+          "price": "$$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Middletown/31577",
+          "deals": []
+        },
+        {
+          "name": "Donatos Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "4303-05 Roosevelt Blvd, Middletown, OH",
+          "website": "",
+          "blurb": "Ohio-based thin-crust pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/donatos-pizza-291638769",
+          "deals": []
+        },
+        {
+          "name": "White Castle",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "4780 Roosevelt Blvd, Middletown, OH",
+          "website": "",
+          "blurb": "Slider chain.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Middletown/31577",
+          "deals": []
+        },
+        {
+          "name": "Jet's Pizza",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "4778 Roosevelt Blvd, Middletown, OH",
+          "website": "",
+          "blurb": "Detroit-style pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Middletown/31577",
+          "deals": []
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "4351 Roosevelt Blvd, Middletown, OH",
+          "website": "",
+          "blurb": "Sub chain.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Middletown/31577",
+          "deals": []
+        },
+        {
+          "name": "Dairy Queen Grill & Chill",
+          "category": "Dessert & Ice Cream",
+          "local": false,
+          "signature": false,
+          "address": "4770 Roosevelt Blvd, Middletown, OH",
+          "website": "",
+          "blurb": "Soft serve and fast food.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/dish/middletown-oh/hamburger",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "dayton",
@@ -1177,6 +1610,90 @@
           "price": "$",
           "sourceUrl": "https://ecommons.udayton.edu/maci/dining.html",
           "deals": []
+        },
+        {
+          "name": "Blind Bob's",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "430 E 5th St, Dayton, OH",
+          "website": "",
+          "blurb": "Oregon District bar with a full menu, karaoke and trivia.",
+          "price": "$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/the-best-spots-for-some-casual-late-night-eats-the-oregon-district/MnGoJtKrVyNzUgoN9dq1OO/",
+          "deals": []
+        },
+        {
+          "name": "Oregon Express",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "336 E 5th St, Dayton, OH",
+          "website": "",
+          "blurb": "The Oregon District's go-to for late-night pizza.",
+          "price": "$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/the-best-spots-for-some-casual-late-night-eats-the-oregon-district/MnGoJtKrVyNzUgoN9dq1OO/",
+          "deals": []
+        },
+        {
+          "name": "Smokin Bar-B-Que",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "200 E 5th St, Dayton, OH",
+          "website": "",
+          "blurb": "Barbecue counter with window seats on Fifth Street.",
+          "price": "$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/the-best-spots-for-some-casual-late-night-eats-the-oregon-district/MnGoJtKrVyNzUgoN9dq1OO/",
+          "deals": []
+        },
+        {
+          "name": "416 Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "416 E 5th St, Dayton, OH",
+          "website": "",
+          "blurb": "Late-night diner (Fri-Sat until 4:30 AM) known for pepperoni rolls.",
+          "price": "$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/the-best-spots-for-some-casual-late-night-eats-the-oregon-district/MnGoJtKrVyNzUgoN9dq1OO/",
+          "deals": []
+        },
+        {
+          "name": "Basil's on Market",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Dayton restaurant listed in the Dayton Daily News Taco Tuesday roundup as Basil's.",
+          "price": "$$",
+          "sourceUrl": "https://www.dayton.com/news/local/all-the-taco-tuesday-deals-dayton-you-need-know-about/jQIgls2NSdr1FPSlXI9fYO/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$3 Taco Tuesday",
+              "details": "Tacos $3 each on Tuesdays 4-9 PM; sides extra. From an undated roundup; confirm current price.",
+              "price": "$3",
+              "studentOnly": false,
+              "sourceUrl": "https://www.dayton.com/news/local/all-the-taco-tuesday-deals-dayton-you-need-know-about/jQIgls2NSdr1FPSlXI9fYO/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Taqueria Mixteca",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "1609 E 3rd St, Dayton, OH 45403",
+          "website": "",
+          "blurb": "East Dayton taqueria.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/taqueria-mixteca",
+          "deals": []
         }
       ]
     },
@@ -1213,6 +1730,42 @@
           "blurb": "Wing spot near the Nutter Center.",
           "price": "$",
           "sourceUrl": "https://www.dayton.com/places/restaurant/wings-the-star-course-wright-wing/XucqyukFdxcP1ksIh5QakJ/",
+          "deals": []
+        },
+        {
+          "name": "Flying Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "2640 Colonel Glenn Hwy, Beavercreek, OH",
+          "website": "",
+          "blurb": "New York-style pizza by the slice across from Wright State.",
+          "price": "$",
+          "sourceUrl": "https://www.superpages.com/fairborn-oh/pizza-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Marion's Piazza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Dayton-area thin-crust, square-cut pizza institution recommended by the Wright State Guardian.",
+          "price": "$",
+          "sourceUrl": "https://www.wsuguardian.com/article/2024/07/best-local-restaurants-to-try-around-wsu",
+          "deals": []
+        },
+        {
+          "name": "Tickets Pub & Eatery",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "7 W Main St, Fairborn, OH 45324",
+          "website": "https://ticketspub.com",
+          "blurb": "Downtown Fairborn pub with Greek specialties - gyros, souvlaki - plus wings and burgers.",
+          "price": "$$",
+          "sourceUrl": "https://www.greenecountyohio.org/listing/tickets-pub-%26-eatery/567/",
           "deals": []
         }
       ]
@@ -1389,6 +1942,42 @@
           "price": "$",
           "sourceUrl": "https://www.toasttab.com/local/xenia-oh-restaurants",
           "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "231 W Main St, Xenia, OH",
+          "website": "https://locations.tacobell.com/oh/xenia/231-west-main-street.html",
+          "blurb": "Taco chain with a late-night drive-thru.",
+          "price": "$",
+          "sourceUrl": "https://locations.tacobell.com/oh/xenia/231-west-main-street.html",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "431 W Main St, Xenia, OH 45385",
+          "website": "",
+          "blurb": "Burger chain.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/mcdonalds-22649016",
+          "deals": []
+        },
+        {
+          "name": "Wendy's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "363 W Main St, Xenia, OH",
+          "website": "",
+          "blurb": "Burger chain.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/dish/xenia-oh/chips",
+          "deals": []
         }
       ]
     },
@@ -1449,6 +2038,66 @@
           "blurb": "Pizza shop on Xenia Avenue downtown.",
           "price": "$",
           "sourceUrl": "https://www.superpages.com/yellow-springs-oh/lunch",
+          "deals": []
+        },
+        {
+          "name": "Peach's Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "104 Xenia Ave, Yellow Springs, OH",
+          "website": "",
+          "blurb": "Longtime restaurant and bar with burgers, sandwiches, live music and trivia.",
+          "price": "$$",
+          "sourceUrl": "https://wanderlog.com/list/geoCategory/204602/where-to-eat-best-restaurants-in-yellow-springs",
+          "deals": []
+        },
+        {
+          "name": "The Winds Cafe",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "215 Xenia Ave, Yellow Springs, OH",
+          "website": "",
+          "blurb": "Casual but refined cafe with a creative seasonal menu.",
+          "price": "$$$",
+          "sourceUrl": "https://wanderlog.com/list/geoCategory/204602/where-to-eat-best-restaurants-in-yellow-springs",
+          "deals": []
+        },
+        {
+          "name": "Miguel's Tacos",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "101 Corry St, Yellow Springs, OH",
+          "website": "",
+          "blurb": "Taco stand just off Xenia Avenue.",
+          "price": "$",
+          "sourceUrl": "https://yellowspringsohio.org/member-directory/member-directory-dining/page/2",
+          "deals": []
+        },
+        {
+          "name": "Yellow Springs Brewery",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Microbrewery taproom on the bike trail with food trucks on weekends.",
+          "price": "$$",
+          "sourceUrl": "https://yellowspringsohio.org/member-directory/member-directory-dining/page/2",
+          "deals": []
+        },
+        {
+          "name": "Calypso Grill and Smokehouse",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Caribbean-leaning grill and smokehouse.",
+          "price": "$$",
+          "sourceUrl": "https://wanderlog.com/list/geoCategory/204602/where-to-eat-best-restaurants-in-yellow-springs",
           "deals": []
         }
       ]
@@ -1558,6 +2207,30 @@
           "price": "$$",
           "sourceUrl": "https://wittenberg.edu/node/17444",
           "deals": []
+        },
+        {
+          "name": "Station 1",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "325 N Fountain Ave, Springfield, OH",
+          "website": "",
+          "blurb": "Bar and restaurant in a former gas station near Wittenberg.",
+          "price": "$",
+          "sourceUrl": "https://springfieldnewssun.com/news/what-know-about-station-the-springfield-restaurant-that-was-once-gas-station/99tQ4jihI3a1XFz0jkxE0O",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$1 tacos",
+              "details": "$1 tacos on Mondays, per a Springfield News-Sun profile (undated in search result); confirm it is still running.",
+              "price": "$1",
+              "studentOnly": false,
+              "sourceUrl": "https://springfieldnewssun.com/news/what-know-about-station-the-springfield-restaurant-that-was-once-gas-station/99tQ4jihI3a1XFz0jkxE0O",
+              "sourceDate": ""
+            }
+          ]
         }
       ]
     },
@@ -1571,7 +2244,116 @@
           "url": "https://www.wilmington.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "De Luca's Dugout",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1263 W Main St, Wilmington, OH 45177",
+          "website": "",
+          "blurb": "Local restaurant on West Main Street.",
+          "price": "$",
+          "sourceUrl": "https://bbb.org/us/oh/wilmington/category/restaurants",
+          "deals": []
+        },
+        {
+          "name": "El Dorado",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "1426 Rombach Ave, Wilmington, OH",
+          "website": "",
+          "blurb": "Mexican restaurant on Rombach Avenue.",
+          "price": "$$",
+          "sourceUrl": "https://bbb.org/us/oh/wilmington/category/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Ralph's American Grill",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Contemporary American grill known for pot roast and fish and chips.",
+          "price": "$$",
+          "sourceUrl": "https://www.opentable.com/nearby/restaurants-near-me-wilmington-oh",
+          "deals": []
+        },
+        {
+          "name": "Gold Star Chili",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1295 Rombach Ave, Wilmington, OH",
+          "website": "",
+          "blurb": "Cincinnati-style chili chain: coneys and ways.",
+          "price": "$",
+          "sourceUrl": "https://bbb.org/us/oh/wilmington/category/restaurants",
+          "deals": []
+        },
+        {
+          "name": "The General Denver",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "81 W Main St, Wilmington, OH",
+          "website": "",
+          "blurb": "New American restaurant in the historic General Denver Hotel downtown.",
+          "price": "$$",
+          "sourceUrl": "https://redirect.foursquare.com/suereynolds/list/guide-to-wilmingtons-best-spots",
+          "deals": []
+        },
+        {
+          "name": "TinCap Hard Cider BBQ & Taproom",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "59 W Sugartree St, Wilmington, OH",
+          "website": "https://order.toasttab.com/online/tincap-59-west-sugartree-street",
+          "blurb": "BBQ, pizzas, hard cider and craft beer downtown.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/tincap-59-west-sugartree-street",
+          "deals": []
+        },
+        {
+          "name": "South Street Coffee House",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "33 N South St, Wilmington, OH",
+          "website": "",
+          "blurb": "Downtown coffee shop.",
+          "price": "$",
+          "sourceUrl": "https://redirect.foursquare.com/suereynolds/list/guide-to-wilmingtons-best-spots",
+          "deals": []
+        },
+        {
+          "name": "Kava Haus",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "187 E Locust St, Wilmington, OH",
+          "website": "",
+          "blurb": "Family-owned coffee shop with teas, homemade pastries and build-your-own pizza.",
+          "price": "$",
+          "sourceUrl": "https://business.wccchamber.com/list/category/restaurants-1",
+          "deals": []
+        },
+        {
+          "name": "Mediterranean Restaurant & Cafe",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "53 E Main St, Wilmington, OH",
+          "website": "",
+          "blurb": "Laid-back Mediterranean spot in the heart of Wilmington.",
+          "price": "$$",
+          "sourceUrl": "https://phoenix.aws.mapquest.com/us/ohio/mediterranean-restaurant-cafe-22638075",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "hillsboro",
@@ -1583,7 +2365,164 @@
           "url": "https://www.sscc.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "The Patriot Public House",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "115 W Main St, Hillsboro, OH 45133",
+          "website": "",
+          "blurb": "Uptown public house on West Main Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Hillsboro/31133",
+          "deals": []
+        },
+        {
+          "name": "62 Classic Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "1581 N High St, Hillsboro, OH",
+          "website": "",
+          "blurb": "Classic diner known for biscuits and gravy and Reubens.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/hillsboro/",
+          "deals": []
+        },
+        {
+          "name": "Mimi's Kitchen",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "118 E Main St, Hillsboro, OH",
+          "website": "",
+          "blurb": "Home cooking with standout cheesecake.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/hillsboro/",
+          "deals": []
+        },
+        {
+          "name": "White's Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "157 W Main St, Hillsboro, OH",
+          "website": "",
+          "blurb": "Bakery for doughnuts, cookies and cinnamon rolls.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/hillsboro/",
+          "deals": []
+        },
+        {
+          "name": "Holtfield Station",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "620 S High St, Hillsboro, OH",
+          "website": "",
+          "blurb": "Local stop on South High Street.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Hillsboro/31133",
+          "deals": []
+        },
+        {
+          "name": "Ogawa Hibachi Grill",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1256 N High St, Hillsboro, OH",
+          "website": "",
+          "blurb": "Japanese hibachi grill.",
+          "price": "$$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Hillsboro/31133",
+          "deals": []
+        },
+        {
+          "name": "The Coffee Pot",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Cafe with homemade pastries.",
+          "price": "$",
+          "sourceUrl": "https://thetouristchecklist.com/restaurants-in-hillsboro-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Sassafras Kitchen & Coffee Bar",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "135 N High St, Hillsboro, OH",
+          "website": "",
+          "blurb": "Uptown kitchen and coffee bar.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/sassafras-kitchen-135-north-high-street/r-a68b8a7e-edc5-4d67-a1f6-92266c65d69d",
+          "deals": []
+        },
+        {
+          "name": "Gold Star Chili",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "585 Harry Sauner Rd, Hillsboro, OH",
+          "website": "",
+          "blurb": "Cincinnati-style chili chain: coneys and ways.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/hillsboro/",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1235 N High St, Hillsboro, OH",
+          "website": "",
+          "blurb": "Taco chain on North High Street.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Hillsboro/31133",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1474 N High St, Hillsboro, OH 45133",
+          "website": "",
+          "blurb": "Burger chain.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Hillsboro/31133",
+          "deals": []
+        },
+        {
+          "name": "Arby's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1279 N High St, Hillsboro, OH",
+          "website": "",
+          "blurb": "Roast beef fast food chain.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/arbys-5898234",
+          "deals": []
+        },
+        {
+          "name": "Burger King",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1255 N High St, Hillsboro, OH",
+          "website": "",
+          "blurb": "Burger chain.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Hillsboro/31133",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "piqua",
@@ -1595,7 +2534,176 @@
           "url": "https://www.edisonohio.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Beppo Uno Pizzeria & Trattoria",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "414 W Water St, Piqua, OH",
+          "website": "",
+          "blurb": "Piqua's go-to pizzeria and Italian trattoria.",
+          "price": "$$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/piqua-oh",
+          "deals": []
+        },
+        {
+          "name": "Lighthouse Cafe",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "213 N Main St, Piqua, OH",
+          "website": "",
+          "blurb": "Popular downtown cafe.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/piqua-oh",
+          "deals": []
+        },
+        {
+          "name": "Susie's Big Dipper",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "323 N Main St, Piqua, OH",
+          "website": "",
+          "blurb": "Downtown ice cream shop.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/piqua-oh",
+          "deals": []
+        },
+        {
+          "name": "Crooked Handle Brewing Co.",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Brewery taproom with food in Piqua.",
+          "price": "$$",
+          "sourceUrl": "https://www.tripadvisor.in/Restaurants-g50850-Piqua_Ohio.html",
+          "deals": []
+        },
+        {
+          "name": "Mikado Japanese Restaurant",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Japanese restaurant in Piqua.",
+          "price": "$$",
+          "sourceUrl": "https://www.tripadvisor.in/Restaurants-g50850-Piqua_Ohio.html",
+          "deals": []
+        },
+        {
+          "name": "El Herradero Mexican Grill",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Mexican grill in Piqua.",
+          "price": "$$",
+          "sourceUrl": "https://www.tripadvisor.in/Restaurants-g50850-Piqua_Ohio.html",
+          "deals": []
+        },
+        {
+          "name": "Roots Burgers and Fries",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "987 E Ash St Unit 211, Piqua, OH",
+          "website": "",
+          "blurb": "Burger and fries counter on East Ash Street.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/roots-burgers-and-fries-987-e-ash-st-unit-211",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1234 E Ash St, Piqua, OH 45356",
+          "website": "https://locations.tacobell.com/oh/piqua/1234-e-ash-st/restaurant.html",
+          "blurb": "Taco chain on East Ash Street.",
+          "price": "$",
+          "sourceUrl": "https://locations.tacobell.com/oh/piqua/1234-e-ash-st/restaurant.html",
+          "deals": []
+        },
+        {
+          "name": "Arby's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1230 E Ash St, Piqua, OH 45356",
+          "website": "https://locations.arbys.com/oh/piqua/1230-e-ash-st.html",
+          "blurb": "Roast beef fast food chain.",
+          "price": "$",
+          "sourceUrl": "https://locations.arbys.com/oh/piqua/1230-e-ash-st.html",
+          "deals": []
+        },
+        {
+          "name": "A&W",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1219 E Ash St, Piqua, OH 45356",
+          "website": "https://awrestaurants.com/locations/ohio/piqua/1219-east-ash-st/",
+          "blurb": "Root beer and burgers chain.",
+          "price": "$",
+          "sourceUrl": "https://awrestaurants.com/locations/ohio/piqua/1219-east-ash-st/",
+          "deals": []
+        },
+        {
+          "name": "Waffle House",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "1232 E Ash St, Piqua, OH 45356",
+          "website": "",
+          "blurb": "24-hour diner chain.",
+          "price": "$",
+          "sourceUrl": "https://phoenix.aws.mapquest.com/us/ohio/waffle-house-5952619",
+          "deals": []
+        },
+        {
+          "name": "Wendy's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1221 E Ash St, Piqua, OH 45356",
+          "website": "",
+          "blurb": "Burger chain.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/dish/piqua-oh/fries",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "995 E Ash St, Piqua, OH 45356",
+          "website": "",
+          "blurb": "Burger chain.",
+          "price": "$",
+          "sourceUrl": "https://parknationalbank.com/merchant/mcdonalds-5",
+          "deals": []
+        },
+        {
+          "name": "Dairy Queen",
+          "category": "Dessert & Ice Cream",
+          "local": false,
+          "signature": false,
+          "address": "1288 E Ash St, Piqua, OH 45356",
+          "website": "",
+          "blurb": "Soft serve and fast food.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/dish/piqua-oh/fries",
+          "deals": []
+        }
+      ]
     }
   ]
 }

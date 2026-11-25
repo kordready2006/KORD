@@ -406,6 +406,61 @@
           "price": "$$",
           "sourceUrl": "https://www.qsrmagazine.com/growth/dog-haus-to-debut-in-ohio/",
           "deals": []
+        },
+        {
+          "name": "Marcella's (Short North)",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Short North Italian restaurant with a weekday bar happy hour.",
+          "price": "$$",
+          "sourceUrl": "https://www.experiencecolumbus.com/blog/post/top-happy-hours-in-the-short-north/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Half-off happy hour",
+              "details": "Monday-Friday 4-6 p.m. in the bar area: half off selected food and drinks.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.experiencecolumbus.com/blog/post/top-happy-hours-in-the-short-north/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Budd Dairy Food Hall",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Food hall with rotating independent chef vendors.",
+          "price": "$$",
+          "sourceUrl": "https://www.experiencecolumbus.com/blog/post/top-happy-hours-in-the-short-north/",
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Half-off happy hour",
+              "details": "Tuesday-Friday late-afternoon happy hour (listed as 4-6 p.m.) with 50% off food and drinks; drink deals at the main bar.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.experiencecolumbus.com/blog/post/top-happy-hours-in-the-short-north/",
+              "sourceDate": ""
+            }
+          ]
         }
       ]
     },
@@ -505,6 +560,156 @@
               "studentOnly": false,
               "sourceUrl": "https://myrustybucket.com/locations/westerville",
               "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Koblé Grill",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Uptown Westerville Greek grill.",
+          "price": "$$",
+          "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "15% off with Otterbein student ID",
+              "details": "Mention the discount and show a student ID before paying, per Otterbein's student media list of Uptown Westerville discounts.",
+              "price": "15% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
+              "sourceDate": "2024-02"
+            }
+          ]
+        },
+        {
+          "name": "Java Central",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Uptown Westerville coffee house.",
+          "price": "$",
+          "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with Otterbein student ID",
+              "details": "Mention the discount and show a student ID before paying, per Otterbein's student media list of Uptown Westerville discounts.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
+              "sourceDate": "2024-02"
+            }
+          ]
+        },
+        {
+          "name": "Espresso Air (Westerville)",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Uptown Westerville coffee shop.",
+          "price": "$",
+          "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with Otterbein student ID",
+              "details": "Mention the discount and show a student ID before paying, per Otterbein's student media list of Uptown Westerville discounts.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
+              "sourceDate": "2024-02"
+            }
+          ]
+        },
+        {
+          "name": "Dairy Queen (Uptown Westerville)",
+          "category": "Dessert & Ice Cream",
+          "local": false,
+          "signature": false,
+          "address": "Park St & S State St, Westerville, OH",
+          "website": "",
+          "blurb": "National soft-serve and burger chain.",
+          "price": "$",
+          "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with Otterbein student ID",
+              "details": "Mention the discount and show a student ID before paying, per Otterbein's student media list of Uptown Westerville discounts.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
+              "sourceDate": "2024-02"
+            }
+          ]
+        },
+        {
+          "name": "Whit's Frozen Custard (Westerville)",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Central Ohio frozen custard shop on Otterbein's Uptown discount lists.",
+          "price": "$",
+          "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with Otterbein student ID",
+              "details": "10% student discount per Otterbein student media's 2020 Uptown list; Whit's is also on the 2024 list.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.tandcmedia.org/article/2020/01/gpzmscavxluiz6t",
+              "sourceDate": "2020-01"
             }
           ]
         }
@@ -627,6 +832,89 @@
           "blurb": "Downtown diner listed for meals on Denison's restaurant page.",
           "price": "$",
           "sourceUrl": "https://www.denison.edu/campus/granville-and-beyond/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Granville Inn (Tavern)",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Historic inn whose tavern runs weekly dinner features.",
+          "price": "$$",
+          "sourceUrl": "https://granvilleinn.com/?p=2953",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Smoked prime rib Tuesday",
+              "details": "Smoked prime rib special all night while it lasts; price not stated.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://granvilleinn.com/?p=2953",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Burger night",
+              "details": "Rotating weekly smash burger paired with a pint of beer; price not stated.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://granvilleinn.com/?p=2953",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Taco Dan's",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "119 S Prospect St, Granville, OH 43023",
+          "website": "",
+          "blurb": "Lo-fi, family-run spot for tacos, tostadas, chimichanga bowls and loaded nachos.",
+          "price": "$",
+          "sourceUrl": "https://breakfastwithnick.com/2023/10/11/best-restaurants-in-granville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Three Tigers Brewing",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "133 N Prospect St, Granville, OH 43023",
+          "website": "",
+          "blurb": "Village brewery with a food menu.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/three-tigers-brewing-133-north-prospect-street",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Taco Tuesday",
+              "details": "Taco Tuesday item listed on the brewery's online ordering menu; price and contents not stated.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.toasttab.com/local/order/three-tigers-brewing-133-north-prospect-street",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Snapshots Lounge",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Lounge with sandwiches and salads at lunch and weekly upscale dinner specials.",
+          "price": "$$",
+          "sourceUrl": "https://breakfastwithnick.com/2023/10/11/best-restaurants-in-granville-ohio/",
           "deals": []
         }
       ]
@@ -832,6 +1120,300 @@
           "price": "$$",
           "sourceUrl": "https://www.toasttab.com/local/delaware-oh-restaurants",
           "deals": []
+        },
+        {
+          "name": "Hamburger Inn Diner",
+          "category": "Burgers",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Longtime downtown Delaware diner that has taken part in Ohio Wesleyan's off-campus dining program.",
+          "price": "$",
+          "sourceUrl": "https://sites.owu.edu/dailymonster/?p=48180",
+          "deals": []
+        },
+        {
+          "name": "Mohio Pizza Co.",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "23 N Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Wood-fired artisan pizza downtown.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitdelohio.com/destination/mohio-pizza-co/",
+          "deals": []
+        },
+        {
+          "name": "Hacienda Taqueria and Bar",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "26 N Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Downtown Mexican spot for tacos and fajitas.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitdelohio.com/destination/hacienda-taqueria-and-bar/",
+          "deals": []
+        },
+        {
+          "name": "Yokai Ramen Bistro",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "48 N Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Cozy ramen spot with modern twists on classic bowls.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitdelohio.com/destination/yokai-ramen-bistro/",
+          "deals": []
+        },
+        {
+          "name": "Typhoon Asian Fusion Bistro",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "10 N Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Sushi, Thai and Chinese dishes downtown.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitdelohio.com/destination/typhoon-asian-fusion-bistro/",
+          "deals": []
+        },
+        {
+          "name": "Canton's Chinese Restaurant",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "191 S Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Szechuan and Cantonese dishes, dim sum and noodles.",
+          "price": "$",
+          "sourceUrl": "https://www.visitdelohio.com/destination/cantons-chinese-restaurant/",
+          "deals": []
+        },
+        {
+          "name": "OPA Grill & Tavern",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "22 S Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Greek cuisine alongside American classics.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitdelohio.com/destination/opa-grill-tavern/",
+          "deals": []
+        },
+        {
+          "name": "Chelley Belly Artisan Eatery",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "59 N Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Sandwiches and salads with gluten-free options on request.",
+          "price": "$",
+          "sourceUrl": "https://www.visitdelohio.com/destination/chelley-belly-artisan-eatery/",
+          "deals": []
+        },
+        {
+          "name": "Victor's Taco Shop (Delaware)",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "186 S Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Traditional Mexican taco shop.",
+          "price": "$",
+          "sourceUrl": "https://www.visitdelohio.com/destination/victors-taco-shop-delaware/",
+          "deals": []
+        },
+        {
+          "name": "Espresso Air Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "34 S Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Specialty coffee and pastries.",
+          "price": "$",
+          "sourceUrl": "https://www.visitdelohio.com/destination/espresso-air-coffee-delaware/",
+          "deals": []
+        },
+        {
+          "name": "Restoration Brew Worx",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "25 N Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Downtown brewpub.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitdelohio.com/dine-like-a-local-up-scale-gastro-pub/",
+          "deals": []
+        },
+        {
+          "name": "El Vaquero (Delaware)",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Ohio Mexican restaurant chain.",
+          "price": "$$",
+          "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with OWU ID",
+              "details": "10% discount when presenting an Ohio Wesleyan ID. From an undated Ohio Wesleyan post; confirm before relying on it.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Greater Gouda",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Local cheese shop and eatery.",
+          "price": "$",
+          "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "5% off with OWU ID",
+              "details": "5% discount when presenting an Ohio Wesleyan ID. From an undated Ohio Wesleyan post; confirm before relying on it.",
+              "price": "5% off",
+              "studentOnly": true,
+              "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Hungry Howie's (Delaware)",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with OWU ID",
+              "details": "10% discount when presenting an Ohio Wesleyan ID. From an undated Ohio Wesleyan post; confirm before relying on it.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Tim Hortons (Delaware)",
+          "category": "Coffee & Bakery",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Coffee and donut chain.",
+          "price": "$",
+          "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with OWU ID",
+              "details": "10% discount when presenting an Ohio Wesleyan ID. From an undated Ohio Wesleyan post; confirm before relying on it.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Jimmy John's (Delaware)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National sub chain.",
+          "price": "$",
+          "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Free chips with OWU ID",
+              "details": "Free bag of chips with a sandwich when presenting an Ohio Wesleyan ID. From an undated Ohio Wesleyan post; confirm before relying on it.",
+              "price": "Free chips",
+              "studentOnly": true,
+              "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Buffalo Wild Wings (Delaware)",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "475 N Houk Rd, Delaware, OH 43015",
+          "website": "",
+          "blurb": "National wings and sports bar chain.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/delaware/buffalo-wild-wings-/",
+          "deals": []
         }
       ]
     },
@@ -912,7 +1494,7 @@
           "category": "Other",
           "local": true,
           "signature": true,
-          "address": "",
+          "address": "116 S Main St, Mount Vernon, OH 43050",
           "website": "",
           "blurb": "Downtown Mount Vernon institution that began as an ice cream and candy shop in 1911.",
           "price": "$$$",
@@ -1076,6 +1658,78 @@
           "price": "$",
           "sourceUrl": "https://visitknoxohio.org/places/little-caesars",
           "deals": []
+        },
+        {
+          "name": "North Main Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "108 N Main St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Coffee, tea, breakfast and lunch cafe with house-baked muffins and scones.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/north-main-cafe",
+          "deals": []
+        },
+        {
+          "name": "Southside Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "620 S Main St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "1950s-60s style diner with homemade meals and desserts.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/southside-diner",
+          "deals": []
+        },
+        {
+          "name": "Founders Food Hall",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "18 E Vine St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Food hall with eight kitchens and a full-service bar.",
+          "price": "$$",
+          "sourceUrl": "https://visitknoxohio.org/places/founders-food-hall",
+          "deals": []
+        },
+        {
+          "name": "Half Baked Cafe and Catering",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "3 W High St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Downtown cafe open Friday through Sunday.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/half-baked-cafe-and-catering",
+          "deals": []
+        },
+        {
+          "name": "Coffee Island Express",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "112 Mount Vernon Ave, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Weekday coffee stop.",
+          "price": "$",
+          "sourceUrl": "http://www.visitknoxohio.org/business/detail/159/coffee-island-express",
+          "deals": []
+        },
+        {
+          "name": "Dairy Queen Grill & Chill (Mount Vernon)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1600 Coshocton Ave, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "National burgers-and-soft-serve chain.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/dairy-queen-grill-and-chill",
+          "deals": []
         }
       ]
     },
@@ -1238,7 +1892,7 @@
           "category": "Mexican",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "142 N Main St, Marion, OH 43302",
           "website": "",
           "blurb": "Downtown sports bar serving tacos, burritos, burgers and wings.",
           "price": "$",
@@ -1496,6 +2150,54 @@
               "sourceDate": "2025"
             }
           ]
+        },
+        {
+          "name": "The Wooden Pickle",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Marion restaurant with daily lunch and dinner specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitmarionohio.com/attractions/food/taste-of-marion/page/3/",
+          "deals": []
+        },
+        {
+          "name": "Bowstring Bar & Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Bar and grill known for its popular Friday night steak.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitmarionohio.com/attractions/bowstring-bar-grill/",
+          "deals": []
+        },
+        {
+          "name": "Ralphie's Sports Eatery (Marion)",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Ohio sports-bar chain listed by Visit Marion.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitmarionohio.com/attractions/ralphies-sports-eatery/",
+          "deals": []
+        },
+        {
+          "name": "Rally's (Marion)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "412 N Main St, Marion, OH 43302",
+          "website": "",
+          "blurb": "National drive-thru burger chain.",
+          "price": "$",
+          "sourceUrl": "https://locations.checkersandrallys.com/oh/marion/412-n.-main-street",
+          "deals": []
         }
       ]
     },
@@ -1958,6 +2660,54 @@
               "sourceDate": ""
             }
           ]
+        },
+        {
+          "name": "City Grille & Bar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "37 E Fourth St, Mansfield, OH 44902",
+          "website": "",
+          "blurb": "American pub food in the downtown Carrousel District.",
+          "price": "$$",
+          "sourceUrl": "https://destinationmansfield.com/partner/city-grille-bar/",
+          "deals": []
+        },
+        {
+          "name": "Uncle John's Place",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown spot on the square, widely recommended for burgers and fresh-cut fries.",
+          "price": "$",
+          "sourceUrl": "https://destinationmansfield.com/blog/do-it-all-downtown/",
+          "deals": []
+        },
+        {
+          "name": "Relax, It's Just Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown shop serving locally roasted coffee and espresso, sharing space with Blackbird Bakery.",
+          "price": "$",
+          "sourceUrl": "https://destinationmansfield.com/blog/the-new-downtown-mansfield/",
+          "deals": []
+        },
+        {
+          "name": "Dairy Land",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "800 Springmill St, Mansfield, OH",
+          "website": "",
+          "blurb": "Seasonal carhop drive-in (mid-March to mid-October) known for coneys and pizza burgers.",
+          "price": "$",
+          "sourceUrl": "https://destinationmansfield.com/partner/dairy-land/",
+          "deals": []
         }
       ]
     },
@@ -1971,7 +2721,242 @@
           "url": "https://www.ashland.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Lyn-Way Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "1454 S Mill St, Ashland, OH 44805",
+          "website": "",
+          "blurb": "Homestyle comfort-food restaurant serving Ashland since 1951.",
+          "price": "$",
+          "sourceUrl": "https://thetouristchecklist.com/restaurants-in-ashland-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Ashland-Wooster Drive In",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "1134 E Main St, Ashland, OH 44805",
+          "website": "",
+          "blurb": "Classic drive-in that has been at the same location for more than 54 years.",
+          "price": "$",
+          "sourceUrl": "https://thetouristchecklist.com/restaurants-in-ashland-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Uniontown Brewing Co.",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "105 W Main St, Ashland, OH 44805",
+          "website": "",
+          "blurb": "Downtown brewpub with sandwiches, burgers, fries and tacos.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/uniontown-brewing-co/r-097608a4-9af1-4c43-be68-757dbbd89d26",
+          "deals": []
+        },
+        {
+          "name": "Downtown Perk",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "W Main St, Ashland, OH 44805",
+          "website": "",
+          "blurb": "Cozy downtown coffee shop popular for studying and meeting friends.",
+          "price": "$",
+          "sourceUrl": "https://thetouristchecklist.com/restaurants-in-ashland-ohio/",
+          "deals": []
+        },
+        {
+          "name": "South Street Grille",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "121 South St, Ashland, OH 44805",
+          "website": "",
+          "blurb": "Local grill with online ordering.",
+          "price": "$$",
+          "sourceUrl": "https://order.toasttab.com/online/south-street-grill-ashland-121-south-street",
+          "deals": []
+        },
+        {
+          "name": "Joan's Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "165 Union St, Ashland, OH 44805",
+          "website": "",
+          "blurb": "Cozy neighborhood tavern with food.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/joans-tavern-llc-165-union-st",
+          "deals": []
+        },
+        {
+          "name": "Whit's Frozen Custard (Ashland)",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Ohio frozen custard favorite on Ashland University's EagleCard benefits list.",
+          "price": "$",
+          "sourceUrl": "https://www.ashland.edu/eaglecard-campus-benefits",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with AU ID",
+              "details": "10% off the whole order when you show an Ashland University ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.ashland.edu/eaglecard-campus-benefits",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Penn Station East Coast Subs",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Sub chain listed on Ashland University's EagleCard off-campus benefits page.",
+          "price": "$",
+          "sourceUrl": "https://www.ashland.edu/eaglecard-campus-benefits",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "20% off online with code EAGLE20",
+              "details": "20% off online orders with code EAGLE20 for Ashland University EagleCard holders; not valid with third-party delivery.",
+              "price": "20% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.ashland.edu/eaglecard-campus-benefits",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Subway (Ashland)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "611 Claremont Ave, Ashland, OH 44805",
+          "website": "",
+          "blurb": "National sub chain.",
+          "price": "$",
+          "sourceUrl": "https://postmates.com/city/ashland-oh",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with student ID",
+              "details": "10% off for Ashland University students with a student ID, per an older Ashland Collegian article; confirm before relying on it.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://ashland-collegian.com/12954/features/local-student-discounts-apply-to-au-students/",
+              "sourceDate": "2022"
+            }
+          ]
+        },
+        {
+          "name": "Taco Bell (Ashland)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "315 Claremont Ave, Ashland, OH 44805",
+          "website": "",
+          "blurb": "National taco chain; this location is open late with a drive-thru.",
+          "price": "$",
+          "sourceUrl": "https://locations.tacobell.com/oh/ashland/315-claremont-ave.html",
+          "deals": []
+        },
+        {
+          "name": "Arby's (Ashland)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1015 Claremont Ave, Ashland, OH 44805",
+          "website": "",
+          "blurb": "National roast beef sandwich chain, also named on AU's EagleCard benefits page.",
+          "price": "$",
+          "sourceUrl": "https://www.arbys.com/locations/us/oh/ashland/1015-claremont-avenue/store-6487",
+          "deals": []
+        },
+        {
+          "name": "McDonald's (Ashland)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1504 Claremont Ave, Ashland, OH 44805",
+          "website": "",
+          "blurb": "National burger chain.",
+          "price": "$",
+          "sourceUrl": "https://redirect.foursquare.com/laurah5279153/list/places-to-eat-in-ashland",
+          "deals": []
+        },
+        {
+          "name": "Wendy's (Ashland)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "414 Claremont Ave, Ashland, OH 44805",
+          "website": "",
+          "blurb": "National burger chain.",
+          "price": "$",
+          "sourceUrl": "https://redirect.foursquare.com/laurah5279153/list/places-to-eat-in-ashland",
+          "deals": []
+        },
+        {
+          "name": "Burger King (Ashland)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "910 Claremont Ave, Ashland, OH 44805",
+          "website": "",
+          "blurb": "National burger chain.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/category/ashland-oh/diner",
+          "deals": []
+        },
+        {
+          "name": "Marco's Pizza (Ashland)",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "Claremont Ave, Ashland, OH 44805",
+          "website": "",
+          "blurb": "Ohio-born national pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://www.marcos.com/our-locations/restaurants/oh/ashland/marcos-pizza-claremont-ave-ashland-1/",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "circleville",
@@ -1983,7 +2968,164 @@
           "url": "https://www.ohiochristian.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Watt Street Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "115 Watt St, Circleville, OH 43113",
+          "website": "",
+          "blurb": "Local-favorite tavern known for specialty pizzas, prime rib and daily lunch and dinner specials.",
+          "price": "$$",
+          "sourceUrl": "https://pickaway.com/2025/12/26/watt-street-tavern-in-circleville-ohio-a-local-favorite-worth-the-visit/",
+          "deals": []
+        },
+        {
+          "name": "Gant's Pizza & Pub",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "114 S Court St, Circleville, OH 43113",
+          "website": "",
+          "blurb": "Locally owned downtown pizza pub with subs, wings and sports on TV.",
+          "price": "$",
+          "sourceUrl": "https://pickaway.com/places/gants-pizza-pub/",
+          "deals": []
+        },
+        {
+          "name": "Pizza Cottage (Circleville)",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "23401 US 23 S, Circleville, OH 43113",
+          "website": "",
+          "blurb": "Central Ohio pizza favorite with pasta and dessert pizza; named a student favorite by Ohio Christian University.",
+          "price": "$$",
+          "sourceUrl": "https://pickaway.com/places/pizza-cottage/",
+          "deals": []
+        },
+        {
+          "name": "El Palomar Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Mexican restaurant named a student favorite by Ohio Christian University.",
+          "price": "$$",
+          "sourceUrl": "https://www.ohiochristian.edu/campus-degrees/undergraduate-campus/about-circleville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Richie's New York Corner Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Deli named a student favorite by Ohio Christian University.",
+          "price": "$",
+          "sourceUrl": "https://www.ohiochristian.edu/campus-degrees/undergraduate-campus/about-circleville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Circleville Dairy Shed",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Ice cream stand named a student favorite by Ohio Christian University.",
+          "price": "$",
+          "sourceUrl": "https://www.ohiochristian.edu/campus-degrees/undergraduate-campus/about-circleville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Goodwin's Family Restaurant",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Family restaurant serving all-day breakfast and homestyle dinners.",
+          "price": "$",
+          "sourceUrl": "https://pickaway.com/tag/where-to-eat-in-circleville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Lindsey's Bake Shop",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Circleville bakery listed in Ohio Christian University's new-student guide.",
+          "price": "$",
+          "sourceUrl": "https://info.ohiochristian.edu/TrailGuideFall.pdf",
+          "deals": []
+        },
+        {
+          "name": "JoyHouse Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Circleville coffee shop on Pickaway County's coffee trail and in OCU's new-student guide.",
+          "price": "$",
+          "sourceUrl": "https://pickaway.com/tag/where-to-eat-in-circleville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Scioto Valley Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Circleville coffee shop on Pickaway County's coffee trail and in OCU's new-student guide.",
+          "price": "$",
+          "sourceUrl": "https://pickaway.com/tag/where-to-eat-in-circleville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Rost Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Circleville coffee shop on Pickaway County's coffee trail.",
+          "price": "$",
+          "sourceUrl": "https://pickaway.com/tag/where-to-eat-in-circleville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Taesty's Circleville",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "410 S Pickaway St, Circleville, OH 43113",
+          "website": "",
+          "blurb": "Counter spot with fried wing combos.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/taestyscircleville",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell (Circleville)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "23501 US Highway 23 S, Circleville, OH 43113",
+          "website": "",
+          "blurb": "National taco fast-food chain.",
+          "price": "$",
+          "sourceUrl": "https://www.tacobell.com/food?store=043357",
+          "deals": []
+        }
+      ]
     }
   ]
 }

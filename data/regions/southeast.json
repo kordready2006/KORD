@@ -31,7 +31,7 @@
           "local": true,
           "signature": true,
           "address": "10 S Court St, Athens, OH 45701",
-          "website": "",
+          "website": "https://www.bigmammasburritos.com",
           "blurb": "Athens burrito staple known for oversized burritos in Baby, Regular and Mega Mamma sizes.",
           "price": "$",
           "sourceUrl": "https://www.onlyinyourstate.com/food/ohio/massive-burritos-satisfy-all-your-cravings-oh",
@@ -564,6 +564,66 @@
           "price": "$$",
           "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Nelsonville/31712",
           "deals": []
+        },
+        {
+          "name": "Little Italy Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "488 E Canal St, Nelsonville, OH 45764",
+          "website": "",
+          "blurb": "Locally owned pizza, subs and salads shop on Canal Street.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/little-italy-pizza-277610064",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "21 Watkins St, Nelsonville, OH 45764",
+          "website": "",
+          "blurb": "Burger chain.",
+          "price": "$",
+          "sourceUrl": "https://www.doordash.com/food-delivery/nelsonville-oh-restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "497 E Canal St, Nelsonville, OH 45764",
+          "website": "",
+          "blurb": "Sub sandwich chain on Canal Street.",
+          "price": "$",
+          "sourceUrl": "https://www.doordash.com/food-delivery/nelsonville-oh-restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Sonic Drive-In",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1025 E Canal St, Nelsonville, OH 45764",
+          "website": "",
+          "blurb": "Drive-in burger and slush chain on Canal Street.",
+          "price": "$",
+          "sourceUrl": "https://www.doordash.com/food-delivery/nelsonville-oh-restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Burger King",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1309 E Canal St, Nelsonville, OH 45764",
+          "website": "",
+          "blurb": "Burger chain on Canal Street.",
+          "price": "$",
+          "sourceUrl": "https://www.doordash.com/food-delivery/nelsonville-oh-restaurants/",
+          "deals": []
         }
       ]
     },
@@ -600,7 +660,7 @@
           "category": "Other",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "130 Front St, Marietta, OH 45750",
           "website": "",
           "blurb": "Award-winning downtown restaurant near the historic district and the rivers.",
           "price": "$$",
@@ -624,7 +684,7 @@
           "category": "Mexican",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "221 2nd St, Marietta, OH 45750",
           "website": "",
           "blurb": "Mexican restaurant with a wide menu from fajitas and burritos to regional specialties.",
           "price": "$",
@@ -677,6 +737,66 @@
           "blurb": "Steakhouse chain with free rolls and peanuts.",
           "price": "$$",
           "sourceUrl": "https://www.texasroadhouse.com/locations/marietta",
+          "deals": []
+        },
+        {
+          "name": "Over the Moon Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "170 Front St, Marietta, OH 45750",
+          "website": "",
+          "blurb": "Downtown pizza spot on Front Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.theknot.com/us/isabelle-erb-and-baylor-haught-dec-2024/local-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "342 Pike St, Marietta, OH 45750",
+          "website": "https://locations.tacobell.com/oh/marietta/342-pike-street/fast-food.html",
+          "blurb": "Tacos and burritos on Pike Street.",
+          "price": "$",
+          "sourceUrl": "https://locations.tacobell.com/oh/marietta/342-pike-street/fast-food.html",
+          "deals": []
+        },
+        {
+          "name": "Qdoba",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "100 Pike St, Marietta, OH 45750",
+          "website": "",
+          "blurb": "Burrito and bowl chain on Pike Street.",
+          "price": "$",
+          "sourceUrl": "https://roadtrippers.com/us/marietta-oh/food-drink/qdoba-marietta-ohio",
+          "deals": []
+        },
+        {
+          "name": "Denny's",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "700 Pike St, Marietta, OH 45750",
+          "website": "https://locations.dennys.com/OH/MARIETTA/249690",
+          "blurb": "Diner chain on Pike Street.",
+          "price": "$",
+          "sourceUrl": "https://locations.dennys.com/OH/MARIETTA/249690",
+          "deals": []
+        },
+        {
+          "name": "Dairy Queen",
+          "category": "Dessert & Ice Cream",
+          "local": false,
+          "signature": false,
+          "address": "821 Pike St, Marietta, OH 45750",
+          "website": "https://dairyqueen.com/en-us/locations/oh/marietta/821-pike-st/7030",
+          "blurb": "Soft-serve and fast food chain on Pike Street.",
+          "price": "$",
+          "sourceUrl": "https://dairyqueen.com/en-us/locations/oh/marietta/821-pike-st/7030",
           "deals": []
         }
       ]
@@ -775,6 +895,42 @@
           "price": "$",
           "sourceUrl": "https://www.onlyinyourstate.com/trip-ideas/ohio/small-town-restaurants-oh",
           "deals": []
+        },
+        {
+          "name": "Shake Shoppe",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Gallipolis shake and fast food stand.",
+          "price": "$",
+          "sourceUrl": "https://frankiapp.com/business/shake-shoppe-463732.md",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "63 Ohio River Plaza, Gallipolis, OH 45631",
+          "website": "https://locations.tacobell.com/oh/gallipolis/63-ohio-river-plaza.html",
+          "blurb": "Late-night drive-through tacos in Gallipolis.",
+          "price": "$",
+          "sourceUrl": "https://locations.tacobell.com/oh/gallipolis/63-ohio-river-plaza.html",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1715 Eastern Ave, Gallipolis, OH 45631",
+          "website": "",
+          "blurb": "Burger chain in Gallipolis.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/mcdonalds-291679036",
+          "deals": []
         }
       ]
     },
@@ -872,6 +1028,372 @@
           "price": "$$",
           "sourceUrl": "https://www.restaurantji.com/oh/portsmouth/buffalo-wild-wings-/",
           "deals": []
+        },
+        {
+          "name": "Patties & Pints",
+          "category": "Burgers",
+          "local": true,
+          "signature": true,
+          "address": "546 2nd St, Portsmouth, OH 45662",
+          "website": "",
+          "blurb": "Prohibition-themed burger and craft beer spot near the Ohio River.",
+          "price": "$$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/patties-pints-380262351",
+          "deals": []
+        },
+        {
+          "name": "Port City Cafe & Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Cafe and pub on Shawnee State's student discount list.",
+          "price": "$",
+          "sourceUrl": "https://phoenix-0af34b1.aws.mapquest.com/us/ohio/port-city-cafe-pub-304165794",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "25% off for SSU students",
+              "details": "25% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "25% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Sonora Mexican Grill",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Mexican grill on Shawnee State's student discount list.",
+          "price": "$",
+          "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off for SSU students",
+              "details": "10% off, alcohol excluded. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Maestro's Mexican Grill",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Mexican grill on Shawnee State's student discount list.",
+          "price": "$",
+          "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off for SSU students",
+              "details": "10% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Fork and Finger",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Portsmouth restaurant on Shawnee State's student discount list.",
+          "price": "$",
+          "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off for SSU students",
+              "details": "10% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Oddfellows",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Portsmouth restaurant on Shawnee State's student discount list.",
+          "price": "$",
+          "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off total bill for SSU students",
+              "details": "10% off the total bill. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Patsy's Inn",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Portsmouth restaurant on Shawnee State's student discount list.",
+          "price": "$",
+          "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off total bill for SSU students",
+              "details": "10% off the total bill, dine-in only. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Belini's",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Portsmouth restaurant on Shawnee State's student discount list.",
+          "price": "$",
+          "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off for SSU students",
+              "details": "10% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Gatti's Pizza",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Pizza buffet chain.",
+          "price": "$",
+          "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$10.99 buffet special for SSU students",
+              "details": "$10.99 buffet special. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "$10.99",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Penn Station East Coast Subs",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "1605 Chillicothe St, Portsmouth, OH 45662",
+          "website": "",
+          "blurb": "Grilled sub and fresh-cut fries chain.",
+          "price": "$",
+          "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off for SSU students",
+              "details": "10% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Arby's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1202 Chillicothe St, Portsmouth, OH 45662",
+          "website": "",
+          "blurb": "Roast beef sandwich chain.",
+          "price": "$",
+          "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off for SSU students",
+              "details": "10% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Sub sandwich chain; all Portsmouth-area locations take part in the student discount.",
+          "price": "$",
+          "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Free drink with a footlong for SSU students",
+              "details": "Free drink with a footlong, or 10% off other purchases, at all Portsmouth-area locations. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "price": "Free drink",
+              "studentOnly": true,
+              "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "2535 Gallia St, Portsmouth, OH 45662",
+          "website": "https://locations.tacobell.com/oh/portsmouth/2535-gallia-street.html",
+          "blurb": "Tacos and burritos on Gallia Street; a second location is at 3826 US Highway 23.",
+          "price": "$",
+          "sourceUrl": "https://locations.tacobell.com/oh/portsmouth/2535-gallia-street.html",
+          "deals": []
+        },
+        {
+          "name": "A&W",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1102 Chillicothe St, Portsmouth, OH 45662",
+          "website": "https://awrestaurants.com/locations/ohio/portsmouth/1102-chillicothe-st",
+          "blurb": "Root beer and burger chain.",
+          "price": "$",
+          "sourceUrl": "https://awrestaurants.com/locations/ohio/portsmouth/1102-chillicothe-st",
+          "deals": []
         }
       ]
     },
@@ -904,7 +1426,7 @@
           "local": true,
           "signature": false,
           "address": "13 E Main St, New Concord, OH 43762",
-          "website": "",
+          "website": "https://www.crenospizzaco.com/Locations/New-Concord/",
           "blurb": "Regional pizza chain location on Main Street.",
           "price": "$",
           "sourceUrl": "https://phoenix.aws.mapquest.com/us/ohio/crenos-pizza-26206334",
@@ -920,6 +1442,42 @@
           "blurb": "Classic American diner on Main Street praised for breakfast.",
           "price": "$",
           "sourceUrl": "https://pos.do/en/concord/restaurant/scotts",
+          "deals": []
+        },
+        {
+          "name": "Wally's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "15 W Main St, New Concord, OH 43762",
+          "website": "",
+          "blurb": "Main Street pizza shop serving New Concord for almost 40 years.",
+          "price": "$",
+          "sourceUrl": "https://phoenix.aws.mapquest.com/us/ohio/wallys-pizza-270447585",
+          "deals": []
+        },
+        {
+          "name": "Chapman's Coffee House",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "68 1/2 W Main St, New Concord, OH 43762",
+          "website": "",
+          "blurb": "Coffee house on West Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.visitzanesville.com/Explore/Destinations/315/",
+          "deals": []
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Sub sandwich chain in town.",
+          "price": "$",
+          "sourceUrl": "https://phoenix.aws.mapquest.com/us/ohio/crenos-pizza-26206334",
           "deals": []
         }
       ]
@@ -1035,6 +1593,90 @@
           "price": "$$",
           "sourceUrl": "https://www.allmenus.com/oh/zanesville/103861-ruby-tuesdays/menu/",
           "deals": []
+        },
+        {
+          "name": "Tom's Ice Cream Bowl",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": true,
+          "address": "532 McIntire Ave, Zanesville, OH 43701",
+          "website": "https://www.tomsicecreambowl.com",
+          "blurb": "Iconic ice cream parlor founded in 1948, on Ohio's official Ice Cream Trail.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/toms-ice-cream-bowl-5667046",
+          "deals": []
+        },
+        {
+          "name": "Adornetto's",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "2224 Maple Ave, Zanesville, OH 43701",
+          "website": "",
+          "blurb": "Italian food and pizza on Maple Avenue at Brookover.",
+          "price": "$$",
+          "sourceUrl": "https://redirect.foursquare.com/jimmclark/list/ohthe-places-you-will-go-in-zanesville-visitus",
+          "deals": []
+        },
+        {
+          "name": "Whit's Frozen Custard",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "3405 Maple Ave, Zanesville, OH 43701",
+          "website": "",
+          "blurb": "Ohio frozen custard chain.",
+          "price": "$",
+          "sourceUrl": "https://www.visitzanesville.com/Explore/Dining/",
+          "deals": []
+        },
+        {
+          "name": "Raising Cane's",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "3275 Maple Ave, Zanesville, OH 43701",
+          "website": "",
+          "blurb": "Chicken finger chain.",
+          "price": "$",
+          "sourceUrl": "https://www.visitzanesville.com/Explore/Dining/",
+          "deals": []
+        },
+        {
+          "name": "Freddy's Frozen Custard & Steakburgers",
+          "category": "Burgers",
+          "local": false,
+          "signature": false,
+          "address": "3182 Maple Ave, Zanesville, OH 43701",
+          "website": "",
+          "blurb": "Steakburger and frozen custard chain.",
+          "price": "$",
+          "sourceUrl": "https://www.visitzanesville.com/Explore/Dining/",
+          "deals": []
+        },
+        {
+          "name": "Pizza Hut",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "3355 Maple Ave, Zanesville, OH 43701",
+          "website": "",
+          "blurb": "Pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://www.visitzanesville.com/Explore/Dining/",
+          "deals": []
+        },
+        {
+          "name": "Tim Hortons",
+          "category": "Coffee & Bakery",
+          "local": false,
+          "signature": false,
+          "address": "3231 Maple Ave, Zanesville, OH 43701",
+          "website": "",
+          "blurb": "Coffee and donut chain (north location).",
+          "price": "$",
+          "sourceUrl": "https://www.visitzanesville.com/Explore/Dining/",
+          "deals": []
         }
       ]
     },
@@ -1143,6 +1785,42 @@
           "blurb": "Steakhouse chain with free rolls and peanuts.",
           "price": "$$",
           "sourceUrl": "https://www.texasroadhouse.com/locations/ohio/chillicothe",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1005 E Main St, Chillicothe, OH 45601",
+          "website": "https://locations.tacobell.com/oh/chillicothe/1005-e-main-street/fast-food.html",
+          "blurb": "Tacos and burritos; one of three Chillicothe locations.",
+          "price": "$",
+          "sourceUrl": "https://locations.tacobell.com/oh/chillicothe/1005-e-main-street/fast-food.html",
+          "deals": []
+        },
+        {
+          "name": "Panda Express",
+          "category": "Asian",
+          "local": false,
+          "signature": false,
+          "address": "1405 N Bridge St, Chillicothe, OH 45601",
+          "website": "",
+          "blurb": "Chinese-American fast food chain.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/find-near-me/chillicothe-oh/food",
+          "deals": []
+        },
+        {
+          "name": "IHOP",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "10 Consumer Center Dr, Chillicothe, OH 45601",
+          "website": "https://restaurants.ihop.com/en-us/oh/chillicothe/breakfast-10-consumer-center-dr-3254",
+          "blurb": "Pancake house chain.",
+          "price": "$$",
+          "sourceUrl": "https://restaurants.ihop.com/en-us/oh/chillicothe/breakfast-10-consumer-center-dr-3254",
           "deals": []
         }
       ]
@@ -1253,6 +1931,66 @@
           "price": "$",
           "sourceUrl": "https://www.restaurantji.com/oh/ironton/",
           "deals": []
+        },
+        {
+          "name": "Iron Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Local diner with strong reviews.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/iron-diner-646221522",
+          "deals": []
+        },
+        {
+          "name": "Patties & Pints",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Ironton outpost of the Portsmouth prohibition-themed burger spot.",
+          "price": "$$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/patties-pints-456980342",
+          "deals": []
+        },
+        {
+          "name": "Marco's Pizza",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "https://www.marcos.com/our-locations/restaurants/oh/ironton/marcos-pizza-s-3rd-st-ironton-1/",
+          "blurb": "Pizza chain on South 3rd Street.",
+          "price": "$",
+          "sourceUrl": "https://www.marcos.com/our-locations/restaurants/oh/ironton/marcos-pizza-s-3rd-st-ironton-1/",
+          "deals": []
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "1021 Ironton Hills Dr, Ironton, OH 45638",
+          "website": "https://restaurants.subway.com/united-states/oh/ironton/1021-ironton-hills-dr",
+          "blurb": "Sub sandwich chain.",
+          "price": "$",
+          "sourceUrl": "https://restaurants.subway.com/united-states/oh/ironton/1021-ironton-hills-dr",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1065 Ironton Hills Dr, Ironton, OH 45638",
+          "website": "",
+          "blurb": "Tacos and burritos.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/find-near-me/ironton-oh/food",
+          "deals": []
         }
       ]
     },
@@ -1362,6 +2100,78 @@
           "price": "$",
           "sourceUrl": "https://www.mapquest.com/us/ohio/roosters-restaurant-bar-5583313",
           "deals": []
+        },
+        {
+          "name": "Raising Cane's",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "1934 N Memorial Dr, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Chicken finger chain.",
+          "price": "$",
+          "sourceUrl": "https://ubereats.com/category/lancaster-oh/fast-food",
+          "deals": []
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "1608 N Memorial Dr, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Burrito and bowl chain.",
+          "price": "$",
+          "sourceUrl": "https://ubereats.com/category/lancaster-oh/fast-food",
+          "deals": []
+        },
+        {
+          "name": "Wingstop",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "1622 N Memorial Dr, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Wing chain.",
+          "price": "$$",
+          "sourceUrl": "https://ubereats.com/category/lancaster-oh/fast-food",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1401 N Memorial Dr, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Burger chain.",
+          "price": "$",
+          "sourceUrl": "https://ubereats.com/category/lancaster-oh/fast-food",
+          "deals": []
+        },
+        {
+          "name": "Wendy's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1121 N Memorial Dr, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Burger chain.",
+          "price": "$",
+          "sourceUrl": "https://ubereats.com/category/lancaster-oh/fast-food",
+          "deals": []
+        },
+        {
+          "name": "KFC",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "1718 N Memorial Dr, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Fried chicken chain.",
+          "price": "$",
+          "sourceUrl": "https://ubereats.com/category/lancaster-oh/fast-food",
+          "deals": []
         }
       ]
     },
@@ -1446,7 +2256,7 @@
           "category": "Asian",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "67800 Mall Rd #390, St. Clairsville, OH 43950",
           "website": "",
           "blurb": "Japanese steakhouse; listed at the Ohio Valley Mall.",
           "price": "$$",
@@ -1475,6 +2285,42 @@
           "blurb": "Country-cooking chain by the Ohio Valley Mall.",
           "price": "$$",
           "sourceUrl": "https://reviews.birdeye.com/d/restaurants/saint-clairsville-oh",
+          "deals": []
+        },
+        {
+          "name": "Chick-fil-A",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "67950 Mall Ring Rd, St. Clairsville, OH 43950",
+          "website": "https://www.chick-fil-a.com/stclairsville",
+          "blurb": "Chicken sandwich chain by the Ohio Valley Mall.",
+          "price": "$",
+          "sourceUrl": "https://www.chick-fil-a.com/stclairsville",
+          "deals": []
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "68041 Mall Ring Rd, St. Clairsville, OH 43950",
+          "website": "",
+          "blurb": "Burrito and bowl chain.",
+          "price": "$",
+          "sourceUrl": "https://www.happycow.net/widget/north_america/usa/ohio/st_clairsville/",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "67891 Mall Ring Rd, St. Clairsville, OH 43950",
+          "website": "",
+          "blurb": "Burger chain.",
+          "price": "$",
+          "sourceUrl": "https://startpage.phoenix.aws.mapquest.com/us/ohio/mcdonalds-291679667",
           "deals": []
         }
       ]
@@ -1512,6 +2358,156 @@
           "blurb": "Locally owned and operated Italian restaurant and tavern.",
           "price": "$$",
           "sourceUrl": "https://bbb.org/us/oh/steubenville/category/restaurants/accredited",
+          "deals": []
+        },
+        {
+          "name": "Naples Spaghetti House",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "329 North St, Steubenville, OH 43952",
+          "website": "",
+          "blurb": "Historic Italian-American spaghetti house, a Steubenville institution.",
+          "price": "$$",
+          "sourceUrl": "https://www.onlyinyourstate.com/ohio/spaghetti-house-oh/",
+          "deals": []
+        },
+        {
+          "name": "DiCarlo's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Home of the Ohio Valley's old-style rectangular tray pizza; downtown and Sunset Blvd shops.",
+          "price": "$",
+          "sourceUrl": "https://maps.roadtrippers.com/us/steubenville-oh/food-drink/di-carlos-pizza-inn",
+          "deals": []
+        },
+        {
+          "name": "Froehlich's Classic Corner",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "501 Washington St, Steubenville, OH 43952",
+          "website": "",
+          "blurb": "Downtown restaurant on Washington Street.",
+          "price": "$$",
+          "sourceUrl": "https://cars.superpages.com/steubenville-oh/italian-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Rubi's Pizza & Grill",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "225 Franciscan Sq, Steubenville, OH 43952",
+          "website": "",
+          "blurb": "Pizza and grill in Franciscan Square across from campus.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Steubenville/32306",
+          "deals": []
+        },
+        {
+          "name": "The Harp and Habit (Bennigan's)",
+          "category": "Bar & Grill",
+          "local": false,
+          "signature": false,
+          "address": "185 Franciscan Sq, Steubenville, OH 43952",
+          "website": "",
+          "blurb": "Bennigan's franchise restaurant and pub in Franciscan Square.",
+          "price": "$$",
+          "sourceUrl": "https://bennigans.com/steubenville-oh-opening/",
+          "deals": []
+        },
+        {
+          "name": "Jimmy John's",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "225 Franciscan Sq, Suite B, Steubenville, OH 43952",
+          "website": "",
+          "blurb": "Sub sandwich chain in Franciscan Square across from campus.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/find-near-me/steubenville-oh/food",
+          "deals": []
+        },
+        {
+          "name": "Eat'n Park",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://locations.eatnpark.com/oh/steubenville/restaurants-10.html",
+          "blurb": "Regional family restaurant chain open late.",
+          "price": "$",
+          "sourceUrl": "https://locations.eatnpark.com/oh/steubenville/restaurants-10.html",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Franciscan University student discount",
+              "details": "Eat'n Park's 2023 back-to-school post lists the Steubenville restaurant as a student-discount location for Franciscan University students. The discount amount and conditions were not confirmed; ask in the restaurant.",
+              "price": "",
+              "studentOnly": true,
+              "sourceUrl": "https://blog.eatnpark.com/2023/08/back-to-school-eatn-park-discounts.html",
+              "sourceDate": "2023-08"
+            }
+          ]
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "2118 Sunset Blvd, Steubenville, OH 43952",
+          "website": "",
+          "blurb": "Tacos and burritos on Sunset Boulevard.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Steubenville/32306",
+          "deals": []
+        },
+        {
+          "name": "Bob Evans",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "1997 Sunset Blvd, Steubenville, OH 43952",
+          "website": "",
+          "blurb": "Ohio-born farmhouse breakfast chain.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/find-near-me/steubenville-oh/food",
+          "deals": []
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "114 S Hollywood Blvd, Steubenville, OH 43952",
+          "website": "",
+          "blurb": "Sub sandwich chain.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/find-near-me/steubenville-oh/food",
+          "deals": []
+        },
+        {
+          "name": "Texas Roadhouse",
+          "category": "Other",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "https://www.texasroadhouse.com/locations/ohio/steubenville",
+          "blurb": "Steakhouse chain with free rolls and peanuts.",
+          "price": "$$",
+          "sourceUrl": "https://www.texasroadhouse.com/locations/ohio/steubenville",
           "deals": []
         }
       ]

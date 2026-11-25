@@ -635,6 +635,18 @@
           "price": "$",
           "sourceUrl": "https://localwiki.org/toledo/Chipotle_Mexican_Grill",
           "deals": []
+        },
+        {
+          "name": "Schmucker's Restaurant",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": true,
+          "address": "2103 N Reynolds Rd, Toledo, OH 43615",
+          "website": "",
+          "blurb": "Family-run diner since 1948 known for around 20 varieties of homemade pie.",
+          "price": "$",
+          "sourceUrl": "https://mapquest.com/us/ohio/schmuckers-5659529",
+          "deals": []
         }
       ]
     },
@@ -836,11 +848,34 @@
           "local": true,
           "signature": false,
           "address": "219 S Main St, Ada, OH 45810",
-          "website": "",
+          "website": "https://slicelife.com/restaurants/oh/ada/45810/padrone-s-of-ada/menu",
           "blurb": "Northwest Ohio pizza chain's Main Street shop.",
           "price": "$",
           "sourceUrl": "https://www.yellowpages.com/ada-oh/pizza",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Tuesday sub special",
+              "details": "Padrone's of Ada's Slice menu lists a Tuesday Specials category with a discounted sub; exact price not captured.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://slicelife.com/restaurants/oh/ada/45810/padrone-s-of-ada/menu",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Wednesday pizza special",
+              "details": "Padrone's of Ada's Slice menu lists a Wednesday pizza deal among its weekday specials; exact price not captured.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://slicelife.com/restaurants/oh/ada/45810/padrone-s-of-ada/menu",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "East of Chicago Pizza",
@@ -856,7 +891,7 @@
         },
         {
           "name": "Old Route 69",
-          "category": "Bar & Grill",
+          "category": "Other",
           "local": true,
           "signature": false,
           "address": "120 E Buckeye Ave, Ada, OH 45810",
@@ -864,6 +899,1051 @@
           "blurb": "Downtown Ada restaurant with online ordering.",
           "price": "$$",
           "sourceUrl": "https://www.toasttab.com/local/order/old-route-69-120-east-buckeye-avenue",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "tiffin",
+      "name": "Tiffin",
+      "colleges": [
+        {
+          "name": "Heidelberg University",
+          "type": "Private university",
+          "url": "https://www.heidelberg.edu"
+        },
+        {
+          "name": "Tiffin University",
+          "type": "Private university",
+          "url": "https://www.tiffin.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Fort Ball Pizza Palace",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "91 N Washington St, Tiffin, OH 44883",
+          "website": "",
+          "blurb": "Downtown pizza institution known for its buffet.",
+          "price": "$",
+          "sourceUrl": "https://www.heidelberg.edu/sites/default/files/TiffinDining.pdf",
+          "deals": []
+        },
+        {
+          "name": "Reino's Pizza & Pasta",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "73 E Market St, Tiffin, OH 44883",
+          "website": "",
+          "blurb": "Family-owned pizza and pasta restaurant started by Frankie Reino in 1950.",
+          "price": "$$",
+          "sourceUrl": "https://www.heidelberg.edu/sites/default/files/TiffinDining.pdf",
+          "deals": []
+        },
+        {
+          "name": "Carmie's Bar & Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://www.toasttab.com/local/order/carmies",
+          "blurb": "Bar and grill billed in Heidelberg's Tiffin dining guide as the home of the 25-cent wing night (day not stated).",
+          "price": "$",
+          "sourceUrl": "https://www.heidelberg.edu/sites/default/files/TiffinDining.pdf",
+          "deals": []
+        },
+        {
+          "name": "Paulette's",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Homestyle cooking with daily specials, per Heidelberg's Tiffin dining guide.",
+          "price": "$",
+          "sourceUrl": "https://www.heidelberg.edu/sites/default/files/TiffinDining.pdf",
+          "deals": []
+        },
+        {
+          "name": "The Turntable",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Well-reviewed downtown spot on South Washington Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/tiffin/",
+          "deals": []
+        },
+        {
+          "name": "MST Pub & Grub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Pub on Madison Street named among Tiffin's casual favorites.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/tiffin/",
+          "deals": []
+        },
+        {
+          "name": "Hoptometry Brewing Company",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Tiffin brewery listed among local standouts.",
+          "price": "$$",
+          "sourceUrl": "https://tiffinohio.net/posts/top-restaurants-to-visit-in-tiffin-ohio-for-2026/",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "630 W Market St, Tiffin, OH 44883",
+          "website": "https://www.tacobell.com",
+          "blurb": "Taco chain on West Market Street.",
+          "price": "$",
+          "sourceUrl": "https://www.tacobell.com/food?store=022447",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "lima",
+      "name": "Lima",
+      "colleges": [
+        {
+          "name": "The Ohio State University at Lima",
+          "type": "Public university",
+          "url": "https://lima.osu.edu"
+        },
+        {
+          "name": "Rhodes State College",
+          "type": "Community college",
+          "url": "https://www.rhodesstate.edu"
+        },
+        {
+          "name": "University of Northwestern Ohio",
+          "type": "Private university",
+          "url": "https://www.unoh.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Kewpee Hamburgers",
+          "category": "Burgers",
+          "local": true,
+          "signature": true,
+          "address": "111 N Elizabeth St, Lima, OH 45801",
+          "website": "https://kewpeehamburgers.com",
+          "blurb": "Lima burger institution since 1928; also at 2111 Allentown Rd and 1350 Bellefontaine Ave.",
+          "price": "$",
+          "sourceUrl": "https://www.ohiomagazine.com/food-drink/article/kewpee-hamburgers",
+          "deals": []
+        },
+        {
+          "name": "Fat Jack's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "2340 Spencerville Rd, Lima, OH",
+          "website": "",
+          "blurb": "Lima-only pizza chain with three locations around the city.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/pizza/lima-oh/",
+          "deals": []
+        },
+        {
+          "name": "Rigali's Pizza Village",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "505 N West St, Lima, OH",
+          "website": "",
+          "blurb": "Long-reviewed local pizza shop on North West Street.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/pizza/lima-oh/",
+          "deals": []
+        },
+        {
+          "name": "TJ's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "2390 Baty Rd Ste Z, Lima, OH",
+          "website": "",
+          "blurb": "Local pizza shop in business since 1968 with eat-in and carryout.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/tjs-pizza-272809057",
+          "deals": []
+        },
+        {
+          "name": "Padrone's Pizza Shawnee",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "3280 S Dixie Hwy, Lima, OH",
+          "website": "",
+          "blurb": "Northwest Ohio pizza chain's Shawnee shop with build-your-own and specialty pies.",
+          "price": "$",
+          "sourceUrl": "https://slicelife.com/restaurants/oh/lima/45806/padrone-s-pizza-shawnee/menu",
+          "deals": []
+        },
+        {
+          "name": "Romeo's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "2899 W Elm St, Lima, OH",
+          "website": "https://www.romeospizza.com",
+          "blurb": "Ohio-based pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/pizza/lima-oh/",
+          "deals": []
+        },
+        {
+          "name": "The Met",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "306 N Main St, Lima, OH",
+          "website": "https://www.toasttab.com/local/order/the-met-306-n-main-st/r-ebdd1d1d-2abd-4fdf-9cda-b72e34e96751",
+          "blurb": "Downtown Lima restaurant with online ordering.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/the-met-306-n-main-st/r-ebdd1d1d-2abd-4fdf-9cda-b72e34e96751",
+          "deals": []
+        },
+        {
+          "name": "Donatos Pizza",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "2417 Elida Rd, Lima, OH",
+          "website": "https://www.donatos.com",
+          "blurb": "Columbus-born thin-crust pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/pizza/lima-oh/",
+          "deals": []
+        },
+        {
+          "name": "Applebee's",
+          "category": "Bar & Grill",
+          "local": false,
+          "signature": false,
+          "address": "1925 Roschman Ave, Lima, OH",
+          "website": "https://restaurants.applebees.com/en-us/oh/lima/1925-roschman-ave.-99032",
+          "blurb": "Casual dining chain.",
+          "price": "$$",
+          "sourceUrl": "https://restaurants.applebees.com/en-us/oh/lima/1925-roschman-ave.-99032",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "bluffton",
+      "name": "Bluffton",
+      "colleges": [
+        {
+          "name": "Bluffton University",
+          "type": "Private university",
+          "url": "https://www.bluffton.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Mustard Seed Cafe at the Depot",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": true,
+          "address": "562 N Main St, Bluffton, OH 45817",
+          "website": "",
+          "blurb": "Small cafe in Bluffton's historic railroad depot with rotating monthly specials.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/hidden-hancock-county-mustard-seed-cafe",
+          "deals": []
+        },
+        {
+          "name": "Bluffton Dari Freeze",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "595 S Main St, Bluffton, OH 45817",
+          "website": "",
+          "blurb": "Local dairy-freeze stop on South Main Street.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/?p=16188",
+          "deals": []
+        },
+        {
+          "name": "Padrone's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "147 N Main St, Bluffton, OH 45817",
+          "website": "",
+          "blurb": "Northwest Ohio pizza chain's downtown Bluffton shop.",
+          "price": "$",
+          "sourceUrl": "https://startpage.phoenix.aws.mapquest.com/us/ohio/padrones-pizza-6007711",
+          "deals": []
+        },
+        {
+          "name": "Arby's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "505 Ohio 103, Bluffton, OH 45817",
+          "website": "https://www.arbys.com",
+          "blurb": "Roast beef sandwich chain near the I-75 exit.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/pgc2up/dish/bluffton-oh/roast-beef",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "defiance",
+      "name": "Defiance",
+      "colleges": [
+        {
+          "name": "Defiance College",
+          "type": "Private college",
+          "url": "https://www.defiance.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Bud's Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "505 W Second St, Defiance, OH",
+          "website": "",
+          "blurb": "Downtown Defiance staple since 1939.",
+          "price": "$",
+          "sourceUrl": "https://visitdefianceohio.com/business-directory/wpbdp_tag/dine-in",
+          "deals": []
+        },
+        {
+          "name": "Kissner's Restaurant",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "524 Clinton St, Defiance, OH",
+          "website": "",
+          "blurb": "Dating to 1928, billed as the oldest tavern in Ohio still owned by one family.",
+          "price": "$$",
+          "sourceUrl": "https://visitdefianceohio.com/business-directory/wpbdp_tag/dine-in",
+          "deals": []
+        },
+        {
+          "name": "Meek's Pastry Shop",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "315 Clinton St, Defiance, OH",
+          "website": "",
+          "blurb": "Downtown bakery that has been a Defiance staple since 1925.",
+          "price": "$",
+          "sourceUrl": "https://visitdefianceohio.com/business-directory/wpbdp_tag/dine-in",
+          "deals": []
+        },
+        {
+          "name": "Miami & Erie Restaurant and Lounge",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "406 Clinton St, Defiance, OH",
+          "website": "",
+          "blurb": "Downtown spot serving pizza with craft and domestic beers.",
+          "price": "$$",
+          "sourceUrl": "https://visitdefianceohio.com/business-directory/wpbdp_tag/dine-in",
+          "deals": []
+        },
+        {
+          "name": "Sam's Ristorante",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "501 W Second St, Defiance, OH",
+          "website": "",
+          "blurb": "Italian restaurant in downtown Defiance.",
+          "price": "$$",
+          "sourceUrl": "https://visitdefianceohio.com/business-directory/wpbdp_tag/dine-in",
+          "deals": []
+        },
+        {
+          "name": "Defiance Pancake House",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "2023 Jefferson Ave, Defiance, OH",
+          "website": "",
+          "blurb": "Top-rated local breakfast spot.",
+          "price": "$",
+          "sourceUrl": "https://restaurantji.com/oh/defiance",
+          "deals": []
+        },
+        {
+          "name": "Cabin Fever Coffee (Downtown)",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "312 Clinton St, Defiance, OH",
+          "website": "",
+          "blurb": "Downtown coffee shop.",
+          "price": "$",
+          "sourceUrl": "https://restaurantji.com/oh/defiance",
+          "deals": []
+        },
+        {
+          "name": "Fired Stone Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "211 Carpenter Rd, Defiance, OH",
+          "website": "",
+          "blurb": "Tavern with smoked wings and online ordering.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/sweetwater-chop-oo-fired-stone-tavern/r-5b1a3f5d-a85c-4a2d-b27e-0526cc513616/item-strawberry-balsamic-t_9317ebb9-df4a-4f47-89a2-b72636f07500",
+          "deals": []
+        },
+        {
+          "name": "Dad's Dairy Depot",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "611 Ottawa Ave, Defiance, OH",
+          "website": "",
+          "blurb": "Dairy stand with daily lunch specials and a soup of the week.",
+          "price": "$",
+          "sourceUrl": "https://visitdefianceohio.com/business-directory/wpbdp_category/eat-drink",
+          "deals": []
+        },
+        {
+          "name": "Dos Eppi's",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "200 Clinton St, Defiance, OH",
+          "website": "",
+          "blurb": "Downtown restaurant listed with weekday and weekend specials.",
+          "price": "$$",
+          "sourceUrl": "https://visitdefianceohio.com/business-directory/wpbdp_category/eat-drink",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1902 E Second St, Defiance, OH",
+          "website": "https://www.tacobell.com",
+          "blurb": "Taco chain on East Second Street.",
+          "price": "$",
+          "sourceUrl": "https://www.tacobell.com/food?store=022446",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "sylvania",
+      "name": "Sylvania",
+      "colleges": [
+        {
+          "name": "Lourdes University",
+          "type": "Private university",
+          "url": "https://www.lourdes.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Earth to Oven",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "5758 Main St, Sylvania, OH 43560",
+          "website": "",
+          "blurb": "Charming downtown cafe and bakery praised by the Toledo Blade.",
+          "price": "$$",
+          "sourceUrl": "https://toledoblade.com/a-e/restaurant-reviews/2022/01/06/the-blade-best-of-bill-of-fare-2021/stories/20220106002",
+          "deals": []
+        },
+        {
+          "name": "Treo",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "5703 Main St, Sylvania, OH 43560",
+          "website": "",
+          "blurb": "Stylish downtown Sylvania restaurant open for lunch and dinner.",
+          "price": "$$$",
+          "sourceUrl": "https://momonthegoinholytoledo.com/2021/03/05/best-restaurants-in-toledo",
+          "deals": []
+        },
+        {
+          "name": "Charlie's Homemade Pizza & Italian Cuisine",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "6600 W Sylvania Ave, Sylvania, OH",
+          "website": "",
+          "blurb": "Pizza and Italian restaurant rated by the Toledo Blade among the area's best Italian food.",
+          "price": "$$",
+          "sourceUrl": "https://toledoblade.com/a-e/restaurant-reviews/2022/01/06/the-blade-best-of-bill-of-fare-2021/stories/20220106002",
+          "deals": []
+        },
+        {
+          "name": "Georgio's Grill",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "5577 Monroe St, Sylvania, OH",
+          "website": "",
+          "blurb": "Casual Italian, pizza and American grill on Monroe Street.",
+          "price": "$$",
+          "sourceUrl": "https://opentable.sg/r/georgios-grill-sylvania",
+          "deals": []
+        },
+        {
+          "name": "Fricker's",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://www.frickers.com",
+          "blurb": "Sylvania location of the Ohio-based wings and sports bar chain.",
+          "price": "$$",
+          "sourceUrl": "https://www.doordash.com/store/frickers-sylvania-625927/",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "perrysburg",
+      "name": "Perrysburg",
+      "colleges": [
+        {
+          "name": "Owens Community College",
+          "type": "Community college",
+          "url": "https://www.owens.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Swig",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "219 Louisiana Ave, Perrysburg, OH",
+          "website": "https://swigrestaurant.com",
+          "blurb": "Downtown gastropub known for house-made sausages and charcuterie, with rotating weekly food specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.ohiomagazine.com/Food-Drink/Restaurants/Details/Swig",
+          "deals": []
+        },
+        {
+          "name": "5th Street Pub",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "105 W 5th St, Perrysburg, OH 43551",
+          "website": "",
+          "blurb": "Downtown pub specializing in Neapolitan pizza and meatballs.",
+          "price": "$$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/5th-street-pub-284047950",
+          "deals": []
+        },
+        {
+          "name": "Basil Pizza & Wine Bar",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "3145 Hollister Ln, Perrysburg, OH",
+          "website": "",
+          "blurb": "Wood-fired pizza and wine bar with a patio at Levis Commons.",
+          "price": "$$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/basil-pizza-wine-bar-385244155",
+          "deals": []
+        },
+        {
+          "name": "Poco Piatti",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "3155 Chappel Dr, Perrysburg, OH",
+          "website": "https://www.toasttab.com/local/poco-piatti-perrysburg-3155-chapel-drive/r-edce7e9e-8849-41b0-bcbc-eae9ab523fcb",
+          "blurb": "Mediterranean small plates and brick-oven pizza.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/poco-piatti-perrysburg-3155-chapel-drive/r-edce7e9e-8849-41b0-bcbc-eae9ab523fcb",
+          "deals": []
+        },
+        {
+          "name": "Iron Bean Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "25561 Fort Meigs Rd, Perrysburg, OH 43551",
+          "website": "",
+          "blurb": "Coffee shop listed on Owens Community College's dining page.",
+          "price": "$",
+          "sourceUrl": "https://www.owens.edu/dining/?p=75",
+          "deals": []
+        },
+        {
+          "name": "Agave & Rye",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "1210 Levis Commons Blvd, Perrysburg, OH",
+          "website": "https://www.agaveandrye.com",
+          "blurb": "Tacos-and-tequila chain at Levis Commons.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/perrysburg/",
+          "deals": []
+        },
+        {
+          "name": "Jimmy John's",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "12301 Eckel Junction Rd Ste 400, Perrysburg, OH 43551",
+          "website": "https://www.jimmyjohns.com",
+          "blurb": "Sub sandwich chain.",
+          "price": "$",
+          "sourceUrl": "https://city-data.com/local/Restaurants/Perrysburg-OH-3.html",
+          "deals": []
+        },
+        {
+          "name": "IHOP",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "10151 Fremont Pike, Perrysburg, OH 43551",
+          "website": "https://restaurants.ihop.com/en-us/oh/perrysburg/breakfast-10151-fremont-pike-5450",
+          "blurb": "Pancake house chain on Fremont Pike.",
+          "price": "$",
+          "sourceUrl": "https://restaurants.ihop.com/en-us/oh/perrysburg/breakfast-10151-fremont-pike-5450",
+          "deals": []
+        },
+        {
+          "name": "Papa Johns",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "840 W Boundary St Suite 2, Perrysburg, OH",
+          "website": "https://www.papajohns.com",
+          "blurb": "Pizza delivery chain.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/perrysburg/",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "fremont",
+      "name": "Fremont",
+      "colleges": [
+        {
+          "name": "Terra State Community College",
+          "type": "Community college",
+          "url": "https://www.terra.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Depot Pizza & Tavern",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "117 N Monroe St, Fremont, OH",
+          "website": "",
+          "blurb": "Heavily reviewed pizza tavern known for its dill pickle pizza.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/fremont/",
+          "deals": []
+        },
+        {
+          "name": "Elroy's",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "105 S Front St, Fremont, OH",
+          "website": "https://www.toasttab.com/local/order/elroys",
+          "blurb": "Downtown spot for brick-oven pizzas, burgers and deli-style sandwiches.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/elroys",
+          "deals": []
+        },
+        {
+          "name": "818 Club",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "818 Croghan St, Fremont, OH",
+          "website": "",
+          "blurb": "Local restaurant with an Irish pub atmosphere.",
+          "price": "$$",
+          "sourceUrl": "https://sanduskycounty.org/eat",
+          "deals": []
+        },
+        {
+          "name": "Scarpetta's Italian",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "107 S Front St, Fremont, OH",
+          "website": "",
+          "blurb": "Italian restaurant in historic downtown Fremont.",
+          "price": "$$",
+          "sourceUrl": "https://sanduskycounty.org/eat",
+          "deals": []
+        },
+        {
+          "name": "The Garrison",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "209 Garrison St, Fremont, OH",
+          "website": "https://www.toasttab.com/local/order/garrison",
+          "blurb": "Downtown restaurant whose menu includes brisket tacos.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/garrison",
+          "deals": []
+        },
+        {
+          "name": "Casa Fiesta Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Mexican restaurant listed in the Sandusky County dining directory.",
+          "price": "$$",
+          "sourceUrl": "https://sanduskycounty.org/eat",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "huron-sandusky",
+      "name": "Huron / Sandusky",
+      "colleges": [
+        {
+          "name": "BGSU Firelands",
+          "type": "Public university regional campus",
+          "url": "https://www.firelands.bgsu.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Toft's Ice Cream Parlor",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": true,
+          "address": "3717 Venice Rd, Sandusky, OH 44870",
+          "website": "",
+          "blurb": "Parlor of Ohio's oldest dairy, known for huge scoops; a second shop, Toft's on 250, is at 4318 Milan Rd.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/tofts-ice-cream-parlor-377543582",
+          "deals": []
+        },
+        {
+          "name": "Berardi's Family Kitchen",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "1019 W Perkins Ave, Sandusky, OH",
+          "website": "https://www.toasttab.com/local/order/berardis-family-kitchen",
+          "blurb": "Longtime family restaurant serving American and Italian comfort food.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/berardis-family-kitchen",
+          "deals": []
+        },
+        {
+          "name": "Jim's Pizza Box",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "819 Main St, Huron, OH",
+          "website": "",
+          "blurb": "Huron pizza shop recommended by locals for Italian food and homemade cannoli; delivers.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/huron/",
+          "deals": []
+        },
+        {
+          "name": "Cameo by the Lake",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "505 Cleveland Rd W, Huron, OH",
+          "website": "",
+          "blurb": "Well-reviewed Huron pizza spot.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/huron/",
+          "deals": []
+        },
+        {
+          "name": "Sand Bar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "54 McKinley St, Huron, OH",
+          "website": "",
+          "blurb": "Huron bar and grill that reviewers rate for its pizza.",
+          "price": "$$",
+          "sourceUrl": "https://www.tripadvisor.ca/Restaurant_Review-g50467-d419663-Reviews-Sand_Bar-Huron_Ohio.html",
+          "deals": []
+        },
+        {
+          "name": "Danny Boys",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "6207 Milan Rd, Sandusky, OH",
+          "website": "",
+          "blurb": "Italian-American pizza and calzone restaurant on Milan Road.",
+          "price": "$$",
+          "sourceUrl": "https://toasttab.com/local/sandusky-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Manny's Sports Tavern & Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "6201 Milan Rd, Sandusky, OH",
+          "website": "",
+          "blurb": "Sports tavern with rotating nightly specials on soups, burgers, pizzas and entrees.",
+          "price": "$$",
+          "sourceUrl": "https://www.aaa.com/tripcanvas/restaurant/manny's-sports-tavern-%26-grill-AA44868",
+          "deals": []
+        },
+        {
+          "name": "Thirsty Pony",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1935 Cleveland Rd, Sandusky, OH",
+          "website": "https://www.toasttab.com/local/order/thirsty-pony",
+          "blurb": "Bar and grill with burgers, wings and pizza.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/thirsty-pony",
+          "deals": []
+        },
+        {
+          "name": "Sandusky Bay Pancake House",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Breakfast destination in Sandusky since 1966.",
+          "price": "$",
+          "sourceUrl": "https://wanderlog.com/list/geoCategory/75256/where-to-eat-best-restaurants-in-sandusky",
+          "deals": []
+        },
+        {
+          "name": "Domino's",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "500 Main St, Huron, OH 44839",
+          "website": "https://www.dominos.com",
+          "blurb": "Pizza delivery chain in downtown Huron.",
+          "price": "$",
+          "sourceUrl": "https://www.bbb.org/us/oh/huron/category/restaurants",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "archbold",
+      "name": "Archbold",
+      "colleges": [
+        {
+          "name": "Northwest State Community College",
+          "type": "Community college",
+          "url": "https://northweststate.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Barn Restaurant at Sauder Village",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "22611 State Rte 2, Archbold, OH 43502",
+          "website": "https://saudervillage.org",
+          "blurb": "Comfort-food buffet in a historic barn whose proceeds support Sauder Village.",
+          "price": "$$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/barn-restaurant-5637356",
+          "deals": []
+        },
+        {
+          "name": "Mom's Diner & Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Popular low-priced diner and pizza place with indoor and outdoor seating.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/moms-diner-pizzeria-5637285",
+          "deals": []
+        },
+        {
+          "name": "Samuel Mancino's",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Italian eatery ranked among Archbold's top restaurants on Tripadvisor.",
+          "price": "$",
+          "sourceUrl": "https://www.tripadvisor.de/Restaurants-g29936-Archbold_Ohio.html",
+          "deals": []
+        },
+        {
+          "name": "Casa Vieja",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Mexican restaurant ranked among Archbold's top restaurants on Tripadvisor.",
+          "price": "$$",
+          "sourceUrl": "https://www.tripadvisor.de/Restaurants-g29936-Archbold_Ohio.html",
+          "deals": []
+        },
+        {
+          "name": "Marco's Pizza",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "1104 S Defiance St, Archbold, OH 43502",
+          "website": "https://www.marcos.com",
+          "blurb": "Toledo-founded national pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://www.storeopeninghours.com/marcos-pizza-archbold-oh",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "celina",
+      "name": "Celina",
+      "colleges": [
+        {
+          "name": "Wright State University-Lake Campus",
+          "type": "Public university regional campus",
+          "url": "https://lake.wright.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Casa Rodriguez",
+          "category": "Mexican",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Family Mexican restaurant on West Logan Street loved by locals for its Taco Tuesday; closed Mondays.",
+          "price": "$",
+          "sourceUrl": "https://onlyinyourstate.com/ohio/authentic-recipes-at-casa-rodriguez-oh",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$1 Taco Tuesday",
+              "details": "$1 chicken or beef tacos all day on Tuesdays.",
+              "price": "$1",
+              "studentOnly": false,
+              "sourceUrl": "https://onlyinyourstate.com/ohio/authentic-recipes-at-casa-rodriguez-oh",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "The Anchor",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "109 S Main St, Celina, OH",
+          "website": "",
+          "blurb": "Downtown burger spot known for double smashburgers.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/celina/",
+          "deals": []
+        },
+        {
+          "name": "Willow",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "1011 N Main St, Celina, OH",
+          "website": "",
+          "blurb": "American fare with well-reviewed cheeseburgers.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/celina/",
+          "deals": []
+        },
+        {
+          "name": "Westside Carry Out Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "602 W Wayne St, Celina, OH",
+          "website": "",
+          "blurb": "Carryout pizza shop.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/celina/pizza/",
+          "deals": []
+        },
+        {
+          "name": "Celina Wine Store",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "716 W Logan St, Celina, OH",
+          "website": "",
+          "blurb": "Drive-thru carryout that also makes pizza, burgers and subs.",
+          "price": "$",
+          "sourceUrl": "https://seemore.org/type_of_restaurant/local-eats/page/2",
+          "deals": []
+        },
+        {
+          "name": "Bayview Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "5355 Bayview Rd, Celina, OH",
+          "website": "",
+          "blurb": "Lakeside sports bar known for pizza and wings, with Sunday breakfast.",
+          "price": "$$",
+          "sourceUrl": "https://www.menupix.com/ohio/restaurants/350001450/Bayview-Pub-Celina-OH",
+          "deals": []
+        },
+        {
+          "name": "Mossing's Family Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "3505 State Route 29, Celina, OH 45822",
+          "website": "",
+          "blurb": "Family restaurant on State Route 29.",
+          "price": "$",
+          "sourceUrl": "https://thetouristchecklist.com/restaurants-in-celina-ohio/",
           "deals": []
         }
       ]
