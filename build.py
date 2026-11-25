@@ -23,6 +23,26 @@ def norm(s):
     return re.sub(r"[^a-z0-9]", "", s.lower())
 
 
+# Official sites for chains that are not in data/chains.json.
+BRANDS = {"jetspizza": "https://www.jetspizza.com", "texasroadhouse": "https://www.texasroadhouse.com", "crackerbarrel": "https://www.crackerbarrel.com",
+          "rubytuesday": "https://www.rubytuesday.com", "freddys": "https://www.freddys.com", "tudorsbiscuitworld": "https://tudorsbiscuitworld.com",
+          "dpdough": "https://www.dpdough.com", "playabowls": "https://www.playabowls.com", "firstwatch": "https://www.firstwatch.com",
+          "hungryhowies": "https://www.hungryhowies.com", "rallys": "https://www.rallys.com", "topperspizza": "https://www.toppers.com"}
+
+
+def base_name(name):
+    """Chain spot names sometimes carry a location suffix, e.g. "Subway (Marion)"."""
+    return re.sub(r"\s*\([^)]*\)\s*$", "", name).strip()
+
+
+def find_chain(chains, name):
+    n = norm(base_name(name))
+    if n in chains:
+        return chains[n]
+    hits = [k for k in chains if len(k) >= 5 and n.startswith(k)]
+    return chains[max(hits, key=len)] if hits else None
+
+
 def clean_deal(d, national=False):
     days = [x for x in DAYS if x in (d.get("days") or [])]
     if not days or not d.get("title") or not str(d.get("sourceUrl", "")).startswith("http"):
@@ -56,17 +76,19 @@ def main():
                     continue
                 seen.add(sid)
                 deals = [d for d in (clean_deal(x) for x in s.get("deals", [])) if d]
-                chain = chains.get(norm(s["name"]))
-                if chain and not s.get("local"):
+                chain = None if s.get("local") else find_chain(chains, s["name"])
+                name = s["name"] if s.get("local") else base_name(s["name"])
+                brand = next((u for k, u in BRANDS.items() if norm(name).startswith(k)), "")
+                if chain:
                     titles = {norm(d["title"]) for d in deals}
                     for x in chain.get("deals", []):
                         d = clean_deal(x, national=True)
                         if d and norm(d["title"]) not in titles:
                             deals.append(d)
                 town["spots"].append({
-                    "id": sid, "name": s["name"], "category": s.get("category") if s.get("category") in CATS else "Other",
+                    "id": sid, "name": name, "category": s.get("category") if s.get("category") in CATS else "Other",
                     "local": bool(s.get("local")), "signature": bool(s.get("signature")), "address": s.get("address") or "",
-                    "website": s.get("website") or (chain or {}).get("website", ""), "blurb": s.get("blurb") or "",
+                    "website": s.get("website") or (chain or {}).get("website", "") or brand, "blurb": s.get("blurb") or "",
                     "price": s.get("price") or "", "sourceUrl": s.get("sourceUrl") or "", "deals": deals})
 
     pending = sorted(t["name"] for t in towns.values() if not t["spots"])
