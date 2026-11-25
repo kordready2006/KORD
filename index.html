@@ -376,7 +376,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     var web = safeUrl(sp.website), src = safeUrl(sp.sourceUrl);
     var h = '<div class="spothead">' + logo(sp, 'big') + '<div><h2>' + esc(sp.name) + '</h2><p class="sub">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</p>' + tagsHtml(sp) + '</div></div>';
     if (sp.blurb) h += '<p style="margin:0">' + esc(sp.blurb) + '</p>';
-    h += '<div class="btnrow">' + (web ? '<a class="btn hot" target="_blank" rel="noopener" href="' + esc(web) + '">Visit website</a>' : '') +
+    h += '<div class="btnrow">' + (web ? '<a class="btn hot" target="_blank" rel="noopener" href="' + esc(web) + '">Visit website</a>' : '<a class="btn hot" target="_blank" rel="noopener" href="https://www.google.com/search?q=' + encodeURIComponent(sp.name + ' ' + (sp.address || '') + ' Ohio') + '">Find online</a>') +
       (sp.address ? '<a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(sp.name + ' ' + sp.address) + '">Directions</a>' : '') +
       '<button class="btn ghost" data-save="' + esc(id) + '">' + (U.saved[id] ? 'Saved' : 'Save') + '</button></div>';
     if (sp.address) h += '<p class="note" style="margin:0">' + esc(sp.address) + '</p>';
@@ -406,8 +406,8 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     });
     return h || '<div class="empty"><b>No town or college matches</b>Try the college name, like "Ohio University".</div>';
   }
-  function townSheet() {
-    openSheet('Pick a college town', '<input class="search" id="townSearch" type="search" placeholder="Search a town or college" aria-label="Search towns and colleges"><div class="list" id="townList">' + townList('') + '</div>');
+  function townSheet(first) {
+    openSheet(first ? 'Where do you go to school?' : 'Pick a college town', '<input class="search" id="townSearch" type="search" placeholder="Search a town or college" aria-label="Search towns and colleges"><div class="list" id="townList">' + townList('') + '</div>');
   }
 
   /* events */
@@ -452,8 +452,10 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     DATA = d;
     d.towns.forEach(function (t) { t.spots.forEach(function (s) { SPOTS[s.id] = s; }); });
     var h = (location.hash || '').slice(1); if (['deals', 'spots', 'ranks', 'me'].indexOf(h) >= 0) S.tab = h;
+    var first = !S.town;
     if (!d.towns.some(function (t) { return t.id === S.town; })) S.town = d.towns.some(function (t) { return t.id === 'athens'; }) ? 'athens' : d.towns[0].id;
     render();
+    if (first) townSheet(true);
   }).catch(function () {
     document.getElementById('view').innerHTML = '<div class="empty"><b>Could not load the deals</b>Check your connection and reopen KORD.</div>';
   });

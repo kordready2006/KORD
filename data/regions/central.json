@@ -646,7 +646,164 @@
           "url": "https://www.cotc.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Elliot's Wood Fired Kitchen & Tap",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "16 W Main St, Newark, OH 43055",
+          "website": "",
+          "blurb": "Downtown spot for Neapolitan-style wood-fired pizza and street tacos.",
+          "price": "$$",
+          "sourceUrl": "https://explorelc.org/directory/elliots-wood-fired-kitchen-and-tap-newark",
+          "deals": []
+        },
+        {
+          "name": "Christy's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "15 E Church St, Newark, OH 43055",
+          "website": "",
+          "blurb": "Longtime downtown pizzeria with a wide variety of pizza, subs and salads.",
+          "price": "$",
+          "sourceUrl": "https://explorelc.org/directory/christys-pizza",
+          "deals": []
+        },
+        {
+          "name": "Louie's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "1019 Westgate Ave, Newark, OH",
+          "website": "",
+          "blurb": "Newark pizza shop since 1960; thin crust rolled to order and baked in stone hearth ovens.",
+          "price": "$",
+          "sourceUrl": "https://explorelc.org/directory/louies-pizza",
+          "deals": []
+        },
+        {
+          "name": "Debra's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "318 Hudson Ave, Newark, OH 43055",
+          "website": "",
+          "blurb": "Locally run pizza restaurant in business more than 27 years.",
+          "price": "$",
+          "sourceUrl": "https://explorelc.org/directory/debras-pizza",
+          "deals": []
+        },
+        {
+          "name": "MNCHS Kitchen",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "56 W Main St, Newark, OH 43055",
+          "website": "",
+          "blurb": "Downtown kitchen listed for tacos and burgers.",
+          "price": "$",
+          "sourceUrl": "https://explorelc.org/directory/mnchs-kitchen",
+          "deals": []
+        },
+        {
+          "name": "Puerto Vallarta (Newark)",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "268 Deo Dr, Newark, OH 43055",
+          "website": "",
+          "blurb": "Mexican restaurant serving tacos and enchiladas.",
+          "price": "$$",
+          "sourceUrl": "https://explorelc.org/directory/puerto-vallarta-newark",
+          "deals": []
+        },
+        {
+          "name": "Shipp Brothers Brewing Co.",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "23 W Church St, Newark, OH 43055",
+          "website": "",
+          "blurb": "Downtown brewery with a food menu and weekly specials.",
+          "price": "$$",
+          "sourceUrl": "https://toast.app/r/shipp-brothers-brewing-co-newark-23-west-church-street/order",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Taco Tuesday",
+              "details": "Taco Tuesday special listed on the brewery's online ordering menu at $14.99; contents not stated.",
+              "price": "$14.99",
+              "studentOnly": false,
+              "sourceUrl": "https://toast.app/r/shipp-brothers-brewing-co-newark-23-west-church-street/order",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Red Oak Pub and Restaurant",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "5 N 3rd St, Newark, OH 43055",
+          "website": "",
+          "blurb": "Highly rated downtown pub and restaurant.",
+          "price": "$$",
+          "sourceUrl": "https://wanderlog.com/list/geoCategory/204175/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Simply Rising Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "26 N Park Pl, Newark, OH 43055",
+          "website": "",
+          "blurb": "Coffee shop on the downtown courthouse square.",
+          "price": "$",
+          "sourceUrl": "https://wanderlog.com/list/geoCategory/204175/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Roosters (Newark)",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "1414 N 21st St, Newark, OH 43055",
+          "website": "",
+          "blurb": "Ohio-based casual wing joint also serving pizza.",
+          "price": "$$",
+          "sourceUrl": "https://explorelc.org/directory/roosters-newark",
+          "deals": []
+        },
+        {
+          "name": "Texas Roadhouse (Newark)",
+          "category": "Other",
+          "local": false,
+          "signature": false,
+          "address": "1200 W Church St, Newark, OH 43055",
+          "website": "",
+          "blurb": "National steakhouse chain.",
+          "price": "$$",
+          "sourceUrl": "https://www.opentable.com/r/texas-roadhouse-newark",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell (Newark)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1091 N 21st St, Newark, OH 43055",
+          "website": "",
+          "blurb": "National taco fast-food chain.",
+          "price": "$",
+          "sourceUrl": "https://www.tacobell.com/food?store=038911",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "delaware",
@@ -749,7 +906,178 @@
           "url": "https://www.mvnu.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "The Alcove",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Mount Vernon institution that began as an ice cream and candy shop in 1911.",
+          "price": "$$$",
+          "sourceUrl": "https://www.onlyinyourstate.com/food/ohio/timeless-restaurant-experience-oh",
+          "deals": []
+        },
+        {
+          "name": "La Paloma Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "200 S Main St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Downtown Mexican restaurant.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/la-paloma-mexican-restaurant",
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "title": "All-you-can-eat crisp tacos",
+              "details": "All-you-can-eat crisp tacos Tuesday, Wednesday and Thursday, 11 to 7.",
+              "price": "$9.29",
+              "studentOnly": false,
+              "sourceUrl": "https://visitknoxohio.org/places/la-paloma-mexican-restaurant",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Flappers Bar and Grille",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "15 W High St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Downtown bar and grill that bills itself as the area's best for wings and cold beer.",
+          "price": "$$",
+          "sourceUrl": "https://visitknoxohio.org/places/flappers-bar-and-grille",
+          "deals": []
+        },
+        {
+          "name": "Whit's Frozen Custard (Mount Vernon)",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "500 S Main St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Central Ohio frozen custard favorite.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/mount-vernon-oh",
+          "deals": []
+        },
+        {
+          "name": "Dirko's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "500 Coshocton Ave, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Local pizza shop operating since 1980.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/dirkos-pizza",
+          "deals": []
+        },
+        {
+          "name": "Ron's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "506 Coshocton Ave, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Carry-out-only shop for pizza, subs, bread sticks and wings, open Wednesday-Sunday evenings.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/rons-pizza",
+          "deals": []
+        },
+        {
+          "name": "Burrata Woodfired",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "668 N Sandusky St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Woodfired pizzas, subs, salads and pastas.",
+          "price": "$$",
+          "sourceUrl": "https://visitknoxohio.org/places/burrata-woodfired-pizza-of-mount-vernon",
+          "deals": []
+        },
+        {
+          "name": "Creno's Pizza (Mount Vernon)",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "500 S Main St, Suite B, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Regional pizza shop known for homemade, fresh pies.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/crenos-pizza-mount-vernon",
+          "deals": []
+        },
+        {
+          "name": "Pizza Cottage",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "510 S Main St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Central Ohio pizza restaurant whose South Main Street location opened in 2023.",
+          "price": "$$",
+          "sourceUrl": "https://visitknoxohio.org/places/pizza-cottage",
+          "deals": []
+        },
+        {
+          "name": "Donatos Pizza (Mount Vernon)",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "221 W High St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "Columbus-born thin-crust pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/donatos-pizza",
+          "deals": []
+        },
+        {
+          "name": "Domino's (Mount Vernon)",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "321 S Main St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "National pizza delivery chain.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/dominos-pizza-mount-vernon",
+          "deals": []
+        },
+        {
+          "name": "Papa John's (Mount Vernon)",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "855 Coshocton Ave, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "National pizza delivery chain.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/papa-johns-pizza",
+          "deals": []
+        },
+        {
+          "name": "Little Caesars (Mount Vernon)",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "9 N Sandusky St, Mount Vernon, OH 43050",
+          "website": "",
+          "blurb": "National carry-out pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://visitknoxohio.org/places/little-caesars",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "marion",
@@ -766,7 +1094,410 @@
           "url": "https://www.mtc.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Payne's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Local pizza shop on Ohio State Marion's student discount list.",
+          "price": "$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with student ID",
+              "details": "Listed on Ohio State Marion's Student ID discount page; show a valid student ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        },
+        {
+          "name": "OK Cafe",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Local cafe on Ohio State Marion's student discount list.",
+          "price": "$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with student ID",
+              "details": "Listed on Ohio State Marion's Student ID discount page; show a valid student ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        },
+        {
+          "name": "Liv It Up Nutrition",
+          "category": "Healthy & Bowls",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Local nutrition shop on Ohio State Marion's student discount list.",
+          "price": "$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$1 off with student ID",
+              "details": "$1 off anything with a valid student ID.",
+              "price": "$1 off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        },
+        {
+          "name": "Baires Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "131 S Main St, Marion, OH 43302",
+          "website": "",
+          "blurb": "Downtown deli known for home-cooked favorites and breakfast.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/baires-deli-43021268",
+          "deals": []
+        },
+        {
+          "name": "Stewart's Root Beer Drive-in",
+          "category": "Burgers",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Classic drive-in just north of downtown on Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.visitmarionohio.com/attractions/food/taste-of-marion/",
+          "deals": []
+        },
+        {
+          "name": "The Remnant",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Marion cafe known for breakfast and coffee.",
+          "price": "$",
+          "sourceUrl": "https://thetouristchecklist.com/restaurants-in-marion-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Attaboys Comfort Cuisine",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown spot for Southern soul food and Philadelphia favorites in a 1920s-inspired setting.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitmarionohio.com/attractions/food/taste-of-marion/",
+          "deals": []
+        },
+        {
+          "name": "Taco Central Sports Bar",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown sports bar serving tacos, burritos, burgers and wings.",
+          "price": "$",
+          "sourceUrl": "https://www.visitmarionohio.com/attractions/food/taste-of-marion/",
+          "deals": []
+        },
+        {
+          "name": "Mikado Japanese Steakhouse and Sushi",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1125 E Center St, Marion, OH 43302",
+          "website": "",
+          "blurb": "Hibachi and sushi restaurant.",
+          "price": "$$",
+          "sourceUrl": "https://thetouristchecklist.com/restaurants-in-marion-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Arby's (Marion)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "McMahan Blvd, Marion, OH",
+          "website": "",
+          "blurb": "National roast beef sandwich chain.",
+          "price": "$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with student ID",
+              "details": "Listed on Ohio State Marion's Student ID discount page; show a valid student ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        },
+        {
+          "name": "Buffalo Wild Wings (Marion)",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National wings and sports bar chain.",
+          "price": "$$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with student ID",
+              "details": "10% off food (not alcohol) with a valid student ID, per Ohio State Marion's Student ID page.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        },
+        {
+          "name": "Chipotle (Marion)",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National burrito chain.",
+          "price": "$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with student ID",
+              "details": "Listed on Ohio State Marion's Student ID discount page; show a valid student ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        },
+        {
+          "name": "Jersey Mike's (Marion)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National sub chain.",
+          "price": "$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off plus combo upgrade with student ID",
+              "details": "10% off plus an upgrade to a combo for the price of a sandwich with a valid student ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        },
+        {
+          "name": "Panera Bread (Marion)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National bakery-cafe chain.",
+          "price": "$$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with student ID",
+              "details": "Listed on Ohio State Marion's Student ID discount page; show a valid student ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        },
+        {
+          "name": "Penn Station East Coast Subs (Marion)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Sub sandwich chain.",
+          "price": "$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with student ID",
+              "details": "Listed on Ohio State Marion's Student ID discount page; show a valid student ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        },
+        {
+          "name": "Subway (Marion)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National sub chain.",
+          "price": "$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with student ID",
+              "details": "Listed on Ohio State Marion's Student ID discount page; show a valid student ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        },
+        {
+          "name": "Tim Hortons (Marion)",
+          "category": "Coffee & Bakery",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Coffee and donut chain.",
+          "price": "$",
+          "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with student ID",
+              "details": "Listed on Ohio State Marion's Student ID discount page; show a valid student ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://osumarion.osu.edu/current-students/student-life/recreation/student-id",
+              "sourceDate": "2025"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "mansfield",
@@ -783,7 +1514,452 @@
           "url": "https://www.ncstatecollege.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Coney Island Diner",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "98 N Main St, Mansfield, OH 44902",
+          "website": "",
+          "blurb": "Mansfield's oldest restaurant, a downtown diner famous for its coneys and pea salad.",
+          "price": "$",
+          "sourceUrl": "https://destinationmansfield.com/venue/coney-island-diner/",
+          "deals": []
+        },
+        {
+          "name": "Coney Island Inn",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "20 S Park St, Mansfield, OH 44902",
+          "website": "",
+          "blurb": "Downtown diner that has fed Mansfield for generations.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/coney-island-inn-5872724",
+          "deals": []
+        },
+        {
+          "name": "MVP's Sports Bar and Grille",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "275 Park Ave, Mansfield, OH",
+          "website": "",
+          "blurb": "Sports bar with daily lunch and dinner specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.menupix.com/ohio/restaurants/380031031/MVPs-Sports-Bar-and-Grille-Mansfield-OH",
+          "deals": [
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "Friday prime rib dinner",
+              "details": "Joe Carmel's Famous Prime Rib Dinner every Friday night; price not stated.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.menupix.com/ohio/restaurants/380031031/MVPs-Sports-Bar-and-Grille-Mansfield-OH",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "El Campestre",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "1971 W Fourth St, Mansfield, OH",
+          "website": "",
+          "blurb": "Mexican restaurant on West Fourth Street.",
+          "price": "$$",
+          "sourceUrl": "https://toast.app/r/el-campestre-mansfield-1971-w-fourth-st/order",
+          "deals": []
+        },
+        {
+          "name": "Los 3 Mayas",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "595 Ashland Rd, Mansfield, OH",
+          "website": "",
+          "blurb": "Mexican restaurant on Ashland Road.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/los-3-mayas-595-ashland-rd/r-d9152ab1-0783-4f91-8f4a-5d88d8efd485/item-eggs_298f7ef8-8f8d-4b55-9958-4f94ef465907",
+          "deals": []
+        },
+        {
+          "name": "Mansfield Family Restaurant (Southside)",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Family restaurant with daily breakfast, lunch and dinner specials.",
+          "price": "$",
+          "sourceUrl": "https://destinationmansfield.com/venue/mansfield-family-restaurant-s-main",
+          "deals": []
+        },
+        {
+          "name": "Two Cousins Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Local pizza shop on Ohio State Mansfield's BuckID discount list.",
+          "price": "$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with BuckID",
+              "details": "10% off for Ohio State Mansfield students showing a BuckID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Athens Greek Restaurant",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Greek restaurant on Ohio State Mansfield's BuckID discount list.",
+          "price": "$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with BuckID",
+              "details": "10% off for Ohio State Mansfield students showing a BuckID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Comfrey Corner",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Local eatery on Ohio State Mansfield's BuckID discount list.",
+          "price": "$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with BuckID",
+              "details": "10% off for Ohio State Mansfield students showing a BuckID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Gionino's Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Northeast Ohio pizzeria chain on the BuckID discount list.",
+          "price": "$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with BuckID",
+              "details": "10% off for Ohio State Mansfield students showing a BuckID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Skyline Chili (Mansfield)",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Cincinnati-style chili chain.",
+          "price": "$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with BuckID",
+              "details": "10% off for Ohio State Mansfield students showing a BuckID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Applebee's (Mansfield)",
+          "category": "Bar & Grill",
+          "local": false,
+          "signature": false,
+          "address": "1023 N Lexington Springmill Rd, Mansfield, OH",
+          "website": "",
+          "blurb": "National casual dining chain.",
+          "price": "$$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with BuckID",
+              "details": "10% off food for Ohio State Mansfield students showing a BuckID; excludes alcohol.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Texas Roadhouse (Mansfield/Ontario)",
+          "category": "Other",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National steakhouse chain.",
+          "price": "$$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with BuckID",
+              "details": "10% off for Ohio State Mansfield students showing a BuckID; excludes alcohol.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Panera Bread (Mansfield)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National bakery-cafe chain.",
+          "price": "$$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with BuckID",
+              "details": "10% off for Ohio State Mansfield students showing a BuckID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Penn Station East Coast Subs (Mansfield)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Sub sandwich chain.",
+          "price": "$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with BuckID",
+              "details": "10% off for Ohio State Mansfield students showing a BuckID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Pizza Hut WingStreet (Mansfield)",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Free breadsticks with BuckID",
+              "details": "Five free breadsticks with any purchase for students showing a BuckID.",
+              "price": "Free breadsticks",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "McDonald's (Mansfield)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National burger chain.",
+          "price": "$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Free apple pie with BuckID",
+              "details": "Free apple pie with a Value Meal purchase for students showing a BuckID.",
+              "price": "Free apple pie",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Subway (Mansfield)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "National sub chain.",
+          "price": "$",
+          "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Free drink with BuckID",
+              "details": "Free 20 oz. drink with a sub purchase for students showing a BuckID.",
+              "price": "Free drink",
+              "studentOnly": true,
+              "sourceUrl": "https://mansfield.osu.edu/buckid-discounts",
+              "sourceDate": ""
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "ashland",

@@ -419,6 +419,222 @@
           "price": "$",
           "sourceUrl": "https://www.chick-fil-a.com/universityoftoledo",
           "deals": []
+        },
+        {
+          "name": "Tony Packo's (The Original)",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "1902 Front St, Toledo, OH 43605",
+          "website": "https://www.tonypackos.com",
+          "blurb": "The original 1932 Hungarian hot dog cafe in the Birmingham neighborhood, famous for its wall of celebrity-signed buns.",
+          "price": "$$",
+          "sourceUrl": "https://www.tonypackos.com/main/a-world-famous-destination/",
+          "deals": []
+        },
+        {
+          "name": "Tony Packo's (Secor Rd)",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "3348 Secor Rd, Toledo, OH 43606",
+          "website": "https://www.tonypackos.com",
+          "blurb": "Packo's location near the UToledo campus serving the chain's Hungarian hot dogs and chili.",
+          "price": "$$",
+          "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off food with Rocket Card",
+              "details": "UToledo Discounts page lists 10% off all food purchases at the 3348 Secor Rd Packo's with a Rocket Card.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Domino's (Gateway, Secor Rd)",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "1440 Secor Rd, Toledo, OH 43606",
+          "website": "https://www.dominos.com",
+          "blurb": "Pizza delivery chain in the Gateway plaza at the edge of the UToledo campus.",
+          "price": "$",
+          "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "20% off online orders (UToledo discount)",
+              "details": "UToledo Discounts page lists 20% off online orders at the 1440 Secor Rd Domino's using a promo code shown on that page; the code may change.",
+              "price": "20% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Rice Blvd",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Affordable student go-to tucked beside the campus Barnes & Noble.",
+          "price": "$",
+          "sourceUrl": "https://www.buckeyebroadband.com/blog/restaurants-near-toledo-ohio-university-of-toledo",
+          "deals": []
+        },
+        {
+          "name": "Stubborn Brother Pizza Bar",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Pizza bar just behind UToledo's Honors Academic Village.",
+          "price": "$$",
+          "sourceUrl": "https://www.buckeyebroadband.com/blog/restaurants-near-toledo-ohio-university-of-toledo",
+          "deals": []
+        },
+        {
+          "name": "Dorr Street Cafe",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Neighborhood cafe on Dorr Street praised by reviewers for its Reuben.",
+          "price": "$$",
+          "sourceUrl": "https://wanderlog.com/place/details/2649868/dorr-street-cafe",
+          "deals": []
+        },
+        {
+          "name": "Green Lantern",
+          "category": "Burgers",
+          "local": true,
+          "signature": true,
+          "address": "509 Broadway St, Toledo, OH",
+          "website": "",
+          "blurb": "Broadway diner serving classic American food since 1927.",
+          "price": "$",
+          "sourceUrl": "https://toledocitypaper.com/?p=52415",
+          "deals": []
+        },
+        {
+          "name": "Roman's Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "526 Jackson St, Toledo, OH",
+          "website": "",
+          "blurb": "Tiny downtown deli known for pastrami, corned beef and Reubens.",
+          "price": "$",
+          "sourceUrl": "https://toledocitypaper.com/?p=52415",
+          "deals": []
+        },
+        {
+          "name": "Sunrise Skillet",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "119 N Ontario St, Toledo, OH",
+          "website": "",
+          "blurb": "Highly rated cheap-eats breakfast diner downtown, with a second location at 1855 S Reynolds Rd.",
+          "price": "$",
+          "sourceUrl": "https://stacker.com/stories/ohio/toledo/highest-rated-cheap-eats-toledo-diners",
+          "deals": []
+        },
+        {
+          "name": "Tiger Bakery & Deli",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "4215 Monroe St, Toledo, OH",
+          "website": "",
+          "blurb": "Middle Eastern and Mediterranean bakery and deli.",
+          "price": "$",
+          "sourceUrl": "https://stacker.com/stories/ohio/toledo/highest-rated-cheap-eats-toledo-diners",
+          "deals": []
+        },
+        {
+          "name": "Night Owl Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "3243 W Sylvania Ave, Toledo, OH",
+          "website": "https://www.toasttab.com/local/order/night-owl-diner-toledo-3243-west-sylvania-avenue",
+          "blurb": "Diner on West Sylvania Avenue with online ordering.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/night-owl-diner-toledo-3243-west-sylvania-avenue",
+          "deals": []
+        },
+        {
+          "name": "Chick-fil-A (Secor Road)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "3308 Secor Rd, Toledo, OH 43606",
+          "website": "https://www.chick-fil-a.com/secorroad",
+          "blurb": "Chicken sandwich chain on Secor Road north of campus; closed Sundays.",
+          "price": "$",
+          "sourceUrl": "https://www.chick-fil-a.com/secorroad",
+          "deals": []
+        },
+        {
+          "name": "Texas Roadhouse",
+          "category": "Other",
+          "local": false,
+          "signature": false,
+          "address": "3540 Secor Rd, Toledo, OH 43606",
+          "website": "https://texasroadhouse.com/locations/600-toledo-noh",
+          "blurb": "Steakhouse chain on Secor Road.",
+          "price": "$$",
+          "sourceUrl": "https://texasroadhouse.com/locations/600-toledo-noh",
+          "deals": []
+        },
+        {
+          "name": "Piada Italian Street Food",
+          "category": "Healthy & Bowls",
+          "local": false,
+          "signature": false,
+          "address": "3330 W Central Ave, Toledo, OH 43606",
+          "website": "https://mypiada.com",
+          "blurb": "Ohio-born fast-casual chain for Italian wraps, pasta and salad bowls; shown with a logo on the UToledo Discounts page.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/piada-italian-street-food-364201516",
+          "deals": []
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "3305 W Central Ave, Toledo, OH 43606",
+          "website": "https://www.chipotle.com",
+          "blurb": "Burrito chain on West Central Avenue.",
+          "price": "$",
+          "sourceUrl": "https://localwiki.org/toledo/Chipotle_Mexican_Grill",
+          "deals": []
         }
       ]
     },
@@ -455,6 +671,199 @@
           "blurb": "Downtown Findlay taco spot.",
           "price": "$",
           "sourceUrl": "https://visitfindlay.com/restaurantweek/taco-fiesta-hinojosa",
+          "deals": []
+        },
+        {
+          "name": "Wilson's Sandwich Shop",
+          "category": "Burgers",
+          "local": true,
+          "signature": true,
+          "address": "600 S Main St, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Downtown institution since 1936 known for square 'hamburgs' and frozen malts.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/wilsons-sandwich-shop-6011908",
+          "deals": []
+        },
+        {
+          "name": "Dietsch Brothers",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": true,
+          "address": "400 W Main Cross St, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Family-owned chocolate and ice cream shop in Findlay since 1937, with a second shop at 1217 Tiffin Ave.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/dietsch-brothers/",
+          "deals": []
+        },
+        {
+          "name": "Main Street Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "513 S Main St, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Downtown lunch deli.",
+          "price": "$",
+          "sourceUrl": "https://socialfindlay.com/?p=22378",
+          "deals": []
+        },
+        {
+          "name": "Circle of Friends Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "125 W Sandusky St, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Downtown Findlay restaurant listed in the Visit Findlay directory.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places-to-go-in-northwest-ohio/downtown-new/local/page/2",
+          "deals": []
+        },
+        {
+          "name": "Coffee Amici",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "328 S Main St, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Downtown Findlay coffee shop.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places-to-go-in-northwest-ohio/downtown-new/local/page/2",
+          "deals": []
+        },
+        {
+          "name": "The Fern Cafe",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Findlay bar listed on the Visit Findlay bar-events calendar.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/bar-events/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Tuesday Taco Night & Pub Quiz Trivia",
+              "details": "Visit Findlay's bar events calendar lists a Tuesday Taco Night with pub quiz trivia sessions at 6 and 7 pm; no price stated.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://visitfindlay.com/bar-events/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Beckett's Burger Bar",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Findlay outpost of the Bowling Green burger bar.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/restaurantweek/becketts-burger-bar/",
+          "deals": []
+        },
+        {
+          "name": "Buffalo Wild Wings",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "15080 Flag City Dr, Findlay, OH 45840",
+          "website": "https://www.buffalowildwings.com",
+          "blurb": "Wings and sports bar chain.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/?p=48516",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1115 Tiffin Ave, Findlay, OH 45840",
+          "website": "https://www.tacobell.com",
+          "blurb": "Taco chain on Tiffin Avenue.",
+          "price": "$",
+          "sourceUrl": "https://www.tacobell.com/food?store=001204",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "ada",
+      "name": "Ada",
+      "colleges": [
+        {
+          "name": "Ohio Northern University",
+          "type": "Private university",
+          "url": "https://www.onu.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Viva Maria",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "125 S Main St, Ada, OH 45810",
+          "website": "",
+          "blurb": "Family-run Italian spot that reopened on Main Street, called the 'best food in Ada' by the ONU student paper.",
+          "price": "$$",
+          "sourceUrl": "https://northernreview.org/2024/03/22/the-return-of-viva-maria/",
+          "deals": []
+        },
+        {
+          "name": "Cooper's (at the Regal Beagle)",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Pizza kitchen opened in December 2023 that delivers to ONU's campus and anywhere in Ada.",
+          "price": "$$",
+          "sourceUrl": "https://www.onu.edu/news/small-town-big-flavor",
+          "deals": []
+        },
+        {
+          "name": "Padrone's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "219 S Main St, Ada, OH 45810",
+          "website": "",
+          "blurb": "Northwest Ohio pizza chain's Main Street shop.",
+          "price": "$",
+          "sourceUrl": "https://www.yellowpages.com/ada-oh/pizza",
+          "deals": []
+        },
+        {
+          "name": "East of Chicago Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "430 S Main St, Ada, OH 45810",
+          "website": "https://www.eastofchicago.com",
+          "blurb": "Ohio-based pizza chain with dine-in, carryout and delivery.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/east-of-chicago-pizza-6007206",
+          "deals": []
+        },
+        {
+          "name": "Old Route 69",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "120 E Buckeye Ave, Ada, OH 45810",
+          "website": "https://www.toasttab.com/local/order/old-route-69-120-east-buckeye-avenue",
+          "blurb": "Downtown Ada restaurant with online ordering.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/old-route-69-120-east-buckeye-avenue",
           "deals": []
         }
       ]
