@@ -83,7 +83,7 @@
     "section": "Matcha"
    },
    {
-    "name": "Chai, London Fog, loose tea and real-fruit smoothies.",
+    "name": "Chai Latte",
     "price": "$4.70–$5.45",
     "section": "Tea & more"
    },
@@ -103,7 +103,7 @@
     "section": "Tea & more"
    },
    {
-    "name": "From our sister bakery, Tulip Cafe, and Turkish favourites.",
+    "name": "Cookies",
     "price": "$4.50–$4.75",
     "section": "Bakery"
    },
@@ -1766,6 +1766,1371 @@
     "name": "waffle potatoes",
     "price": "$6",
     "section": "Sides"
+   }
+  ]
+ },
+ "delaware|Mi Cerrito Mexican Restaurant": {
+  "source": "https://order.spoton.com/6646380f194181003c6354d2",
+  "items": [
+   {
+    "name": "Al Chipotle Tacos",
+    "price": "$14.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Al Pastor Tacos",
+    "price": "$14.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Carne Asada Tacos",
+    "price": "$15.49",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Cool Ranch Quesa Tacos",
+    "price": "$16.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Cuco's Tacos Locos",
+    "price": "$14.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Everything Tacos",
+    "price": "$14.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Fish Tacos",
+    "price": "$14.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Lime Chicken Tacos",
+    "price": "$14.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Mexican Cheese Steak Tacos",
+    "price": "$15.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Popeyes Tacos",
+    "price": "$14.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Ribeye Tacos",
+    "price": "$16.49",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Salmon Tacos",
+    "price": "$15.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Shrimp Tacos",
+    "price": "$15.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Chori-Pina Tacos",
+    "price": "$13.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Mango Shrimp Tacos",
+    "price": "$15.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Taco Of The Month",
+    "price": "$4.00",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Tropical Carnita Tacos",
+    "price": "$14.99",
+    "section": "Gourmet Tacos"
+   },
+   {
+    "name": "Burrito Azteca",
+    "price": "$17.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito California",
+    "price": "$13.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Chicago",
+    "price": "$15.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Deluxe",
+    "price": "$13.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Chori Pollo Burrito",
+    "price": "$14.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Texas Burrito",
+    "price": "$14.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Birria Jalisco",
+    "price": "$15.99",
+    "section": "Birria"
+   },
+   {
+    "name": "Birria Tacos",
+    "price": "$15.99",
+    "section": "Birria"
+   },
+   {
+    "name": "Birria-Rito",
+    "price": "$14.99",
+    "section": "Birria"
+   },
+   {
+    "name": "Quesa-Birrias",
+    "price": "$15.99",
+    "section": "Birria"
+   },
+   {
+    "name": "Big Flautas",
+    "price": "$14.99",
+    "section": "Specialties"
+   },
+   {
+    "name": "Chimichanga Supreme",
+    "price": "$14.49",
+    "section": "Specialties"
+   },
+   {
+    "name": "Enchilada Supreme",
+    "price": "$13.99",
+    "section": "Specialties"
+   },
+   {
+    "name": "Hawaiian Enchiladas",
+    "price": "$14.99",
+    "section": "Specialties"
+   },
+   {
+    "name": "Taquitos Jalisco",
+    "price": "$14.99",
+    "section": "Specialties"
+   },
+   {
+    "name": "Volcanoes",
+    "price": "$14.99",
+    "section": "Specialties"
+   },
+   {
+    "name": "Pork Fajitas",
+    "price": "$17.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Chicken Fajitas",
+    "price": "$18.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Mixed Fajitas",
+    "price": "$19.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Huarache Fajitas",
+    "price": "$21.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Jumbo Shrimp Fajitas",
+    "price": "$21.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Sirloin Steak Fajitas",
+    "price": "$20.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Texana Fajitas",
+    "price": "$22.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Vegetarian Fajitas",
+    "price": "$15.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Bean Dip",
+    "price": "$6.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Carnitas Fries",
+    "price": "$12.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Crab Dip",
+    "price": "$10.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "French fries topped with chorizo and queso",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Nachos",
+    "price": "$9.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Nachos Del Rey",
+    "price": "$12.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Nachos Supreme",
+    "price": "$11.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Queso Fundido",
+    "price": "$9.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Seafood Nachos",
+    "price": "$14.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Shrimp Queso Fundido",
+    "price": "$13.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Spinach Dip",
+    "price": "$6.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Trio Dip",
+    "price": "$11.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Carnita Dippers",
+    "price": "$10.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Dumpster Nachos",
+    "price": "$14.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Street Corn",
+    "price": "$6.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chori-Pollo",
+    "price": "$14.99",
+    "section": "Chicken"
+   },
+   {
+    "name": "El Chavo",
+    "price": "$15.99",
+    "section": "Chicken"
+   },
+   {
+    "name": "Enchilada Verdes",
+    "price": "$13.99",
+    "section": "Chicken"
+   },
+   {
+    "name": "Pollo Loco",
+    "price": "$16.99",
+    "section": "Chicken"
+   },
+   {
+    "name": "Queso Chicken & Rice",
+    "price": "$14.99",
+    "section": "Chicken"
+   },
+   {
+    "name": "Burrito Verde",
+    "price": "$13.99",
+    "section": "Chicken"
+   },
+   {
+    "name": "Spicy Chicken Sandwich",
+    "price": "$14.99",
+    "section": "Chicken"
+   },
+   {
+    "name": "Carnitas Tacos",
+    "price": "$14.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Carnitas Tapatias",
+    "price": "$15.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Tropical Carnita Burrito",
+    "price": "$14.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Carnita Bowl",
+    "price": "$13.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Enchilada Rancheras",
+    "price": "$13.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Enchilada Rancheras",
+    "price": "$13.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchilada Supreme",
+    "price": "$13.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Hawaiian Enchiladas",
+    "price": "$14.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchilada Verdes",
+    "price": "$13.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Carne Asada",
+    "price": "$21.99",
+    "section": "Steak"
+   },
+   {
+    "name": "Ohio Steak",
+    "price": "$24.99",
+    "section": "Steak"
+   },
+   {
+    "name": "Steak a La Mexicana",
+    "price": "$21.99",
+    "section": "Steak"
+   },
+   {
+    "name": "Three Amigos",
+    "price": "$24.99",
+    "section": "Steak"
+   },
+   {
+    "name": "Crab Enchiladas",
+    "price": "$17.99",
+    "section": "Seafood"
+   },
+   {
+    "name": "Crab Taquitos",
+    "price": "$17.99",
+    "section": "Seafood"
+   },
+   {
+    "name": "Salmon Ajijic",
+    "price": "$15.99",
+    "section": "Seafood"
+   },
+   {
+    "name": "Salmon al Mango",
+    "price": "$17.99",
+    "section": "Seafood"
+   }
+  ]
+ },
+ "delaware|Betty's Cupcakes": {
+  "source": "https://bettyscupcakes.godaddysites.com/",
+  "items": [
+   {
+    "name": "Turtle Delight",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Boston Cream",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Lemon Swirl",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "White Wedding",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Raspberry Lemon",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Sweet Southern Tea",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Red velvet",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Give me S'more",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Coconut Paradise",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Orange sunshine",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Buckeye Fusion",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Cinnamon Swirl",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Buttercream Heaven",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "McGuffey Lane",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Birthday celebration",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Chocolate chip cookie",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Butterfly cupcake",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Sweet sprinkles",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Cherry almond",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Cookie Dough",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Snow Cone",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Cake Batter",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Chocolate Brownie",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "White Chocolate Cherry Jubilee",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Salted Caramel",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Pretty in Pink",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Key Lime",
+    "price": "",
+    "section": "Cupcakes"
+   },
+   {
+    "name": "Sugar Free",
+    "price": "",
+    "section": "Cupcakes"
+   }
+  ]
+ },
+ "delaware|Victor's Taco Shop (Delaware)": {
+  "source": "https://www.victorstacoshopohio.com/",
+  "items": [
+   {
+    "name": "Carne Asada Fries",
+    "price": "",
+    "section": "Fan Favorites"
+   },
+   {
+    "name": "Carne Asada Super Nachos",
+    "price": "",
+    "section": "Fan Favorites"
+   },
+   {
+    "name": "Grilled Chicken Super Nachos",
+    "price": "",
+    "section": "Fan Favorites"
+   },
+   {
+    "name": "Quesebirrias",
+    "price": "",
+    "section": "Fan Favorites"
+   },
+   {
+    "name": "Chicken Supreme Fries",
+    "price": "",
+    "section": "Fan Favorites"
+   },
+   {
+    "name": "Big OH Burrito",
+    "price": "",
+    "section": "Fan Favorites"
+   }
+  ]
+ },
+ "delaware|Amato's Woodfired Pizza": {
+  "source": "https://www.amatoswoodfiredpizza.com/delaware-menu",
+  "items": [
+   {
+    "name": "Margherita Pizza 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "San Giorgio 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Five Cheese Pizza 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Verdura 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "San Vito 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Greek Boy Pizza 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Caprese Chicken Pizza 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Napoli 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Soprano Pizza 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Oahu 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Cherry Bomb 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Funghi 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Cipollini (Chip-O-Lee-Ni) 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Piquant Pizza 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Capricosa 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Pepperoni Pizza 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Hulk 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Bianca Pizza 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Adrianne Pizza 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Stinger Pizza 8\"",
+    "price": "",
+    "section": "Specialty Pizzas | 8\""
+   },
+   {
+    "name": "Pasta Amato",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Chicken & Mushroom Alfredo",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Pasta Primavera",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Chicken Diavolo",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Pasta Funghi",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Spaghettini and Meatballs",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Pasta Carbonara",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Four Cheese Tortellini",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Wild Mushroom Mezzaluna",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Veal & Truffle Ravioli",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Lobster Ravioli",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Buttered Noodles Full Order",
+    "price": "",
+    "section": "Pasta"
+   },
+   {
+    "name": "Steak Sandwich",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pechetti Sub (Pih Chet Tee)",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Italian Sausage Sub",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Americano Sub",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Veggie Sub",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Salad Sub",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Grilled Chicken Sandwich",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Meatball Sub",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Belgian Chocolate Mousse Cake",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Cannoli",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Crème Brulèe Cheesecake",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Oreo Mousse Cake",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Tiramisu",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Tres Leches Cake",
+    "price": "",
+    "section": "Desserts"
+   }
+  ]
+ },
+ "delaware|Yokai Ramen Bistro": {
+  "source": "https://yokairamenbistro.kwickmenu.com/",
+  "items": [
+   {
+    "name": "Harumaki",
+    "price": "$5.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Edamame",
+    "price": "$5.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Scallion Pancake",
+    "price": "$6.45",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Takoyaki(6pcs)",
+    "price": "$8.45",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Jumbo Shrimp Shumai(4pcs)",
+    "price": "$7.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Kara Age",
+    "price": "$7.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Geso Karaage",
+    "price": "$8.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Shrimp Tempura Appetizer",
+    "price": "$8.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Teriyaki Chicken Skewer",
+    "price": "$7.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Tofu Bun",
+    "price": "$6.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chashu Bun",
+    "price": "$6.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Crispy Chicken Bun",
+    "price": "$6.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Gyoza(5pcs)",
+    "price": "from $6.95",
+    "section": "Appetizers"
+   }
+  ]
+ },
+ "delaware|Son of Thurman": {
+  "source": "https://sonofthurman.com/wp-content/uploads/2014/09/SonofThurmanMenuDelawareGalena6.4.2025.pdf",
+  "items": [
+   {
+    "name": "The Thurmanator",
+    "price": "$28.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Thurman Burger",
+    "price": "Junior $17.95 / Original $21.49",
+    "section": "Burgers"
+   },
+   {
+    "name": "Johnny Burger",
+    "price": "Junior $15.95 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Jaeger Burger",
+    "price": "Junior $15.95 / Original $18.49",
+    "section": "Burgers"
+   },
+   {
+    "name": "Macedonian Burger",
+    "price": "Junior $15.95 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Big 3 Burger",
+    "price": "Junior $15.95 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Son of Bacon Burger",
+    "price": "Junior $16.49 / Original $19.49",
+    "section": "Burgers"
+   },
+   {
+    "name": "Mushroom Burger",
+    "price": "Junior $15.95 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Blue Cheese Burger",
+    "price": "Junior $15.49 / Original $18.49",
+    "section": "Burgers"
+   },
+   {
+    "name": "Blazin’ Burger",
+    "price": "Junior $15.95 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Jack Cheese Burger",
+    "price": "Junior $15.95 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "SOT’s Big Tex Burger",
+    "price": "Junior $15.49 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Alpha 1 Burger",
+    "price": "Junior $15.49 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Kansas City Chef’s Burger",
+    "price": "Junior $16.49 / Original $19.49",
+    "section": "Burgers"
+   },
+   {
+    "name": "Bacon Cheddar Ranch Burger",
+    "price": "Junior $16.49 / Original $19.49",
+    "section": "Burgers"
+   },
+   {
+    "name": "Beefy Garden Burger",
+    "price": "Junior $15.95 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Pepperoni or Mushroom Pizza Burger",
+    "price": "Junior $15.95 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "The Hawaiian Burger",
+    "price": "Junior $15.95 / Original $18.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "The Cheeseburger Deluxe",
+    "price": "Junior $14.95 / Original $17.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "By-Tor Burger",
+    "price": "Junior $17.49 / Original $20.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Thurman’s Veggie Burger",
+    "price": "Junior $13.49 / Original $16.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Plain Jane Hamburger/Cheeseburger",
+    "price": "Junior $13.95 / Original $16.95",
+    "section": "Burgers"
+   },
+   {
+    "name": "Thurman Handcut or Flo’s Fries",
+    "price": "Plate $3.95 / Basket $5.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Pepperoni Bites",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mini Corn Dogs",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Thurman Fried Pickle Chips",
+    "price": "$9.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Strips",
+    "price": "$12.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Homemade Cole Slaw",
+    "price": "$3.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Kostada Chips",
+    "price": "$7.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Reuben Balls",
+    "price": "$10.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Thurman Fried Pretzel Bites",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mozzarella Cheese Stix",
+    "price": "$10.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Breaded Gourmet Onion Rings",
+    "price": "Plate $6.49 / Basket $10.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Uncle Carl’s Onion Strings",
+    "price": "Plate $4.95 / Basket $7.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Jalapeño Poppers",
+    "price": "$10.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Banana Peppers or Jalapeno Bottle Caps",
+    "price": "$10.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Pizza Bread",
+    "price": "$4.95",
+    "section": "Appetizers"
+   }
+  ]
+ },
+ "delaware|Fresh Start Café & Bakery": {
+  "source": "https://www.freshstartcafeandbakery.com/food-catering/",
+  "items": [
+   {
+    "name": "Avocado Toast",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pumpkin Harvest Toast",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "B.L.T.",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Create Your Own Bowl",
+    "price": "",
+    "section": "Egg Scram-Bowl"
+   },
+   {
+    "name": "Create Your Own Bowl",
+    "price": "",
+    "section": "Acai Bowl"
+   },
+   {
+    "name": "Biscuit & Gravy",
+    "price": "",
+    "section": "Biscuits & Bagels"
+   },
+   {
+    "name": "Biscuit/Bagel & Spread",
+    "price": "",
+    "section": "Biscuits & Bagels"
+   },
+   {
+    "name": "Fresh Start Mocha",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "Mocha",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "White Mocha",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "Flavored Latte",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "Red Eye",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "Espresso",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "Cortado",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "Undertow",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "Cappuccino",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "Americano",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "Café Latte",
+    "price": "",
+    "section": "Espresso"
+   },
+   {
+    "name": "Armando’s Blend",
+    "price": "",
+    "section": "Brewed Coffee"
+   },
+   {
+    "name": "Café Au Lait",
+    "price": "",
+    "section": "Brewed Coffee"
+   },
+   {
+    "name": "Hand-Brewed Coffee",
+    "price": "",
+    "section": "Brewed Coffee"
+   },
+   {
+    "name": "New Orleans",
+    "price": "",
+    "section": "Cold Brew Coffee"
+   },
+   {
+    "name": "Slow-Drip Cold Brew Tower",
+    "price": "",
+    "section": "Cold Brew Coffee"
+   },
+   {
+    "name": "Nitro Cold Brew",
+    "price": "",
+    "section": "Cold Brew Coffee"
+   },
+   {
+    "name": "Japanese-Style Iced Pour Over",
+    "price": "",
+    "section": "Cold Brew Coffee"
+   },
+   {
+    "name": "Chai Latte",
+    "price": "",
+    "section": "Tea"
+   },
+   {
+    "name": "Matcha Latte",
+    "price": "",
+    "section": "Tea"
+   },
+   {
+    "name": "London Fog",
+    "price": "",
+    "section": "Tea"
+   },
+   {
+    "name": "Organic Iced Tea",
+    "price": "",
+    "section": "Tea"
+   },
+   {
+    "name": "Hot Tea",
+    "price": "",
+    "section": "Tea"
+   },
+   {
+    "name": "Smoothies",
+    "price": "",
+    "section": "Alternatives"
+   },
+   {
+    "name": "Hot Chocolate",
+    "price": "",
+    "section": "Alternatives"
+   },
+   {
+    "name": "Vanilla Steamer",
+    "price": "",
+    "section": "Alternatives"
+   },
+   {
+    "name": "Cinnamon Rolls",
+    "price": "",
+    "section": "Pastry"
+   },
+   {
+    "name": "Pecan Rolls",
+    "price": "",
+    "section": "Pastry"
+   },
+   {
+    "name": "French Toast Bake",
+    "price": "",
+    "section": "Pastry"
+   },
+   {
+    "name": "Muffins",
+    "price": "",
+    "section": "Pastry"
+   },
+   {
+    "name": "Scones",
+    "price": "",
+    "section": "Pastry"
+   },
+   {
+    "name": "Quiche",
+    "price": "",
+    "section": "Pastry"
+   },
+   {
+    "name": "Brownies",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Cake Truffles",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Cheesecake",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Cookies",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Cupcakes",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Fruit Bars & Tarts",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Peanut Butter Pie",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Buckeye Bars",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Coconut Macaroons",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Energy Squares",
+    "price": "",
+    "section": "Dessert"
+   }
+  ]
+ },
+ "delaware|Whit's Frozen Custard (Delaware)": {
+  "source": "https://www.whitsfrozencustard.com/ohio/delaware",
+  "items": [
+   {
+    "name": "Scoops",
+    "price": "",
+    "section": "Our Product"
+   },
+   {
+    "name": "Whitsers",
+    "price": "",
+    "section": "Our Product"
+   },
+   {
+    "name": "Whitties",
+    "price": "",
+    "section": "Our Product"
+   },
+   {
+    "name": "Shakes",
+    "price": "",
+    "section": "Our Product"
+   },
+   {
+    "name": "Sundaes",
+    "price": "",
+    "section": "Our Product"
+   },
+   {
+    "name": "Floats",
+    "price": "",
+    "section": "Our Product"
    }
   ]
  }

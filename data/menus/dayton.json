@@ -1818,5 +1818,4660 @@
     "section": "Beverages"
    }
   ]
+ },
+ "dayton|Submarine House": {
+  "source": "https://www.submarinehouse.com/menu",
+  "items": [
+   {
+    "name": "Cheesesteak",
+    "price": "$8.50",
+    "section": "Our Famous Grilled Subs"
+   },
+   {
+    "name": "Italian Cheese Steak",
+    "price": "$8.50",
+    "section": "Our Famous Grilled Subs"
+   },
+   {
+    "name": "Chicken Cheese Steak",
+    "price": "$8.50",
+    "section": "Our Famous Grilled Subs"
+   },
+   {
+    "name": "Pizza Sub",
+    "price": "$8.50",
+    "section": "Our Famous Grilled Subs"
+   },
+   {
+    "name": "Grilled Veggie Sub",
+    "price": "$7.50",
+    "section": "Our Famous Grilled Subs"
+   },
+   {
+    "name": "Super Duper Cheese Steak",
+    "price": "$15.50",
+    "section": "Our Famous Grilled Subs"
+   },
+   {
+    "name": "Big Luigi",
+    "price": "$15.50",
+    "section": "Our Famous Grilled Subs"
+   },
+   {
+    "name": "Italian Sub",
+    "price": "$7.50",
+    "section": "Toasted Deli Subs"
+   },
+   {
+    "name": "Turkey Sub",
+    "price": "$7.50",
+    "section": "Toasted Deli Subs"
+   },
+   {
+    "name": "Ham & Turkey Sub",
+    "price": "$7.50",
+    "section": "Toasted Deli Subs"
+   },
+   {
+    "name": "American Sub",
+    "price": "$7.50",
+    "section": "Toasted Deli Subs"
+   },
+   {
+    "name": "Cheese Sub",
+    "price": "$7.50",
+    "section": "Toasted Deli Subs"
+   },
+   {
+    "name": "Cheesy Garlic Bread",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "House Fry Basket",
+    "price": "$10.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Onion Ring Basket",
+    "price": "$11.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Teezers Basket",
+    "price": "$11.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Pretzel Sticks",
+    "price": "$11.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "House Chips Basket",
+    "price": "$11.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Quesadilla",
+    "price": "$12.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Pick 3 Sampler Basket",
+    "price": "$15.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Tenders & Fries",
+    "price": "$15.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Wings / Boneless Wings",
+    "price": "$17.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Cheese Steak Pizza",
+    "price": "$17.99",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Chicken Cheesesteak Pizza",
+    "price": "$17.99",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Italian Cheese Steak Pizza",
+    "price": "$17.99",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Deluxe Pizza",
+    "price": "$17.99",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Veggie Pizza",
+    "price": "$17.99",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "House Pizza \"2\"",
+    "price": "$17.99",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Build Your Own Pizza",
+    "price": "$11.99",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Pecan Chicken Salad",
+    "price": "$12.49",
+    "section": "Salads"
+   },
+   {
+    "name": "Chicken Cheesesteak Salad",
+    "price": "$12.49",
+    "section": "Salads"
+   },
+   {
+    "name": "Cheesesteak Salad",
+    "price": "$12.49",
+    "section": "Salads"
+   },
+   {
+    "name": "Chicken Tender Salad",
+    "price": "$12.49",
+    "section": "Salads"
+   },
+   {
+    "name": "Buffalo Chicken Salad",
+    "price": "$12.49",
+    "section": "Salads"
+   },
+   {
+    "name": "Tossed Salad",
+    "price": "$7.49",
+    "section": "Salads"
+   },
+   {
+    "name": "Big T Texas Tenderloin",
+    "price": "$12.50",
+    "section": "Other Favorites"
+   },
+   {
+    "name": "Gyro",
+    "price": "$12.50",
+    "section": "Other Favorites"
+   },
+   {
+    "name": "Chicken Gyro",
+    "price": "$12.50",
+    "section": "Other Favorites"
+   },
+   {
+    "name": "Meatball Sub",
+    "price": "$7.50",
+    "section": "Other Favorites"
+   },
+   {
+    "name": "Fish Sub",
+    "price": "$10.50",
+    "section": "Other Favorites"
+   },
+   {
+    "name": "Cheeseburger",
+    "price": "$14.99",
+    "section": "Burgers"
+   },
+   {
+    "name": "Works Burger",
+    "price": "$15.49",
+    "section": "Burgers"
+   },
+   {
+    "name": "Teezer Burger",
+    "price": "$15.99",
+    "section": "Burgers"
+   },
+   {
+    "name": "Honey Sriracha Burger",
+    "price": "$15.99",
+    "section": "Burgers"
+   },
+   {
+    "name": "House Tacos",
+    "price": "$13.50",
+    "section": "Tacos"
+   },
+   {
+    "name": "Spicy Chipotle Chicken Tacos",
+    "price": "$13.50",
+    "section": "Tacos"
+   },
+   {
+    "name": "Fish Tacos",
+    "price": "$13.50",
+    "section": "Tacos"
+   },
+   {
+    "name": "Fresh Baked Chocolate Chip Cookies",
+    "price": "$3.99",
+    "section": "Sweet Treats"
+   },
+   {
+    "name": "Homemade Brownie",
+    "price": "$3.99",
+    "section": "Sweet Treats"
+   },
+   {
+    "name": "Sub House Sundae",
+    "price": "$8.99",
+    "section": "Sweet Treats"
+   }
+  ]
+ },
+ "dayton|Blind Bob's": {
+  "source": "https://blindbobs.com/menu.html",
+  "items": [
+   {
+    "name": "Classic Burger",
+    "price": "$14",
+    "section": "Burgers"
+   },
+   {
+    "name": "Deluxe",
+    "price": "$16",
+    "section": "Burgers"
+   },
+   {
+    "name": "Bbq",
+    "price": "$16",
+    "section": "Burgers"
+   },
+   {
+    "name": "Ragin' Cajun",
+    "price": "$16",
+    "section": "Burgers"
+   },
+   {
+    "name": "Frisco",
+    "price": "$15",
+    "section": "Burgers"
+   },
+   {
+    "name": "Island Delight",
+    "price": "$15.50",
+    "section": "Burgers"
+   },
+   {
+    "name": "Big Cheese",
+    "price": "$16.50",
+    "section": "Burgers"
+   },
+   {
+    "name": "Fancy Pants",
+    "price": "$16.50",
+    "section": "Burgers"
+   },
+   {
+    "name": "Seat Warmer",
+    "price": "$16",
+    "section": "Burgers"
+   },
+   {
+    "name": "Steakhouse",
+    "price": "$16",
+    "section": "Burgers"
+   },
+   {
+    "name": "Veggie Burger",
+    "price": "$10",
+    "section": "Burgers"
+   },
+   {
+    "name": "Screamer",
+    "price": "$14.50",
+    "section": "Chicken Sandwiches"
+   },
+   {
+    "name": "Cajun Chicken",
+    "price": "$14.50",
+    "section": "Chicken Sandwiches"
+   },
+   {
+    "name": "Deluxe Chicken",
+    "price": "$16",
+    "section": "Chicken Sandwiches"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "$15",
+    "section": "Chicken Sandwiches"
+   },
+   {
+    "name": "BBQ Chicken",
+    "price": "$15",
+    "section": "Chicken Sandwiches"
+   },
+   {
+    "name": "Southern Style",
+    "price": "$14",
+    "section": "Chicken Sandwiches"
+   },
+   {
+    "name": "Build Your Own",
+    "price": "$14",
+    "section": "Chicken Sandwiches"
+   },
+   {
+    "name": "Cheesesteak",
+    "price": "$16",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Blt",
+    "price": "$14",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Belt",
+    "price": "$16",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Cool, Calm & Collected",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Grilled Cheese",
+    "price": "$9",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Deluxe Grilled Cheese",
+    "price": "$10.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "BBQ Grilled Cheese",
+    "price": "$13.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Grilled PB&J",
+    "price": "$11.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Ultimate Falafel",
+    "price": "$13.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Fried Pickles",
+    "price": "$7.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Hula Hoops",
+    "price": "$10",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Quesadilla",
+    "price": "$10",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Wings",
+    "price": "$14.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Tenders",
+    "price": "$13.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Portobello Mushrooms",
+    "price": "$9.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Jalapeño Poppers",
+    "price": "$10",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Cauliflower",
+    "price": "$10",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Soft Pretzel Sticks",
+    "price": "$10",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Nacho Fiesta Fries",
+    "price": "$10",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chili Cheese Fries",
+    "price": "$10",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Hummus Plate",
+    "price": "$9",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Hummus & Pita",
+    "price": "$6",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chips & Dip",
+    "price": "$6",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Waffle Fries",
+    "price": "$6",
+    "section": "Appetizers"
+   },
+   {
+    "name": "French Dip Cheesesteak",
+    "price": "$16.50",
+    "section": "Monthly Features"
+   },
+   {
+    "name": "Black & Bleu",
+    "price": "$14.50",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Southwest",
+    "price": "$13",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Mediterranean",
+    "price": "$12",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Signature",
+    "price": "$13",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Bob's Cobb",
+    "price": "$13",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Garden",
+    "price": "$10",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Quinoa Bowl",
+    "price": "$13",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Black & Bleu Wrap",
+    "price": "$15.50",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Southwest Chicken Wrap",
+    "price": "$14.50",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Buffalo Chicken Wrap",
+    "price": "$15.50",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Mediterranean Chicken Wrap",
+    "price": "$14.50",
+    "section": "Salads & Wraps"
+   },
+   {
+    "name": "Pickle Soup",
+    "price": "$3.50",
+    "section": "Soups & Sides"
+   },
+   {
+    "name": "Chili",
+    "price": "$4.50",
+    "section": "Soups & Sides"
+   },
+   {
+    "name": "Soup of the Day",
+    "price": "$3.50",
+    "section": "Soups & Sides"
+   },
+   {
+    "name": "Brunch Burger",
+    "price": "$15",
+    "section": "Favorites"
+   },
+   {
+    "name": "Steak & Egg Sammy",
+    "price": "$16",
+    "section": "Favorites"
+   },
+   {
+    "name": "Bob’s Benedict",
+    "price": "$11",
+    "section": "Favorites"
+   },
+   {
+    "name": "Classic Breakfast",
+    "price": "$12",
+    "section": "Favorites"
+   },
+   {
+    "name": "Belt",
+    "price": "$15.50",
+    "section": "Favorites"
+   },
+   {
+    "name": "French Toast Sammy",
+    "price": "$12.50",
+    "section": "Favorites"
+   },
+   {
+    "name": "Traditional Breakfast Sammy",
+    "price": "$12",
+    "section": "Favorites"
+   },
+   {
+    "name": "Ashley’s Quiche Wrap",
+    "price": "$11",
+    "section": "Favorites"
+   },
+   {
+    "name": "Ham & Swiss",
+    "price": "$12",
+    "section": "Omelettes"
+   },
+   {
+    "name": "The Nascar",
+    "price": "$14",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Spinach, Mushroom & Feta",
+    "price": "$12",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Denver",
+    "price": "$12",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Southwest",
+    "price": "$13",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Veggie",
+    "price": "$12",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Patchouli Papa",
+    "price": "$13",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Chicken & Waffle",
+    "price": "$11",
+    "section": "Other Delicacies"
+   },
+   {
+    "name": "French Toast",
+    "price": "$7",
+    "section": "Other Delicacies"
+   },
+   {
+    "name": "Breakfast Monster",
+    "price": "$10",
+    "section": "Other Delicacies"
+   }
+  ]
+ },
+ "dayton|Jimmie's Ladder 11": {
+  "source": "https://jladder11.com/dayton-jimmie-s-ladder-11-food-menu",
+  "items": [
+   {
+    "name": "Ladder 11",
+    "price": "$9.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Reuben",
+    "price": "$9.00",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Brisket French Dip",
+    "price": "$9.00",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Tom’s Turkey",
+    "price": "$8.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Jack’s Special",
+    "price": "$8.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "The Sue",
+    "price": "$8.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "The Jimmie",
+    "price": "$9.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Tuna Salad Sandwich",
+    "price": "$8.00",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Tuna Melt",
+    "price": "$8.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Harold’s Grilled Cheese",
+    "price": "$7.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Blt",
+    "price": "$7.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Dayton Classic",
+    "price": "$9.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Pastrami on Rye",
+    "price": "$9.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "New York Reuben",
+    "price": "$9.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Blueberry Bacon Grilled Cheese",
+    "price": "$8.50",
+    "section": "Father Dan’S Sandwiches"
+   },
+   {
+    "name": "Firehouse Burger",
+    "price": "$17.00",
+    "section": "Specialty Burgers"
+   },
+   {
+    "name": "Bambino Burger",
+    "price": "$17.00",
+    "section": "Specialty Burgers"
+   },
+   {
+    "name": "Hawaiian Burger",
+    "price": "$17.00",
+    "section": "Specialty Burgers"
+   },
+   {
+    "name": "Patty Melt",
+    "price": "$17.00",
+    "section": "Specialty Burgers"
+   },
+   {
+    "name": "Plain Jane",
+    "price": "$15.00",
+    "section": "Specialty Burgers"
+   },
+   {
+    "name": "Onion Double Smash Burger",
+    "price": "$17.00",
+    "section": "Specialty Burgers"
+   },
+   {
+    "name": "Meatball Sandwich",
+    "price": "$16.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Italiano",
+    "price": "$18.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Grilled Veggie Sub",
+    "price": "$15.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Chicken Parmesan",
+    "price": "$17.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "$17.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Western Chicken",
+    "price": "$17.50",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Hula Chicken",
+    "price": "$17.50",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Chicken Philly",
+    "price": "$16.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "The Cornerstone",
+    "price": "$18.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Fish Sandwich",
+    "price": "$19.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Pork Tenderloin",
+    "price": "$17.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Cauliflower Po' Boy",
+    "price": "$16.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Shrimp Po’ Boy",
+    "price": "$17.00",
+    "section": "Subs & Po ’Boys"
+   },
+   {
+    "name": "Cheese Pizza",
+    "price": "$14.00",
+    "section": "Pizzas"
+   },
+   {
+    "name": "Meat Lovers",
+    "price": "$18.00",
+    "section": "Pizzas"
+   },
+   {
+    "name": "Deluxe",
+    "price": "$16.00",
+    "section": "Pizzas"
+   },
+   {
+    "name": "BBQ Chicken",
+    "price": "$16.00",
+    "section": "Pizzas"
+   },
+   {
+    "name": "Spicy Chicken Bacon Ranch",
+    "price": "$18.00",
+    "section": "Pizzas"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "$16.00",
+    "section": "Pizzas"
+   },
+   {
+    "name": "Paisano Pasta Chips",
+    "price": "$13.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Creole Cheesecake",
+    "price": "$16.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Pretzel Bitz",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Momma Lucy’s Meatballs",
+    "price": "$18.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Firehouse Fries",
+    "price": "$9.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Cauliflower Bites",
+    "price": "$10.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Pork Rinds",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Nick's Chicken Basket",
+    "price": "$15.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Basket of Chips and Dip",
+    "price": "$9.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Wings",
+    "price": "$11.00",
+    "section": "Wings And Tenders"
+   },
+   {
+    "name": "Tenders",
+    "price": "$8.00",
+    "section": "Wings And Tenders"
+   },
+   {
+    "name": "Engine House",
+    "price": "$15.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Cornerstone Salad",
+    "price": "$16.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Dr. Saidel’s",
+    "price": "$11.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Grilled Chicken Caesar",
+    "price": "$15.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Black & Bleu",
+    "price": "$18.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Chicken Tender Salad",
+    "price": "$14.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Chef’s Salad",
+    "price": "$12.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Homemade Soup of the Day",
+    "price": "$6.00",
+    "section": "Homemade Soups"
+   },
+   {
+    "name": "Jimmie’s Gumbo",
+    "price": "$7.00",
+    "section": "Homemade Soups"
+   },
+   {
+    "name": "Cornerstone Chili",
+    "price": "$6.00",
+    "section": "Homemade Soups"
+   },
+   {
+    "name": "French Onion",
+    "price": "$8.00",
+    "section": "Homemade Soups"
+   },
+   {
+    "name": "Veggie Quesadilla",
+    "price": "$16.00",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Chicken Quesadilla",
+    "price": "$16.00",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Brisket Quesadilla",
+    "price": "$17.00",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Four Cheese Quesadilla",
+    "price": "$13.00",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Ladder 11 Sirloin",
+    "price": "$33.00",
+    "section": "Steaks & Seafood"
+   },
+   {
+    "name": "Firehouse Sirloin",
+    "price": "$36.00",
+    "section": "Steaks & Seafood"
+   },
+   {
+    "name": "Fish & Chips",
+    "price": "$23.00",
+    "section": "Steaks & Seafood"
+   },
+   {
+    "name": "Parmesan Encrusted Salmon",
+    "price": "$27.00",
+    "section": "Steaks & Seafood"
+   },
+   {
+    "name": "Blackened Salmon",
+    "price": "$25.00",
+    "section": "Steaks & Seafood"
+   },
+   {
+    "name": "Grandma’s Lasagna",
+    "price": "$27.00",
+    "section": "Pastas"
+   },
+   {
+    "name": "Utica Vodka Riggies",
+    "price": "$25.00",
+    "section": "Pastas"
+   },
+   {
+    "name": "Vodka Parm",
+    "price": "$26.00",
+    "section": "Pastas"
+   },
+   {
+    "name": "Spaghetti & Meatballs",
+    "price": "$27.00",
+    "section": "Pastas"
+   },
+   {
+    "name": "Chicken Parmesan",
+    "price": "$25.00",
+    "section": "Pastas"
+   },
+   {
+    "name": "Spicy Sausage & Peppers",
+    "price": "$26.00",
+    "section": "Pastas"
+   },
+   {
+    "name": "Hand-Cut Fries",
+    "price": "$4.50",
+    "section": "On The Side"
+   },
+   {
+    "name": "Cheese Fries",
+    "price": "$8.00",
+    "section": "On The Side"
+   },
+   {
+    "name": "Sweet Potato Fries",
+    "price": "$4.50",
+    "section": "On The Side"
+   }
+  ]
+ },
+ "dayton|Jay's Seafood": {
+  "source": "https://jays.com/food-menu",
+  "items": [
+   {
+    "name": "Spiced Bourbon Salmon",
+    "price": "$36.00",
+    "section": "House Specialties"
+   },
+   {
+    "name": "Salmon en Croûte",
+    "price": "$37.00",
+    "section": "House Specialties"
+   },
+   {
+    "name": "Cedar Plank Salmon",
+    "price": "$36.00",
+    "section": "House Specialties"
+   },
+   {
+    "name": "Greek-Style Swordfish",
+    "price": "$40.00",
+    "section": "House Specialties"
+   },
+   {
+    "name": "Linguine Al Frutti Di Mare",
+    "price": "$38.00",
+    "section": "House Specialties"
+   },
+   {
+    "name": "Grilled Pepper Crusted Tuna",
+    "price": "$39.00",
+    "section": "House Specialties"
+   },
+   {
+    "name": "Grilled Rare Tuna",
+    "price": "$37.00",
+    "section": "House Specialties"
+   },
+   {
+    "name": "Twin Lobster Tails",
+    "price": "",
+    "section": "Shellfish"
+   },
+   {
+    "name": "Sea Scallops",
+    "price": "",
+    "section": "Shellfish"
+   },
+   {
+    "name": "Fried Oysters",
+    "price": "",
+    "section": "Shellfish"
+   },
+   {
+    "name": "Seafood Boil",
+    "price": "$56.00",
+    "section": "Shellfish"
+   },
+   {
+    "name": "Alaskan King Crab Leg",
+    "price": "",
+    "section": "Shellfish"
+   },
+   {
+    "name": "Fried Shrimp",
+    "price": "",
+    "section": "Shellfish"
+   },
+   {
+    "name": "Fisherman's Platter",
+    "price": "$40.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Crab Platter",
+    "price": "",
+    "section": "Platters"
+   },
+   {
+    "name": "Large 6/8 Shrimp Cocktail",
+    "price": "$4.75",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Jay's Poke",
+    "price": "$20.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Oysters",
+    "price": "$3",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Golden Artichoke Hearts",
+    "price": "$13.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mozzarella Cheese Strips",
+    "price": "$15.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Clam Chowder",
+    "price": "$6.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Maryland Crab Rangoon",
+    "price": "$12.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Scallops Andre",
+    "price": "$19.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Crab Cakes",
+    "price": "$19.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Oysters Rockefeller",
+    "price": "$20.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mussels",
+    "price": "$16.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Calamari Strips",
+    "price": "$16.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Signature Spinach Salad",
+    "price": "$11.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "$9.00",
+    "section": "Salads"
+   },
+   {
+    "name": "The Wedge",
+    "price": "$11.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Filet Mignon",
+    "price": "$39",
+    "section": "Chicken & Beef"
+   },
+   {
+    "name": "Bourbon Chicken",
+    "price": "$32.00",
+    "section": "Chicken & Beef"
+   },
+   {
+    "name": "Bone-In Steak",
+    "price": "$45.00",
+    "section": "Chicken & Beef"
+   },
+   {
+    "name": "1/2 Lb. Kobe Burger",
+    "price": "$20.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Fish Tacos",
+    "price": "$32.00",
+    "section": "Sandwiches"
+   }
+  ]
+ },
+ "dayton|Skyline Chili (Brown Street)": {
+  "source": "https://skylinechili.com/menu/",
+  "items": [
+   {
+    "name": "3-Way",
+    "price": "",
+    "section": "Our Famous Ways"
+   },
+   {
+    "name": "4-Way",
+    "price": "",
+    "section": "Our Famous Ways"
+   },
+   {
+    "name": "5-Way",
+    "price": "",
+    "section": "Our Famous Ways"
+   },
+   {
+    "name": "Cheese Coney",
+    "price": "",
+    "section": "Our Famous Coneys"
+   },
+   {
+    "name": "Chili Cheese Sandwich",
+    "price": "",
+    "section": "Our Famous Coneys"
+   },
+   {
+    "name": "Coney",
+    "price": "",
+    "section": "Our Famous Coneys"
+   },
+   {
+    "name": "Chili Cheese Fries",
+    "price": "",
+    "section": "Fries"
+   },
+   {
+    "name": "Cheese Fries",
+    "price": "",
+    "section": "Fries"
+   },
+   {
+    "name": "Original Deluxe",
+    "price": "",
+    "section": "Burritos & Chilitos"
+   },
+   {
+    "name": "Chili Deluxe",
+    "price": "",
+    "section": "Burritos & Chilitos"
+   },
+   {
+    "name": "Chilito",
+    "price": "",
+    "section": "Burritos & Chilitos"
+   },
+   {
+    "name": "Vegetarian Burrito",
+    "price": "",
+    "section": "Vegetarian BLACK BEANS & RICE"
+   },
+   {
+    "name": "Vegetarian 3-Way",
+    "price": "",
+    "section": "Vegetarian BLACK BEANS & RICE"
+   },
+   {
+    "name": "Vegetarian Chilito",
+    "price": "",
+    "section": "Vegetarian BLACK BEANS & RICE"
+   },
+   {
+    "name": "Greek",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Garden",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Classic Chicken",
+    "price": "",
+    "section": "Wraps"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "",
+    "section": "Wraps"
+   },
+   {
+    "name": "Chicken Bacon Ranch",
+    "price": "",
+    "section": "Wraps"
+   },
+   {
+    "name": "Loaded Chili Bowl",
+    "price": "",
+    "section": "Bowls"
+   },
+   {
+    "name": "Coney Bowl",
+    "price": "",
+    "section": "Bowls"
+   },
+   {
+    "name": "3-Way Potato",
+    "price": "",
+    "section": "Potatoes"
+   },
+   {
+    "name": "Cheddar Potato",
+    "price": "",
+    "section": "Potatoes"
+   },
+   {
+    "name": "Sour Cream Potato",
+    "price": "",
+    "section": "Potatoes"
+   },
+   {
+    "name": "Kids’ 3-Way",
+    "price": "",
+    "section": "Kids"
+   },
+   {
+    "name": "Kids’ P’sghetti",
+    "price": "",
+    "section": "Kids"
+   },
+   {
+    "name": "Kids’ Coney",
+    "price": "",
+    "section": "Kids"
+   },
+   {
+    "name": "Kids’ Hot Doggy",
+    "price": "",
+    "section": "Kids"
+   },
+   {
+    "name": "Skyline Chili Dip",
+    "price": "",
+    "section": "Shareables"
+   },
+   {
+    "name": "Nachos",
+    "price": "",
+    "section": "Shareables"
+   },
+   {
+    "name": "Buffalo Chicken Dip",
+    "price": "",
+    "section": "Shareables"
+   },
+   {
+    "name": "Chicken Tenders",
+    "price": "",
+    "section": "Tenders"
+   },
+   {
+    "name": "Breakfast Chilito",
+    "price": "",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Breakfast Coney",
+    "price": "",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Breakfast Burrito",
+    "price": "",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Breakfast Way",
+    "price": "",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Fudge Cake",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Funnel Fries",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Seasonal Cheesecake",
+    "price": "",
+    "section": "Desserts"
+   }
+  ]
+ },
+ "dayton|Lucky's Taproom & Eatery": {
+  "source": "https://www.luckystaproom.com/lunchdinner.html",
+  "items": [
+   {
+    "name": "The Model T",
+    "price": "$15.50",
+    "section": "Signature Burgers & Such"
+   },
+   {
+    "name": "The Cobra",
+    "price": "$17",
+    "section": "Signature Burgers & Such"
+   },
+   {
+    "name": "Lucky’s",
+    "price": "$17.50",
+    "section": "Signature Burgers & Such"
+   },
+   {
+    "name": "The Fiero",
+    "price": "$17.50",
+    "section": "Signature Burgers & Such"
+   },
+   {
+    "name": "The Rover",
+    "price": "$17",
+    "section": "Signature Burgers & Such"
+   },
+   {
+    "name": "The Jake Brake",
+    "price": "$17",
+    "section": "Signature Burgers & Such"
+   },
+   {
+    "name": "Seitan Gyro",
+    "price": "$14",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Falafel",
+    "price": "$14",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Avocado & Goat Cheese B.L.T",
+    "price": "$15.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Marinated Jack Fruit Reuben on Rye",
+    "price": "$14",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pesto Grilled Cheese",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Lucky Corned Beef Sammie",
+    "price": "$14.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Jam Chicken Sammie",
+    "price": "$16.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Parm",
+    "price": "$15.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Bacon Jam Grilled Cheese",
+    "price": "$13.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Luckys Club",
+    "price": "$14.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken & Waffles",
+    "price": "$15.50",
+    "section": "Entrées"
+   },
+   {
+    "name": "Beer Battered Fish & Chips",
+    "price": "$15.50",
+    "section": "Entrées"
+   },
+   {
+    "name": "Cajun Pasta",
+    "price": "$17",
+    "section": "Entrées"
+   },
+   {
+    "name": "Chicken Mac ’n Cheese",
+    "price": "$17",
+    "section": "Entrées"
+   },
+   {
+    "name": "Chicken Fried Steak",
+    "price": "$16",
+    "section": "Entrées"
+   },
+   {
+    "name": "Beer Battered Chicken Tenders",
+    "price": "$12.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Quesadilla",
+    "price": "$12.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Mozzarella",
+    "price": "$13.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Stuffed Falafel Balls",
+    "price": "$12.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Seitan Nuggets OR Cauliflower Bites",
+    "price": "$13.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Spinach Artichoke Dip",
+    "price": "$11.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Cup of Soup or Cup of Chili & House Salad",
+    "price": "$12.50",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "House Salad",
+    "price": "$7.50",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Cobb Salad",
+    "price": "$17",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Grilled Kale & Beet Salad",
+    "price": "$15.50",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Taco Salad",
+    "price": "$16",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Vegan Chocolate Cake",
+    "price": "$6.50",
+    "section": "Desserts"
+   }
+  ]
+ },
+ "dayton|Butter Cafe": {
+  "source": "https://order.spoton.com/BL-036F-61E9-BF8E",
+  "items": [
+   {
+    "name": "Bacon Avocado Sandwich",
+    "price": "$15.95",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Biscuits & Gravy",
+    "price": "",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Breakfast Burrito",
+    "price": "$16.50",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Classic Breakfast",
+    "price": "$15.50",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Cookie Dough Oatmeal",
+    "price": "$13.95",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Corned Beef Hash",
+    "price": "$15.95",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Country Scramble",
+    "price": "$17.00",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Crab Cake Benedict",
+    "price": "$18.95",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Everything Egg Sandwich",
+    "price": "$16.50",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Huevos Rancheros",
+    "price": "$15.95",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Oatmeal",
+    "price": "$10.95",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Pagel with Spread",
+    "price": "$10.95",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Spicy Breakfast Scramble",
+    "price": "$16.50",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Steak & Eggs",
+    "price": "$23.95",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Steak Scramble",
+    "price": "$17.00",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Tofu Scramble",
+    "price": "$16.50",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Vegan Biscuits & Gravy",
+    "price": "",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Vegan Breakfast Burrito",
+    "price": "$15.50",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Vegan Classic Breakfast",
+    "price": "$16.50",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Vegan Everything Egg Sandwich",
+    "price": "$17.95",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Vegan Huevos Rancheros",
+    "price": "$17.50",
+    "section": "Classic Breakfast Favorites"
+   },
+   {
+    "name": "Bacon, Tomato & Avocado Omelette",
+    "price": "$17.50",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Build Your Own Omelette",
+    "price": "",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Denver Omelette",
+    "price": "$16.25",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Jalapeño Popper Omelette",
+    "price": "$15.95",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Mean Green Omelette",
+    "price": "$16.25",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Paris Omelette",
+    "price": "$14.50",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Skinny B*#@h Frittata",
+    "price": "$15.50",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Southwest Omelette",
+    "price": "$15.95",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Spinach & Feta Omelette",
+    "price": "$14.50",
+    "section": "Omelettes"
+   },
+   {
+    "name": "(1) Buttermilk Pancake",
+    "price": "$4.00",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "(2) Buttermilk Pancakes",
+    "price": "$8.00",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "(3) Buttermilk Pancakes",
+    "price": "$12.00",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "Almond Joy Pancakes",
+    "price": "$14.00",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "Banana Nut Pancakes",
+    "price": "$14.00",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "Chai French Toast- 1/2 Order",
+    "price": "$13.45",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "Chai French Toast- Full",
+    "price": "$16.50",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "Cinnamon Sugar Pancakes",
+    "price": "$13.95",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "Dubai Pancakes",
+    "price": "$15.95",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "French Toast",
+    "price": "$14.50",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "Gluten-free Waffle",
+    "price": "$13.50",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "Jelly Donut Pancakes",
+    "price": "$13.95",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "Tropical French Toast",
+    "price": "$16.00",
+    "section": "Pancakes, French Toast & Waffles"
+   },
+   {
+    "name": "Bacon Avocado Burger",
+    "price": "$17.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Bacon BBQ Burger",
+    "price": "$16.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "BLTE Sandwich",
+    "price": "$14.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Butter Burger",
+    "price": "$15.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Chickpea Chick'n Salad Sandwich",
+    "price": "$13.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Classic Club Sandwich",
+    "price": "$15.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Classic Reuben Sandwich",
+    "price": "$15.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Jackfruit Reuben Sandwich",
+    "price": "$14.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Maryland Style Crab Cake Sandwich",
+    "price": "$16.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Vegan Club Sandwich",
+    "price": "$16.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Vegan Grilled Cheese Sandwich",
+    "price": "$13.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Vegan Housemade Black Bean Burger",
+    "price": "$13.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Vegan Impossible Burger",
+    "price": "$15.95",
+    "section": "Sandwiches & Burgers"
+   },
+   {
+    "name": "Chocolate 4 Breakfast Smoothie",
+    "price": "$11.95",
+    "section": "Smoothies"
+   },
+   {
+    "name": "Is It the Weekend Yet? Smoothie",
+    "price": "$11.95",
+    "section": "Smoothies"
+   },
+   {
+    "name": "Morning Glory Smoothie",
+    "price": "$11.95",
+    "section": "Smoothies"
+   },
+   {
+    "name": "Orange Dreamsicle Smoothie",
+    "price": "$11.95",
+    "section": "Smoothies"
+   },
+   {
+    "name": "Rise & Shine Smoothie",
+    "price": "$11.95",
+    "section": "Smoothies"
+   },
+   {
+    "name": "Acai Smoothie Bowl",
+    "price": "$13.95",
+    "section": "Smoothie Bowls"
+   },
+   {
+    "name": "Charcoal Smoothie Bowl",
+    "price": "$13.95",
+    "section": "Smoothie Bowls"
+   },
+   {
+    "name": "Dragon Fruit Smoothie Bowl",
+    "price": "$13.95",
+    "section": "Smoothie Bowls"
+   },
+   {
+    "name": "Green Clean Smoothie Bowl",
+    "price": "$13.95",
+    "section": "Smoothie Bowls"
+   },
+   {
+    "name": "Peanut Butter Smoothie Bowl",
+    "price": "$13.95",
+    "section": "Smoothie Bowls"
+   },
+   {
+    "name": "Buckeye Latte",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Butter Era",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Chocolate Delight",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Cup of Campfire",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Dark & Stormy",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Fallen Leaves",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Flavor of the Week",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Forever Summer",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "French Vanilla Latte",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Grandma's Hug",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Mermaid",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Oatmeal Cookie",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Persian Stroll",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   },
+   {
+    "name": "Salty Girl",
+    "price": "$8.95",
+    "section": "Specialty Drinks Menu - Grindhead"
+   }
+  ]
+ },
+ "dayton|Olive Mediterranean Grill": {
+  "source": "https://order.spoton.com/BL-EF20-EB95-5646",
+  "items": [
+   {
+    "name": "Chicken Shawarma Wrap",
+    "price": "$11.00",
+    "section": "Wraps"
+   },
+   {
+    "name": "Falafel Wrap",
+    "price": "$10.00",
+    "section": "Wraps"
+   },
+   {
+    "name": "Grilled Shrimp Wrap",
+    "price": "$11.00",
+    "section": "Wraps"
+   },
+   {
+    "name": "Grilled Veggie Wrap",
+    "price": "$10.00",
+    "section": "Wraps"
+   },
+   {
+    "name": "Gyro Wrap",
+    "price": "$10.00",
+    "section": "Wraps"
+   },
+   {
+    "name": "Kufta Kabob Wrap",
+    "price": "$11.00",
+    "section": "Wraps"
+   },
+   {
+    "name": "Shish Kabob Wrap",
+    "price": "$12.00",
+    "section": "Wraps"
+   },
+   {
+    "name": "Shish Tawook Wrap",
+    "price": "$11.00",
+    "section": "Wraps"
+   },
+   {
+    "name": "Falafel Platter",
+    "price": "$14.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Grilled Shrimp Platter",
+    "price": "$17.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Grilled Vegetable Platter",
+    "price": "$15.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Gyro Platter",
+    "price": "$16.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Kufta Kabob Platter",
+    "price": "$17.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Lamb Shank Platter",
+    "price": "$21.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Mixed Grill Platter",
+    "price": "$20.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Shawarma Platter",
+    "price": "$17.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Shish Kabob Platter",
+    "price": "$18.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Shish Tawook Platter",
+    "price": "$17.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Vegetarian Mix Platter",
+    "price": "$15.00",
+    "section": "Platters"
+   },
+   {
+    "name": "Baba Ganouj",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Feta Cheese Rolls",
+    "price": "$10.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Grape Leaves & Salad",
+    "price": "$10.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Greek Potatoes",
+    "price": "$5.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Hummus",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Olive's Choice",
+    "price": "$14.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fetoush Salad",
+    "price": "",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Greek Salad",
+    "price": "",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Lentil Soup",
+    "price": "$5.00",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Tabouleh Salad",
+    "price": "",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Baklava",
+    "price": "$3.00",
+    "section": "Desserts"
+   }
+  ]
+ },
+ "dayton|Yellow Cab Tavern": {
+  "source": "https://yellowcabtavernkitchen.square.site/s/order?location=WKA84SD42RDPN",
+  "items": [
+   {
+    "name": "Pepperoni Slice",
+    "price": "$6.50",
+    "section": "NY Slices"
+   },
+   {
+    "name": "Cheese Slice",
+    "price": "$6.00",
+    "section": "NY Slices"
+   },
+   {
+    "name": "Cheese Pizza NY Large (18\")",
+    "price": "$25.00",
+    "section": "NY Large 18\" Pies"
+   },
+   {
+    "name": "Pepperoni Pizza NY Large (18\")",
+    "price": "$27.00",
+    "section": "NY Large 18\" Pies"
+   },
+   {
+    "name": "Large Half and Half",
+    "price": "$25.00",
+    "section": "NY Large 18\" Pies"
+   },
+   {
+    "name": "Caprese Pizza NY Large (18\")",
+    "price": "$31.00",
+    "section": "NY Large 18\" Pies"
+   },
+   {
+    "name": "Action Jackson Special Deluxe NY Large",
+    "price": "$39.00",
+    "section": "NY Large 18\" Pies"
+   },
+   {
+    "name": "Everything Bagel Pickle Pizza NY Large (18\")",
+    "price": "$28.00",
+    "section": "NY Large 18\" Pies"
+   },
+   {
+    "name": "Vegan Pizza",
+    "price": "$27.00",
+    "section": "NY Large 18\" Pies"
+   },
+   {
+    "name": "10\" Gluten Free Pie",
+    "price": "$13.00",
+    "section": "NY Large 18\" Pies"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "$9.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Garden Salad",
+    "price": "$9.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Vegan Cheesy Garlic Bread",
+    "price": "$16.50",
+    "section": "Pizza Snacks"
+   },
+   {
+    "name": "Cookie - Chocolate chip",
+    "price": "$2.50",
+    "section": "Pizza Snacks"
+   },
+   {
+    "name": "Pretzel bites",
+    "price": "$6.00",
+    "section": "Pizza Snacks"
+   },
+   {
+    "name": "Chips and dip",
+    "price": "$5.00",
+    "section": "Pizza Snacks"
+   },
+   {
+    "name": "Snakebite Wings",
+    "price": "$9.00",
+    "section": "Pizza Snacks"
+   }
+  ]
+ },
+ "dayton|Wheat Penny Oven and Bar": {
+  "source": "https://www.wheatpennydayton.com/menus/",
+  "items": [
+   {
+    "name": "Braised Beef Genovese",
+    "price": "$19.95",
+    "section": "Pasta And More"
+   },
+   {
+    "name": "Mushroom Genovese",
+    "price": "$18.95",
+    "section": "Pasta And More"
+   },
+   {
+    "name": "Tuscan Kale and Chicken Piccata Rigatoni",
+    "price": "$19.95",
+    "section": "Pasta And More"
+   },
+   {
+    "name": "Hop The Gem Pasta (1/2 or Full Order)",
+    "price": "$17.95",
+    "section": "Pasta And More"
+   },
+   {
+    "name": "Eggplant Parmesan",
+    "price": "$23.95",
+    "section": "Pasta And More"
+   },
+   {
+    "name": "Green Lasagna with Cheese and Tomato",
+    "price": "$24.95",
+    "section": "Pasta And More"
+   },
+   {
+    "name": "Chef Robert's Special Burger- Changes Bi-Weekly",
+    "price": "$18.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicago Style Chicken Parmesan",
+    "price": "$18.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Mushroom Milanese",
+    "price": "$17.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Hanger Steak Sandwich",
+    "price": "$19.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Philadelphia",
+    "price": "$17.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Wheat Penny Burger",
+    "price": "$18.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Cauliflower Patty Special Burger",
+    "price": "$19.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Wheat Penny Cauliflower Patty Burger",
+    "price": "$17.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Garlic Braised Short Ribs with Red Wine",
+    "price": "$34.95",
+    "section": "Plate Dinners"
+   },
+   {
+    "name": "New Grilled Ohio Lamb Chops (3)",
+    "price": "$45.95",
+    "section": "Plate Dinners"
+   },
+   {
+    "name": "Bacon Saltimbocca Scallop Entree",
+    "price": "$36.95",
+    "section": "Plate Dinners"
+   },
+   {
+    "name": "Grilled Hanger Steak",
+    "price": "$35.95",
+    "section": "Plate Dinners"
+   },
+   {
+    "name": "Cauliflower T-Bone 2.0",
+    "price": "$25.95",
+    "section": "Plate Dinners"
+   },
+   {
+    "name": "Prime Dry-aged Bone-in Ribeye",
+    "price": "$52.95",
+    "section": "Plate Dinners"
+   },
+   {
+    "name": "Grilled Swordfish",
+    "price": "$42.95",
+    "section": "Plate Dinners"
+   },
+   {
+    "name": "Soup of the Day",
+    "price": "$5.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Pepperoni Gumbo",
+    "price": "$5.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Warm Focaccia Bread",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Eggplant Fries",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Eggplant and Porcini “Meatballs”",
+    "price": "$13.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Meatballs",
+    "price": "$16.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Tomato Bruschetta",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Bruschetta",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Burrata with Roasted Eggplant and Fava Beans",
+    "price": "$19.95",
+    "section": "Eat Your Vegetables"
+   },
+   {
+    "name": "Creamed Spinach",
+    "price": "$12.95",
+    "section": "Eat Your Vegetables"
+   },
+   {
+    "name": "Herb Buttered Spaghetti Squash",
+    "price": "$10.95",
+    "section": "Eat Your Vegetables"
+   },
+   {
+    "name": "Roasted Yukon Potatoes",
+    "price": "$9.95",
+    "section": "Eat Your Vegetables"
+   },
+   {
+    "name": "Butter & Parmesan-Romano Risotto",
+    "price": "$10.95",
+    "section": "Eat Your Vegetables"
+   },
+   {
+    "name": "Wheat Penny Caprese",
+    "price": "$16.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Dressed Greens",
+    "price": "$5.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Kale Salad 2.0",
+    "price": "$16.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Slice of Ice",
+    "price": "$14.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Arugula and Shaved Cauliflower Salad",
+    "price": "$12.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Roasted Cauliflower Caesar",
+    "price": "$15.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Magic Mike",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "The PPP",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Okie Dokie Artichokie",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Veganator",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Unbeetable",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Taylor Street",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Angry Sal",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Tommaso",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Hawaii 4-0",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Philomena",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Tarte Flambe",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "That’S The Way",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Duck On The Mountain",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Streets Of Laredo",
+    "price": "",
+    "section": "Pizza"
+   }
+  ]
+ },
+ "dayton|Wat Da Pho Express": {
+  "source": "https://www.clover.com/online-ordering/wat-da-pho-ud-dayton",
+  "items": [
+   {
+    "name": "Just Pho",
+    "price": "$13.99",
+    "section": "Pho"
+   },
+   {
+    "name": "Brisket & Steak Pho",
+    "price": "$14.99",
+    "section": "Pho"
+   },
+   {
+    "name": "Wat Da Pho",
+    "price": "$15.99",
+    "section": "Pho"
+   },
+   {
+    "name": "Chicken Pho | Pho Ga",
+    "price": "$13.99",
+    "section": "Pho"
+   },
+   {
+    "name": "Shrimp Pho | Pho Tom",
+    "price": "$13.99",
+    "section": "Pho"
+   },
+   {
+    "name": "Seafood Pho | Pho Do Bien",
+    "price": "$17.99",
+    "section": "Pho"
+   },
+   {
+    "name": "Spicy Vermicelli Noodle Soup",
+    "price": "$13.99",
+    "section": "Pho"
+   },
+   {
+    "name": "Flaming-steak Pho",
+    "price": "$15.99",
+    "section": "Pho"
+   },
+   {
+    "name": "Non-meat Pho",
+    "price": "$8.99",
+    "section": "Pho"
+   },
+   {
+    "name": "Meatballs and Steak Pho",
+    "price": "$13.99",
+    "section": "Pho"
+   },
+   {
+    "name": "Special Sub",
+    "price": "$8.99",
+    "section": "Banh Mi | Sub"
+   },
+   {
+    "name": "BBQ Pork Sub",
+    "price": "$7.99",
+    "section": "Banh Mi | Sub"
+   },
+   {
+    "name": "Grilled Pork Sub",
+    "price": "$8.99",
+    "section": "Banh Mi | Sub"
+   },
+   {
+    "name": "Grilled Beef Sub",
+    "price": "$9.99",
+    "section": "Banh Mi | Sub"
+   },
+   {
+    "name": "Soy Tofu Sub",
+    "price": "$7.99",
+    "section": "Banh Mi | Sub"
+   },
+   {
+    "name": "Teriyaki Chicken Sub",
+    "price": "$7.99",
+    "section": "Banh Mi | Sub"
+   },
+   {
+    "name": "Texas Brisket Sub",
+    "price": "$10.99",
+    "section": "Banh Mi | Sub"
+   },
+   {
+    "name": "Asian Cajun Fried Rice",
+    "price": "$13.99",
+    "section": "Wdp Fried Rice"
+   },
+   {
+    "name": "Classic Fried Rice",
+    "price": "$13.99",
+    "section": "Wdp Fried Rice"
+   },
+   {
+    "name": "Crab Fried Rice",
+    "price": "$16.99",
+    "section": "Wdp Fried Rice"
+   },
+   {
+    "name": "Pineapple Fried Rice",
+    "price": "$13.99",
+    "section": "Wdp Fried Rice"
+   },
+   {
+    "name": "The 3 Sum - Suon Bi Cha",
+    "price": "$15.99",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Grill Chicken Rice - Com Ga Nuong",
+    "price": "$15.99",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Orange Chicken",
+    "price": "$13.99",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Mongolian Grilled Beef",
+    "price": "$14.99",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Sizzling Asian Kalbi Rice",
+    "price": "$17.99",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Lemongrass Beef",
+    "price": "$14.99",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Teriyaki Chicken",
+    "price": "$15.99",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Lemongrass Chicken",
+    "price": "$14.99",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Spicy Basil Chicken",
+    "price": "$15.99",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "NEW* Garlic Onions Steak Bites",
+    "price": "$15.99",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Pad Thai",
+    "price": "$13.99",
+    "section": "Wdp Stir Fried"
+   },
+   {
+    "name": "Beef Chow Mein",
+    "price": "$14.99",
+    "section": "Wdp Stir Fried"
+   },
+   {
+    "name": "Chow Fun",
+    "price": "$13.99",
+    "section": "Wdp Stir Fried"
+   },
+   {
+    "name": "Basil Garlic Chicken Lo Mein",
+    "price": "$13.99",
+    "section": "Wdp Stir Fried"
+   },
+   {
+    "name": "Bun Bo Hue",
+    "price": "$15.99",
+    "section": "Authentic"
+   },
+   {
+    "name": "Nam Vang Noodle",
+    "price": "$14.99",
+    "section": "Authentic"
+   },
+   {
+    "name": "Beef Stew",
+    "price": "$15.99",
+    "section": "Authentic"
+   },
+   {
+    "name": "Vietnamese Udon",
+    "price": "$12.99",
+    "section": "Authentic"
+   },
+   {
+    "name": "Hot-spicy Ramen Noodles Soup",
+    "price": "$17.99",
+    "section": "Authentic"
+   },
+   {
+    "name": "Vermicelli Combo",
+    "price": "$16.99",
+    "section": "Vermicelli Noodles"
+   },
+   {
+    "name": "Vermicelli Noodle Salad with Choice of Protein",
+    "price": "$12.99",
+    "section": "Vermicelli Noodles"
+   },
+   {
+    "name": "Spicy Vermicelli Noodle Soup",
+    "price": "$13.99",
+    "section": "Vermicelli Noodles"
+   },
+   {
+    "name": "Vegan Noodle Soup",
+    "price": "$13.99",
+    "section": "Vegan Option"
+   },
+   {
+    "name": "Sate' Noodle Soup",
+    "price": "$13.99",
+    "section": "Vegan Option"
+   },
+   {
+    "name": "Tom Yum Vegan Soup",
+    "price": "$13.99",
+    "section": "Vegan Option"
+   },
+   {
+    "name": "Vermicelli Tofu Salad",
+    "price": "$13.99",
+    "section": "Vegan Option"
+   },
+   {
+    "name": "Vermicelli Salad with Vegan Egg Roll",
+    "price": "$13.99",
+    "section": "Vegan Option"
+   },
+   {
+    "name": "Tofu Temple Rice",
+    "price": "$13.99",
+    "section": "Vegan Option"
+   },
+   {
+    "name": "Brown Sugar Milk Tea",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "Fruity Rainbow",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "Thai Tea",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "WDP Fruit Tea",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "Dragon Fruit Lemon Burst",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "Honey Lemon Iced Tea",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "Peachy Lemongrass Iced Tea",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "Avocado Smoothie",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "Pina-colada",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "Pink Guava Iced Tea",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "Lychee Strawberry Fruit Tea",
+    "price": "$7.99",
+    "section": "Signature Drink"
+   },
+   {
+    "name": "Coconut Milk Tea",
+    "price": "$5.99",
+    "section": "Milk Tea"
+   },
+   {
+    "name": "Honey Milk Tea",
+    "price": "$5.99",
+    "section": "Milk Tea"
+   },
+   {
+    "name": "Lychee Milk Tea",
+    "price": "$5.99",
+    "section": "Milk Tea"
+   },
+   {
+    "name": "Mango Milk Tea",
+    "price": "$5.99",
+    "section": "Milk Tea"
+   },
+   {
+    "name": "Matcha Milk Tea",
+    "price": "$5.99",
+    "section": "Milk Tea"
+   },
+   {
+    "name": "Passionfruit Milk Tea",
+    "price": "$5.99",
+    "section": "Milk Tea"
+   },
+   {
+    "name": "Peach Milk Tea",
+    "price": "$5.99",
+    "section": "Milk Tea"
+   },
+   {
+    "name": "Strawberry Milk Tea",
+    "price": "$5.99",
+    "section": "Milk Tea"
+   },
+   {
+    "name": "Taro Milk Tea",
+    "price": "$5.99",
+    "section": "Milk Tea"
+   },
+   {
+    "name": "Original Milk Tea",
+    "price": "$5.99",
+    "section": "Milk Tea"
+   },
+   {
+    "name": "BBQ Buns (2)",
+    "price": "$4.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Crab Rangoon (4)",
+    "price": "$4.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Crispy Tofu (8)",
+    "price": "$4.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Deep-Fried Crispy Shrimp (4)",
+    "price": "$5.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "French Fries",
+    "price": "$5.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Fried Chicken Wings (5)",
+    "price": "$6.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Fried Dumpling (4)",
+    "price": "$4.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Fried Egg Rolls (3)",
+    "price": "$4.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Fried Fish Ball (6)",
+    "price": "$4.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Fried Shrimp Dumpling (4)",
+    "price": "$4.99",
+    "section": "Appetizer"
+   }
+  ]
+ },
+ "dayton|Old Scratch Pizza": {
+  "source": "https://www.oldscratchpizza.com/menu",
+  "items": [
+   {
+    "name": "Margherita",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Angry Beekeeper",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Mr. Scratch",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Elliot",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Dayton",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Vodka Pesto",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Shorty",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Shroom",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Prosciutto Arugula",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "White Pie",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Chicken Bacon Ranch",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Brussel Crowe",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Vegan Margherita",
+    "price": "",
+    "section": "Vegan Pizzas"
+   },
+   {
+    "name": "Vegan Shroom",
+    "price": "",
+    "section": "Vegan Pizzas"
+   },
+   {
+    "name": "Vegan Mr. Scratch",
+    "price": "",
+    "section": "Vegan Pizzas"
+   },
+   {
+    "name": "Vegan Elliot",
+    "price": "",
+    "section": "Vegan Pizzas"
+   },
+   {
+    "name": "Hummus",
+    "price": "",
+    "section": "Share"
+   },
+   {
+    "name": "Burrata",
+    "price": "",
+    "section": "Share"
+   },
+   {
+    "name": "Roasted Cauliflower",
+    "price": "",
+    "section": "Share"
+   },
+   {
+    "name": "Oven Roasted Olives",
+    "price": "",
+    "section": "Share"
+   },
+   {
+    "name": "Meatballs",
+    "price": "",
+    "section": "Share"
+   },
+   {
+    "name": "House Salad",
+    "price": "",
+    "section": "Classics"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "",
+    "section": "Classics"
+   },
+   {
+    "name": "Winter Crunch",
+    "price": "",
+    "section": "Signature Salads"
+   },
+   {
+    "name": "Mediterranean Salad",
+    "price": "",
+    "section": "Signature Salads"
+   },
+   {
+    "name": "Applewood Bacon Ranch",
+    "price": "",
+    "section": "Signature Salads"
+   },
+   {
+    "name": "Veg Sandwich",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chopped BLT",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Italian Sandwich",
+    "price": "",
+    "section": "Sandwiches"
+   }
+  ]
+ },
+ "dayton|Coco's Bistro": {
+  "source": "https://228coco.com/s/83739_dinner.pdf",
+  "items": [
+   {
+    "name": "Thai Peanut Noodles",
+    "price": "$30.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Chicken",
+    "price": "",
+    "section": "Entrees"
+   },
+   {
+    "name": "Pork Shoulder",
+    "price": "$38.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Risotto",
+    "price": "$30.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Salmon",
+    "price": "",
+    "section": "Entrees"
+   },
+   {
+    "name": "Steak",
+    "price": "$56.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Big Jim’s Spaghetti and Meatballs",
+    "price": "$34.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Barramundi",
+    "price": "$38.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Shrimp & Linguine",
+    "price": "$36.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Burger",
+    "price": "$20.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Birdie",
+    "price": "$18.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Romesco Hummus",
+    "price": "$16.00",
+    "section": "Apps/Pizza"
+   },
+   {
+    "name": "Fried Brie",
+    "price": "$18.00",
+    "section": "Apps/Pizza"
+   },
+   {
+    "name": "Pimento Cheese",
+    "price": "$18.00",
+    "section": "Apps/Pizza"
+   },
+   {
+    "name": "Roasted Butternut Squash Soup",
+    "price": "$10.00",
+    "section": "Apps/Pizza"
+   },
+   {
+    "name": "Shrimp Cocktail",
+    "price": "$18.00",
+    "section": "Apps/Pizza"
+   },
+   {
+    "name": "Brussels Sprouts",
+    "price": "$18.00",
+    "section": "Apps/Pizza"
+   },
+   {
+    "name": "Coco’s Pan Pizza",
+    "price": "$20.00",
+    "section": "Apps/Pizza"
+   },
+   {
+    "name": "BBQ Chicken Pizza",
+    "price": "$25.00",
+    "section": "Apps/Pizza"
+   },
+   {
+    "name": "Bourbon Street",
+    "price": "$20.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Caesar",
+    "price": "$20.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Beet",
+    "price": "$20.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Steak Salad",
+    "price": "$20.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Cabbage",
+    "price": "$20.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Coco’s Grilled Cheese",
+    "price": "$16.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Tuna Melt",
+    "price": "$18.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pork Sandwich",
+    "price": "$18.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Red Velvet Cake",
+    "price": "$10.00",
+    "section": "Desserts"
+   },
+   {
+    "name": "Apple Pie Sundae",
+    "price": "$10.00",
+    "section": "Desserts"
+   },
+   {
+    "name": "Warm Blondie",
+    "price": "$10.00",
+    "section": "Desserts"
+   },
+   {
+    "name": "Chocolate Mousse",
+    "price": "$10.00",
+    "section": "Desserts"
+   },
+   {
+    "name": "Pomegranate Sorbet",
+    "price": "$6.00",
+    "section": "Desserts"
+   }
+  ]
+ },
+ "dayton|Lily's Dayton": {
+  "source": "https://www.lilysdayton.com/dinner",
+  "items": [
+   {
+    "name": "Shrimp and Grits",
+    "price": "$24",
+    "section": "Entrees"
+   },
+   {
+    "name": "Spicy Miso Maple Salmon",
+    "price": "$24",
+    "section": "Entrees"
+   },
+   {
+    "name": "Peri Peri Chicken",
+    "price": "$22",
+    "section": "Entrees"
+   },
+   {
+    "name": "Lily's Pot Roast",
+    "price": "$28",
+    "section": "Entrees"
+   },
+   {
+    "name": "Lily’s Bowl Fall Edition",
+    "price": "",
+    "section": "Entrees"
+   },
+   {
+    "name": "Squash Gratin",
+    "price": "$16",
+    "section": "Entrees"
+   },
+   {
+    "name": "2 Pieces with One Side and One Biscuit",
+    "price": "$14",
+    "section": "Tasty Fried Chicken"
+   },
+   {
+    "name": "4 Pieces with Two Sides and Two Biscuits",
+    "price": "$26",
+    "section": "Tasty Fried Chicken"
+   },
+   {
+    "name": "8 Pieces with Four Sides and Four Biscuits",
+    "price": "$40",
+    "section": "Tasty Fried Chicken"
+   },
+   {
+    "name": "Wagyu Classic Double Cheeseburger",
+    "price": "$18",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Black Bean Veggie Burger",
+    "price": "$16",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Fried Chicken Sandwich",
+    "price": "$19",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Southern Fried Sweet Potato Sandwich",
+    "price": "$18",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Salmon Sandwich",
+    "price": "$21",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Regular",
+    "price": "$8",
+    "section": "Mac 'N Cheese"
+   },
+   {
+    "name": "Chicken Mac",
+    "price": "$13",
+    "section": "Mac 'N Cheese"
+   },
+   {
+    "name": "Mushroom Mac",
+    "price": "$13",
+    "section": "Mac 'N Cheese"
+   },
+   {
+    "name": "BBQ Beef Mac",
+    "price": "$16",
+    "section": "Mac 'N Cheese"
+   },
+   {
+    "name": "Deviled Eggs",
+    "price": "",
+    "section": "Snacks"
+   },
+   {
+    "name": "Rumaki",
+    "price": "$9",
+    "section": "Snacks"
+   },
+   {
+    "name": "Beer Battered Fried Mushrooms",
+    "price": "$8",
+    "section": "Snacks"
+   },
+   {
+    "name": "Chicken or Thai Vegetable Gyoza",
+    "price": "$9",
+    "section": "Snacks"
+   },
+   {
+    "name": "Loaded Toast",
+    "price": "$12",
+    "section": "Snacks"
+   },
+   {
+    "name": "Soup of the Now",
+    "price": "",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "Garden Salad",
+    "price": "$10",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "Fall Salad",
+    "price": "$14",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "Caesar Wedge Salad",
+    "price": "$12",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "Seasonal Cobbler",
+    "price": "$8",
+    "section": "Dessert"
+   },
+   {
+    "name": "Pumpkin Bread",
+    "price": "$7",
+    "section": "Dessert"
+   },
+   {
+    "name": "Peanut Butter Pie",
+    "price": "$9",
+    "section": "Dessert"
+   },
+   {
+    "name": "Beignets",
+    "price": "$7",
+    "section": "Brunch"
+   },
+   {
+    "name": "Meat Omelet of the Day",
+    "price": "$16",
+    "section": "Brunch"
+   },
+   {
+    "name": "Veggie Omelet of the Day",
+    "price": "$15",
+    "section": "Brunch"
+   },
+   {
+    "name": "SPAM Benedict",
+    "price": "$17",
+    "section": "Brunch"
+   },
+   {
+    "name": "Smoked Salmon Benedict",
+    "price": "",
+    "section": "Brunch"
+   },
+   {
+    "name": "Meat Benedict of the Day",
+    "price": "$18",
+    "section": "Brunch"
+   },
+   {
+    "name": "Vegetarian Florentine",
+    "price": "$16",
+    "section": "Brunch"
+   },
+   {
+    "name": "Hangover Bowls",
+    "price": "",
+    "section": "Brunch"
+   },
+   {
+    "name": "Breakfast Burritos",
+    "price": "",
+    "section": "Brunch"
+   },
+   {
+    "name": "Biscuits & Gravy",
+    "price": "",
+    "section": "Brunch"
+   },
+   {
+    "name": "Lox Toast",
+    "price": "",
+    "section": "Brunch"
+   },
+   {
+    "name": "Veggie Toast",
+    "price": "",
+    "section": "Brunch"
+   },
+   {
+    "name": "Fried Chicken & Waffle Sandwich",
+    "price": "",
+    "section": "Brunch"
+   }
+  ]
+ },
+ "dayton|Salar Restaurant & Lounge": {
+  "source": "https://salarrestaurant.com/s/Fall-Menu-2026.pdf",
+  "items": [
+   {
+    "name": "Baked Scallops Parmesan",
+    "price": "$28",
+    "section": "Entradas"
+   },
+   {
+    "name": "Cebiche",
+    "price": "$19",
+    "section": "Entradas"
+   },
+   {
+    "name": "Fried Calamari",
+    "price": "$19.50",
+    "section": "Entradas"
+   },
+   {
+    "name": "Crispy Pork Belly",
+    "price": "$19.50",
+    "section": "Entradas"
+   },
+   {
+    "name": "Spanish Croquetas",
+    "price": "$16",
+    "section": "Entradas"
+   },
+   {
+    "name": "Chicken Chicharrones",
+    "price": "$15",
+    "section": "Entradas"
+   },
+   {
+    "name": "Fried Queso Fresco",
+    "price": "$16",
+    "section": "Entradas"
+   },
+   {
+    "name": "Ahi Tuna",
+    "price": "$18",
+    "section": "Entradas"
+   },
+   {
+    "name": "House Made Focaccia",
+    "price": "$6.50",
+    "section": "Entradas"
+   },
+   {
+    "name": "Beef Empanadas",
+    "price": "$15",
+    "section": "Entradas"
+   },
+   {
+    "name": "Seafood Empanadas",
+    "price": "$15.50",
+    "section": "Entradas"
+   },
+   {
+    "name": "Vegetarian Empanadas",
+    "price": "$14.00",
+    "section": "Entradas"
+   },
+   {
+    "name": "Tierra y Mar (Surf & Turf)",
+    "price": "$67",
+    "section": "Carnes"
+   },
+   {
+    "name": "Delmonico Ribeye",
+    "price": "$56",
+    "section": "Carnes"
+   },
+   {
+    "name": "Machu Picchu Pork Chop",
+    "price": "$41",
+    "section": "Carnes"
+   },
+   {
+    "name": "Lomo Saltado Beef",
+    "price": "$33",
+    "section": "Carnes"
+   },
+   {
+    "name": "Roasted Short Ribs",
+    "price": "$44",
+    "section": "Carnes"
+   },
+   {
+    "name": "Northern Peruvian Style Braised Lamb Shank",
+    "price": "$41",
+    "section": "Carnes"
+   },
+   {
+    "name": "Mezzelune de Asado Limeño",
+    "price": "$39",
+    "section": "Carnes"
+   },
+   {
+    "name": "Chicken Skewers",
+    "price": "$31",
+    "section": "Aves"
+   },
+   {
+    "name": "Duck Fried Rice",
+    "price": "$33",
+    "section": "Aves"
+   },
+   {
+    "name": "Tallarines Verdes",
+    "price": "$35",
+    "section": "Aves"
+   },
+   {
+    "name": "Chilean Sea Bass",
+    "price": "",
+    "section": "Pescados y Mariscos"
+   },
+   {
+    "name": "Faroe Island Salmon",
+    "price": "",
+    "section": "Pescados y Mariscos"
+   },
+   {
+    "name": "Shrimp & Pasta",
+    "price": "$41",
+    "section": "Pescados y Mariscos"
+   },
+   {
+    "name": "Seared Scallops",
+    "price": "$44",
+    "section": "Pescados y Mariscos"
+   },
+   {
+    "name": "Vegetarian Fried Rice",
+    "price": "$29",
+    "section": "Vegetariano y Vegano"
+   },
+   {
+    "name": "Crispy Eggplant",
+    "price": "$30",
+    "section": "Vegetariano y Vegano"
+   },
+   {
+    "name": "Lomo Saltado Cremini",
+    "price": "$31",
+    "section": "Vegetariano y Vegano"
+   },
+   {
+    "name": "Crespelle alla Fiorentina",
+    "price": "$29",
+    "section": "Vegetariano y Vegano"
+   },
+   {
+    "name": "Peruvian Charred Caesar Salad",
+    "price": "$17.50",
+    "section": "Ensaladas"
+   },
+   {
+    "name": "Warm Caprese",
+    "price": "$17",
+    "section": "Ensaladas"
+   },
+   {
+    "name": "Seared Pear & Blue Cheese",
+    "price": "$15.50",
+    "section": "Ensaladas"
+   },
+   {
+    "name": "Beet & Honey Capra",
+    "price": "$16.50",
+    "section": "Ensaladas"
+   },
+   {
+    "name": "Salar Salad",
+    "price": "$14",
+    "section": "Ensaladas"
+   },
+   {
+    "name": "Aguadito de Pollo",
+    "price": "$11",
+    "section": "Ensaladas"
+   }
+  ]
+ },
+ "dayton|Lucho": {
+  "source": "https://www.luchodayton.com/s/LUCHO_Menu_Tostada_Garnish.pdf",
+  "items": [
+   {
+    "name": "La Tinga Poderosa",
+    "price": "",
+    "section": "Tacos"
+   },
+   {
+    "name": "Verde Apasionada",
+    "price": "",
+    "section": "Tacos"
+   },
+   {
+    "name": "El Clásico",
+    "price": "",
+    "section": "Tacos"
+   },
+   {
+    "name": "Pollo del Mercado",
+    "price": "",
+    "section": "Tacos"
+   },
+   {
+    "name": "Torta",
+    "price": "$13",
+    "section": "Sandwiches & More"
+   },
+   {
+    "name": "Cuban",
+    "price": "$15",
+    "section": "Sandwiches & More"
+   },
+   {
+    "name": "Lucho Dog",
+    "price": "$13",
+    "section": "Sandwiches & More"
+   },
+   {
+    "name": "Tostada Fold",
+    "price": "$13",
+    "section": "Sandwiches & More"
+   },
+   {
+    "name": "Quesadilla",
+    "price": "$9",
+    "section": "Sandwiches & More"
+   },
+   {
+    "name": "Huevos Rancheros",
+    "price": "$16",
+    "section": "Entrées"
+   },
+   {
+    "name": "Steak & Chimichurri Salad",
+    "price": "$18",
+    "section": "Entrées"
+   },
+   {
+    "name": "Poblano Chicken",
+    "price": "$23",
+    "section": "Entrées"
+   },
+   {
+    "name": "Steak Churrasco",
+    "price": "$27",
+    "section": "Entrées"
+   },
+   {
+    "name": "House Nachos",
+    "price": "$13",
+    "section": "For the Table"
+   },
+   {
+    "name": "Chips & Guacamole",
+    "price": "$9",
+    "section": "For the Table"
+   },
+   {
+    "name": "Chips & Queso",
+    "price": "$9",
+    "section": "For the Table"
+   },
+   {
+    "name": "Chips & Salsa Trio",
+    "price": "$8",
+    "section": "For the Table"
+   },
+   {
+    "name": "Churro Donuts",
+    "price": "$9",
+    "section": "Something Sweet"
+   },
+   {
+    "name": "Torta de Cacao con Maíz",
+    "price": "$9",
+    "section": "Something Sweet"
+   },
+   {
+    "name": "Classic Tres Leches",
+    "price": "$9",
+    "section": "Something Sweet"
+   },
+   {
+    "name": "Drip Coffee",
+    "price": "$3",
+    "section": "Coffee & More"
+   },
+   {
+    "name": "Cold Brew",
+    "price": "$4",
+    "section": "Coffee & More"
+   },
+   {
+    "name": "Espresso",
+    "price": "$3",
+    "section": "Coffee & More"
+   },
+   {
+    "name": "Café de Olla",
+    "price": "$5",
+    "section": "Signature Lattes"
+   },
+   {
+    "name": "Miel Auténtica",
+    "price": "$5",
+    "section": "Signature Lattes"
+   },
+   {
+    "name": "Chai Latte Especiado",
+    "price": "$5",
+    "section": "Signature Lattes"
+   },
+   {
+    "name": "Oaxacan Mocha",
+    "price": "$5",
+    "section": "Signature Lattes"
+   },
+   {
+    "name": "Espresso Libre",
+    "price": "$7",
+    "section": "Tonics & Spritzes"
+   },
+   {
+    "name": "Espresso Tónica",
+    "price": "$7",
+    "section": "Tonics & Spritzes"
+   }
+  ]
+ },
+ "dayton|The Dayton Beer Company": {
+  "source": "https://www.thedaytonbeerco.com/s/DBC-NEW-FOOD-MENU.pdf",
+  "items": [
+   {
+    "name": "Pretzel Knots & Beer Cheese",
+    "price": "$10",
+    "section": "Shareables"
+   },
+   {
+    "name": "Chips & Dip",
+    "price": "$7",
+    "section": "Shareables"
+   },
+   {
+    "name": "Bourbon BBQ Sliders",
+    "price": "$13",
+    "section": "Shareables"
+   },
+   {
+    "name": "Smoked Nachos",
+    "price": "$11",
+    "section": "Shareables"
+   },
+   {
+    "name": "Smoked Wings",
+    "price": "$14",
+    "section": "Shareables"
+   },
+   {
+    "name": "Soft Tacos",
+    "price": "$12",
+    "section": "Shareables"
+   },
+   {
+    "name": "Cheese Flatbread",
+    "price": "$11",
+    "section": "Flatbread Pizza"
+   },
+   {
+    "name": "Pepperoni Flatbread",
+    "price": "$12",
+    "section": "Flatbread Pizza"
+   },
+   {
+    "name": "Veggie Flatbread",
+    "price": "$13",
+    "section": "Flatbread Pizza"
+   },
+   {
+    "name": "Supreme Flatbread",
+    "price": "$14",
+    "section": "Flatbread Pizza"
+   },
+   {
+    "name": "Meatlovers Flatbread",
+    "price": "$15",
+    "section": "Flatbread Pizza"
+   },
+   {
+    "name": "The Classic",
+    "price": "$11",
+    "section": "Wraps"
+   },
+   {
+    "name": "The Veggie",
+    "price": "$11",
+    "section": "Wraps"
+   },
+   {
+    "name": "House Salad",
+    "price": "$7",
+    "section": "Salads"
+   },
+   {
+    "name": "Loaded Chef's Salad",
+    "price": "$9",
+    "section": "Salads"
+   }
+  ]
+ },
+ "dayton|South Park Tavern": {
+  "source": "https://photographybymegdowler.wordpress.com/wp-content/uploads/2025/04/spt-menu-1.pdf",
+  "items": [
+   {
+    "name": "South Park Signature",
+    "price": "$13",
+    "section": "Oven-Baked Subs"
+   },
+   {
+    "name": "The Cubano",
+    "price": "$13",
+    "section": "Oven-Baked Subs"
+   },
+   {
+    "name": "Chicago Hoagie",
+    "price": "$13",
+    "section": "Oven-Baked Subs"
+   },
+   {
+    "name": "Philly Cheese Steak",
+    "price": "$13",
+    "section": "Oven-Baked Subs"
+   },
+   {
+    "name": "SPT Reuben",
+    "price": "$13",
+    "section": "Oven-Baked Subs"
+   },
+   {
+    "name": "Club House",
+    "price": "$13",
+    "section": "Oven-Baked Subs"
+   },
+   {
+    "name": "Chicky Bleu",
+    "price": "$13",
+    "section": "Oven-Baked Subs"
+   },
+   {
+    "name": "The Vegginator",
+    "price": "$12",
+    "section": "Oven-Baked Subs"
+   },
+   {
+    "name": "Mediterranean Pesto",
+    "price": "$11",
+    "section": "Oven-Baked Subs"
+   },
+   {
+    "name": "Butter Pie",
+    "price": "$11",
+    "section": ""
+   },
+   {
+    "name": "New York Cheese",
+    "price": "$11",
+    "section": ""
+   },
+   {
+    "name": "Poutine Pizza",
+    "price": "$13",
+    "section": ""
+   },
+   {
+    "name": "Chicky Cordy Bleu",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Santa Fe",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Chicky Bakey Ranch",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "The Lu-Wow",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Pesto Chicken",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Cajun Chicken",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Ghostlight Delight",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Ultimate Pep",
+    "price": "$15",
+    "section": ""
+   },
+   {
+    "name": "Spicy Pepperoni",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Ultimate Sausage",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Classic Italian",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Carnivore",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Tasty Taco",
+    "price": "$15",
+    "section": ""
+   },
+   {
+    "name": "Incredible SPT Supreme",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Deluxe",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Hawaii",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Paradise",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Reuben Pizza",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Philly Cheese Steak",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Swine N’ Pine",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "Gyro",
+    "price": "",
+    "section": ""
+   },
+   {
+    "name": "The Popeye",
+    "price": "",
+    "section": "Veggie"
+   },
+   {
+    "name": "Pesto Pie",
+    "price": "",
+    "section": "Veggie"
+   },
+   {
+    "name": "Mediterranean",
+    "price": "",
+    "section": "Veggie"
+   },
+   {
+    "name": "Fresh Tom & Spin",
+    "price": "",
+    "section": "Veggie"
+   },
+   {
+    "name": "The Backpacker",
+    "price": "",
+    "section": "Veggie"
+   },
+   {
+    "name": "Veggie Delight",
+    "price": "",
+    "section": "Veggie"
+   },
+   {
+    "name": "C-Foo Pie",
+    "price": "$15",
+    "section": "Seafood"
+   },
+   {
+    "name": "Boneless",
+    "price": "$9",
+    "section": "Wings"
+   },
+   {
+    "name": "Bone-In",
+    "price": "$13",
+    "section": "Wings"
+   },
+   {
+    "name": "Mozzarella Cheese Sticks",
+    "price": "$8",
+    "section": ""
+   },
+   {
+    "name": "Jalapeño Poppers",
+    "price": "$9",
+    "section": ""
+   },
+   {
+    "name": "Cheesy Dilla",
+    "price": "$6",
+    "section": ""
+   },
+   {
+    "name": "Onion Battered Green Beans",
+    "price": "$9",
+    "section": ""
+   },
+   {
+    "name": "Chicken Fries",
+    "price": "$8",
+    "section": ""
+   },
+   {
+    "name": "Bavarian-Style Soft Pretzels",
+    "price": "$7",
+    "section": ""
+   },
+   {
+    "name": "Baked French Fries",
+    "price": "$3",
+    "section": ""
+   },
+   {
+    "name": "Loaded Tavern Fries",
+    "price": "$13",
+    "section": ""
+   },
+   {
+    "name": "Focaccia",
+    "price": "$6",
+    "section": ""
+   },
+   {
+    "name": "Spinach and Artichoke Dip",
+    "price": "$8",
+    "section": ""
+   },
+   {
+    "name": "Personal Chip Basket",
+    "price": "$5",
+    "section": ""
+   },
+   {
+    "name": "Caesar",
+    "price": "$8",
+    "section": ""
+   },
+   {
+    "name": "South Park House Salad",
+    "price": "$8",
+    "section": ""
+   },
+   {
+    "name": "Southwest Salad",
+    "price": "$8",
+    "section": ""
+   },
+   {
+    "name": "Spring Salad",
+    "price": "$8",
+    "section": ""
+   },
+   {
+    "name": "Wild Buffalo",
+    "price": "$9",
+    "section": ""
+   },
+   {
+    "name": "Spinach Salad",
+    "price": "$8",
+    "section": ""
+   }
+  ]
+ },
+ "dayton|Table 33": {
+  "source": "https://www.table33dayton.com/menus/brunch.pdf",
+  "items": [
+   {
+    "name": "Braised Short Rib Benedict",
+    "price": "$28",
+    "section": "Brunch Favorites"
+   },
+   {
+    "name": "Black Angus Steak & Eggs",
+    "price": "$40",
+    "section": "Brunch Favorites"
+   },
+   {
+    "name": "Apple Pecan Chicken & Waffles",
+    "price": "$26",
+    "section": "Brunch Favorites"
+   },
+   {
+    "name": "Farmer's Breakfast",
+    "price": "$19",
+    "section": "Brunch Favorites"
+   },
+   {
+    "name": "Patty Melt",
+    "price": "$19",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Shawarma",
+    "price": "$18",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Rachel",
+    "price": "$18",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Breakfast Sandwich",
+    "price": "$17",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Gourmet Grilled Cheese",
+    "price": "$16",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Crispy Chicken Biscuit",
+    "price": "$19",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Smashed Avocado Toast",
+    "price": "$16",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Hot Honey Pepperoni",
+    "price": "$20",
+    "section": "Pizza"
+   },
+   {
+    "name": "Crispy Chicken Salad",
+    "price": "$22",
+    "section": "Greens And Soups"
+   },
+   {
+    "name": "Farm Greens",
+    "price": "$16",
+    "section": "Greens And Soups"
+   },
+   {
+    "name": "Caesar Wedge",
+    "price": "$16",
+    "section": "Greens And Soups"
+   },
+   {
+    "name": "Potato Leek Soup",
+    "price": "$12",
+    "section": "Greens And Soups"
+   },
+   {
+    "name": "French Onion Soup",
+    "price": "$13",
+    "section": "Greens And Soups"
+   },
+   {
+    "name": "Cinnamon Roll",
+    "price": "$7",
+    "section": "Pastries And Sweets"
+   },
+   {
+    "name": "Table 33 Pastry Flight",
+    "price": "$9",
+    "section": "Pastries And Sweets"
+   },
+   {
+    "name": "Banana Biscoff French Toast",
+    "price": "$24",
+    "section": "Weekend Brunch Only"
+   },
+   {
+    "name": "Smoked Turkey Sausage Gravy & Biscuit",
+    "price": "$19",
+    "section": "Weekend Brunch Only"
+   },
+   {
+    "name": "Breakfast Pizza",
+    "price": "$24",
+    "section": "Weekend Brunch Only"
+   },
+   {
+    "name": "Crab Benedict",
+    "price": "$42",
+    "section": "Weekend Brunch Only"
+   },
+   {
+    "name": "Four Cheese",
+    "price": "$18",
+    "section": "Pizza"
+   },
+   {
+    "name": "House Bread",
+    "price": "$12",
+    "section": "Starters"
+   },
+   {
+    "name": "Harvest Burrata",
+    "price": "$18",
+    "section": "Starters"
+   },
+   {
+    "name": "Hummus B’Tahini",
+    "price": "$22",
+    "section": "Starters"
+   },
+   {
+    "name": "Salsiccia Bianca",
+    "price": "$22",
+    "section": "Starters"
+   },
+   {
+    "name": "Steak Tartare",
+    "price": "$28",
+    "section": "Starters"
+   },
+   {
+    "name": "Wild Mushroom Tempura",
+    "price": "$17",
+    "section": "Starters"
+   },
+   {
+    "name": "Thai Crab Salad",
+    "price": "$27",
+    "section": "Starters"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "$16",
+    "section": "Soups And Salads"
+   },
+   {
+    "name": "Farm Greens",
+    "price": "$16",
+    "section": "Soups And Salads"
+   },
+   {
+    "name": "Roasted Root Salad",
+    "price": "$24",
+    "section": "Soups And Salads"
+   },
+   {
+    "name": "Potato Leek Soup",
+    "price": "$16",
+    "section": "Soups And Salads"
+   },
+   {
+    "name": "French Onion Soup",
+    "price": "$16",
+    "section": "Soups And Salads"
+   },
+   {
+    "name": "Autumn Scallops",
+    "price": "$50",
+    "section": "Signatures"
+   },
+   {
+    "name": "Filet Mignon",
+    "price": "$60",
+    "section": "Signatures"
+   },
+   {
+    "name": "Gochujang Chicken",
+    "price": "$38",
+    "section": "Signatures"
+   },
+   {
+    "name": "Slow-Braised Short Rib",
+    "price": "$54",
+    "section": "Signatures"
+   },
+   {
+    "name": "Green Chili Pappardelle",
+    "price": "$37",
+    "section": "Signatures"
+   },
+   {
+    "name": "Crab-Crusted Salmon",
+    "price": "$44",
+    "section": "Signatures"
+   },
+   {
+    "name": "Rotunda Burger",
+    "price": "$28",
+    "section": "Signatures"
+   }
+  ]
+ },
+ "dayton|Sueño": {
+  "source": "https://www.suenodyt.com/menu",
+  "items": [
+   {
+    "name": "Quesadilla De Hongos",
+    "price": "$21",
+    "section": "Con Masa"
+   },
+   {
+    "name": "Tostada De Picadillo",
+    "price": "$16",
+    "section": "Con Masa"
+   },
+   {
+    "name": "Enchilada Verdes",
+    "price": "$22",
+    "section": "Con Masa"
+   },
+   {
+    "name": "Tacos De Cochinita",
+    "price": "$15",
+    "section": "Con Masa"
+   },
+   {
+    "name": "Tacos De Pescado Frito",
+    "price": "$15",
+    "section": "Con Masa"
+   },
+   {
+    "name": "Tacos De Vegetarianos",
+    "price": "$15",
+    "section": "Con Masa"
+   },
+   {
+    "name": "NY strip al norteño",
+    "price": "$49",
+    "section": "Platillos Fuertes // Entrees"
+   },
+   {
+    "name": "Pescado A La Plancha",
+    "price": "$37",
+    "section": "Platillos Fuertes // Entrees"
+   },
+   {
+    "name": "Pollo Al Carbon",
+    "price": "$32",
+    "section": "Platillos Fuertes // Entrees"
+   },
+   {
+    "name": "Tamal",
+    "price": "$22",
+    "section": "Platillos Fuertes // Entrees"
+   },
+   {
+    "name": "Pork Chop",
+    "price": "$36",
+    "section": "Platillos Fuertes // Entrees"
+   },
+   {
+    "name": "Lamb Birria",
+    "price": "$37",
+    "section": "Platillos Fuertes // Entrees"
+   },
+   {
+    "name": "Sikil P'Ak",
+    "price": "$14",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Guacamole",
+    "price": "$13",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Salsa Del Dia",
+    "price": "$9",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Piquillo Peppers",
+    "price": "$10",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Shishito Peppers",
+    "price": "$15",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Ensalada",
+    "price": "$16",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Mussels Enchipoltadas",
+    "price": "$20",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Ceviche Verde",
+    "price": "$22",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Chile Con Queso",
+    "price": "$13",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Esquites",
+    "price": "$13",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Alitas Brutas",
+    "price": "$12",
+    "section": "Antojitos // Appetizers"
+   },
+   {
+    "name": "Remolacha",
+    "price": "$13",
+    "section": "Al Lado // Sides"
+   },
+   {
+    "name": "Col De Bruselas",
+    "price": "$14",
+    "section": "Al Lado // Sides"
+   },
+   {
+    "name": "Papas",
+    "price": "$14",
+    "section": "Al Lado // Sides"
+   },
+   {
+    "name": "Frijoles Charros",
+    "price": "$11",
+    "section": "Al Lado // Sides"
+   },
+   {
+    "name": "Frijoles Negros",
+    "price": "$9",
+    "section": "Al Lado // Sides"
+   },
+   {
+    "name": "Tres Leches",
+    "price": "$13",
+    "section": "Postres // Desserts"
+   },
+   {
+    "name": "Basque Cheesecake",
+    "price": "$12",
+    "section": "Postres // Desserts"
+   },
+   {
+    "name": "Scoop",
+    "price": "$8",
+    "section": "Postres // Desserts"
+   },
+   {
+    "name": "Pastel De Elote",
+    "price": "$13",
+    "section": "Postres // Desserts"
+   }
+  ]
+ },
+ "dayton|Mikey's Late Night Slice": {
+  "source": "https://www.latenightslice.com/",
+  "items": [
+   {
+    "name": "Cheese w/ Fresh Basil",
+    "price": "",
+    "section": "By the Slice"
+   },
+   {
+    "name": "Plain-Ass Pepperoni",
+    "price": "",
+    "section": "By the Slice"
+   },
+   {
+    "name": "Spicy-Ass Pepperoni",
+    "price": "",
+    "section": "By the Slice"
+   },
+   {
+    "name": "Mushroom w/ Roasted Garlic",
+    "price": "",
+    "section": "By the Slice"
+   },
+   {
+    "name": "Vegan Fake-Ass BBQ Chick’n",
+    "price": "",
+    "section": "By the Slice"
+   },
+   {
+    "name": "Vegan Fake-Ass Pepperoni",
+    "price": "",
+    "section": "By the Slice"
+   },
+   {
+    "name": "Mikey’s Favorite",
+    "price": "",
+    "section": "Popular AF Pies"
+   },
+   {
+    "name": "P.M.S.",
+    "price": "",
+    "section": "Popular AF Pies"
+   },
+   {
+    "name": "The Kowalski",
+    "price": "",
+    "section": "Popular AF Pies"
+   },
+   {
+    "name": "Thicc-Ass Pepperoni",
+    "price": "",
+    "section": "Popular AF Pies"
+   },
+   {
+    "name": "The Garbàge",
+    "price": "",
+    "section": "Popular AF Pies"
+   },
+   {
+    "name": "The Weggie",
+    "price": "",
+    "section": "Popular AF Pies"
+   },
+   {
+    "name": "The Gobbler",
+    "price": "",
+    "section": "Pizza of the Week"
+   },
+   {
+    "name": "Garlicky-Stix",
+    "price": "",
+    "section": "Stix & Sweets"
+   },
+   {
+    "name": "Cheezy-Stix",
+    "price": "",
+    "section": "Stix & Sweets"
+   },
+   {
+    "name": "Cinna-Stix",
+    "price": "",
+    "section": "Stix & Sweets"
+   },
+   {
+    "name": "Unicorn Bars",
+    "price": "",
+    "section": "Stix & Sweets"
+   },
+   {
+    "name": "Uni-Cookie",
+    "price": "",
+    "section": "Stix & Sweets"
+   }
+  ]
  }
 }

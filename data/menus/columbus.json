@@ -1253,11 +1253,6 @@
     "section": "Zonis"
    },
    {
-    "name": "All pasta dinners include a side salad and garlic bread",
-    "price": "$13.00",
-    "section": "Pasta Dinners"
-   },
-   {
     "name": "Jumbo Cheese Ravioli",
     "price": "$13.00",
     "section": "Pasta Dinners"
@@ -1543,7 +1538,7 @@
     "section": "SANDWICHES & BURGERS"
    },
    {
-    "name": "Choice of Regular BBQ or Buffalo",
+    "name": "Wings 6 Pcs",
     "price": "$9.99",
     "section": "WINGS & TENDERS"
    },
@@ -1558,7 +1553,7 @@
     "section": "WINGS & TENDERS"
    },
    {
-    "name": "Tenders Choice of Mild or Spice",
+    "name": "Tenders 3 Pcs",
     "price": "$6.99",
     "section": "WINGS & TENDERS"
    },
@@ -1573,7 +1568,7 @@
     "section": "WINGS & TENDERS"
    },
    {
-    "name": "Build your own",
+    "name": "Build Your Own Salad",
     "price": "$8.99",
     "section": "SALAD"
    },
@@ -6573,7 +6568,7 @@
     "section": "Specialty White Pizzas"
    },
    {
-    "name": "Co2",
+    "name": "CO2",
     "price": "$13.00",
     "section": "Specialty White Pizzas"
    },
@@ -6724,7 +6719,7 @@
    },
    {
     "name": "8” 1-Item Pizza & Pepsi",
-    "price": "$1.10",
+    "price": "$9.65",
     "section": "Lunch Specials"
    }
   ]
@@ -8721,6 +8716,661 @@
     "name": "Double Mocha",
     "price": "",
     "section": "Hot Drinks"
+   }
+  ]
+ },
+ "columbus|HangOverEasy": {
+  "source": "https://hangovereasy.com/menu/university-district/",
+  "items": [
+   {
+    "name": "The Morning After",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Toaster Strudel",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Avocado Toast",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Frog Eyes",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Chicken Fried Steak",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Chicken & Waffles",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Pollo Party",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Sausage Party",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "CBH",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "The Dirty",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Angry Egg",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Classic Bodega",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Trillionaire’s Bacon",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Add-Ons",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Verde Mile",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Garden Party",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Philly Cheese Steak",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Hamageddon",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Struggling To Get Up",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Menage A Trois For The Purist!",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Cinnamon Roll French Toast",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Boston Creme Pie Pancakes",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Creme Brulee Waffle",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Elvis",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Smore",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Derby",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Double Stuffed & Ready",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Buffalo Chicken Sandwich",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Reuben",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Og Burger",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Fried Green Tomato BELT",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "HOE Burger",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Walk Of Shame",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Chorizo Burger",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Cluckin’ Club",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "House Salad",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "HOE House",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Zaatar Salad",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Smoked Chicken Salad Club",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Buffalo Waldorf Salad",
+    "price": "",
+    "section": "Food"
+   },
+   {
+    "name": "Blue Cheese Wedge",
+    "price": "",
+    "section": "Food"
+   }
+  ]
+ },
+ "columbus|Brassica (Short North)": {
+  "source": "https://brassicas.com/menu/",
+  "items": [
+   {
+    "name": "Sandwich",
+    "price": "",
+    "section": "Choose"
+   },
+   {
+    "name": "Salad",
+    "price": "",
+    "section": "Choose"
+   },
+   {
+    "name": "Hummus",
+    "price": "",
+    "section": "Choose"
+   },
+   {
+    "name": "Falafel",
+    "price": "",
+    "section": "Enjoy One"
+   },
+   {
+    "name": "Chicken",
+    "price": "",
+    "section": "Enjoy One"
+   },
+   {
+    "name": "Vegetables",
+    "price": "",
+    "section": "Enjoy One"
+   },
+   {
+    "name": "Brisket",
+    "price": "",
+    "section": "Enjoy One"
+   },
+   {
+    "name": "Brassica Fries",
+    "price": "",
+    "section": "Don't Forget"
+   },
+   {
+    "name": "Tahini Chocolate Chip Cookie",
+    "price": "",
+    "section": "Don't Forget"
+   },
+   {
+    "name": "Minty Pink Lemonade",
+    "price": "",
+    "section": "Don't Forget"
+   }
+  ]
+ },
+ "columbus|Northstar Cafe (Short North)": {
+  "source": "https://www.thenorthstarcafe.com/location/northstar-cafe-short-north",
+  "items": [
+   {
+    "name": "Simple Salad",
+    "price": "$8",
+    "section": "Salads + Bowls"
+   },
+   {
+    "name": "Black Bean & Chicken Chili",
+    "price": "$11",
+    "section": "Salads + Bowls"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "$13",
+    "section": "Salads + Bowls"
+   },
+   {
+    "name": "Smoothie Bowl",
+    "price": "$14",
+    "section": "Salads + Bowls"
+   },
+   {
+    "name": "Village Salad",
+    "price": "$19",
+    "section": "Salads + Bowls"
+   },
+   {
+    "name": "Greenville Salad",
+    "price": "$16",
+    "section": "Salads + Bowls"
+   },
+   {
+    "name": "Chopped Salad",
+    "price": "$19",
+    "section": "Salads + Bowls"
+   },
+   {
+    "name": "Buddha Bowl",
+    "price": "$19",
+    "section": "Salads + Bowls"
+   },
+   {
+    "name": "Fiore",
+    "price": "$18",
+    "section": "Brick Oven Pizza"
+   },
+   {
+    "name": "Sausage & Pepper",
+    "price": "$19",
+    "section": "Brick Oven Pizza"
+   },
+   {
+    "name": "Margherita",
+    "price": "$17",
+    "section": "Brick Oven Pizza"
+   },
+   {
+    "name": "Deluxe Egg Sandwich",
+    "price": "$13",
+    "section": "Sandwiches + Burritos"
+   },
+   {
+    "name": "Northstar Burger",
+    "price": "$19",
+    "section": "Sandwiches + Burritos"
+   },
+   {
+    "name": "Classic Cheeseburger",
+    "price": "$22",
+    "section": "Sandwiches + Burritos"
+   },
+   {
+    "name": "Chicken & Avocado Sandwich",
+    "price": "$20",
+    "section": "Sandwiches + Burritos"
+   },
+   {
+    "name": "Fish Sandwich",
+    "price": "$23",
+    "section": "Sandwiches + Burritos"
+   },
+   {
+    "name": "Thai Burrito",
+    "price": "$17",
+    "section": "Sandwiches + Burritos"
+   },
+   {
+    "name": "Sides",
+    "price": "$8",
+    "section": "Sandwiches + Burritos"
+   },
+   {
+    "name": "Shooting Star",
+    "price": "$8",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Cara Cara Orange Juice",
+    "price": "$7",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Organic Carrot Juice",
+    "price": "$7",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Draft Kombucha",
+    "price": "$6",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Northstar Hot Chocolate",
+    "price": "$7",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Hot Apple Cider",
+    "price": "$7",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Green Smoothie",
+    "price": "$9",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Strawberry Smoothie",
+    "price": "$9",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Iced Strawberry Matcha Latte",
+    "price": "$7",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Housemade Ginger Ale",
+    "price": "$6",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Nitro Cold Brew",
+    "price": "$6",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Mint Iced Coffee",
+    "price": "$7",
+    "section": "Drink Specialties"
+   },
+   {
+    "name": "Single Origin Coffee",
+    "price": "$4",
+    "section": "Drink Specialties"
+   }
+  ]
+ },
+ "columbus|Bernard's Tavern": {
+  "source": "https://bernardscolumbus.com/menu/",
+  "items": [
+   {
+    "name": "Steak Rolls",
+    "price": "$13",
+    "section": "Starters"
+   },
+   {
+    "name": "Southwest Rolls",
+    "price": "$12",
+    "section": "Starters"
+   },
+   {
+    "name": "Reuben Rolls",
+    "price": "$13",
+    "section": "Starters"
+   },
+   {
+    "name": "Taquitos",
+    "price": "$10",
+    "section": "Starters"
+   },
+   {
+    "name": "Cheese Curds",
+    "price": "$8",
+    "section": "Starters"
+   },
+   {
+    "name": "Buffalo Chicken Dip",
+    "price": "$11",
+    "section": "Starters"
+   },
+   {
+    "name": "Buffalo Cauliflower",
+    "price": "$8",
+    "section": "Starters"
+   },
+   {
+    "name": "Grande Nachos",
+    "price": "$14",
+    "section": "Starters"
+   },
+   {
+    "name": "Chicken Bites",
+    "price": "$12",
+    "section": "Starters"
+   },
+   {
+    "name": "Classic Wings",
+    "price": "$14",
+    "section": "Starters"
+   },
+   {
+    "name": "Starters Plate",
+    "price": "$29",
+    "section": "Starters"
+   },
+   {
+    "name": "Chicken Tenders",
+    "price": "$10",
+    "section": "All Stars"
+   },
+   {
+    "name": "Smash Burger",
+    "price": "$12",
+    "section": "All Stars"
+   },
+   {
+    "name": "Tavern Burger",
+    "price": "$14",
+    "section": "All Stars"
+   },
+   {
+    "name": "BBQ Bacon Cheeseburger",
+    "price": "$16",
+    "section": "All Stars"
+   },
+   {
+    "name": "BBQ Bacon Chicken Sandwich",
+    "price": "$16",
+    "section": "All Stars"
+   },
+   {
+    "name": "Chicken Sandwich",
+    "price": "$14",
+    "section": "All Stars"
+   },
+   {
+    "name": "Santa Fe Wrap",
+    "price": "$12",
+    "section": "All Stars"
+   },
+   {
+    "name": "Caesar Chicken Wrap",
+    "price": "$12",
+    "section": "All Stars"
+   },
+   {
+    "name": "Grilled Cheese",
+    "price": "$10",
+    "section": "All Stars"
+   },
+   {
+    "name": "Famous Cajun Pasta",
+    "price": "$14",
+    "section": "All Stars"
+   },
+   {
+    "name": "Quesadilla",
+    "price": "$11",
+    "section": "All Stars"
+   },
+   {
+    "name": "Tavern Tacos",
+    "price": "$12",
+    "section": "All Stars"
+   },
+   {
+    "name": "House Salad",
+    "price": "$9",
+    "section": "Salads & Soup"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "$10",
+    "section": "Salads & Soup"
+   },
+   {
+    "name": "Southwest Salad",
+    "price": "$12",
+    "section": "Salads & Soup"
+   },
+   {
+    "name": "French Onion Soup",
+    "price": "$7",
+    "section": "Salads & Soup"
+   },
+   {
+    "name": "Cookie Sundae",
+    "price": "$7",
+    "section": "Sweet Spot"
+   }
+  ]
+ },
+ "columbus|Jack & Benny's": {
+  "source": "https://www.jackandbennys.com/order-online",
+  "items": [
+   {
+    "name": "1 Egg & Toast",
+    "price": "$3.99",
+    "section": "Eggs & Toast"
+   },
+   {
+    "name": "2 Eggs & Toast",
+    "price": "$4.49",
+    "section": "Eggs & Toast"
+   },
+   {
+    "name": "3 Eggs & Toast",
+    "price": "$4.99",
+    "section": "Eggs & Toast"
+   },
+   {
+    "name": "4 Eggs & Toast",
+    "price": "$5.49",
+    "section": "Eggs & Toast"
+   },
+   {
+    "name": "5 Eggs & Toast",
+    "price": "$5.99",
+    "section": "Eggs & Toast"
+   },
+   {
+    "name": "Egg",
+    "price": "$4.49",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Egg & Cheese",
+    "price": "$4.99",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Egg, Bacon & Cheese",
+    "price": "$6.50",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Egg, Chorizo & Cheese",
+    "price": "$6.50",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Egg, Ham & Cheese",
+    "price": "$6.50",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Egg, Sausage & Cheese",
+    "price": "$6.50",
+    "section": "Breakfast Sandwiches"
+   }
+  ]
+ },
+ "columbus|The Fruit Stand": {
+  "source": "https://thefruitstandohio.com/our-menu",
+  "items": [
+   {
+    "name": "Caramel Apple in a Cup",
+    "price": "",
+    "section": "This Week's Flavors"
+   },
+   {
+    "name": "Bonfire Bowl",
+    "price": "",
+    "section": "This Week's Flavors"
+   },
+   {
+    "name": "Caramel Apple Smoothie",
+    "price": "",
+    "section": "This Week's Flavors"
+   },
+   {
+    "name": "Maple Cinnamon Crunch",
+    "price": "",
+    "section": "This Week's Flavors"
    }
   ]
  }

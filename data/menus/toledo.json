@@ -4239,6 +4239,706 @@
    }
   ]
  },
+ "toledo|Grumpy's": {
+  "source": "https://www.grumpys.net/s/51623_Toldeo_-Menu-1.pdf",
+  "items": [
+   {
+    "name": "Grilled Chicken Deluxe (Mikey’s)",
+    "price": "$15.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Angus Burger",
+    "price": "$13.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Turkey Burger",
+    "price": "$13.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Impossible Burger",
+    "price": "$15.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Triple Grilled Cheese",
+    "price": "$12.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "BLT (Bacon) or ELT (Eggplant)",
+    "price": "$14.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Grilled Tuna Steak Sandwich",
+    "price": "$18.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Reuben",
+    "price": "$14.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Turkey Reuben",
+    "price": "$14.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Mushroom Reuben",
+    "price": "$14.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Grilled Bologna",
+    "price": "$13.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Grilled Veggie",
+    "price": "$12.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Garbage Salad",
+    "price": "$17.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Vegan Garbage Salad",
+    "price": "$17.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Southwest Garbage Salad",
+    "price": "$17.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Deep South Garbage Salad (Sally’s)",
+    "price": "$17.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Greek Garbage Salad",
+    "price": "$17.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Nantucket Summer Garbage Salad",
+    "price": "$17.50",
+    "section": "Salads"
+   }
+  ]
+ },
+ "toledo|House of Coffee": {
+  "source": "https://www.hoctoledo.com/store/21591?service_type=pickup",
+  "items": [
+   {
+    "name": "Madeleine Warm Spice Chai",
+    "price": "$8.00",
+    "section": "Fall Menu"
+   },
+   {
+    "name": "Pumpkin Creme Brulee Latte",
+    "price": "$8.00",
+    "section": "Fall Menu"
+   },
+   {
+    "name": "Roasted Butter Pecan Latte",
+    "price": "$8.00",
+    "section": "Fall Menu"
+   },
+   {
+    "name": "Salted Sesame Maple Cold Brew",
+    "price": "$8.00",
+    "section": "Fall Menu"
+   },
+   {
+    "name": "Spiced Apple Latte",
+    "price": "$8.00",
+    "section": "Fall Menu"
+   },
+   {
+    "name": "Spiced Biscoff Hot Chocolate",
+    "price": "$7.00",
+    "section": "Fall Menu"
+   },
+   {
+    "name": "Zaatar Honey Matcha",
+    "price": "$8.00",
+    "section": "Fall Menu"
+   },
+   {
+    "name": "Baklava Latte",
+    "price": "$7.00",
+    "section": "Signatures"
+   },
+   {
+    "name": "Creme Brulee Latte",
+    "price": "$7.00",
+    "section": "Signatures"
+   },
+   {
+    "name": "Date Caramel",
+    "price": "$7.00",
+    "section": "Signatures"
+   },
+   {
+    "name": "Hot Honey Hot Chocolate",
+    "price": "$5.00",
+    "section": "Signatures"
+   },
+   {
+    "name": "Loveberry Latte",
+    "price": "$7.00",
+    "section": "Signatures"
+   },
+   {
+    "name": "Maple Tahini Latte",
+    "price": "$8.00",
+    "section": "Signatures"
+   },
+   {
+    "name": "Orange Mocha Latte",
+    "price": "$7.00",
+    "section": "Signatures"
+   },
+   {
+    "name": "Pistachio Latte",
+    "price": "$7.00",
+    "section": "Signatures"
+   },
+   {
+    "name": "Turkish Delight",
+    "price": "$7.00",
+    "section": "Signatures"
+   },
+   {
+    "name": "Americano",
+    "price": "$4.50",
+    "section": "Classics"
+   },
+   {
+    "name": "Cafe Au Lait",
+    "price": "$5.50",
+    "section": "Classics"
+   },
+   {
+    "name": "Cappuccino",
+    "price": "$5.50",
+    "section": "Classics"
+   },
+   {
+    "name": "Chai Latte",
+    "price": "$6.00",
+    "section": "Classics"
+   },
+   {
+    "name": "Cold Brew",
+    "price": "$5.00",
+    "section": "Classics"
+   },
+   {
+    "name": "Double Espresso",
+    "price": "$4.00",
+    "section": "Classics"
+   },
+   {
+    "name": "Drip Coffee",
+    "price": "$5.00",
+    "section": "Classics"
+   },
+   {
+    "name": "Hot Chocolate",
+    "price": "$4.00",
+    "section": "Classics"
+   },
+   {
+    "name": "Hot Latte",
+    "price": "$5.00",
+    "section": "Classics"
+   },
+   {
+    "name": "Iced Latte",
+    "price": "$4.50",
+    "section": "Classics"
+   },
+   {
+    "name": "Nitro Cold Brew (16oz)",
+    "price": "$6.00",
+    "section": "Classics"
+   },
+   {
+    "name": "Steamer",
+    "price": "$3.50",
+    "section": "Classics"
+   },
+   {
+    "name": "Matcha and milk",
+    "price": "$6.00",
+    "section": "Matcha"
+   },
+   {
+    "name": "Lavender Honey Matcha",
+    "price": "$7.00",
+    "section": "Matcha"
+   },
+   {
+    "name": "Rose Matcha",
+    "price": "$7.00",
+    "section": "Matcha"
+   },
+   {
+    "name": "Tiramisu Matcha",
+    "price": "$7.00",
+    "section": "Matcha"
+   },
+   {
+    "name": "Golden Rush Refresher",
+    "price": "$8.00",
+    "section": "Refreshers - Signatures"
+   },
+   {
+    "name": "Ocean Breeze Refresher",
+    "price": "$8.00",
+    "section": "Refreshers - Signatures"
+   },
+   {
+    "name": "Pomegranate Breeze Refresher",
+    "price": "$8.50",
+    "section": "Refreshers - Signatures"
+   },
+   {
+    "name": "Sunset Hibiscus Refresher",
+    "price": "$8.50",
+    "section": "Refreshers - Signatures"
+   },
+   {
+    "name": "Alaskan Bagel",
+    "price": "$9.00",
+    "section": "Morning Classics"
+   },
+   {
+    "name": "Avocado Sumac Toast",
+    "price": "$7.00",
+    "section": "Morning Classics"
+   },
+   {
+    "name": "Breakfast Burrito",
+    "price": "$8.00",
+    "section": "Morning Classics"
+   },
+   {
+    "name": "Cream Cheese Bagel",
+    "price": "$4.50",
+    "section": "Morning Classics"
+   },
+   {
+    "name": "Croissant Sandwich",
+    "price": "$8.00",
+    "section": "Morning Classics"
+   },
+   {
+    "name": "French Toast",
+    "price": "$8.00",
+    "section": "Morning Classics"
+   },
+   {
+    "name": "Nutella Bliss",
+    "price": "$8.50",
+    "section": "Morning Classics"
+   },
+   {
+    "name": "Zaatar Labneh Toast",
+    "price": "$8.50",
+    "section": "Morning Classics"
+   },
+   {
+    "name": "Beirut Pastrami",
+    "price": "$13.00",
+    "section": "Handhelds"
+   },
+   {
+    "name": "Chicken Caesar Wrap",
+    "price": "$11.50",
+    "section": "Handhelds"
+   },
+   {
+    "name": "Chicken Shawarma Club",
+    "price": "$12.00",
+    "section": "Handhelds"
+   },
+   {
+    "name": "Four Cheese Grill",
+    "price": "$9.00",
+    "section": "Handhelds"
+   },
+   {
+    "name": "Halloumi Bliss",
+    "price": "$12.00",
+    "section": "Handhelds"
+   },
+   {
+    "name": "Hummus Avocado Press",
+    "price": "$11.00",
+    "section": "Handhelds"
+   },
+   {
+    "name": "Mozzarella Caprese Press",
+    "price": "$11.50",
+    "section": "Handhelds"
+   },
+   {
+    "name": "Turkey Club",
+    "price": "$12.00",
+    "section": "Handhelds"
+   },
+   {
+    "name": "Chicken Caesar Salad",
+    "price": "$10.00",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Chicken Greek Salad",
+    "price": "$11.50",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Fattoush",
+    "price": "$9.50",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Greek Salad",
+    "price": "$7.50",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Harissa Chicken Salad",
+    "price": "$12.00",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Side Salad",
+    "price": "$5.50",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Soup & Side Salad",
+    "price": "$11.50",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Soup of the Day",
+    "price": "$4.50",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Soup & Four Cheese Grill",
+    "price": "$12.00",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Almond Croissant",
+    "price": "$8.99",
+    "section": "Pastries"
+   },
+   {
+    "name": "Biscoff Roll",
+    "price": "$9.50",
+    "section": "Pastries"
+   },
+   {
+    "name": "Brown Butter Cinnamon Roll",
+    "price": "$8.50",
+    "section": "Pastries"
+   },
+   {
+    "name": "Cardamom Bun",
+    "price": "$8.75",
+    "section": "Pastries"
+   },
+   {
+    "name": "Chocolate Cream Croissant",
+    "price": "$8.75",
+    "section": "Pastries"
+   },
+   {
+    "name": "Cookies",
+    "price": "$8.00",
+    "section": "Pastries"
+   },
+   {
+    "name": "Plain Croissant",
+    "price": "$3.75",
+    "section": "Pastries"
+   },
+   {
+    "name": "Raspberry Pistachio Croissant",
+    "price": "$9.00",
+    "section": "Pastries"
+   },
+   {
+    "name": "Beignets (2)",
+    "price": "$5.75",
+    "section": "Desserts"
+   },
+   {
+    "name": "Cheesecakes",
+    "price": "$8.50",
+    "section": "Desserts"
+   },
+   {
+    "name": "Tiramisu Flavored Cakes",
+    "price": "$11.50",
+    "section": "Desserts"
+   },
+   {
+    "name": "Viral Fruit Cake",
+    "price": "$15.00",
+    "section": "Viral Cakes"
+   },
+   {
+    "name": "Bear Cake",
+    "price": "$12.00",
+    "section": "Viral Cakes"
+   }
+  ]
+ },
+ "toledo|Home Slice Pizza": {
+  "source": "https://homeslice419.com/store/23259?service_type=pickup",
+  "items": [
+   {
+    "name": "Home Slice's Cheese Bread",
+    "price": "$6.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Spinach and Artichoke Bread",
+    "price": "$9.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Chunks",
+    "price": "$10.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Wings",
+    "price": "$10.49",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Basket of Balls",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mozzarella Sticks",
+    "price": "$7.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "French Bread \"ZA\"",
+    "price": "$4.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Spinach Dip and Chips",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Buffalo Chicken Dip",
+    "price": "$10.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Homey's Italian House Salad",
+    "price": "$11.99",
+    "section": "Fresh From the Garden"
+   },
+   {
+    "name": "El Greco",
+    "price": "$11.99",
+    "section": "Fresh From the Garden"
+   },
+   {
+    "name": "The Chef Salad",
+    "price": "$11.99",
+    "section": "Fresh From the Garden"
+   },
+   {
+    "name": "Side Salad",
+    "price": "$5.49",
+    "section": "Fresh From the Garden"
+   },
+   {
+    "name": "Potato Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Simon's White Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "The Soprano (Deluxe) Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Margherita Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Spinach & Artichoke Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "The Carnivore Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Chicken Parm Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "BBQ Chicken Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Steak \"ZA\"",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Buffalo Chicken Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Veggie Delight Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "DeCarlo Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Hawaiian Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Honey Sriracha Chicken Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Chicken Bacon Ranch Pizza",
+    "price": "$12.99",
+    "section": "Our Special \"ZA\""
+   },
+   {
+    "name": "Cheese & 1 Topping Pizza",
+    "price": "$9.99",
+    "section": "Our Made to Order Pizza"
+   },
+   {
+    "name": "Italian Stallion Sandwich",
+    "price": "$15.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Toledo Turkey Sandwich",
+    "price": "$15.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Mud Club Sandwich",
+    "price": "$15.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "BBQ Chicken Sandwich",
+    "price": "$15.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Bacon Jalapeno Popper Sandwich",
+    "price": "$16.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Glass City Cheese Steak Sandwich",
+    "price": "$15.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Meatball Sub Sandwich",
+    "price": "$15.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Parmesan Sandwich",
+    "price": "$15.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pizza Sub Sandwich",
+    "price": "$15.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Veggie Sub Sandwich",
+    "price": "$15.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Cheese Calzone",
+    "price": "$8.99",
+    "section": "Holy Calzone"
+   },
+   {
+    "name": "Home Slice Cinnabread",
+    "price": "$5.49",
+    "section": "Desserts"
+   },
+   {
+    "name": "Vanilla Ice Cream",
+    "price": "$3.00",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Chocolate Ice Cream",
+    "price": "$3.00",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Chocolate/Vanilla Twist",
+    "price": "$3.00",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Root Beer Float Ice Cream",
+    "price": "$4.00",
+    "section": "Ice Cream"
+   }
+  ]
+ },
  "toledo|JoJo's Pizza On Campus": {
   "source": "https://www.jojospizzaoncampus.com/",
   "items": [
