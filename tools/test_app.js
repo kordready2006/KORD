@@ -54,6 +54,11 @@ async function openFirstDeal(p) {
   await p.screenshot({ path: `${out}/a-best.png` });
   const ids = await p.evaluate(async () => (await (await fetch('data/kord.json')).json()).towns.map((t) => t.id));
   for (const id of ids) {
+    const pk = await p.evaluate((i) => window.KORD_PICKS(i), id), c = {};
+    Object.values(pk).forEach((v) => { const n = v.split('|')[0]; c[n] = (c[n] || 0) + 1; });
+    check(Math.max(0, ...Object.values(c)) <= 2, 'one restaurant is the top pick more than twice a week in ' + id);
+  }
+  for (const id of ids) {
     await p.click('#swapBtn');
     await p.click(`[data-town="${id}"]`);
     check(!(await p.$('.dcard.hero .tag:has-text("Chain")')), 'chain is the top card in ' + id);
