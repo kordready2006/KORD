@@ -1,3 +1,4 @@
+window.KORD_BUILD = '20261125-220522';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -111,7 +112,7 @@
     DAYS.forEach(function (d) { byDay[d] = dealsFor(t, d).filter(function (x) { return x.sp.local; }); });
     function rank(x) {
       var p = priceNum(x.d.price || x.d.title), everyday = x.d.days.length >= 6, discountOnly = p == null || /reward|points/i.test(x.d.title);
-      return [(used[x.sp.id] || 0) >= 2 ? 1 : 0, (discountOnly && everyday) || /reward|points/i.test(x.d.title) ? 1 : 0, used[x.sp.id] || 0, everyday ? 1 : 0, x.d.days.length, discountOnly ? 1 : 0, p == null ? 99 : p];
+      return [(used[x.sp.id] || 0) >= 2 ? 1 : 0, (discountOnly && everyday) || /reward|points/i.test(x.d.title) ? 1 : 0, p != null && p > 10 ? 1 : 0, used[x.sp.id] || 0, everyday ? 1 : 0, x.d.days.length, discountOnly ? 1 : 0, p == null ? 99 : p];
     }
     DAYS.slice().sort(function (a, b) { return byDay[a].length - byDay[b].length; }).forEach(function (d) {
       var best = null, br = null;
@@ -141,6 +142,7 @@
   function tagsHtml(sp, d) {
     var h = '';
     if (sp.signature) h += '<span class="tag sig">Student favorite</span>';
+    if (d && (sp.category === 'Healthy & Bowls' || /salad|\bbowl|veggie|wrap\b/i.test(d.title))) h += '<span class="tag light">Lighter pick</span>';
     if (d && d.studentOnly) h += '<span class="tag stu">Show student ID</span>';
     if (!sp.local) h += '<span class="tag">Chain</span>';
     return h ? '<span class="tags">' + h + '</span>' : '';
@@ -172,13 +174,13 @@
     var pick = weekPicks(t)[S.day], pi = -1;
     local.forEach(function (x, i) { if (x.sp.id + '|' + x.d.title === pick) pi = i; });
     if (pi > 0) local.unshift(local.splice(pi, 1)[0]);
-    var h = '<div><h2>Local deals ' + when + '</h2><p class="sub">The day\'s standout deal in ' + esc(t.name) + ' first, then the rest by lowest price. Tap one to order or rate it.</p></div>';
+    var h = '<div><h2>Eat cheap ' + when + '</h2><p class="sub">Good local food near campus, all $12 or less. ' + (S.day === TODAY ? 'Today\'s' : DAYNAME[S.day] + '\'s') + ' pick is up top.</p></div>';
     if (local.length) {
       h += ticket(local[0], true);
       if (local.length > 1) h += '<div class="sechead"><h2>More local deals</h2><span>' + (local.length - 1) + '</span></div><div class="list">' + local.slice(1).map(function (x) { return ticket(x); }).join('') + '</div>';
     } else {
       var other = DAYS.filter(function (d) { return dealsFor(t, d).some(function (x) { return x.sp.local; }); });
-      h += '<div class="empty"><b>No local deals found for ' + DAYNAME[S.day] + '</b>' + (other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Check Places for where to eat.') + '</div>';
+      h += '<div class="empty"><b>No cheap local deals found for ' + DAYNAME[S.day] + '</b>' + (other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Check Places for where to eat.') + '</div>';
     }
     if (chain.length) h += '<div class="sechead"><h2>Chain deals nearby</h2><span>' + chain.length + '</span></div><p class="sub" style="margin-top:-8px">Fast food and national chains.</p><div class="list">' + chain.map(function (x) { return ticket(x); }).join('') + '</div>';
     return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos come from each restaurant\'s own website.</p>';
@@ -225,6 +227,7 @@
     h += mine.length ? '<div class="list">' + mine.map(function (m) {
       return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + '★'.repeat(m.r) + '</span></span></button>';
     }).join('') + '</div>' : '<div class="empty"><b>Nothing rated yet</b>Open any place and tap the stars on what you ordered.</div>';
+    h += '<p class="note">KORD version ' + esc(window.KORD_BUILD || 'preview') + '</p>';
     return h + '<p class="note">' + (SERVER ? 'Your ratings and comments are shared with other students at your school. Your photo stays on this phone.' : 'Your profile and ratings are saved on this phone.') + '</p>';
   }
 
@@ -389,7 +392,7 @@
     if (deal) { var mb = document.querySelector('#menuBox .dish.open'); if (mb) mb.scrollIntoView({ block: 'start' }); }
     clearInterval(POLL);
     if (SERVER) { loadComments(id); loadScores(function () { softFill(id); }); POLL = setInterval(function () { if (S.open === id && !document.hidden) loadComments(id); }, 12000); }
-    if (!MENUS) fetch('data/menus.json').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (m) { MENUS = m || {}; if (S.open === id) fillMenu(id); });
+    if (!MENUS) fetch('data/menus.json?v=' + (window.KORD_BUILD || '')).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (m) { MENUS = m || {}; if (S.open === id) fillMenu(id); });
   }
 
   document.addEventListener('click', function (e) {
@@ -463,7 +466,15 @@
   });
   document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeSheet(); if (DATA) render(); } });
 
-  fetch('data/kord.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+  /* Self-update: if a newer build is live than the one running, drop saved copies and reload once. */
+  if (window.KORD_BUILD) fetch('version.json?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (v) {
+    var tried = ''; try { tried = sessionStorage.getItem('kord.reloaded') || ''; } catch (e) {}
+    if (!v || !v.build || v.build === window.KORD_BUILD || tried === v.build) return;
+    try { sessionStorage.setItem('kord.reloaded', v.build); } catch (e) {}
+    var go = function () { location.replace(location.pathname + '?v=' + v.build + location.hash); };
+    if (window.caches && caches.keys) caches.keys().then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); }).then(go, go); else go();
+  }).catch(function () {});
+  fetch('data/kord.json?v=' + (window.KORD_BUILD || '')).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
     DATA = d;
     if (d.server && /^https:\/\//.test(d.server.url || '') && d.server.key) SERVER = { url: d.server.url.replace(/\/+$/, ''), key: d.server.key };
     var dev = /[?&]server=(http[^&]+)/.exec(location.search); if (dev && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) SERVER = { url: decodeURIComponent(dev[1]), key: 'dev' };

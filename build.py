@@ -5,6 +5,7 @@ Usage: python3 build.py
 """
 import glob
 import json
+import time
 import math
 import os
 import re
@@ -88,7 +89,17 @@ def find_chain(chains, name):
     return chains[max(hits, key=len)] if hits else None
 
 
+BUDGET = 12.0  # KORD is for students eating cheap: a deal priced above this per order is left out
+
+
+def deal_price(d):
+    m = re.search(r"\$\s?(\d+(?:\.\d+)?)", (d.get("price") or "").strip() or d.get("title", ""))
+    return float(m.group(1)) if m else None
+
+
 def clean_deal(d, national=False):
+    if (deal_price(d) or 0) > BUDGET:
+        return None
     days = [x for x in DAYS if x in (d.get("days") or [])]
     if not days or not d.get("title") or not str(d.get("sourceUrl", "")).startswith("http"):
         return None  # a deal without days, a title or a source is not shown
@@ -237,10 +248,14 @@ def main():
 
     # The hosted page loads the app script from its own file; the Claude preview keeps it inline in app/kord.html.
     m = re.search(r"<script>\n(.*)</script>\s*$", frag, re.S)
+    # Build stamp: the app compares its own stamp with version.json on every open and reloads itself when a newer build is live.
+    stamp = time.strftime("%Y%m%d-%H%M%S", time.gmtime())
+    with open(os.path.join(ROOT, "version.json"), "w") as f:
+        json.dump({"build": stamp}, f)
     with open(os.path.join(ROOT, "app.js"), "w") as f:
-        f.write(m.group(1) + "\nif ('serviceWorker' in navigator && /^https:/.test(location.href) && !/htmlpreview/.test(location.host)) navigator.serviceWorker.register('sw.js').catch(function () {});\n")
+        f.write("window.KORD_BUILD = '" + stamp + "';\n" + m.group(1) + "\nif ('serviceWorker' in navigator && /^https:/.test(location.href) && !/htmlpreview/.test(location.host)) navigator.serviceWorker.register('sw.js').catch(function () {});\n")
     with open(os.path.join(ROOT, "index.html"), "w") as f:
-        f.write(head + frag[:m.start()] + '<script src="app.js"></script>\n</body>\n</html>\n')
+        f.write(head + frag[:m.start()] + '<script src="app.js?v=' + stamp + '"></script>\n</body>\n</html>\n')
 
     print(far, "places dropped as more than", RADIUS_MILES, "miles from campus;", unknown, "kept with no mappable address")
     for t in live:
