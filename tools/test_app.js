@@ -105,7 +105,7 @@ async function openFirstDeal(p) {
     const a = await phone(browser, url), b = await phone(browser, url);
     await openFirstDeal(a);
     await a.click('#menuBox .dishhead >> nth=0');
-    const dish = await a.locator('#menuBox .dish.open .mname').innerText();
+    const dish = await a.locator('#menuBox .dish.open .dishhead').getAttribute('data-dish');
     await a.click('.dishbody [data-rate="5"]');
     await a.fill('#cmtIn', 'Phone A says go on Wednesday');
     await a.click('#cmtBtn');
@@ -127,8 +127,8 @@ async function openFirstDeal(p) {
     await b.screenshot({ path: `${out}/b-shared.png` });
     await b.click('.x');
     await b.click('[data-tab="best"]');
-    await b.waitForTimeout(600);
-    check(await b.locator('.row', { hasText: dish.split('\n')[0].slice(0, 12) }).count() >= 1, 'Best tab on phone B misses the shared dish');
+    await b.waitForTimeout(1500);
+    check(await b.locator('.row', { hasText: dish }).count() >= 1, 'Best tab on phone B misses the shared dish');
     await b.screenshot({ path: `${out}/b-best.png` });
     await a.close(); await b.close();
   }

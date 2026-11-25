@@ -391,7 +391,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     DAYS.forEach(function (d) { byDay[d] = dealsFor(t, d).filter(function (x) { return x.sp.local; }); });
     function rank(x) {
       var p = priceNum(x.d.price || x.d.title), everyday = x.d.days.length >= 6, discountOnly = p == null || /reward|points/i.test(x.d.title);
-      return [(used[x.sp.id] || 0) >= 2 ? 1 : 0, discountOnly && everyday ? 1 : 0, used[x.sp.id] || 0, everyday ? 1 : 0, x.d.days.length, discountOnly ? 1 : 0, p == null ? 99 : p];
+      return [(used[x.sp.id] || 0) >= 2 ? 1 : 0, (discountOnly && everyday) || /reward|points/i.test(x.d.title) ? 1 : 0, used[x.sp.id] || 0, everyday ? 1 : 0, x.d.days.length, discountOnly ? 1 : 0, p == null ? 99 : p];
     }
     DAYS.slice().sort(function (a, b) { return byDay[a].length - byDay[b].length; }).forEach(function (d) {
       var best = null, br = null;
@@ -619,6 +619,8 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
       (SERVER ? '' : '<p class="note">Comments stay on this phone until the shared server is connected.</p>') + '</div>';
     return h + '</div>';
   }
+  /* Refresh after new scores arrive, but never while someone is typing: a redraw would close the phone keyboard. */
+  function softFill(id) { var el = document.activeElement; if (S.open !== id || S.step === 'checkout' || S.step === 'done' || (el && /^(cmtIn|ordNote|addItem|menuSearch)$/.test(el.id))) return; fillMenu(id); }
   function fillMenu(id) {
     var box = document.getElementById('menuBox'); if (!box) return;
     var sp = SPOTS[id], q = (S.mq || '').toLowerCase(), items = menuItems(sp), top = ratedItems(id), secs = [], seen = {};
@@ -666,7 +668,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     S.mq = ''; S.sec = deal ? 'Deals' : ''; S.item = deal || null; S.opt = ''; S.qty = 1; S.step = ''; S.open = id; fillMenu(id); paintCart();
     if (deal) { var mb = document.querySelector('#menuBox .dish.open'); if (mb) mb.scrollIntoView({ block: 'start' }); }
     clearInterval(POLL);
-    if (SERVER) { loadComments(id); loadScores(function () { if (S.open === id) fillMenu(id); }); POLL = setInterval(function () { if (S.open === id && !document.hidden) loadComments(id); }, 12000); }
+    if (SERVER) { loadComments(id); loadScores(function () { softFill(id); }); POLL = setInterval(function () { if (S.open === id && !document.hidden) loadComments(id); }, 12000); }
     if (!MENUS) fetch('data/menus.json').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (m) { MENUS = m || {}; if (S.open === id) fillMenu(id); });
   }
 
@@ -679,7 +681,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
       if (U.items[id][it] === n) { delete U.items[id][it]; n = 0; } else U.items[id][it] = n;
       if (!Object.keys(U.items[id]).length) delete U.items[id];
       save('kord.user', U); fillMenu(id);
-      if (SERVER) api('rpc/rate_dish', { p_device: U.device, p_town: S.town, p_place: id, p_dish: it, p_stars: n }).then(function () { loadScores(function () { if (S.open === id) fillMenu(id); }); }).catch(function () {});
+      if (SERVER) api('rpc/rate_dish', { p_device: U.device, p_town: S.town, p_place: id, p_dish: it, p_stars: n }).then(function () { loadScores(function () { softFill(id); }); }).catch(function () {});
       return;
     }
     if (t.dataset.sec) { S.sec = t.dataset.sec; S.item = null; return fillMenu(S.open); }
