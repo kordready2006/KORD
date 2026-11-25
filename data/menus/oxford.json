@@ -1,0 +1,407 @@
+{
+ "oxford|Bagel & Deli Shop": {
+  "source": "https://www.bagelanddeli.com/uploads/1/3/7/0/13702275/2026_fall_semester_menu.pdf",
+  "items": [
+   {
+    "name": "Blonde Bombshell",
+    "price": "$11.75",
+    "section": "Turkey"
+   },
+   {
+    "name": "Chip's Special",
+    "price": "$11.75",
+    "section": "Turkey"
+   },
+   {
+    "name": "Crunch and Munch",
+    "price": "$12.25",
+    "section": "Turkey"
+   },
+   {
+    "name": "Gandy Dancer",
+    "price": "$10.50",
+    "section": "Turkey"
+   },
+   {
+    "name": "Howard Bagel",
+    "price": "$11.75",
+    "section": "Turkey"
+   },
+   {
+    "name": "Konrad Bagel",
+    "price": "$11.75",
+    "section": "Turkey"
+   },
+   {
+    "name": "Kool Jules",
+    "price": "$11.75",
+    "section": "Turkey"
+   },
+   {
+    "name": "Mr. Turkey",
+    "price": "$10.50",
+    "section": "Turkey"
+   },
+   {
+    "name": "Messy Katie",
+    "price": "$12.25",
+    "section": "Turkey"
+   },
+   {
+    "name": "Sara's Secret",
+    "price": "$11.75",
+    "section": "Turkey"
+   },
+   {
+    "name": "Salty Hor",
+    "price": "$10.50",
+    "section": "Turkey"
+   },
+   {
+    "name": "Szczerbiak Bagel",
+    "price": "$10.50",
+    "section": "Turkey"
+   },
+   {
+    "name": "Turkey Hummer",
+    "price": "$11.75",
+    "section": "Turkey"
+   },
+   {
+    "name": "Wam-O",
+    "price": "$11.75",
+    "section": "Turkey"
+   },
+   {
+    "name": "Xanadu",
+    "price": "$11.75",
+    "section": "Turkey"
+   },
+   {
+    "name": "Ben's Best",
+    "price": "$12.25",
+    "section": "Multiple Meat"
+   },
+   {
+    "name": "Big Meeks",
+    "price": "$12.25",
+    "section": "Multiple Meat"
+   },
+   {
+    "name": "Bluegrass Bagel",
+    "price": "$12.25",
+    "section": "Multiple Meat"
+   },
+   {
+    "name": "Bob-E-Que Bagel",
+    "price": "$12.25",
+    "section": "Multiple Meat"
+   },
+   {
+    "name": "Class of '98 Riot Bagel",
+    "price": "$12.25",
+    "section": "Multiple Meat"
+   },
+   {
+    "name": "Doyle Rules Bagel",
+    "price": "$12.25",
+    "section": "Multiple Meat"
+   },
+   {
+    "name": "Fat Albert Bagel",
+    "price": "$12.25",
+    "section": "Multiple Meat"
+   },
+   {
+    "name": "Get Swanked Bagel",
+    "price": "$12.25",
+    "section": "Multiple Meat"
+   },
+   {
+    "name": "Italian Bagel",
+    "price": "$12.25",
+    "section": "Multiple Meat"
+   },
+   {
+    "name": "Sam's Sunrise",
+    "price": "$7.25",
+    "section": "Eggs (anytime)"
+   },
+   {
+    "name": "The Sausage Fest",
+    "price": "$12.25",
+    "section": "Eggs (anytime)"
+   },
+   {
+    "name": "The Original Breakfast Bagel",
+    "price": "$10.50",
+    "section": "Eggs (anytime)"
+   },
+   {
+    "name": "Super Deluxe Breakfast Bagel",
+    "price": "$12.25",
+    "section": "Eggs (anytime)"
+   },
+   {
+    "name": "Dank 'n' Eggs",
+    "price": "$12.25",
+    "section": "Eggs (anytime)"
+   },
+   {
+    "name": "The Good Morning Sausage",
+    "price": "$10.50",
+    "section": "Eggs (anytime)"
+   },
+   {
+    "name": "The Western Bagel",
+    "price": "$9.50",
+    "section": "Eggs (anytime)"
+   },
+   {
+    "name": "The Hangover Helper",
+    "price": "$10.50",
+    "section": "Eggs (anytime)"
+   },
+   {
+    "name": "Alumni",
+    "price": "$10.50",
+    "section": "Roast Beef"
+   },
+   {
+    "name": "Balcony Bagel",
+    "price": "$10.50",
+    "section": "Roast Beef"
+   },
+   {
+    "name": "Franks Bagel",
+    "price": "$11.75",
+    "section": "Roast Beef"
+   },
+   {
+    "name": "Hungry Heifer",
+    "price": "$10.50",
+    "section": "Roast Beef"
+   },
+   {
+    "name": "Missy's Bloodbath",
+    "price": "$10.50",
+    "section": "Roast Beef"
+   },
+   {
+    "name": "Parker's Alternative",
+    "price": "$11.75",
+    "section": "Roast Beef"
+   },
+   {
+    "name": "Philly Bagel",
+    "price": "$11.75",
+    "section": "Roast Beef"
+   },
+   {
+    "name": "Sportsfest",
+    "price": "$11.75",
+    "section": "Roast Beef"
+   },
+   {
+    "name": "Terrapin",
+    "price": "$11.75",
+    "section": "Roast Beef"
+   },
+   {
+    "name": "BLT",
+    "price": "$10.50",
+    "section": "Bacon"
+   },
+   {
+    "name": "Dread Lock Bagel",
+    "price": "$11.75",
+    "section": "Bacon"
+   },
+   {
+    "name": "I.U. Bagel",
+    "price": "$10.50",
+    "section": "Bacon"
+   },
+   {
+    "name": "Philippa's Phetish",
+    "price": "$11.75",
+    "section": "Bacon"
+   },
+   {
+    "name": "All American Bagel",
+    "price": "$10.50",
+    "section": "Ham"
+   },
+   {
+    "name": "Ham and Swisser",
+    "price": "$10.50",
+    "section": "Ham"
+   },
+   {
+    "name": "Jeopardy Bagel",
+    "price": "$11.75",
+    "section": "Ham"
+   },
+   {
+    "name": "MILF Bagel",
+    "price": "$11.75",
+    "section": "Ham"
+   },
+   {
+    "name": "Bowler's Bagel",
+    "price": "$10.50",
+    "section": "Corned Beef"
+   },
+   {
+    "name": "Chicago Deli",
+    "price": "$10.50",
+    "section": "Corned Beef"
+   },
+   {
+    "name": "Ozzie's Favorite",
+    "price": "$11.75",
+    "section": "Corned Beef"
+   },
+   {
+    "name": "Paul Reuben",
+    "price": "$10.50",
+    "section": "Corned Beef"
+   },
+   {
+    "name": "Redhawk Reuben",
+    "price": "$10.50",
+    "section": "Corned Beef"
+   },
+   {
+    "name": "Aunt Beanie's",
+    "price": "$8.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "Chia Bagel",
+    "price": "$9.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "China Cat Sunflower",
+    "price": "$8.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "Earth Day",
+    "price": "$8.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "Greg-O Bagel",
+    "price": "$9.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "Kim's Veggie Pizza",
+    "price": "$8.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "L.A. Delight",
+    "price": "$7.25",
+    "section": "Veggie"
+   },
+   {
+    "name": "La Dolce Bagel",
+    "price": "$8.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "QuesaBagel",
+    "price": "$8.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "Random Bagel",
+    "price": "$9.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "Shakedown",
+    "price": "$8.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "Tommy and Donny",
+    "price": "$9.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "Veggie Delight",
+    "price": "$9.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "Weight Watchers",
+    "price": "$8.50",
+    "section": "Veggie"
+   },
+   {
+    "name": "Just a Bagel",
+    "price": "$3.50",
+    "section": "Butter, Cheese, etc."
+   },
+   {
+    "name": "Butter Bagel",
+    "price": "$4.00",
+    "section": "Butter, Cheese, etc."
+   },
+   {
+    "name": "Cheese Bagel",
+    "price": "$5.75",
+    "section": "Butter, Cheese, etc."
+   },
+   {
+    "name": "Hummus on a Bagel",
+    "price": "$5.75",
+    "section": "Butter, Cheese, etc."
+   },
+   {
+    "name": "Cream Cheese",
+    "price": "$5.75",
+    "section": "Butter, Cheese, etc."
+   },
+   {
+    "name": "Miami Bagel",
+    "price": "$5.75",
+    "section": "Butter, Cheese, etc."
+   },
+   {
+    "name": "Banana Surprise",
+    "price": "$7.25",
+    "section": "Butter, Cheese, etc."
+   },
+   {
+    "name": "Smoke n' Toke",
+    "price": "$12.25",
+    "section": "Butter, Cheese, etc."
+   },
+   {
+    "name": "Cookie Monster",
+    "price": "$7.25",
+    "section": "Butter, Cheese, etc."
+   },
+   {
+    "name": "Create Your Own",
+    "price": "$10.50",
+    "section": "Custom"
+   },
+   {
+    "name": "Lottery",
+    "price": "$10.50",
+    "section": "Custom"
+   },
+   {
+    "name": "David Letterman Bagel",
+    "price": "$10.50",
+    "section": "Salami"
+   }
+  ]
+ }
+}

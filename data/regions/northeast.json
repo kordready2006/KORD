@@ -190,18 +190,6 @@
           "deals": []
         },
         {
-          "name": "Hunan Coventry",
-          "category": "Asian",
-          "local": true,
-          "signature": false,
-          "address": "",
-          "website": "",
-          "blurb": "Coventry Village Chinese restaurant, a Cleveland Magazine Silver Spoon winner.",
-          "price": "$$",
-          "sourceUrl": "https://clevelandheights.gov/481/Coventry-Village-Commercial-District",
-          "deals": []
-        },
-        {
           "name": "Inn on Coventry",
           "category": "Breakfast & Brunch",
           "local": true,
@@ -4029,6 +4017,18 @@
           "blurb": "Sub sandwich chain.",
           "price": "$",
           "sourceUrl": "https://www.downtownakron.com/go/jimmy-johns-gourmet-sandwiches",
+          "deals": []
+        },
+        {
+          "name": "Angel Falls Coffee Co.",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "792 W Market St, Akron, OH 44303",
+          "website": "https://www.facebook.com/profile.php?id=100057490028026",
+          "blurb": "Cozy Highland Square coffee shop named Signal Akron's 2025 best coffee/tea spot.",
+          "price": "$",
+          "sourceUrl": "https://signalakron.org/signal-akron-best-of-city-2025-winner-coffee-tea-angel-falls/",
           "deals": []
         }
       ]

@@ -1,0 +1,1822 @@
+{
+ "dayton|The Pine Club": {
+  "source": "https://thepineclub.com/menu/",
+  "items": [
+   {
+    "name": "Shrimp Cocktail",
+    "price": "$19.95",
+    "section": "Cold"
+   },
+   {
+    "name": "Combination 4 Shrimp & 4 Oysters",
+    "price": "$29.95",
+    "section": "Cold"
+   },
+   {
+    "name": "Blue Point Oysters on Half Shell",
+    "price": "$20.95",
+    "section": "Cold"
+   },
+   {
+    "name": "Fried Shrimp",
+    "price": "$12.95",
+    "section": "Hot"
+   },
+   {
+    "name": "Nantucket Cape Scallops",
+    "price": "$22.95",
+    "section": "Hot"
+   },
+   {
+    "name": "Broiled Lobster",
+    "price": "$32.95",
+    "section": "Hot"
+   },
+   {
+    "name": "Fried Blue Point Oysters",
+    "price": "$20.95",
+    "section": "Hot"
+   },
+   {
+    "name": "Strip-Loin Steak",
+    "price": "$51.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "Extra Heavy Strip-Loin Steak",
+    "price": "$58.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "“Double” Strip-Loin Steak",
+    "price": "$102.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "Filet Mignon",
+    "price": "$55.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "Extra Heavy Filet Mignon",
+    "price": "$62.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "Bone In Filet",
+    "price": "$68.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "Bone In Rib Eye Steak",
+    "price": "$61.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "Porterhouse",
+    "price": "$55.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "“Double” Porterhouse",
+    "price": "$110.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "Broiled Lamb Loin Chops",
+    "price": "$48.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "Broiled Veal Chop",
+    "price": "$48.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "Broiled Center Cut Pork Chops",
+    "price": "$42.95",
+    "section": "Steaks & Chops"
+   },
+   {
+    "name": "Calves Liver and Sauteed Onions",
+    "price": "$34.95",
+    "section": "Other Entrees"
+   },
+   {
+    "name": "Chopped Beef Tenderloin Steak",
+    "price": "$39.95",
+    "section": "Other Entrees"
+   },
+   {
+    "name": "Tenderloin Tips with Fresh Mushrooms & Gravy",
+    "price": "$42.95",
+    "section": "Other Entrees"
+   },
+   {
+    "name": "Broiled Lobster Tails",
+    "price": "$65.95",
+    "section": "Seafood Dinners"
+   },
+   {
+    "name": "Surf & Turf",
+    "price": "$88.95",
+    "section": "Seafood Dinners"
+   },
+   {
+    "name": "Fresh Rocky Mountain Rainbow Trout",
+    "price": "$33.95",
+    "section": "Seafood Dinners"
+   },
+   {
+    "name": "Faroe Salmon",
+    "price": "$40.95",
+    "section": "Seafood Dinners"
+   },
+   {
+    "name": "Nantucket Cape Scallops",
+    "price": "$47.95",
+    "section": "Seafood Dinners"
+   },
+   {
+    "name": "French Fried Shrimp",
+    "price": "$27.95",
+    "section": "Seafood Dinners"
+   },
+   {
+    "name": "Steak-Caesar Salad Entrée",
+    "price": "$36.95",
+    "section": "Seafood Dinners"
+   },
+   {
+    "name": "Pine Club Creamed Spinach",
+    "price": "$5.50",
+    "section": "Sides"
+   },
+   {
+    "name": "“Loaded” Potato",
+    "price": "$9.50",
+    "section": "Sides"
+   },
+   {
+    "name": "Sautéed Mushrooms",
+    "price": "$6.50",
+    "section": "Sides"
+   },
+   {
+    "name": "Sautéed Onions",
+    "price": "$5.50",
+    "section": "Sides"
+   },
+   {
+    "name": "Pine Club Hamburger Platter",
+    "price": "$19.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pine Club Cheeseburger Platter",
+    "price": "$19.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Hot Ham & Swiss Cheese on Rye Platter",
+    "price": "$19.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Bacon, Lettuce and Tomato Platter",
+    "price": "$19.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Sardines on Rye Platter",
+    "price": "$15.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pine Club Filet Steak Sandwich",
+    "price": "$40.95",
+    "section": "Sandwiches"
+   }
+  ]
+ },
+ "dayton|Dewey's Pizza": {
+  "source": "https://deweyspizza.com/menu/",
+  "items": [
+   {
+    "name": "Alabama Shaker",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Dewey’s Original",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Pepperoni",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Hawaiian",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Ryan’s Inferno",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Meatball",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Killer Veggie",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Bronx Bomber",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Green Lantern",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Don Corleone",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Porky Fig",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Socrates’ Revenge",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Southwest BBQ Chicken",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Edgar Allan Poe",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Caprice",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Alabama Shaker",
+    "price": "",
+    "section": "Seasonal Specials"
+   },
+   {
+    "name": "Harvest",
+    "price": "",
+    "section": "Seasonal Specials"
+   },
+   {
+    "name": "Caesar (new recipe)",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Harvest",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Peppercorn Ranch",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Candied Walnut & Grape",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "House",
+    "price": "",
+    "section": "Salads"
+   }
+  ]
+ },
+ "dayton|Thai 9": {
+  "source": "https://thai9restaurant.com/food-menu",
+  "items": [
+   {
+    "name": "Carrot and Cabbage Slaw",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Satay",
+    "price": "$10.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Coco Shrimp",
+    "price": "$12.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Crab Rangoon",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fish Cakes (Tod Mun)",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Golden Tofu",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Hot Chicken Wings",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mango Salad",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Papaya Salad Thai or Laos Style",
+    "price": "$10.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Shiitake Tempura",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Shrimp Blanket",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Summer Rolls",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Spring Rolls",
+    "price": "$5.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fruit Salad",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Thai Sausage",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Pork Wonton",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Calamari Tempura",
+    "price": "$10.00",
+    "section": "Japanese Appetizers From The Kitchen"
+   },
+   {
+    "name": "Ebi Ten (Tempura)",
+    "price": "$9.00",
+    "section": "Japanese Appetizers From The Kitchen"
+   },
+   {
+    "name": "Edamame",
+    "price": "$5.00",
+    "section": "Japanese Appetizers From The Kitchen"
+   },
+   {
+    "name": "Gyoza",
+    "price": "$8.00",
+    "section": "Japanese Appetizers From The Kitchen"
+   },
+   {
+    "name": "Vegetarian Gyoza",
+    "price": "$8.00",
+    "section": "Japanese Appetizers From The Kitchen"
+   },
+   {
+    "name": "Shrimp Shumai",
+    "price": "$8.00",
+    "section": "Japanese Appetizers From The Kitchen"
+   },
+   {
+    "name": "Yasai Ten (Tempura)",
+    "price": "$8.00",
+    "section": "Japanese Appetizers From The Kitchen"
+   },
+   {
+    "name": "Bean Thread Soup",
+    "price": "$6.00",
+    "section": "Soups"
+   },
+   {
+    "name": "Chicken or Tofu Coconut Milk Soup (Tom Kha)",
+    "price": "$6.00",
+    "section": "Soups"
+   },
+   {
+    "name": "Hot and Sour Shrimp Soup (Tom Yam Goong)",
+    "price": "$6.00",
+    "section": "Soups"
+   },
+   {
+    "name": "Thai 9’s Hot and Sour Shrimp Soup",
+    "price": "$6.00",
+    "section": "Soups"
+   },
+   {
+    "name": "Hot and Sour Chicken Soup (Tom Yam Kai)",
+    "price": "$6.00",
+    "section": "Soups"
+   },
+   {
+    "name": "Hot and Sour Mushroom Soup (Tom Yam Hed)",
+    "price": "$6.00",
+    "section": "Soups"
+   },
+   {
+    "name": "Vegetable Soup",
+    "price": "$6.00",
+    "section": "Soups"
+   },
+   {
+    "name": "Wonton Soup",
+    "price": "$6.00",
+    "section": "Soups"
+   },
+   {
+    "name": "Khao Soy",
+    "price": "",
+    "section": "Curry"
+   },
+   {
+    "name": "Green Curry (Gang Keo Wan)",
+    "price": "",
+    "section": "Curry"
+   },
+   {
+    "name": "Massaman Curry",
+    "price": "",
+    "section": "Curry"
+   },
+   {
+    "name": "Panaeng Curry",
+    "price": "",
+    "section": "Curry"
+   },
+   {
+    "name": "Red Curry (Gang Dang)",
+    "price": "",
+    "section": "Curry"
+   },
+   {
+    "name": "Yellow Curry (Gang Lohng)",
+    "price": "",
+    "section": "Curry"
+   },
+   {
+    "name": "Green Salad",
+    "price": "$4.95",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Ika Sansai",
+    "price": "$8.00",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Kanisu",
+    "price": "$9.00",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Miso Soup",
+    "price": "$2.50",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Sashimi Appetizer",
+    "price": "$14.95",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Seaweed Salad (Hiyashi Wakama)",
+    "price": "$8.00",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Spicy Conch",
+    "price": "$9.95",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Spicy Tuna Sashimi",
+    "price": "$14.95",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Spicy Octopus",
+    "price": "$11.95",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Suno Mono",
+    "price": "$10.00",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Sushi Appetizer",
+    "price": "$14.95",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Sushi Rice",
+    "price": "$4.00",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Tuna Tataki",
+    "price": "$14.95",
+    "section": "Appetizers From Sushi Bar"
+   },
+   {
+    "name": "Alien Roll",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Bakery Roll",
+    "price": "$11.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "California Roll",
+    "price": "$7.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Caterpillar Roll",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Covid - 19 Roll",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Crazy Roll",
+    "price": "$9.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Dayton Roll",
+    "price": "$12.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Dynamite",
+    "price": "$11.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Futomaki",
+    "price": "$11.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Japanese Bagel",
+    "price": "$8.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "King Dragon",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Mexican",
+    "price": "$12.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Rainbow",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Russian Roulette",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Sakura",
+    "price": "$12.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Salmon Skin",
+    "price": "$5.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Salmon Tempura",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Sexy Roll",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Shrimp Tempura",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Spicy Shrimp",
+    "price": "$7.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Spicy Tuna",
+    "price": "$9.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Sunshine Roll",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Sunset Roll",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Surprise",
+    "price": "$15.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Thai 9 Special",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Vegetable",
+    "price": "$8.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Volcano",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Yellow Tail",
+    "price": "$6.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Zombie Roll",
+    "price": "$14.95",
+    "section": "Rolls"
+   },
+   {
+    "name": "Lava Roll",
+    "price": "$14.95",
+    "section": "Rolls"
+   }
+  ]
+ },
+ "dayton|The Dublin Pub": {
+  "source": "https://www.dubpub.com/menu/",
+  "items": [
+   {
+    "name": "World Famous Potato Soup",
+    "price": "$7.20",
+    "section": "Specialties"
+   },
+   {
+    "name": "Fish & Chips",
+    "price": "",
+    "section": "Specialties"
+   },
+   {
+    "name": "Shrimp & Chips",
+    "price": "$16.47",
+    "section": "Specialties"
+   },
+   {
+    "name": "The Huntsman",
+    "price": "$16.47",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Classic Rueben",
+    "price": "$16.47",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Burger or Chicken Sandwich",
+    "price": "$15.44",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Monster Grilled Cheese",
+    "price": "$11.32",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "County Cork Club",
+    "price": "$15.44",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Half & Half Onion Straws",
+    "price": "$9.26",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Spinach Queso Dip",
+    "price": "$13.38",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Dublin Pub Cheese Fries",
+    "price": "$12.35",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Cheese Curds",
+    "price": "$13.38",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Pickles",
+    "price": "$11.33",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Tenders",
+    "price": "$14.41",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Traditional Irish Breakfast",
+    "price": "$15.47",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Pretzel, Egg & Cheese Sandwich",
+    "price": "$14.44",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Hot Honey Chicken & Waffles",
+    "price": "$17.49",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Biscuits & Gravy",
+    "price": "$14.41",
+    "section": "Breakfast"
+   },
+   {
+    "name": "French Toast Platter",
+    "price": "$16.47",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Spiked French Toast",
+    "price": "$15.44",
+    "section": "Brunch"
+   },
+   {
+    "name": "Farmers Hash",
+    "price": "$17.49",
+    "section": "Brunch"
+   },
+   {
+    "name": "Brunch Shepherd’s Pie",
+    "price": "$15.44",
+    "section": "Brunch"
+   },
+   {
+    "name": "Corned Beef Hash",
+    "price": "$16.49",
+    "section": "Brunch"
+   },
+   {
+    "name": "Chicken & Waffles",
+    "price": "$16.49",
+    "section": "Brunch"
+   },
+   {
+    "name": "Legendary Rasher Wrap",
+    "price": "$16.47",
+    "section": "Brunch"
+   },
+   {
+    "name": "Irish Countryside Benedict",
+    "price": "$16.47",
+    "section": "Brunch"
+   }
+  ]
+ },
+ "dayton|Amber Rose Restaurant": {
+  "source": "https://www.theamberrose.com/dayton-amber-rose-restaurant-and-catering-food-menu",
+  "items": [
+   {
+    "name": "Lithuanian Cabbage Roll",
+    "price": "$15.50",
+    "section": "Entrees"
+   },
+   {
+    "name": "Homestyle Pot Roast",
+    "price": "$17.50",
+    "section": "Entrees"
+   },
+   {
+    "name": "Warsaw Medley",
+    "price": "$28.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Beef Stroganoff",
+    "price": "$17.50",
+    "section": "Entrees"
+   },
+   {
+    "name": "Hungarian Chicken Paprikas",
+    "price": "$16.50",
+    "section": "Entrees"
+   },
+   {
+    "name": "Hunter Schnitzel",
+    "price": "$21.50",
+    "section": "Entrees"
+   },
+   {
+    "name": "Beef on Weck",
+    "price": "$16.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Tuna Melt",
+    "price": "$11.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Traditional Reuben",
+    "price": "$16.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Turkey Reuben",
+    "price": "$16.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Amber Rose Club",
+    "price": "$16.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Monterey Chicken Pita",
+    "price": "$16.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Hot Italian Sub",
+    "price": "$16.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Hunter Schnitzel",
+    "price": "$14.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Cheddar Jack Cheeseburger",
+    "price": "$15.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Potato Pancakes",
+    "price": "$10.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Potato Pancakes Deluxe",
+    "price": "$12.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Pierogi & Onions",
+    "price": "$12.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Stuffed Mushrooms",
+    "price": "$11.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Sauerkraut Balls",
+    "price": "$10.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "German Bier Cheese",
+    "price": "$11.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Amber Rose Sampler",
+    "price": "$26.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Wings",
+    "price": "$10.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Wedge Salad",
+    "price": "$15.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Chef Salad",
+    "price": "$18.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Grilled Chicken Salad",
+    "price": "$19.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Grilled Chicken Caesar Salad",
+    "price": "$19.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Greek Salad with Chicken",
+    "price": "$19.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Potato Soup",
+    "price": "",
+    "section": "Soups"
+   },
+   {
+    "name": "Soup of the Day",
+    "price": "",
+    "section": "Soups"
+   },
+   {
+    "name": "Elinor's Signature Turtle Soup",
+    "price": "",
+    "section": "Soups"
+   },
+   {
+    "name": "Soup & Half Sandwich",
+    "price": "$15.00",
+    "section": "Lunch Combos"
+   },
+   {
+    "name": "Soup & Half Salad",
+    "price": "$16.00",
+    "section": "Lunch Combos"
+   }
+  ]
+ },
+ "dayton|Hickory Bar-B-Q": {
+  "source": "https://www.hickorybarbq.com/menu/dinner-menu/",
+  "items": [
+   {
+    "name": "Barbecued Chicken Dinner",
+    "price": "$19.95",
+    "section": "Our Famous BBQ Selection"
+   },
+   {
+    "name": "Barbecued Rib Dinner",
+    "price": "$25.95",
+    "section": "Our Famous BBQ Selection"
+   },
+   {
+    "name": "Whole Slab Rib Dinner",
+    "price": "$29.95",
+    "section": "Our Famous BBQ Selection"
+   },
+   {
+    "name": "Shrimp Cocktail",
+    "price": "$13.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Ribs Sampler",
+    "price": "$12.75",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Fingers",
+    "price": "$9.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Cabbage Roll",
+    "price": "$10.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Shrimp",
+    "price": "$10.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Aged Choice New York Cut Sirloin, King 13 oz",
+    "price": "$39.75",
+    "section": "Broiled Steaks"
+   },
+   {
+    "name": "Aged Porterhouse, 15 oz",
+    "price": "$35.95",
+    "section": "Broiled Steaks"
+   },
+   {
+    "name": "Filet Mignon, 7 oz",
+    "price": "$39.95",
+    "section": "Broiled Steaks"
+   },
+   {
+    "name": "Aged T-Bone, U.S. Choice, 14 oz",
+    "price": "$32.95",
+    "section": "Broiled Steaks"
+   },
+   {
+    "name": "Ham Steak, Large & Delicious, Center Cut",
+    "price": "$17.95",
+    "section": "Broiled Steaks"
+   },
+   {
+    "name": "Chopped Sirloin",
+    "price": "$17.25",
+    "section": "Broiled Steaks"
+   },
+   {
+    "name": "Broasted Chicken (Please allow extra time)",
+    "price": "$19.95",
+    "section": "From The Kitchen"
+   },
+   {
+    "name": "Pork Tenderloin Dinner",
+    "price": "$17.95",
+    "section": "From The Kitchen"
+   },
+   {
+    "name": "Pork Chops (Only Choice, Center Cut)",
+    "price": "$21.95",
+    "section": "From The Kitchen"
+   },
+   {
+    "name": "Single pork chop",
+    "price": "$16.95",
+    "section": "From The Kitchen"
+   },
+   {
+    "name": "Hungarian Cabbage Rolls",
+    "price": "$21.95",
+    "section": "From The Kitchen"
+   },
+   {
+    "name": "Single Cabbage Roll",
+    "price": "$16.95",
+    "section": "From The Kitchen"
+   },
+   {
+    "name": "Jumbo French Fried Shrimp",
+    "price": "$16.95",
+    "section": "Seafood"
+   },
+   {
+    "name": "Filet of Sole (Fried)",
+    "price": "$16.95",
+    "section": "Seafood"
+   },
+   {
+    "name": "Hamburger",
+    "price": "$9.95",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "Cheeseburger",
+    "price": "$10.50",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "Fish (Fried)",
+    "price": "$9.95",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "Tenderloin",
+    "price": "$10.95",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "Grilled Cheese",
+    "price": "$6.25",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "BBQ Grilled Ham & Cheese",
+    "price": "$10.25",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "Bermuda Steak",
+    "price": "$12.25",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "Bacon & Tomato (Single)",
+    "price": "$8.95",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "Bacon & Tomato (Club, Double)",
+    "price": "$12.95",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "Chicken Sandwich (Fried)",
+    "price": "$9.25",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "Roquefort Burger",
+    "price": "$11.95",
+    "section": "Sandwiches From Our Grill"
+   },
+   {
+    "name": "Chicken Fingers & Fries",
+    "price": "$8.75",
+    "section": "Children’s Menu"
+   },
+   {
+    "name": "Hamburger & Fries",
+    "price": "$8.75",
+    "section": "Children’s Menu"
+   },
+   {
+    "name": "Cheeseburger & Fries",
+    "price": "$9.25",
+    "section": "Children’s Menu"
+   },
+   {
+    "name": "Grilled Cheese & Fries",
+    "price": "$7.50",
+    "section": "Children’s Menu"
+   },
+   {
+    "name": "Ribs Sampler & Fries (4 Ribs)",
+    "price": "$12.95",
+    "section": "Children’s Menu"
+   }
+  ]
+ },
+ "dayton|Prime BBQ Smokehouse": {
+  "source": "https://www.primebbq.com/menu",
+  "items": [
+   {
+    "name": "Pulled Chicken",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Pulled Pork",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Brisket",
+    "price": "$16",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "4 Smoked Wings",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Bourbon Chicken",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Sausage ( Hot, Jalapeno Cheddar or Mild )",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Jerk Chicken",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Prime's Burger",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Half Chicken",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Pulled Chicken Sandwich",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Pulled Pork Sandwich",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Brisket Sandwich",
+    "price": "$16",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "3 Rib Bones",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Rib Tips",
+    "price": "$14",
+    "section": "Lunch Special"
+   },
+   {
+    "name": "Prime's Supreme Wedges",
+    "price": "$17",
+    "section": "Starters"
+   },
+   {
+    "name": "Hush Puppies",
+    "price": "$7",
+    "section": "Starters"
+   },
+   {
+    "name": "Fried Okra",
+    "price": "$7",
+    "section": "Starters"
+   },
+   {
+    "name": "Pickle Chips",
+    "price": "$7",
+    "section": "Starters"
+   },
+   {
+    "name": "Onion Rings",
+    "price": "$7",
+    "section": "Starters"
+   },
+   {
+    "name": "Battered Mushrooms",
+    "price": "$7",
+    "section": "Starters"
+   },
+   {
+    "name": "Slider Flights",
+    "price": "$10",
+    "section": "Starters"
+   },
+   {
+    "name": "Taco Flights",
+    "price": "$10",
+    "section": "Starters"
+   },
+   {
+    "name": "Prime's Grilled Chicken Salad",
+    "price": "$14",
+    "section": "Salads"
+   },
+   {
+    "name": "Taco Salad (In Tortilla Bowl)",
+    "price": "$16",
+    "section": "Salads"
+   },
+   {
+    "name": "House Salad",
+    "price": "$10",
+    "section": "Salads"
+   },
+   {
+    "name": "Fried Catfish Filet",
+    "price": "$6",
+    "section": "Seafood"
+   },
+   {
+    "name": "Fried Cod",
+    "price": "$4",
+    "section": "Seafood"
+   },
+   {
+    "name": "Grilled Salmon",
+    "price": "$9",
+    "section": "Seafood"
+   },
+   {
+    "name": "Fried Shrimp",
+    "price": "$7",
+    "section": "Seafood"
+   },
+   {
+    "name": "Brisket",
+    "price": "$16",
+    "section": "Meat By Pound"
+   },
+   {
+    "name": "Rib Tips",
+    "price": "$14",
+    "section": "Meat By Pound"
+   },
+   {
+    "name": "Pulled Pork",
+    "price": "$9",
+    "section": "Meat By Pound"
+   },
+   {
+    "name": "Pulled Chicken",
+    "price": "$9",
+    "section": "Meat By Pound"
+   },
+   {
+    "name": "Jerk Chicken",
+    "price": "$16",
+    "section": "Meat By Pound"
+   },
+   {
+    "name": "Bourbon Chicken",
+    "price": "$16",
+    "section": "Meat By Pound"
+   },
+   {
+    "name": "Smoked Sausage",
+    "price": "$11",
+    "section": "Meat By Pound"
+   },
+   {
+    "name": "Half Chicken",
+    "price": "$9",
+    "section": "Ala Carte Meat"
+   },
+   {
+    "name": "Whole Chicken",
+    "price": "$16",
+    "section": "Ala Carte Meat"
+   },
+   {
+    "name": "One Bone St louis",
+    "price": "$17",
+    "section": "Ala Carte Meat"
+   },
+   {
+    "name": "Whole Slab",
+    "price": "$28",
+    "section": "Ala Carte Meat"
+   },
+   {
+    "name": "Smoked Wings",
+    "price": "$10",
+    "section": "Ala Carte Meat"
+   },
+   {
+    "name": "Fried Dark Chicken",
+    "price": "$8",
+    "section": "Ala Carte Meat"
+   },
+   {
+    "name": "Fried Whole Wings",
+    "price": "$11",
+    "section": "Ala Carte Meat"
+   },
+   {
+    "name": "Fried Fresh Tenders",
+    "price": "$11",
+    "section": "Ala Carte Meat"
+   },
+   {
+    "name": "Tips And Wings",
+    "price": "$27",
+    "section": "Meat Feast"
+   },
+   {
+    "name": "Pulled Pork",
+    "price": "$10",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pulled Chicken",
+    "price": "$10",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Brisket",
+    "price": "$13",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Fish Sandwich",
+    "price": "$8",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "BBQ Madness",
+    "price": "$15",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Ultimate Burger",
+    "price": "$12",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Prime Burger",
+    "price": "$11",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "BBQ Po Boy",
+    "price": "$10",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Bourbon Chicken Sub",
+    "price": "$10",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Fried Chicken Sandwich ( Mild or Spicy)",
+    "price": "$9",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Build Your Own Bowl for 16",
+    "price": "$3",
+    "section": "Prime Construction Zone"
+   },
+   {
+    "name": "Bourbon Chicken Loaded Bowl",
+    "price": "$16",
+    "section": "Bowl Dozers"
+   },
+   {
+    "name": "Kickin Brisket Bowl",
+    "price": "$16",
+    "section": "Bowl Dozers"
+   },
+   {
+    "name": "Jerk Chicken Bowl",
+    "price": "$16",
+    "section": "Bowl Dozers"
+   },
+   {
+    "name": "Brisket Potato",
+    "price": "$16",
+    "section": "Bowl Dozers"
+   },
+   {
+    "name": "Prime Potato",
+    "price": "$19",
+    "section": "Bowl Dozers"
+   },
+   {
+    "name": "BourBon Potato",
+    "price": "$16",
+    "section": "Bowl Dozers"
+   },
+   {
+    "name": "Salmon Potato",
+    "price": "$16",
+    "section": "Bowl Dozers"
+   },
+   {
+    "name": "Mac & Cheese",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Green Beans",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Baked Beans",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Rice & Beans",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Collard Green",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Buttered Sweet Corn",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Corn Bread / Texas Toast",
+    "price": "$1",
+    "section": "Sides"
+   },
+   {
+    "name": "White Rice",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Cajun Rice",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Potato Salad",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Coleslaw",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Potato Wedges",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "French Fries",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Cajun Potato Wedges",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Cajun French Fries",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Side Salad",
+    "price": "$4",
+    "section": "Sides"
+   },
+   {
+    "name": "Red Skin Garlic Mash",
+    "price": "$4",
+    "section": "Sides"
+   }
+  ]
+ },
+ "dayton|Fusian": {
+  "source": "https://www.fusian.com/menu",
+  "items": [
+   {
+    "name": "Tuna Poké Bowl",
+    "price": "",
+    "section": "Signature Bowls + Salads"
+   },
+   {
+    "name": "Kickin' Chicken bowl",
+    "price": "",
+    "section": "Signature Bowls + Salads"
+   },
+   {
+    "name": "Sumo Steak",
+    "price": "",
+    "section": "Signature Bowls + Salads"
+   },
+   {
+    "name": "Roasted Salmon",
+    "price": "",
+    "section": "Signature Bowls + Salads"
+   },
+   {
+    "name": "Spicy Shrimp",
+    "price": "",
+    "section": "Signature Bowls + Salads"
+   },
+   {
+    "name": "Spicy Salmon Poke",
+    "price": "",
+    "section": "Signature Bowls + Salads"
+   },
+   {
+    "name": "Salmon Poke",
+    "price": "",
+    "section": "Signature Bowls + Salads"
+   },
+   {
+    "name": "Philly",
+    "price": "",
+    "section": "Signature Bowls + Salads"
+   },
+   {
+    "name": "Tofu Thai Crunch Salad",
+    "price": "",
+    "section": "Signature Bowls + Salads"
+   },
+   {
+    "name": "Salmon Superfood Salad",
+    "price": "",
+    "section": "Signature Bowls + Salads"
+   },
+   {
+    "name": "California",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Shrimp Tempura Tiger",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Steakhouse",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Spicy Tuna",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Rainbow",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Spicy Salmon",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Roasted Salmon Crunch",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Chicken Crunch",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Philly",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Toasted Tofumami",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Pb & J",
+    "price": "",
+    "section": "Signature 10-Piece Sushi Rolls"
+   },
+   {
+    "name": "Miso Soup",
+    "price": "",
+    "section": "Signature Sides"
+   },
+   {
+    "name": "Edamame",
+    "price": "",
+    "section": "Signature Sides"
+   },
+   {
+    "name": "Spicy Edamame",
+    "price": "",
+    "section": "Signature Sides"
+   },
+   {
+    "name": "Gyoza (Potstickers)",
+    "price": "",
+    "section": "Signature Sides"
+   },
+   {
+    "name": "Seaweed Salad",
+    "price": "",
+    "section": "Signature Sides"
+   },
+   {
+    "name": "Cucumber Salad",
+    "price": "",
+    "section": "Signature Sides"
+   },
+   {
+    "name": "Carrot-Ginger Salad",
+    "price": "",
+    "section": "Signature Sides"
+   },
+   {
+    "name": "Bento Box",
+    "price": "",
+    "section": "Kids Menu"
+   },
+   {
+    "name": "Kid’s Bowl",
+    "price": "",
+    "section": "Kids Menu"
+   },
+   {
+    "name": "Mango Sticky Rice",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Mochi Love",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Mango",
+    "price": "",
+    "section": "Beverages"
+   },
+   {
+    "name": "Lemonade",
+    "price": "",
+    "section": "Beverages"
+   },
+   {
+    "name": "Strawberry Dragonfruit",
+    "price": "",
+    "section": "Beverages"
+   },
+   {
+    "name": "Organic Black Tea (Unsweet)",
+    "price": "",
+    "section": "Beverages"
+   },
+   {
+    "name": "Organic Green Tea (Unsweet)",
+    "price": "",
+    "section": "Beverages"
+   },
+   {
+    "name": "Watermelon Mint",
+    "price": "",
+    "section": "Beverages"
+   }
+  ]
+ }
+}

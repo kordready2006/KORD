@@ -6563,5 +6563,170 @@
     "section": "Coffee"
    }
   ]
+ },
+ "findlay|STIX Restaurant": {
+  "source": "https://www.stixfindlay.com/s/MAY2025.pdf",
+  "items": [
+   {
+    "name": "Hot Stone Bibimbap",
+    "price": "",
+    "section": "Main"
+   },
+   {
+    "name": "Stix Fil-A Fried Chicken Sandwich",
+    "price": "$16",
+    "section": "Main"
+   },
+   {
+    "name": "Sake Fried Chicken",
+    "price": "$25",
+    "section": "Main"
+   },
+   {
+    "name": "Squid Ink Lo Mein Noodles",
+    "price": "",
+    "section": "Main"
+   },
+   {
+    "name": "Hawaiian Ahi Tuna Poké",
+    "price": "$26",
+    "section": "Main"
+   },
+   {
+    "name": "Kimchi-Bacon Fried Rice",
+    "price": "",
+    "section": "Main"
+   },
+   {
+    "name": "Duck",
+    "price": "$33",
+    "section": "Main"
+   },
+   {
+    "name": "Pan-Seared Scallops",
+    "price": "$35",
+    "section": "Main"
+   },
+   {
+    "name": "Chiang Mai Red Curry",
+    "price": "",
+    "section": "Main"
+   },
+   {
+    "name": "Surf and Turf",
+    "price": "$85",
+    "section": "Main"
+   },
+   {
+    "name": "Dry Aged Bone-In Ribeye 16Oz",
+    "price": "$58",
+    "section": "Main"
+   },
+   {
+    "name": "Ny Strip 16 Oz",
+    "price": "$49",
+    "section": "Main"
+   },
+   {
+    "name": "Sirloin Filet 8Oz",
+    "price": "$32",
+    "section": "Main"
+   },
+   {
+    "name": "Edamame",
+    "price": "$8",
+    "section": "Starters"
+   },
+   {
+    "name": "Fries",
+    "price": "$8",
+    "section": "Starters"
+   },
+   {
+    "name": "Crispy Brussels",
+    "price": "$14",
+    "section": "Starters"
+   },
+   {
+    "name": "Red Curry Mussels",
+    "price": "$17",
+    "section": "Starters"
+   },
+   {
+    "name": "Bao Buns Bento (2 or 4)",
+    "price": "$12",
+    "section": "Starters"
+   },
+   {
+    "name": "Charred Spanish Octopus",
+    "price": "$16",
+    "section": "Starters"
+   },
+   {
+    "name": "Ahi Tuna Tataki Crudo",
+    "price": "$18",
+    "section": "Starters"
+   },
+   {
+    "name": "Burrata and Toast",
+    "price": "$14",
+    "section": "Starters"
+   },
+   {
+    "name": "Yaki Oyster",
+    "price": "$16",
+    "section": "Starters"
+   },
+   {
+    "name": "Ahi-Tuna Wonton Nachos",
+    "price": "$18",
+    "section": "Starters"
+   },
+   {
+    "name": "Broccolini",
+    "price": "$12",
+    "section": "Starters"
+   },
+   {
+    "name": "Miso Green Beans",
+    "price": "$10",
+    "section": "Starters"
+   },
+   {
+    "name": "Wedge",
+    "price": "$13",
+    "section": "Greens"
+   },
+   {
+    "name": "Thai Chopped Salad",
+    "price": "$13",
+    "section": "Greens"
+   },
+   {
+    "name": "Stix’ Salad",
+    "price": "$7",
+    "section": "Greens"
+   },
+   {
+    "name": "Burrata and Beet Salad",
+    "price": "$14",
+    "section": "Greens"
+   },
+   {
+    "name": "Creme Brûlée Tasting",
+    "price": "$15",
+    "section": "Desserts"
+   },
+   {
+    "name": "Bananas Foster with Dietsch’s Vanilla Ice Cream",
+    "price": "$14",
+    "section": "Desserts"
+   },
+   {
+    "name": "Espresso and Icecream",
+    "price": "$6",
+    "section": "Desserts"
+   }
+  ]
  }
 }

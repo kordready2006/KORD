@@ -1,4 +1,399 @@
 {
+ "athens|Bagel Street Deli": {
+  "source": "https://www.order-bsd.com/uploads/b/767ad490-f682-11ea-b7f7-0b32e7ad992b/b3aa31a0-86c9-11f1-8959-95224b132030.pdf",
+  "items": [
+   {
+    "name": "OU Bagel",
+    "price": "$7.75",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Tomacco",
+    "price": "$8.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Chris Farley",
+    "price": "$6.75",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Banana Peel",
+    "price": "$6.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Long Bomb",
+    "price": "$9.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Big-A-Bagel",
+    "price": "$10.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Bada Bing",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Provo n Sauce",
+    "price": "$7.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Pizza Bagel",
+    "price": "$8.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Caribbean Queen",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "BBQ Tofu",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Baked Wu",
+    "price": "$9.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Tofubien",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Smoked Tofu",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Nature Nurture",
+    "price": "$8.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Pick of the Planet",
+    "price": "$7.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Korey’s Club",
+    "price": "$9.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Sunny Hummus",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Popeye’s Pleasure",
+    "price": "$8.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Feta is Betta",
+    "price": "$7.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Kimmie Gibbler",
+    "price": "$8.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Nyc",
+    "price": "$9.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Fowl Shot",
+    "price": "$9.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Athens",
+    "price": "$8.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Debbie Debbie Debbie",
+    "price": "$7.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Hammond Swiss",
+    "price": "$8.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Southfork Ranch",
+    "price": "$10.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Reuben",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Yo Mama",
+    "price": "$10.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Lyle Loves It",
+    "price": "$8.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Turkey Reuben",
+    "price": "$8.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Phabulous Franks",
+    "price": "$10.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Mr. Meat",
+    "price": "$10.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Wendy’s Way",
+    "price": "$9.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Flaming Moe",
+    "price": "$10.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Beekman’s",
+    "price": "$10.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Ritter’s Meat",
+    "price": "$10.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Ping’s Pursuit",
+    "price": "$10.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Blt",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Kim’s Kraving",
+    "price": "$10.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Con’s Chicken Salad",
+    "price": "$10.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Bananarama",
+    "price": "$5.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Muenster Mash",
+    "price": "$9.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Caruso Pretzel",
+    "price": "$9.75",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Phishwich Melt",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Chixadelic Melt",
+    "price": "$9.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Balls Deep",
+    "price": "$10.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Portabellicious",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Kevorkian",
+    "price": "$10.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Bobcat",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Seinfeld’s Secret",
+    "price": "$10.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Tom’s Well Hung",
+    "price": "$10.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Mike’s Morning Meat",
+    "price": "$11.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Tom’s Turkey",
+    "price": "$8.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Swan Brooner",
+    "price": "$7.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Bluenana",
+    "price": "$5.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Funguy Porter",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "The Pavlov",
+    "price": "$10.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Larry David",
+    "price": "$9.75",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Maude’s Meatball",
+    "price": "$8.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Bobo",
+    "price": "$5.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Ray Pruitt",
+    "price": "$7.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Mihami Vice",
+    "price": "$8.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Abe Froman",
+    "price": "$8.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Gus’s Tuna Salad",
+    "price": "$9.00",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "The Soprano",
+    "price": "$9.75",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Zesty Chick",
+    "price": "$10.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Mother Clucker",
+    "price": "$10.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Morning After",
+    "price": "$8.50",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Chicken Caprese",
+    "price": "$10.25",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "MacGyger",
+    "price": "$9.75",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "The Athens Crunch",
+    "price": "$8.75",
+    "section": "Bagelwiches"
+   },
+   {
+    "name": "Chocolate Chip Cookie",
+    "price": "$2.25",
+    "section": "Sweets"
+   },
+   {
+    "name": "Italian",
+    "price": "$9.25",
+    "section": "Salads"
+   },
+   {
+    "name": "Greek",
+    "price": "$8.25",
+    "section": "Salads"
+   },
+   {
+    "name": "Chef",
+    "price": "$9.25",
+    "section": "Salads"
+   },
+   {
+    "name": "Caesar",
+    "price": "$7.25",
+    "section": "Salads"
+   },
+   {
+    "name": "Cobb",
+    "price": "$8.75",
+    "section": "Salads"
+   }
+  ]
+ },
  "athens|Bakery 323": {
   "source": "https://www.bakery323.com/menu-1",
   "items": [
@@ -346,6 +741,296 @@
     "name": "Thanksgiving Variety Pack",
     "price": "$16.99 / $28.99",
     "section": "Fall Specialties"
+   }
+  ]
+ },
+ "athens|Brenen's Coffee Cafe": {
+  "source": "https://www.brenens.com/menu",
+  "items": [
+   {
+    "name": "Miami Gobbler",
+    "price": "",
+    "section": "Turkey"
+   },
+   {
+    "name": "Turkey BLT",
+    "price": "",
+    "section": "Turkey"
+   },
+   {
+    "name": "Turkey Rueben",
+    "price": "",
+    "section": "Turkey"
+   },
+   {
+    "name": "Gobbler Deluxe",
+    "price": "",
+    "section": "Turkey"
+   },
+   {
+    "name": "Georgian Rueben",
+    "price": "",
+    "section": "Turkey"
+   },
+   {
+    "name": "Chicken SanteFe",
+    "price": "",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Caesar",
+    "price": "",
+    "section": "Chicken"
+   },
+   {
+    "name": "Jessica’s Chicken",
+    "price": "",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Melt",
+    "price": "",
+    "section": "Chicken"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "",
+    "section": "Chicken"
+   },
+   {
+    "name": "Spring Break",
+    "price": "",
+    "section": "House Made Chicken & Tuna Salad"
+   },
+   {
+    "name": "Road Trip",
+    "price": "",
+    "section": "House Made Chicken & Tuna Salad"
+   },
+   {
+    "name": "Tuna Time",
+    "price": "",
+    "section": "House Made Chicken & Tuna Salad"
+   },
+   {
+    "name": "Cookie’s Chicken",
+    "price": "",
+    "section": "House Made Chicken & Tuna Salad"
+   },
+   {
+    "name": "Bobcat",
+    "price": "",
+    "section": "Ham, Beef, & Bacon"
+   },
+   {
+    "name": "Court Street Ham",
+    "price": "",
+    "section": "Ham, Beef, & Bacon"
+   },
+   {
+    "name": "Blt",
+    "price": "",
+    "section": "Ham, Beef, & Bacon"
+   },
+   {
+    "name": "Josh’s Corned Beef Rueben",
+    "price": "",
+    "section": "Ham, Beef, & Bacon"
+   },
+   {
+    "name": "California Veggie",
+    "price": "",
+    "section": "Veggies & Clubs"
+   },
+   {
+    "name": "Greek Veggie",
+    "price": "",
+    "section": "Veggies & Clubs"
+   },
+   {
+    "name": "Mediterranean Hummus",
+    "price": "",
+    "section": "Veggies & Clubs"
+   },
+   {
+    "name": "Chipotle Club",
+    "price": "",
+    "section": "Veggies & Clubs"
+   },
+   {
+    "name": "Triple Crown",
+    "price": "",
+    "section": "Veggies & Clubs"
+   },
+   {
+    "name": "Italian Club",
+    "price": "",
+    "section": "Veggies & Clubs"
+   },
+   {
+    "name": "Tomato Pesto Melt",
+    "price": "",
+    "section": "Paninis"
+   },
+   {
+    "name": "Italian Stallion",
+    "price": "",
+    "section": "Paninis"
+   },
+   {
+    "name": "Peppered Turkey",
+    "price": "",
+    "section": "Paninis"
+   },
+   {
+    "name": "Philly Melt",
+    "price": "",
+    "section": "Paninis"
+   },
+   {
+    "name": "Skinny Mexicana",
+    "price": "",
+    "section": "Lo-Cal Menu"
+   },
+   {
+    "name": "Hawaiian Ham",
+    "price": "",
+    "section": "Lo-Cal Menu"
+   },
+   {
+    "name": "Lo-Cal Italian",
+    "price": "",
+    "section": "Lo-Cal Menu"
+   },
+   {
+    "name": "Garden Turkey",
+    "price": "",
+    "section": "Lo-Cal Menu"
+   },
+   {
+    "name": "Healthy Hummus",
+    "price": "",
+    "section": "Lo-Cal Menu"
+   },
+   {
+    "name": "Zach’s Egg & Cheese",
+    "price": "",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Meat, Egg, & Cheese",
+    "price": "",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Egg & Cheese El Paso",
+    "price": "",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Burrito Deluxe",
+    "price": "",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Triple Special",
+    "price": "",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Muffins",
+    "price": "",
+    "section": "Bakery"
+   },
+   {
+    "name": "Danishes",
+    "price": "",
+    "section": "Bakery"
+   },
+   {
+    "name": "Cinnamon Rolls",
+    "price": "",
+    "section": "Bakery"
+   },
+   {
+    "name": "Cinnamon Coffee Cake",
+    "price": "",
+    "section": "Bakery"
+   },
+   {
+    "name": "Cookies",
+    "price": "",
+    "section": "Bakery"
+   },
+   {
+    "name": "Scones",
+    "price": "",
+    "section": "Bakery"
+   },
+   {
+    "name": "Turnovers",
+    "price": "",
+    "section": "Bakery"
+   },
+   {
+    "name": "Bagels",
+    "price": "",
+    "section": "Bakery"
+   },
+   {
+    "name": "Milkyway",
+    "price": "",
+    "section": "Specialty Espresso Drinks"
+   },
+   {
+    "name": "Peppermint Patty",
+    "price": "",
+    "section": "Specialty Espresso Drinks"
+   },
+   {
+    "name": "Caramel Latte",
+    "price": "",
+    "section": "Specialty Espresso Drinks"
+   },
+   {
+    "name": "Nutty Irishman",
+    "price": "",
+    "section": "Specialty Espresso Drinks"
+   },
+   {
+    "name": "Cinnamon Mocha",
+    "price": "",
+    "section": "Specialty Espresso Drinks"
+   },
+   {
+    "name": "Highlander",
+    "price": "",
+    "section": "Specialty Espresso Drinks"
+   },
+   {
+    "name": "Frozen Mocha",
+    "price": "",
+    "section": "Frozen Drinks"
+   },
+   {
+    "name": "Frozen Cappuccino",
+    "price": "",
+    "section": "Frozen Drinks"
+   },
+   {
+    "name": "Frozen Caramel Cappuccino",
+    "price": "",
+    "section": "Frozen Drinks"
+   },
+   {
+    "name": "Frozen Hot Chocolate",
+    "price": "",
+    "section": "Frozen Drinks"
+   },
+   {
+    "name": "Frosted Lemonade",
+    "price": "",
+    "section": "Frozen Drinks"
    }
   ]
  },
@@ -1411,6 +2096,206 @@
     "name": "House",
     "price": "$2.99 / $4.99",
     "section": "Salads"
+   }
+  ]
+ },
+ "athens|Fluff Bakery": {
+  "source": "https://fluffbakery.com/current-food-menu",
+  "items": [
+   {
+    "name": "Egg and Cheese",
+    "price": "$6.50",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Chorizo",
+    "price": "$9.50",
+    "section": "Scramblers"
+   },
+   {
+    "name": "Smokey BBQ Tofu",
+    "price": "$9.50",
+    "section": "Scramblers"
+   },
+   {
+    "name": "Bacon, Egg and Cheese",
+    "price": "$7.75",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "House Veggie",
+    "price": "$9.50",
+    "section": "Scramblers"
+   },
+   {
+    "name": "Hummus, Egg and Cheese",
+    "price": "$7.75",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "The Fluffhead",
+    "price": "$7.75",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Toasted Bagel or Biscuit",
+    "price": "$4.50",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Drip Coffee",
+    "price": "$2.50 / $2.75",
+    "section": "Espresso and Specialty Drinks"
+   },
+   {
+    "name": "Chorizo and Potato Tacos",
+    "price": "$9.75",
+    "section": "Breakfast Tacos"
+   },
+   {
+    "name": "House Veggie Tacos",
+    "price": "$9.75",
+    "section": "Breakfast Tacos"
+   },
+   {
+    "name": "Veggie Breakfast Burrito",
+    "price": "$9.75",
+    "section": "Breakfast Burritos"
+   },
+   {
+    "name": "Vegan Burrito",
+    "price": "$9.75",
+    "section": "Breakfast Burritos"
+   },
+   {
+    "name": "BBQ Tofu Burrito",
+    "price": "$10.00",
+    "section": "Breakfast Burritos"
+   },
+   {
+    "name": "Chorizo and Potato Burrito",
+    "price": "$10.00",
+    "section": "Breakfast Burritos"
+   },
+   {
+    "name": "Latte/Cappuccino",
+    "price": "$4.50 / $5.50",
+    "section": "Espresso and Specialty Drinks"
+   },
+   {
+    "name": "Mocha",
+    "price": "$4.75 / $5.75",
+    "section": "Espresso and Specialty Drinks"
+   },
+   {
+    "name": "Chai Tea Latte",
+    "price": "$5.75",
+    "section": "Espresso and Specialty Drinks"
+   },
+   {
+    "name": "Tea Latte",
+    "price": "$4.75 / $5.75",
+    "section": "Espresso and Specialty Drinks"
+   },
+   {
+    "name": "Traincatcher",
+    "price": "$4.75 / $5.75",
+    "section": "Espresso and Specialty Drinks"
+   },
+   {
+    "name": "Toddy",
+    "price": "$3.50 / $4.50",
+    "section": "Espresso and Specialty Drinks"
+   },
+   {
+    "name": "Iced Coffee",
+    "price": "$3.00 / $4.00",
+    "section": "Espresso and Specialty Drinks"
+   },
+   {
+    "name": "Zesty Green Iced Tea",
+    "price": "$3.00",
+    "section": "Espresso and Specialty Drinks"
+   },
+   {
+    "name": "Milks and Orange Juice",
+    "price": "$3.00 / $4.00",
+    "section": "Espresso and Specialty Drinks"
+   },
+   {
+    "name": "Thai Bowl",
+    "price": "$12.75",
+    "section": "Rice Bowls"
+   },
+   {
+    "name": "Seasonal Quinoa Salad",
+    "price": "$10.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Yellow Curry Bowl",
+    "price": "$12.75",
+    "section": "Rice Bowls"
+   },
+   {
+    "name": "Banh Mi (inspired) Bowl",
+    "price": "$12.75",
+    "section": "Rice Bowls"
+   },
+   {
+    "name": "BBQ Chicken wrap",
+    "price": "$9.50",
+    "section": "Wraps"
+   },
+   {
+    "name": "The Greenery",
+    "price": "$9.25",
+    "section": "Salads"
+   },
+   {
+    "name": "Buffalo Chicken Salad",
+    "price": "$11.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Scrambled Eggs",
+    "price": "$4.00",
+    "section": "Sides"
+   },
+   {
+    "name": "Roasted Potatoes",
+    "price": "$3.50",
+    "section": "Sides"
+   },
+   {
+    "name": "Bacon",
+    "price": "$4.50",
+    "section": "Sides"
+   },
+   {
+    "name": "Cheddar Biscuit",
+    "price": "$3.50",
+    "section": "Sides"
+   },
+   {
+    "name": "Side Salad",
+    "price": "$5.00",
+    "section": "Sides"
+   },
+   {
+    "name": "Steamed Veggies & Rice",
+    "price": "$6.00",
+    "section": "Sides"
+   },
+   {
+    "name": "Buffalo Chicken Wrap",
+    "price": "$9.50",
+    "section": "Wraps"
+   },
+   {
+    "name": "Thai Peanut Wrap",
+    "price": "$9.50",
+    "section": "Wraps"
    }
   ]
  },
