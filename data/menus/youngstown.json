@@ -2148,5 +2148,450 @@
     "section": "à la cart Sides"
    }
   ]
+ },
+ "youngstown|SpaceKat Barbeque": {
+  "source": "https://spacekatbbq.com/ourmenu/",
+  "items": [
+   {
+    "name": "Akaushi Tri Tip",
+    "price": "$54.00",
+    "section": "BBQ By The Pound"
+   },
+   {
+    "name": "Choice Tri Tip",
+    "price": "$34.00",
+    "section": "BBQ By The Pound"
+   },
+   {
+    "name": "Lamb Rack",
+    "price": "$48.00",
+    "section": "BBQ By The Pound"
+   },
+   {
+    "name": "Coppa",
+    "price": "$32.00",
+    "section": "BBQ By The Pound"
+   },
+   {
+    "name": "Baby Back Ribs Half Rack",
+    "price": "$19.00",
+    "section": "BBQ By The Pound"
+   },
+   {
+    "name": "Baby Back Ribs Full Rack",
+    "price": "$38.00",
+    "section": "BBQ By The Pound"
+   },
+   {
+    "name": "Hot Link",
+    "price": "$5.00",
+    "section": "BBQ By The Pound"
+   },
+   {
+    "name": "Chicken Thigh",
+    "price": "$4.00",
+    "section": "BBQ By The Pound"
+   },
+   {
+    "name": "Pimento Popper",
+    "price": "$4.00",
+    "section": "BBQ By The Pound"
+   },
+   {
+    "name": "Hawaiian Rolls",
+    "price": "$0.50",
+    "section": "BBQ By The Pound"
+   },
+   {
+    "name": "Tri Tip",
+    "price": "$16.00",
+    "section": "Sandos"
+   },
+   {
+    "name": "Coppa",
+    "price": "$14.00",
+    "section": "Sandos"
+   },
+   {
+    "name": "Coleslaw",
+    "price": "$3.00",
+    "section": "Sides"
+   },
+   {
+    "name": "Potato Salad",
+    "price": "$3.00",
+    "section": "Sides"
+   },
+   {
+    "name": "Cowboy Beans",
+    "price": "$3.00",
+    "section": "Sides"
+   },
+   {
+    "name": "Mac & Cheese",
+    "price": "$3.00",
+    "section": "Sides"
+   },
+   {
+    "name": "Chocolate Mousse",
+    "price": "$5.00",
+    "section": "Dessert"
+   }
+  ]
+ },
+ "youngstown|Mocha House Downtown": {
+  "source": "https://mochahouse.com/wp-content/uploads/2026/07/Youngstown-Mocha-House-Menu.pdf",
+  "items": [
+   {
+    "name": "All American Sampler",
+    "price": "$8.50",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Egg & Cheese Croissant",
+    "price": "$9.50",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Mediterranean Skillet",
+    "price": "$11.49",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Traditional Eggs Benedict",
+    "price": "$10.99",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Pancakes / French Toast (3)",
+    "price": "$7.99",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Short Stack Pancakes / French Toast (2)",
+    "price": "$6.50",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Belgian Waffle",
+    "price": "$8.99",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Mocha Banana Waffle",
+    "price": "$10.99",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Banana Nut Bread French Toast",
+    "price": "$10.99",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Fried Chicken Benedict",
+    "price": "$13.99",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Fruit & Yogurt Parfait",
+    "price": "$5.25",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "French Toast Breakfast Sammie",
+    "price": "$10.99",
+    "section": "Breakfast Favorites"
+   },
+   {
+    "name": "Cheese Omelet",
+    "price": "$10.49",
+    "section": "Omelets"
+   },
+   {
+    "name": "Greek Omelet",
+    "price": "$10.99",
+    "section": "Omelets"
+   },
+   {
+    "name": "Ham & Cheese Omelet",
+    "price": "$11.49",
+    "section": "Omelets"
+   },
+   {
+    "name": "Gyro Omelet",
+    "price": "$11.49",
+    "section": "Omelets"
+   },
+   {
+    "name": "Western Omelet",
+    "price": "$11.49",
+    "section": "Omelets"
+   },
+   {
+    "name": "Sausage & Cheese Omelet",
+    "price": "$11.49",
+    "section": "Omelets"
+   },
+   {
+    "name": "Mexican Chicken Omelet",
+    "price": "$13.00",
+    "section": "Omelets"
+   },
+   {
+    "name": "Mocha Omelet",
+    "price": "$11.49",
+    "section": "Omelets"
+   },
+   {
+    "name": "Roasted Red Pepper & Spinach Omelet",
+    "price": "$10.99",
+    "section": "Omelets"
+   },
+   {
+    "name": "Garden Veggie Omelet",
+    "price": "$10.99",
+    "section": "Omelets"
+   },
+   {
+    "name": "Bacon & Cheese Omelet",
+    "price": "$11.49",
+    "section": "Omelets"
+   },
+   {
+    "name": "Mushroom & Swiss Cheese Omelet",
+    "price": "$10.99",
+    "section": "Omelets"
+   },
+   {
+    "name": "Veggie Quesadilla",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Quesadilla",
+    "price": "$10.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Gyro Quesadilla",
+    "price": "$10.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mozzarella Sticks",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Grilled Pita Wedges & Hummus",
+    "price": "$5.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Gyro Salad",
+    "price": "$12.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "House Salad",
+    "price": "$6.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Chef Salad",
+    "price": "$9.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Spinach Salad",
+    "price": "$10.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Greek Salad",
+    "price": "$9.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Chicken Caesar Deluxe Salad",
+    "price": "$13.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Chicken In The Garden",
+    "price": "$12.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Strawberry Walnut Chicken Salad",
+    "price": "$13.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Chicken Cobb Salad",
+    "price": "$13.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Cranberry Gorgonzola Chicken Salad",
+    "price": "$13.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Trio Platter",
+    "price": "$9.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Light & Healthy",
+    "price": "$13.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Soup Du Jour",
+    "price": "$3.75",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Chili of the Day",
+    "price": "$3.99",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Sub Italiano",
+    "price": "$9.49",
+    "section": "Cold Sandwiches"
+   },
+   {
+    "name": "The Mocha Club",
+    "price": "$9.49",
+    "section": "Cold Sandwiches"
+   },
+   {
+    "name": "Ham & Swiss Croissant",
+    "price": "$9.49",
+    "section": "Cold Sandwiches"
+   },
+   {
+    "name": "Turkey & Cheddar Croissant",
+    "price": "$9.49",
+    "section": "Cold Sandwiches"
+   },
+   {
+    "name": "Chicken Walnut Croissant",
+    "price": "$9.49",
+    "section": "Cold Sandwiches"
+   },
+   {
+    "name": "Tuna Salad Croissant",
+    "price": "$9.49",
+    "section": "Cold Sandwiches"
+   },
+   {
+    "name": "Turkey & Swiss on Wheat",
+    "price": "$9.49",
+    "section": "Cold Sandwiches"
+   },
+   {
+    "name": "Loaded Greek Wrap",
+    "price": "$9.49",
+    "section": "Cold Sandwiches"
+   },
+   {
+    "name": "Mega Reuben",
+    "price": "$14.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Grilled Chicken Sandwich",
+    "price": "$10.49",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Gyro",
+    "price": "$10.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Fish Sandwich",
+    "price": "$10.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Fish Schooner",
+    "price": "$11.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Sicilian Melt",
+    "price": "$10.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "BLT",
+    "price": "$9.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Roast Beef or Chicken Mario Melt",
+    "price": "$12.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Crispy Fried Chicken Sandwich",
+    "price": "$11.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Bacon Chicken Melt",
+    "price": "$10.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "BBQ Chicken Cheddar Wrap",
+    "price": "$10.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Jumbo Meatball Sub",
+    "price": "$11.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Chicken Souvlaki Sandwich",
+    "price": "$10.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "California Wrap",
+    "price": "$9.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Pot Roast Melt",
+    "price": "$12.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Chicken & Italian Greens",
+    "price": "$11.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Sloppy Joe Grilled Cheese",
+    "price": "$12.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Marty’s Tuna Melt",
+    "price": "$10.99",
+    "section": "Hot Sandwich Platters"
+   },
+   {
+    "name": "Strawberry Chicken Feta Wrap",
+    "price": "$10.99",
+    "section": "Hot Sandwich Platters"
+   }
+  ]
  }
 }

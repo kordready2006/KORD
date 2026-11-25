@@ -4886,31 +4886,6 @@
     "name": "Rosie's Apple Pizza",
     "price": "$7.99",
     "section": "Desserts"
-   },
-   {
-    "name": "Bbq fire",
-    "price": "$0.99",
-    "section": "Ketchup"
-   },
-   {
-    "name": "Mild sauce",
-    "price": "$0.99",
-    "section": "Ketchup"
-   },
-   {
-    "name": "Spicy Gold",
-    "price": "$0.99",
-    "section": "Ketchup"
-   },
-   {
-    "name": "Spicy Garlic",
-    "price": "$0.99",
-    "section": "Ketchup"
-   },
-   {
-    "name": "Garlic Parmesan",
-    "price": "$0.99",
-    "section": "Ketchup"
    }
   ]
  },
@@ -6361,6 +6336,436 @@
     "name": "Hot Cocoa",
     "price": "",
     "section": "Our Cafe"
+   }
+  ]
+ },
+ "kent|Taco Tontos": {
+  "source": "https://www.tacotontoskent.com/menu",
+  "items": [
+   {
+    "name": "El Biggo Nacho Tray",
+    "price": "$8.00",
+    "section": "Starters"
+   },
+   {
+    "name": "Street Corn Nachos",
+    "price": "$10.00",
+    "section": "Starters"
+   },
+   {
+    "name": "Pork Nachos",
+    "price": "$15.00",
+    "section": "Starters"
+   },
+   {
+    "name": "Quesadilla",
+    "price": "$6.00",
+    "section": "Starters"
+   },
+   {
+    "name": "Pizzarito",
+    "price": "$4.00",
+    "section": "Starters"
+   },
+   {
+    "name": "Pineapple Pizzarito",
+    "price": "$5.00",
+    "section": "Starters"
+   },
+   {
+    "name": "Molly’s Carrot Queso",
+    "price": "$8.00",
+    "section": "Starters"
+   },
+   {
+    "name": "Chorizo Queso",
+    "price": "$8.00",
+    "section": "Starters"
+   },
+   {
+    "name": "Dips",
+    "price": "$5.00",
+    "section": "Starters"
+   },
+   {
+    "name": "Dip Sampler",
+    "price": "$12.00",
+    "section": "Starters"
+   },
+   {
+    "name": "House Fried Chips",
+    "price": "$2.00",
+    "section": "Starters"
+   },
+   {
+    "name": "Barbacoa",
+    "price": "$6.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Chicken",
+    "price": "$6.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Beef",
+    "price": "$6.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Pork",
+    "price": "$6.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Chorizo",
+    "price": "$6.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Combo",
+    "price": "$6.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Bean",
+    "price": "$5.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Rice & Bean",
+    "price": "$5.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Potato",
+    "price": "$5.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Sweet Potato",
+    "price": "$5.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Cheese",
+    "price": "$5.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Two Layer Taco",
+    "price": "",
+    "section": "Tacos"
+   },
+   {
+    "name": "Taco Salad",
+    "price": "",
+    "section": "Tacos"
+   },
+   {
+    "name": "Barbacoa",
+    "price": "$7.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Chicken",
+    "price": "$7.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Beef",
+    "price": "$7.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Pork",
+    "price": "$7.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Chorizo",
+    "price": "$7.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Combo",
+    "price": "$7.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Bean",
+    "price": "$6.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Potato",
+    "price": "$6.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Sweet Potato",
+    "price": "$6.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Rice & Bean",
+    "price": "$6.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Cheese",
+    "price": "$6.00",
+    "section": "Tostadas"
+   },
+   {
+    "name": "Walking Taco",
+    "price": "$7.00",
+    "section": "Walking Taco"
+   },
+   {
+    "name": "Barbacoa",
+    "price": "$11.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Chicken",
+    "price": "$10.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Beef",
+    "price": "$10.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Combo",
+    "price": "$10.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Chorizo",
+    "price": "$10.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Pork",
+    "price": "$10.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "BLT",
+    "price": "$10.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Bacon Cheeseburgerito",
+    "price": "$12.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Chicken Bacon Ranch",
+    "price": "$12.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Rice & Bean",
+    "price": "$9.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Sweet Potato",
+    "price": "$9.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Bean",
+    "price": "$9.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Potato",
+    "price": "$9.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Uncle Mo",
+    "price": "$11.00",
+    "section": "Burritos"
+   },
+   {
+    "name": "Single Enchilada",
+    "price": "$8.00",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Half Quesadilla",
+    "price": "$5.00",
+    "section": "Kids Menu"
+   },
+   {
+    "name": "Baby Burrito",
+    "price": "$7.00",
+    "section": "Kids Menu"
+   }
+  ]
+ },
+ "kent|157 Lounge": {
+  "source": "https://static.wixstatic.com/media/68e6a7_20615e5e86b448bdaac6d67474aca99f~mv2.jpg",
+  "items": [
+   {
+    "name": "CALIFORNA ROLL",
+    "price": "$7.00",
+    "section": "Sushi Menu"
+   },
+   {
+    "name": "PHILADELPHIA ROLL",
+    "price": "$7.00",
+    "section": "Sushi Menu"
+   },
+   {
+    "name": "TIGER ROLL",
+    "price": "$9.00",
+    "section": "Sushi Menu"
+   },
+   {
+    "name": "DRAGON ROLL",
+    "price": "$9.00",
+    "section": "Sushi Menu"
+   },
+   {
+    "name": "SPICY TUNA ROLL",
+    "price": "$7.00",
+    "section": "Sushi Menu"
+   },
+   {
+    "name": "BANZAI ROLL",
+    "price": "$9.00",
+    "section": "Sushi Menu"
+   }
+  ]
+ },
+ "kent|Maddalena's": {
+  "source": "https://maddalenaskent.com/wp-content/uploads/2026/10/Maddalenas-FoodMenu-OCT2026.pdf",
+  "items": [
+   {
+    "name": "WARM OLIVES & PROSCIUTTO",
+    "price": "$11.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "MINESTRA MARITATA",
+    "price": "$10.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "FRITTO MISTO",
+    "price": "$18.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "MUSSELS",
+    "price": "$18.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "MEATBALLS",
+    "price": "$12.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "HOUSEMADE FOCACCIA",
+    "price": "$8.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "CAESAR SALAD",
+    "price": "$9.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "FARRO SALAD",
+    "price": "$14.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "KALE SALAD",
+    "price": "$10.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "MARGHERITA",
+    "price": "$17.00",
+    "section": "Pizza"
+   },
+   {
+    "name": "SPICY 'NDUJA E CIPOLLA",
+    "price": "$20.00",
+    "section": "Pizza"
+   },
+   {
+    "name": "MORTADELLA E PISTACHIO",
+    "price": "$20.00",
+    "section": "Pizza"
+   },
+   {
+    "name": "SPIANATA E SALAME PICCANTE",
+    "price": "$22.00",
+    "section": "Pizza"
+   },
+   {
+    "name": "ZUCCA E PROSCIUTTO",
+    "price": "$20.00",
+    "section": "Pizza"
+   },
+   {
+    "name": "FUNGHI",
+    "price": "$20.00",
+    "section": "Pizza"
+   },
+   {
+    "name": "RADIATORE CON ZUCCA",
+    "price": "$22.00",
+    "section": "Pasta"
+   },
+   {
+    "name": "LINGUINE ALLO SCOGLIO",
+    "price": "$28.00",
+    "section": "Pasta"
+   },
+   {
+    "name": "RICOTTA CAVATELLI",
+    "price": "$26.00",
+    "section": "Pasta"
+   },
+   {
+    "name": "RIGATONI ALLA ZOZZONA",
+    "price": "$26.00",
+    "section": "Pasta"
+   },
+   {
+    "name": "CHICKEN MILANESE",
+    "price": "$26.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "ROASTED DUCK LEG",
+    "price": "$36.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "BRAISED SHORT RIB",
+    "price": "$38.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "FISH OF THE MOMENT",
+    "price": "",
+    "section": "Entrees"
+   },
+   {
+    "name": "CIDER BRAISED PORK CHEEKS",
+    "price": "$30.00",
+    "section": "Entrees"
    }
   ]
  }
