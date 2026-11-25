@@ -393,5 +393,1760 @@
     "section": "Ice Cream"
    }
   ]
+ },
+ "youngstown|Looma Café": {
+  "source": "https://looma-cafe.res-discover.com/menu",
+  "items": [
+   {
+    "name": "Grilled Cheese",
+    "price": "$9.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Mississippi Melt",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Mushroom Melt",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Beef Egg & Cheese",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Egg & Cheese",
+    "price": "$11.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Lemon Parm Crunch",
+    "price": "$9.00",
+    "section": "Grab & Go"
+   },
+   {
+    "name": "Arugula & Almond Citrus",
+    "price": "$9.00",
+    "section": "Grab & Go"
+   },
+   {
+    "name": "Chickpea & Quinoa",
+    "price": "$5.00",
+    "section": "Grab & Go"
+   },
+   {
+    "name": "Overnight Oats",
+    "price": "$7.50",
+    "section": "Grab & Go"
+   },
+   {
+    "name": "Yogurt Parfait",
+    "price": "$7.50",
+    "section": "Grab & Go"
+   },
+   {
+    "name": "Espresso",
+    "price": "$3.00",
+    "section": "Coffee"
+   },
+   {
+    "name": "Americano",
+    "price": "$3.00",
+    "section": "Coffee"
+   },
+   {
+    "name": "Latte",
+    "price": "$4.25",
+    "section": "Coffee"
+   },
+   {
+    "name": "Cappuccino",
+    "price": "$4.25",
+    "section": "Coffee"
+   },
+   {
+    "name": "Cortado",
+    "price": "$4.00",
+    "section": "Coffee"
+   },
+   {
+    "name": "Mocha",
+    "price": "$4.75",
+    "section": "Coffee"
+   },
+   {
+    "name": "House Coffee",
+    "price": "$3.00",
+    "section": "Coffee"
+   },
+   {
+    "name": "Tomato Basil Bisque",
+    "price": "$7.00",
+    "section": "Soups"
+   },
+   {
+    "name": "Looma Chili",
+    "price": "$8.00",
+    "section": "Soups"
+   },
+   {
+    "name": "Chai Latte",
+    "price": "$4.25",
+    "section": "Specialty Drinks"
+   },
+   {
+    "name": "Matcha",
+    "price": "$4.25",
+    "section": "Specialty Drinks"
+   },
+   {
+    "name": "Loomanade",
+    "price": "$4.25",
+    "section": "Specialty Drinks"
+   },
+   {
+    "name": "Pure Cacao Elixir",
+    "price": "$4.75",
+    "section": "Specialty Drinks"
+   },
+   {
+    "name": "Golden Turmeric Latte",
+    "price": "$4.50",
+    "section": "Specialty Drinks"
+   },
+   {
+    "name": "Loose Leaf Tea",
+    "price": "$3.00",
+    "section": "Specialty Drinks"
+   },
+   {
+    "name": "Chocolate Pecan Cookie",
+    "price": "$2.50",
+    "section": "Sweet Treats"
+   },
+   {
+    "name": "Macaron",
+    "price": "$2.75",
+    "section": "Sweet Treats"
+   },
+   {
+    "name": "Affogato",
+    "price": "$6.00",
+    "section": "Sweet Treats"
+   }
+  ]
+ },
+ "youngstown|Yosteria": {
+  "source": "https://yosteria.com/menus/index.html",
+  "items": [
+   {
+    "name": "arancini",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "bistecca alla fiorentina",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "bresaola",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "cuoppo di calamari",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "focaccia",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "focaccia toscana",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "gnudi",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "Il calabrese",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "insalata caprese",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "olive siciliane",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "pane e olio",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "parmigiana",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "pasta alla norma",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "piesano",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "pistacchio lasagne",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "pizelle fritte napoletane",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "pizza rossa",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "peppers in oil",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "pollo Milanese",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "polpette",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "quattro formaggi",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "salsicce e patate",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "sfogliatella",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "vastiduzze siciliane",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   },
+   {
+    "name": "zeppole",
+    "price": "",
+    "section": "REGIONAL SELECTIONS"
+   }
+  ]
+ },
+ "youngstown|Cassese's MVR": {
+  "source": "https://www.youngstownmvr.com/menu",
+  "items": [
+   {
+    "name": "Italian Greens",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "MVR Italian Potatoes",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "MVR Fried Cheese",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mozzarella Sticks",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "MVR Hot Chips",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Hot Pepper Monica",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Breast Tenders",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Calamari",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Traditional Cheese Pizza",
+    "price": "",
+    "section": "MVR Pizza"
+   },
+   {
+    "name": "Margarita Pizza",
+    "price": "",
+    "section": "MVR Pizza"
+   },
+   {
+    "name": "Smoky Hollow Pizza",
+    "price": "",
+    "section": "MVR Pizza"
+   },
+   {
+    "name": "White with Hot Peppers Pizza",
+    "price": "",
+    "section": "MVR Pizza"
+   },
+   {
+    "name": "5 Cheese White Pizza",
+    "price": "",
+    "section": "MVR Pizza"
+   },
+   {
+    "name": "Pat's Pizza",
+    "price": "",
+    "section": "MVR Pizza"
+   },
+   {
+    "name": "Caprese Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "MVR Chicken Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Fire Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "MVR Steak Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Meatball Splash",
+    "price": "",
+    "section": "MVR Sandwiches"
+   },
+   {
+    "name": "Penguin Burger Basket",
+    "price": "",
+    "section": "MVR Sandwiches"
+   },
+   {
+    "name": "Coach’s Cajun Chicken",
+    "price": "",
+    "section": "MVR Sandwiches"
+   },
+   {
+    "name": "SPS",
+    "price": "",
+    "section": "MVR Sandwiches"
+   },
+   {
+    "name": "Lefty Special",
+    "price": "",
+    "section": "MVR Sandwiches"
+   },
+   {
+    "name": "Italian Chicken Sandwich",
+    "price": "",
+    "section": "MVR Sandwiches"
+   },
+   {
+    "name": "Chicken Diablo",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Chicken Parmigiana",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Francesca’s Chicken",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Rajun Cajun Ravioli & Blackened Chicken",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Hells Shells",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Stuffed Shells",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Homemade Eggplant Parmigiana",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Veal Parmigiana",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Whitefish Diablo",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Linguine w/Clam Sauce",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Tuscan Whitefish",
+    "price": "",
+    "section": "MVR Favorites"
+   },
+   {
+    "name": "Spaghetti, Penne, or Angel Hair With Homemade Meatballs",
+    "price": "",
+    "section": "MVR Famous Pastas"
+   },
+   {
+    "name": "Cavatelli with Homemade Meatballs",
+    "price": "",
+    "section": "MVR Famous Pastas"
+   },
+   {
+    "name": "Spicy Bowties",
+    "price": "",
+    "section": "MVR Famous Pastas"
+   },
+   {
+    "name": "Pasta Alfredo",
+    "price": "",
+    "section": "MVR Famous Pastas"
+   },
+   {
+    "name": "Tressel Tortellini",
+    "price": "",
+    "section": "MVR Famous Pastas"
+   },
+   {
+    "name": "Cheese Ravioli",
+    "price": "",
+    "section": "MVR Famous Pastas"
+   },
+   {
+    "name": "GiGi’s Aglio Olio",
+    "price": "",
+    "section": "MVR Famous Pastas"
+   },
+   {
+    "name": "Carmine’s Pasta",
+    "price": "",
+    "section": "MVR Famous Pastas"
+   }
+  ]
+ },
+ "youngstown|The Varsity Club": {
+  "source": "https://www.varsityclubyoungstown.com/our-menu/",
+  "items": [
+   {
+    "name": "Jalapeno Poppers",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Breaded Cauliflower Wings",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Onion Rings",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Hot Chips Basket",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Fish Bites",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Peppers and Oil",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "VC Greens",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Pan Seared Ahi Tuna",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Reuben Egg Rolls",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Meat and Cheese Board",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Fried Green Tomatoes",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "VC Pretzel",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "House Salad",
+    "price": "",
+    "section": "Greens and Soup"
+   },
+   {
+    "name": "Grilled Caesar Salad",
+    "price": "",
+    "section": "Greens and Soup"
+   },
+   {
+    "name": "Soup of the Day",
+    "price": "",
+    "section": "Greens and Soup"
+   },
+   {
+    "name": "Hot Honey Chicken",
+    "price": "",
+    "section": "Sandos"
+   },
+   {
+    "name": "Reuben",
+    "price": "",
+    "section": "Sandos"
+   },
+   {
+    "name": "Haddock",
+    "price": "",
+    "section": "Sandos"
+   },
+   {
+    "name": "VC Chicken",
+    "price": "",
+    "section": "Sandos"
+   },
+   {
+    "name": "Pulled Pork Sandwich",
+    "price": "",
+    "section": "Sandos"
+   },
+   {
+    "name": "Steak Sandwich",
+    "price": "",
+    "section": "Sandos"
+   },
+   {
+    "name": "Chicken and Greens",
+    "price": "",
+    "section": "Sandos"
+   },
+   {
+    "name": "Bacon Burger",
+    "price": "",
+    "section": "Signature Burgers"
+   },
+   {
+    "name": "Vegan",
+    "price": "",
+    "section": "Signature Burgers"
+   },
+   {
+    "name": "Blackened Burger",
+    "price": "",
+    "section": "Signature Burgers"
+   },
+   {
+    "name": "The “Marty”",
+    "price": "",
+    "section": "Signature Burgers"
+   },
+   {
+    "name": "Varsity Tacos",
+    "price": "",
+    "section": "Tacos"
+   },
+   {
+    "name": "Chicken Wings",
+    "price": "",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Tenders",
+    "price": "",
+    "section": "Chicken"
+   },
+   {
+    "name": "NY Strip Steak",
+    "price": "",
+    "section": "Varsity Dinners"
+   },
+   {
+    "name": "Haddock Fish Dinner",
+    "price": "",
+    "section": "Varsity Dinners"
+   },
+   {
+    "name": "BBQ Chicken",
+    "price": "",
+    "section": "Flatbreads & Wraps"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "",
+    "section": "Flatbreads & Wraps"
+   },
+   {
+    "name": "Chicken Bacon Ranch Wrap",
+    "price": "",
+    "section": "Flatbreads & Wraps"
+   },
+   {
+    "name": "Blackened Caesar Wrap",
+    "price": "",
+    "section": "Flatbreads & Wraps"
+   },
+   {
+    "name": "Turkey BLT Wrap",
+    "price": "",
+    "section": "Flatbreads & Wraps"
+   },
+   {
+    "name": "French Fries",
+    "price": "",
+    "section": "Varsity Sides"
+   },
+   {
+    "name": "Tater Tots",
+    "price": "",
+    "section": "Varsity Sides"
+   },
+   {
+    "name": "Hot Chips",
+    "price": "",
+    "section": "Varsity Sides"
+   },
+   {
+    "name": "Mac and Cheese",
+    "price": "",
+    "section": "Varsity Sides"
+   },
+   {
+    "name": "Side Salad",
+    "price": "",
+    "section": "Varsity Sides"
+   },
+   {
+    "name": "Cucumber and Tomato Salad",
+    "price": "",
+    "section": "Varsity Sides"
+   },
+   {
+    "name": "Pasta Salad",
+    "price": "",
+    "section": "Varsity Sides"
+   },
+   {
+    "name": "Creamy Slaw",
+    "price": "",
+    "section": "Varsity Sides"
+   },
+   {
+    "name": "Grilled Green Beans",
+    "price": "",
+    "section": "Varsity Sides"
+   },
+   {
+    "name": "Jack’s Grilled Steak",
+    "price": "",
+    "section": "Kids Club"
+   },
+   {
+    "name": "Cheeseburger",
+    "price": "",
+    "section": "Kids Club"
+   },
+   {
+    "name": "Kids Mac and Cheese",
+    "price": "",
+    "section": "Kids Club"
+   },
+   {
+    "name": "Cheese Quesadilla",
+    "price": "",
+    "section": "Kids Club"
+   },
+   {
+    "name": "VC Sugar Waffle",
+    "price": "",
+    "section": "Dessert"
+   }
+  ]
+ },
+ "youngstown|Avalon Downtown": {
+  "source": "https://avalondowntown.com/menu/",
+  "items": [
+   {
+    "name": "AV Hot Peppers",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Cheesy Dippers",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Antipasto",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Cheese & Fruit Platter",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Fried cheese",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Fried Jumbo Butterfly Shrimp",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Fried butterfly smelts",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Fried zucchini chips",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Fried Mushrooms",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Fried Pickles",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Fried Calamari",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Fried Clam Strips",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Grilled Zucchini",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Mac & Cheese Bites",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Italian Fries",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Onion Rings",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "wedding soup",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "what’s the soup?",
+    "price": "",
+    "section": "Antipasto"
+   },
+   {
+    "name": "Tossed Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Grilled or Crispy Chicken Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "greek Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "albacore tuna Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Spinning Bowl Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Fish Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Apple Pecan Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Grilled Steak Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Caprese Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Meatball Bowl",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Tortellini Bowl",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Cheese Ravioli Bowl",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Chicken or Fish Parmesan Bowl",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Grilled Chicken Sandwich",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Meatball Sub Sandwich",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Fried Fish Sandwich",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Pepperoni Roll",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Grilled Steak Sandwich",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Grilled Three Cheese Sandwich",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Grilled Sausage Sandwich",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Chicken Parmesan Sandwich",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Crispy Chicken Sandwich",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Piece of Chicken",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Piece of Fried Fish",
+    "price": "",
+    "section": "Signature Avalon Dishes"
+   },
+   {
+    "name": "Traditional",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "Brier Hill",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "potato",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "White",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "mad greek",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "Taste of Italy",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "Spinach",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "potato & Spinach",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "Vegetable",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "Margherita",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "Pesto Hot Honey",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "Barbecue Chicken",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "ranch Chicken",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "Pizza of the month",
+    "price": "",
+    "section": "Avalon’s Pizza"
+   },
+   {
+    "name": "fried chicken strips",
+    "price": "",
+    "section": "Chicken by the piece"
+   },
+   {
+    "name": "fried chicken wings",
+    "price": "",
+    "section": "Chicken by the piece"
+   },
+   {
+    "name": "Canoli",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Avalon Fried Dough",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Pizzelles",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Tiramisu",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Sugar Cookie",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Chocolate Chunk Cookies",
+    "price": "",
+    "section": "Dessert"
+   },
+   {
+    "name": "Chocolate Brownie",
+    "price": "",
+    "section": "Dessert"
+   }
+  ]
+ },
+ "youngstown|Kravitz Deli": {
+  "source": "https://online.skytab.com/d68ad9d3719676165cddae2d943be449",
+  "items": [
+   {
+    "name": "Reuben",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Corned Beef & Swiss",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Kraut on Fire",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "NorthSide",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Roasted Turkey & Provolone",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Turkey Club",
+    "price": "$13.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Turkey Italiano",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pastrami & Swiss",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Italian Hero",
+    "price": "$16.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Ultimate Gyro",
+    "price": "$16.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Philly the Kid",
+    "price": "$16.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Roast Beef & Cheddar",
+    "price": "$16.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Applewood Smoked Ham & Swiss",
+    "price": "",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Salad Sandwich",
+    "price": "$10.25",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Tuna Salad Sandwich",
+    "price": "$12.29",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Egg Salad Sandwich",
+    "price": "$10.25",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Grilled Cheese",
+    "price": "$8.99",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Lox Bagel",
+    "price": "$15.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Hannah K",
+    "price": "$10.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Belmont Salad",
+    "price": "$12.45",
+    "section": "Soup & Salads"
+   },
+   {
+    "name": "Gyro Salad",
+    "price": "$13.95",
+    "section": "Chicken Noodle Soup"
+   },
+   {
+    "name": "Spinning Bowl Salad",
+    "price": "$10.95",
+    "section": "Chicken Noodle Soup"
+   },
+   {
+    "name": "Wedding Soup",
+    "price": "",
+    "section": "Chicken Noodle Soup"
+   },
+   {
+    "name": "Kids Grilled Cheese",
+    "price": "$7.99",
+    "section": "Kids Menu"
+   },
+   {
+    "name": "Bagel with Butter-Starter",
+    "price": "$2.45",
+    "section": "Starters"
+   },
+   {
+    "name": "Bagel with Cream Cheese-Starter",
+    "price": "$3.45",
+    "section": "Starters"
+   },
+   {
+    "name": "Hot Peppers in Oil with Pita",
+    "price": "$6.99",
+    "section": "Starters"
+   },
+   {
+    "name": "Hummus with Pita",
+    "price": "$5.99",
+    "section": "Starters"
+   },
+   {
+    "name": "Rye Tst Buttered",
+    "price": "$1.25",
+    "section": "Starters"
+   },
+   {
+    "name": "Classic",
+    "price": "$6.95",
+    "section": "Breakfast Bagel Sandwiches"
+   },
+   {
+    "name": "Egg & Cheese",
+    "price": "$5.95",
+    "section": "Breakfast Bagel Sandwiches"
+   },
+   {
+    "name": "Hot Pepper, Egg & Cheese",
+    "price": "$6.95",
+    "section": "Breakfast Bagel Sandwiches"
+   },
+   {
+    "name": "corned beef hash",
+    "price": "$12.95",
+    "section": "corned beef hash"
+   },
+   {
+    "name": "2 eggs any style",
+    "price": "$7.95",
+    "section": "egg"
+   },
+   {
+    "name": "3 eggs any style",
+    "price": "$8.95",
+    "section": "egg"
+   },
+   {
+    "name": "Corned beef, pastrami, ham, turkey or salami",
+    "price": "$12.95",
+    "section": "3 egg omelets"
+   },
+   {
+    "name": "Cheese",
+    "price": "$8.95",
+    "section": "3 egg omelets"
+   },
+   {
+    "name": "southside",
+    "price": "$12.95",
+    "section": "3 egg omelets"
+   },
+   {
+    "name": "Leo",
+    "price": "$15.95",
+    "section": "3 egg omelets"
+   },
+   {
+    "name": "Westside",
+    "price": "$13.95",
+    "section": "3 egg omelets"
+   },
+   {
+    "name": "Greek",
+    "price": "$12.95",
+    "section": "3 egg omelets"
+   },
+   {
+    "name": "Jenny",
+    "price": "$14.95",
+    "section": "3 egg omelets"
+   }
+  ]
+ },
+ "youngstown|Pressed Coffee Bar & Eatery": {
+  "source": "https://pressedcoffeebarandeatery.com/wp-content/uploads/2021/04/Pressed-11x8.5-final-1.pdf",
+  "items": [
+   {
+    "name": "CIAO",
+    "price": "$9.00",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "THE ITALIAN",
+    "price": "$9.00",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "HAM & CHEDDAR",
+    "price": "$9.00",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "TURKEY",
+    "price": "$9.25",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "CHICKEN PESTO",
+    "price": "$9.25",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "CHICKEN BRUSCHETTA WRAP",
+    "price": "$9.25",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "HUMMUS VEGGIE WRAP",
+    "price": "$9.25",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "GRILLED CHEESE",
+    "price": "$7.00",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "THE STANDARD",
+    "price": "$7.25",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "GREEK LIFE",
+    "price": "$8.00",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "APPLE, CANDIED PECAN & FETA",
+    "price": "$8.75",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "DA’ COBB",
+    "price": "$11.00",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "SOUP",
+    "price": "$4.50",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "MAC AND CHEESE",
+    "price": "$5.25",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "HUMMUS",
+    "price": "$4.00",
+    "section": "PANINIS, WRAPS, SOUPS & SALAD"
+   },
+   {
+    "name": "CIAO",
+    "price": "$7.75",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "WEST COAST",
+    "price": "$7.75",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "O.M.G.",
+    "price": "$7.75",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "CHEESE PLEASE",
+    "price": "$6.50",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "AVO TOAST & FETA SCRAMBLE",
+    "price": "$9.00",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "AVO TOAST",
+    "price": "$7.25",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "OATMEAL",
+    "price": "$4.50",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "YOGURT & GRANOLA",
+    "price": "$4.25",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "TOAST & JELLY",
+    "price": "$2.75",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "FRUIT CUP",
+    "price": "$3.75",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "THE BASIC",
+    "price": "$6.25",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "WHITE CHOCOLATE COVERED STRAWBERRY",
+    "price": "$7.75",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "CARAMEL APPLE",
+    "price": "$7.75",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "THE PENGUIN",
+    "price": "$7.75",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   },
+   {
+    "name": "NUTELLA & BANANA",
+    "price": "$7.75",
+    "section": "FRITTATAS, SANDWICHES, WAFFLES & MORE!"
+   }
+  ]
+ },
+ "youngstown|V2 Wine Bar Trattoria": {
+  "source": "https://www.v2byvernon.com/files/v2-new-menu-2026-pdf.pdf",
+  "items": [
+   {
+    "name": "HOT PEPPERS IN OIL",
+    "price": "$10.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "SESAME CHICKEN",
+    "price": "$17.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "CHICKEN TENDERS",
+    "price": "$17.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "WINGS(GF)(8)",
+    "price": "$17.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "EDAMAME HUMMUS",
+    "price": "$12.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "SPINACH & ARTICHOKE DIP (GF)",
+    "price": "$12.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "ITALIAN GREENS (GF)",
+    "price": "$11.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "ARANCINI di RISO",
+    "price": "$11.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "ZUCCHINI PLANKS",
+    "price": "$11.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "STUFFED BANANA PEPPERS",
+    "price": "$13.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "HANDMADE MEAT BALLS with RICOTTA",
+    "price": "$14.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "CRISPY CALAMARI (GF)",
+    "price": "$16.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "MEDITERRANEAN PLATTER",
+    "price": "$18.00",
+    "section": "SMALL PLATES"
+   },
+   {
+    "name": "SOUP & SALAD COMBO",
+    "price": "$12.00",
+    "section": "ZUPPA / INSALATA"
+   },
+   {
+    "name": "CLASSIC CAESAR",
+    "price": "$14.00",
+    "section": "ZUPPA / INSALATA"
+   },
+   {
+    "name": "V2 SALAD (GF)",
+    "price": "$12.00",
+    "section": "ZUPPA / INSALATA"
+   },
+   {
+    "name": "THE ULTIMATE STEAK SALAD",
+    "price": "$20.00",
+    "section": "ZUPPA / INSALATA"
+   },
+   {
+    "name": "MEATBALL SALAD",
+    "price": "$16.00",
+    "section": "ZUPPA / INSALATA"
+   },
+   {
+    "name": "ARUGULA SALAD with PROSCIUTTO (GF)",
+    "price": "$16.00",
+    "section": "ZUPPA / INSALATA"
+   },
+   {
+    "name": "MARGHERITA",
+    "price": "$13.00",
+    "section": "HAND CRAFTED PIZZA"
+   },
+   {
+    "name": "ARUGULA—PROSCIUTTO",
+    "price": "$16.00",
+    "section": "HAND CRAFTED PIZZA"
+   },
+   {
+    "name": "GRECIAN",
+    "price": "$14.00",
+    "section": "HAND CRAFTED PIZZA"
+   },
+   {
+    "name": "CHICKEN FLORENTINE",
+    "price": "$15.00",
+    "section": "HAND CRAFTED PIZZA"
+   },
+   {
+    "name": "BUFFALO CHICKEN",
+    "price": "$15.00",
+    "section": "HAND CRAFTED PIZZA"
+   },
+   {
+    "name": "BIANCA",
+    "price": "$12.00",
+    "section": "HAND CRAFTED PIZZA"
+   },
+   {
+    "name": "VERNON",
+    "price": "$15.00",
+    "section": "HAND CRAFTED PIZZA"
+   },
+   {
+    "name": "MOSES",
+    "price": "$15.00",
+    "section": "HAND CRAFTED PIZZA"
+   },
+   {
+    "name": "YOUR CREATION",
+    "price": "$12.00",
+    "section": "HAND CRAFTED PIZZA"
+   },
+   {
+    "name": "V2 BURGER",
+    "price": "$16.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "BLACK & BLEU BURGER",
+    "price": "$16.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "Y-TOWN BRUNCH BURGER",
+    "price": "$15.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "VEGGIE WRAP",
+    "price": "$12.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "CHICKEN BACON WRAP",
+    "price": "$15.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "BUFFALO CHICKEN WRAP",
+    "price": "$15.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "PROSCIUTTO SAMMY",
+    "price": "$15.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "HOT SAUSAGE SANDWICH",
+    "price": "$14.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "MEATBALL SUB",
+    "price": "$13.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "CHICKEN & GREENS",
+    "price": "$14.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "FRIED MORTADELLA",
+    "price": "$14.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "THE BEAR (ITALIAN BEEF)",
+    "price": "$17.00",
+    "section": "HANDHELDS"
+   },
+   {
+    "name": "PENNE with VERNONS CLASSIC SAUCE",
+    "price": "$15.00",
+    "section": "PASTA"
+   },
+   {
+    "name": "CAVATELLI",
+    "price": "$15.00",
+    "section": "PASTA"
+   },
+   {
+    "name": "CHICKEN PARM",
+    "price": "$17.00",
+    "section": "PASTA"
+   },
+   {
+    "name": "FETTUCCINE ALFREDO",
+    "price": "$16.00",
+    "section": "PASTA"
+   }
+  ]
+ },
+ "youngstown|Noble Creature Wild Ales & Lagers": {
+  "source": "https://www.noblecreaturebeer.com/menus",
+  "items": [
+   {
+    "name": "HOUSE-MADE PRETZELS",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "CHEESE SLATE",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "FOCACCIA & HONEY BUTTER",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "POTATO PANCAKES",
+    "price": "",
+    "section": "Appetizers"
+   },
+   {
+    "name": "SAUSAGE PLATE (GF & DF)",
+    "price": "",
+    "section": "Mains"
+   },
+   {
+    "name": "SMASH BURGER",
+    "price": "",
+    "section": "Mains"
+   },
+   {
+    "name": "CHICKEN CAESAR WRAP",
+    "price": "",
+    "section": "Mains"
+   },
+   {
+    "name": "VEGAN FALAFEL WRAP",
+    "price": "",
+    "section": "Mains"
+   },
+   {
+    "name": "TRIPLE STACK BURGER",
+    "price": "",
+    "section": "Mains"
+   },
+   {
+    "name": "BEER MUSSELS",
+    "price": "",
+    "section": "Mains"
+   },
+   {
+    "name": "SEASONAL VEGETABLE (GF)",
+    "price": "",
+    "section": "à la cart Sides"
+   },
+   {
+    "name": "SPICY ROASTED POTATOES (V) (GF)",
+    "price": "",
+    "section": "à la cart Sides"
+   },
+   {
+    "name": "BEER MAC & CHEESE",
+    "price": "",
+    "section": "à la cart Sides"
+   }
+  ]
  }
 }

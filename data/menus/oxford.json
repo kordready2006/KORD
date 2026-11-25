@@ -1349,6 +1349,106 @@
    }
   ]
  },
+ "oxford|Bodega": {
+  "source": "https://www.bodegaoxford.com/s/order",
+  "items": [
+   {
+    "name": "Create Your Own",
+    "price": "$13.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "CYO Grilled Cheese",
+    "price": "$10.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Egg Salad Florentine",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Holy Cow",
+    "price": "$13.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Hot Pastrami",
+    "price": "$13.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Hummus & Stuff",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Papa D",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Reuben",
+    "price": "$13.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Spicy Turkey Melt",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Sweet James",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Chia",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Club",
+    "price": "$13.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Dinah",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The French Quarter (Muffalata)",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "The Veggie Club",
+    "price": "$13.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Salad Sandwich",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Bodega BLT",
+    "price": "$12.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Broccoli Cheese Soup",
+    "price": "$6.00",
+    "section": "Soup of the Day"
+   },
+   {
+    "name": "Cream of Potato & Bacon Soup",
+    "price": "$6.00",
+    "section": "Soup of the Day"
+   }
+  ]
+ },
  "oxford|SoHi Grilled Sandwiches": {
   "source": "https://www.sohisandwich.com/",
   "items": [
@@ -1771,6 +1871,821 @@
     "name": "Mac and Cheese Bites",
     "price": "$8.25",
     "section": "Sides - French Fries"
+   }
+  ]
+ },
+ "oxford|SDS Pizza": {
+  "source": "https://www.sdspizza.com/menu",
+  "items": [
+   {
+    "name": "Cheese Pizza",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Chicago Style Pizza",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Giant Party Pizza",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Calzones",
+    "price": "",
+    "section": "Pizza"
+   },
+   {
+    "name": "Deluxe",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Supreme",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Veggie Deluxe",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Hawaiian",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "BBQ Chicken",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Bacon & Cheddar",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Buffalo Ranch",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Meat",
+    "price": "",
+    "section": "Specialty Pizzas"
+   },
+   {
+    "name": "Blanca",
+    "price": "",
+    "section": "White Pizzas"
+   },
+   {
+    "name": "Tuscan",
+    "price": "",
+    "section": "White Pizzas"
+   },
+   {
+    "name": "Genovese",
+    "price": "",
+    "section": "White Pizzas"
+   },
+   {
+    "name": "Roma",
+    "price": "",
+    "section": "White Pizzas"
+   },
+   {
+    "name": "Milano",
+    "price": "",
+    "section": "White Pizzas"
+   },
+   {
+    "name": "Turkey Gobbler",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Ham",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Tuna Salad",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Chicken Salad",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Chicken Parmesan",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Steak Grinder",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Mushroom Steak",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Garden Steak",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Italian Submarine",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Meatball",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Veggie",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Club Sub",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "BLT",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Chicken BBQ",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Grilled Chicken",
+    "price": "",
+    "section": "Submarines"
+   },
+   {
+    "name": "Chicken Wings",
+    "price": "",
+    "section": "Jumbo Wings"
+   },
+   {
+    "name": "Garden Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Chef Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Antipasto Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Cajun Chicken Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Chicken Caesar",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Tuna Fruit Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Chicken Fruit Salad",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Hamburger",
+    "price": "",
+    "section": "Half-Pound Burgers"
+   },
+   {
+    "name": "Cheeseburger",
+    "price": "",
+    "section": "Half-Pound Burgers"
+   },
+   {
+    "name": "Bacon Cheeseburger",
+    "price": "",
+    "section": "Half-Pound Burgers"
+   },
+   {
+    "name": "Bread Sticks",
+    "price": "",
+    "section": "Bread & Sides"
+   },
+   {
+    "name": "Garlic Bread",
+    "price": "",
+    "section": "Bread & Sides"
+   },
+   {
+    "name": "Cheese Bread",
+    "price": "",
+    "section": "Bread & Sides"
+   }
+  ]
+ },
+ "oxford|Fiesta Charra": {
+  "source": "https://fiesta-charra.com/menu/",
+  "items": [
+   {
+    "name": "Beef Or Fried Beef",
+    "price": "$4.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Beef And Nacho Cheese",
+    "price": "$4.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Bean",
+    "price": "$3.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Beef And Bean",
+    "price": "$4.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Special",
+    "price": "$5.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Deluxe",
+    "price": "$5.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Preferido",
+    "price": "$14.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Mexicanos Burrito",
+    "price": "$12.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Fajita Burrito",
+    "price": "$14.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Fajita Burrito Camaron",
+    "price": "$15.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Hot & Spicy Burrito",
+    "price": "$12.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Poblano Burrito",
+    "price": "$13.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Mole Poblano",
+    "price": "$14.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Pollo Asado Fiesta",
+    "price": "$13.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Pollo Acapulco",
+    "price": "$13.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Arroz Con Pollo",
+    "price": "$12.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Arroz Con Verdura",
+    "price": "$13.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Pollo Supremo",
+    "price": "$15.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Pollo Chipotle",
+    "price": "$15.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Pollo Poblano",
+    "price": "$13.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Pollo Charra",
+    "price": "$16.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Pollo Toluca",
+    "price": "$16.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Pollo Hawaiian",
+    "price": "$16.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Pollo Jalisco",
+    "price": "$16.99",
+    "section": "Chicken and Steak"
+   },
+   {
+    "name": "Beef, Cheese Or Chicken",
+    "price": "$2.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchiladas Rancheras",
+    "price": "$12.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Rancheras 5",
+    "price": "$13.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchiladas Verdes",
+    "price": "$12.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchiladas Poblanas",
+    "price": "$12.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchiladas Spinach",
+    "price": "$12.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchiladas Suizas",
+    "price": "$13.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchiladas Camarones",
+    "price": "$13.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Cheese",
+    "price": "$3.49",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Beef Or Shredded Chicken",
+    "price": "$3.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Grilled Chicken",
+    "price": "$4.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Steak",
+    "price": "$5.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Fajita Quesadilla",
+    "price": "$13.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Rellena",
+    "price": "$10.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Grande",
+    "price": "$13.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Shrimp Quesadilla",
+    "price": "$14.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesabirrias",
+    "price": "$15.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Parrillada For 3",
+    "price": "$44.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Chilaquiles",
+    "price": "$13.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Chile Relleno Dinner",
+    "price": "$13.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Chimichangas (Soft Or Fried)",
+    "price": "$12.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Chimichanga De Camaron",
+    "price": "$14.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Special Combo",
+    "price": "$19.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Carnitas",
+    "price": "$14.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Carnitas Chile Verde",
+    "price": "$14.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Molcajete Miami",
+    "price": "$22.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Molcajete",
+    "price": "$19.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Alambres",
+    "price": "$17.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Molcalambres",
+    "price": "$19.99",
+    "section": "Signature Dishes"
+   },
+   {
+    "name": "Charro Bowl",
+    "price": "$12.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Grilled Chicken Bowl",
+    "price": "$10.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Fajita Bowl",
+    "price": "$10.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Taco Salad Bowl",
+    "price": "$10.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Poblano Salad Bowl",
+    "price": "$11.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Ground Beef Or Shredded Chicken Hard Taco",
+    "price": "$2.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Taquitos (No Cheese)",
+    "price": "$6.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Fiesta Tacos",
+    "price": "$10.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Tacos De Camaron",
+    "price": "$14.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Tacos Carne Asada",
+    "price": "$13.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Tacos Al Pastor",
+    "price": "$13.99",
+    "section": "Tacos & Taco Bowls"
+   },
+   {
+    "name": "Tacos De Pescado",
+    "price": "$13.99",
+    "section": "Tacos & Taco Bowls"
+   }
+  ]
+ },
+ "oxford|El Burrito Loco": {
+  "source": "https://storage.googleapis.com/msgsndr/yq5P7QOjNHGrAZMLiRY8/media/68f64f47b00f7503cf5cfa78.pdf",
+  "items": [
+   {
+    "name": "Burrito Verde",
+    "price": "$14.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Steak & Cheese Burrito",
+    "price": "$14.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Mexicano",
+    "price": "$14.75",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Loco",
+    "price": "$14.50",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burritos Deluxe",
+    "price": "$14.75",
+    "section": "Burritos"
+   },
+   {
+    "name": "Mucho Grande",
+    "price": "$14.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "La Superior",
+    "price": "$13.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito California",
+    "price": "$15.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Hawaiian Burrito",
+    "price": "$17.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Al Pastor",
+    "price": "$17.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Oxford Burrito",
+    "price": "$16.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Bandera",
+    "price": "$13.99",
+    "section": "Burritos"
+   },
+   {
+    "name": "La Grande",
+    "price": "$15.50",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Salad",
+    "price": "$9.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Rellena",
+    "price": "$11.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Hawaiian Quesadilla",
+    "price": "$17.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesabirria",
+    "price": "$16.99",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Al Pastor",
+    "price": "$16.50",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Mexican Grilled Tacos",
+    "price": "$3.50",
+    "section": "Mexican Grilled Tacos"
+   },
+   {
+    "name": "Tacos Birria",
+    "price": "$15.99",
+    "section": "Mexican Grilled Tacos"
+   },
+   {
+    "name": "Especial Street Tacos",
+    "price": "$13.25",
+    "section": "Mexican Grilled Tacos"
+   },
+   {
+    "name": "Chicken or Steak Fajitas",
+    "price": "$16.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Fiesta Fajita",
+    "price": "$18.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Fajita Hawaiian",
+    "price": "$19.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Fajitas Del Mar",
+    "price": "$21.50",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Shrimp Fajitas",
+    "price": "$20.49",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Fajita Burrito",
+    "price": "$14.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Texas-Style Fajitas",
+    "price": "$18.50",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Parrillada",
+    "price": "$26.99",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Quesadilla Fajita",
+    "price": "$15.50",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Flautas",
+    "price": "$14.75",
+    "section": "Authentic Cuisine"
+   },
+   {
+    "name": "Chile Colorado",
+    "price": "$16.50",
+    "section": "Authentic Cuisine"
+   },
+   {
+    "name": "Chilaquiles",
+    "price": "$15.50",
+    "section": "Authentic Cuisine"
+   },
+   {
+    "name": "Carne Asada",
+    "price": "$17.50",
+    "section": "Authentic Cuisine"
+   },
+   {
+    "name": "Acapulco Taco",
+    "price": "$16.99",
+    "section": "Authentic Cuisine"
+   },
+   {
+    "name": "Chicken Milanesa",
+    "price": "$15.99",
+    "section": "Authentic Cuisine"
+   },
+   {
+    "name": "Alambre",
+    "price": "$17.99",
+    "section": "Authentic Cuisine"
+   },
+   {
+    "name": "ACP Hawaiian",
+    "price": "$16.99",
+    "section": "Authentic Cuisine"
+   },
+   {
+    "name": "Southwestern Chimichanga",
+    "price": "$12.75",
+    "section": "Chimichangas"
+   },
+   {
+    "name": "Jalisco Chimichanga",
+    "price": "$16.25",
+    "section": "Chimichangas"
+   },
+   {
+    "name": "Chimichanga Dinner",
+    "price": "$14.75",
+    "section": "Chimichangas"
+   },
+   {
+    "name": "Enchiladas Suizas",
+    "price": "$14.50",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchiladas Locas",
+    "price": "$15.99",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchiladas Rancheras",
+    "price": "$14.50",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchiladas Verdes",
+    "price": "$14.50",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Enchiladas Supreme",
+    "price": "$15.50",
+    "section": "Enchiladas"
+   },
+   {
+    "name": "Horchata",
+    "price": "$4.25",
+    "section": "Soft Drinks"
+   },
+   {
+    "name": "Jarritos & Juices",
+    "price": "$3.25",
+    "section": "Soft Drinks"
    }
   ]
  },
@@ -3799,6 +4714,356 @@
    }
   ]
  },
+ "oxford|LaRosa's Pizza": {
+  "source": "https://www.larosas.com/menu",
+  "items": [
+   {
+    "name": "Hot Italian Pizza",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Chicken Bacon Ranch",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Buddy Deluxe",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Meat Deluxe",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Original Deluxe",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Focaccia Roma",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Focaccia Florentine",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Garlic Pesto Chicken",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Double Pepperoni",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Veggie Deluxe",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Crustless Pizza Bowl",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Hot Italian Crustless Pizza Bowl",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Chicken Bacon Ranch Crustless Pizza Bowl",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Original Deluxe Crustless Pizza Bowl",
+    "price": "",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Diner-Style Steak Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Mushroom Melt Steak Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Larosa's Steak Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Turkey Italiano Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Turkey Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Chicken Club Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Baked Buddy Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "BLT Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Turkey Club Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Royal Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Beer-Battered Fish Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Chicken Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Meatball Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Veggie Hoagy",
+    "price": "",
+    "section": "Hoagys"
+   },
+   {
+    "name": "Hot Italian Calzone",
+    "price": "",
+    "section": "Calzones"
+   },
+   {
+    "name": "Big Hawaiian Calzone",
+    "price": "",
+    "section": "Calzones"
+   },
+   {
+    "name": "Chicken Spinach Mushroom Calzone",
+    "price": "",
+    "section": "Calzones"
+   },
+   {
+    "name": "Vegan Calzone",
+    "price": "",
+    "section": "Calzones"
+   },
+   {
+    "name": "Chicken Bacon Ranch Calzone",
+    "price": "",
+    "section": "Calzones"
+   },
+   {
+    "name": "Three Meat",
+    "price": "",
+    "section": "Calzones"
+   },
+   {
+    "name": "Create Your Own Calzone",
+    "price": "",
+    "section": "Calzones"
+   },
+   {
+    "name": "Cauliflower Bites",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Bread Sticks With Provolone",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Fried Mozzarella Sticks",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "French Fries",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Pepperoni Rondos",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Spinach Rondos",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Cheese Rondos",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Fresh Fried Kitchen Chips",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Pretzel Bites",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Garlic Parmesan Fries",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Cheesy Flat Bread",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Garlic Bread With Provolone",
+    "price": "",
+    "section": "Starters"
+   },
+   {
+    "name": "Lasagna With Meat Sauce",
+    "price": "",
+    "section": "Pasta Meals"
+   },
+   {
+    "name": "Ziti Chicken Alfredo",
+    "price": "",
+    "section": "Pasta Meals"
+   },
+   {
+    "name": "Meat Ravioli",
+    "price": "",
+    "section": "Pasta Meals"
+   },
+   {
+    "name": "Cheese Ravioli",
+    "price": "",
+    "section": "Pasta Meals"
+   },
+   {
+    "name": "Meat And Cheese Ravioli",
+    "price": "",
+    "section": "Pasta Meals"
+   },
+   {
+    "name": "Spaghetti And 3 Meatballs",
+    "price": "",
+    "section": "Pasta Meals"
+   },
+   {
+    "name": "Ziti With Pasta Sauce",
+    "price": "",
+    "section": "Pasta Meals"
+   },
+   {
+    "name": "Spaghetti",
+    "price": "",
+    "section": "Pasta Meals"
+   },
+   {
+    "name": "Boneless Wings",
+    "price": "",
+    "section": "Wings"
+   },
+   {
+    "name": "Traditional Wings",
+    "price": "",
+    "section": "Wings"
+   },
+   {
+    "name": "Original Tossed Salad",
+    "price": "",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Jojo's BLT Salad",
+    "price": "",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Antipasto For One",
+    "price": "",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Grilled Or Crispy Chicken Salad",
+    "price": "",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Jojo's BLT Salad W/ Grilled Chicken",
+    "price": "",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Jojo's BLT Salad W/ Crispy Chicken",
+    "price": "",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Baked Onion Soup",
+    "price": "",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Minestrone Soup",
+    "price": "",
+    "section": "Soups & Salads"
+   },
+   {
+    "name": "Ghirardelli Triple Chocolate Brownie",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Cheesecake Scoops",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Single Chocolate Chunk Cookie",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Three Chocolate Chunk Cookies",
+    "price": "",
+    "section": "Desserts"
+   }
+  ]
+ },
  "oxford|Bello Wood Fired Pizza": {
   "source": "https://www.bellopizzastudio.com/_files/ugd/d3c3fc_bd5ecff0b82f49cbb7635c4688f94b78.pdf",
   "items": [
@@ -4251,6 +5516,2556 @@
     "name": "Ramune Soda",
     "price": "$4.85",
     "section": "Drink & Desserts"
+   }
+  ]
+ },
+ "oxford|Cocina Latina": {
+  "source": "https://cocinalatinaoxfordoh.com/cocina-latina-oxford/",
+  "items": [
+   {
+    "name": "Guacamole Bowl",
+    "price": "$10.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Plantain",
+    "price": "$9.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Yuca",
+    "price": "$9.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Grilled Shrimp Tostones",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Tamales",
+    "price": "$2.75",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Queso Dip",
+    "price": "$8.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chori Queso",
+    "price": "$9.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Latin Nachos Supreme / Latin Fries Supreme",
+    "price": "$12.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Empanadas (3 Pcs)",
+    "price": "$11.95",
+    "section": "Latin Flavor"
+   },
+   {
+    "name": "Taco Chicken",
+    "price": "$3.50",
+    "section": "Tacos"
+   },
+   {
+    "name": "Taco Chorizo",
+    "price": "$3.50",
+    "section": "Tacos"
+   },
+   {
+    "name": "Taco Carnitas",
+    "price": "$3.50",
+    "section": "Tacos"
+   },
+   {
+    "name": "Taco Al Pastor",
+    "price": "$3.50",
+    "section": "Tacos"
+   },
+   {
+    "name": "Taco Ground Beef",
+    "price": "$3.50",
+    "section": "Tacos"
+   },
+   {
+    "name": "Taco Steak",
+    "price": "$4.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Taco Barbacoa",
+    "price": "$4.00",
+    "section": "Tacos"
+   },
+   {
+    "name": "Taco Shrimp",
+    "price": "$4.50",
+    "section": "Tacos"
+   },
+   {
+    "name": "Taco Fish",
+    "price": "$4.50",
+    "section": "Tacos"
+   },
+   {
+    "name": "Burrito Chicken",
+    "price": "$12.95",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Chorizo",
+    "price": "$12.95",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Carnitas",
+    "price": "$12.95",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Al Pastor",
+    "price": "$12.95",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Ground Beef",
+    "price": "$12.95",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Steak",
+    "price": "$13.95",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Barbacoa",
+    "price": "$13.95",
+    "section": "Burritos"
+   },
+   {
+    "name": "Burrito Shrimp",
+    "price": "$14.95",
+    "section": "Burritos"
+   },
+   {
+    "name": "Birria Burrito",
+    "price": "$15.95",
+    "section": "Burritos"
+   },
+   {
+    "name": "Quesadilla Chicken",
+    "price": "$13.95",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Chorizo",
+    "price": "$13.95",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Carnitas",
+    "price": "$13.95",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Ground Beef",
+    "price": "$13.95",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Al Pastor",
+    "price": "$13.95",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Steak",
+    "price": "$15.95",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Barbacoa",
+    "price": "$15.95",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Quesadilla Shrimp",
+    "price": "$15.95",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Birria Quesadilla",
+    "price": "$15.95",
+    "section": "Quesadillas"
+   },
+   {
+    "name": "Torta Chicken",
+    "price": "$12.95",
+    "section": "Tortas"
+   },
+   {
+    "name": "Torta Chorizo",
+    "price": "$12.95",
+    "section": "Tortas"
+   },
+   {
+    "name": "Torta Carnitas",
+    "price": "$12.95",
+    "section": "Tortas"
+   },
+   {
+    "name": "Torta Ground Beef",
+    "price": "$12.95",
+    "section": "Tortas"
+   },
+   {
+    "name": "Torta Al Pastor",
+    "price": "$12.95",
+    "section": "Tortas"
+   },
+   {
+    "name": "Torta Steak",
+    "price": "$14.95",
+    "section": "Tortas"
+   },
+   {
+    "name": "Torta Barbacoa",
+    "price": "$14.95",
+    "section": "Tortas"
+   },
+   {
+    "name": "Torta Shrimp",
+    "price": "$15.95",
+    "section": "Tortas"
+   },
+   {
+    "name": "Pupusa Cheese Only",
+    "price": "$4.00",
+    "section": "Traditional Pupusas"
+   },
+   {
+    "name": "Pupusa Cheese & Beans",
+    "price": "$4.50",
+    "section": "Traditional Pupusas"
+   },
+   {
+    "name": "Pupusa Chicharron, Beans & Cheese (Mixta)",
+    "price": "$5.00",
+    "section": "Traditional Pupusas"
+   },
+   {
+    "name": "Chicken Fajita",
+    "price": "$15.95",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Steak Fajita",
+    "price": "$17.95",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Steak & Chicken Fajita",
+    "price": "$18.95",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Shrimp Fajita",
+    "price": "$19.95",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Miami Fajita",
+    "price": "$20.95",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Oxford Fajita",
+    "price": "$20.95",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Vegetarian Fajita",
+    "price": "$16.95",
+    "section": "Fajitas"
+   },
+   {
+    "name": "Taco Bowl Chicken",
+    "price": "$12.95",
+    "section": "Taco Bowl"
+   },
+   {
+    "name": "Taco Bowl Chorizo",
+    "price": "$12.95",
+    "section": "Taco Bowl"
+   },
+   {
+    "name": "Taco Bowl Carnitas",
+    "price": "$12.95",
+    "section": "Taco Bowl"
+   },
+   {
+    "name": "Taco Bowl Ground Beef",
+    "price": "$12.95",
+    "section": "Taco Bowl"
+   },
+   {
+    "name": "Taco Bowl Al Pastor",
+    "price": "$12.95",
+    "section": "Taco Bowl"
+   },
+   {
+    "name": "Taco Bowl Steak",
+    "price": "$13.95",
+    "section": "Taco Bowl"
+   },
+   {
+    "name": "Taco Bowl Barbacoa",
+    "price": "$13.95",
+    "section": "Taco Bowl"
+   },
+   {
+    "name": "Taco Bowl Shrimp",
+    "price": "$14.95",
+    "section": "Taco Bowl"
+   },
+   {
+    "name": "Taco Bowl Vegetarian (Grilled Veggies)",
+    "price": "$14.95",
+    "section": "Taco Bowl"
+   },
+   {
+    "name": "Oxford House Salad",
+    "price": "$6.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "$6.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Grilled Chicken Salad",
+    "price": "$14.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Grilled Chicken Caesar Salad",
+    "price": "$14.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Grilled Shrimp Caesar Salad",
+    "price": "$14.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Agua Fresca Horchata (L)",
+    "price": "$4.75",
+    "section": "Aguas Frescas"
+   },
+   {
+    "name": "Agua Fresca Horchata (M)",
+    "price": "$2.50",
+    "section": "Aguas Frescas"
+   },
+   {
+    "name": "Agua Fresca Jamaica (L)",
+    "price": "$4.75",
+    "section": "Aguas Frescas"
+   },
+   {
+    "name": "Agua Fresca Jamaica (M)",
+    "price": "$2.50",
+    "section": "Aguas Frescas"
+   },
+   {
+    "name": "Agua Fresca Tamarindo (L)",
+    "price": "$4.75",
+    "section": "Aguas Frescas"
+   },
+   {
+    "name": "Agua Fresca Tamarindo (M)",
+    "price": "$2.50",
+    "section": "Aguas Frescas"
+   },
+   {
+    "name": "3 Leches Cake",
+    "price": "$5.95",
+    "section": "Desserts"
+   },
+   {
+    "name": "Churros",
+    "price": "$9.95",
+    "section": "Desserts"
+   }
+  ]
+ },
+ "oxford|Graeter's Ice Cream": {
+  "source": "https://www.graeters.com/pages/fountain-menu",
+  "items": [
+   {
+    "name": "Classic Sundae",
+    "price": "",
+    "section": "Sundaes"
+   },
+   {
+    "name": "1870 Tower",
+    "price": "",
+    "section": "Sundaes"
+   },
+   {
+    "name": "Banana Split",
+    "price": "",
+    "section": "Sundaes"
+   },
+   {
+    "name": "Brownie Sundae",
+    "price": "",
+    "section": "Sundaes"
+   },
+   {
+    "name": "Cookie Monster",
+    "price": "",
+    "section": "Sundaes"
+   },
+   {
+    "name": "Buckeye Sundae",
+    "price": "",
+    "section": "Sundaes"
+   },
+   {
+    "name": "Turtle Sundae",
+    "price": "",
+    "section": "Sundaes"
+   },
+   {
+    "name": "Traditional Scoop",
+    "price": "",
+    "section": "Scoops"
+   },
+   {
+    "name": "Double Scoop",
+    "price": "",
+    "section": "Scoops"
+   },
+   {
+    "name": "Black Raspberry Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Banana Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Black Cherry Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Boldy Bearcat",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Bourbon Ball",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Buckeye Blitz Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Butter Pecan",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Coconut Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Cookie Dough Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Cookies & Cream",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Cotton Candy",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Dark Chocolate Brownie",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Double Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Dutch Milk Chocolate",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Lemon Meringue Pie",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Madagascar Vanilla Bean",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Midnight Snack",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Mint Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Mocha Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Oregon Strawberry",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Original Salted Caramel",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Peanut Butter Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "S'mores",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Salted Caramel Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Toffee Chocolate Chip",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Vienna Coffee",
+    "price": "",
+    "section": "Ice Cream"
+   },
+   {
+    "name": "Lemon Sorbet",
+    "price": "",
+    "section": "Sorbets"
+   },
+   {
+    "name": "Mango Sorbet",
+    "price": "",
+    "section": "Sorbets"
+   },
+   {
+    "name": "Raspberry Sorbet",
+    "price": "",
+    "section": "Sorbets"
+   }
+  ]
+ },
+ "oxford|Happy Kitchen": {
+  "source": "https://www.happykitchenoxford.com/order",
+  "items": [
+   {
+    "name": "Chinese Pancake with Egg",
+    "price": "$7.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Pot stickers",
+    "price": "$11.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Steamed Pork Soup-Dumplings",
+    "price": "$14.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Pork Fried Rice",
+    "price": "$13.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Shrimp Fried Rice",
+    "price": "$14.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Japanese House Fried Rice",
+    "price": "$16.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Seafood Soup",
+    "price": "$15.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "House Special Tofu",
+    "price": "$14.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Hibachi Beef",
+    "price": "$18.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Hibachi Shrimp",
+    "price": "$18.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Shrimp with Scrambled Egg",
+    "price": "$15.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Hibachi Squid",
+    "price": "$19.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Chicken with Broccoli",
+    "price": "$13.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Beef with Broccoli",
+    "price": "$16.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Shrimp with Broccoli",
+    "price": "$16.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "General Tso's Chicken",
+    "price": "$13.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Orange Chicken with Broccoli",
+    "price": "$13.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Sesame Chicken with Broccoli",
+    "price": "$13.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Chicken with Garlic Sauce",
+    "price": "$14.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Chicken with Vegetables",
+    "price": "$13.99",
+    "section": "Popular Dinner Menu"
+   },
+   {
+    "name": "Beef Noodle Soup",
+    "price": "$14.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Pork Fried Rice",
+    "price": "$13.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Vegetable Fried Rice",
+    "price": "$13.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Chicken Fried Rice",
+    "price": "$13.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Shrimp Fried Rice",
+    "price": "$15.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Smoked Pork Fried Rice",
+    "price": "$15.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Yangzhou Style Fried Rice",
+    "price": "$16.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Squid Fried Rice",
+    "price": "$16.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Pad Thai with Shrimp",
+    "price": "$16.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Pad Thai with Chicken",
+    "price": "$15.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Vegetable Lo Mein",
+    "price": "$14.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Chicken Lo Mein",
+    "price": "$14.99",
+    "section": "Fried Rice/Noodles"
+   },
+   {
+    "name": "Mr. & Mrs. Smith",
+    "price": "$14.99",
+    "section": "Street Food/Appetizers"
+   },
+   {
+    "name": "Seared Jalapeño with Preserved Egg",
+    "price": "$13.99",
+    "section": "Street Food/Appetizers"
+   },
+   {
+    "name": "Pork Belly with Garlic Sauce",
+    "price": "$13.99",
+    "section": "Street Food/Appetizers"
+   },
+   {
+    "name": "Spicy Chicken in Red Chili Oil",
+    "price": "$13.99",
+    "section": "Street Food/Appetizers"
+   },
+   {
+    "name": "Scallion Pancake with Egg",
+    "price": "$8.99",
+    "section": "Street Food/Appetizers"
+   },
+   {
+    "name": "Szechuan Cold Noodle",
+    "price": "$11.99",
+    "section": "Street Food/Appetizers"
+   },
+   {
+    "name": "Cold Noodle with Sesame Sauce",
+    "price": "$11.99",
+    "section": "Street Food/Appetizers"
+   },
+   {
+    "name": "Chengdu Style Dumplings",
+    "price": "$11.99",
+    "section": "Street Food/Appetizers"
+   },
+   {
+    "name": "Pork Wonton with Red Chili Oil",
+    "price": "$11.99",
+    "section": "Street Food/Appetizers"
+   },
+   {
+    "name": "Wonton Soup",
+    "price": "$11.99",
+    "section": "Street Food/Appetizers"
+   },
+   {
+    "name": "Black Pepper Chicken",
+    "price": "$16.99",
+    "section": "Poultry/Eggs"
+   },
+   {
+    "name": "Ge Le Shan Spicy Chicken",
+    "price": "$15.99",
+    "section": "Poultry/Eggs"
+   },
+   {
+    "name": "Kong Pao Chicken",
+    "price": "$15.99",
+    "section": "Poultry/Eggs"
+   },
+   {
+    "name": "Chengdu Hot Pepper Chicken",
+    "price": "$15.99",
+    "section": "Poultry/Eggs"
+   },
+   {
+    "name": "Hibachi Chicken",
+    "price": "$16.99",
+    "section": "Poultry/Eggs"
+   },
+   {
+    "name": "Stir-Fried Bone-In Chicken with Noodle",
+    "price": "$20.99",
+    "section": "Poultry/Eggs"
+   },
+   {
+    "name": "Scrambled Egg with Chinese Chives",
+    "price": "$16.99",
+    "section": "Poultry/Eggs"
+   },
+   {
+    "name": "Fried Chicken with Double Chilis",
+    "price": "$16.99",
+    "section": "Poultry/Eggs"
+   },
+   {
+    "name": "Home Style Spicy Chicken",
+    "price": "$16.99",
+    "section": "Poultry/Eggs"
+   },
+   {
+    "name": "Cumin Beef",
+    "price": "$19.99",
+    "section": "Beef"
+   },
+   {
+    "name": "Beef with Chili Pepper",
+    "price": "$19.99",
+    "section": "Beef"
+   },
+   {
+    "name": "Sichuan Beef Stew",
+    "price": "$19.99",
+    "section": "Beef"
+   },
+   {
+    "name": "Hibachi Beef",
+    "price": "$19.99",
+    "section": "Beef"
+   },
+   {
+    "name": "Double Spicy Beef",
+    "price": "$19.99",
+    "section": "Beef"
+   },
+   {
+    "name": "Boiled Beef with Onion",
+    "price": "$19.99",
+    "section": "Beef"
+   },
+   {
+    "name": "Stir-Fried Beef with Onion",
+    "price": "$19.99",
+    "section": "Beef"
+   },
+   {
+    "name": "Twice Cooked Pork",
+    "price": "$17.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Ma Po Tofu",
+    "price": "$15.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Pork with Spiced Tofu & Celery",
+    "price": "$16.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Pork with Garlic Sauce",
+    "price": "$16.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Home Style Stir-Fried Pork",
+    "price": "$16.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Sweet & Sour Pork Ribs",
+    "price": "$17.99",
+    "section": "Pork"
+   },
+   {
+    "name": "Fried Mixed Vegetables",
+    "price": "$16.99",
+    "section": "Vegetables & Tofu"
+   },
+   {
+    "name": "Seasonal Vegetables",
+    "price": "$16.99",
+    "section": "Vegetables & Tofu"
+   },
+   {
+    "name": "Eggplant with Garlic Sauce",
+    "price": "$16.99",
+    "section": "Vegetables & Tofu"
+   },
+   {
+    "name": "Bok Choy with Garlic Sauce",
+    "price": "$15.99",
+    "section": "Vegetables & Tofu"
+   },
+   {
+    "name": "Celery with Dried Tofu",
+    "price": "$15.99",
+    "section": "Vegetables & Tofu"
+   },
+   {
+    "name": "Lettuce with Oyster Sauce",
+    "price": "$13.99",
+    "section": "Vegetables & Tofu"
+   },
+   {
+    "name": "Hibachi Shrimp",
+    "price": "$21.99",
+    "section": "Seafood"
+   },
+   {
+    "name": "Sliced Fish with Spicy Chili Oil",
+    "price": "$26.99",
+    "section": "Seafood"
+   },
+   {
+    "name": "Szechuan Sliced Fish",
+    "price": "$18.99",
+    "section": "Seafood"
+   },
+   {
+    "name": "Pickled Pepper Fish",
+    "price": "$18.99",
+    "section": "Seafood"
+   },
+   {
+    "name": "Spicy.",
+    "price": "$28.99",
+    "section": "Chef's Specials"
+   },
+   {
+    "name": "Chengdu Personal Hot Pot",
+    "price": "$28.99",
+    "section": "Chef's Specials"
+   },
+   {
+    "name": "Serves 2 to 4. / 2-4",
+    "price": "$11.99",
+    "section": "Soups"
+   },
+   {
+    "name": "Pork Ribs Soup with Daikon",
+    "price": "$14.99",
+    "section": "Soups"
+   }
+  ]
+ },
+ "oxford|MImian": {
+  "source": "https://order.mealkeyway.com/customer/release/index?mid=706b31645972706975457748702b66782b6c614353413d3d",
+  "items": [
+   {
+    "name": "Orange Chicken",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "General Tso's Chicken",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Sesame Chicken",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Sweet & Sour Chicken",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Broccoli w.Chicken",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Broccoli w.Beef",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Broccoli w.Shrimp",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Thai Yellow Curry w.Chicken",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Thai Yellow Curry w.Beef",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Thai Yellow Curry w.Shrimp",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Thai Red Curry w.",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Chicken in Garlic Sauce",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Broccoli in Garlic Sauce",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Shrimp in Garlic Sauce",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Mongolian Beef",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Mongolian Chicken",
+    "price": "$10.99",
+    "section": "Combo"
+   },
+   {
+    "name": "Vegetable Chow Mein",
+    "price": "$11.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Chicken Chow Mein",
+    "price": "$12.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Shrimp Chow Mein",
+    "price": "$12.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Pork Chow Mein",
+    "price": "$12.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Beef Chow Mein",
+    "price": "$13.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Lamb Chow Mein",
+    "price": "$13.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "House Special Chow Mein",
+    "price": "$13.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Sichuan Cold Noodle",
+    "price": "$10.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Noodle w.Tomato Egg",
+    "price": "$10.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Singapore Stir Fried Noodles",
+    "price": "$13.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Fried Udon",
+    "price": "$13.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Pad Thai",
+    "price": "$12.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Chao Mei Fun",
+    "price": "$12.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "House Special Chao Mei Fun",
+    "price": "$13.99",
+    "section": "Noodles"
+   },
+   {
+    "name": "Egg Fried Rice",
+    "price": "$11.99",
+    "section": "Fried Rice"
+   },
+   {
+    "name": "Vegetable Fried Rice",
+    "price": "$11.99",
+    "section": "Fried Rice"
+   },
+   {
+    "name": "Chicken Fried Rice",
+    "price": "$12.99",
+    "section": "Fried Rice"
+   },
+   {
+    "name": "Pork Fried Rice",
+    "price": "$12.99",
+    "section": "Fried Rice"
+   },
+   {
+    "name": "Shrimp Fried Rice",
+    "price": "$12.99",
+    "section": "Fried Rice"
+   },
+   {
+    "name": "Beef Fried Rice",
+    "price": "$13.99",
+    "section": "Fried Rice"
+   },
+   {
+    "name": "House Special Fried Rice",
+    "price": "$13.99",
+    "section": "Fried Rice"
+   },
+   {
+    "name": "Spicy Tofu over Rice",
+    "price": "$13.99",
+    "section": "Over Rice"
+   },
+   {
+    "name": "Shrimp w.Tofu over Rice",
+    "price": "$13.99",
+    "section": "Over Rice"
+   },
+   {
+    "name": "Braised Pork Ribs over Rice",
+    "price": "$13.99",
+    "section": "Over Rice"
+   },
+   {
+    "name": "Shredded Pork over Rice",
+    "price": "$13.99",
+    "section": "Over Rice"
+   },
+   {
+    "name": "Shredded Chicken over Rice",
+    "price": "$13.99",
+    "section": "Over Rice"
+   },
+   {
+    "name": "Shredded Pork w. Garlic Sauce over rice",
+    "price": "$13.99",
+    "section": "Over Rice"
+   },
+   {
+    "name": "Cumin Beef over Rice",
+    "price": "$13.99",
+    "section": "Over Rice"
+   },
+   {
+    "name": "Cumin Lamb over Rice",
+    "price": "$13.99",
+    "section": "Over Rice"
+   },
+   {
+    "name": "Double Cooked Pork Slices over Rice",
+    "price": "$13.99",
+    "section": "Over Rice"
+   },
+   {
+    "name": "Beef Brisket w.Tomato over Rice",
+    "price": "$13.99",
+    "section": "Over Rice"
+   },
+   {
+    "name": "Spicy Tofu over Noodles",
+    "price": "$14.99",
+    "section": "Over Noodles"
+   },
+   {
+    "name": "Shrimp w.Tofu over Noodles",
+    "price": "$14.99",
+    "section": "Over Noodles"
+   },
+   {
+    "name": "Braised Pork Ribs over Noodles",
+    "price": "$14.99",
+    "section": "Over Noodles"
+   },
+   {
+    "name": "Shredded Pork over Noodles",
+    "price": "$14.99",
+    "section": "Over Noodles"
+   },
+   {
+    "name": "Shredded Chicken over Noodles",
+    "price": "$14.99",
+    "section": "Over Noodles"
+   },
+   {
+    "name": "Shredded Pork w.Garlic over Noodles",
+    "price": "$14.99",
+    "section": "Over Noodles"
+   },
+   {
+    "name": "Cumin Beef over Noodles",
+    "price": "$14.99",
+    "section": "Over Noodles"
+   },
+   {
+    "name": "Cumin Lamb over Noodles",
+    "price": "$14.99",
+    "section": "Over Noodles"
+   },
+   {
+    "name": "Egg Roll(1)",
+    "price": "$1.50",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Spring Roll(1)",
+    "price": "$1.50",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Crab Rangoon(8)",
+    "price": "$6.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Chicken Skewers(2)",
+    "price": "$5.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Sichuan Cucumber",
+    "price": "$6.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Pot Stickers(8)",
+    "price": "$8.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Spiced Pork w.Garlic Sauce",
+    "price": "$10.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Pork Boiled Dumpling(12)",
+    "price": "$10.99",
+    "section": "Appetizer"
+   },
+   {
+    "name": "Miso Soup",
+    "price": "$2.99",
+    "section": "Soups"
+   },
+   {
+    "name": "Chicken Noodle Soup",
+    "price": "$3.99",
+    "section": "Soups"
+   },
+   {
+    "name": "Chicken Udon Soup",
+    "price": "$11.99",
+    "section": "Soups"
+   },
+   {
+    "name": "Beef Udon Soup",
+    "price": "$11.99",
+    "section": "Soups"
+   },
+   {
+    "name": "Shrimp Udon Soup",
+    "price": "$11.99",
+    "section": "Soups"
+   },
+   {
+    "name": "Vegetable Tofu Soup",
+    "price": "$11.99",
+    "section": "Soups"
+   },
+   {
+    "name": "House Special Soup",
+    "price": "$11.99",
+    "section": "Soups"
+   },
+   {
+    "name": "Ice Tea",
+    "price": "$3.50",
+    "section": "Drinks/Tea"
+   },
+   {
+    "name": "Milk Tea",
+    "price": "$3.50",
+    "section": "Drinks/Tea"
+   },
+   {
+    "name": "Jasmine Tea",
+    "price": "$3.50",
+    "section": "Drinks/Tea"
+   }
+  ]
+ },
+ "oxford|Ramen Hachi": {
+  "source": "https://ramenhachi.com/",
+  "items": [
+   {
+    "name": "Unagi Don",
+    "price": "$22.99",
+    "section": "Rice Bowls"
+   },
+   {
+    "name": "Curry Karaage Don",
+    "price": "$14.99",
+    "section": "Rice Bowls"
+   },
+   {
+    "name": "Chashu Don",
+    "price": "$13.99",
+    "section": "Rice Bowls"
+   },
+   {
+    "name": "Mini Chashu",
+    "price": "$5.00",
+    "section": "Rice Bowls"
+   },
+   {
+    "name": "Mini Curry (V)",
+    "price": "$4.00",
+    "section": "Rice Bowls"
+   },
+   {
+    "name": "Mini Unagi",
+    "price": "$9.99",
+    "section": "Rice Bowls"
+   },
+   {
+    "name": "Yuzu Shio",
+    "price": "$13.99",
+    "section": "Ramen"
+   },
+   {
+    "name": "Classic Sho-Yu",
+    "price": "$13.99",
+    "section": "Ramen"
+   },
+   {
+    "name": "Black Garlic Tonkatsu",
+    "price": "$14.99",
+    "section": "Ramen"
+   },
+   {
+    "name": "Spicy Tonkatsu",
+    "price": "$14.99",
+    "section": "Ramen"
+   },
+   {
+    "name": "Mi-So Hungry",
+    "price": "$13.99",
+    "section": "Ramen"
+   },
+   {
+    "name": "Mi-So Hot",
+    "price": "$13.99",
+    "section": "Ramen"
+   },
+   {
+    "name": "Mi-So Zen (V)",
+    "price": "$13.99",
+    "section": "Ramen"
+   },
+   {
+    "name": "Mazemen (V)",
+    "price": "$12.99",
+    "section": "Ramen"
+   },
+   {
+    "name": "Chashu Bun",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Edamame",
+    "price": "$4.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Gyoza Dumpling (6pc)",
+    "price": "$6.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Karaage",
+    "price": "$7.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Seaweed Salad",
+    "price": "$4.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Shrimp Tempura (6pc)",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Crispy Takoyaki (6pc)",
+    "price": "$7.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mango Mojito",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Strawberry Mojito",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Pineapple Mojito",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Passion Fruit Mojito",
+    "price": "$6.75",
+    "section": "Drinks"
+   },
+   {
+    "name": "Lychee Mojito",
+    "price": "$6.75",
+    "section": "Drinks"
+   },
+   {
+    "name": "Brown Sugar Milk Swirl w. Bubble",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Matcha Milk Swirl w. Bubble",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Mango Milk Swirl w. Bubble",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Strawberry Milk Swirl w. Bubble",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Jasmine Milk Tea",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Ruby Milk Tea",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Brown Sugar Milk Tea w. Bubble",
+    "price": "$6.95",
+    "section": "Drinks"
+   },
+   {
+    "name": "Brown Sugar Milk Tea w. Bubble, Oreo, Milk Foam",
+    "price": "$6.95",
+    "section": "Drinks"
+   },
+   {
+    "name": "Taro Milk Green Tea w. Bubble",
+    "price": "$6.95",
+    "section": "Drinks"
+   },
+   {
+    "name": "Grapefruit Green Tea Slush",
+    "price": "$6.75",
+    "section": "Drinks"
+   },
+   {
+    "name": "Mango Green Tea Slush w. Milk Foam",
+    "price": "$6.75",
+    "section": "Drinks"
+   },
+   {
+    "name": "Strawberry Green Tea Slush w. Milk Foam",
+    "price": "$6.75",
+    "section": "Drinks"
+   },
+   {
+    "name": "Blueberry Green Tea Slush w. Milk Foam",
+    "price": "$6.95",
+    "section": "Drinks"
+   },
+   {
+    "name": "Lychee Green Tea Slush w. Milk Foam",
+    "price": "$7.25",
+    "section": "Drinks"
+   },
+   {
+    "name": "Blueberry Yogurt w. Crystal Pearl",
+    "price": "$6.75",
+    "section": "Drinks"
+   },
+   {
+    "name": "Pineapple Yogurt w. Crystal Pearl",
+    "price": "$6.75",
+    "section": "Drinks"
+   },
+   {
+    "name": "Strawberry Yogurt w. Crystal Pearl",
+    "price": "$6.75",
+    "section": "Drinks"
+   },
+   {
+    "name": "Mango Yogurt w. Crystal Pearl",
+    "price": "$6.75",
+    "section": "Drinks"
+   },
+   {
+    "name": "Lychee Yogurt w. Crystal Pearl",
+    "price": "$6.75",
+    "section": "Drinks"
+   },
+   {
+    "name": "Peach Green Tea w. Nata Jelly",
+    "price": "$6.95",
+    "section": "Drinks"
+   },
+   {
+    "name": "Passion Fruit & Lime Green Tea",
+    "price": "$6.95",
+    "section": "Drinks"
+   },
+   {
+    "name": "Colorful Fruit Green Tea",
+    "price": "$6.95",
+    "section": "Drinks"
+   },
+   {
+    "name": "Pineapple Green Tea w. Nata Jelly",
+    "price": "$6.95",
+    "section": "Drinks"
+   },
+   {
+    "name": "Pineapple & Passion Fruit Green Tea w. Nata Jelly",
+    "price": "$7.25",
+    "section": "Drinks"
+   },
+   {
+    "name": "Grapefruit & Peach Green Tea w. Peach Jelly",
+    "price": "$6.95",
+    "section": "Drinks"
+   },
+   {
+    "name": "Peach Milk Green Tea w. Peach Boba",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Pineapple Milk Green Tea w. Yogurt Boba",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Strawberry Milk Green Tea w. Strawberry Boba",
+    "price": "$6.95",
+    "section": "Drinks"
+   },
+   {
+    "name": "Lychee Milk Green Tea w. Yogurt Boba",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Blueberry Milk Green Tea w. Yogurt Boba",
+    "price": "$6.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Mango Milk Green Tea w. Mango Boba",
+    "price": "$6.45",
+    "section": "Drinks"
+   }
+  ]
+ },
+ "oxford|Saigon O'i Vietnamese Restaurant": {
+  "source": "https://pos.chowbus.com/online-ordering/store/Sai-Gon-Oi/23350",
+  "items": [
+   {
+    "name": "Saigon Oi Beef Pho",
+    "price": "$14.95",
+    "section": "Noodles Soup"
+   },
+   {
+    "name": "Chicken Pho",
+    "price": "$13.95",
+    "section": "Noodles Soup"
+   },
+   {
+    "name": "Vegetarian Pho",
+    "price": "$13.95",
+    "section": "Noodles Soup"
+   },
+   {
+    "name": "Shrimp Pho",
+    "price": "$14.95",
+    "section": "Noodles Soup"
+   },
+   {
+    "name": "Mi Quang",
+    "price": "$15.95",
+    "section": "Noodles Soup"
+   },
+   {
+    "name": "Udon Cao Lau",
+    "price": "$15.95",
+    "section": "Noodles Soup"
+   },
+   {
+    "name": "Beef Pho Broth",
+    "price": "$3.95",
+    "section": "Noodles Soup"
+   },
+   {
+    "name": "Bun Rieu - Crab Meat Soup",
+    "price": "$15.95",
+    "section": "Noodles Soup"
+   },
+   {
+    "name": "Grilled Pork Chop And Egg",
+    "price": "$14.95",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Cube Ribeye Steak Stir Fried",
+    "price": "$17.95",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Turmeric Chicken",
+    "price": "$14.95",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Vietnamese Fried Rice",
+    "price": "$14.95",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Clay Pot Rice",
+    "price": "$12.95",
+    "section": "Rice Dishes"
+   },
+   {
+    "name": "Fried Spring Rolls Vermicelli",
+    "price": "$13.95",
+    "section": "Vermicelli Bowls"
+   },
+   {
+    "name": "Grilled Pork Vermicelli",
+    "price": "$14.95",
+    "section": "Vermicelli Bowls"
+   },
+   {
+    "name": "Saigons Vermicelli",
+    "price": "$15.95",
+    "section": "Vermicelli Bowls"
+   },
+   {
+    "name": "Bbq Pork Sandwich",
+    "price": "$7.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Beef Meatball Sandwich",
+    "price": "$7.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Hotplate Beef Steak",
+    "price": "$18.45",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Grilled Pork Sandwich",
+    "price": "$7.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Grilled Chicken Sandwich",
+    "price": "$7.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pan Fried Noodles",
+    "price": "$14.95",
+    "section": "Noodle Dishes"
+   },
+   {
+    "name": "Spicy Popcorn Chicken",
+    "price": "$7.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Spring Roll",
+    "price": "$4.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Coconut Shrimp",
+    "price": "$6.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Rocket Shrimp",
+    "price": "$6.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Summer Roll",
+    "price": "$4.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Veggie Summer Roll",
+    "price": "$3.95",
+    "section": "Vegetarian Menu"
+   },
+   {
+    "name": "Veggie Spring Roll",
+    "price": "$3.95",
+    "section": "Vegetarian Menu"
+   },
+   {
+    "name": "Vegetarian Banh Mi",
+    "price": "$7.95",
+    "section": "Vegetarian Menu"
+   },
+   {
+    "name": "Vegetarian Vermicelli Bowl",
+    "price": "$12.95",
+    "section": "Vegetarian Menu"
+   },
+   {
+    "name": "Veggie Spring Roll Vermicelli Bowl",
+    "price": "$12.95",
+    "section": "Vegetarian Menu"
+   },
+   {
+    "name": "Vegetarian Pho",
+    "price": "$13.95",
+    "section": "Vegetarian Menu"
+   },
+   {
+    "name": "Vegetarian Fried Rice",
+    "price": "$13.95",
+    "section": "Vegetarian Menu"
+   },
+   {
+    "name": "Vegetarian Mi Quang",
+    "price": "$13.95",
+    "section": "Vegetarian Menu"
+   },
+   {
+    "name": "Vegetarian Udon",
+    "price": "$14.50",
+    "section": "Vegetarian Menu"
+   },
+   {
+    "name": "Vietnamese Iced Coffee",
+    "price": "$4.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Matcha Latte",
+    "price": "$5.90",
+    "section": "Drinks"
+   },
+   {
+    "name": "Sweet Iced Tea",
+    "price": "$2.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Unsweet Iced Tea",
+    "price": "$2.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Strawberry Lemonade",
+    "price": "$4.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Peach Lemonade",
+    "price": "$4.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Gruava Lemonade",
+    "price": "$4.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Grape Lemonade",
+    "price": "$4.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Hibiscus Tea",
+    "price": "$4.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Guava Tropical Tea",
+    "price": "$5.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Strawberry Tea",
+    "price": "$4.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Lemongrass Peach And Orange Tea",
+    "price": "$5.45",
+    "section": "Drinks"
+   },
+   {
+    "name": "Chocolate Mousse",
+    "price": "$3.25",
+    "section": "Dessert"
+   }
+  ]
+ },
+ "oxford|Skyline Chili": {
+  "source": "https://skylinechili.com/menu/",
+  "items": [
+   {
+    "name": "3-Way",
+    "price": "",
+    "section": "Our Famous Ways"
+   },
+   {
+    "name": "4-Way",
+    "price": "",
+    "section": "Our Famous Ways"
+   },
+   {
+    "name": "5-Way",
+    "price": "",
+    "section": "Our Famous Ways"
+   },
+   {
+    "name": "Cheese Coney",
+    "price": "",
+    "section": "Our Famous Coneys"
+   },
+   {
+    "name": "Chili Cheese Sandwich",
+    "price": "",
+    "section": "Our Famous Coneys"
+   },
+   {
+    "name": "Coney",
+    "price": "",
+    "section": "Our Famous Coneys"
+   },
+   {
+    "name": "Chili Cheese Fries",
+    "price": "",
+    "section": "Fries"
+   },
+   {
+    "name": "Cheese Fries",
+    "price": "",
+    "section": "Fries"
+   },
+   {
+    "name": "Fries",
+    "price": "",
+    "section": "Fries"
+   },
+   {
+    "name": "Original Deluxe",
+    "price": "",
+    "section": "Burritos & Chilitos"
+   },
+   {
+    "name": "Chili Deluxe",
+    "price": "",
+    "section": "Burritos & Chilitos"
+   },
+   {
+    "name": "Chilito",
+    "price": "",
+    "section": "Burritos & Chilitos"
+   },
+   {
+    "name": "Vegetarian 3-Way",
+    "price": "",
+    "section": "Burritos & Chilitos"
+   },
+   {
+    "name": "Vegetarian Chilito",
+    "price": "",
+    "section": "Burritos & Chilitos"
+   },
+   {
+    "name": "Greek",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Garden",
+    "price": "",
+    "section": "Salads"
+   },
+   {
+    "name": "Classic Chicken",
+    "price": "",
+    "section": "Wraps"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "",
+    "section": "Wraps"
+   },
+   {
+    "name": "Chicken Bacon Ranch",
+    "price": "",
+    "section": "Wraps"
+   },
+   {
+    "name": "Loaded Chili Bowl",
+    "price": "",
+    "section": "Bowls"
+   },
+   {
+    "name": "Coney Bowl",
+    "price": "",
+    "section": "Bowls"
+   },
+   {
+    "name": "3-Way Potato",
+    "price": "",
+    "section": "Potatoes"
+   },
+   {
+    "name": "Cheddar Potato",
+    "price": "",
+    "section": "Potatoes"
+   },
+   {
+    "name": "Sour Cream Potato",
+    "price": "",
+    "section": "Potatoes"
+   },
+   {
+    "name": "Kids’ 3-Way",
+    "price": "",
+    "section": "Kids"
+   },
+   {
+    "name": "Kids’ P’sghetti",
+    "price": "",
+    "section": "Kids"
+   },
+   {
+    "name": "Kids’ Coney",
+    "price": "",
+    "section": "Kids"
+   },
+   {
+    "name": "Kids’ Hot Doggy",
+    "price": "",
+    "section": "Kids"
+   },
+   {
+    "name": "Skyline Chili Dip",
+    "price": "",
+    "section": "Shareables"
+   },
+   {
+    "name": "Nachos",
+    "price": "",
+    "section": "Shareables"
+   },
+   {
+    "name": "Buffalo Chicken Dip",
+    "price": "",
+    "section": "Shareables"
+   },
+   {
+    "name": "Chicken Tenders",
+    "price": "",
+    "section": "Tenders"
+   },
+   {
+    "name": "Breakfast Chilito",
+    "price": "",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Breakfast Coney",
+    "price": "",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Breakfast Burrito",
+    "price": "",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Breakfast Way",
+    "price": "",
+    "section": "Breakfast"
+   },
+   {
+    "name": "Fudge Cake",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Funnel Fries",
+    "price": "",
+    "section": "Desserts"
+   },
+   {
+    "name": "Seasonal Cheesecake",
+    "price": "",
+    "section": "Desserts"
+   }
+  ]
+ },
+ "oxford|Sorriso Osteria + Bar": {
+  "source": "https://sorrisooxford.com/",
+  "items": [
+   {
+    "name": "Meatballs",
+    "price": "$10.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Garlic Bread",
+    "price": "$7.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Sorriso Bread",
+    "price": "$12.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Bruschetta",
+    "price": "$9.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Sundried Tomato Flatbread",
+    "price": "$10.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "House Salad",
+    "price": "$9.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "$10.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Arugula Salad",
+    "price": "$12.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Salmon Salad",
+    "price": "$18.00",
+    "section": "Salads"
+   },
+   {
+    "name": "Meatball",
+    "price": "$15.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Italian",
+    "price": "$14.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Sliced Steak",
+    "price": "$16.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Marinara",
+    "price": "$15.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Steak Caprese",
+    "price": "$16.50",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Bacon Ranch",
+    "price": "$15.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Alfredo",
+    "price": "$17.00",
+    "section": "Pasta"
+   },
+   {
+    "name": "Chicken Marinara",
+    "price": "$17.00",
+    "section": "Pasta"
+   },
+   {
+    "name": "Sausage Pesto",
+    "price": "$18.00",
+    "section": "Pasta"
+   },
+   {
+    "name": "Pasta Salad",
+    "price": "$12.00",
+    "section": "Pasta"
+   },
+   {
+    "name": "Sugar Spiced Salmon",
+    "price": "$20.00",
+    "section": "Pasta"
+   },
+   {
+    "name": "Chicken and Pancetta",
+    "price": "$18.00",
+    "section": "Pasta"
+   },
+   {
+    "name": "Cheese",
+    "price": "$18.00",
+    "section": "Pizza"
+   },
+   {
+    "name": "Pepperoni",
+    "price": "$21.00",
+    "section": "Pizza"
+   },
+   {
+    "name": "BBQ Chicken",
+    "price": "$22.00",
+    "section": "Pizza"
+   },
+   {
+    "name": "Steak Pizza",
+    "price": "$25.00",
+    "section": "Pizza"
+   }
+  ]
+ },
+ "oxford|Spring Street Treats": {
+  "source": "https://www.springstreettreats.com/menu",
+  "items": [
+   {
+    "name": "Banana Split",
+    "price": "$8.95",
+    "section": "Specialties"
+   },
+   {
+    "name": "Brownie Sundae",
+    "price": "$7.75",
+    "section": "Specialties"
+   },
+   {
+    "name": "Cheesecake Sundae",
+    "price": "$7.95",
+    "section": "Specialties"
+   },
+   {
+    "name": "Birthday Everyday Sundae",
+    "price": "$7.25",
+    "section": "Specialties"
+   },
+   {
+    "name": "Caramel Apple Sundae",
+    "price": "$6.75",
+    "section": "Specialties"
+   },
+   {
+    "name": "Soda Float",
+    "price": "$5.95",
+    "section": "Specialties"
+   },
+   {
+    "name": "Cookie Sandwich",
+    "price": "$4.25",
+    "section": "Specialties"
+   },
+   {
+    "name": "Silly Cup",
+    "price": "$4.50",
+    "section": "Specialties"
+   },
+   {
+    "name": "Yummy Gummy Treat",
+    "price": "$5.95",
+    "section": "Specialties"
+   },
+   {
+    "name": "Cookies Extreme Sundae",
+    "price": "$6.75",
+    "section": "Specialties by Size"
+   },
+   {
+    "name": "Inside-Out Drumstick",
+    "price": "$6.75",
+    "section": "Specialties by Size"
+   },
+   {
+    "name": "Pineapple Whip",
+    "price": "$6.75",
+    "section": "Specialties by Size"
+   },
+   {
+    "name": "Reese's Explosion",
+    "price": "$6.75",
+    "section": "Specialties by Size"
+   },
+   {
+    "name": "Turtle Sundae",
+    "price": "$6.75",
+    "section": "Specialties by Size"
+   },
+   {
+    "name": "Sundae Your Way",
+    "price": "$6.75",
+    "section": "Specialties by Size"
+   },
+   {
+    "name": "Mini Cone",
+    "price": "$1.95",
+    "section": "Cones"
+   },
+   {
+    "name": "Small Cone",
+    "price": "$3.95",
+    "section": "Cones"
+   },
+   {
+    "name": "Medium Cone",
+    "price": "$4.70",
+    "section": "Cones"
+   },
+   {
+    "name": "Large Cone",
+    "price": "$5.45",
+    "section": "Cones"
+   },
+   {
+    "name": "Waffle Cone",
+    "price": "$5.95",
+    "section": "Cones"
+   },
+   {
+    "name": "Mix-Up",
+    "price": "$5.95",
+    "section": "Mix-Ups"
+   },
+   {
+    "name": "Shakes & Malts",
+    "price": "$4.75",
+    "section": "Shakes & Malts"
+   },
+   {
+    "name": "Shaved Ice",
+    "price": "$3.75",
+    "section": "Shaved Ice"
+   },
+   {
+    "name": "Strawberry Smoothie",
+    "price": "$5.95",
+    "section": "Smoothies"
+   },
+   {
+    "name": "Mango Smoothie",
+    "price": "$5.95",
+    "section": "Smoothies"
+   },
+   {
+    "name": "Jumbo All Beef Hot Dog",
+    "price": "$4.50",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "BBQ Pulled Pork Sandwich",
+    "price": "$5.75",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "Chicken Salad Sandwich",
+    "price": "$5.75",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "Pulled Pork Nachos",
+    "price": "$7.75",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "Nachos w/Cheese",
+    "price": "$4.00",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "Giant Soft Pretzel",
+    "price": "$3.50",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "Giant Soft Pretzel w/Cheese",
+    "price": "$4.50",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "Cream Cheese Stuffed Pretzel",
+    "price": "$4.95",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "Brownie",
+    "price": "$1.50",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "Chocolate Chunk Cookie",
+    "price": "$1.25",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "Slice of Cheesecake",
+    "price": "$3.50",
+    "section": "Sandwiches, Snacks, etc"
+   },
+   {
+    "name": "Funnel Cake (5\")",
+    "price": "$2.95",
+    "section": "Sandwiches, Snacks, etc"
+   }
+  ]
+ },
+ "oxford|Tavo Mediterranean Grill": {
+  "source": "https://www.tavogrill.com/",
+  "items": [
+   {
+    "name": "Chicken Shawarma",
+    "price": "$11.99",
+    "section": "Wraps & Sandwiches"
+   },
+   {
+    "name": "Beef Shawarma",
+    "price": "$12.99",
+    "section": "Wraps & Sandwiches"
+   },
+   {
+    "name": "Chicken Kebab (Shish Tawook)",
+    "price": "$11.99",
+    "section": "Wraps & Sandwiches"
+   },
+   {
+    "name": "Gyro",
+    "price": "$12.99",
+    "section": "Wraps & Sandwiches"
+   },
+   {
+    "name": "Beef Kebab",
+    "price": "$12.99",
+    "section": "Wraps & Sandwiches"
+   },
+   {
+    "name": "Falafel",
+    "price": "$9.99",
+    "section": "Wraps & Sandwiches"
+   },
+   {
+    "name": "Build Your Own",
+    "price": "$11.99",
+    "section": "Build Your Own"
+   },
+   {
+    "name": "Chicken Shawarma Combo",
+    "price": "$14.99",
+    "section": "Combos"
+   },
+   {
+    "name": "Chicken Kebab Combo",
+    "price": "$14.99",
+    "section": "Combos"
+   },
+   {
+    "name": "Beef Shawarma Combo",
+    "price": "$16.99",
+    "section": "Combos"
+   },
+   {
+    "name": "Beef Kebab Combo",
+    "price": "$16.99",
+    "section": "Combos"
+   },
+   {
+    "name": "Gyro Combo",
+    "price": "$16.99",
+    "section": "Combos"
+   },
+   {
+    "name": "Fattoush Salad",
+    "price": "$7.99",
+    "section": "Sides & Salads"
+   },
+   {
+    "name": "Tabbouleh",
+    "price": "$8.99",
+    "section": "Sides & Salads"
+   },
+   {
+    "name": "Mediterranean Salad",
+    "price": "$6.99",
+    "section": "Sides & Salads"
+   },
+   {
+    "name": "Greek Salad",
+    "price": "$8.99",
+    "section": "Sides & Salads"
+   },
+   {
+    "name": "Baba Ghanouj",
+    "price": "$8.99",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Grape Leaves",
+    "price": "$5.99",
+    "section": "Appetizers"
+   }
+  ]
+ },
+ "oxford|OxVegas Chicken": {
+  "source": "https://www.oxvegaschicken.com/menu",
+  "items": [
+   {
+    "name": "The Freshman",
+    "price": "",
+    "section": "Tender Boxes"
+   },
+   {
+    "name": "The Sophomore",
+    "price": "",
+    "section": "Tender Boxes"
+   },
+   {
+    "name": "The Junior",
+    "price": "",
+    "section": "Tender Boxes"
+   },
+   {
+    "name": "The Senior",
+    "price": "",
+    "section": "Tender Boxes"
+   },
+   {
+    "name": "OxBird",
+    "price": "",
+    "section": "Sandwiches & Sides"
+   },
+   {
+    "name": "Spicy Bird",
+    "price": "",
+    "section": "Sandwiches & Sides"
+   },
+   {
+    "name": "MACtion",
+    "price": "",
+    "section": "Sandwiches & Sides"
    }
   ]
  }
