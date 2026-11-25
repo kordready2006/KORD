@@ -63,7 +63,7 @@
           "local": true,
           "signature": false,
           "address": "1780 Coventry Rd, Cleveland Heights, OH 44118",
-          "website": "",
+          "website": "https://www.phoandricecoventry.com/",
           "blurb": "Vietnamese and Thai spot on Coventry Road.",
           "price": "$$",
           "sourceUrl": "https://www.ubereats.com/neighborhood/coventry-village-cleveland-heights-oh",
@@ -75,7 +75,7 @@
           "local": true,
           "signature": false,
           "address": "1827 Coventry Rd, Cleveland Heights, OH 44118",
-          "website": "",
+          "website": "https://sobaasiankitchen.com/",
           "blurb": "Asian kitchen on Coventry Road.",
           "price": "$$",
           "sourceUrl": "https://www.ubereats.com/neighborhood/coventry-village-cleveland-heights-oh",
@@ -87,7 +87,7 @@
           "local": true,
           "signature": true,
           "address": "11111 Euclid Ave (Thwing Center), Cleveland, OH 44106",
-          "website": "",
+          "website": "https://thejollyscholar.com/",
           "blurb": "Case Western's on-campus pub in Thwing Center with burgers, wings and Tuesday trivia.",
           "price": "$",
           "sourceUrl": "https://www.universitycircle.org/destinations/the-jolly-scholar",
@@ -98,8 +98,8 @@
           "category": "Asian",
           "local": true,
           "signature": false,
-          "address": "11332 Euclid Ave, Cleveland, OH 44106",
-          "website": "",
+          "address": "11322 Euclid Ave, Cleveland, OH 44106",
+          "website": "https://chopstick.restaurant888.com/",
           "blurb": "Uptown Chinese spot the CWRU Observer calls some of the cheapest food in Uptown.",
           "price": "$",
           "sourceUrl": "https://www.uhhospitals.org/locations/uh-cleveland-medical-center/patients-and-visitors/getting-here/neighborhood-information/restaurants",
@@ -110,8 +110,8 @@
           "category": "Asian",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "11310 Euclid Ave, Cleveland, OH 44106",
+          "website": "https://kenko-usa.com/",
           "blurb": "Uptown sushi and teriyaki spot known to CWRU students for its teas and boba.",
           "price": "$$",
           "sourceUrl": "https://observer.case.edu/best-food-uptown",
@@ -122,7 +122,7 @@
           "category": "Asian",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "11607 Euclid Ave, Cleveland, OH 44106",
           "website": "",
           "blurb": "Indian restaurant near CWRU that the Observer calls very affordable for students.",
           "price": "$",
@@ -135,7 +135,7 @@
           "local": true,
           "signature": true,
           "address": "12101 Mayfield Rd, Cleveland, OH 44106",
-          "website": "",
+          "website": "https://www.prestisbakery.com/",
           "blurb": "Little Italy bakery dating to 1903.",
           "price": "$",
           "sourceUrl": "https://www.universitycircle.org/destinations/prestis-bakery",
@@ -147,7 +147,7 @@
           "local": true,
           "signature": true,
           "address": "12301 Mayfield Rd, Cleveland, OH 44106",
-          "website": "",
+          "website": "https://mamasantas.com/",
           "blurb": "Longtime Little Italy pizzeria on Mayfield Road.",
           "price": "$",
           "sourceUrl": "https://clevelandmagazine.com/articles/that-s-amore-a-guide-to-cleveland-s-little-italy/",
@@ -159,7 +159,7 @@
           "local": true,
           "signature": false,
           "address": "12210 Mayfield Rd, Cleveland, OH 44106",
-          "website": "",
+          "website": "https://www.corbosbakery.net/",
           "blurb": "Little Italy bakery at Mayfield and E. 123rd, with a pasta and pizza house at the same address.",
           "price": "$",
           "sourceUrl": "https://redirect.foursquare.com/body_by_ben/list/places-to-be-little-italy-edition",
@@ -171,7 +171,7 @@
           "local": true,
           "signature": false,
           "address": "12113 Mayfield Rd, Cleveland, OH 44106",
-          "website": "",
+          "website": "https://maxisbistro.com/",
           "blurb": "Little Italy bistro on Mayfield Road.",
           "price": "$$",
           "sourceUrl": "https://www.cozymeal.com/magazine/little-italy-restaurants-cleveland",
@@ -183,7 +183,7 @@
           "local": true,
           "signature": false,
           "address": "1776 Coventry Rd, Cleveland Heights, OH 44118",
-          "website": "",
+          "website": "https://www.grumssubshoppe.com/",
           "blurb": "Specialty sub shop on Coventry for over 30 years.",
           "price": "$",
           "sourceUrl": "https://clevelandheights.gov/481/Coventry-Village-Commercial-District",
@@ -207,7 +207,7 @@
           "local": true,
           "signature": false,
           "address": "2785 Euclid Heights Blvd, Cleveland Heights, OH",
-          "website": "",
+          "website": "https://www.theinnoncoventry.com/",
           "blurb": "Coventry Village breakfast spot, a Cleveland Magazine Silver Spoon winner.",
           "price": "$$",
           "sourceUrl": "https://clevelandheights.gov/481/Coventry-Village-Commercial-District",
@@ -218,8 +218,8 @@
           "category": "Pizza",
           "local": true,
           "signature": false,
-          "address": "Euclid Ave at E 19th St, Cleveland, OH",
-          "website": "",
+          "address": "1836 Euclid Ave, Cleveland, OH",
+          "website": "https://rascalhouse.com/",
           "blurb": "Cleveland pizza chain described by the CSU law school guide as a CSU pizza hang-out.",
           "price": "$",
           "sourceUrl": "https://www.law.csuohio.edu/sites/default/files/academics/orientation/restaurant_guide-summer_2016.pdf",
@@ -327,7 +327,7 @@
           "local": false,
           "signature": false,
           "address": "1550 Chester Ave, Cleveland, OH",
-          "website": "",
+          "website": "https://www.hofbrauhauscleveland.com/",
           "blurb": "German beer hall in the Playhouse Square district near Cleveland State.",
           "price": "$$",
           "sourceUrl": "https://playhousesquare.org/news/detail/happy-hours-around-the-district",
@@ -378,8 +378,8 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "1425 Euclid Ave, Cleveland, OH",
+          "website": "https://thedriftwoodgroup.com/restaurants/republic-food-drink/",
           "blurb": "Downtown Cleveland restaurant and bar in the Playhouse Square district.",
           "price": "$$",
           "sourceUrl": "https://playhousesquare.org/news/detail/happy-hours-around-the-district",
@@ -392,11 +392,11 @@
                 "Fri"
               ],
               "title": "Half-price appetizers happy hour",
-              "details": "50% off appetizers (and drinks) at the bar only, Tuesday-Friday 3-5 PM.",
+              "details": "50% off appetizers (and all liquor, beer and wine) at the bar only, Tuesday-Friday 3-5 PM.",
               "price": "50% off",
               "studentOnly": false,
-              "sourceUrl": "https://clehappyhour.com/",
-              "sourceDate": "2026-04"
+              "sourceUrl": "https://thedriftwoodgroup.com/restaurants/republic-food-drink/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -448,6 +448,39 @@
               "studentOnly": false,
               "sourceUrl": "https://cilantrotaqueria.com/",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$8.99 bowls and burritos Monday",
+              "details": "$8.99 bowls and burritos on Mondays; in-person orders only, excludes lengua and seafood.",
+              "price": "$8.99",
+              "studentOnly": false,
+              "sourceUrl": "https://cilantrotaqueria.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$8.99 quesadillas Wednesday",
+              "details": "$8.99 quesadillas on Wednesdays; in-person orders only, excludes lengua and seafood.",
+              "price": "$8.99",
+              "studentOnly": false,
+              "sourceUrl": "https://cilantrotaqueria.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Sun"
+              ],
+              "title": "$12.99 fajitas Sunday",
+              "details": "$12.99 fajitas on Sundays; in-person orders only, excludes lengua and seafood.",
+              "price": "$12.99",
+              "studentOnly": false,
+              "sourceUrl": "https://cilantrotaqueria.com/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -478,6 +511,874 @@
               "sourceDate": ""
             }
           ]
+        },
+        {
+          "name": "Algebra Tea House",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "2136 Murray Hill Rd, Cleveland, OH 44106",
+          "website": "https://www.algebrateahouse.com/",
+          "blurb": "Little Italy tea house and art gallery open since 2001 with 36+ teas and Middle Eastern food.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/algebra-tea-house",
+          "deals": []
+        },
+        {
+          "name": "Angelo's Nido Italia Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "12020 Mayfield Rd, Cleveland, OH 44106",
+          "website": "https://www.angelosnidoitalia.com/",
+          "blurb": "Little Italy landmark serving traditional Italian cuisine and wines for decades.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/angelos-nido-italia-restaurant",
+          "deals": []
+        },
+        {
+          "name": "Blue Sky Brews",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "2187 Murray Hill Road, Cleveland, OH 44106",
+          "website": "https://blueskybrews.com/",
+          "blurb": "Little Italy hangout for coffee, tea and beer.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/blue-sky-brews",
+          "deals": []
+        },
+        {
+          "name": "Borgata Bar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "12501 Mayfield Road, Cleveland, OH 44106",
+          "website": "https://theborgatabar.com/",
+          "blurb": "Bar with food on the first floor of a century-old Little Italy building.",
+          "price": "$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/borgata-bar",
+          "deals": []
+        },
+        {
+          "name": "Capo's Steaks",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "11332 Euclid Ave, Cleveland, OH 44106",
+          "website": "https://www.facebook.com/CapoSteaks/",
+          "blurb": "Cheesesteak counter on Euclid Avenue in Uptown.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/capos-steaks",
+          "deals": []
+        },
+        {
+          "name": "Cent' Anni",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "12403 Mayfield Road, Cleveland, OH 44106",
+          "website": "https://centanni-cle.com/",
+          "blurb": "Cocktail bar in Little Italy focused on expertly crafted cocktails.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/cent-anni",
+          "deals": []
+        },
+        {
+          "name": "Crepes n' Crisps",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "10001 Chester Ave, Cleveland, OH 44106",
+          "website": "https://crepesncrisps.com/",
+          "blurb": "Sweet and savory crepes and loaded fries near the Cleveland Clinic end of University Circle.",
+          "price": "$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/crepes-n-crisps",
+          "deals": []
+        },
+        {
+          "name": "Falafel Café",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "11454 Uptown Ave, Cleveland, OH 44106",
+          "website": "https://falafelcafecleveland.com/",
+          "blurb": "Middle Eastern takeout in Uptown: falafel, shawarma and catering.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/falafel-caf",
+          "deals": []
+        },
+        {
+          "name": "Fluffy Duck Café",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "10001 Chester Ave, Cleveland, OH 44106",
+          "website": "https://fluffyduckcafe.com/",
+          "blurb": "Bakery cafe across from the Cleveland Clinic main campus.",
+          "price": "$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/fluffy-duck-caf",
+          "deals": []
+        },
+        {
+          "name": "Guarino's Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "12309 Mayfield Rd, Cleveland, OH 44106",
+          "website": "https://guarinoscleveland.com/",
+          "blurb": "Cleveland's oldest restaurant, serving Italian food in Little Italy since 1918.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/guarinos-restaurant",
+          "deals": []
+        },
+        {
+          "name": "Home Bistro",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "12022 Mayfield Rd Floor 1, Cleveland, OH 44106",
+          "website": "https://homebistrocle.com/",
+          "blurb": "New American dinner spot in Little Italy with a Thursday burger night and a Sunday-night slice shop.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/home-bistro",
+          "deals": [
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "Thursday burger night",
+              "details": "Each Thursday the kitchen runs 5 to 6 burger and handheld specials, all served with hand-cut fries (prices not listed).",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://homebistrocle.com/specials/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Kantina",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "11303 Euclid Ave, Cleveland, OH 44106",
+          "website": "https://www.kantinakatering.com/",
+          "blurb": "Kosher restaurant in the Uptown district.",
+          "price": "$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/kantina",
+          "deals": []
+        },
+        {
+          "name": "L'Albatros Brasserie + Bar",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "11401 Bellflower Road, Cleveland, OH 44106",
+          "website": "https://www.albatrosbrasserie.com/",
+          "blurb": "Zack Bruell's French brasserie in a carriage house on the Case Western campus.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/lalbatros-brasserie-bar",
+          "deals": []
+        },
+        {
+          "name": "La Dolce Vita",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "12112 Mayfield Rd, Cleveland, OH 44106",
+          "website": "https://ladolcevitacle.com/",
+          "blurb": "Long-running Italian restaurant on Mayfield Road in Little Italy.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/la-dolce-vita",
+          "deals": []
+        },
+        {
+          "name": "La Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "2188 Murray Hill Rd, Cleveland, OH 44106",
+          "website": "https://lapizzerialittleitaly.com/",
+          "blurb": "Full-menu pizzeria opened in 2009 in a converted Little Italy art studio, with rotating daily pizza specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/la-pizzeria",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$19.99 large gourmet 2-topping pizza",
+              "details": "Tuesday special: large gourmet pizza with two toppings for $19.99, 11 AM-9 PM.",
+              "price": "$19.99",
+              "studentOnly": false,
+              "sourceUrl": "https://lapizzerialittleitaly.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed",
+                "Thu"
+              ],
+              "title": "$5 off gourmet large pizzas",
+              "details": "$5 off any gourmet large pizza, listed for Wednesday and Thursday, 11 AM-9 PM.",
+              "price": "$5 off",
+              "studentOnly": false,
+              "sourceUrl": "https://lapizzerialittleitaly.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Lee's Seafood Boil",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "11460 Uptown Ave, Cleveland, OH 44106",
+          "website": "https://www.leeseafoodboil.com/",
+          "blurb": "Cajun seafood boil restaurant with an Uptown location.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/lees-seafood-boil",
+          "deals": []
+        },
+        {
+          "name": "Lou's Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1931 Coltman Road, Cleveland, OH 44106",
+          "website": "https://www.loustavern.com/",
+          "blurb": "Historic neighborhood pub tucked along Coltman Road in Little Italy.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/lous-tavern",
+          "deals": []
+        },
+        {
+          "name": "Lounge Leo",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "2161 Murray Hill Rd, Cleveland, OH 44106",
+          "website": "https://www.facebook.com/LoungeLeo/",
+          "blurb": "Family-run neighborhood cocktail lounge in Little Italy offering fresh food and spirits.",
+          "price": "$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/lounge-leo",
+          "deals": []
+        },
+        {
+          "name": "Mia Bella Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "12200 Mayfield Rd, Cleveland, OH 44106",
+          "website": "https://mblittleitaly.com/",
+          "blurb": "Family-owned full-service Italian restaurant at Mayfield and Murray Hill.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/mia-bella-restaurant",
+          "deals": []
+        },
+        {
+          "name": "Michaelangelo's Italian Restaurant & Wine Bar",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "2198 Murray Hill Road, Cleveland, OH 44106",
+          "website": "https://www.mangelos.com/",
+          "blurb": "Chef-driven Italian fine dining and wine bar in Little Italy.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/michaelangelos-italian-restaurant-wine-bar",
+          "deals": []
+        },
+        {
+          "name": "Mitchell's Ice Cream",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "11444 Uptown Ave, Cleveland, OH 44106",
+          "website": "https://www.mitchellshomemade.com/",
+          "blurb": "Cleveland ice cream maker handcrafting small batches with local grass-fed dairy; Uptown scoop shop.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/mitchells-ice-cream",
+          "deals": []
+        },
+        {
+          "name": "Mount Granita Italian Ice",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "2024 Murray Hill Road, Cleveland, OH 44106",
+          "website": "https://www.mountgranita.com/",
+          "blurb": "Handmade Italian ice from fresh fruit, served from a cart in Little Italy.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/mount-granita-italian-ice",
+          "deals": []
+        },
+        {
+          "name": "Murray Hill Market",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "2072 Murray Hill Road, Cleveland, OH 44106",
+          "website": "https://murrayhillmarket.net/",
+          "blurb": "Neighborhood market with prepared foods and sandwiches on Murray Hill Road.",
+          "price": "$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/murray-hill-market",
+          "deals": []
+        },
+        {
+          "name": "Otani Noodle",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "11472 Euclid Ave, Cleveland, OH 44106",
+          "website": "https://otaninoodle.com/",
+          "blurb": "Affordable ramen shop in Uptown.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/otani-noodle",
+          "deals": []
+        },
+        {
+          "name": "Sittoo's Pita & Salads",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "11365 Euclid Avenue, Cleveland, OH 44106",
+          "website": "https://mysittoos.com/",
+          "blurb": "Local Lebanese fast-casual chain with shops in Uptown and at 1625 Euclid Ave by Playhouse Square.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/sittoos-pita-salads",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$7.95 weekday business lunch",
+              "details": "Weekdays 11 AM-2 PM: lamb patties, kafta kabob, chicken shawarma, falafel, salad, pita and rice pilaf for $7.95.",
+              "price": "$7.95",
+              "studentOnly": false,
+              "sourceUrl": "https://mysittoos.com/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Tavern of Little Italy",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "12117 Mayfield Road, Cleveland, OH 44106",
+          "website": "https://tolicleveland.com/",
+          "blurb": "Neighborhood tavern with 14 craft taps and a menu that runs from meatballs to fish tacos.",
+          "price": "$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/tavern-of-little-italy",
+          "deals": [
+            {
+              "days": [
+                "Sun"
+              ],
+              "title": "$8.99 all-you-can-eat spaghetti Sunday",
+              "details": "All-you-can-eat spaghetti and meatballs for $8.99 all day every Sunday.",
+              "price": "$8.99",
+              "studentOnly": false,
+              "sourceUrl": "https://tolicleveland.com/cleveland-little-italy-tavern-of-little-italy-llc-food-menu",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "The Coffee House at University Circle",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "11300 Juniper Rd, Cleveland, OH 44106",
+          "website": "https://www.uc-coffeehouse.com/",
+          "blurb": "Coffee shop in a full house on Juniper Road that is popular for studying.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/the-coffee-house-at-university-circle",
+          "deals": []
+        },
+        {
+          "name": "Trattoria on the Hill",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "12207 Mayfield Road, Cleveland, OH 44106",
+          "website": "",
+          "blurb": "Trattoria Roman Garden has served Italian food in Little Italy since 1984.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/trattoria-on-the-hill",
+          "deals": []
+        },
+        {
+          "name": "Tutto Carne",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "2181 Murray Hill Rd, Cleveland, OH 44106",
+          "website": "https://tuttocarnecleveland.com/",
+          "blurb": "Fine-dining Italian steakhouse in Little Italy with aged beef, seafood and pasta.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/tutto-carne",
+          "deals": []
+        },
+        {
+          "name": "Urban Kitchen",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "9751 Chester Ave, Cleveland, OH 44106",
+          "website": "https://www.urbancle.com/",
+          "blurb": "Kitchen and deli on Chester Avenue with American classics, Egyptian specialties and halal dishes.",
+          "price": "$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/urban-kitchen",
+          "deals": []
+        },
+        {
+          "name": "Valerio's Ristorante",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "12405 Mayfield Rd, Cleveland, OH 44106",
+          "website": "https://www.valeriosristorante.com/",
+          "blurb": "Italian ristorante that has been a Little Italy staple for more than two decades.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/valerios-ristorante",
+          "deals": []
+        },
+        {
+          "name": "Etna Ristorante",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "11919 Mayfield Rd, Cleveland, OH 44106",
+          "website": "",
+          "blurb": "Contemporary Italian cuisine with fresh seafood in a cozy old-world room in Little Italy.",
+          "price": "$$$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/etna-ristorante",
+          "deals": []
+        },
+        {
+          "name": "Euro Wafel Bar",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "11433 Mayfield Rd, Cleveland, OH 44106",
+          "website": "",
+          "blurb": "Late-night waffle bar on Mayfield Road.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/euro-wafel-bar",
+          "deals": []
+        },
+        {
+          "name": "Affettati",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "12401 Mayfield Rd, Cleveland, OH 44106",
+          "website": "",
+          "blurb": "Casual Little Italy sandwich shop stacking deli meats and cheeses on focaccia baked in-house every morning.",
+          "price": "$$",
+          "sourceUrl": "https://littleitalycle.com/shop-dine-drink/affettati/",
+          "deals": []
+        },
+        {
+          "name": "Aria Wine Bar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "12304 Mayfield Rd, Cleveland, OH 44106",
+          "website": "https://www.ariacle.com/",
+          "blurb": "Neighborhood wine bar in the heart of Little Italy.",
+          "price": "$$$",
+          "sourceUrl": "https://littleitalycle.com/shop-dine-drink/aria-wine-bar/",
+          "deals": []
+        },
+        {
+          "name": "Good Company Wings",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "2175 Cornell Rd, Cleveland, OH",
+          "website": "https://www.goodcompanywings.com/",
+          "blurb": "Chef-driven wing shop on Cornell Road at the edge of Little Italy.",
+          "price": "$$",
+          "sourceUrl": "https://littleitalycle.com/shop-dine-drink/good-company-wings/",
+          "deals": []
+        },
+        {
+          "name": "Agostino's Bistro and Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://agostinosbistroandpub.com/",
+          "blurb": "Bistro and pub listed in the Little Italy merchant directory.",
+          "price": "$$",
+          "sourceUrl": "https://littleitalycle.com/shop-dine-drink/agostinos-bistro-and-pub/",
+          "deals": []
+        },
+        {
+          "name": "Pacific East",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1763 Coventry Rd, Cleveland Heights, OH 44118",
+          "website": "https://www.pacificeastcoventry88.com/",
+          "blurb": "Coventry sushi standard-bearer and frequent Best of Cleveland winner.",
+          "price": "$$",
+          "sourceUrl": "https://www.coventryvillage.org/home-1-2-1",
+          "deals": []
+        },
+        {
+          "name": "One Pot Hot Pot & BBQ",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1825 Coventry Rd, Cleveland Heights, OH",
+          "website": "https://www.onepotusa.com/",
+          "blurb": "All-you-can-eat Korean BBQ and hot pot; weekday lunch is the cheapest seating.",
+          "price": "$$$",
+          "sourceUrl": "https://www.coventryvillage.org/home-1-2-1",
+          "deals": []
+        },
+        {
+          "name": "Mizu",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1800 Coventry Rd, Cleveland Heights, OH 44118",
+          "website": "https://mizucoventry.com/",
+          "blurb": "Japanese and Chinese restaurant with sushi rolls and lunch specials.",
+          "price": "$$",
+          "sourceUrl": "https://mizucoventry.com/",
+          "deals": []
+        },
+        {
+          "name": "Tree Country Bistro",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1803 Coventry Rd, Cleveland Heights, OH 44118",
+          "website": "https://www.treecountrybistro.net/",
+          "blurb": "Asian fusion spot serving Thai dishes, sushi and Korean and Japanese plates.",
+          "price": "$$",
+          "sourceUrl": "https://www.treecountrybistro.net/",
+          "deals": []
+        },
+        {
+          "name": "High Thai'd Cafe",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1791 Coventry Rd, Cleveland Heights, OH 44118",
+          "website": "https://www.highthaidcafe.com/",
+          "blurb": "Thai cafe at the corner of Coventry and Hampshire.",
+          "price": "$$",
+          "sourceUrl": "https://www.highthaidcafe.com/",
+          "deals": []
+        },
+        {
+          "name": "Phoenix Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "1793 Coventry Rd, Cleveland Heights, OH",
+          "website": "https://phoenixcoffee.com/",
+          "blurb": "Cleveland specialty coffee roaster since 1990 with a Coventry cafe.",
+          "price": "$",
+          "sourceUrl": "https://phoenixcoffee.com/",
+          "deals": []
+        },
+        {
+          "name": "AJ Rocco's",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "828 Huron Road East, Cleveland, OH",
+          "website": "https://www.ajroccos.com/",
+          "blurb": "Bar with a full kitchen serving freshly prepared American food.",
+          "price": "$$",
+          "sourceUrl": "https://www.ajroccos.com/",
+          "deals": []
+        },
+        {
+          "name": "Bombay Chaat",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "2044 Euclid Avenue, Cleveland, OH",
+          "website": "https://bombay-chaat.foodjoyy.com/",
+          "blurb": "Casual multiregional Indian street food steps from Cleveland State.",
+          "price": "$",
+          "sourceUrl": "https://www.downtowncleveland.com/restaurants-for-map/dv3tp96zdnd3c7tgxek5w46cp5kjei-2regn-ggbpa-lc25b-b5g9w-4gnae-gh6td-3yj8r-9t6hl-ehhpj-5gz5n-g8j7a-9584n",
+          "deals": []
+        },
+        {
+          "name": "Bon Appétit",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "1900 Euclid Avenue, Cleveland, OH",
+          "website": "https://www.facebook.com/bonappetitdowntown/",
+          "blurb": "Mediterranean-style cafe eats and locally roasted coffee across from CSU.",
+          "price": "$",
+          "sourceUrl": "https://www.downtowncleveland.com/restaurants-for-map/dv3tp96zdnd3c7tgxek5w46cp5kjei-2regn-ggbpa-lc25b-b5g9w-4gnae-gh6td-3yj8r-9t6hl-ehhpj-5gz5n-lkbta",
+          "deals": []
+        },
+        {
+          "name": "CASSA Kitchen & Catering",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "1900 Euclid Avenue, Cleveland, OH",
+          "website": "",
+          "blurb": "Build-your-own pitas, wraps, bowls and salads by Cleveland State.",
+          "price": "$",
+          "sourceUrl": "https://www.downtowncleveland.com/restaurants-for-map/ylddlrbv65loxu9ilgwxqvnvbyn3as-3gr5c-tzy6e-cxbmj-ak9x4-2sezf-lyg2b-7fre8-tb3cg-pa5kw-wgtzy-t4ykn-t822p-skdsc-3n553-nhxdb-k2yey-44xbp-danap-75986-ccl8g-krmy3-esa7z-2bkm3-j62za",
+          "deals": []
+        },
+        {
+          "name": "Cafe Ah-Roma",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "2230 Euclid Avenue, Cleveland, OH",
+          "website": "https://cafeah-roma.com/",
+          "blurb": "Fair-trade coffee and sandwiches on housemade bread at the east end of the CSU campus.",
+          "price": "$",
+          "sourceUrl": "https://cafeah-roma.com/",
+          "deals": []
+        },
+        {
+          "name": "Cibreo Italian Kitchen",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1438 Euclid Avenue, Cleveland, OH",
+          "website": "https://thedriftwoodgroup.com/restaurants/cibreo/",
+          "blurb": "Italian dishes and cocktails in a candlelit Playhouse Square dining room.",
+          "price": "$$$",
+          "sourceUrl": "https://www.downtowncleveland.com/restaurants-for-map/betm3t2dgwg644l",
+          "deals": []
+        },
+        {
+          "name": "District",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1350 Euclid Avenue, Cleveland, OH",
+          "website": "https://www.districtcleveland.com/",
+          "blurb": "American brasserie in Playhouse Square.",
+          "price": "$$$",
+          "sourceUrl": "https://www.districtcleveland.com/",
+          "deals": []
+        },
+        {
+          "name": "Gochujang",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1350 Euclid Avenue, Cleveland, OH",
+          "website": "https://www.instagram.com/gochujangcle/",
+          "blurb": "Streamlined menu of Korean street foods in Playhouse Square.",
+          "price": "$",
+          "sourceUrl": "https://www.downtowncleveland.com/restaurants-for-map/gochujang",
+          "deals": []
+        },
+        {
+          "name": "Great Taste Chinese Restaurant",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1803 East 12th Street, Cleveland, OH",
+          "website": "",
+          "blurb": "Chinese restaurant near Playhouse Square known for modern takes on classic dishes.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtowncleveland.com/restaurants-for-map/7blj48mlxdh2xbx-z5245-z7rxl-lr7xa-9azdf-h73c2-hpahw-szstt-xx4xz-s52kj-bhwhn-e75az-arlfe-79dj9-6llte-ald84-st7e5-jt4c4-lhhzj-hx4sy-rlp4s-rr5zd-tpgl8-e8pez",
+          "deals": []
+        },
+        {
+          "name": "Masthead Brewing Co.",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1261 Superior Avenue, Cleveland, OH",
+          "website": "https://www.mastheadbrewingco.com/",
+          "blurb": "Big brewery taproom pouring American and Belgian beers with wood-fired pizza.",
+          "price": "$$",
+          "sourceUrl": "https://www.mastheadbrewingco.com/",
+          "deals": []
+        },
+        {
+          "name": "Paradise Indian Cuisine",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1116 Chester Avenue, Cleveland, OH",
+          "website": "https://paradiseindiancuisine.us/",
+          "blurb": "Scratch-made Indian cuisine on Chester Avenue.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtowncleveland.com/restaurants-for-map/paradise-indian-cuisine",
+          "deals": []
+        },
+        {
+          "name": "Something Good Social Kitchen",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1302 Euclid Avenue, Cleveland, OH",
+          "website": "https://somethinggoodcle.com/",
+          "blurb": "Playhouse Square food hall built around food, music and community.",
+          "price": "$$",
+          "sourceUrl": "https://somethinggoodcle.com/",
+          "deals": []
+        },
+        {
+          "name": "Sushi En",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1507 Euclid Avenue, Cleveland, OH",
+          "website": "https://www.sushiendowntown.com/",
+          "blurb": "Japanese restaurant in Playhouse Square with sushi combos and bento boxes.",
+          "price": "$$",
+          "sourceUrl": "https://www.sushiendowntown.com/",
+          "deals": []
+        },
+        {
+          "name": "The Clevelander Bar & Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "834 Huron Road East, Cleveland, OH",
+          "website": "https://www.clevelanderbar.com/",
+          "blurb": "Downtown sports bar near the ballpark with game-day specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.clevelanderbar.com/",
+          "deals": []
+        },
+        {
+          "name": "The Friars' Table",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1305 Euclid Avenue, Cleveland, OH",
+          "website": "https://www.thefriarstable.org/",
+          "blurb": "Welcoming Euclid Avenue spot for simple food and drink.",
+          "price": "$",
+          "sourceUrl": "https://www.thefriarstable.org/",
+          "deals": []
+        },
+        {
+          "name": "Viking Public House",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "2300 Euclid Ave, Cleveland, OH 44115",
+          "website": "https://viking-publichouse.com/",
+          "blurb": "Viking-themed campus pub at Cleveland State serving American plates, beer and wine.",
+          "price": "$$",
+          "sourceUrl": "https://viking-publichouse.com/",
+          "deals": []
+        },
+        {
+          "name": "Yours Truly - Playhouse Square",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "1228 Euclid Avenue, Cleveland, OH",
+          "website": "https://ytr.com/playhouse-square/",
+          "blurb": "Local chain with all-day breakfast, burgers and comfort food, in Playhouse Square since 2016.",
+          "price": "$$",
+          "sourceUrl": "https://ytr.com/playhouse-square/",
+          "deals": []
+        },
+        {
+          "name": "Zaytoon Lebanese Kitchen",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "1150 Huron Road East, Cleveland, OH",
+          "website": "https://www.zaytoonlebanesekitchen.com/",
+          "blurb": "Daytime counter-service cafe serving homestyle Lebanese and Western fare.",
+          "price": "$",
+          "sourceUrl": "https://www.zaytoonlebanesekitchen.com/",
+          "deals": []
+        },
+        {
+          "name": "Restore Cold Pressed",
+          "category": "Healthy & Bowls",
+          "local": true,
+          "signature": false,
+          "address": "1001 Huron Road East, Cleveland, OH",
+          "website": "https://www.restorecoldpressed.com/",
+          "blurb": "Organic cold-pressed juices, smoothies and health-conscious light fare.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtowncleveland.com/restaurants-for-map/7bat7x4udazuyjfps3grvr7t6gdsak-dkglj",
+          "deals": []
+        },
+        {
+          "name": "Bibibop Asian Grill",
+          "category": "Asian",
+          "local": false,
+          "signature": false,
+          "address": "11431 Euclid Ave, Cleveland, OH 44106",
+          "website": "https://www.bibibop.com/",
+          "blurb": "National chain location in Uptown near Case Western.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/bibibop-asian-grill",
+          "deals": []
+        },
+        {
+          "name": "Potbelly Sandwich Shop",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "11425 Euclid Ave, Cleveland, OH 44106",
+          "website": "https://www.potbelly.com/",
+          "blurb": "National chain location in Uptown near Case Western.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/potbelly-sandwich-shop",
+          "deals": []
+        },
+        {
+          "name": "Panera Bread",
+          "category": "Coffee & Bakery",
+          "local": false,
+          "signature": false,
+          "address": "11490 Euclid Avenue, Cleveland, OH 44106",
+          "website": "https://www.panera.com/",
+          "blurb": "National chain location in Uptown near Case Western.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/panera-bread",
+          "deals": []
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "11452 Euclid Ave, Cleveland, OH 44106",
+          "website": "https://www.chipotle.com/",
+          "blurb": "National chain location in Uptown near Case Western.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/chipotle-mexican-grill",
+          "deals": []
+        },
+        {
+          "name": "D.P. Dough",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "11446 Euclid Ave, Cleveland, OH 44106",
+          "website": "https://www.dpdough.com/",
+          "blurb": "National chain location in Uptown near Case Western.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/dp-dough",
+          "deals": []
         }
       ]
     },
@@ -2200,8 +3101,8 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": true,
-          "address": "",
-          "website": "",
+          "address": "207 S Main St, Akron, OH 44308",
+          "website": "https://www.thelockview.com/",
           "blurb": "Downtown Akron bar and restaurant about half a mile from campus.",
           "price": "$$",
           "sourceUrl": "https://www.downtownakron.com/event/downtown-akron-restaurant-specials-and-happy-hours",
@@ -2255,7 +3156,7 @@
           "category": "Sandwiches & Subs",
           "local": true,
           "signature": true,
-          "address": "",
+          "address": "795 W Market St, Akron, OH 44303",
           "website": "https://mrzubs.com/",
           "blurb": "Highland Square deli and bar with over-the-top sandwiches, pizzas and wings.",
           "price": "$",
@@ -2271,6 +3172,51 @@
               "studentOnly": false,
               "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$2 off specialty pizzas Monday",
+              "details": "$2 off any specialty pizza plus a featured sandwich with fries for $9.99, 11 AM-8 PM.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$9.99 large pizza Tuesday",
+              "details": "One-topping large 16-inch pizza for $9.99 plus a featured sandwich with fries for $9.99, 11 AM-8 PM.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed",
+                "Fri"
+              ],
+              "title": "2 large pizzas for $19.99",
+              "details": "Two large one-topping 16-inch pizzas for $19.99 plus a featured sandwich with fries for $9.99, 11 AM-8 PM Wednesdays and Fridays.",
+              "price": "$19.99",
+              "studentOnly": false,
+              "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$6.99 medium pizza Thursday",
+              "details": "Medium one-topping 12-inch pizza for $6.99 plus a featured sandwich with fries for $9.99, 11 AM-8 PM.",
+              "price": "$6.99",
+              "studentOnly": false,
+              "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -2352,7 +3298,7 @@
           "local": true,
           "signature": false,
           "address": "",
-          "website": "",
+          "website": "https://eurogyro.com/",
           "blurb": "Regional gyro, pizza and sub shop with a University of Akron location.",
           "price": "$",
           "sourceUrl": "https://www.ubereats.com/pbckup/dish/akron-oh/caesar-salad",
@@ -2364,7 +3310,7 @@
           "local": true,
           "signature": false,
           "address": "867 W Market St, Akron, OH",
-          "website": "",
+          "website": "https://www.mustardseedmarket.com/",
           "blurb": "Natural-foods market with a cafe in Highland Square.",
           "price": "$$",
           "sourceUrl": "https://tableagent.com/cleveland/mustard-seed-market-cafe-highland-square/",
@@ -2375,8 +3321,8 @@
           "category": "Breakfast & Brunch",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "845 W Market St, Akron, OH",
+          "website": "https://wallywaffle.com/",
           "blurb": "Akron waffle and breakfast spot in the Highland Square retail center.",
           "price": "$",
           "sourceUrl": "https://goodmanrealestate.com/listings/highland-square/",
@@ -2388,7 +3334,7 @@
           "local": false,
           "signature": false,
           "address": "510 S Main St, Akron, OH",
-          "website": "",
+          "website": "https://www.meatballs.com/",
           "blurb": "Italian chain restaurant on South Main Street downtown.",
           "price": "$$",
           "sourceUrl": "https://lv.foursquare.com/christyc3839170/list/akron-restaurants",
@@ -2439,78 +3385,78 @@
               "days": [
                 "Mon"
               ],
-              "title": "Half-price wings Monday",
-              "details": "Half-price wings every Monday.",
-              "price": "50% off",
+              "title": "$1 wings Monday",
+              "details": "$1 wings (6- or 12-piece) on Mondays, dine-in only.",
+              "price": "$1",
               "studentOnly": false,
-              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
-              "sourceDate": "2026-08"
+              "sourceUrl": "https://barleyhouseakron.com/specials",
+              "sourceDate": "2026-11"
             },
             {
               "days": [
                 "Tue"
               ],
-              "title": "$7.99 burger and fries Tuesday",
-              "details": "1/3-pound cheeseburger and fries for $7.99 on Tuesdays.",
-              "price": "$7.99",
+              "title": "$2.50 tacos Tuesday",
+              "details": "$2.50 tacos on Tuesdays, dine-in only.",
+              "price": "$2.50",
               "studentOnly": false,
-              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
-              "sourceDate": "2026-08"
+              "sourceUrl": "https://barleyhouseakron.com/specials",
+              "sourceDate": "2026-11"
             },
             {
               "days": [
                 "Wed"
               ],
-              "title": "Half-price gyro Wednesday",
-              "details": "Half-price gyro served with chips on Wednesdays.",
-              "price": "50% off",
+              "title": "$7.99 burger and fries Wednesday",
+              "details": "1/3-pound cheeseburger and fries for $7.99 on Wednesdays, dine-in only.",
+              "price": "$7.99",
               "studentOnly": false,
-              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
-              "sourceDate": "2026-08"
+              "sourceUrl": "https://barleyhouseakron.com/specials",
+              "sourceDate": "2026-11"
             },
             {
               "days": [
                 "Thu"
               ],
-              "title": "$9.99 pizza Thursday",
-              "details": "12-inch one-topping pizza for $9.99 on Thursdays.",
+              "title": "$9.99 pizza and $1 wings Thursday",
+              "details": "12-inch one-topping pizza for $9.99 and $1 wings (6- or 12-piece) on Thursdays, dine-in only.",
               "price": "$9.99",
               "studentOnly": false,
-              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
-              "sourceDate": "2026-08"
+              "sourceUrl": "https://barleyhouseakron.com/specials",
+              "sourceDate": "2026-11"
             },
             {
               "days": [
                 "Fri"
               ],
               "title": "$11.99 fish and chips Friday",
-              "details": "Fish and chips for $11.99 on Fridays.",
+              "details": "Fish and chips for $11.99 on Fridays, dine-in only.",
               "price": "$11.99",
               "studentOnly": false,
-              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
-              "sourceDate": "2026-08"
+              "sourceUrl": "https://barleyhouseakron.com/specials",
+              "sourceDate": "2026-11"
             },
             {
               "days": [
                 "Sat"
               ],
               "title": "$2 off handhelds Saturday",
-              "details": "$2 off all handhelds on Saturdays.",
+              "details": "$2 off all handhelds on Saturdays, dine-in only.",
               "price": "$2 off",
               "studentOnly": false,
-              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
-              "sourceDate": "2026-08"
+              "sourceUrl": "https://barleyhouseakron.com/specials",
+              "sourceDate": "2026-11"
             },
             {
               "days": [
                 "Sun"
               ],
               "title": "$2 off appetizers Sunday",
-              "details": "$2 off appetizers on Sundays.",
+              "details": "$2 off appetizers on Sundays, dine-in only.",
               "price": "$2 off",
               "studentOnly": false,
-              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
-              "sourceDate": "2026-08"
+              "sourceUrl": "https://barleyhouseakron.com/specials",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -2519,8 +3465,8 @@
           "category": "Other",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "156 S Main St, Akron, OH 44308",
+          "website": "https://www.eatdrinkcrave.com/",
           "blurb": "Downtown Akron restaurant with a weekday happy hour menu.",
           "price": "$$",
           "sourceUrl": "https://www.downtownakron.com/event/crave-happy-hour-specials",
@@ -2539,6 +3485,21 @@
               "studentOnly": false,
               "sourceUrl": "https://www.downtownakron.com/event/crave-happy-hour-specials",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$3 off early lunch",
+              "details": "Weekdays 11 AM-12 PM: $3 off orders of $10 or more, plus daily lunch specials and soup of the day.",
+              "price": "$3 off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.eatdrinkcrave.com/crave-events/lunch-specials",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -2548,7 +3509,7 @@
           "local": true,
           "signature": false,
           "address": "",
-          "website": "",
+          "website": "https://www.lock15brewing.com/",
           "blurb": "Akron brewpub that gives University of Akron students a discount on pretzels and wings.",
           "price": "$$",
           "sourceUrl": "https://www.downtownakron.com/event/student-specials",
@@ -2577,8 +3538,8 @@
           "category": "Coffee & Bakery",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "161 S Main St, Akron, OH 44308",
+          "website": "https://www.iliccafe.com/",
           "blurb": "Downtown Akron cafe with a Zip Card drink discount.",
           "price": "$",
           "sourceUrl": "https://www.downtownakron.com/event/student-specials",
@@ -2607,8 +3568,8 @@
           "category": "Mexican",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "54 E Mill St, Akron, OH 44308",
+          "website": "https://elpatrontequileria.com/",
           "blurb": "Downtown Akron Mexican restaurant with taco specials.",
           "price": "$$",
           "sourceUrl": "https://www.downtownakron.com/event/downtown-akron-restaurant-specials-and-happy-hours",
@@ -2638,6 +3599,489 @@
               "sourceDate": "2025-11"
             }
           ]
+        },
+        {
+          "name": "The 1 Food & Spirits",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1 S Main St, Akron, OH 44308",
+          "website": "https://www.blu-tique.com/dining.htm",
+          "blurb": "Restaurant and bar at the BLU-tique Hotel serving breakfast, lunch and dinner with a weekday 3-5 PM happy hour.",
+          "price": "$$$",
+          "sourceUrl": "https://www.downtownakron.com/go/the-1-food-and-spirits",
+          "deals": []
+        },
+        {
+          "name": "69 Taphouse",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "370 Paul Williams Ave, Akron, OH 44311",
+          "website": "https://69taphouse.toast.site/",
+          "blurb": "Neighborhood bar by Canal Park with food, cocktails and game nights, open 2 PM to 2 AM daily.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/go/69-taphouse",
+          "deals": []
+        },
+        {
+          "name": "Akron Coffee Roasters",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "30 N High St, Akron, OH 44308",
+          "website": "https://www.akron.coffee/",
+          "blurb": "Specialty coffee roasted in Akron, served at its North High Street cafe.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/akron-coffee-roasters",
+          "deals": []
+        },
+        {
+          "name": "Akronym Brewing",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "58 E Market St, Akron, OH 44308",
+          "website": "https://akronymbrewing.com/",
+          "blurb": "Downtown craft brewery and taproom with Wednesday trivia nights.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/go/akronym-brewing",
+          "deals": []
+        },
+        {
+          "name": "Boiling House",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1 W Exchange St, Akron, OH 44308",
+          "website": "https://www.boilinghouseakron.com/",
+          "blurb": "Seafood boil and sushi restaurant a couple of blocks west of the University of Akron.",
+          "price": "$$$",
+          "sourceUrl": "https://www.downtownakron.com/go/boiling-crab-seafood",
+          "deals": []
+        },
+        {
+          "name": "Cafe 388",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "388 S Main St, Akron, OH 44308",
+          "website": "https://stray-dog-388.square.site/",
+          "blurb": "Stray Dog's weekday breakfast and lunch cafe in the AES Building.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/cafe-388",
+          "deals": []
+        },
+        {
+          "name": "Chameleon Café Akron",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "23 S Main St, Akron, OH 44308",
+          "website": "https://chameleoncafeakron.com/",
+          "blurb": "Quirky weekday cafe with gourmet coffee, homemade soups and artisan wraps and sandwiches.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/chameleon-cafe-akron",
+          "deals": []
+        },
+        {
+          "name": "Chill Ice Cream & Indulge Chocolates",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "209 S Main St, Akron, OH 44308",
+          "website": "https://indulge-chocolate.com/",
+          "blurb": "Ice cream and chocolate shop with 32 flavors including non-dairy options.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/chill-ice-cream-indulge-chocolates",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "2-4-10 Tuesday pints",
+              "details": "Two pints of ice cream for $10 every Tuesday.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/go/chill-ice-cream-indulge-chocolates",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Cilantro Thai & Sushi",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "326 S Main St, Akron, OH 44308",
+          "website": "https://www.cilantrothai.com/",
+          "blurb": "Thai curries, stir-fries and sushi downtown since 2009, with vegetarian and vegan options.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/go/cilantro",
+          "deals": []
+        },
+        {
+          "name": "The Circle of 5ths",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "45 E Market St, Akron, OH 44308",
+          "website": "https://www.circleoffifthsakron.com/",
+          "blurb": "Cocktail bar with a food menu of sandwiches and small plates, open Wednesday through Saturday.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/go/the-circle-of-5ths",
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat"
+              ],
+              "title": "$2 off sandwiches at bar happy hour",
+              "details": "Food happy hour at the bar only: all sandwiches $2 off and $5 bar mix; menu lists Tue-Fri 5-7 PM and Fri-Sat 10-11 PM.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.circleoffifthsakron.com/menus",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "The Daily Pressed",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "323 S Main St, Akron, OH 44308",
+          "website": "https://thedailypressed.com/",
+          "blurb": "European-style coffee shop and brunch spot by day that turns into a cocktail bar at night.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/go/the-daily-pressed",
+          "deals": [
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$13 steak night",
+              "details": "Every Thursday: steak dinner with a baked potato and side salad for $13.",
+              "price": "$13",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/steak-nights",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$15 Girl Dinner Wednesday",
+              "details": "Every Wednesday: half Caesar salad, a side of fries and a signature cocktail for $15.",
+              "price": "$15",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/girl-dinner-wednesday",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Diamond Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "378 S Main St, Akron, OH 44311",
+          "website": "https://www.diamonddeli.us/",
+          "blurb": "Long-running downtown deli open weekdays for breakfast and lunch sandwiches.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/diamond-deli",
+          "deals": []
+        },
+        {
+          "name": "Eddie's Famous Cheesesteaks and Grille",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "147 S Main St, Akron, OH 44308",
+          "website": "https://eddiesfamouscheesesteaks.com/",
+          "blurb": "Made-to-order cheesesteaks and steak fries cooked on the griddle in front of you.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/eddies-famous-cheesesteaks-and-grille",
+          "deals": []
+        },
+        {
+          "name": "The Electric Frankenstein",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "209 S Main St, Akron, OH 44308",
+          "website": "https://www.instagram.com/the_electric_frankenstein/",
+          "blurb": "Small indie music venue with a gluten-free scratch kitchen.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/go/the-electric-frankenstein",
+          "deals": []
+        },
+        {
+          "name": "Evelyn's Coffee & Banh Mi",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "200 S Main St, Akron, OH 44308",
+          "website": "https://www.evelynscoffee.com/",
+          "blurb": "Vietnamese coffee and banh mi served from the Lock 3 concessions building.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/evelyns-coffee-and-banh-mi",
+          "deals": []
+        },
+        {
+          "name": "The Green Dragon Inn",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "115 E Market St, Akron, OH 44308",
+          "website": "https://greendragoninn.com/",
+          "blurb": "Medieval-themed board game bar and cafe with 750+ games, cocktails, coffee and appetizers.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/go/the-green-dragon-inn",
+          "deals": []
+        },
+        {
+          "name": "Heera Indian Cuisine",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "117 E Market St, Akron, OH 44308",
+          "website": "",
+          "blurb": "Northern and southern Indian dishes plus Indo-Chinese options on East Market Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/go/heera-indian-cuisine",
+          "deals": []
+        },
+        {
+          "name": "Kabylia Baguette",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "526 S Main St, Akron, OH 44308",
+          "website": "https://www.instagram.com/kabyliabaguette/",
+          "blurb": "Artisan bread and pastry bakery inside Bounce Innovation Hub, pouring Akron Coffee Roasters coffee.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/kabylia-baguette",
+          "deals": []
+        },
+        {
+          "name": "Luciano's Cucina Italiana",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "21 Furnace St, Akron, OH",
+          "website": "https://www.lucianos.xyz/",
+          "blurb": "Modern Italian restaurant in the Northside District.",
+          "price": "$$$",
+          "sourceUrl": "https://www.downtownakron.com/go/lucianos",
+          "deals": []
+        },
+        {
+          "name": "Missing Falls Brewery",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "540 S Main St, Akron, OH",
+          "website": "https://www.missingfalls.com/",
+          "blurb": "Craft brewery taproom with a burger-and-sandwich kitchen and pub quiz nights.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/go/missing-falls-brewery",
+          "deals": []
+        },
+        {
+          "name": "Muggswigz Coffee & Tea",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "373 S Main St, Akron, OH 44311",
+          "website": "https://www.muggswigz.com/",
+          "blurb": "Ohio coffee roaster and cafe serving estate and co-op coffees and tea.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/muggswigz-coffee-and-tea",
+          "deals": []
+        },
+        {
+          "name": "Nicole's Southern Kitchen",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "172 S Broadway St, Akron, OH 44308",
+          "website": "https://www.facebook.com/Nicolessouthernkitchen",
+          "blurb": "Soul food with a daily breakfast and lunch buffet inside the Municipal Courthouse building.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/nicoles-southern-kitchen",
+          "deals": []
+        },
+        {
+          "name": "The Peanut Shoppe",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "203 S Main St, Akron, OH 44308",
+          "website": "",
+          "blurb": "Downtown fixture since the 1930s selling fresh roasted nuts, candies and chocolates.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/the-peanut-shoppe",
+          "deals": []
+        },
+        {
+          "name": "Perfect Pour",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "376 S Main St, Akron, OH 44311",
+          "website": "",
+          "blurb": "Bourbon and cocktail bar serving burgers, with happy hour Tuesday-Friday 3-6 PM.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/go/perfect-pour-1",
+          "deals": []
+        },
+        {
+          "name": "Pizza 77 on Main",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "374 S Main St, Akron, OH 44311",
+          "website": "https://pizza77.toast.site/",
+          "blurb": "Downtown pizza shop with customizable and specialty pies, wings and jojos.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/pizza-77-on-main",
+          "deals": []
+        },
+        {
+          "name": "Stray Dog Cafe",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "75 S Main St, Akron, OH 44308",
+          "website": "https://straydogakron.com/",
+          "blurb": "Hot dog cart turned cafe at the Main Library.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/stray-dog-cafe",
+          "deals": []
+        },
+        {
+          "name": "Street Treats Grill",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "209 S High St, Akron, OH",
+          "website": "https://www.streettreatsgrill.com/",
+          "blurb": "Lunch grill that grew out of a downtown food cart started in 1989.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/street-treats-grill",
+          "deals": []
+        },
+        {
+          "name": "Sweet Mary's Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "76 E Mill St, Akron, OH 44308",
+          "website": "https://sweetmarysbakery.com/",
+          "blurb": "Downtown micro-bakery baking bagels, cookies, pastries, quiche and cakes each morning since 2015.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/sweet-marys-bakery",
+          "deals": []
+        },
+        {
+          "name": "Totally Baked Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "18 N High St, Akron, OH 44308",
+          "website": "https://totallybakedpizza.net/",
+          "blurb": "Pizza shop in the Historic Arts District.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/totally-baked-pizza",
+          "deals": []
+        },
+        {
+          "name": "Urbean Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "631 S Broadway St, Akron, OH",
+          "website": "https://www.brokenchainsministry.org/urbean-cafe",
+          "blurb": "Cafe at the Robert K. Pfaff Transit Center that runs a workforce program, with a full low-priced menu.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/urbean-cafe",
+          "deals": []
+        },
+        {
+          "name": "Mary Coyle Ice Cream & Chocolates",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "780 W Market St, Akron, OH 44303",
+          "website": "https://www.marycoyle.com/",
+          "blurb": "Highland Square ice cream parlor making homemade ice cream and chocolates since 1937.",
+          "price": "$",
+          "sourceUrl": "https://www.marycoyle.com/",
+          "deals": []
+        },
+        {
+          "name": "Upper Crust",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "835 W Market St, Akron, OH",
+          "website": "https://www.uppercrustoh.com/akron",
+          "blurb": "Highland Square location of a three-shop local pizzeria, with vegan cheese and toppings available.",
+          "price": "$$",
+          "sourceUrl": "https://www.uppercrustoh.com/akron",
+          "deals": []
+        },
+        {
+          "name": "Aladdin's Eatery",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "782 W Market St, Akron, OH 44303",
+          "website": "https://aladdins.com/",
+          "blurb": "Highland Square outpost of the Ohio-based Lebanese-American chain known for pitas, hummus and smoothies.",
+          "price": "$$",
+          "sourceUrl": "https://aladdins.com/",
+          "deals": []
+        },
+        {
+          "name": "Hibachi Xpress Highland Square",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "810 W Market St, Akron, OH 44303",
+          "website": "https://highlandsq.orderhibachixpressgrill.com/",
+          "blurb": "Counter-service hibachi plates in Highland Square.",
+          "price": "$",
+          "sourceUrl": "https://highlandsq.orderhibachixpressgrill.com/",
+          "deals": []
+        },
+        {
+          "name": "Insomnia Cookies",
+          "category": "Dessert & Ice Cream",
+          "local": false,
+          "signature": false,
+          "address": "367 S Main St, Akron, OH 44308",
+          "website": "https://insomniacookies.com/",
+          "blurb": "Late-night warm cookie chain.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/insomnia-cookies",
+          "deals": []
+        },
+        {
+          "name": "Jimmy John's",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "371 S Main St, Akron, OH",
+          "website": "https://www.jimmyjohns.com/",
+          "blurb": "Sub sandwich chain.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/go/jimmy-johns-gourmet-sandwiches",
+          "deals": []
         }
       ]
     },
@@ -3223,11 +4667,11 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": true,
-          "address": "Elm St, Youngstown, OH",
-          "website": "",
+          "address": "318 Elm St, Youngstown, OH",
+          "website": "https://bullandbeargrille.com/",
           "blurb": "Tavern on Elm Street at the edge of YSU's campus, in the former Inner Circle Pizza, opened August 2024.",
           "price": "$$",
-          "sourceUrl": "https://businessjournaldaily.com/?p=240176",
+          "sourceUrl": "https://ysu.edu/kilcawley-center/dining-locations-where-you-can-pay-your-y-card",
           "deals": [
             {
               "days": [
@@ -3239,12 +4683,12 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "$5 happy hour appetizers",
-              "details": "Happy hour 11am-6pm Mon-Fri and 11am-2pm Sat-Sun with $5 appetizers (chips, pierogi, pickle fries).",
-              "price": "$5",
+              "title": "$6 happy hour starters",
+              "details": "Dine-in happy hour 11 AM-6 PM Mon-Fri and 11 AM-2 PM Sat-Sun with $6 select starters (Bull Chips, queso dip, pierogi, cheese sticks, pickle chips, hot chips).",
+              "price": "$6",
               "studentOnly": false,
-              "sourceUrl": "https://thejambar.com/?p=97349",
-              "sourceDate": ""
+              "sourceUrl": "https://bullandbeargrille.com/menu-happy-hour",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -3254,7 +4698,7 @@
           "local": true,
           "signature": false,
           "address": "110 W Federal St, Youngstown, OH",
-          "website": "",
+          "website": "https://www.knoxbldg.com/the-federal/",
           "blurb": "Downtown Youngstown spot known for burgers.",
           "price": "$$",
           "sourceUrl": "https://deyorpac.org/downtown-dining",
@@ -3335,39 +4779,15 @@
           "deals": []
         },
         {
-          "name": "Gringo's Tacos & Tequila",
-          "category": "Mexican",
-          "local": true,
-          "signature": false,
-          "address": "24 N Phelps St, Youngstown, OH 44503",
-          "website": "",
-          "blurb": "Taco and tequila spot near Federal and Phelps streets downtown.",
-          "price": "$$",
-          "sourceUrl": "https://businessjournaldaily.com/?p=147490",
-          "deals": []
-        },
-        {
           "name": "Mocha House Downtown",
           "category": "Coffee & Bakery",
           "local": true,
           "signature": false,
-          "address": "120 E Boardman St, Youngstown, OH 44503",
-          "website": "",
+          "address": "34 W Federal St, Youngstown, OH 44503",
+          "website": "https://mochahouse.com/youngstown/",
           "blurb": "Downtown coffee house and cafe a block off Federal Street.",
           "price": "$",
-          "sourceUrl": "https://deyorpac.org/downtown-dining",
-          "deals": []
-        },
-        {
-          "name": "West 34",
-          "category": "Other",
-          "local": true,
-          "signature": false,
-          "address": "34 W Federal St, Youngstown, OH 44503",
-          "website": "",
-          "blurb": "Restaurant on West Federal Street downtown.",
-          "price": "$$",
-          "sourceUrl": "https://businessjournaldaily.com/?p=146381",
+          "sourceUrl": "https://mochahouse.com/youngstown/",
           "deals": []
         },
         {
@@ -3376,7 +4796,7 @@
           "local": true,
           "signature": false,
           "address": "Federal St, Youngstown, OH",
-          "website": "",
+          "website": "https://spacekatbbq.com/",
           "blurb": "Texas-style barbecue on Federal Street downtown.",
           "price": "$$",
           "sourceUrl": "https://ysu.edu/international-programs-office/admitted-international-students/living-youngstown",
@@ -3387,8 +4807,8 @@
           "category": "Sandwiches & Subs",
           "local": true,
           "signature": false,
-          "address": "Belmont Ave, Liberty, OH",
-          "website": "",
+          "address": "3135 Belmont Ave, Youngstown, OH 44505",
+          "website": "https://kravitzdeli.com/",
           "blurb": "Deli on Belmont Avenue with daily specials and takeout, noted as good for YSU students.",
           "price": "$",
           "sourceUrl": "https://ysu.edu/international-programs-office/admitted-international-students/living-youngstown",
@@ -3440,8 +4860,283 @@
               "studentOnly": false,
               "sourceUrl": "https://www.varsityclubyoungstown.com/lineup/promotions/",
               "sourceDate": "2026"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$11 Flatbread Fever Wednesday",
+              "details": "Wednesdays: choice of BBQ chicken, buffalo chicken or chicken and greens flatbread for $11 with purchase of a drink; dine-in only.",
+              "price": "$11",
+              "studentOnly": false,
+              "sourceUrl": "https://www.varsityclubyoungstown.com/lineup/promotions/",
+              "sourceDate": "2026-11"
             }
           ]
+        },
+        {
+          "name": "Belleria Pizza & Italian Restaurant",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "3460 S. Meridian Rd., Youngstown, OH 44511",
+          "website": "https://belleriaitalianrestaurant.com/",
+          "blurb": "Family-owned pizza and Italian restaurant on Wick Avenue just north of campus.",
+          "price": "$$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/belleria-pizza-italian-restaurant-youngstown/",
+          "deals": []
+        },
+        {
+          "name": "Casa di Canzonetta",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "44 Federal Plaza E, Youngstown, OH 44503",
+          "website": "https://casadicanzonetta.com/",
+          "blurb": "Italian restaurant inside the historic 1907 DoubleTree by Hilton building downtown.",
+          "price": "$$$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/casa-di-canzonetta/",
+          "deals": []
+        },
+        {
+          "name": "Cassese's MVR",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "410 N Walnut St, Youngstown, OH 44505",
+          "website": "https://www.youngstownmvr.com/",
+          "blurb": "Family-owned Italian restaurant and Youngstown tradition since 1927, a short walk from campus in Smoky Hollow.",
+          "price": "$$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/casseses-mvr/",
+          "deals": []
+        },
+        {
+          "name": "Charlie Staples Barbecue & Pitt Boss",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "372 W Rayen Ave, Youngstown, OH 44502",
+          "website": "https://charliestaplespittboss.com/",
+          "blurb": "Longtime Youngstown barbecue paired with a gaming lounge; accepts Pete's Points.",
+          "price": "$$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/charlie-staples-barbecue-pitt-boss-esports-lounge/",
+          "deals": []
+        },
+        {
+          "name": "Culturehouse Coffee Company",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "818 Elm St, Youngstown, OH 44505",
+          "website": "https://www.facebook.com/culturehousecoffeeco/",
+          "blurb": "Coffee, cold brew, espresso and seasonal pastries on Elm Street north of campus.",
+          "price": "$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/culturehouse-coffee-company/",
+          "deals": []
+        },
+        {
+          "name": "Downtown Circle Deli",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "116 W Federal St, Youngstown, OH 44503",
+          "website": "",
+          "blurb": "Convenience deli on West Federal known for Mediterranean foods and specialties.",
+          "price": "$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/downtown-circle-deli/",
+          "deals": []
+        },
+        {
+          "name": "Looma Café",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "524 Wick Ave, Youngstown, OH 44502",
+          "website": "https://looma-cafe.res-discover.com/",
+          "blurb": "Cafe inside the Butler Institute of American Art serving sandwiches and soups.",
+          "price": "$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/looma-cafe/",
+          "deals": []
+        },
+        {
+          "name": "Noble Creature Wild Ales & Lagers",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "126 E Rayen Ave, Youngstown, OH 44503",
+          "website": "https://www.noblecreaturebeer.com/",
+          "blurb": "Craft brewery in a former church with a scratch kitchen and 14 rotating house beers.",
+          "price": "$$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/noble-creature-wild-ales-lagers/",
+          "deals": [
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$11 Thursday burger night",
+              "details": "The regular smash burger with potatoes and a pickle is on special for $11 on Thursdays.",
+              "price": "$11",
+              "studentOnly": false,
+              "sourceUrl": "https://www.noblecreaturebeer.com/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Pressed Coffee Bar & Eatery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "215 Lincoln Ave, Youngstown, OH 44503",
+          "website": "https://pressedcoffeebarandeatery.com/",
+          "blurb": "Campus coffee bar and eatery on Lincoln Avenue with baked goods and a full food menu; accepts Pete's Points.",
+          "price": "$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/pressed-coffee-bar-eatery/",
+          "deals": []
+        },
+        {
+          "name": "Stone Fruit Coffee Company",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "131 Lincoln Ave, Youngstown, OH 44503",
+          "website": "https://www.stonefruitcoffee.com/",
+          "blurb": "Local roaster's campus cafe on Lincoln Avenue, roasting organic beans in-house.",
+          "price": "$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/stone-fruit-coffee-company-youngstown/",
+          "deals": []
+        },
+        {
+          "name": "V2 Wine Bar Trattoria",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "100 W Federal St, Youngstown, OH 44503",
+          "website": "https://www.v2byvernon.com/",
+          "blurb": "Popular downtown trattoria and wine bar with small plates, burgers and paninis.",
+          "price": "$$$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/v2-wine-bar-trattoria/",
+          "deals": []
+        },
+        {
+          "name": "Yosteria",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "252 Valley St, Youngstown, OH 44505",
+          "website": "https://yosteria.com/",
+          "blurb": "Regional Italian restaurant in Smoky Hollow near the University Courtyard apartments.",
+          "price": "$$$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/yosteria/",
+          "deals": []
+        },
+        {
+          "name": "The Royal Oaks",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "924 Oak St, Youngstown, OH 44506",
+          "website": "https://www.facebook.com/TheRoyalOaks/",
+          "blurb": "Long-running east side neighborhood bar and grill.",
+          "price": "$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/the-royal-oaks/",
+          "deals": []
+        },
+        {
+          "name": "Penguin City Brewing Company",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "460 E Federal St, Youngstown, OH 44503",
+          "website": "https://penguincity.beer/",
+          "blurb": "Downtown brewery taproom whose in-house food truck is Suzie's gourmet hot dogs.",
+          "price": "$$",
+          "sourceUrl": "https://exploremahoning.com/restaurant/penguin-city-brewing-company/",
+          "deals": []
+        },
+        {
+          "name": "Yonder Brunch & Vibes",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "112 W Commerce St, Youngstown, OH",
+          "website": "",
+          "blurb": "Homestyle breakfast and brunch in the Erie Terminal Building, open 8 AM to 4 PM.",
+          "price": "$$",
+          "sourceUrl": "https://thejambar.com/yonder-wanders-into-youngstown/",
+          "deals": []
+        },
+        {
+          "name": "Twisted Roots Luxury Lounge & Sports Bar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "34 N Phelps St, Youngstown, OH",
+          "website": "",
+          "blurb": "Phelps Street lounge and sports bar listed on the city's DORA map.",
+          "price": "$$",
+          "sourceUrl": "https://youngstownohio.gov/sites/default/files/DORA%20Map%20Redesign%20NO%20BLEED.pdf",
+          "deals": []
+        },
+        {
+          "name": "The SandBar & Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "116 W Federal St, Youngstown, OH",
+          "website": "",
+          "blurb": "Family-owned, beach-themed restaurant and bar on West Federal.",
+          "price": "$$",
+          "sourceUrl": "https://businessjournaldaily.com/ribbon-cutting-ceremony-planned-for-new-downtown-restaurant/",
+          "deals": []
+        },
+        {
+          "name": "Hot Head Burritos",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "315 Elm St, Youngstown, OH",
+          "website": "https://www.hotheadburritos.com/",
+          "blurb": "Chain location by campus that accepts Pete's Points.",
+          "price": "$",
+          "sourceUrl": "https://ysu.edu/kilcawley-center/dining-locations-where-you-can-pay-your-y-card",
+          "deals": []
+        },
+        {
+          "name": "Jimmy John's",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "131 Lincoln Ave, Youngstown, OH",
+          "website": "https://www.jimmyjohns.com/",
+          "blurb": "Chain location by campus that accepts Pete's Points.",
+          "price": "$",
+          "sourceUrl": "https://ysu.edu/kilcawley-center/dining-locations-where-you-can-pay-your-y-card",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "570 Fifth Ave, Youngstown, OH",
+          "website": "https://www.mcdonalds.com/",
+          "blurb": "Chain location by campus that accepts Pete's Points.",
+          "price": "$",
+          "sourceUrl": "https://ysu.edu/kilcawley-center/dining-locations-where-you-can-pay-your-y-card",
+          "deals": []
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "210 Rayen Ave, Youngstown, OH",
+          "website": "https://www.subway.com/",
+          "blurb": "Chain location by campus that accepts Pete's Points.",
+          "price": "$",
+          "sourceUrl": "https://ysu.edu/kilcawley-center/dining-locations-where-you-can-pay-your-y-card",
+          "deals": []
         }
       ]
     },

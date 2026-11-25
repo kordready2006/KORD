@@ -587,7 +587,7 @@
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://ontherhineeatery.com/events/",
-              "sourceDate": ""
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -607,33 +607,48 @@
                 "Tue"
               ],
               "title": "$10 mini stromboli Tuesday",
-              "details": "Mini stromboli with choice of 3 toppings for $10. Listed for the 11am-2pm lunch window; lunch specials start at $7.95.",
+              "details": "Tuesday evening special, 4-9pm: mini stromboli with choice of 3 toppings for $10.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://martinosonvine.com/-specials",
-              "sourceDate": ""
+              "sourceDate": "2026-11"
             },
             {
               "days": [
                 "Wed"
               ],
               "title": "$10 burger, fries and a beer Wednesday",
-              "details": "Burger, fries and a can of beer for $10. Listed for the 11am-2pm lunch window; lunch specials start at $7.95.",
+              "details": "Wednesday evening special, 4-9pm: burger, fries and a can of beer for $10.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://martinosonvine.com/-specials",
-              "sourceDate": ""
+              "sourceDate": "2026-11"
             },
             {
               "days": [
                 "Thu"
               ],
               "title": "$10 cheesesteak Thursday",
-              "details": "Any cheesesteak (chicken or beef) for $10. Listed for the 11am-2pm lunch window; lunch specials start at $7.95.",
+              "details": "Thursday evening special, 4-6pm: any cheesesteak (chicken or beef) for $10.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://martinosonvine.com/-specials",
-              "sourceDate": ""
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Lunch specials from $7.95",
+              "details": "Weekday lunch specials starting at $7.95, 11am-2pm.",
+              "price": "$7.95",
+              "studentOnly": false,
+              "sourceUrl": "https://martinosonvine.com/-specials",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -788,7 +803,25 @@
           "blurb": "Small late-night sushi and Japanese-Korean spot.",
           "price": "$$",
           "sourceUrl": "https://www.drunkenbento.com/",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Half-price sushi",
+              "details": "The menu states all sushi is half priced (regular rolls, nigiri and chef special rolls).",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.drunkenbento.com/menu",
+              "sourceDate": "2026-11"
+            }
+          ]
         },
         {
           "name": "Maki Express",
@@ -908,18 +941,6 @@
           "blurb": "Coffee bar and concert venue next to campus.",
           "price": "$",
           "sourceUrl": "https://www.the86.net/",
-          "deals": []
-        },
-        {
-          "name": "Highland Coffee House",
-          "category": "Coffee & Bakery",
-          "local": true,
-          "signature": false,
-          "address": "2839 Highland Ave, Cincinnati, OH 45219",
-          "website": "",
-          "blurb": "Late-night Corryville coffee house.",
-          "price": "$",
-          "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
           "deals": []
         },
         {
@@ -1242,7 +1263,7 @@
           "local": true,
           "signature": true,
           "address": "121 E High St, Oxford, OH 45056",
-          "website": "",
+          "website": "https://www.skipperstopdeck.com/",
           "blurb": "Family-run uptown staple known for gyros and waffle fries, with an upstairs bar.",
           "price": "$",
           "sourceUrl": "https://enjoyoxford.org/restaurant/skippers-pub-top-deck",
@@ -1257,6 +1278,21 @@
               "studentOnly": false,
               "sourceUrl": "https://miamistudent.net/skippers-remains-a-college-town-favorite-with-chicago-flavor-and-family-service",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Daily food specials with side and drink",
+              "details": "Menu lists a daily food special that comes with a side and a drink: Monday burger, Tuesday gyro, Wednesday chicken sandwich, Thursday Italian beef / hot dog, Friday Reuben (prices not listed).",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.skipperstopdeck.com/menu",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -1435,7 +1471,7 @@
           "local": true,
           "signature": false,
           "address": "25 W High St, Oxford, OH 45056",
-          "website": "",
+          "website": "https://fiesta-charra.com/",
           "blurb": "Authentic Mexican restaurant open in Oxford since 2002.",
           "price": "$$",
           "sourceUrl": "https://www.mapquest.com/us/ohio/fiesta-charra-5890677",
@@ -3070,18 +3106,6 @@
           "deals": []
         },
         {
-          "name": "Shish Wraps",
-          "category": "Mediterranean",
-          "local": true,
-          "signature": false,
-          "address": "1200 Brown St, Dayton, OH 45409",
-          "website": "",
-          "blurb": "Mediterranean wrap counter on Brown Street.",
-          "price": "$",
-          "sourceUrl": "https://www.daytonlocal.com/directory/profiles/shish-wraps/",
-          "deals": []
-        },
-        {
           "name": "Salar Restaurant & Lounge",
           "category": "Other",
           "local": true,
@@ -3163,19 +3187,19 @@
           "blurb": "Long-running independent seafood restaurant in the Oregon District.",
           "price": "$$$",
           "sourceUrl": "https://jays.com/",
-          "deals": []
-        },
-        {
-          "name": "Corner Kitchen",
-          "category": "Other",
-          "local": true,
-          "signature": false,
-          "address": "613 E 5th St, Dayton, OH 45402",
-          "website": "https://www.facebook.com/CornerKitchenafinerdiner",
-          "blurb": "Oregon District 'finer diner' at the corner of Fifth Street.",
-          "price": "$$",
-          "sourceUrl": "https://www.daytonlocal.com/directory/restaurants/corner-kitchen/",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "Thursday crab and lobster specials",
+              "details": "Crab and lobster specials every Thursday, 5-9pm (prices not listed).",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://jays.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
         },
         {
           "name": "Franco's Ristorante Italiano",
@@ -3214,18 +3238,6 @@
           "deals": []
         },
         {
-          "name": "Local Cantina",
-          "category": "Mexican",
-          "local": true,
-          "signature": false,
-          "address": "503 E 1st St, Dayton, OH 45402",
-          "website": "https://www.localcantina.com/",
-          "blurb": "Ohio taco-and-margarita cantina near the ballpark.",
-          "price": "$$",
-          "sourceUrl": "https://www.daytonlocal.com/directory/restaurants/local-cantina/",
-          "deals": []
-        },
-        {
           "name": "Mikey's Late Night Slice",
           "category": "Pizza",
           "local": true,
@@ -3247,7 +3259,30 @@
           "blurb": "Downtown brewery and beer hall with a food menu.",
           "price": "$$",
           "sourceUrl": "https://www.thedaytonbeerco.com/",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Pizza Pint Night",
+              "details": "Wednesdays: 1 pizza + 2 pints for $20, or 2 pizzas + 4 pints for $35 (Puzzle Feud 7-9pm).",
+              "price": "$20",
+              "studentOnly": false,
+              "sourceUrl": "https://www.thedaytonbeerco.com/calendar",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "Taco Thursday",
+              "details": "Thursdays: 3 tacos + 1 pint for $13 (karaoke 6:30-9:30pm).",
+              "price": "$13",
+              "studentOnly": false,
+              "sourceUrl": "https://www.thedaytonbeerco.com/calendar",
+              "sourceDate": "2026-11"
+            }
+          ]
         },
         {
           "name": "Warped Wing Brewing Company",
@@ -3391,6 +3426,54 @@
           "blurb": "Oakwood bakery for donuts, cookies and specialty cakes, a walk from the south end of campus.",
           "price": "$",
           "sourceUrl": "https://ashleyspastries.com/",
+          "deals": []
+        },
+        {
+          "name": "Lucho",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "37 W 4th St, Dayton, OH 45402",
+          "website": "https://www.luchodayton.com/",
+          "blurb": "Espresso and mezcal bar in the Dayton Arcade serving tacos and burritos.",
+          "price": "$$",
+          "sourceUrl": "https://www.luchodayton.com/",
+          "deals": []
+        },
+        {
+          "name": "Dayton Barbecue Company",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "1000 Carillon Blvd, Dayton, OH 45409",
+          "website": "https://dytbbqco.com/",
+          "blurb": "Barbecue restaurant at Carillon Historical Park, just west of campus.",
+          "price": "$$",
+          "sourceUrl": "https://dytbbqco.com/",
+          "deals": []
+        },
+        {
+          "name": "The Foundry",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "124 Madison St, Dayton, OH 45402",
+          "website": "https://www.thefoundryrooftop.com/",
+          "blurb": "Rooftop restaurant and bar with wood-fired dishes and weekly themed nights.",
+          "price": "$$$",
+          "sourceUrl": "https://www.thefoundryrooftop.com/",
+          "deals": []
+        },
+        {
+          "name": "Bistecca",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "137 N Main St, Dayton, OH 45402",
+          "website": "https://www.instagram.com/bisteccadayton/",
+          "blurb": "Florence-inspired restaurant with handmade pastas and wood-fired grill selections.",
+          "price": "$$$",
+          "sourceUrl": "https://www.daytonlocal.com/directory/restaurants/bistecca/",
           "deals": []
         }
       ]
