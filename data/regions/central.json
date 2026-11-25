@@ -129,6 +129,17 @@
               "studentOnly": false,
               "sourceUrl": "https://ma.to/venue/ethylandtank",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$2 Taco Tuesday",
+              "details": "$2 tacos on Tuesdays as part of the Tuesday-Sunday happy hour (a 2024 Lantern article gives happy hour as 4-8 p.m.).",
+              "price": "$2",
+              "studentOnly": false,
+              "sourceUrl": "https://ramblercolumbus.com/resources/best-happy-hour-columbus/",
+              "sourceDate": "2026"
             }
           ]
         },
@@ -190,7 +201,23 @@
           "blurb": "Columbus-founded build-your-own taco chain known for queso and margaritas.",
           "price": "$$",
           "sourceUrl": "https://locations.condadotacos.com/oh/1227-n-high-st",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Happy hour: $1 off tacos",
+              "details": "Monday-Friday 3-6 p.m.: $1 off tacos (plus drink specials).",
+              "price": "$1 off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.experiencecolumbus.com/blog/post/top-happy-hours-in-the-short-north/",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Arch City Tavern",
@@ -213,6 +240,21 @@
               "studentOnly": false,
               "sourceUrl": "https://columbusfoodletter.substack.com/p/one-day-wonders-our-list-of-weekly",
               "sourceDate": "2025-09"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Happy hour pizzas",
+              "details": "Monday-Friday 3-6 p.m.: $9 pizzas (another listing says $10) alongside half-off drafts.",
+              "price": "$9",
+              "studentOnly": false,
+              "sourceUrl": "https://cbustoday.6amcity.com/city-guide/play/happy-hours-in-columbus-ohio",
+              "sourceDate": ""
             }
           ]
         },
@@ -472,6 +514,239 @@
               "studentOnly": false,
               "sourceUrl": "https://www.experiencecolumbus.com/blog/post/top-happy-hours-in-the-short-north/",
               "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Plaza Mexican Grill",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "1644 N High St, Columbus, OH",
+          "website": "https://plazamexicangrill.com",
+          "blurb": "Mexican grill and bar on High Street at the south edge of Ohio State's campus.",
+          "price": "$",
+          "sourceUrl": "https://www.yelp.com/biz/plaza-mexican-grill-columbus",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue"
+              ],
+              "title": "3 tacos for $8",
+              "details": "Monday and Tuesday 3-11 p.m.: three tacos with the same protein for $8.",
+              "price": "$8",
+              "studentOnly": false,
+              "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Happy hour: half-off select appetizers",
+              "details": "Listed as every day 4-7 p.m.: half off select appetizers (plus drink specials). Check which days the restaurant is open.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Forno Kitchen + Bar",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "721 N High St, Columbus, OH",
+          "website": "",
+          "blurb": "Short North Italian kitchen and bar known for its stone-fired pizzas.",
+          "price": "$$",
+          "sourceUrl": "https://cbustoday.6amcity.com/city-guide/play/happy-hours-in-columbus-ohio",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Half-off happy hour pizzas",
+              "details": "Monday-Friday 4-6 p.m.: half-priced pizzas, shared items and bar snacks (plus drink specials).",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://cbustoday.6amcity.com/city-guide/play/happy-hours-in-columbus-ohio",
+              "sourceDate": "2024-04"
+            }
+          ]
+        },
+        {
+          "name": "The Pearl",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "641 N High St, Columbus, OH",
+          "website": "https://thepearlrestaurant.com",
+          "blurb": "Short North tavern and oyster room from Cameron Mitchell Restaurants.",
+          "price": "$$$",
+          "sourceUrl": "https://thepearlrestaurant.com/locations-menus/short-north/events/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Happy hour: half-off snacks, starters and pub burgers",
+              "details": "Monday-Friday 4-6 p.m.: all snacks, starters and pub burgers half off.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://thepearlrestaurant.com/wp-content/uploads/2026/04/PearlSN-Web426-RFnl.pdf",
+              "sourceDate": "2026-04"
+            }
+          ]
+        },
+        {
+          "name": "Standard Hall",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1100 N High St, Columbus, OH",
+          "website": "https://standardhall.com",
+          "blurb": "Short North beer hall and bar with weekly event nights.",
+          "price": "$$",
+          "sourceUrl": "https://www.columbusonthecheap.com/columbus-happy-hours/",
+          "deals": [
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$5 smash burger Thursday",
+              "details": "Thursday 6 p.m. to close: $5 smash burger alongside drink specials.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://standardhall.com/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Hubbard Grille",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "793 N High St, Columbus, OH",
+          "website": "https://www.hubbardgrille.com",
+          "blurb": "Modern American restaurant and bar in the Short North Arts District.",
+          "price": "$$",
+          "sourceUrl": "https://www.hubbardgrille.com/",
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sun"
+              ],
+              "title": "$6 happy hour flatbreads and apps",
+              "details": "Tuesday-Friday and Sunday 4-6 p.m.: $6 flatbreads and $6 appetizers (plus $6 drinks).",
+              "price": "$6",
+              "studentOnly": false,
+              "sourceUrl": "https://www.hubbardgrille.com/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Bodega",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Columbus bar and cafe with weeknight taco and wing deals.",
+          "price": "$$",
+          "sourceUrl": "https://ramblercolumbus.com/resources/best-happy-hour-columbus/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$3 Taco Tuesday",
+              "details": "$3 tacos on Tuesdays.",
+              "price": "$3",
+              "studentOnly": false,
+              "sourceUrl": "https://ramblercolumbus.com/resources/best-happy-hour-columbus/",
+              "sourceDate": "2026"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Half-off wings Wednesday",
+              "details": "Half-off wings on Wednesdays.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://ramblercolumbus.com/resources/best-happy-hour-columbus/",
+              "sourceDate": "2026"
+            }
+          ]
+        },
+        {
+          "name": "Bernard's Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Short North tavern with a weekly burger night.",
+          "price": "$$",
+          "sourceUrl": "https://clinkly.io/happy-hour/columbus/short-north",
+          "deals": [
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$6 Burger Night",
+              "details": "$6 signature cheeseburger every Wednesday; the listing's hours are unclear, so confirm timing.",
+              "price": "$6",
+              "studentOnly": false,
+              "sourceUrl": "https://clinkly.io/happy-hour/columbus/short-north",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Local Cantina",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Columbus-area taco and margarita bar chain with several locations.",
+          "price": "$",
+          "sourceUrl": "https://www.columbusnavigator.com/?p=56485",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$2.22 Taco Tuesday",
+              "details": "$2.22 house tacos ($4 top-shelf tacos) all day Tuesday, dine-in only, at its various locations.",
+              "price": "$2.22",
+              "studentOnly": false,
+              "sourceUrl": "https://www.columbusnavigator.com/?p=56485",
+              "sourceDate": "2026-08"
             }
           ]
         }

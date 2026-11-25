@@ -665,6 +665,200 @@
           "price": "$",
           "sourceUrl": "https://mapquest.com/us/ohio/schmuckers-5659529",
           "deals": []
+        },
+        {
+          "name": "Bier Stube",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://bierstubetoledo.com",
+          "blurb": "Toledo bar with a different dine-in food special every night until midnight.",
+          "price": "$",
+          "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$6 Stube Burger Monday",
+              "details": "$6 Stube burger. Daily specials run until midnight, dine-in only.",
+              "price": "$6",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+              "sourceDate": "2026-09"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$1.50 Beef Taco Tuesday",
+              "details": "$1.50 beef tacos and $1 chips and salsa. Daily specials run until midnight, dine-in only.",
+              "price": "$1.50",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+              "sourceDate": "2026-09"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Half-price hot dogs Wednesday",
+              "details": "Half-price hot dogs. Daily specials run until midnight, dine-in only.",
+              "price": "Half off",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+              "sourceDate": "2026-09"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$9 chicken chunks & fries Thursday",
+              "details": "$9 chicken chunks with sauce and fries. Daily specials run until midnight, dine-in only.",
+              "price": "$9",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+              "sourceDate": "2026-09"
+            }
+          ]
+        },
+        {
+          "name": "Sidelines Sports Eatery & Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Toledo-area sports bar chain known for wings, with weekday happy hour and daily specials.",
+          "price": "$$",
+          "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$5 happy hour appetizers",
+              "details": "Happy hour Monday-Friday 2-5 p.m. with a handful of appetizers for $5.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+              "sourceDate": "2026-09"
+            }
+          ]
+        },
+        {
+          "name": "Ventura's",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Long-running Toledo Mexican restaurant known for margaritas.",
+          "price": "$$",
+          "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Daily happy hour food specials",
+              "details": "Daily happy hour food and drink specials from 2-6 p.m.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+              "sourceDate": "2026-09"
+            }
+          ]
+        },
+        {
+          "name": "Registry Bistro",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Toledo bistro with a $5 \"Take Five\" menu midweek.",
+          "price": "$$$",
+          "sourceUrl": "https://toledocitypaper.com/food-drink/the-take-five-menu-at-registry-bistro/",
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "title": "$5 Take Five menu",
+              "details": "On Tuesdays, Wednesdays and Thursdays the Take Five menu offers an assortment of foods, cocktails and wine for $5 each.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-take-five-menu-at-registry-bistro/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "BREW Coffee Bar",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Toledo coffee bar on the UToledo Rocket Card discount list.",
+          "price": "$",
+          "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Thu"
+              ],
+              "title": "10% off with Rocket Card",
+              "details": "UToledo Rocket Card discount: 10% off total receipt on Tuesdays and Thursdays. Excludes alcohol and some other items.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Red Robin",
+          "category": "Burgers",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "https://www.redrobin.com/locations/oh/toledo/toledo-384",
+          "blurb": "National burger chain with a weekday happy hour.",
+          "price": "$$",
+          "sourceUrl": "https://www.redrobin.com/locations/oh/toledo/toledo-384",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Weekday happy hour appetizer & milkshake specials",
+              "details": "Happy hour every weekday 3-6 p.m. with specials on select milkshakes and appetizers.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.redrobin.com/locations/oh/toledo/toledo-384",
+              "sourceDate": ""
+            }
+          ]
         }
       ]
     },
@@ -784,6 +978,17 @@
               "studentOnly": false,
               "sourceUrl": "https://visitfindlay.com/bar-events/",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Wednesday Burger Night & Music Bingo",
+              "details": "Burger night with music bingo on Wednesdays, starting at 7 p.m., per Visit Findlay's weekly bar events list.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://visitfindlay.com/bar-events/",
+              "sourceDate": ""
             }
           ]
         },
@@ -849,6 +1054,65 @@
               "price": "15% off",
               "studentOnly": true,
               "sourceUrl": "https://visitfindlay.com/welcome-oiler-families/oiler-specials",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Beer Barrel Pizza & Grill",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "900 Interstate Drive, Findlay, OH 45840",
+          "website": "https://beerbarrel.com/findlay",
+          "blurb": "Northwest Ohio pizza and grill chain with long happy hour food pricing.",
+          "price": "$$",
+          "sourceUrl": "https://beerbarrel.com/findlay",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Happy hour food specials ($6 munchies, $10 food deals)",
+              "details": "Special pricing Monday-Friday 2-6 p.m. and Saturday-Sunday 11 a.m.-4 p.m.: food specials from $4 to $11, including $6 munchies and $10 food deals.",
+              "price": "$6",
+              "studentOnly": false,
+              "sourceUrl": "https://beerbarrel.com/findlay",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Findlay Brewing Co.",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "213 E. Crawford St., Findlay, OH",
+          "website": "",
+          "blurb": "Downtown Findlay craft brewery with a kitchen.",
+          "price": "$$",
+          "sourceUrl": "https://findlayliving.com/guides/your-guide-to-happy-hour-in-findlay/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sun"
+              ],
+              "title": "$5 happy hour appetizer",
+              "details": "Happy hour Monday-Friday 3-5:30 p.m. or all day Sunday: $1 off pints, paired with a $5 appetizer.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://findlayliving.com/guides/your-guide-to-happy-hour-in-findlay/",
               "sourceDate": ""
             }
           ]

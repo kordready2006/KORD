@@ -223,7 +223,25 @@
           "blurb": "Cleveland pizza chain described by the CSU law school guide as a CSU pizza hang-out.",
           "price": "$",
           "sourceUrl": "https://www.law.csuohio.edu/sites/default/files/academics/orientation/restaurant_guide-summer_2016.pdf",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$3 off two medium pizzas (pickup)",
+              "details": "Order two medium pizzas for pickup and save $3, listed under Daily Specials on the downtown online ordering menu.",
+              "price": "$3 off",
+              "studentOnly": false,
+              "sourceUrl": "https://rascalhouse.orderexperience.net/rascal_house/menu",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "BrewDog Cleveland",
@@ -246,6 +264,17 @@
               "studentOnly": false,
               "sourceUrl": "https://drink.brewdog.com/cleveland",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$1 Wings Wednesday",
+              "details": "Wings for $1 apiece every Wednesday at the Cleveland location.",
+              "price": "$1",
+              "studentOnly": false,
+              "sourceUrl": "https://brewdog.com/wings-wednesday",
+              "sourceDate": ""
             }
           ]
         },
@@ -259,7 +288,90 @@
           "blurb": "Cleveland-born build-your-own taco spot recommended by the CWRU Observer.",
           "price": "$$",
           "sourceUrl": "https://observer.case.edu/cleveland-cuisine-for-cwru-students-a-guide-to-your-new-favorite-restaurants",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$1 off tacos happy hour",
+              "details": "Happy hour Monday-Friday 3-6 PM: $1 off tacos, bowls and build-your-own nachos. Gateway location excludes game days and events.",
+              "price": "$1 off",
+              "studentOnly": false,
+              "sourceUrl": "https://barrio-tacos.com/specials/",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Sun",
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "title": "$5 late-night appetizers and nachos",
+              "details": "Late night Sunday-Thursday 9 PM to close, bar area only: $5 appetizers and $5 ballpark or build-your-own nachos.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://barrio-tacos.com/specials/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Hofbrauhaus Cleveland",
+          "category": "Bar & Grill",
+          "local": false,
+          "signature": false,
+          "address": "1550 Chester Ave, Cleveland, OH",
+          "website": "",
+          "blurb": "German beer hall in the Playhouse Square district near Cleveland State.",
+          "price": "$$",
+          "sourceUrl": "https://playhousesquare.org/news/detail/happy-hours-around-the-district",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$5 happy hour appetizers",
+              "details": "Happy hour Monday-Friday 3-6 PM with $5 appetizers.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://playhousesquare.org/news/detail/happy-hours-around-the-district",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Becky's",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1762 E 18th St, Cleveland, OH 44114",
+          "website": "https://www.beckysbar.com",
+          "blurb": "Dive bar and grill half a block from Cleveland State's main campus, known for wings, burgers and pierogies.",
+          "price": "$",
+          "sourceUrl": "https://www.beckysbar.com/about",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$2 Tacos Tuesday",
+              "details": "$2 tacos on Tuesdays.",
+              "price": "$2",
+              "studentOnly": false,
+              "sourceUrl": "https://www.yelp.com/biz/beckys-cleveland",
+              "sourceDate": "2026-10"
+            }
+          ]
         }
       ]
     },
@@ -1232,6 +1344,20 @@
               "studentOnly": false,
               "sourceUrl": "https://www.downtownakron.com/event/downtown-akron-restaurant-specials-and-happy-hours",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Half-off appetizers happy hour",
+              "details": "Happy hour Tuesday-Friday 5-7 PM with half off select appetizers.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.aol.com/news/budget-heres-where-daily-deals-150808487.html",
+              "sourceDate": ""
             }
           ]
         },
@@ -1245,7 +1371,19 @@
           "blurb": "Highland Square deli and bar with over-the-top sandwiches, pizzas and wings.",
           "price": "$",
           "sourceUrl": "https://mrzubs.com/",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "10 wings for $10 Wednesday",
+              "details": "10 wings for $10 on Wednesdays; specials subject to change based on availability.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Buffalo Wild Wings",
@@ -1365,7 +1503,25 @@
           "blurb": "Italian chain restaurant on South Main Street downtown.",
           "price": "$$",
           "sourceUrl": "https://lv.foursquare.com/christyc3839170/list/akron-restaurants",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "20% off with student ID",
+              "details": "20% off when a student ID is shown.",
+              "price": "20% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.downtownakron.com/event/student-specials",
+              "sourceDate": "2025-11"
+            }
+          ]
         },
         {
           "name": "Luigi's Italian Restaurant",
@@ -1378,6 +1534,184 @@
           "price": "$$",
           "sourceUrl": "https://lv.foursquare.com/christyc3839170/list/akron-restaurants",
           "deals": []
+        },
+        {
+          "name": "Barley House",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "222 S. Main St, Akron, OH",
+          "website": "https://barleyhouseakron.com",
+          "blurb": "Downtown Akron bar and grill on South Main Street with a different food special every day.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Half-price wings Monday",
+              "details": "Half-price wings every Monday.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
+              "sourceDate": "2026-08"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$7.99 burger and fries Tuesday",
+              "details": "1/3-pound cheeseburger and fries for $7.99 on Tuesdays.",
+              "price": "$7.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
+              "sourceDate": "2026-08"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Half-price gyro Wednesday",
+              "details": "Half-price gyro served with chips on Wednesdays.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
+              "sourceDate": "2026-08"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$9.99 pizza Thursday",
+              "details": "12-inch one-topping pizza for $9.99 on Thursdays.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
+              "sourceDate": "2026-08"
+            },
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "$11.99 fish and chips Friday",
+              "details": "Fish and chips for $11.99 on Fridays.",
+              "price": "$11.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
+              "sourceDate": "2026-08"
+            },
+            {
+              "days": [
+                "Sat"
+              ],
+              "title": "$2 off handhelds Saturday",
+              "details": "$2 off all handhelds on Saturdays.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
+              "sourceDate": "2026-08"
+            },
+            {
+              "days": [
+                "Sun"
+              ],
+              "title": "$2 off appetizers Sunday",
+              "details": "$2 off appetizers on Sundays.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/barley-house-akron-daily-specials",
+              "sourceDate": "2026-08"
+            }
+          ]
+        },
+        {
+          "name": "Crave",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Akron restaurant with a weekday happy hour menu.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/event/crave-happy-hour-specials",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Weekday happy hour menu",
+              "details": "Discounted happy hour food menu and drinks Monday-Friday 3-6 PM.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/crave-happy-hour-specials",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Lock 15 Brewing Co.",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Akron brewpub that gives University of Akron students a discount on pretzels and wings.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/event/student-specials",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "20% off pretzels or wings with UA ID",
+              "details": "20% off an order of pretzels or an order of wings with a valid University of Akron ID card.",
+              "price": "20% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.downtownakron.com/event/student-specials",
+              "sourceDate": "2025-11"
+            }
+          ]
+        },
+        {
+          "name": "Ilić Café",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Akron cafe with a Zip Card drink discount.",
+          "price": "$",
+          "sourceUrl": "https://www.downtownakron.com/event/student-specials",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off drinks with Zip Card",
+              "details": "10% off drinks for students who present their UA Zip Card.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.downtownakron.com/event/student-specials",
+              "sourceDate": "2025-11"
+            }
+          ]
         }
       ]
     },
@@ -2042,7 +2376,25 @@
           "blurb": "Downtown pizzeria known for Brier Hill pizza; accepts YSU Pete's Points.",
           "price": "$$",
           "sourceUrl": "https://book.toasttab.com/r/avalon-downtown-17-w-federal-street",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% YSU student discount",
+              "details": "10% discount for all YSU students.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://thejambar.com/youngstown-restaurants-face-mixed-results/",
+              "sourceDate": "2024-10"
+            }
+          ]
         },
         {
           "name": "Prima Cucina Italiana",
@@ -2115,6 +2467,55 @@
           "price": "$",
           "sourceUrl": "https://ysu.edu/international-programs-office/admitted-international-students/living-youngstown",
           "deals": []
+        },
+        {
+          "name": "The Varsity Club",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "131 W Commerce St, Youngstown, OH 44503",
+          "website": "https://www.varsityclubyoungstown.com",
+          "blurb": "Downtown Youngstown sports bar with daily food specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.varsityclubyoungstown.com/lineup/promotions/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$10 Taco Tuesday",
+              "details": "$10 taco deal with tacos made to order every Tuesday.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://www.varsityclubyoungstown.com/lineup/promotions/",
+              "sourceDate": "2026"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "Thursday wing special",
+              "details": "10 wings and fries special with purchase of a drink on Thursdays.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.varsityclubyoungstown.com/lineup/promotions/",
+              "sourceDate": "2026"
+            },
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "4-6 PM happy hour food specials",
+              "details": "Weekday happy hour 4-6 PM with food and drink specials (closed Mondays).",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.varsityclubyoungstown.com/lineup/promotions/",
+              "sourceDate": "2026"
+            }
+          ]
         }
       ]
     },

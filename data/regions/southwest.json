@@ -413,7 +413,30 @@
           "blurb": "Wings and sports bar chain on Calhoun.",
           "price": "$$",
           "sourceUrl": "https://www.ubereats.com/psckup/dish/cincinnati-oh/nachos",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "BOGO 50% off traditional wings",
+              "details": "Tuesdays: buy one order of traditional wings, get a second 50% off. Terms vary by location; may require Blazin' Rewards membership.",
+              "price": "BOGO 50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "BOGO boneless wings Thursday",
+              "details": "Thursdays: buy one order of boneless wings, get one free. Confirm terms with the location.",
+              "price": "BOGO",
+              "studentOnly": false,
+              "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Tropical Smoothie Cafe",
@@ -447,6 +470,156 @@
               "price": "$3",
               "studentOnly": false,
               "sourceUrl": "https://drink.brewdog.com/cincinnati",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Monday Burger Club",
+              "details": "Mondays: buy one burger or sandwich, get a second for $1.",
+              "price": "$1 second burger",
+              "studentOnly": false,
+              "sourceUrl": "https://drink.brewdog.com/cincinnati",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Wings Wednesday",
+              "details": "Weekly wing deal. The Cincinnati page lists all-you-can-eat chicken or cauliflower wings for $15 with pre-booking; BrewDog's brand page lists Cincinnati under $1 wings. Confirm which applies.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://drink.brewdog.com/cincinnati",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "title": "Happy hour $9 loaded fries",
+              "details": "Happy hour Mon-Thu (start listed as 3pm or 4pm): $9 loaded fries alongside drink specials.",
+              "price": "$9",
+              "studentOnly": false,
+              "sourceUrl": "https://drink.brewdog.com/cincinnati",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "On the Rhine Eatery",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://ontherhineeatery.com",
+          "blurb": "Food hall-style eatery with a different cheap special each weekday; sources disagree on its current location, so check the address before going.",
+          "price": "$",
+          "sourceUrl": "https://www.everythingcincy.com/on-the-rhine-eatery",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$7 Mac Bowls Monday",
+              "details": "Mondays: mac bowls for $7.",
+              "price": "$7",
+              "studentOnly": false,
+              "sourceUrl": "https://www.everythingcincy.com/savings-deals/food-specials/weekly-deals",
+              "sourceDate": "2026"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$3 Taco Tuesday",
+              "details": "Tuesdays: $3 tacos.",
+              "price": "$3",
+              "studentOnly": false,
+              "sourceUrl": "https://www.everythingcincy.com/savings-deals/food-specials/weekly-deals",
+              "sourceDate": "2026"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Pick Two Sandwiches & Soup Wednesday",
+              "details": "Wednesdays: pick-two sandwich and soup deal.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.everythingcincy.com/savings-deals/food-specials/weekly-deals",
+              "sourceDate": "2026"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$7.50 Spicy Chicken Sandwich Thursday",
+              "details": "Thursdays: spicy chicken sandwich for $7.50.",
+              "price": "$7.50",
+              "studentOnly": false,
+              "sourceUrl": "https://www.everythingcincy.com/savings-deals/food-specials/weekly-deals",
+              "sourceDate": "2026"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Half-price appetizers at Bar 1883",
+              "details": "Half-priced appetizers every Wednesday at Bar 1883.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://ontherhineeatery.com/events/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Martino's on Vine",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "2618 Vine St, Cincinnati, OH 45219",
+          "website": "https://martinosonvine.com",
+          "blurb": "Short Vine sports bar near UC with $10 weekday lunch specials.",
+          "price": "$",
+          "sourceUrl": "https://martinosonvine.com/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$10 mini stromboli Tuesday",
+              "details": "Mini stromboli with choice of 3 toppings for $10. Listed for the 11am-2pm lunch window; lunch specials start at $7.95.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://martinosonvine.com/-specials",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$10 burger, fries and a beer Wednesday",
+              "details": "Burger, fries and a can of beer for $10. Listed for the 11am-2pm lunch window; lunch specials start at $7.95.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://martinosonvine.com/-specials",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$10 cheesesteak Thursday",
+              "details": "Any cheesesteak (chicken or beef) for $10. Listed for the 11am-2pm lunch window; lunch specials start at $7.95.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://martinosonvine.com/-specials",
               "sourceDate": ""
             }
           ]
@@ -619,7 +792,34 @@
           "blurb": "Alley bar and restaurant serving burgers and wings since 1946, kitchen open late.",
           "price": "$$",
           "sourceUrl": "https://travelbutlercounty.com/node/10054",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Monday Pitcher Night + .75 wings",
+              "details": "Site lists Monday as \"Pitcher Night + .75 Wings\"; dinner specials run Mon-Thu 4-10pm.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.macandjoes.com/",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$8.29 lunch special",
+              "details": "Mon-Fri 11am-4pm: featured half sub with side of fries and a soft drink.",
+              "price": "$8.29",
+              "studentOnly": false,
+              "sourceUrl": "https://www.macandjoes.com/",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Left Field Tavern",
@@ -792,7 +992,30 @@
           "blurb": "One of Oxford's favorite sushi spots.",
           "price": "$$",
           "sourceUrl": "https://enjoyoxford.org/asian-cuisine",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "40% off regular rolls Tuesday",
+              "details": "Tuesdays 11am-10pm: 40% off regular rolls dine-in, 25% off takeout.",
+              "price": "40% off",
+              "studentOnly": false,
+              "sourceUrl": "https://oxfordsushiking.com/specials",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "30% off deep-fried rolls Thursday",
+              "details": "Thursdays 11am-10pm: 30% off deep-fried rolls.",
+              "price": "30% off",
+              "studentOnly": false,
+              "sourceUrl": "https://oxfordsushiking.com/specials",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Drop In Tea",
@@ -996,7 +1219,30 @@
           "blurb": "Wings and sports bar chain.",
           "price": "$$",
           "sourceUrl": "https://www.opentable.com.au/r/buffalo-wild-wings-oxford-3",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "BOGO 50% off traditional wings",
+              "details": "Tuesdays: buy one order of traditional wings, get a second 50% off. Terms vary by location; may require Blazin' Rewards membership.",
+              "price": "BOGO 50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://menuguide.com/OH/Oxford/Buffalo-Wild-Wings",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "BOGO boneless wings Thursday",
+              "details": "Thursdays: buy one order of boneless wings, get one free. Confirm terms with the location.",
+              "price": "BOGO",
+              "studentOnly": false,
+              "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Chick-fil-A (Armstrong Student Center)",
@@ -1469,7 +1715,30 @@
           "blurb": "Wings and sports bar chain location on Brown Street by UD.",
           "price": "$$",
           "sourceUrl": "https://www.superpages.com/dayton-oh/bpp/buffalo-wild-wings-461774652",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "BOGO 50% off traditional wings",
+              "details": "Tuesdays: buy one order of traditional wings, get a second 50% off. Terms vary by location; may require Blazin' Rewards membership.",
+              "price": "BOGO 50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "BOGO boneless wings Thursday",
+              "details": "Thursdays: buy one order of boneless wings, get one free. Confirm terms with the location.",
+              "price": "BOGO",
+              "studentOnly": false,
+              "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Milano's Atlantic City Submarines",
@@ -1709,7 +1978,125 @@
           "blurb": "East Dayton taqueria.",
           "price": "$",
           "sourceUrl": "https://www.toasttab.com/local/order/taqueria-mixteca",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Weekday lunch specials",
+              "details": "Lunch specials Mon-Fri 10am-3pm, e.g. #1 small burrito for $9.49.",
+              "price": "$9.49",
+              "studentOnly": false,
+              "sourceUrl": "https://www.toasttab.com/local/order/taqueria-mixteca",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Tuesday Special: six mini tacos",
+              "details": "Online menu lists a Tuesday Special of six mini tacos; price not shown in the source.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.toasttab.com/local/order/taqueria-mixteca",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "The Trolley Stop",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://trolleystopdayton.com",
+          "blurb": "Long-running Oregon District tavern with daily happy-hour appetizer deals.",
+          "price": "$$",
+          "sourceUrl": "https://www.destinationdayton.org/things-to-do/concerts-music/trolley-stop/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Half-price appetizers happy hour",
+              "details": "Happy hour 4-7pm daily: half-price appetizers plus drink specials.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://dayton937.com/happy-hours-around-town",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Tuesday spaghetti special",
+              "details": "Listing mentions a Tuesday evening spaghetti special; daily lunch specials Mon-Fri are posted on its Facebook page.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.daytonlocal.com/directory/profiles/the-trolley-stop/",
+              "sourceDate": "2024"
+            }
+          ]
+        },
+        {
+          "name": "Troll Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Dayton pub with a half-off appetizer happy hour.",
+          "price": "$$",
+          "sourceUrl": "https://dayton937.com/happy-hours-around-town",
+          "deals": [
+            {
+              "days": [
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Half-off appetizers happy hour",
+              "details": "Wed-Fri 4-7pm: half off appetizers and pints.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://dayton937.com/happy-hours-around-town",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Lily's Dayton",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "329 E Fifth St, Dayton, OH",
+          "website": "",
+          "blurb": "Oregon District restaurant with a weekly Tiki Taco Tuesday menu.",
+          "price": "$$",
+          "sourceUrl": "https://www.daytondailynews.com/what-to-know/oregon-district-restaurant-adds-tuesday-service-with-special-menu/K5AZ3BS4ARBHFM3A55TITAVVRQ",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Tiki Taco Tuesday",
+              "details": "Tuesday dinner service (from 4:30pm) with a rotating menu of three to four tacos, five to six appetizers and desserts.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.daytondailynews.com/what-to-know/oregon-district-restaurant-adds-tuesday-service-with-special-menu/K5AZ3BS4ARBHFM3A55TITAVVRQ",
+              "sourceDate": ""
+            }
+          ]
         }
       ]
     },
