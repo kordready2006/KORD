@@ -13,6 +13,12 @@ python3 -m http.server 8000 # then open http://localhost:8000
 
 The app is a static, installable web app (PWA): host the repo root on any static host (GitHub Pages, Netlify, Vercel), open the URL on a phone and choose "Add to Home Screen".
 
+## Rules the build applies
+
+- Student budget: a deal priced above $12 is left out (`BUDGET` in `build.py`).
+- Distance: places more than 2.5 miles from the centre of campus are left out (`RADIUS_MILES`).
+- The top card each day is a local deal, rotates through the week, and is $10 or less when it has a price.
+
 ## Layout
 
 - `app/kord.html` – the whole app (markup, styles, script). Edit this, then run `build.py`.
