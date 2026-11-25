@@ -144,6 +144,245 @@
           "price": "$",
           "sourceUrl": "https://www.cincinnatimagazine.com/dining-reviews/fine-diving-quatman-cafe/",
           "deals": []
+        },
+        {
+          "name": "Skyline Chili (Clifton)",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "290 Ludlow Ave, Cincinnati, OH 45220",
+          "website": "https://www.skylinechili.com",
+          "blurb": "Cincinnati-style chili parlor in Clifton's Gaslight District: 3-ways and cheese coneys, open late.",
+          "price": "$",
+          "sourceUrl": "https://locations.skylinechili.com/skyline-chili-08634e0c5325",
+          "deals": []
+        },
+        {
+          "name": "Camp Washington Chili",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "3005 Colerain Ave, Cincinnati, OH 45225",
+          "website": "https://campwashingtonchili.com/",
+          "blurb": "Classic chili parlor at Hopple and Colerain, open around the clock on weekdays.",
+          "price": "$",
+          "sourceUrl": "https://campwashingtonchili.com/",
+          "deals": []
+        },
+        {
+          "name": "Keystone Bar & Grill (Clifton)",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "249 Calhoun St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Bar and grill by UC known for its mac and cheese menu.",
+          "price": "$$",
+          "sourceUrl": "https://www.citybeat.com/food-drink/keystone-bar-grill-to-serve-mac-cheese-chicken-and-waffles-for-national-mac-cheese-day-12166502",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Mac Monday",
+              "details": "Half-price mac and cheese with the purchase of a drink. Reported by older third-party articles (2019-2023), not the restaurant's own site; confirm it is still running.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.wcpo.com/entertainment/cincybuzz/30-under-this-is-the-ooey-gooey-mac-and-cheese-youve-been-looking-for",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Half-price quesadillas",
+              "details": "Half-price quesadillas on Tuesdays, per the same older article; confirm it is still running.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.wcpo.com/entertainment/cincybuzz/30-under-this-is-the-ooey-gooey-mac-and-cheese-youve-been-looking-for",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Krishna",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "313 Calhoun St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Tiny carryout-and-booths Indian spot long called UC's best-kept secret.",
+          "price": "$",
+          "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
+          "deals": []
+        },
+        {
+          "name": "Thai Express",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "213 W McMillan St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Quick Thai staples that have fed UC students for over 20 years.",
+          "price": "$",
+          "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
+          "deals": []
+        },
+        {
+          "name": "Kung Fu Noodle",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "349 Calhoun St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "No-frills family-owned take-out spot with low prices.",
+          "price": "$",
+          "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
+          "deals": []
+        },
+        {
+          "name": "Chicago Gyros",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Longtime gyro shop at the corner of McMillan and Clifton.",
+          "price": "$",
+          "sourceUrl": "https://www.citybeat.com/?p=115130",
+          "deals": []
+        },
+        {
+          "name": "Mac's Pizza Pub",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "205 W McMillan St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Pizza and sports pub on McMillan next to UC.",
+          "price": "$$",
+          "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
+          "deals": []
+        },
+        {
+          "name": "Rohs Street Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "245 W McMillan St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Coffeehouse for coffee and light meals near UC.",
+          "price": "$",
+          "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
+          "deals": []
+        },
+        {
+          "name": "Dewey's Pizza (Clifton)",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "265 Hosea Ave, Cincinnati, OH 45220",
+          "website": "",
+          "blurb": "Cincinnati-born pizzeria just off the Ludlow strip.",
+          "price": "$$",
+          "sourceUrl": "https://sites.americanjewisharchives.org/media/docs/localRestaurants.pdf",
+          "deals": []
+        },
+        {
+          "name": "Ambar India",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "350 Ludlow Ave, Cincinnati, OH 45220",
+          "website": "",
+          "blurb": "Indian restaurant in the Clifton Gaslight District.",
+          "price": "$$",
+          "sourceUrl": "https://sites.americanjewisharchives.org/media/docs/localRestaurants.pdf",
+          "deals": []
+        },
+        {
+          "name": "Goodfellas Pizzeria (OTR)",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Late-night pizza by the slice in Over-the-Rhine, open until 3 AM on weekends.",
+          "price": "$",
+          "sourceUrl": "https://www.citybeat.com/food-drink/29-greater-cincinnati-restaurants-open-for-late-night-eats-19937400",
+          "deals": []
+        },
+        {
+          "name": "Mikey's Late Night Slice",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "2014 Elm St, Cincinnati, OH",
+          "website": "",
+          "blurb": "Giant foldable pizza slices served until about 2:30-3 AM.",
+          "price": "$",
+          "sourceUrl": "https://www.citybeat.com/food-drink/29-greater-cincinnati-restaurants-open-for-late-night-eats-19937400",
+          "deals": []
+        },
+        {
+          "name": "Shanghai Mama's",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "216 E Sixth St, Cincinnati, OH",
+          "website": "",
+          "blurb": "Downtown noodle house open until 3 AM on Fridays and Saturdays.",
+          "price": "$$",
+          "sourceUrl": "https://www.citybeat.com/food-drink/29-greater-cincinnati-restaurants-open-for-late-night-eats-19937400",
+          "deals": []
+        },
+        {
+          "name": "Sorrento's",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Family-owned Italian restaurant and pizzeria next to Xavier in Norwood.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitcincy.com/neighborhoods/uptown/norwood/",
+          "deals": []
+        },
+        {
+          "name": "Cream + Sugar Coffeehouse",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Coffeehouse around the corner from Xavier University.",
+          "price": "$",
+          "sourceUrl": "https://www.visitcincy.com/neighborhoods/uptown/norwood/",
+          "deals": []
+        },
+        {
+          "name": "Raising Cane's",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "237 Calhoun St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Chicken finger chain on Calhoun across from UC.",
+          "price": "$",
+          "sourceUrl": "https://redirect.foursquare.com/rb5453435/list/cheap-eats-lunchdinner",
+          "deals": []
+        },
+        {
+          "name": "Toppers Pizza",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "345 Calhoun St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Late-night delivery pizza chain on Calhoun.",
+          "price": "$",
+          "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
+          "deals": []
         }
       ]
     },
@@ -608,7 +847,92 @@
           "url": "https://miamioh.edu/regionals"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Richard's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "417 Main St, Hamilton, OH",
+          "website": "",
+          "blurb": "Hamilton pizza institution since 1955, also known for Italian steak sandwiches.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/hamilton-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Fretboard Brewing & Public House",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "103 Main St, Hamilton, OH",
+          "website": "",
+          "blurb": "Brewery and public house on Main Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.gettothebc.com/explore/hamilton/dining?page=2",
+          "deals": []
+        },
+        {
+          "name": "Roll On In",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "102 Main St, Hamilton, OH",
+          "website": "",
+          "blurb": "Sushi burritos and bowls on Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.gettothebc.com/explore/hamilton/dining?page=3",
+          "deals": []
+        },
+        {
+          "name": "Smoochies",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "113 Main St, Hamilton, OH",
+          "website": "",
+          "blurb": "Crepe and bubble tea shop on Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.gettothebc.com/explore/hamilton/dining?page=3",
+          "deals": []
+        },
+        {
+          "name": "Hamilton's Urban Backyard",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "501 Main St, Hamilton, OH",
+          "website": "",
+          "blurb": "Food truck park and craft beer bar.",
+          "price": "$",
+          "sourceUrl": "https://www.gettothebc.com/explore/hamilton/dining?page=2",
+          "deals": []
+        },
+        {
+          "name": "Taqueria Guanajuato",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "752 NW Washington Blvd, Hamilton, OH",
+          "website": "",
+          "blurb": "Food truck turned restaurant with reasonable prices.",
+          "price": "$",
+          "sourceUrl": "https://www.gettothebc.com/explore/hamilton/dining?page=3",
+          "deals": []
+        },
+        {
+          "name": "Mad Mike's Burgers & Fries",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "194 N Brookwood Ave, Hamilton, OH",
+          "website": "",
+          "blurb": "Local burger and fries joint.",
+          "price": "$",
+          "sourceUrl": "https://www.gettothebc.com/explore/hamilton/dining?page=2",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "middletown",
@@ -673,6 +997,186 @@
           "price": "$$",
           "sourceUrl": "https://www.superpages.com/dayton-oh/bpp/buffalo-wild-wings-461774652",
           "deals": []
+        },
+        {
+          "name": "Milano's Atlantic City Submarines",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": true,
+          "address": "1834 Brown St, Dayton, OH",
+          "website": "",
+          "blurb": "Subs, pizza and taps on Brown Street at UD since 1969.",
+          "price": "$",
+          "sourceUrl": "https://www.daytondailynews.com/places/restaurant/milano-celebrate-50th-year-with-cent-subs-pizzas-with-purchase/9xVMglSjVZ5wQXwVnI5SwM",
+          "deals": []
+        },
+        {
+          "name": "Dewey's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "131 Jasper St, Dayton, OH",
+          "website": "",
+          "blurb": "Regional gourmet pizzeria in University Park near UD.",
+          "price": "$$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/where-eat-near-the-university-dayton/LhxZ09QL4OMlrFDO7ol5qO/",
+          "deals": []
+        },
+        {
+          "name": "Skyline Chili (Brown Street)",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Cincinnati-style chili parlor on Brown Street near UD.",
+          "price": "$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/where-eat-near-the-university-dayton/LhxZ09QL4OMlrFDO7ol5qO/",
+          "deals": []
+        },
+        {
+          "name": "Fusian",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1200 Brown St #125, Dayton, OH",
+          "website": "",
+          "blurb": "Ohio-based build-your-own sushi roll shop.",
+          "price": "$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/where-eat-near-the-university-dayton/LhxZ09QL4OMlrFDO7ol5qO/",
+          "deals": []
+        },
+        {
+          "name": "Bourbon Street Grill and Cafe",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1043 Brown St, Dayton, OH",
+          "website": "",
+          "blurb": "Cajun-style quick-serve spot on Brown Street.",
+          "price": "$",
+          "sourceUrl": "https://www.daytondailynews.com/business/economy/new-restaurant-opens-brown-near/q44OpWP31PKA0kLl9YZEuM",
+          "deals": []
+        },
+        {
+          "name": "Thai 9",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "11 Brown St, Dayton, OH",
+          "website": "",
+          "blurb": "Thai and sushi at Brown and Fifth in the Oregon District.",
+          "price": "$$",
+          "sourceUrl": "https://lv.foursquare.com/bonkh/list/quick-food-in-the-oregon-district",
+          "deals": []
+        },
+        {
+          "name": "The Dublin Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "300 Wayne Ave, Dayton, OH",
+          "website": "",
+          "blurb": "Irish pub at the edge of the Oregon District.",
+          "price": "$$",
+          "sourceUrl": "https://lv.foursquare.com/m_matthew/list/dayton",
+          "deals": []
+        },
+        {
+          "name": "Amber Rose Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1400 Valley St, Dayton, OH",
+          "website": "",
+          "blurb": "Eastern European restaurant in Old North Dayton.",
+          "price": "$$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/your-guide-dayton-top-spots-for-wings/9CfNloMEZdF7fzzRKHLocI/",
+          "deals": [
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Buck-a-wing night",
+              "details": "$1 wings every Wednesday 4-8 PM, dine-in only. From an undated Dayton.com wing guide; confirm it is still running.",
+              "price": "$1",
+              "studentOnly": false,
+              "sourceUrl": "https://www.dayton.com/places/restaurant/your-guide-dayton-top-spots-for-wings/9CfNloMEZdF7fzzRKHLocI/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Hickory Bar-B-Q",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Longtime Brown Street barbecue and steak mainstay.",
+          "price": "$$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/where-eat-near-the-university-dayton/LhxZ09QL4OMlrFDO7ol5qO/",
+          "deals": []
+        },
+        {
+          "name": "Submarine House",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "The original Submarine House sub shop near UD.",
+          "price": "$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/where-eat-near-the-university-dayton/LhxZ09QL4OMlrFDO7ol5qO/",
+          "deals": []
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "1211 Brown St, Dayton, OH",
+          "website": "",
+          "blurb": "Burrito chain at Brown and Stewart.",
+          "price": "$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/where-eat-near-the-university-dayton/LhxZ09QL4OMlrFDO7ol5qO/",
+          "deals": []
+        },
+        {
+          "name": "Rusty Taco",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Taco chain location near the University of Dayton.",
+          "price": "$",
+          "sourceUrl": "https://rustytaco.com/?p=1034",
+          "deals": []
+        },
+        {
+          "name": "Panera Bread",
+          "category": "Coffee & Bakery",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Bakery-cafe chain on Brown Street by UD.",
+          "price": "$$",
+          "sourceUrl": "https://ecommons.udayton.edu/maci/dining.html",
+          "deals": []
+        },
+        {
+          "name": "Jimmy John's",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Sub chain on Brown Street by UD.",
+          "price": "$",
+          "sourceUrl": "https://ecommons.udayton.edu/maci/dining.html",
+          "deals": []
         }
       ]
     },
@@ -686,7 +1190,32 @@
           "url": "https://www.wright.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Dad's Wings and Burgers",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "2638 Colonel Glenn Hwy, Fairborn, OH",
+          "website": "",
+          "blurb": "Family-owned fast-casual wings and burgers, a Wright State student favorite.",
+          "price": "$",
+          "sourceUrl": "https://www.gotodestinations.com/dads-wings-burgers-burger-spot-in-fairborn-oh",
+          "deals": []
+        },
+        {
+          "name": "Wright Wing",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "1864 Colonel Glenn Hwy, Fairborn, OH",
+          "website": "",
+          "blurb": "Wing spot near the Nutter Center.",
+          "price": "$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/wings-the-star-course-wright-wing/XucqyukFdxcP1ksIh5QakJ/",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "cedarville",
@@ -698,7 +1227,80 @@
           "url": "https://www.cedarville.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Beans-n-Cream",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Coffee shop serving breakfast classics and lunch in downtown Cedarville.",
+          "price": "$",
+          "sourceUrl": "https://cedarville.edu/admissions/visit/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Colonial Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Family-owned downtown pizza, subs and appetizers since 1981.",
+          "price": "$",
+          "sourceUrl": "https://blogs.cedarville.edu/studentlife/2023/05/25/cedarvilles-local-eateries-attractions/",
+          "deals": []
+        },
+        {
+          "name": "Lola's Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Fresh Mexican favorites from family recipes.",
+          "price": "$",
+          "sourceUrl": "https://cedarville.edu/admissions/visit/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Mom and Dad's Dairy Bar and Grill",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Dairy bar and grill for burgers and ice cream.",
+          "price": "$",
+          "sourceUrl": "https://cedarville.edu/admissions/visit/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Double Dragon Chinese",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Chinese takeout in Cedarville.",
+          "price": "$",
+          "sourceUrl": "https://cedarville.edu/admissions/visit/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Sub chain location in Cedarville.",
+          "price": "$",
+          "sourceUrl": "https://cedarville.edu/admissions/visit/restaurants",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "wilberforce",
@@ -715,7 +1317,80 @@
           "url": "https://wilberforce.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "The Dairy Station",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "704 N Detroit St, Xenia, OH",
+          "website": "",
+          "blurb": "Top-rated Xenia ice cream and food stand.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/xenia-oh",
+          "deals": []
+        },
+        {
+          "name": "Uncle Sunny's Fish & Chicken",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "131 Cincinnati Ave, Xenia, OH",
+          "website": "",
+          "blurb": "Fried fish and chicken counter.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/xenia-oh",
+          "deals": []
+        },
+        {
+          "name": "Between the Bun Cafe",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "1985 Bellbrook Ave, Xenia, OH",
+          "website": "",
+          "blurb": "Local burger and sandwich cafe.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/xenia-oh",
+          "deals": []
+        },
+        {
+          "name": "Los Mariachis",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "608 N Detroit St, Xenia, OH",
+          "website": "",
+          "blurb": "Mexican restaurant on North Detroit Street.",
+          "price": "$$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/xenia-oh",
+          "deals": []
+        },
+        {
+          "name": "Roosters",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "400 W Main St, Xenia, OH",
+          "website": "",
+          "blurb": "Ohio-based wings and sports grill chain.",
+          "price": "$$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/xenia-oh",
+          "deals": []
+        },
+        {
+          "name": "Tudor's Biscuit World",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "810 W 2nd St, Xenia, OH",
+          "website": "",
+          "blurb": "Biscuit sandwich and breakfast chain.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/xenia-oh-restaurants",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "yellow-springs",
@@ -727,7 +1402,56 @@
           "url": "https://antiochcollege.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Ha Ha Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "108 Xenia Ave, Yellow Springs, OH 45387",
+          "website": "",
+          "blurb": "Downtown Yellow Springs' long-running pizza shop.",
+          "price": "$",
+          "sourceUrl": "https://phoenix.aws.mapquest.com/us/ohio/ha-ha-pizza-303763411",
+          "deals": []
+        },
+        {
+          "name": "Young's Jersey Dairy",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": true,
+          "address": "6880 Springfield-Xenia Rd, Yellow Springs, OH 45387",
+          "website": "",
+          "blurb": "Working dairy farm famous for homemade ice cream, milkshakes and cheese curds.",
+          "price": "$",
+          "sourceUrl": "https://phoenix.aws.mapquest.com/us/ohio/youngs-jersey-dairy-303476243",
+          "deals": []
+        },
+        {
+          "name": "Sunrise Cafe",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "259 Xenia Ave, Yellow Springs, OH 45387",
+          "website": "",
+          "blurb": "Downtown cafe for breakfast and lunch.",
+          "price": "$$",
+          "sourceUrl": "https://www.superpages.com/yellow-springs-oh/lunch",
+          "deals": []
+        },
+        {
+          "name": "Bentino's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "107 1/2 Xenia Ave, Yellow Springs, OH 45387",
+          "website": "",
+          "blurb": "Pizza shop on Xenia Avenue downtown.",
+          "price": "$",
+          "sourceUrl": "https://www.superpages.com/yellow-springs-oh/lunch",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "springfield",
@@ -744,7 +1468,98 @@
           "url": "https://www.clarkstate.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Mike & Rosy's Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Boar's Head deli sandwiches right next to Wittenberg, with Rosy's Press Box bar upstairs.",
+          "price": "$",
+          "sourceUrl": "https://visitgreaterspringfield.com/where-to-eat",
+          "deals": []
+        },
+        {
+          "name": "Bada Bing Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Budget-friendly pizzeria largely staffed by Wittenberg students.",
+          "price": "$",
+          "sourceUrl": "https://wittenbergtorch.com/?p=11598",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Wittenberg student discount",
+              "details": "Wittenberg students get a discount with their student ID; amount not stated in the source.",
+              "price": "",
+              "studentOnly": true,
+              "sourceUrl": "https://wittenbergtorch.com/?p=11598",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Cecil & Lime Cafe",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Local cafe adjacent to the Wittenberg campus.",
+          "price": "$$",
+          "sourceUrl": "https://issuu.com/christopherschutte2/docs/gscvb_2021_visitor_guide/62",
+          "deals": []
+        },
+        {
+          "name": "Ridgewood Cafe",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Neighborhood cafe adjacent to the Wittenberg campus.",
+          "price": "$",
+          "sourceUrl": "https://issuu.com/christopherschutte2/docs/gscvb_2021_visitor_guide/62",
+          "deals": []
+        },
+        {
+          "name": "Stella Bleu Bistro",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Locally owned downtown bistro on Fountain Avenue.",
+          "price": "$$",
+          "sourceUrl": "https://wittenberg.edu/node/17444",
+          "deals": []
+        },
+        {
+          "name": "Fratelli's",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Locally owned Italian restaurant downtown.",
+          "price": "$$",
+          "sourceUrl": "https://wittenberg.edu/node/17444",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "wilmington",

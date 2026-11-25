@@ -517,6 +517,1004 @@
           "deals": []
         }
       ]
+    },
+    {
+      "id": "nelsonville",
+      "name": "Nelsonville",
+      "colleges": [
+        {
+          "name": "Hocking College",
+          "type": "Community college",
+          "url": "https://www.hocking.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Rhapsody",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "18 Public Sq, Nelsonville, OH 45764",
+          "website": "",
+          "blurb": "Casual fine dining on the Public Square featuring local Appalachian cuisine.",
+          "price": "$$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Nelsonville/31712",
+          "deals": []
+        },
+        {
+          "name": "Mama Renie's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "23 Public Sq, Nelsonville, OH 45764",
+          "website": "",
+          "blurb": "Public Square pizza shop with a painted map of the town on its walls.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Nelsonville/31712",
+          "deals": []
+        },
+        {
+          "name": "Starbrick BBQ",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "45 E Canal St, Nelsonville, OH 45764",
+          "website": "",
+          "blurb": "Smoked-meat barbecue spot on the first floor of the Rocky outdoor gear store.",
+          "price": "$$",
+          "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Nelsonville/31712",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "marietta",
+      "name": "Marietta",
+      "colleges": [
+        {
+          "name": "Marietta College",
+          "type": "Private college",
+          "url": "https://www.marietta.edu"
+        },
+        {
+          "name": "Washington State College of Ohio",
+          "type": "Community college",
+          "url": "https://www.wsco.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Marietta Brewing Company",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown craft brewery with a bar, kitchen and live music.",
+          "price": "$$",
+          "sourceUrl": "https://www.islands.com/2232983/underrated-ohio-towns-vibrant-local-food-scenes-hidden-gem-restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Austyn's",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Award-winning downtown restaurant near the historic district and the rivers.",
+          "price": "$$",
+          "sourceUrl": "https://theculturetrip.com/north-america/usa/ohio/articles/top-10-restaurants-in-marietta-ohio-great-local-eats",
+          "deals": []
+        },
+        {
+          "name": "Spagna's Italian Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Neighborhood Italian restaurant.",
+          "price": "$$",
+          "sourceUrl": "https://theculturetrip.com/north-america/usa/ohio/articles/top-10-restaurants-in-marietta-ohio-great-local-eats",
+          "deals": []
+        },
+        {
+          "name": "Tampico Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Mexican restaurant with a wide menu from fajitas and burritos to regional specialties.",
+          "price": "$",
+          "sourceUrl": "https://theculturetrip.com/north-america/usa/ohio/articles/top-10-restaurants-in-marietta-ohio-great-local-eats",
+          "deals": []
+        },
+        {
+          "name": "Busy Bee Restaurant",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Breakfast-and-lunch-only diner that has won a local readers' choice award for best lunch spot.",
+          "price": "$",
+          "sourceUrl": "https://theculturetrip.com/north-america/usa/ohio/articles/top-10-restaurants-in-marietta-ohio-great-local-eats",
+          "deals": []
+        },
+        {
+          "name": "J's BBQ & Grill",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "114 Putnam St, Marietta, OH 45750",
+          "website": "https://www.toasttab.com/local/order/j-s-bbq-grill-marietta-114-putnam-street/r-65b5d6e6-221a-4df5-8b04-5eeb040c293f",
+          "blurb": "Downtown barbecue and grill with cheap sides like cheese fries.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/marietta-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "The Galley",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown restaurant and bar known locally for happy hour and wing nights.",
+          "price": "$$",
+          "sourceUrl": "https://mapquest.com/us/ohio/the-galley-6000275",
+          "deals": []
+        },
+        {
+          "name": "Texas Roadhouse",
+          "category": "Other",
+          "local": false,
+          "signature": false,
+          "address": "206 Cherry Tree Ln, Marietta, OH 45750",
+          "website": "https://www.texasroadhouse.com/locations/marietta",
+          "blurb": "Steakhouse chain with free rolls and peanuts.",
+          "price": "$$",
+          "sourceUrl": "https://www.texasroadhouse.com/locations/marietta",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "rio-grande",
+      "name": "Rio Grande / Gallipolis",
+      "colleges": [
+        {
+          "name": "University of Rio Grande",
+          "type": "Private university / community college",
+          "url": "https://www.rio.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Kali's Rio Grande",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "21 E College St, Rio Grande, OH 45674",
+          "website": "",
+          "blurb": "Pizza place on College Street next to campus.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/bidwell/",
+          "deals": []
+        },
+        {
+          "name": "Twinkleberries Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "23 E College St, Rio Grande, OH 45674",
+          "website": "",
+          "blurb": "Highly rated coffee shop on College Street.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/bidwell/",
+          "deals": []
+        },
+        {
+          "name": "Giovanni's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "130 OH-325, Rio Grande, OH 45674",
+          "website": "",
+          "blurb": "Regional pizza chain location in Rio Grande.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/bidwell/",
+          "deals": []
+        },
+        {
+          "name": "McClure's Family Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "820 Jackson Pike, Gallipolis, OH 45631",
+          "website": "",
+          "blurb": "Gallipolis comfort-food restaurant operating since 1957.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/mcclures-restaurant-5989136",
+          "deals": []
+        },
+        {
+          "name": "Vanco's BBQ",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "3103 Centenary Rd, Gallipolis, OH 45631",
+          "website": "",
+          "blurb": "Barbecue spot known for ribs and pulled pork baked potatoes.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/bidwell/",
+          "deals": []
+        },
+        {
+          "name": "Tuscany Cuccini",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Italian restaurant in Gallipolis, a local favorite for family meals.",
+          "price": "$$",
+          "sourceUrl": "https://www.onlyinyourstate.com/trip-ideas/ohio/small-town-restaurants-oh",
+          "deals": []
+        },
+        {
+          "name": "Remo's Hot Dogs",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Gallipolis hot dog shop featured in small-town Ohio restaurant roundups.",
+          "price": "$",
+          "sourceUrl": "https://www.onlyinyourstate.com/trip-ideas/ohio/small-town-restaurants-oh",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "portsmouth",
+      "name": "Portsmouth",
+      "colleges": [
+        {
+          "name": "Shawnee State University",
+          "type": "Public university",
+          "url": "https://www.shawnee.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "The Scioto Ribber",
+          "category": "BBQ",
+          "local": true,
+          "signature": true,
+          "address": "1026 Gallia St, Portsmouth, OH 45662",
+          "website": "",
+          "blurb": "Steak and rib house famous for giant 32-ounce steaks.",
+          "price": "$$$",
+          "sourceUrl": "https://www.onlyinyourstate.com/ohio/tasty-restaurant-biggest-steak-oh/",
+          "deals": []
+        },
+        {
+          "name": "Sonora Urban Cantina",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "1701 Grandview Ave, Portsmouth, OH 45662",
+          "website": "",
+          "blurb": "Budget-friendly Mexican spot known for burritos and queso.",
+          "price": "$",
+          "sourceUrl": "https://restaurantji.com/oh/portsmouth",
+          "deals": []
+        },
+        {
+          "name": "Portsmouth Brewing Company",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Local brewpub pouring beers from its own microbrewery.",
+          "price": "$$",
+          "sourceUrl": "https://portsmouthohio.org/restaurants-2",
+          "deals": []
+        },
+        {
+          "name": "Lofts Coffee Company and Roastery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Community coffee shop with fresh-roasted coffee, espresso drinks, frappes, smoothies and teas.",
+          "price": "$",
+          "sourceUrl": "https://portsmouthohio.org/restaurants-2",
+          "deals": []
+        },
+        {
+          "name": "Market Street Cafe",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown cafe popular for soups, salads, paninis and wraps.",
+          "price": "$",
+          "sourceUrl": "https://portsmouthohio.org/restaurants-2",
+          "deals": []
+        },
+        {
+          "name": "Oscar's Bar and Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "711 2nd St, Portsmouth, OH 45662",
+          "website": "",
+          "blurb": "Bar and grill on 2nd Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.opentable.com/r/oscars-bar-and-grill-portsmouth",
+          "deals": []
+        },
+        {
+          "name": "Buffalo Wild Wings",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "1611 Chillicothe St, Portsmouth, OH 45662",
+          "website": "",
+          "blurb": "Wing and sports bar chain.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/portsmouth/buffalo-wild-wings-/",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "new-concord",
+      "name": "New Concord",
+      "colleges": [
+        {
+          "name": "Muskingum University",
+          "type": "Private university",
+          "url": "https://www.muskingum.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Dairy Duchess",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": true,
+          "address": "164 W Main St, New Concord, OH 43762",
+          "website": "",
+          "blurb": "Seasonal family-owned ice cream and sandwich shop within walking distance of campus.",
+          "price": "$",
+          "sourceUrl": "https://www.visitzanesville.com/Explore/Destinations/455/",
+          "deals": []
+        },
+        {
+          "name": "Creno's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "13 E Main St, New Concord, OH 43762",
+          "website": "",
+          "blurb": "Regional pizza chain location on Main Street.",
+          "price": "$",
+          "sourceUrl": "https://phoenix.aws.mapquest.com/us/ohio/crenos-pizza-26206334",
+          "deals": []
+        },
+        {
+          "name": "Scott's Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "41 E Main St, New Concord, OH 43762",
+          "website": "",
+          "blurb": "Classic American diner on Main Street praised for breakfast.",
+          "price": "$",
+          "sourceUrl": "https://pos.do/en/concord/restaurant/scotts",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "zanesville",
+      "name": "Zanesville",
+      "colleges": [
+        {
+          "name": "Zane State College",
+          "type": "Community college",
+          "url": "https://www.zanestate.edu"
+        },
+        {
+          "name": "Ohio University Zanesville",
+          "type": "Public university regional campus",
+          "url": "https://www.ohio.edu/zanesville"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Muddy Misers",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "112 Muskingum Ave, Zanesville, OH 43701",
+          "website": "",
+          "blurb": "Riverside local favorite described as worth the drive.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitzanesville.com/Explore/Dining/",
+          "deals": []
+        },
+        {
+          "name": "Old Market House Inn",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "424 Market St, Zanesville, OH 43701",
+          "website": "",
+          "blurb": "Long-established downtown restaurant for steaks and special occasions.",
+          "price": "$$$",
+          "sourceUrl": "https://thetouristchecklist.com/restaurants-in-zanesville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Zak's Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "32 N 3rd St, Zanesville, OH 43701",
+          "website": "",
+          "blurb": "Downtown restaurant on 3rd Street.",
+          "price": "$$",
+          "sourceUrl": "https://restaurantji.com/oh/zanesville",
+          "deals": []
+        },
+        {
+          "name": "Giacomo's Bread and More",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Bakery-cafe serving Italian dishes, sandwiches and fresh bread.",
+          "price": "$",
+          "sourceUrl": "https://thetouristchecklist.com/restaurants-in-zanesville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "La Cabra Craft Tacos",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Zanesville's first craft taco spot.",
+          "price": "$",
+          "sourceUrl": "https://www.visitzanesville.com/Explore/Dining/",
+          "deals": []
+        },
+        {
+          "name": "Roosters",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Ohio-based wing chain and local favorite wing place.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/roosters-358743839",
+          "deals": []
+        },
+        {
+          "name": "Texas Roadhouse",
+          "category": "Other",
+          "local": false,
+          "signature": false,
+          "address": "635 Zane St, Zanesville, OH 43701",
+          "website": "https://www.texasroadhouse.com/locations/zanesville",
+          "blurb": "Steakhouse chain with free rolls and peanuts.",
+          "price": "$$",
+          "sourceUrl": "https://www.texasroadhouse.com/locations/zanesville",
+          "deals": []
+        },
+        {
+          "name": "Ruby Tuesday",
+          "category": "Other",
+          "local": false,
+          "signature": false,
+          "address": "3545 Maple Ave, Zanesville, OH 43701",
+          "website": "",
+          "blurb": "Casual dining chain on Maple Avenue.",
+          "price": "$$",
+          "sourceUrl": "https://www.allmenus.com/oh/zanesville/103861-ruby-tuesdays/menu/",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "chillicothe",
+      "name": "Chillicothe",
+      "colleges": [
+        {
+          "name": "Ohio University Chillicothe",
+          "type": "Public university regional campus",
+          "url": "https://www.ohio.edu/chillicothe"
+        }
+      ],
+      "spots": [
+        {
+          "name": "The Dock at Water",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "80 E Water St, Chillicothe, OH 45601",
+          "website": "",
+          "blurb": "Downtown American restaurant and bar on Water Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/chillicothe-oh-restaurants/best-american",
+          "deals": []
+        },
+        {
+          "name": "Crosskeys Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "19 E Main St, Chillicothe, OH 45601",
+          "website": "",
+          "blurb": "Downtown tavern on Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/chillicothe-oh-restaurants/best-american",
+          "deals": []
+        },
+        {
+          "name": "Fire and Stone Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Unassuming pizza shop in downtown Chillicothe.",
+          "price": "$$",
+          "sourceUrl": "https://wanderlog.com/list/geoCategory/316904",
+          "deals": []
+        },
+        {
+          "name": "Old Canal Smoke House",
+          "category": "BBQ",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Casual spot known for hickory-smoked meats.",
+          "price": "$$",
+          "sourceUrl": "https://wanderlog.com/list/geoCategory/316904",
+          "deals": []
+        },
+        {
+          "name": "50 West Brewing Chillicothe",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1 North St, Chillicothe, OH 45601",
+          "website": "https://www.toasttab.com/local/order/50-west-chillicothe-1-north-street",
+          "blurb": "Brewery taproom and kitchen.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/50-west-chillicothe-1-north-street",
+          "deals": []
+        },
+        {
+          "name": "Roosters",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Ohio-based wing chain.",
+          "price": "$",
+          "sourceUrl": "https://phoenix.aws.mapquest.com/us/ohio/roosters-643350573",
+          "deals": []
+        },
+        {
+          "name": "Wing Boss",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "1351 Western Ave, Chillicothe, OH 45601",
+          "website": "",
+          "blurb": "Wing delivery and takeout brand.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/category/chillicothe-oh/wings",
+          "deals": []
+        },
+        {
+          "name": "Texas Roadhouse",
+          "category": "Other",
+          "local": false,
+          "signature": false,
+          "address": "1470 N Bridge St, Chillicothe, OH 45601",
+          "website": "https://www.texasroadhouse.com/locations/ohio/chillicothe",
+          "blurb": "Steakhouse chain with free rolls and peanuts.",
+          "price": "$$",
+          "sourceUrl": "https://www.texasroadhouse.com/locations/ohio/chillicothe",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "ironton",
+      "name": "Ironton",
+      "colleges": [
+        {
+          "name": "Ohio University Southern",
+          "type": "Public university regional campus",
+          "url": "https://www.ohio.edu/southern"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Melini Italian Restaurant",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "124 S 2nd St, Ironton, OH 45638",
+          "website": "",
+          "blurb": "Casual old-timey neighborhood spot for pizza, pasta and seafood.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/ironton/",
+          "deals": []
+        },
+        {
+          "name": "The Armory Smokehouse",
+          "category": "BBQ",
+          "local": true,
+          "signature": true,
+          "address": "920 Vernon St, Ironton, OH 45638",
+          "website": "",
+          "blurb": "Slow-smoked BBQ, burgers, steaks and pizzas with 36 draft beers.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/ironton/",
+          "deals": []
+        },
+        {
+          "name": "Tudor's Biscuit World",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "602 Park Ave, Ironton, OH 45638",
+          "website": "",
+          "blurb": "Regional biscuit-sandwich breakfast chain.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/ironton-oh",
+          "deals": []
+        },
+        {
+          "name": "The Corner Cafe",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "1412 S 3rd St, Ironton, OH 45638",
+          "website": "",
+          "blurb": "Neighborhood cafe on South 3rd Street.",
+          "price": "$",
+          "sourceUrl": "https://happyhopper.app/restaurant-directory/ohio/ironton",
+          "deals": []
+        },
+        {
+          "name": "Giovanni's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "4429 OH-243, Ironton, OH 45638",
+          "website": "",
+          "blurb": "Regional pizza chain location.",
+          "price": "$",
+          "sourceUrl": "https://happyhopper.app/restaurant-directory/ohio/ironton",
+          "deals": []
+        },
+        {
+          "name": "Toro Loco Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Mexican restaurant advertising daily specials.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/ironton/",
+          "deals": []
+        },
+        {
+          "name": "Rax Roast Beef",
+          "category": "Fast Food",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "One of the last locations of the roast beef sandwich chain, with milkshakes.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/ironton/",
+          "deals": []
+        },
+        {
+          "name": "Frisch's Big Boy",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Regional Big Boy burger and breakfast chain.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/ironton/",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "lancaster",
+      "name": "Lancaster",
+      "colleges": [
+        {
+          "name": "Ohio University Lancaster",
+          "type": "Public university regional campus",
+          "url": "https://www.ohio.edu/lancaster"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Ale House 1890",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "149 W Main St, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Long-running downtown gastropub in a building serving drinks since 1890.",
+          "price": "$$",
+          "sourceUrl": "https://destinationdowntownlancaster.com/eatdrink-1",
+          "deals": []
+        },
+        {
+          "name": "Downtown Bistro & Bar 123",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "123 N Broad St, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Downtown restaurant and bar serving Lancaster since 2018.",
+          "price": "$$",
+          "sourceUrl": "https://destinationdowntownlancaster.com/eatdrink-1",
+          "deals": []
+        },
+        {
+          "name": "Maria's Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "129 E Main St, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Downtown Mexican restaurant on Main Street.",
+          "price": "$",
+          "sourceUrl": "https://destinationdowntownlancaster.com/eatdrink-1",
+          "deals": []
+        },
+        {
+          "name": "JB's Downtown Grill",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "111 N Columbus St, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Downtown burger and slider spot.",
+          "price": "$",
+          "sourceUrl": "https://restaurantji.com/oh/lancaster",
+          "deals": []
+        },
+        {
+          "name": "Cherry Street Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "202 N Cherry St, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Neighborhood pub north of downtown.",
+          "price": "$",
+          "sourceUrl": "https://restaurantji.com/oh/lancaster",
+          "deals": []
+        },
+        {
+          "name": "O'Huids Gaelic Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "167 W Main St, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Irish-style pub on West Main Street.",
+          "price": "$$",
+          "sourceUrl": "https://places.singleplatform.com/ohuids-gaelic-pub/menu",
+          "deals": []
+        },
+        {
+          "name": "OX-B's",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "1730 E Main St, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Regional chicken wing restaurant.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/lancaster",
+          "deals": []
+        },
+        {
+          "name": "Roosters",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "1009 N Memorial Dr, Lancaster, OH 43130",
+          "website": "",
+          "blurb": "Ohio-based wing chain.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/roosters-restaurant-bar-5583313",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "st-clairsville",
+      "name": "St. Clairsville",
+      "colleges": [
+        {
+          "name": "Ohio University Eastern",
+          "type": "Public university regional campus",
+          "url": "https://www.ohio.edu/eastern"
+        },
+        {
+          "name": "Belmont College",
+          "type": "Community college",
+          "url": "https://www.belmontcollege.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Tlaquepaque Mexican Grill & Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": true,
+          "address": "50601 Valley Plaza Dr, St. Clairsville, OH 43950",
+          "website": "",
+          "blurb": "Top-rated Mexican grill with nearly 2,000 reviews.",
+          "price": "$$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/saint-clairsville-oh",
+          "deals": []
+        },
+        {
+          "name": "Pizza Milano",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "165 W Main St, St. Clairsville, OH 43950",
+          "website": "",
+          "blurb": "Main Street pizza shop.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/saint-clairsville-oh",
+          "deals": []
+        },
+        {
+          "name": "DeFelice Brothers Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "50890 National Rd E, St. Clairsville, OH 43950",
+          "website": "",
+          "blurb": "Ohio Valley pizza chain.",
+          "price": "$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/saint-clairsville-oh",
+          "deals": []
+        },
+        {
+          "name": "Mehlman Cafeteria",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "51800 National Rd, St. Clairsville, OH 43950",
+          "website": "",
+          "blurb": "Cafeteria serving home-cooked meals for more than 40 years.",
+          "price": "$$",
+          "sourceUrl": "https://ww2.aaa.com/tripcanvas/restaurant/mehlman-cafeteria-AA43178",
+          "deals": []
+        },
+        {
+          "name": "West Texas Roadhouse",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "50880 National Rd, St. Clairsville, OH 43950",
+          "website": "",
+          "blurb": "Full-service local restaurant and bar.",
+          "price": "$$",
+          "sourceUrl": "https://wwwwww.bbb.org/us/oh/saint-clairsville/category/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Osaka Steak House",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Japanese steakhouse; listed at the Ohio Valley Mall.",
+          "price": "$$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/saint-clairsville-oh",
+          "deals": []
+        },
+        {
+          "name": "Eat'n Park",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "50620 Valley Centre Blvd, St. Clairsville, OH 43950",
+          "website": "",
+          "blurb": "Regional family restaurant chain for breakfast, lunch and dinner.",
+          "price": "$",
+          "sourceUrl": "https://www.yellowpages.com/saint-clairsville-oh/mip/eat-n-park-1616918",
+          "deals": []
+        },
+        {
+          "name": "Cracker Barrel Old Country Store",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "67781 Mall Rd, St. Clairsville, OH 43950",
+          "website": "",
+          "blurb": "Country-cooking chain by the Ohio Valley Mall.",
+          "price": "$$",
+          "sourceUrl": "https://reviews.birdeye.com/d/restaurants/saint-clairsville-oh",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "steubenville",
+      "name": "Steubenville",
+      "colleges": [
+        {
+          "name": "Franciscan University of Steubenville",
+          "type": "Private university",
+          "url": "https://franciscan.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Ville Restaurant & Bar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Local restaurant and bar praised for its homemade potato soup on Saturdays.",
+          "price": "$$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/ville-restaurant-bar-263722334",
+          "deals": []
+        },
+        {
+          "name": "Scaffidi's Restaurant and Tavern",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Locally owned and operated Italian restaurant and tavern.",
+          "price": "$$",
+          "sourceUrl": "https://bbb.org/us/oh/steubenville/category/restaurants/accredited",
+          "deals": []
+        }
+      ]
     }
   ]
 }

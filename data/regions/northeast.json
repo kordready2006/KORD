@@ -80,6 +80,174 @@
           "price": "$$",
           "sourceUrl": "https://www.ubereats.com/neighborhood/coventry-village-cleveland-heights-oh",
           "deals": []
+        },
+        {
+          "name": "The Jolly Scholar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "11111 Euclid Ave (Thwing Center), Cleveland, OH 44106",
+          "website": "",
+          "blurb": "Case Western's on-campus pub in Thwing Center with burgers, wings and Tuesday trivia.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/the-jolly-scholar",
+          "deals": []
+        },
+        {
+          "name": "Chopstick",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "11332 Euclid Ave, Cleveland, OH 44106",
+          "website": "",
+          "blurb": "Uptown Chinese spot the CWRU Observer calls some of the cheapest food in Uptown.",
+          "price": "$",
+          "sourceUrl": "https://www.uhhospitals.org/locations/uh-cleveland-medical-center/patients-and-visitors/getting-here/neighborhood-information/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Kenko",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Uptown sushi and teriyaki spot known to CWRU students for its teas and boba.",
+          "price": "$$",
+          "sourceUrl": "https://observer.case.edu/best-food-uptown",
+          "deals": []
+        },
+        {
+          "name": "Indian Flame",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Indian restaurant near CWRU that the Observer calls very affordable for students.",
+          "price": "$",
+          "sourceUrl": "https://observer.case.edu/where-to-find-the-best-places-to-eat-around-cwru",
+          "deals": []
+        },
+        {
+          "name": "Presti's Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "12101 Mayfield Rd, Cleveland, OH 44106",
+          "website": "",
+          "blurb": "Little Italy bakery dating to 1903.",
+          "price": "$",
+          "sourceUrl": "https://www.universitycircle.org/destinations/prestis-bakery",
+          "deals": []
+        },
+        {
+          "name": "Mama Santa's Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "12301 Mayfield Rd, Cleveland, OH 44106",
+          "website": "",
+          "blurb": "Longtime Little Italy pizzeria on Mayfield Road.",
+          "price": "$",
+          "sourceUrl": "https://clevelandmagazine.com/articles/that-s-amore-a-guide-to-cleveland-s-little-italy/",
+          "deals": []
+        },
+        {
+          "name": "Corbo's Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "12210 Mayfield Rd, Cleveland, OH 44106",
+          "website": "",
+          "blurb": "Little Italy bakery at Mayfield and E. 123rd, with a pasta and pizza house at the same address.",
+          "price": "$",
+          "sourceUrl": "https://redirect.foursquare.com/body_by_ben/list/places-to-be-little-italy-edition",
+          "deals": []
+        },
+        {
+          "name": "Maxi's Bistro",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "12113 Mayfield Rd, Cleveland, OH 44106",
+          "website": "",
+          "blurb": "Little Italy bistro on Mayfield Road.",
+          "price": "$$",
+          "sourceUrl": "https://www.cozymeal.com/magazine/little-italy-restaurants-cleveland",
+          "deals": []
+        },
+        {
+          "name": "Grum's Sub Shoppe",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "1776 Coventry Rd, Cleveland Heights, OH 44118",
+          "website": "",
+          "blurb": "Specialty sub shop on Coventry for over 30 years.",
+          "price": "$",
+          "sourceUrl": "https://clevelandheights.gov/481/Coventry-Village-Commercial-District",
+          "deals": []
+        },
+        {
+          "name": "Hunan Coventry",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Coventry Village Chinese restaurant, a Cleveland Magazine Silver Spoon winner.",
+          "price": "$$",
+          "sourceUrl": "https://clevelandheights.gov/481/Coventry-Village-Commercial-District",
+          "deals": []
+        },
+        {
+          "name": "Inn on Coventry",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Coventry Village breakfast spot, a Cleveland Magazine Silver Spoon winner.",
+          "price": "$$",
+          "sourceUrl": "https://clevelandheights.gov/481/Coventry-Village-Commercial-District",
+          "deals": []
+        },
+        {
+          "name": "Rascal House Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "Euclid Ave at E 19th St, Cleveland, OH",
+          "website": "",
+          "blurb": "Cleveland pizza chain described by the CSU law school guide as a CSU pizza hang-out.",
+          "price": "$",
+          "sourceUrl": "https://www.law.csuohio.edu/sites/default/files/academics/orientation/restaurant_guide-summer_2016.pdf",
+          "deals": []
+        },
+        {
+          "name": "BrewDog Cleveland",
+          "category": "Bar & Grill",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "https://drink.brewdog.com/cleveland",
+          "blurb": "Brewpub listing a standing Tuesday taco special.",
+          "price": "$$",
+          "sourceUrl": "https://drink.brewdog.com/cleveland",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$3 Taco Tuesday",
+              "details": "$3 tacos every Tuesday, per the bar's own site.",
+              "price": "$3",
+              "studentOnly": false,
+              "sourceUrl": "https://drink.brewdog.com/cleveland",
+              "sourceDate": ""
+            }
+          ]
         }
       ]
     },
@@ -129,7 +297,104 @@
           "url": "https://www.oberlin.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "The Feve",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "30 S Main St, Oberlin, OH 44074",
+          "website": "",
+          "blurb": "Downtown Oberlin favorite, especially for weekend brunch with the college crowd.",
+          "price": "$$",
+          "sourceUrl": "https://www.oberlin.edu/about-oberlin/visiting-oberlin/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Blue Rooster Bakehouse",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "38 S Main St, Oberlin, OH 44074",
+          "website": "",
+          "blurb": "Downtown bakery recommended for its cookies.",
+          "price": "$",
+          "sourceUrl": "https://clevelandmagazine.com/oberlin/",
+          "deals": []
+        },
+        {
+          "name": "Aladdin's Eatery",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Ohio-based Lebanese-American chain, a student favorite downtown.",
+          "price": "$$",
+          "sourceUrl": "https://www.oberlin.edu/blogs/downtown-oberlin",
+          "deals": []
+        },
+        {
+          "name": "Lorenzo's Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "Main St, Oberlin, OH",
+          "website": "",
+          "blurb": "Pizzeria on Main Street in Oberlin.",
+          "price": "$$",
+          "sourceUrl": "https://clevelandmagazine.com/oberlin/",
+          "deals": []
+        },
+        {
+          "name": "Main Street Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "51 S Main St, Oberlin, OH 44074",
+          "website": "",
+          "blurb": "Diner on South Main Street downtown.",
+          "price": "$",
+          "sourceUrl": "https://www.oberlin.edu/about-oberlin/visiting-oberlin/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Lupitas Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "84 S Main St, Oberlin, OH 44074",
+          "website": "",
+          "blurb": "Mexican restaurant on South Main Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.oberlin.edu/about-oberlin/visiting-oberlin/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Ying's Asian Cuisine",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "311 S Main St, Oberlin, OH 44074",
+          "website": "",
+          "blurb": "Asian restaurant on South Main Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.oberlin.edu/about-oberlin/visiting-oberlin/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Goldberry Roasting Company",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "148 W College St, Oberlin, OH 44074",
+          "website": "",
+          "blurb": "Coffee roaster on West College Street.",
+          "price": "$",
+          "sourceUrl": "https://www.oberlin.edu/about-oberlin/visiting-oberlin/restaurants",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "elyria",
@@ -640,6 +905,126 @@
           "price": "$$",
           "sourceUrl": "https://redirect.foursquare.com/christyc3839170/list/akron-restaurants",
           "deals": []
+        },
+        {
+          "name": "Penn Station East Coast Subs",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "270 E Exchange St, Akron, OH",
+          "website": "",
+          "blurb": "Sub chain on East Exchange Street beside the University of Akron.",
+          "price": "$",
+          "sourceUrl": "https://redirect.foursquare.com/mscandilawson/list/food-yes",
+          "deals": []
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "272 E Exchange St, Akron, OH",
+          "website": "",
+          "blurb": "Burrito chain on East Exchange Street by campus; a second Akron location is in the Highland Square center.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/pbckup/dish/akron-oh/caesar-salad",
+          "deals": []
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "484 E Exchange St, Akron, OH",
+          "website": "",
+          "blurb": "Sub chain on East Exchange Street near campus.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/pbckup/dish/akron-oh/caesar-salad",
+          "deals": []
+        },
+        {
+          "name": "Mid-East Cafe and Restaurant",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "306 E Exchange St, Akron, OH 44304",
+          "website": "",
+          "blurb": "Middle Eastern cafe on East Exchange Street near the University of Akron.",
+          "price": "$",
+          "sourceUrl": "https://city-data.com/local/Restaurants/Akron-OH.html",
+          "deals": []
+        },
+        {
+          "name": "Qdoba Mexican Eats",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "University of Akron Student Union, Akron, OH",
+          "website": "https://locations.qdoba.com/us/oh/akron/univ-of-akron-student-union.html",
+          "blurb": "Qdoba location inside the University of Akron Student Union.",
+          "price": "$",
+          "sourceUrl": "https://locations.qdoba.com/us/oh/akron/univ-of-akron-student-union.html",
+          "deals": []
+        },
+        {
+          "name": "EuroGyro",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Regional gyro, pizza and sub shop with a University of Akron location.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/pbckup/dish/akron-oh/caesar-salad",
+          "deals": []
+        },
+        {
+          "name": "Mustard Seed Market & Cafe",
+          "category": "Healthy & Bowls",
+          "local": true,
+          "signature": false,
+          "address": "867 W Market St, Akron, OH",
+          "website": "",
+          "blurb": "Natural-foods market with a cafe in Highland Square.",
+          "price": "$$",
+          "sourceUrl": "https://tableagent.com/cleveland/mustard-seed-market-cafe-highland-square/",
+          "deals": []
+        },
+        {
+          "name": "Wally Waffle",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Akron waffle and breakfast spot in the Highland Square retail center.",
+          "price": "$",
+          "sourceUrl": "https://goodmanrealestate.com/listings/highland-square/",
+          "deals": []
+        },
+        {
+          "name": "Spaghetti Warehouse",
+          "category": "Other",
+          "local": false,
+          "signature": false,
+          "address": "510 S Main St, Akron, OH",
+          "website": "",
+          "blurb": "Italian chain restaurant on South Main Street downtown.",
+          "price": "$$",
+          "sourceUrl": "https://lv.foursquare.com/christyc3839170/list/akron-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Luigi's Italian Restaurant",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Long-running downtown Akron Italian and pizza restaurant.",
+          "price": "$$",
+          "sourceUrl": "https://lv.foursquare.com/christyc3839170/list/akron-restaurants",
+          "deals": []
         }
       ]
     },
@@ -716,7 +1101,68 @@
           "url": "https://ati.osu.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Coccia House",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "764 Pittsburg Ave, Wooster, OH",
+          "website": "",
+          "blurb": "Wooster's well-known pizzeria.",
+          "price": "$$",
+          "sourceUrl": "https://redirect.foursquare.com/hunterf1362203/list/wooster-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Broken Rocks Cafe & Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "123 E Liberty St, Wooster, OH",
+          "website": "",
+          "blurb": "Downtown cafe and bakery on East Liberty Street.",
+          "price": "$$",
+          "sourceUrl": "https://redirect.foursquare.com/hunterf1362203/list/wooster-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Bob's Omahoma Barbeque",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "128 S Market St, Suite 100, Wooster, OH",
+          "website": "",
+          "blurb": "Barbecue joint on South Market Street downtown.",
+          "price": "$$",
+          "sourceUrl": "https://redirect.foursquare.com/hunterf1362203/list/wooster-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Basil Asian Bistro",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Asian bistro; a student blog notes budget-friendly lunch sushi rolls and entrees from about $6.",
+          "price": "$$",
+          "sourceUrl": "https://u.osu.edu/buckeyevoicesati/?p=853",
+          "deals": []
+        },
+        {
+          "name": "Mariola Italian",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Italian restaurant opened in spring 2023, suggested for group dinners.",
+          "price": "$$",
+          "sourceUrl": "https://u.osu.edu/buckeyevoicesati/?p=853",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "orrville",
@@ -740,7 +1186,166 @@
           "url": "https://ysu.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Bull & Bear Grille and Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "Elm St, Youngstown, OH",
+          "website": "",
+          "blurb": "Tavern on Elm Street at the edge of YSU's campus, in the former Inner Circle Pizza, opened August 2024.",
+          "price": "$$",
+          "sourceUrl": "https://businessjournaldaily.com/?p=240176",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$5 happy hour appetizers",
+              "details": "Happy hour 11am-6pm Mon-Fri and 11am-2pm Sat-Sun with $5 appetizers (chips, pierogi, pickle fries).",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://thejambar.com/?p=97349",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "The Federal",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "110 W Federal St, Youngstown, OH",
+          "website": "",
+          "blurb": "Downtown Youngstown spot known for burgers.",
+          "price": "$$",
+          "sourceUrl": "https://deyorpac.org/downtown-dining",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "title": "$6.99 lunch specials",
+              "details": "Wraps with fries Mon, salads Tue, signature burgers with fries Wed, sandwiches with fries Thu. Source is undated; confirm before visiting.",
+              "price": "$6.99",
+              "studentOnly": false,
+              "sourceUrl": "https://thejambar.com/?p=85621",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% student discount",
+              "details": "10 percent off with a valid student ID. Source is undated; confirm before visiting.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://thejambar.com/?p=85621",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Avalon Downtown",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "17 W Federal St, Youngstown, OH 44503",
+          "website": "",
+          "blurb": "Downtown pizzeria known for Brier Hill pizza; accepts YSU Pete's Points.",
+          "price": "$$",
+          "sourceUrl": "https://book.toasttab.com/r/avalon-downtown-17-w-federal-street",
+          "deals": []
+        },
+        {
+          "name": "Prima Cucina Italiana",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "103 W Federal St, Youngstown, OH",
+          "website": "",
+          "blurb": "Italian restaurant on West Federal Street downtown.",
+          "price": "$$",
+          "sourceUrl": "https://deyorpac.org/downtown-dining",
+          "deals": []
+        },
+        {
+          "name": "Gringo's Tacos & Tequila",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "24 N Phelps St, Youngstown, OH 44503",
+          "website": "",
+          "blurb": "Taco and tequila spot near Federal and Phelps streets downtown.",
+          "price": "$$",
+          "sourceUrl": "https://businessjournaldaily.com/?p=147490",
+          "deals": []
+        },
+        {
+          "name": "Mocha House Downtown",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "120 E Boardman St, Youngstown, OH 44503",
+          "website": "",
+          "blurb": "Downtown coffee house and cafe a block off Federal Street.",
+          "price": "$",
+          "sourceUrl": "https://deyorpac.org/downtown-dining",
+          "deals": []
+        },
+        {
+          "name": "West 34",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "34 W Federal St, Youngstown, OH 44503",
+          "website": "",
+          "blurb": "Restaurant on West Federal Street downtown.",
+          "price": "$$",
+          "sourceUrl": "https://businessjournaldaily.com/?p=146381",
+          "deals": []
+        },
+        {
+          "name": "SpaceKat Barbeque",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "Federal St, Youngstown, OH",
+          "website": "",
+          "blurb": "Texas-style barbecue on Federal Street downtown.",
+          "price": "$$",
+          "sourceUrl": "https://ysu.edu/international-programs-office/admitted-international-students/living-youngstown",
+          "deals": []
+        },
+        {
+          "name": "Kravitz Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "Belmont Ave, Liberty, OH",
+          "website": "",
+          "blurb": "Deli on Belmont Avenue with daily specials and takeout, noted as good for YSU students.",
+          "price": "$",
+          "sourceUrl": "https://ysu.edu/international-programs-office/admitted-international-students/living-youngstown",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "ashtabula",
