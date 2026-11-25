@@ -175,7 +175,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 .row .end b { display: block; font: 800 18px/1.1 var(--display); color: var(--mint); }
 .mystars { color: var(--orange); font-weight: 800; letter-spacing: 1px; font-size: 13px; }
 .stars { display: inline-flex; gap: 2px; }
-.stars button { font-size: 38px; line-height: 1; color: var(--line); padding: 2px; }
+.stars button { font-size: 25px; line-height: 1; color: var(--line); padding: 3px 2px; }
 .stars button.on { color: var(--sun); -webkit-text-stroke: .5px var(--sun-ink); }
 
 .empty { border: 2px dashed var(--line); border-radius: 16px; padding: 22px 18px; text-align: center; color: var(--muted); }
@@ -188,7 +188,19 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 
 /* tabs */
 .tabs { position: fixed; inset: auto 0 0; z-index: 6; background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); }
-.tabs .wrap { display: grid; grid-template-columns: repeat(3, 1fr); }
+.tabs .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+.mrow { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 8px 0; border-top: 1px solid var(--line); }
+.mname { min-width: 0; font-weight: 500; overflow-wrap: anywhere; }
+.mname small { color: var(--muted); font-weight: 400; white-space: nowrap; }
+.mrow .stars { flex: none; }
+.msec { font: 800 12.5px var(--display); letter-spacing: .07em; text-transform: uppercase; color: var(--muted); margin-top: 14px; padding-bottom: 6px; }
+.toprated { background: var(--sun); color: var(--sun-ink); border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 3px; margin-bottom: 10px; }
+.toprated b { font: 800 15px var(--display); }
+.toprated em { font-style: normal; font-weight: 700; white-space: nowrap; }
+.addrow { display: flex; gap: 8px; margin-top: 12px; }
+.addrow .search { flex: 1; min-width: 0; }
+.rank { width: 26px; flex: none; font: 800 20px var(--display); text-align: center; font-variant-numeric: tabular-nums; }
+.score { color: var(--orange); font-weight: 800; white-space: nowrap; }
 .tab { padding: 10px 0 9px; text-align: center; font-size: 12px; font-weight: 700; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 3px; }
 .tab svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 .tab[aria-current="page"] { color: var(--hot); }
@@ -226,6 +238,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 <nav class="tabs" id="tabs" aria-label="Sections" hidden><div class="wrap">
   <button class="tab" data-tab="deals"><svg viewBox="0 0 24 24"><path d="M3 9a2 2 0 0 0 0 6v3a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-3a2 2 0 0 1 0-6V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1z"/><path d="M14 6v2m0 3v2m0 3v2"/></svg>Deals</button>
   <button class="tab" data-tab="places"><svg viewBox="0 0 24 24"><path d="M4 10h16l-1.2-5H5.2zM5 10v9h14v-9M9 19v-5h6v5"/></svg>Places</button>
+  <button class="tab" data-tab="best"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.400-4.300 6.100-.900z"/></svg>Best</button>
   <button class="tab" data-tab="you"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>You</button>
 </div></nav>
 <div id="sheetRoot"></div>

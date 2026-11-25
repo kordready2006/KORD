@@ -37,7 +37,7 @@ SCHOOLS = [
 
 # Dish keywords for deal-specific photos (photos/<host>--<dish>.jpg). First match wins.
 DISHES = [("stromboli", r"stromboli"), ("cheesesteak", r"cheesesteak"), ("shawarma", r"shawarma"), ("chilidog", r"chili dog|hot dog|coney"), ("fish", r"\bfish\b"),
-          ("taco", r"taco"), ("wings", r"wing"), ("gyro", r"gyro"), ("burger", r"burger"), ("pizza", r"pizza|slice"), ("sandwich", r"sandwich|\bsubs?\b"),
+          ("taco", r"taco"), ("wings", r"wing"), ("burrito", r"burrito"), ("calzone", r"calzone"), ("tenders", r"tender|finger"), ("gyro", r"gyro"), ("burger", r"burger"), ("pizza", r"pizza|slice"), ("sandwich", r"sandwich|\bsubs?\b"),
           ("apps", r"appetizer|\bapps\b|sharable|shareable|snack|munchies|flatbread|happy hour|late.night")]
 
 
@@ -92,6 +92,9 @@ def main():
         sites = json.load(open(os.path.join(ROOT, "data", "websites.json")))
     if os.path.exists(os.path.join(ROOT, "data", "websites2.json")):
         sites.update(json.load(open(os.path.join(ROOT, "data", "websites2.json"))))
+    place_tags = {}
+    if os.path.exists(os.path.join(ROOT, "data", "place_photos.json")):
+        place_tags = {h: v.get("dish", "") for h, v in json.load(open(os.path.join(ROOT, "data", "place_photos.json"))).items()}
     towns, researched = {}, ""
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "regions", "*.json"))):
         reg = json.load(open(path))
@@ -134,12 +137,19 @@ def main():
                 sp["logo"] = "logos/spots/" + host + ".png"
             if host and os.path.exists(os.path.join(ROOT, "photos", host + ".jpg")):  # the restaurant's own photo, see data/place_photos.json
                 sp["photo"] = "photos/" + host + ".jpg"
-            for dl in sp["deals"]:  # a photo of the dish the deal is for, when the restaurant's site has one
+            tag = place_tags.get(host, "")
+            for dl in sp["deals"]:
+                # A deal for a named dish only ever shows that restaurant's photo of that dish; otherwise the app shows the logo.
                 text = (dl["title"] + " " + dl["details"]).lower()
-                for key, rx in DISHES:
-                    if host and re.search(rx, text) and os.path.exists(os.path.join(ROOT, "photos", host + "--" + key + ".jpg")):
-                        dl["photo"] = "photos/" + host + "--" + key + ".jpg"
-                        break
+                dish = next((key for key, rx in DISHES if re.search(rx, text)), "")
+                if dish in ("apps", ""):
+                    if dish and host and os.path.exists(os.path.join(ROOT, "photos", host + "--apps.jpg")):
+                        dl["photo"] = "photos/" + host + "--apps.jpg"
+                    continue
+                if host and os.path.exists(os.path.join(ROOT, "photos", host + "--" + dish + ".jpg")):
+                    dl["photo"] = "photos/" + host + "--" + dish + ".jpg"
+                elif tag != dish:
+                    dl["nophoto"] = True
         del t["colleges"]
         live.append(t)
     out = {"researchedOn": researched, "towns": live}
@@ -157,6 +167,23 @@ def main():
             '<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>\n'
             '</head>\n<body>\n')
     tail = ("\n<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});</script>\n</body>\n</html>\n")
+    # Menus: data/menus/<town>.json maps "town-id|place name" to its menu; the app loads them by place id.
+    menus, names = {}, {}
+    for t in live:
+        for sp in t["spots"]:
+            names[t["id"] + "|" + norm(sp["name"])] = sp["id"]
+    for path in sorted(glob.glob(os.path.join(ROOT, "data", "menus", "*.json"))):
+        for key, m in json.load(open(path)).items():
+            tid, _, nm = key.partition("|")
+            sid = names.get(tid + "|" + norm(base_name(nm))) or names.get(tid + "|" + norm(nm))
+            items = [{"n": i["name"].strip(), "p": (i.get("price") or "").strip(), "s": (i.get("section") or "Menu").strip()}
+                     for i in m.get("items", []) if i.get("name")][:120]
+            if sid and items:
+                menus[sid] = items
+    with open(os.path.join(ROOT, "data", "menus.json"), "w") as f:
+        json.dump(menus, f, ensure_ascii=False, separators=(",", ":"))
+    print(len(menus), "menus,", sum(len(v) for v in menus.values()), "dishes")
+
     # The hosted page loads the app script from its own file; the Claude preview keeps it inline in app/kord.html.
     m = re.search(r"<script>\n(.*)</script>\s*$", frag, re.S)
     with open(os.path.join(ROOT, "app.js"), "w") as f:

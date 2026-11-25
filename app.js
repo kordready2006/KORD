@@ -10,9 +10,25 @@
   var DATA = null, SPOTS = {};
   var S = load('kord.prefs', { town: '', tab: 'deals' });
   S.day = TODAY; S.localOnly = false; S.q = ''; S.picking = false;
-  if (['deals', 'places', 'you'].indexOf(S.tab) < 0) S.tab = 'deals';
+  if (['deals', 'places', 'best', 'you'].indexOf(S.tab) < 0) S.tab = 'deals';
   var U = load('kord.user', { name: '', avatar: '', ratings: {}, notes: {} });
-  U.ratings = U.ratings || {}; U.notes = U.notes || {};
+  U.items = U.items || {}; U.custom = U.custom || {};
+  /* Dish ratings: U.items[placeId][dish] = 1..5 on this phone. COMMUNITY[placeId][dish] = {sum, n} is where other students'
+     ratings go once a shared ratings server is connected; every score below already combines the two. */
+  var COMMUNITY = {}, MENUS = null;
+  function myRate(id, item) { return (U.items[id] || {})[item] || 0; }
+  function itemScore(id, item) { var c = (COMMUNITY[id] || {})[item] || { sum: 0, n: 0 }, m = myRate(id, item), n = c.n + (m ? 1 : 0); return n ? { avg: (c.sum + m) / n, n: n } : null; }
+  function ratedItems(id) {
+    var names = {}; Object.keys(U.items[id] || {}).forEach(function (k) { names[k] = 1; }); Object.keys(COMMUNITY[id] || {}).forEach(function (k) { names[k] = 1; });
+    return Object.keys(names).map(function (k) { var sc = itemScore(id, k); return sc && { item: k, avg: sc.avg, n: sc.n }; }).filter(Boolean)
+      .sort(function (a, b) { return b.avg - a.avg || b.n - a.n || a.item.localeCompare(b.item); });
+  }
+  function spotScore(id) { var r = ratedItems(id), t = 0; if (!r.length) return null; r.forEach(function (x) { t += x.avg; }); return t / r.length; }
+  function miniStars(id, item) {
+    var r = myRate(id, item), h = '';
+    for (var i = 1; i <= 5; i++) h += '<button class="' + (i <= r ? 'on' : '') + '" data-rate="' + i + '" data-id="' + esc(id) + '" data-item="' + esc(item) + '" aria-label="' + i + ' star' + (i > 1 ? 's' : '') + ' for ' + esc(item) + '">★</button>';
+    return '<span class="stars" role="group">' + h + '</span>';
+  }
 
   function load(k, d) { try { var v = JSON.parse(localStorage.getItem(k)); return v && typeof v === 'object' ? v : d; } catch (e) { return d; } }
   function save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
@@ -70,7 +86,7 @@
   }
   function photo(src) { return src || ''; }
   function ticket(x, hero) {
-    var st = stubText(x.d), ph = photo(x.d.photo || x.sp.photo);
+    var st = stubText(x.d), ph = photo(x.d.photo || (x.d.nophoto ? '' : x.sp.photo));
     return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" style="--c:' + color(x.sp.category) + '">' +
       '<span class="ph' + (ph ? '' : x.sp.logo ? ' nophoto haslogo' : ' nophoto') + '">' + (ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : x.sp.logo ? '<img alt="" loading="lazy" src="' + esc(x.sp.logo) + '">' : '<span class="mono">' + esc(initials(x.sp.name)) + '</span>') +
       (hero ? '<span class="flag">Cheapest ' + (S.day === TODAY ? 'today' : DAYNAME[S.day]) + '</span>' : '') +
@@ -104,9 +120,9 @@
     return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos come from each restaurant\'s own website.</p>';
   }
   function spotRow(sp) {
-    var lo = spotLow(sp), n = (sp.deals || []).length, r = U.ratings[sp.id];
+    var lo = spotLow(sp), n = (sp.deals || []).length, r = spotScore(sp.id);
     return '<button class="row" data-spot="' + esc(sp.id) + '">' + logo(sp) +
-      '<span class="mid"><h3>' + esc(sp.name) + '</h3><p>' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + (r ? ' · <span class="mystars">' + '★'.repeat(r) + '</span>' : '') + '</p></span>' +
+      '<span class="mid"><h3>' + esc(sp.name) + '</h3><p>' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + (r ? ' · <span class="score">★ ' + r.toFixed(1) + '</span>' : '') + '</p></span>' +
       '<span class="end">' + (lo != null ? 'from<b>' + money(lo) + '</b>' : n ? '<b>' + n + '</b>deal' + (n > 1 ? 's' : '') : '') + '</span></button>';
   }
   function viewPlaces() {
@@ -119,19 +135,30 @@
       '<input class="search" id="spotSearch" type="search" placeholder="Search pizza, tacos, a name…" value="' + esc(S.q) + '" aria-label="Search places">' +
       (list.length ? sec('Local spots', loc) + sec('Chains', ch) : '<div class="empty"><b>Nothing matches</b>Try a different word.</div>');
   }
+  function viewBest() {
+    var t = town(), rows = [];
+    t.spots.forEach(function (sp) { ratedItems(sp.id).forEach(function (x) { rows.push({ sp: sp, x: x }); }); });
+    rows.sort(function (a, b) { return b.x.avg - a.x.avg || b.x.n - a.x.n || a.x.item.localeCompare(b.x.item); });
+    var h = '<div><h2>Best food at ' + esc(t.school.name) + '</h2><p class="sub">Every dish that has been rated, best first. To add yours, open a place and tap the stars on what you ordered.</p></div>';
+    h += rows.length ? '<div class="list">' + rows.map(function (r, i) {
+      return '<button class="row" data-spot="' + esc(r.sp.id) + '"><span class="rank">' + (i + 1) + '</span>' + logo(r.sp) + '<span class="mid"><h3>' + esc(r.x.item) + '</h3><p>' + esc(r.sp.name) + '</p></span>' +
+        '<span class="end"><b>' + r.x.avg.toFixed(1) + '</b>' + r.x.n + ' rating' + (r.x.n > 1 ? 's' : '') + '</span></button>';
+    }).join('') + '</div>' : '<div class="empty"><b>No dishes rated yet</b>Be the first. Open any place and rate what you got.</div>';
+    return h + '<p class="note">For now this counts ratings made on this phone. Ratings from every student combine here once the shared ratings server is connected.</p>';
+  }
   function viewYou() {
-    var rated = Object.keys(U.ratings).filter(function (id) { return SPOTS[id]; }).sort(function (a, b) { return U.ratings[b] - U.ratings[a]; });
+    var mine = [];
+    Object.keys(U.items).forEach(function (id) { if (SPOTS[id]) Object.keys(U.items[id]).forEach(function (k) { mine.push({ sp: SPOTS[id], item: k, r: U.items[id][k] }); }); });
+    mine.sort(function (a, b) { return b.r - a.r || a.item.localeCompare(b.item); });
     var h = '<div class="me"><span class="avatar">' + (U.avatar ? '<img alt="" src="' + esc(U.avatar) + '">' : esc(U.name ? initials(U.name) : '?')) + '</span>' +
       '<div><h2>' + esc(U.name || 'Your profile') + '</h2><p class="sub">' + esc(town().school.name) + '</p>' +
       '<div class="btnrow" style="margin-top:8px"><label class="btn ghost" for="avatarFile">Add a photo</label><input id="avatarFile" type="file" accept="image/*" hidden></div></div></div>' +
       '<label class="field" for="nameIn">Your name<input id="nameIn" type="text" maxlength="30" autocomplete="nickname" placeholder="What should we call you?" value="' + esc(U.name) + '"></label>' +
-      '<div class="sechead"><h2>Your reviews</h2><span>' + rated.length + '</span></div>';
-    h += rated.length ? '<div class="list">' + rated.map(function (id) {
-      var sp = SPOTS[id];
-      return '<button class="row" data-spot="' + esc(id) + '">' + logo(sp) + '<span class="mid"><h3>' + esc(sp.name) + '</h3><p><span class="mystars">' + '★'.repeat(U.ratings[id]) + '</span></p>' + (U.notes[id] ? '<p class="quote">' + esc(U.notes[id]) + '</p>' : '') + '</span></button>';
-    }).join('') + '</div>' : '<div class="empty"><b>No reviews yet</b>Open any place and tap the stars.</div>';
-    h += '<p class="note">Your profile and reviews are saved on this phone.</p>';
-    return h;
+      '<div class="sechead"><h2>Dishes you rated</h2><span>' + mine.length + '</span></div>';
+    h += mine.length ? '<div class="list">' + mine.map(function (m) {
+      return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + '★'.repeat(m.r) + '</span></span></button>';
+    }).join('') + '</div>' : '<div class="empty"><b>Nothing rated yet</b>Open any place and tap the stars on what you ordered.</div>';
+    return h + '<p class="note">Your profile and ratings are saved on this phone.</p>';
   }
 
   function render() {
@@ -149,13 +176,35 @@
       return '<button class="day" data-day="' + d + '" aria-pressed="' + (S.day === d) + '" aria-label="' + DAYNAME[d] + '"><small>' + (d === TODAY ? 'Today' : '') + '</small>' + d + '</button>';
     }).join('');
     document.querySelectorAll('.tab').forEach(function (b) { if (b.dataset.tab === S.tab) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
-    v.innerHTML = S.tab === 'places' ? viewPlaces() : S.tab === 'you' ? viewYou() : viewDeals();
+    v.innerHTML = S.tab === 'places' ? viewPlaces() : S.tab === 'best' ? viewBest() : S.tab === 'you' ? viewYou() : viewDeals();
     save('kord.prefs', { town: S.town, tab: S.tab });
   }
 
   /* place sheet */
   function closeSheet() { document.getElementById('sheetRoot').innerHTML = ''; }
-  function starsHtml(id) { var r = U.ratings[id] || 0, h = ''; for (var i = 1; i <= 5; i++) h += '<button class="' + (i <= r ? 'on' : '') + '" data-rate="' + i + '" data-id="' + esc(id) + '" aria-label="' + i + ' star' + (i > 1 ? 's' : '') + '">★</button>'; return '<div class="stars" role="group" aria-label="Your rating">' + h + '</div>'; }
+  function menuItems(sp) {
+    var out = [], seen = {};
+    function add(n, p, sec) { var k = String(n || '').trim().toLowerCase(); if (!k || seen[k]) return; seen[k] = 1; out.push({ n: String(n).trim(), p: p || '', s: sec }); }
+    (sp.deals || []).forEach(function (d) { add(d.title, d.price, 'This week\'s deals'); });
+    ((MENUS || {})[sp.id] || []).forEach(function (m) { add(m.n, m.p, m.s || 'Menu'); });
+    (U.custom[sp.id] || []).concat(Object.keys(U.items[sp.id] || {})).forEach(function (n) { add(n, '', 'Added by you'); });
+    return out;
+  }
+  function fillMenu(id) {
+    var box = document.getElementById('menuBox'); if (!box) return;
+    var sp = SPOTS[id], q = (S.mq || '').toLowerCase(), items = menuItems(sp), top = ratedItems(id), h = '', last = null, shown = 0;
+    if (top.length) h += '<div class="toprated"><b>Top rated here</b>' + top.slice(0, 3).map(function (x, i) { return '<span>' + (i + 1) + '. ' + esc(x.item) + ' <em>★ ' + x.avg.toFixed(1) + '</em></span>'; }).join('') + '</div>';
+    if (items.length > 12) h += '<input class="search" id="menuSearch" type="search" placeholder="Find a dish" value="' + esc(S.mq || '') + '" aria-label="Find a dish">';
+    items.forEach(function (m) {
+      if (q && m.n.toLowerCase().indexOf(q) < 0) return;
+      if (m.s !== last) { h += '<div class="msec">' + esc(m.s) + '</div>'; last = m.s; }
+      shown++;
+      h += '<div class="mrow"><span class="mname">' + esc(m.n) + (m.p ? ' <small>' + esc(m.p) + '</small>' : '') + '</span>' + miniStars(id, m.n) + '</div>';
+    });
+    if (!shown) h += '<p class="note">' + (q ? 'No dish matches. Add it below.' : 'We do not have this menu yet. Add what you ordered below.') + '</p>';
+    h += '<div class="addrow"><input class="search" id="addItem" type="text" maxlength="60" placeholder="Got something else? Type it" aria-label="Add a dish"><button class="btn" id="addItemBtn" data-id="' + esc(id) + '">Add</button></div>';
+    box.innerHTML = h;
+  }
   function spotSheet(id) {
     var sp = SPOTS[id]; if (!sp) return;
     var web = safeUrl(sp.website);
@@ -175,15 +224,17 @@
         }).join('') + '</div></div>';
       }).join('') + '</div>';
     } else h += '<div class="empty">No weekly deal found here yet.</div>';
-    h += '<div class="sechead"><h2>Your review</h2></div>' + starsHtml(id) +
-      '<label class="field" for="noteIn">What should people order?<textarea id="noteIn" data-id="' + esc(id) + '" maxlength="240" placeholder="Optional">' + esc(U.notes[id] || '') + '</textarea></label>';
+    h += '<div><div class="sechead"><h2>Rate what you got</h2></div><p class="sub">Tap the stars next to the exact thing you ordered.</p></div><div id="menuBox"></div>';
     document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="' + esc(sp.name) + '"><div class="sheethead"><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody">' + h + '</div></div></div>';
+    S.mq = ''; S.open = id; fillMenu(id);
+    if (!MENUS) fetch('data/menus.json').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (m) { MENUS = m || {}; if (S.open === id) fillMenu(id); });
   }
 
   document.addEventListener('click', function (e) {
     var t = e.target.closest('button, a, [data-close]'); if (!t) return;
     if (t.matches('[data-close]') && (e.target === t || t.classList.contains('x'))) { closeSheet(); return render(); }
-    if (t.dataset.rate) { var id = t.dataset.id, n = +t.dataset.rate; if (U.ratings[id] === n) delete U.ratings[id]; else U.ratings[id] = n; save('kord.user', U); t.parentNode.outerHTML = starsHtml(id); return; }
+    if (t.dataset.rate) { var id = t.dataset.id, it = t.dataset.item, n = +t.dataset.rate; U.items[id] = U.items[id] || {}; if (U.items[id][it] === n) delete U.items[id][it]; else U.items[id][it] = n; if (!Object.keys(U.items[id]).length) delete U.items[id]; save('kord.user', U); return fillMenu(id); }
+    if (t.id === 'addItemBtn') { var box = document.getElementById('addItem'), name = (box.value || '').trim(); if (name) { var sid = t.dataset.id; U.custom[sid] = U.custom[sid] || []; if (U.custom[sid].indexOf(name) < 0) U.custom[sid].push(name); save('kord.user', U); S.mq = ''; fillMenu(sid); } return; }
     if (t.dataset.spot) return spotSheet(t.dataset.spot);
     if (t.dataset.town) { S.town = t.dataset.town; S.picking = false; S.tab = 'deals'; S.q = ''; S.day = TODAY; render(); window.scrollTo(0, 0); return; }
     if (t.dataset.day) { S.day = t.dataset.day; return render(); }
@@ -195,7 +246,7 @@
     var t = e.target;
     if (t.id === 'spotSearch') { S.q = t.value; render(); var n = document.getElementById('spotSearch'); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }
     if (t.id === 'nameIn') { U.name = t.value.trim(); save('kord.user', U); }
-    if (t.id === 'noteIn') { var v = t.value.trim(); if (v) U.notes[t.dataset.id] = v; else delete U.notes[t.dataset.id]; save('kord.user', U); }
+    if (t.id === 'menuSearch') { S.mq = t.value; fillMenu(S.open); var ms = document.getElementById('menuSearch'); if (ms) { ms.focus(); ms.setSelectionRange(ms.value.length, ms.value.length); } }
   });
   document.addEventListener('change', function (e) {
     var t = e.target;
@@ -215,7 +266,7 @@
   fetch('data/kord.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
     DATA = d;
     d.towns.forEach(function (t) { t.spots.forEach(function (s) { SPOTS[s.id] = s; }); });
-    var h = (location.hash || '').slice(1); if (['deals', 'places', 'you'].indexOf(h) >= 0) S.tab = h;
+    var h = (location.hash || '').slice(1); if (['deals', 'places', 'best', 'you'].indexOf(h) >= 0) S.tab = h;
     render();
   }).catch(function () {
     document.getElementById('view').innerHTML = '<div class="empty"><b>Could not load the deals</b>Check your connection and reopen KORD.</div>';

@@ -1,15 +1,18 @@
 {
  "avalondowntown.com": {
   "source": "https://avalondowntown.com/wp-content/uploads/2022/04/DSC_1507-2-3-1.png",
-  "site": "https://avalondowntown.com/"
+  "site": "https://avalondowntown.com/",
+  "dish": "pizza"
  },
  "awrestaurants.com": {
   "source": "https://cm-review-builder.s3.amazonaws.com/userImages/5bd76d54fcb8a1401e9ea230/113fe4cf040fcd16f1b1c6d48eb85e44da05a7a6ab33334bb2a177458fc56bbd.jpg",
-  "site": "https://awrestaurants.com/locations/ohio/portsmouth/1102-chillicothe-st"
+  "site": "https://awrestaurants.com/locations/ohio/portsmouth/1102-chillicothe-st",
+  "dish": "burger"
  },
  "barrio-tacos.com": {
   "source": "https://barrio-tacos.com/wp-content/uploads/2025/01/Untitled-design-45-768x960.jpg",
-  "site": "https://barrio-tacos.com/"
+  "site": "https://barrio-tacos.com/",
+  "dish": "taco"
  },
  "beerbarrel.com": {
   "source": "https://beerbarrel.com/site/assets/files/6078/tp.png",
@@ -17,7 +20,8 @@
  },
  "bigmammasburritos.com": {
   "source": "https://www.bigmammasburritos.com/img/articles/2021/08/BMB_Newsbreak_Article_20210801.jpg",
-  "site": "https://www.bigmammasburritos.com"
+  "site": "https://www.bigmammasburritos.com",
+  "dish": "burrito"
  },
  "campwashingtonchili.com": {
   "source": "https://campwashingtonchili.com/wp-content/uploads/2015/05/camp_cakeboss.jpg",
@@ -25,19 +29,23 @@
  },
  "chick-fil-a.com": {
   "source": "https://www.chick-fil-a.com/wp-content/uploads/sites/2/2025/12/CFA_Winter26_Original-Chicken-Sandwich-Meal-BeautyB_CA_Corp-Comm_16x9_1920x1080.jpg_master.jpg",
-  "site": "https://www.chick-fil-a.com"
+  "site": "https://www.chick-fil-a.com",
+  "dish": "sandwich"
  },
  "chipotle.com": {
   "source": "https://www.chipotle.com/content/dam/chipotle/pages/farm-to-foil/lifestyle-burrito-with-guac.jpg",
-  "site": "https://www.chipotle.com"
+  "site": "https://www.chipotle.com",
+  "dish": "burrito"
  },
  "cilantrotaqueria.com": {
   "source": "https://images.squarespace-cdn.com/content/v1/6abbc7835181d46ba7598c30/6db6bc38-468b-4e98-9cd7-5ccca16fbccf/IMG_4581.jpg",
-  "site": "https://www.cilantrotaqueria.com"
+  "site": "https://www.cilantrotaqueria.com",
+  "dish": "taco"
  },
  "courtsidepizza.com": {
   "source": "https://courtsidepizza.com/wp-content/uploads/2022/05/courtside-pizza-bar_header_pizzas-750x750.jpg",
-  "site": "https://courtsidepizza.com"
+  "site": "https://courtsidepizza.com",
+  "dish": "pizza"
  },
  "dietschs.com": {
   "source": "https://dietschs.com/cdn/shop/files/Winter_Truffle_Sampler.jpg?v=1763137073&width=533",
@@ -53,7 +61,8 @@
  },
  "dpdough.com": {
   "source": "https://www.dpdough.com/img/zone-home-bg.webp",
-  "site": "https://www.dpdough.com"
+  "site": "https://www.dpdough.com",
+  "dish": "calzone"
  },
  "dubpub.com": {
   "source": "https://static01.sh-websites.com/uploads/sites/108/2025/03/menu-704x1024.png",
@@ -69,15 +78,18 @@
  },
  "eurogyro.com": {
   "source": "https://eurogyro.com/wp-content/uploads/2016/05/BBQ-Chicken-Pizza-scaled.jpg",
-  "site": "https://eurogyro.com/locations/eurogyro-kent/"
+  "site": "https://eurogyro.com/locations/eurogyro-kent/",
+  "dish": "pizza"
  },
  "foxinthesnow.com": {
   "source": "https://images.getbento.com/accounts/854da2c9dbdbd2d301bfde8f79e8cdfd/media/images/824672025_05_09_Fox_053.jpg?w=1200&fit=crop&auto=compress,format&cs=origin&crop=focalpoint&fp-x=0.5&fp-y=0.5",
-  "site": "https://foxinthesnow.com"
+  "site": "https://foxinthesnow.com",
+  "dish": "sandwich"
  },
  "franklinsquaredeli.com": {
   "source": "https://www.franklinsquaredeli.com/images/REUBEN---NEW-YORKER---17.jpg",
-  "site": "https://www.franklinsquaredeli.com/"
+  "site": "https://www.franklinsquaredeli.com/",
+  "dish": "sandwich"
  },
  "graeters.com": {
   "source": "https://www.graeters.com/cdn/shop/files/SweetRewards_Free_Icecream_c9552f1d-040c-4f6c-b55d-46fa1e837480.png?v=1761929710&width=1002",
@@ -85,11 +97,13 @@
  },
  "homeslice419.com": {
   "source": "https://www.homeslice419.com/maglev/assets/aa8fffe0-d5e2-4628-b2c4-cae5c9aeda35-7emrmvr8zhrv8smswo9ehc7xypyo.jpeg",
-  "site": "https://homeslice419.com"
+  "site": "https://homeslice419.com",
+  "dish": "pizza"
  },
  "hubbardgrille.com": {
   "source": "https://www.hubbardgrille.com/assets/img/pages/home/hubbard-slider-night-bg.jpg",
-  "site": "https://www.hubbardgrille.com"
+  "site": "https://www.hubbardgrille.com",
+  "dish": "burger"
  },
  "jackandbennys.com": {
   "source": "https://images.squarespace-cdn.com/content/v1/60781aba0fcbc64a46d99455/1620999471492-FYTKMBC0501GQAVWJORQ/Jack-%26-Benny-Hero-Image.jpg",
@@ -97,7 +111,8 @@
  },
  "jetspizza.com": {
   "source": "https://www.jetspizza.com/wp-content/uploads/2023/07/GF_Specialty-Pizza_Super-Special.jpg",
-  "site": "https://www.jetspizza.com"
+  "site": "https://www.jetspizza.com",
+  "dish": "pizza"
  },
  "juniperbrew.com": {
   "source": "https://images.squarespace-cdn.com/content/v1/5d434b1e9fd68d000129db71/1661886614285-UNHPKSJ536P22WSJ9YST/image-asset.jpeg",
@@ -109,15 +124,18 @@
  },
  "latenightslice.com": {
   "source": "https://images.squarespace-cdn.com/content/63b5aca8f9d3a332f91ee66c/39246b12-80b1-406f-b25e-951b3bc16b4b/_DSC5325.jpg",
-  "site": "https://latenightslice.com"
+  "site": "https://latenightslice.com",
+  "dish": "pizza"
  },
  "locations.condadotacos.com": {
   "source": "https://a.mktgcdn.com/p/yTofOnPWghYEWJofYNLtKoU-sKnlb5FbICf9_9iWtyY/600x400.jpg",
-  "site": "https://locations.condadotacos.com/oh/1227-n-high-st"
+  "site": "https://locations.condadotacos.com/oh/1227-n-high-st",
+  "dish": "taco"
  },
  "locations.raisingcanes.com": {
   "source": "https://a.mktgcdn.com/p/VvhMLbI2GFfXRH0LLngDtXAfMoWG2elDVglpeZsYI5A/1500x2100.webp",
-  "site": "https://locations.raisingcanes.com/oh/athens/63-south-court-street"
+  "site": "https://locations.raisingcanes.com/oh/athens/63-south-court-street",
+  "dish": "tenders"
  },
  "lock15brewing.com": {
   "source": "https://www.lock15brewing.com/wp-content/uploads/IMG_6273-1.jpg",
@@ -129,7 +147,8 @@
  },
  "luigisrestaurant.com": {
   "source": "https://images.leadconnectorhq.com/image/f_webp/q_80/r_768/u_https://assets.cdn.filesafe.space/Ir2f1SX2wn8obqyaHSOK/media/696907c0eaddec664581a927.jpg",
-  "site": "https://luigisrestaurant.com/"
+  "site": "https://luigisrestaurant.com/",
+  "dish": "pizza"
  },
  "macandjoes.com": {
   "source": "https://irp.cdn-website.com/c1092a55/dms3rep/multi/opt/MJWesternSteakburger-STD-5.17.24IMG_6454-1920w.jpg",
@@ -145,7 +164,8 @@
  },
  "mikesplacerestaurant.com": {
   "source": "https://static.spotapps.co/website_images/ab_websites/85809_website/about_left_1.jpg",
-  "site": "https://mikesplacerestaurant.com/"
+  "site": "https://mikesplacerestaurant.com/",
+  "dish": "burger"
  },
  "mrzubs.com": {
   "source": "https://static.spotapps.co/website_images/ab_websites/135274_website/food_pg_bg.jpg",
@@ -157,11 +177,13 @@
  },
  "myrustybucket.com": {
   "source": "https://myrustybucket.com/wp-content/themes/fire/img/burger.jpg",
-  "site": "https://myrustybucket.com/locations/westerville"
+  "site": "https://myrustybucket.com/locations/westerville",
+  "dish": "burger"
  },
  "northendathens.com": {
   "source": "https://northendathens.com/wp-content/uploads/2021/01/northendathens_food_sq-750x750.jpg",
-  "site": "https://northendathens.com"
+  "site": "https://northendathens.com",
+  "dish": "taco"
  },
  "ontherhineeatery.com": {
   "source": "https://ontherhineeatery.com/wp-content/uploads/2026/01/cahjzmvk5h4.jpg",
@@ -177,15 +199,18 @@
  },
  "qdoba.com": {
   "source": "https://images.ctfassets.net/0tc4847zqy12/2fHlPt8osT2rYLgatHVHQQ/58f120952c99185e137ec04410058ee7/F27_ComfortSeason_WebApp_ContentBlock_Image_600x400_1.png?w=800&q=25",
-  "site": "https://www.qdoba.com"
+  "site": "https://www.qdoba.com",
+  "dish": "burrito"
  },
  "redrobin.com": {
   "source": "https://www.redrobin.com/sites/default/files/styles/full_width_sm/public/2026-10/big-yummm-haystck-double-orange-soda.jpg.webp?itok=lErb-m3S",
-  "site": "https://www.redrobin.com/locations/oh/toledo/toledo-384"
+  "site": "https://www.redrobin.com/locations/oh/toledo/toledo-384",
+  "dish": "burger"
  },
  "restaurants.ihop.com": {
   "source": "https://assets.restaurants.ihop.com/images/specialty/burger-spot-near-me.webp",
-  "site": "https://restaurants.ihop.com/en-us/oh/athens/breakfast-1006-e.-east-state-street-3663/burgers"
+  "site": "https://restaurants.ihop.com/en-us/oh/athens/breakfast-1006-e.-east-state-street-3663/burgers",
+  "dish": "burger"
  },
  "restaurantsalaam.com": {
   "source": "https://static.wixstatic.com/media/851002_b1a698b1c0474f77b81b3535ce03533c~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Specials%20November%2018-21.jpg",
@@ -193,23 +218,28 @@
  },
  "sdspizza.com": {
   "source": "https://www.sdspizza.com/assets/uploads/94f08523-898c-4395-b543-2b4a002be698/3b0e25fc-5b9e-474d-aa33-06d87ea6c38b.jpg?w=1200",
-  "site": "https://www.sdspizza.com"
+  "site": "https://www.sdspizza.com",
+  "dish": "pizza"
  },
  "southside6.com": {
   "source": "https://static.spacecrafted.com/ae7fae5db4514542b0ef4e5c02f81175/i/dda6bd73b20243d886a564400ca28dc0/1/GCuCv727RiYFXYTGZD1tbW/DSC00213.JPG",
-  "site": "https://www.southside6.com/"
+  "site": "https://www.southside6.com/",
+  "dish": "gyro"
  },
  "stephens66.com": {
   "source": "https://stephens66.com/wp-content/uploads/2021/05/specials-1024x768.jpg",
-  "site": "https://stephens66.com"
+  "site": "https://stephens66.com",
+  "dish": "taco"
  },
  "subway.com": {
   "source": "https://www.subway.com/media_1d5482477eb5d72550451ef44fab1a625e4cda0f9.png?width=750&#x26;format=png&#x26;optimize=medium",
-  "site": "https://www.subway.com"
+  "site": "https://www.subway.com",
+  "dish": "sandwich"
  },
  "tacotontoskent.com": {
   "source": "https://cdn.prod.website-files.com/66ccbcb468ed15936da99823/66d92b9db7b09caee19de9cb_IMG_9936.webp",
-  "site": "https://www.tacotontoskent.com/"
+  "site": "https://www.tacotontoskent.com/",
+  "dish": "taco"
  },
  "thai9restaurant.com": {
   "source": "https://static.spotapps.co/website_images/ab_websites/213652_website_v1/social.jpg",
@@ -225,7 +255,8 @@
  },
  "thepearlrestaurant.com": {
   "source": "https://thepearlrestaurant.com/wp-content/uploads/sb-instagram-feed-images/915422494_18396593500161706_223067938381287713_nfull.webp",
-  "site": "https://thepearlrestaurant.com"
+  "site": "https://thepearlrestaurant.com",
+  "dish": "burger"
  },
  "thepigskin.com": {
   "source": "https://cdn.prod.website-files.com/5d965b7476e1ed469f070cf1/5dd17438033682fa54f464c1_Wings%20Feature.png",
@@ -233,7 +264,8 @@
  },
  "tonypackos.com": {
   "source": "https://www.tonypackos.com/clientuploads/directory/Slideshow/Catering2.jpg",
-  "site": "https://www.tonypackos.com"
+  "site": "https://www.tonypackos.com",
+  "dish": "chilidog"
  },
  "trolleystopdayton.com": {
   "source": "https://trolleystopdayton.com/content/uploads/2015/02/hero-tny.png",
@@ -241,7 +273,8 @@
  },
  "varsityclubyoungstown.com": {
   "source": "https://www.varsityclubyoungstown.com/wp-content/uploads/varsityclubyoungstown-bacon-burger-hero.jpg",
-  "site": "https://www.varsityclubyoungstown.com"
+  "site": "https://www.varsityclubyoungstown.com",
+  "dish": "burger"
  },
  "venturasmexicanrestaurant.com": {
   "source": "https://venturasmexicanrestaurant.com/wp-content/uploads/2017/03/fresh-toledo-mexican-food.png",
@@ -249,7 +282,8 @@
  },
  "wendys.com": {
   "source": "https://www.wendys.com/sites/default/files/styles/max_desktop_webp/public/2026-10/daves-single-combo-image-right.jpg.webp?itok=IUlV0EPV",
-  "site": "https://www.wendys.com"
+  "site": "https://www.wendys.com",
+  "dish": "burger"
  },
  "wildgoatscafe.com": {
   "source": "https://static.spotapps.co/website_images/ab_websites/549879_website_v1/food_back.jpg",
@@ -257,11 +291,13 @@
  },
  "beckysbar.com": {
   "source": "https://popmenucloud.com/cdn-cgi/image/width%3D1440%2Cheight%3D1440%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/cqvagxje/0b7d82c2-15b9-4101-9067-ca67df21d8eb.jpg",
-  "site": "https://www.beckysbar.com"
+  "site": "https://www.beckysbar.com",
+  "dish": "burger"
  },
  "broneys.net": {
   "source": "https://popmenucloud.com/cdn-cgi/image/width=1200,height=630,format=auto,fit=cover/kxprqwdu/3dd29fe2-5c56-4c9a-a5f8-9af8f22df6a8.png",
-  "site": "https://www.broneys.net"
+  "site": "https://www.broneys.net",
+  "dish": "burger"
  },
  "campuspollyeyes.com": {
   "source": "https://campuspollyeyes.com/wp-content/webpc-passthru.php?src=https://campuspollyeyes.com/wp-content/uploads/2017/11/10736879.jpg&nocache=1",
@@ -269,47 +305,58 @@
  },
  "dominos.com": {
   "source": "https://www.dominos.com/cms/assets/862aefe9-4b16-42c3-b2d5-151bae7eaef4?im=Crop,rect=(0,689,2249,963);Resize=(1700),allowExpansion",
-  "site": "https://www.dominos.com"
+  "site": "https://www.dominos.com",
+  "dish": "pizza"
  },
  "jimmyjohns.com": {
   "source": "https://images.ctfassets.net/9sn0pujd2a4n/5jWd1eKqWd4vOSeLPkJzLd/ca8e9fc1471997f46c367d8fb1ae476d/25_JJ_1900401_OD_Rewards-Launch-Web-App_Highlight-Block_1312x880_F.jpg?fm=avif&w=656",
-  "site": "https://www.jimmyjohns.com"
+  "site": "https://www.jimmyjohns.com",
+  "dish": "sandwich"
  },
  "panerabread.com": {
   "source": "https://www.panerabread.com/content/dam/panerabread/integrated-web-content/homepage/c10-26/pm-sidebyside-desktop-1.png",
-  "site": "https://www.panerabread.com"
+  "site": "https://www.panerabread.com",
+  "dish": "sandwich"
  },
  "penn-station.com": {
   "source": "https://www.penn-station.com/images/features/home_6menu600x450.jpg",
-  "site": "https://www.penn-station.com"
+  "site": "https://www.penn-station.com",
+  "dish": "sandwich"
  },
  "adriaticososu.com": {
   "source": "https://adriaticososu.com/wp-content/uploads/2024/08/slide6_960x480.jpg",
-  "site": "https://adriaticososu.com"
+  "site": "https://adriaticososu.com",
+  "dish": "pizza"
  },
  "adriaticosuc.com": {
   "source": "https://adriaticosuc.com/wp-content/uploads/2024/08/slide6_960x480.jpg",
-  "site": "https://adriaticosuc.com"
+  "site": "https://adriaticosuc.com",
+  "dish": "pizza"
  },
  "barleyhouseakron.com": {
   "source": "https://img1.wsimg.com/isteam/ip/7ee26429-7193-4e68-8d8c-d6fde062aa8a/9%20inch%20pizza.jpg/:/rs=w:1300,h:800",
-  "site": "https://barleyhouseakron.com"
+  "site": "https://barleyhouseakron.com",
+  "dish": "pizza"
  },
  "budddairyfoodhall.com": {
   "source": "https://budddairyfoodhall.com/wp-content/uploads/2026/02/elevated-wood-fired-pizza-4-900x900.jpg",
-  "site": "https://budddairyfoodhall.com"
+  "site": "https://budddairyfoodhall.com",
+  "dish": "pizza"
  },
  "standardhall.com": {
   "source": "https://standardhall.com/wp-content/uploads/background-menu-dinner-jpg.webp",
-  "site": "https://standardhall.com"
+  "site": "https://standardhall.com",
+  "dish": "burger"
  },
  "tacologist.net": {
   "source": "https://img1.wsimg.com/isteam/ip/7efd6710-70ea-46d8-a8fd-985996806c4e/_T011613-p-3200.jpeg/:/rs=w:1535,m",
-  "site": "https://tacologist.net"
+  "site": "https://tacologist.net",
+  "dish": "taco"
  },
  "archcitytavern.com": {
   "source": "https://archcitytavern.com/wp-content/uploads/2020/12/Arch-city-burger.jpg",
-  "site": "https://archcitytavern.com"
+  "site": "https://archcitytavern.com",
+  "dish": "burger"
  },
  "belinicucina.com": {
   "source": "https://s3-media0.fl.yelpcdn.com/bphoto/SQUIDB8wMiDl6DCr0B5RFg/o.jpg",
@@ -317,7 +364,8 @@
  },
  "bernardscolumbus.com": {
   "source": "https://bernardscolumbus.com/wp-content/uploads/2022/10/Short-North-Bar-6.jpg",
-  "site": "https://bernardscolumbus.com"
+  "site": "https://bernardscolumbus.com",
+  "dish": "burger"
  },
  "bullandbeargrille.com": {
   "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/e9/611c8a04fb4a179b89a84e93b2f486/:original",
@@ -325,7 +373,8 @@
  },
  "columbusbodega.com": {
   "source": "https://images.squarespace-cdn.com/content/v1/59a8c751f7e0ab390ac4ceeb/1754935222300-HCV31VLIVLGF23GFZT5Y/image-asset.jpeg?format=1500w",
-  "site": "https://www.columbusbodega.com"
+  "site": "https://www.columbusbodega.com",
+  "dish": "burger"
  },
  "espressoair.com": {
   "source": "https://espressoair.com/assets/fall/brownbutter.jpg",
@@ -333,7 +382,8 @@
  },
  "fornoshortnorth.com": {
   "source": "https://fornoshortnorth.com/wp-content/uploads/home-experience-stone-fired-perfection-jpg.webp",
-  "site": "https://fornoshortnorth.com"
+  "site": "https://fornoshortnorth.com",
+  "dish": "pizza"
  },
  "koblegrill.com": {
   "source": "https://koblegrill.com/wp-content/uploads/2023/06/k24.jpg",
@@ -341,15 +391,18 @@
  },
  "localcantina.com": {
   "source": "https://images.squarespace-cdn.com/content/v1/639a13c5f1356a1189df280d/64d734d5-dc2d-43e4-bfbe-48b0f46847f1/Untitled+-+June+12%2C+2026+at+09.27.49.png?format=500w",
-  "site": "https://www.localcantina.com"
+  "site": "https://www.localcantina.com",
+  "dish": "taco"
  },
  "macspizzapub.com": {
   "source": "https://macspizzapub.com/wp-content/uploads/2021/07/Macs-Pizza-2.jpg",
-  "site": "https://macspizzapub.com"
+  "site": "https://macspizzapub.com",
+  "dish": "pizza"
  },
  "obettys.com": {
   "source": "https://www.obettys.com/uploads/3/1/3/6/31366095/facebook-thumbnail_orig.jpg",
-  "site": "https://www.obettys.com"
+  "site": "https://www.obettys.com",
+  "dish": "chilidog"
  },
  "oxfordsushiking.com": {
   "source": "https://static.spotapps.co/website_images/ab_websites/331511_website_v1/catering_hp.png",
@@ -357,7 +410,8 @@
  },
  "taqueriamixteca.net": {
   "source": "https://img1.wsimg.com/isteam/ip/90bde55f-cbe1-403d-938a-5db0941e98ee/8B71B9A3-DC22-4854-83F2-89C8D2761FD8.JPG/:/cr=t:0%25,l:0%25,w:100%25,h:100%25/rs=w:1160,h:1160",
-  "site": "https://taqueriamixteca.net"
+  "site": "https://taqueriamixteca.net",
+  "dish": "taco"
  },
  "thebakerscafefindlay.com": {
   "source": "https://images.squarespace-cdn.com/content/v1/544d0953e4b0ddfd0e5f4067/1414351461225-BCN2EH3PKI3N9ZFEMY1X/1614228_729835970399030_2955597179241144524_o.jpg?format=2500w",
