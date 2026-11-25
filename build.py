@@ -15,6 +15,26 @@ CATS = {"Pizza", "Burgers", "Mexican", "Sandwiches & Subs", "Wings & Chicken", "
 REGION_ORDER = ["Southeast Ohio", "Central Ohio", "Southwest Ohio", "Northeast Ohio", "Northwest Ohio"]
 
 
+# The schools KORD covers: town id -> the main school shown for it. Region files hold more towns; only these are built.
+SCHOOLS = [
+    ("athens", "Ohio University", "OU", "#00694E", "#FFFFFF", "https://www.ohio.edu", ""),
+    ("columbus", "Ohio State University", "OSU", "#BA0C2F", "#FFFFFF", "https://www.osu.edu", ""),
+    ("oxford", "Miami University", "MU", "#C41230", "#FFFFFF", "https://miamioh.edu", ""),
+    ("cincinnati", "University of Cincinnati", "UC", "#1A1A1A", "#FFFFFF", "https://www.uc.edu", "Xavier"),
+    ("dayton", "University of Dayton", "UD", "#004B8D", "#FFFFFF", "https://udayton.edu", ""),
+    ("kent", "Kent State University", "KSU", "#003976", "#EFAB00", "https://www.kent.edu", ""),
+    ("bowling-green", "Bowling Green State University", "BGSU", "#FD5000", "#3B1F12", "https://www.bgsu.edu", ""),
+    ("toledo", "University of Toledo", "UT", "#003E7E", "#FFD200", "https://www.utoledo.edu", ""),
+    ("akron", "University of Akron", "UA", "#041E42", "#C9B67A", "https://www.uakron.edu", ""),
+    ("cleveland", "Case Western Reserve University", "CWRU", "#0A304E", "#FFFFFF", "https://case.edu", "Cleveland State"),
+    ("youngstown", "Youngstown State University", "YSU", "#C8102E", "#FFFFFF", "https://ysu.edu", ""),
+    ("portsmouth", "Shawnee State University", "SSU", "#003A70", "#FFFFFF", "https://www.shawnee.edu", ""),
+    ("delaware", "Ohio Wesleyan University", "OWU", "#8C1C13", "#FFFFFF", "https://www.owu.edu", ""),
+    ("westerville", "Otterbein University", "OTT", "#B11116", "#F0DDB0", "https://www.otterbein.edu", ""),
+    ("findlay", "University of Findlay", "UF", "#F47920", "#1A1A1A", "https://www.findlay.edu", ""),
+]
+
+
 def slug(s):
     return re.sub(r"[^a-z0-9]+", "-", s.lower().replace("'", "").replace("’", "")).strip("-")
 
@@ -91,9 +111,12 @@ def main():
                     "website": s.get("website") or (chain or {}).get("website", "") or brand, "blurb": s.get("blurb") or "",
                     "price": s.get("price") or "", "sourceUrl": s.get("sourceUrl") or "", "deals": deals})
 
-    pending = sorted(t["name"] for t in towns.values() if not t["spots"])
-    live = [t for t in towns.values() if t["spots"]]
-    live.sort(key=lambda t: (REGION_ORDER.index(t["region"]) if t["region"] in REGION_ORDER else 9, t["id"] != "athens", t["name"]))
+    live = []
+    for tid, name, abbr, col, ink, url, also in SCHOOLS:
+        t = towns[tid]
+        t["school"] = {"name": name, "abbr": abbr, "color": col, "ink": ink, "url": url, "also": also}
+        del t["colleges"]
+        live.append(t)
     out = {"researchedOn": researched, "towns": live}
     with open(os.path.join(ROOT, "data", "kord.json"), "w") as f:
         json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
@@ -103,7 +126,7 @@ def main():
             '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
             '<meta name="theme-color" content="#FF3B2F">\n<meta name="apple-mobile-web-app-capable" content="yes">\n'
             '<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">\n<meta name="apple-mobile-web-app-title" content="KORD">\n'
-            '<meta name="description" content="The best food deals in every Ohio college town, day by day.">\n'
+            '<meta name="description" content="The cheapest food deals near Ohio college campuses, day by day.">\n'
             '<link rel="manifest" href="manifest.webmanifest">\n<link rel="icon" href="icons/icon.svg" type="image/svg+xml">\n'
             '<link rel="apple-touch-icon" href="icons/icon-180.png">\n'
             '<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>\n'
@@ -112,13 +135,9 @@ def main():
     with open(os.path.join(ROOT, "index.html"), "w") as f:
         f.write(head + frag + tail)
 
-    spots = sum(len(t["spots"]) for t in live)
-    deals = sum(len(s["deals"]) for t in live for s in t["spots"])
-    print(f"{len(live)} towns, {sum(len(t['colleges']) for t in live)} colleges, {spots} spots, {deals} deals")
     for t in live:
-        print(f"  {t['region']:16} {t['name']:20} {len(t['spots']):3} spots {sum(len(s['deals']) for s in t['spots']):3} deals")
-    if pending:
-        print("No spots yet (hidden from the app):", ", ".join(pending))
+        print(f"{t['school']['name']:34} {len(t['spots']):3} places {sum(len(x['deals']) for x in t['spots']):3} deals")
+    print(len(live), "schools,", sum(len(t["spots"]) for t in live), "places,", sum(len(x["deals"]) for t in live for x in t["spots"]), "deals")
 
 
 if __name__ == "__main__":

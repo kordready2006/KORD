@@ -622,7 +622,25 @@
           "blurb": "Ohio-born fast-casual chain for Italian wraps, pasta and salad bowls; shown with a logo on the UToledo Discounts page.",
           "price": "$",
           "sourceUrl": "https://startpage.mapquest.com/us/ohio/piada-italian-street-food-364201516",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$8 entree + large drink with Rocket Card",
+              "details": "UToledo Rocket Card discount: any entree with a large fountain drink for $8. Valid 2-5 p.m. Monday through Sunday and all day Wednesday.",
+              "price": "$8",
+              "studentOnly": true,
+              "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Chipotle Mexican Grill",
@@ -804,6 +822,36 @@
           "price": "$",
           "sourceUrl": "https://www.tacobell.com/food?store=001204",
           "deals": []
+        },
+        {
+          "name": "The Baker's Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Findlay cafe on the Visit Findlay list of Oiler student specials.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/welcome-oiler-families/oiler-specials",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "15% off with Oiler ID",
+              "details": "15% off with a University of Findlay Oiler ID, per Visit Findlay's Local Specials & Discounts list.",
+              "price": "15% off",
+              "studentOnly": true,
+              "sourceUrl": "https://visitfindlay.com/welcome-oiler-families/oiler-specials",
+              "sourceDate": ""
+            }
+          ]
         }
       ]
     },
