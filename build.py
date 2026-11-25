@@ -206,7 +206,8 @@ def main():
             tid, _, nm = key.partition("|")
             sid = names.get(tid + "|" + norm(base_name(nm))) or names.get(tid + "|" + norm(nm))
             items = [{"n": i["name"].strip(), "p": (i.get("price") or "").strip(), "s": (i.get("section") or "Menu").strip()}
-                     for i in m.get("items", []) if i.get("name")][:120]
+                     for i in m.get("items", []) if i.get("name") and 3 <= len(i["name"].strip()) <= 70
+                     and not re.match(r"(?i)\s*(add|extra|substitute|sub)\b|.*\b(gift card|party tray|catering|gratuity|t-shirt)\b", i["name"])][:120]
             if sid and items:
                 menus[sid] = items
     with open(os.path.join(ROOT, "data", "menus.json"), "w") as f:

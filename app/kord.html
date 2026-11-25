@@ -320,7 +320,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     var st = stubText(x.d), ph = photo(x.d.photo || (x.d.nophoto ? '' : x.sp.photo));
     return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" style="--c:' + color(x.sp.category) + '">' +
       '<span class="ph' + (ph ? '' : x.sp.logo ? ' nophoto haslogo' : ' nophoto') + '">' + (ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : x.sp.logo ? '<img alt="" loading="lazy" src="' + esc(x.sp.logo) + '">' : '<span class="mono">' + esc(initials(x.sp.name)) + '</span>') +
-      (hero ? '<span class="flag">Cheapest ' + (S.day === TODAY ? 'today' : DAYNAME[S.day]) + '</span>' : '') +
+      (hero ? '<span class="flag">Cheapest local ' + (S.day === TODAY ? 'today' : DAYNAME[S.day]) + '</span>' : '') +
       '<span class="price' + (st.length > 5 ? ' long' : '') + '">' + esc(st) + '</span></span>' +
       '<span class="dbody"><span class="dtitle">' + esc(x.d.title) + '</span>' +
       '<span class="who">' + logo(x.sp, 'sm') + '<span>' + esc(x.sp.name) + '</span></span>' +
@@ -337,17 +337,17 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   /* step 2: cheapest deals for the day */
   function viewDeals() {
     var t = town(), all = dealsFor(t, S.day);
-    var list = cheapest(all.filter(function (x) { return !S.localOnly || x.sp.local; }));
+    var local = cheapest(all.filter(function (x) { return x.sp.local; })), chain = cheapest(all.filter(function (x) { return !x.sp.local; }));
     var when = S.day === TODAY ? 'today' : 'on ' + DAYNAME[S.day];
-    var h = '<div><h2>Cheapest food ' + when + '</h2><p class="sub">Lowest price first. Tap a deal to see the place.</p></div>' +
-      '<div class="seg"><button data-local="0" aria-pressed="' + !S.localOnly + '">Everything</button><button data-local="1" aria-pressed="' + S.localOnly + '">Local spots only</button></div>';
-    if (!list.length) {
-      var other = DAYS.filter(function (d) { return dealsFor(t, d).length; });
-      h += '<div class="empty"><b>No deals found for ' + DAYNAME[S.day] + '</b>' + (all.length ? 'Switch to Everything to see chain deals.' : other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Check Places for where to eat.') + '</div>';
+    var h = '<div><h2>Cheapest local eats ' + when + '</h2><p class="sub">Spots you only find in ' + esc(t.name) + ', lowest price first. Tap one to see the place.</p></div>';
+    if (local.length) {
+      h += ticket(local[0], true);
+      if (local.length > 1) h += '<div class="sechead"><h2>More local deals</h2><span>' + (local.length - 1) + '</span></div><div class="list">' + local.slice(1).map(function (x) { return ticket(x); }).join('') + '</div>';
     } else {
-      h += ticket(list[0], true);
-      if (list.length > 1) h += '<div class="sechead"><h2>More deals</h2><span>' + (list.length - 1) + '</span></div><div class="list">' + list.slice(1).map(function (x) { return ticket(x); }).join('') + '</div>';
+      var other = DAYS.filter(function (d) { return dealsFor(t, d).some(function (x) { return x.sp.local; }); });
+      h += '<div class="empty"><b>No local deals found for ' + DAYNAME[S.day] + '</b>' + (other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Check Places for where to eat.') + '</div>';
     }
+    if (chain.length) h += '<div class="sechead"><h2>Chain deals nearby</h2><span>' + chain.length + '</span></div><p class="sub" style="margin-top:-8px">Fast food and national chains.</p><div class="list">' + chain.map(function (x) { return ticket(x); }).join('') + '</div>';
     return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos come from each restaurant\'s own website.</p>';
   }
   function spotRow(sp) {
