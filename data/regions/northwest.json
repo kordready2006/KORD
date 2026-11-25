@@ -353,6 +353,33 @@
           "price": "$",
           "sourceUrl": "https://www.ubereats.com/category/bowling-green-oh/bubble-tea",
           "deals": []
+        },
+        {
+          "name": "Pub 1910",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "Bowen-Thompson Student Union, BGSU, Bowling Green, OH",
+          "website": "",
+          "blurb": "Pub inside BGSU's Bowen-Thompson Student Union serving entrees, sandwiches and shareables.",
+          "price": "$$",
+          "sourceUrl": "https://bgfalconmedia.com/160499/news/the-bgsu-dining-experience/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "title": "Happy hour: shareables buy one, get one 50% off",
+              "details": "Happy hour Monday-Thursday 5-7 p.m. with a shareables deal: buy one, get the second 50% off.",
+              "price": "BOGO 50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://bgfalconmedia.com/160499/news/the-bgsu-dining-experience/",
+              "sourceDate": "2024"
+            }
+          ]
         }
       ]
     },
@@ -720,6 +747,17 @@
               "studentOnly": false,
               "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
               "sourceDate": "2026-09"
+            },
+            {
+              "days": [
+                "Sun"
+              ],
+              "title": "75-cent wings Sunday",
+              "details": "75-cent wings. Daily specials run until midnight, dine-in only.",
+              "price": "$0.75",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+              "sourceDate": "2026-09"
             }
           ]
         },
@@ -740,11 +778,13 @@
                 "Tue",
                 "Wed",
                 "Thu",
-                "Fri"
+                "Fri",
+                "Sat",
+                "Sun"
               ],
-              "title": "$5 happy hour appetizers",
-              "details": "Happy hour Monday-Friday 2-5 p.m. with a handful of appetizers for $5.",
-              "price": "$5",
+              "title": "Late night eats (8:30 p.m.-close)",
+              "details": "'Late night eats' from 8:30 p.m. to close with multiple menu items on sale; also a happy hour Monday-Friday 2-5 p.m. and daily specials.",
+              "price": "",
               "studentOnly": false,
               "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
               "sourceDate": "2026-09"
@@ -857,6 +897,52 @@
               "studentOnly": false,
               "sourceUrl": "https://www.redrobin.com/locations/oh/toledo/toledo-384",
               "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Home Slice Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://homeslice419.com",
+          "blurb": "Downtown Toledo pizza spot with dine-in pizza specials early in the week.",
+          "price": "$",
+          "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$5 personal pizza Monday",
+              "details": "$5 personal pizza. Specials start at 5 p.m., dine-in.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+              "sourceDate": "2026-09"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "50% off pizzas Tuesday",
+              "details": "50% off pizzas. Specials start at 5 p.m., dine-in.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+              "sourceDate": "2026-09"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$5 off specialty pizza Wednesday",
+              "details": "$5 off specialty pizza. Specials start at 5 p.m., dine-in.",
+              "price": "$5 off",
+              "studentOnly": false,
+              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
+              "sourceDate": "2026-09"
             }
           ]
         }
@@ -1014,7 +1100,30 @@
           "blurb": "Wings and sports bar chain.",
           "price": "$$",
           "sourceUrl": "https://visitfindlay.com/?p=48516",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "BOGO 50% off traditional wings Tuesday",
+              "details": "Chain-wide Tuesday deal: buy one order of traditional bone-in wings, get one 50% off.",
+              "price": "BOGO 50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "BOGO free boneless wings Thursday",
+              "details": "Chain-wide Thursday deal: buy one order of boneless wings, get one free.",
+              "price": "BOGO",
+              "studentOnly": false,
+              "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Taco Bell",
