@@ -2,6 +2,8 @@
 
 The best food deals in Ohio college towns, day by day. Pick a town, pick a day, see the sourced deals, browse every food spot, rate the places you have eaten at.
 
+Live demo: https://kordready2006.github.io/KORD/
+
 ## Run it
 
 ```
