@@ -6,12 +6,14 @@ self.addEventListener('install', (e) => {
 });
 self.addEventListener('activate', (e) => {
   e.waitUntil(
-    caches.keys()
-      .then((keys) => Promise.all(keys.filter((k) => k !== CACHE).map((k) => caches.delete(k))))
-      .then(() => self.clients.claim())
-      // a phone still showing an older version gets the new one straight away
-      .then(() => self.clients.matchAll({ type: 'window' }))
-      .then((cs) => cs.forEach((c) => c.navigate(c.url).catch(() => {})))
+    caches.keys().then((keys) => {
+      const old = keys.filter((k) => k !== CACHE);
+      return Promise.all(old.map((k) => caches.delete(k)))
+        .then(() => self.clients.claim())
+        // only a phone that was showing an older version is refreshed; a first visit is left alone
+        .then(() => (old.length ? self.clients.matchAll({ type: 'window' }) : []))
+        .then((cs) => cs.forEach((c) => c.navigate(c.url).catch(() => {})));
+    })
   );
 });
 self.addEventListener('fetch', (e) => {
