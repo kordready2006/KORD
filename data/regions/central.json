@@ -49,7 +49,7 @@
           "local": true,
           "signature": true,
           "address": "1998 N High St, Columbus, OH 43201",
-          "website": "",
+          "website": "https://buckeyedonuts.com",
           "blurb": "Long-running High Street donut counter that doubles as a late-night gyro stop for Ohio State students.",
           "price": "$",
           "sourceUrl": "https://www.mapquest.com/us/ohio/buckeye-donuts-5593952",
@@ -60,8 +60,8 @@
           "category": "Pizza",
           "local": true,
           "signature": true,
-          "address": "",
-          "website": "",
+          "address": "1618 Neil Ave, Columbus, OH 43201",
+          "website": "https://adriaticososu.com",
           "blurb": "Campus pizza staple voted best pizza near campus in The Lantern's 2025 Best of OSU.",
           "price": "$$",
           "sourceUrl": "https://www.thelantern.com/?p=425906",
@@ -77,6 +77,29 @@
               "studentOnly": false,
               "sourceUrl": "https://org.osu.edu/themainmenuproject/files/2023/10/Adriatico_s-Menu-ACCESSIBLE.pdf",
               "sourceDate": "2023-10"
+            },
+            {
+              "days": [
+                "Sun"
+              ],
+              "title": "Buck ID Day: 10% off",
+              "details": "Sunday is Buck ID Day: 10% discount on your order when you pay with your BuckID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://adriaticososu.com/columbus/specials/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue"
+              ],
+              "title": "Monday & Tuesday Night Madness",
+              "details": "Cheese pizzas: medium $12, large $18, Buckeye $34 (toppings extra). Mention the promotion on orders delivered or picked up after 5 PM.",
+              "price": "$12",
+              "studentOnly": false,
+              "sourceUrl": "https://adriaticososu.com/columbus/specials/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -140,6 +163,17 @@
               "studentOnly": false,
               "sourceUrl": "https://ramblercolumbus.com/resources/best-happy-hour-columbus/",
               "sourceDate": "2026"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$2 Tank Nachos Thursday",
+              "details": "Tank nachos for $2 on Thursdays.",
+              "price": "$2",
+              "studentOnly": false,
+              "sourceUrl": "https://ethylandtank.com/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -153,7 +187,23 @@
           "blurb": "Historic game-day bar near the stadium with pizza, subs and pub fare.",
           "price": "$$",
           "sourceUrl": "https://www.sluurpy.at/columbus/restaurant/3743787/varsity-club-restaurant-and-bar",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Sun",
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "title": "Happy hour: $5 appetizers",
+              "details": "3-6 PM: $5 appetizers plus $1 off drafts and domestic bottles. Not available during events.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://theoriginalvarsityclub.com/columbus-osu-the-original-varsity-club-happy-hours-specials",
+              "sourceDate": "2026-11"
+            }
+          ]
         },
         {
           "name": "Jack & Benny's",
@@ -172,8 +222,8 @@
           "category": "Other",
           "local": true,
           "signature": false,
-          "address": "248 S 4th St, Columbus, OH",
-          "website": "",
+          "address": "2036 N High St, Columbus, OH 43201",
+          "website": "https://dirtyfranks.com",
           "blurb": "Columbus gourmet hot dog institution that added a North High Street shop across from Ohio State in 2024.",
           "price": "$",
           "sourceUrl": "https://breakfastwithnick.com/2024/11/13/dirty-franks-hot-dogs-campus/",
@@ -185,7 +235,7 @@
           "local": true,
           "signature": false,
           "address": "",
-          "website": "",
+          "website": "https://www.eatatdos.com",
           "blurb": "Taco truck voted best campus food truck in The Lantern's 2025 Best of OSU.",
           "price": "$",
           "sourceUrl": "https://www.thelantern.com/?p=425904",
@@ -225,7 +275,7 @@
           "local": true,
           "signature": false,
           "address": "862 N High St, Columbus, OH",
-          "website": "http://www.archcitytavern.com",
+          "website": "https://archcitytavern.com",
           "blurb": "Short North tavern known for its Monday burger deal.",
           "price": "$$",
           "sourceUrl": "https://columbusfoodletter.substack.com/p/one-day-wonders-our-list-of-weekly",
@@ -288,7 +338,7 @@
           "local": true,
           "signature": false,
           "address": "1881 N Pearl St, Columbus, OH",
-          "website": "",
+          "website": "https://www.bubblesteacompany.com",
           "blurb": "Columbus bubble tea and juice shop with a campus location.",
           "price": "$",
           "sourceUrl": "https://ubereats.com/store/bubbles-tea-%26-juice-ohio-state/8y3p0AC3ViSeAJdK8q-Kqg",
@@ -336,7 +386,7 @@
           "local": true,
           "signature": false,
           "address": "2540 E Main St, Bexley, OH",
-          "website": "",
+          "website": "https://www.bexleypizzaplus.com",
           "blurb": "Homegrown Bexley pizzeria on East Main Street near Capital University.",
           "price": "$$",
           "sourceUrl": "https://www.thelantern.com/?p=8741",
@@ -556,6 +606,61 @@
               "studentOnly": false,
               "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
               "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$3 off nachos Monday",
+              "details": "Plaza daily special: $3 off nachos.",
+              "price": "$3 off",
+              "studentOnly": false,
+              "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$5.99 quesadilla Wednesday",
+              "details": "Plaza daily special: $5.99 chicken and cheese quesadilla.",
+              "price": "$5.99",
+              "studentOnly": false,
+              "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$12.99 arroz con pollo Thursday",
+              "details": "Plaza daily special: $12.99 arroz con pollo.",
+              "price": "$12.99",
+              "studentOnly": false,
+              "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "$13.99 chicken fajita Friday",
+              "details": "Plaza daily special: $13.99 chicken fajita.",
+              "price": "$13.99",
+              "studentOnly": false,
+              "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Sat"
+              ],
+              "title": "$13.99 quesabirrias Saturday",
+              "details": "Plaza daily special: $13.99 quesabirrias.",
+              "price": "$13.99",
+              "studentOnly": false,
+              "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -565,7 +670,7 @@
           "local": true,
           "signature": false,
           "address": "721 N High St, Columbus, OH",
-          "website": "",
+          "website": "https://fornoshortnorth.com",
           "blurb": "Short North Italian kitchen and bar known for its stone-fired pizzas.",
           "price": "$$",
           "sourceUrl": "https://cbustoday.6amcity.com/city-guide/play/happy-hours-in-columbus-ohio",
@@ -672,8 +777,8 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "1044 N High St, Columbus, OH 43201",
+          "website": "https://www.columbusbodega.com",
           "blurb": "Columbus bar and cafe with weeknight taco and wing deals.",
           "price": "$$",
           "sourceUrl": "https://ramblercolumbus.com/resources/best-happy-hour-columbus/",
@@ -707,8 +812,8 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "630 N High St, Columbus, OH 43215",
+          "website": "https://bernardscolumbus.com",
           "blurb": "Short North tavern with a weekly burger night.",
           "price": "$$",
           "sourceUrl": "https://clinkly.io/happy-hour/columbus/short-north",
@@ -723,6 +828,20 @@
               "studentOnly": false,
               "sourceUrl": "https://clinkly.io/happy-hour/columbus/short-north",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Happy hour: half off starters",
+              "details": "Tuesday through Friday happy hour with half off starters and more.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://bernardscolumbus.com/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -732,7 +851,7 @@
           "local": true,
           "signature": false,
           "address": "",
-          "website": "",
+          "website": "https://www.localcantina.com",
           "blurb": "Columbus-area taco and margarita bar chain with several locations.",
           "price": "$",
           "sourceUrl": "https://www.columbusnavigator.com/?p=56485",
@@ -749,6 +868,754 @@
               "sourceDate": "2026-08"
             }
           ]
+        },
+        {
+          "name": "Cazuelas Mexican Cantina",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "2321 N High St, Columbus, OH 43201",
+          "website": "https://cazuelasmexicancantina.com",
+          "blurb": "Campus-area Mexican cantina with a second Gateway shop at 1542 N High St, known for its Mucho Macho burrito challenge.",
+          "price": "$$",
+          "sourceUrl": "https://cazuelasmexicancantina.com/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$2.99 Taco Tuesday",
+              "details": "$2.99 tacos: shredded chicken, ground beef, al pastor or vegetarian.",
+              "price": "$2.99",
+              "studentOnly": false,
+              "sourceUrl": "https://cazuelasmexicancantina.com/specials/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Happy hour: half off selected appetizers",
+              "details": "Every day 2-6 PM and late night 10-11 PM: half off selected appetizers.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://cazuelasmexicancantina.com/specials/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Pizza Fresca",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "2402 N High St, Columbus, OH 43202",
+          "website": "https://pizzafrescaosu.com",
+          "blurb": "Old North pizza shop on the north end of the High Street strip.",
+          "price": "$",
+          "sourceUrl": "https://pizzafrescaosu.com/",
+          "deals": []
+        },
+        {
+          "name": "Sicilia Fine Italian Specialties",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "22 E Frambes Ave, Columbus, OH 43201",
+          "website": "https://siciliapizzaosu.com",
+          "blurb": "Small north-campus Italian shop for pizza and subs just off High Street.",
+          "price": "$",
+          "sourceUrl": "https://siciliapizzaosu.com/",
+          "deals": []
+        },
+        {
+          "name": "Red Chili Asian Kitchen",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1948 N High St, Columbus, OH 43201",
+          "website": "https://www.redchiliasiankitchen.com",
+          "blurb": "Chinese kitchen on High Street across from campus.",
+          "price": "$",
+          "sourceUrl": "https://www.redchiliasiankitchen.com/",
+          "deals": []
+        },
+        {
+          "name": "NE Chinese Restaurant",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "2620 N High St, Columbus, OH 43202",
+          "website": "https://www.nechinese.com",
+          "blurb": "Family-owned Old North spot for northeastern Chinese dishes.",
+          "price": "$",
+          "sourceUrl": "https://www.nechinese.com/",
+          "deals": []
+        },
+        {
+          "name": "Yoshi Hibachi & Sushi",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1502 N High St, Columbus, OH 43201",
+          "website": "https://www.yoshiyum.com",
+          "blurb": "Counter-serve hibachi bowls and sushi on south campus High Street.",
+          "price": "$",
+          "sourceUrl": "https://www.yoshiyum.com/",
+          "deals": []
+        },
+        {
+          "name": "Shawerma Bite",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "12 E 16th Ave, Columbus, OH 43201",
+          "website": "https://www.shawermabite.com",
+          "blurb": "Mediterranean grill for shawarma and falafel wraps steps from High Street.",
+          "price": "$",
+          "sourceUrl": "https://www.universitydistrict.org/good-eats",
+          "deals": []
+        },
+        {
+          "name": "Halal Munchies",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "2422 N High St, Columbus, OH 43201",
+          "website": "https://www.thehalalmunchies.com",
+          "blurb": "Halal platters, gyros and wings with a second campus shop at 14 E 11th Ave.",
+          "price": "$",
+          "sourceUrl": "https://www.thehalalmunchies.com/",
+          "deals": []
+        },
+        {
+          "name": "Heirloom Cafe",
+          "category": "Healthy & Bowls",
+          "local": true,
+          "signature": false,
+          "address": "1871 N High St, Columbus, OH 43210",
+          "website": "https://www.theheirloomcafe.com",
+          "blurb": "Locally owned cafe on the lower level of the Wexner Center with vegan and vegetarian options.",
+          "price": "$",
+          "sourceUrl": "https://www.theheirloomcafe.com/location",
+          "deals": []
+        },
+        {
+          "name": "Clutch Handheld Breakfast",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "2519 Summit St, Columbus, OH 43202",
+          "website": "https://www.clutchhandhelds.com",
+          "blurb": "Order-ahead breakfast sandwiches and handhelds in SoHud.",
+          "price": "$",
+          "sourceUrl": "https://www.clutchhandhelds.com/",
+          "deals": []
+        },
+        {
+          "name": "Shake No Ei8ht",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "1537 N High St, Columbus, OH 43201",
+          "website": "https://shakeno8.com",
+          "blurb": "South campus shake shop with a coffee and food menu.",
+          "price": "$",
+          "sourceUrl": "https://shakeno8.com/",
+          "deals": []
+        },
+        {
+          "name": "Cuppa Cha",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "262 W Lane Ave, Columbus, OH 43201",
+          "website": "https://www.cuppa-cha.com",
+          "blurb": "Bubble tea shop on Lane Avenue at the north edge of campus.",
+          "price": "$",
+          "sourceUrl": "https://www.cuppa-cha.com/",
+          "deals": []
+        },
+        {
+          "name": "Kafe Kerouac",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "2250 N High St, Columbus, OH 43201",
+          "website": "https://kafekerouac.com",
+          "blurb": "Coffee house, bar and used book and record shop hosting open mics, poetry and comedy.",
+          "price": "$",
+          "sourceUrl": "https://www.universitydistrict.org/good-drinks",
+          "deals": []
+        },
+        {
+          "name": "The O on Lane",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "352 W Lane Ave, Columbus, OH 43201",
+          "website": "https://theoonlane.com",
+          "blurb": "Sports bar near the stadium with wood-fired and tavern-style pizza.",
+          "price": "$$",
+          "sourceUrl": "https://buckid.osu.edu/merchants",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Half off appetizers and baskets",
+              "details": "Monday: 1/2 off appetizers and baskets (sampler platter and ribs basket not included).",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://theoonlane.com/columbus-osu-campus-the-o-on-lane-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Tavern Tuesday: $2 off tavern-style pizza",
+              "details": "$2 off any 16-inch tavern-style pizza.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://theoonlane.com/columbus-osu-campus-the-o-on-lane-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed",
+                "Sun"
+              ],
+              "title": "Wing special",
+              "details": "$6 for 6 or $12 for 12 traditional wings; $7 for 6 or $13 for 12 boneless (ranch, bleu cheese and celery not included).",
+              "price": "$6",
+              "studentOnly": false,
+              "sourceUrl": "https://theoonlane.com/columbus-osu-campus-the-o-on-lane-happy-hours-specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Fourth Street Taproom & Kitchen",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1810 N 4th St, Columbus, OH 43201",
+          "website": "https://fourthstreetcolumbus.com",
+          "blurb": "Corner bar at 4th and 16th since 2010 with a full kitchen and weekend brunch.",
+          "price": "$",
+          "sourceUrl": "https://fourthstreetcolumbus.com/",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$5 smash burger with fries",
+              "details": "Monday: smash burger with fries for $5, plus $1 Dollar Dogs.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://fourthstreetcolumbus.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$2 Tacos Tuesday",
+              "details": "$2 tacos all day and $6 nachos.",
+              "price": "$2",
+              "studentOnly": false,
+              "sourceUrl": "https://fourthstreetcolumbus.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "75-cent wings Thursday",
+              "details": "Wings for 75 cents each on Thursdays.",
+              "price": "$0.75",
+              "studentOnly": false,
+              "sourceUrl": "https://fourthstreetcolumbus.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Ledo's Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "2608 N High St, Columbus, OH 43202",
+          "website": "https://www.ledostavern.com",
+          "blurb": "Old North neighborhood tavern with a pub food menu.",
+          "price": "$",
+          "sourceUrl": "https://www.ledostavern.com/",
+          "deals": []
+        },
+        {
+          "name": "Ace of Cups",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "2619 N High St, Columbus, OH 43202",
+          "website": "https://aceofcupsbar.com",
+          "blurb": "Old North live music bar with a Dirty Frank's hot dog kitchen Thursday through Sunday.",
+          "price": "$",
+          "sourceUrl": "https://aceofcupsbar.com/",
+          "deals": []
+        },
+        {
+          "name": "Ray Ray's Hog Pit (Clintonville)",
+          "category": "BBQ",
+          "local": true,
+          "signature": true,
+          "address": "2619 N High St, Columbus, OH 43202",
+          "website": "https://rayrayshogpit.com",
+          "blurb": "Hardwood-smoked barbecue from the food truck parked at Ace of Cups.",
+          "price": "$$",
+          "sourceUrl": "https://www.universitydistrict.org/good-eats",
+          "deals": []
+        },
+        {
+          "name": "Hounddog's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "2657 N High St, Columbus, OH 43202",
+          "website": "https://www.hounddogspizza.com",
+          "blurb": "Old North pizza joint known for creative pies, subs and late hours.",
+          "price": "$",
+          "sourceUrl": "https://www.universitydistrict.org/good-eats",
+          "deals": []
+        },
+        {
+          "name": "Pelino's Pasta",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "245 King Ave, Columbus, OH 43201",
+          "website": "https://www.pelinospasta.com",
+          "blurb": "Small Italian restaurant making fresh pasta on King Avenue.",
+          "price": "$$$",
+          "sourceUrl": "https://www.pelinospasta.com/",
+          "deals": []
+        },
+        {
+          "name": "Pasta Villa Italian Restaurant & Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "2475 N High St, Columbus, OH 43202",
+          "website": "https://www.pastavillaitalianrestaurant.com",
+          "blurb": "Casual Old North spot for pizza and Italian classics.",
+          "price": "$",
+          "sourceUrl": "https://www.pastavillaitalianrestaurant.com/",
+          "deals": []
+        },
+        {
+          "name": "Understory",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "2571 Neil Ave, Columbus, OH 43202",
+          "website": "https://www.understorycbus.com",
+          "blurb": "Restaurant and cocktail bar in the Open Air building in Old North.",
+          "price": "$$",
+          "sourceUrl": "https://www.understorycbus.com/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Weekday happy hour: $2 off select shareables",
+              "details": "Weekdays 2-6 PM: $2 off select shareables and wines by the glass, $1 off draft beers.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.understorycbus.com/commons",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Cocky's Bagels",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "1484 N High St, Columbus, OH 43201",
+          "website": "https://cockysbagels.com",
+          "blurb": "Stuffed bagel sandwich shop on south campus High Street.",
+          "price": "$",
+          "sourceUrl": "https://buckid.osu.edu/merchants",
+          "deals": []
+        },
+        {
+          "name": "Rollz Rice Indian Kitchen",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "16 E 16th Ave, Columbus, OH 43201",
+          "website": "https://www.rollzrice.com",
+          "blurb": "Fast-casual build-your-own Indian wraps and rice bowls.",
+          "price": "$",
+          "sourceUrl": "https://buckid.osu.edu/merchants",
+          "deals": []
+        },
+        {
+          "name": "Tikka N Kabab",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "2412 N High St, Columbus, OH 43202",
+          "website": "https://www.tikkankabab.com",
+          "blurb": "Indian and Bangladeshi takeout and delivery in Old North.",
+          "price": "$",
+          "sourceUrl": "https://buckid.osu.edu/merchants",
+          "deals": []
+        },
+        {
+          "name": "Pizzeria Padrino",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "20 E 13th Ave, Columbus, OH 43201",
+          "website": "https://www.pizzeriapadrino.com",
+          "blurb": "Late-night campus pizza window open Wednesday through Saturday nights.",
+          "price": "$",
+          "sourceUrl": "https://www.pizzeriapadrino.com/location-hours",
+          "deals": []
+        },
+        {
+          "name": "Coffee Underground",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "2141 Indianola Ave, Columbus, OH 43201",
+          "website": "https://www.coffeeunderground.org",
+          "blurb": "Quiet coffee shop in a church basement just east of campus.",
+          "price": "$",
+          "sourceUrl": "https://www.coffeeunderground.org/",
+          "deals": []
+        },
+        {
+          "name": "HangOverEasy",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": true,
+          "address": "1646 Neil Ave, Columbus, OH 43201",
+          "website": "https://hangovereasy.com",
+          "blurb": "Booze-and-breakfast diner by the medical campus that grew into an Ohio brunch group.",
+          "price": "$$",
+          "sourceUrl": "https://buckid.osu.edu/merchants",
+          "deals": []
+        },
+        {
+          "name": "Stauf's Coffee Roasters (Neil Ave)",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "1334 Neil Ave, Columbus, OH 43201",
+          "website": "https://www.staufs.com",
+          "blurb": "Columbus coffee roaster's cafe south of campus.",
+          "price": "$",
+          "sourceUrl": "https://www.universitydistrict.org/good-drinks",
+          "deals": []
+        },
+        {
+          "name": "Dave's Cosmic Subs",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "1766 N High St, Columbus, OH 43201",
+          "website": "https://www.davescosmicsubs.com",
+          "blurb": "Ohio-born sub shop with a rock-and-roll theme on High Street.",
+          "price": "$",
+          "sourceUrl": "https://buckid.osu.edu/merchants",
+          "deals": []
+        },
+        {
+          "name": "Jeni's Splendid Ice Creams (Short North)",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": true,
+          "address": "714 N High St, Columbus, OH 43215",
+          "website": "https://jenis.com",
+          "blurb": "Scoop shop of Columbus's famous ice cream maker.",
+          "price": "$$",
+          "sourceUrl": "https://jenis.com/blogs/scoop-shops/columbus-oh",
+          "deals": []
+        },
+        {
+          "name": "Press Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "741 N High St, Columbus, OH 43215",
+          "website": "https://pressgrill.net",
+          "blurb": "Cozy Short North neighborhood bar serving comfort food late.",
+          "price": "$$",
+          "sourceUrl": "https://pressgrill.net/",
+          "deals": []
+        },
+        {
+          "name": "Johnson's Real Ice Cream (Italian Village)",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "869 N Fourth St, Columbus, OH 43201",
+          "website": "https://johnsonsrealicecream.com",
+          "blurb": "Family-owned Columbus ice cream maker since 1950.",
+          "price": "$",
+          "sourceUrl": "https://johnsonsrealicecream.com/location",
+          "deals": []
+        },
+        {
+          "name": "Domo Sushi Kitchen Bar",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "976 N High St, Columbus, OH 43201",
+          "website": "https://domoskb.com",
+          "blurb": "Short North sushi kitchen and bar.",
+          "price": "$$",
+          "sourceUrl": "https://domoskb.com/locations",
+          "deals": []
+        },
+        {
+          "name": "Habibi Grill",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "1131 N 4th St, Columbus, OH 43201",
+          "website": "https://www.habibigrill614.com",
+          "blurb": "Lebanese grill in Italian Village.",
+          "price": "$$",
+          "sourceUrl": "https://www.habibigrill614.com/",
+          "deals": []
+        },
+        {
+          "name": "Brassica (Short North)",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "680 N High St, Columbus, OH 43215",
+          "website": "https://brassicas.com",
+          "blurb": "Columbus-born counter for build-your-own pita sandwiches and salads.",
+          "price": "$",
+          "sourceUrl": "https://brassicas.com/locations/?region=Central%20Ohio",
+          "deals": []
+        },
+        {
+          "name": "Skully's Music-Diner",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1151 N High St, Columbus, OH 43201",
+          "website": "https://skullys.org",
+          "blurb": "Short North diner, bar and live music venue.",
+          "price": "$",
+          "sourceUrl": "https://skullys.org/",
+          "deals": []
+        },
+        {
+          "name": "The Fruit Stand",
+          "category": "Healthy & Bowls",
+          "local": true,
+          "signature": false,
+          "address": "1130 N High St, Columbus, OH",
+          "website": "https://thefruitstandohio.com",
+          "blurb": "Ohio shop for fresh-cut fruit and smoothie bowls.",
+          "price": "$",
+          "sourceUrl": "https://thefruitstandohio.com/locations",
+          "deals": []
+        },
+        {
+          "name": "One Line Coffee (Short North)",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "745 N High St, Columbus, OH",
+          "website": "https://www.onelinecoffee.com",
+          "blurb": "Columbus specialty coffee roaster's original cafe.",
+          "price": "$",
+          "sourceUrl": "https://www.onelinecoffee.com/pages/locations",
+          "deals": []
+        },
+        {
+          "name": "City Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "697 N Fourth St, Columbus, OH 43215",
+          "website": "https://citytaverncolumbus.com",
+          "blurb": "Laid-back Italian Village pub for craft beer and burgers.",
+          "price": "$$",
+          "sourceUrl": "https://citytaverncolumbus.com/",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$7 Classic Burger Monday",
+              "details": "Classic Burger for $7 on Mondays.",
+              "price": "$7",
+              "studentOnly": false,
+              "sourceUrl": "https://citytaverncolumbus.com/columbus-italian-village-city-tavern-happy-hours-specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Paulie Gee's Short North",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "1195 N High St, Columbus, OH 43201",
+          "website": "https://pauliegee.com/restaurant/paulie-gees-short-north/",
+          "blurb": "Wood-fired and Detroit-style square pizzas with vegan options.",
+          "price": "$$",
+          "sourceUrl": "https://pauliegee.com/restaurant/paulie-gees-short-north/",
+          "deals": [
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "3 pizzas for $45",
+              "details": "Any three wood-fired pizzas for $45. Excludes squares, one special per table, not valid on carry-out.",
+              "price": "$45",
+              "studentOnly": false,
+              "sourceUrl": "https://pauliegee.com/restaurant/paulie-gees-short-north/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$22 in-house squares",
+              "details": "Square pizzas $22 in house on Thursdays; not valid on carry-out.",
+              "price": "$22",
+              "studentOnly": false,
+              "sourceUrl": "https://pauliegee.com/restaurant/paulie-gees-short-north/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Sun"
+              ],
+              "title": "Sweatpants Special",
+              "details": "Any two wood-fired pizzas and a salad for $40. Excludes squares, one special per table, not valid on carry-out.",
+              "price": "$40",
+              "studentOnly": false,
+              "sourceUrl": "https://pauliegee.com/restaurant/paulie-gees-short-north/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "The Lox Bagel Shop",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "772 N High St #106, Columbus, OH 43215",
+          "website": "https://www.theloxbagelshop.com",
+          "blurb": "Short North shop for hand-rolled bagels and bagel sandwiches.",
+          "price": "$$",
+          "sourceUrl": "https://www.theloxbagelshop.com/",
+          "deals": []
+        },
+        {
+          "name": "Tertulia Bakery Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "997 N High St, Columbus, OH 43201",
+          "website": "https://www.tertuliacafe.com",
+          "blurb": "Short North cafe for coffee and pastries.",
+          "price": "$",
+          "sourceUrl": "https://www.tertuliacafe.com/",
+          "deals": []
+        },
+        {
+          "name": "Union Cafe",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "782 N High St, Columbus, OH 43215",
+          "website": "https://www.unioncafe.com",
+          "blurb": "Long-running Short North bar and restaurant with brunch and dinner menus.",
+          "price": "$$",
+          "sourceUrl": "https://www.unioncafe.com/",
+          "deals": []
+        },
+        {
+          "name": "Drunch Eatery + Bar",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "995 N 4th St, Columbus, OH 43201",
+          "website": "https://www.druncheatery.com",
+          "blurb": "Italian Village brunch spot and bar that takes BuckID.",
+          "price": "$$",
+          "sourceUrl": "https://www.druncheatery.com/",
+          "deals": []
+        },
+        {
+          "name": "Northstar Cafe (Short North)",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": true,
+          "address": "951 N High St, Columbus, OH 43201",
+          "website": "https://www.thenorthstarcafe.com",
+          "blurb": "Columbus-born counter-service cafe known for its veggie burger and breakfast.",
+          "price": "$$",
+          "sourceUrl": "https://www.thenorthstarcafe.com/location/northstar-cafe-short-north/",
+          "deals": []
+        },
+        {
+          "name": "Mission Coffee Co.",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "11 Price Ave, Columbus, OH",
+          "website": "https://www.missioncoffeeco.com",
+          "blurb": "Columbus craft coffee roaster and cafe just off High Street.",
+          "price": "$",
+          "sourceUrl": "https://www.missioncoffeeco.com/pages/locations",
+          "deals": []
+        },
+        {
+          "name": "Pho Social",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "660 N High St, Columbus, OH 43215",
+          "website": "https://phosocialcolumbus.com",
+          "blurb": "Vietnamese pho and grill in the Short North.",
+          "price": "$$",
+          "sourceUrl": "https://phosocialcolumbus.com/",
+          "deals": []
+        },
+        {
+          "name": "Native Cold Pressed",
+          "category": "Healthy & Bowls",
+          "local": true,
+          "signature": false,
+          "address": "771-A N High St, Columbus, OH",
+          "website": "https://www.nativecoldpressed.com",
+          "blurb": "Cold-pressed juice bar in the Short North.",
+          "price": "$$",
+          "sourceUrl": "https://www.nativecoldpressed.com/",
+          "deals": []
         }
       ]
     },
@@ -781,7 +1648,7 @@
           "local": true,
           "signature": false,
           "address": "1 S State St, Westerville, OH",
-          "website": "",
+          "website": "https://jimmyvswesterville.com",
           "blurb": "Uptown pub with burgers, gyros, pasta and salads.",
           "price": "$$",
           "sourceUrl": "https://www.otterbein.edu/otterbinder/around-the-area/uptown-restaurants/",
@@ -793,31 +1660,33 @@
           "local": true,
           "signature": false,
           "address": "14 N State St, Westerville, OH",
-          "website": "",
+          "website": "https://asterisksupperclub.com",
           "blurb": "Scratch comfort food and afternoon tea in Uptown.",
           "price": "$$$",
           "sourceUrl": "https://www.otterbein.edu/otterbinder/around-the-area/uptown-restaurants/",
-          "deals": []
-        },
-        {
-          "name": "Barrel & Boar",
-          "category": "BBQ",
-          "local": true,
-          "signature": false,
-          "address": "",
-          "website": "",
-          "blurb": "BBQ restaurant on Otterbein's list of Uptown restaurants.",
-          "price": "$$",
-          "sourceUrl": "https://www.otterbein.edu/otterbinder/around-the-area/uptown-restaurants/",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "title": "Happy hour: $3 off all appetizers",
+              "details": "3-6 PM: $3 off all appetizers, plus drink specials.",
+              "price": "$3 off",
+              "studentOnly": false,
+              "sourceUrl": "https://asterisksupperclub.com/westerville-historic-westerville-asterisk-supper-club-happy-hours-specials",
+              "sourceDate": "2026-11"
+            }
+          ]
         },
         {
           "name": "Uptown Deli & Brew",
           "category": "Sandwiches & Subs",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "41 N State St, Westerville, OH 43081",
+          "website": "https://www.uptowndeliandbrew.com",
           "blurb": "Uptown deli and brewery known for sandwiches and house beer.",
           "price": "$$",
           "sourceUrl": "https://wanderlog.com/place/details/2179308/uptown-deli-and-brew",
@@ -828,7 +1697,7 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "400 Polaris Pkwy, Westerville, OH 43082",
           "website": "https://myrustybucket.com/locations/westerville",
           "blurb": "Columbus-based neighborhood tavern chain with a Westerville location.",
           "price": "$$",
@@ -856,8 +1725,8 @@
           "category": "Mediterranean",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "7 N State St, Westerville, OH 43081",
+          "website": "https://koblegrill.com",
           "blurb": "Uptown Westerville Greek grill.",
           "price": "$$",
           "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
@@ -887,7 +1756,7 @@
           "local": true,
           "signature": false,
           "address": "20 S State St, Suite B, Westerville, OH 43081",
-          "website": "",
+          "website": "https://javacentral.coffee",
           "blurb": "Uptown Westerville coffee house.",
           "price": "$",
           "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
@@ -916,8 +1785,8 @@
           "category": "Coffee & Bakery",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "25 N State St, Westerville, OH 43081",
+          "website": "https://www.espressoair.com",
           "blurb": "Uptown Westerville coffee shop.",
           "price": "$",
           "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
@@ -947,7 +1816,7 @@
           "local": false,
           "signature": false,
           "address": "Park St & S State St, Westerville, OH",
-          "website": "",
+          "website": "https://www.dairyqueen.com/en-us/locations/oh/westerville/84-s-state-st/16872/",
           "blurb": "National soft-serve and burger chain.",
           "price": "$",
           "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
@@ -976,7 +1845,7 @@
           "category": "Dessert & Ice Cream",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "46 N State St, Westerville, OH 43081",
           "website": "https://whitscustard.com",
           "blurb": "Central Ohio frozen custard shop on Otterbein's Uptown discount lists.",
           "price": "$",
@@ -1000,6 +1869,280 @@
               "sourceDate": "2020-01"
             }
           ]
+        },
+        {
+          "name": "Old Bag of Nails Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "24 N State St, Westerville, OH 43081",
+          "website": "https://www.oldbagofnails.com/locations/westerville-oh",
+          "blurb": "Ohio pub group's Uptown location, known for fish and chips and burgers.",
+          "price": "$$",
+          "sourceUrl": "https://www.oldbagofnails.com/locations/westerville-oh",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Happy hour: $2 off starters",
+              "details": "Monday-Friday 2-7 PM at all locations: all starters $2 off (excluding appetizer specials), plus drink specials.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.oldbagofnails.com/menu/ohio",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "North High Brewing",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "250 S State St, Westerville, OH 43081",
+          "website": "https://northhighbrewing.com/westerville/",
+          "blurb": "Columbus brewery's Westerville taproom and full-service restaurant with patios and weekly trivia.",
+          "price": "$$",
+          "sourceUrl": "https://northhighbrewing.com/westerville/",
+          "deals": []
+        },
+        {
+          "name": "Los Altos Mexican Bar & Grill",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "8 N State St, Westerville, OH 43081",
+          "website": "https://losaltosbargrill.com",
+          "blurb": "Casual Mexican restaurant and bar in the heart of Uptown.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitwesterville.org/eat/restaurants-in-uptown-westerville/",
+          "deals": []
+        },
+        {
+          "name": "High Bank Distillery Co.",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "28 S State St, Westerville, OH 43081",
+          "website": "https://www.highbankco.com/westerville",
+          "blurb": "Columbus distillery's Uptown pub and speakeasy with a full lunch and dinner menu.",
+          "price": "$$",
+          "sourceUrl": "https://www.highbankco.com/westerville",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat"
+              ],
+              "title": "Happy hour: $2 off shareables",
+              "details": "Monday-Saturday 3-6 PM: $2 off shareables, plus drink specials.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.highbankco.com/westerville",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Cardinal Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "10 E Main St, Westerville, OH 43081",
+          "website": "https://cardinalpizzashop.com",
+          "blurb": "Uptown pizza shop serving New York and Columbus-style pies with a big craft beer list.",
+          "price": "$",
+          "sourceUrl": "https://cardinalpizzashop.com/",
+          "deals": []
+        },
+        {
+          "name": "Ampersand Asian Supper Club",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "32 W College Ave, Westerville, OH 43081",
+          "website": "https://ampersandasiansupperclub.com",
+          "blurb": "Chef-driven ramen and rice bowls a block off State Street.",
+          "price": "$$",
+          "sourceUrl": "https://ampersandasiansupperclub.com/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Happy hour: $4 small plates",
+              "details": "Monday-Friday 3-6 PM: $4 gyoza, edamame, miso soup, steamed bun, nori fries or curry tofu.",
+              "price": "$4",
+              "studentOnly": false,
+              "sourceUrl": "https://ampersandasiansupperclub.com/happy-hour/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Northstar Cafe (Westerville)",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "109 S State St, Westerville, OH 43081",
+          "website": "https://www.thenorthstarcafe.com/location/northstar-cafe-westerville/",
+          "blurb": "Columbus-born counter-service cafe open daily for breakfast, lunch and dinner.",
+          "price": "$$",
+          "sourceUrl": "https://www.thenorthstarcafe.com/location/northstar-cafe-westerville/",
+          "deals": []
+        },
+        {
+          "name": "Westerville Grill",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "59 S State St, Westerville, OH 43081",
+          "website": "https://www.westervillegrill.com",
+          "blurb": "Uptown diner serving breakfast all day plus burgers and sandwiches.",
+          "price": "$",
+          "sourceUrl": "https://www.westervillegrill.com/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Tuesday special: chicken salad sandwich $9.89",
+              "details": "Daily special served with your choice of side.",
+              "price": "$9.89",
+              "studentOnly": false,
+              "sourceUrl": "https://www.westervillegrill.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Wednesday special: Santa Fe salad $11.49",
+              "details": "Daily special: tossed salad with grilled chicken, corn salsa, black beans and chipotle ranch.",
+              "price": "$11.49",
+              "studentOnly": false,
+              "sourceUrl": "https://www.westervillegrill.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "Thursday special: sloppy joe $9.99",
+              "details": "Daily special served with your choice of side.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.westervillegrill.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "Friday special: tuna salad sandwich $9.99",
+              "details": "Daily special served with your choice of side.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.westervillegrill.com/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Thai Grille",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "15 E College Ave, Westerville, OH 43081",
+          "website": "",
+          "blurb": "Traditional Thai restaurant just off State Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.otterbein.edu/otterbinder/around-the-area/uptown-restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Begin Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "8 E Main St, Westerville, OH 43081",
+          "website": "https://www.begin-cafe.com",
+          "blurb": "Casual Uptown coffee shop with a daytime food menu.",
+          "price": "$",
+          "sourceUrl": "https://www.begin-cafe.com/menu",
+          "deals": []
+        },
+        {
+          "name": "Birdie Books Bar & Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "74 N State St, Westerville, OH 43081",
+          "website": "https://readbirdiebooks.com",
+          "blurb": "Locally owned bookstore cafe with a bakery and bar.",
+          "price": "$",
+          "sourceUrl": "https://readbirdiebooks.com/readmore-bar",
+          "deals": []
+        },
+        {
+          "name": "Family Room Coffee & Bake Shop",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "545 S Otterbein Ave, Westerville, OH 43081",
+          "website": "https://familyroomcoffee.com",
+          "blurb": "Family-owned coffee and bake shop south of campus.",
+          "price": "$",
+          "sourceUrl": "https://familyroomcoffee.com/",
+          "deals": []
+        },
+        {
+          "name": "Fox in the Snow (Westerville)",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "79 S State St, Westerville, OH",
+          "website": "https://www.foxinthesnow.com",
+          "blurb": "Uptown outpost of the Columbus bakery and coffee shop.",
+          "price": "$$",
+          "sourceUrl": "https://www.foxinthesnow.com/locations/",
+          "deals": []
+        },
+        {
+          "name": "Graeter's Ice Cream (Westerville)",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "1 N State St, Westerville, OH 43081",
+          "website": "https://www.graeters.com/pages/retail-stores/westerville",
+          "blurb": "Ohio ice cream maker's Uptown scoop shop.",
+          "price": "$",
+          "sourceUrl": "https://www.otterbein.edu/otterbinder/around-the-area/uptown-restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Good Vibes Winery",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "2 S State St, Westerville, OH 43081",
+          "website": "https://www.goodvibeswinery.com",
+          "blurb": "Casual Uptown winery with light snacks.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitwesterville.org/eat/beer-wine-spirits/",
+          "deals": []
         }
       ]
     },
@@ -1403,7 +2546,7 @@
           "local": true,
           "signature": false,
           "address": "13 W William St, Delaware, OH 43015",
-          "website": "",
+          "website": "https://www.olddogalehouse.com",
           "blurb": "Downtown Delaware alehouse and brewery.",
           "price": "$$",
           "sourceUrl": "https://www.toasttab.com/local/delaware-oh-restaurants",
@@ -1419,7 +2562,52 @@
           "blurb": "Longtime downtown Delaware diner that has taken part in Ohio Wesleyan's off-campus dining program.",
           "price": "$",
           "sourceUrl": "https://sites.owu.edu/dailymonster/?p=48180",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Free appetizer with 2 burgers or sandwiches",
+              "details": "Monday 4-8 PM: free appetizer with the purchase of 2 burgers or sandwiches.",
+              "price": "Free app",
+              "studentOnly": false,
+              "sourceUrl": "https://hamburgerinndiner.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$10 Sandwich Tuesday",
+              "details": "Tuesday 4-8 PM: any sub or sandwich $10 (excludes Reuben and fish sandwich).",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://hamburgerinndiner.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Half Price Burgers",
+              "details": "Wednesday 4-8 PM: half price burgers.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://hamburgerinndiner.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "Free cinnamon rolls with $25 purchase",
+              "details": "Thursday 4-8 PM: free cinnamon rolls with a $25 purchase.",
+              "price": "Free",
+              "studentOnly": false,
+              "sourceUrl": "https://hamburgerinndiner.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
         },
         {
           "name": "Mohio Pizza Co.",
@@ -1427,7 +2615,7 @@
           "local": true,
           "signature": false,
           "address": "23 N Sandusky St, Delaware, OH 43015",
-          "website": "",
+          "website": "https://www.mohiopizzaco.com",
           "blurb": "Wood-fired artisan pizza downtown.",
           "price": "$$",
           "sourceUrl": "https://www.visitdelohio.com/destination/mohio-pizza-co/",
@@ -1439,7 +2627,7 @@
           "local": true,
           "signature": false,
           "address": "26 N Sandusky St, Delaware, OH 43015",
-          "website": "",
+          "website": "https://haciendataqueriaandbar.com",
           "blurb": "Downtown Mexican spot for tacos and fajitas.",
           "price": "$$",
           "sourceUrl": "https://www.visitdelohio.com/destination/hacienda-taqueria-and-bar/",
@@ -1451,7 +2639,7 @@
           "local": true,
           "signature": false,
           "address": "48 N Sandusky St, Delaware, OH 43015",
-          "website": "",
+          "website": "https://yokairamenbistro.kwickmenu.com",
           "blurb": "Cozy ramen spot with modern twists on classic bowls.",
           "price": "$$",
           "sourceUrl": "https://www.visitdelohio.com/destination/yokai-ramen-bistro/",
@@ -1463,7 +2651,7 @@
           "local": true,
           "signature": false,
           "address": "10 N Sandusky St, Delaware, OH 43015",
-          "website": "",
+          "website": "https://www.ohtyphoon.com",
           "blurb": "Sushi, Thai and Chinese dishes downtown.",
           "price": "$$",
           "sourceUrl": "https://www.visitdelohio.com/destination/typhoon-asian-fusion-bistro/",
@@ -1475,7 +2663,7 @@
           "local": true,
           "signature": false,
           "address": "191 S Sandusky St, Delaware, OH 43015",
-          "website": "",
+          "website": "https://cantonrestaurant.weebly.com",
           "blurb": "Szechuan and Cantonese dishes, dim sum and noodles.",
           "price": "$",
           "sourceUrl": "https://www.visitdelohio.com/destination/cantons-chinese-restaurant/",
@@ -1511,7 +2699,7 @@
           "local": true,
           "signature": false,
           "address": "186 S Sandusky St, Delaware, OH 43015",
-          "website": "",
+          "website": "https://www.victorstacoshopohio.com",
           "blurb": "Traditional Mexican taco shop.",
           "price": "$",
           "sourceUrl": "https://www.visitdelohio.com/destination/victors-taco-shop-delaware/",
@@ -1523,7 +2711,7 @@
           "local": true,
           "signature": false,
           "address": "34 S Sandusky St, Delaware, OH 43015",
-          "website": "",
+          "website": "https://www.espressoair.com",
           "blurb": "Specialty coffee and pastries.",
           "price": "$",
           "sourceUrl": "https://www.visitdelohio.com/destination/espresso-air-coffee-delaware/",
@@ -1535,7 +2723,7 @@
           "local": true,
           "signature": false,
           "address": "25 N Sandusky St, Delaware, OH 43015",
-          "website": "",
+          "website": "https://www.restorationbrewworx.com",
           "blurb": "Downtown brewpub.",
           "price": "$$",
           "sourceUrl": "https://www.visitdelohio.com/dine-like-a-local-up-scale-gastro-pub/",
@@ -1546,8 +2734,8 @@
           "category": "Mexican",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "33 Wootring St, Delaware, OH 43015",
+          "website": "https://vaquerorestaurant.com",
           "blurb": "Ohio Mexican restaurant chain.",
           "price": "$$",
           "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
@@ -1577,7 +2765,7 @@
           "local": true,
           "signature": false,
           "address": "",
-          "website": "",
+          "website": "https://greatergouda.com",
           "blurb": "Local cheese shop and eatery.",
           "price": "$",
           "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
@@ -1701,6 +2889,257 @@
           "blurb": "National wings and sports bar chain.",
           "price": "$$",
           "sourceUrl": "https://www.restaurantji.com/oh/delaware/buffalo-wild-wings-/",
+          "deals": []
+        },
+        {
+          "name": "Son of Thurman",
+          "category": "Burgers",
+          "local": true,
+          "signature": true,
+          "address": "5 N Sandusky St, Delaware, OH 43015",
+          "website": "https://sonofthurman.com",
+          "blurb": "Downtown offshoot of Columbus's Thurman Cafe, known for oversized burgers.",
+          "price": "$$",
+          "sourceUrl": "https://sonofthurman.com/location/",
+          "deals": []
+        },
+        {
+          "name": "Fresh Start Café & Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "24 N Sandusky St, Delaware, OH 43015",
+          "website": "https://www.freshstartcafeandbakery.com",
+          "blurb": "Made-from-scratch bakery and espresso bar serving breakfast and lunch.",
+          "price": "$",
+          "sourceUrl": "https://www.freshstartcafeandbakery.com/",
+          "deals": []
+        },
+        {
+          "name": "Amato's Woodfired Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "6 S Sandusky St, Delaware, OH 43015",
+          "website": "https://www.amatoswoodfiredpizza.com",
+          "blurb": "Wood-fired pizza restaurant in downtown Delaware.",
+          "price": "$$",
+          "sourceUrl": "https://www.mainstreetdelaware.com/places/united-states/ohio/delaware/dining-spirits/amatos-woodfired-pizza/",
+          "deals": []
+        },
+        {
+          "name": "The Backstretch",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "14 S Sandusky St, Delaware, OH 43015",
+          "website": "https://thebackstretchbar.com",
+          "blurb": "Downtown bar with a full kitchen menu and weekly features.",
+          "price": "$$",
+          "sourceUrl": "https://thebackstretchbar.com/menu/",
+          "deals": []
+        },
+        {
+          "name": "Mi Cerrito Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "19 E Winter St, Delaware, OH 43015",
+          "website": "https://www.micerrito.com",
+          "blurb": "Family Mexican restaurant known for quesabirrias, ceviche and fresh guacamole.",
+          "price": "$$",
+          "sourceUrl": "https://www.mainstreetdelaware.com/places/united-states/ohio/delaware/dining-spirits/mi-cerrito/",
+          "deals": []
+        },
+        {
+          "name": "Rosebud's",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "3 W Winter St, Delaware, OH 43015",
+          "website": "https://www.missrosebuds.com",
+          "blurb": "Downtown restaurant and bar with shareable starters, oysters and wings.",
+          "price": "$$$",
+          "sourceUrl": "https://www.missrosebuds.com/",
+          "deals": []
+        },
+        {
+          "name": "The Rutherford Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "9 E William St, Delaware, OH 43015",
+          "website": "https://www.therutherfordcafe.com",
+          "blurb": "Downtown Delaware cafe on William Street.",
+          "price": "$",
+          "sourceUrl": "https://www.mainstreetdelaware.com/places/united-states/ohio/delaware/dining-spirits/the-rutherford-cafe/",
+          "deals": []
+        },
+        {
+          "name": "Desi Tadka",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "44 S Sandusky St, Delaware, OH 43015",
+          "website": "https://desitadkadelaware.com",
+          "blurb": "North Indian restaurant with curries, naan, biryani, boxed lunches and wraps.",
+          "price": "$$",
+          "sourceUrl": "https://desitadkadelaware.com/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off pickup orders",
+              "details": "10% off takeout orders placed online through FoodALot with coupon code OFF10.",
+              "price": "10% off",
+              "studentOnly": false,
+              "sourceUrl": "https://desitadkadelaware.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$5 off dine-in dinner for two",
+              "details": "Dine-in only: spend $35 and get $5 off when you buy a second dinner entree.",
+              "price": "$5 off",
+              "studentOnly": false,
+              "sourceUrl": "https://desitadkadelaware.com/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Betty's Cupcakes",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "38 S Sandusky St, Delaware, OH 43015",
+          "website": "https://bettyscupcakes.godaddysites.com",
+          "blurb": "Downtown cupcake shop.",
+          "price": "$",
+          "sourceUrl": "https://bettyscupcakes.godaddysites.com/",
+          "deals": []
+        },
+        {
+          "name": "Bun's Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "14 W Winter St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Historic downtown Delaware restaurant and bakery on Winter Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitdelohio.com/destination/buns-restaurant/",
+          "deals": []
+        },
+        {
+          "name": "Choffey's Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "17 W Winter St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Downtown coffee shop on Winter Street.",
+          "price": "$",
+          "sourceUrl": "https://www.mainstreetdelaware.com/places/united-states/ohio/delaware/dining-spirits/choffeys-coffee/",
+          "deals": []
+        },
+        {
+          "name": "Coffeeology",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "43 N Sandusky St, Delaware, OH 43015",
+          "website": "https://www.facebook.com/coffeeologydelaware/",
+          "blurb": "Coffee shop on the Sandusky Street strip.",
+          "price": "$",
+          "sourceUrl": "https://www.mainstreetdelaware.com/places/united-states/ohio/delaware/dining-spirits/coffeeology/",
+          "deals": []
+        },
+        {
+          "name": "Ciao Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "2 N Sandusky St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Cafe at the corner of Sandusky and William streets.",
+          "price": "$",
+          "sourceUrl": "https://www.mainstreetdelaware.com/places/united-states/ohio/delaware/dining-spirits/ciao-cafe/",
+          "deals": []
+        },
+        {
+          "name": "Ohana Island Grill & Bar",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "14 W William St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Island-style grill and bar downtown.",
+          "price": "$$",
+          "sourceUrl": "https://www.mainstreetdelaware.com/places/united-states/ohio/delaware/dining-spirits/ohana-island-grill-bar/",
+          "deals": []
+        },
+        {
+          "name": "Las Miches Marisqueras",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "77 Lake St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Mexican seafood restaurant on Lake Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.mainstreetdelaware.com/places/united-states/ohio/delaware/dining-spirits/las-miches-marisqueras/",
+          "deals": []
+        },
+        {
+          "name": "Smash Shack Burgers, Dogs and Wings",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "81 Lake St, Delaware, OH 43015",
+          "website": "",
+          "blurb": "Counter spot for smash burgers, hot dogs and wings.",
+          "price": "$",
+          "sourceUrl": "https://www.mainstreetdelaware.com/places/united-states/ohio/delaware/dining-spirits/smash-shack-burgers-dogs-and-wings/",
+          "deals": []
+        },
+        {
+          "name": "Whit's Frozen Custard (Delaware)",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "31 N Sandusky St, Delaware, OH 43015",
+          "website": "https://www.whitsfrozencustard.com/ohio/delaware",
+          "blurb": "Central Ohio frozen custard shop on Sandusky Street.",
+          "price": "$",
+          "sourceUrl": "https://www.whitsfrozencustard.com/ohio/delaware",
+          "deals": []
+        },
+        {
+          "name": "Sand Bar Station",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "59 Potter St, Delaware, OH 43015",
+          "website": "https://sandbarstation.com",
+          "blurb": "Bar with sand volleyball courts, indoor and outdoor dining and a food truck depot.",
+          "price": "$$",
+          "sourceUrl": "https://sandbarstation.com/",
           "deals": []
         }
       ]

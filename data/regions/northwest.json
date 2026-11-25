@@ -23,7 +23,19 @@
           "blurb": "Campus-edge pizza pub famous for its stuffed breadsticks.",
           "price": "$$",
           "sourceUrl": "https://www.aaa.com/tripcanvas/restaurant/campus-pollyeyes-AA46740",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$14 large pizza Tuesday",
+              "details": "On Tuesdays get any large pizza for $14; excludes split pizzas, 6-item max.",
+              "price": "$14",
+              "studentOnly": false,
+              "sourceUrl": "https://campuspollyeyes.com/",
+              "sourceDate": "2026-11"
+            }
+          ]
         },
         {
           "name": "South Side 6",
@@ -156,7 +168,7 @@
           "local": true,
           "signature": true,
           "address": "206 N Main St, Bowling Green, OH 43402",
-          "website": "",
+          "website": "https://mrspots.com/",
           "blurb": "Downtown shop serving Philly cheesesteaks and wings since 1985.",
           "price": "$",
           "sourceUrl": "https://order.online/store/-26088210/",
@@ -168,11 +180,95 @@
           "local": true,
           "signature": false,
           "address": "163 S Main St, Bowling Green, OH 43402",
-          "website": "",
+          "website": "https://www.bgbecketts.com/",
           "blurb": "Downtown burger bar with around 20 specialty burgers and build-your-own options.",
           "price": "$$",
           "sourceUrl": "https://wtol.com/article/news/community/go-419/becketts-burger-bar-bowling-green-review/512-74a159c2-76b0-4a65-b559-839ff6bf163c",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$6 happy hour apps",
+              "details": "Happy hour food special: $6 appetizers 3-5 p.m. every day (exclusions apply).",
+              "price": "$6",
+              "studentOnly": false,
+              "sourceUrl": "https://www.bgbecketts.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Sun"
+              ],
+              "title": "$11.99 open-faced roast beef Sunday",
+              "details": "Slow-roasted beef served open-faced on thick toast with mashed potatoes and bourbon gravy for $11.99. Minimum beverage purchase required; some days not available for carry-out.",
+              "price": "$11.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.bgbecketts.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$14.99 surf & turf Monday",
+              "details": "8 oz steak with four fried shrimp, fries and coleslaw for $14.99. Minimum beverage purchase required; some days not available for carry-out.",
+              "price": "$14.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.bgbecketts.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$16.99 perch dinner Tuesday",
+              "details": "Half-pound golden fried perch with tartar sauce, waffle fries and coleslaw for $16.99. Minimum beverage purchase required; some days not available for carry-out.",
+              "price": "$16.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.bgbecketts.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$9.99 half rack ribs Wednesday",
+              "details": "Half rack of ribs $9.99 or full rack $15.99, served with fries and coleslaw. Minimum beverage purchase required; some days not available for carry-out.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.bgbecketts.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$10.99 steak dinner Thursday",
+              "details": "Half-pound steak dinner $10.99 or one-pound $15.99, served with fries and coleslaw. Minimum beverage purchase required; some days not available for carry-out.",
+              "price": "$10.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.bgbecketts.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "$20.99 prime rib Friday",
+              "details": "Prime rib dinner with two house sides and soup for $20.99, after 5 p.m. while supplies last. Minimum beverage purchase required; some days not available for carry-out.",
+              "price": "$20.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.bgbecketts.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
         },
         {
           "name": "SamB's Restaurant",
@@ -192,34 +288,10 @@
           "local": true,
           "signature": false,
           "address": "516 E Wooster St, Bowling Green, OH 43402",
-          "website": "https://order.spoton.com/BL-B99C-F1BB-8918",
+          "website": "https://www.pizzapub516.com/",
           "blurb": "Pizza pub across from campus in the former Myles Pizza Pub building.",
           "price": "$$",
           "sourceUrl": "https://www.yelp.com/biz/pizza-pub-516-bowling-green",
-          "deals": []
-        },
-        {
-          "name": "BG BurGers",
-          "category": "Burgers",
-          "local": true,
-          "signature": false,
-          "address": "1424 E Wooster St, Bowling Green, OH 43402",
-          "website": "https://www.toasttab.com/local/bg-burgers-1424-e-wooster-st/r-40b9da7f-c51d-4c4f-95b6-c1eed29681b2",
-          "blurb": "Burger counter on the east side of campus with chicken sandwiches, wraps and salads.",
-          "price": "$",
-          "sourceUrl": "https://www.toasttab.com/local/bg-burgers-1424-e-wooster-st/r-40b9da7f-c51d-4c4f-95b6-c1eed29681b2",
-          "deals": []
-        },
-        {
-          "name": "Reverend's Bar & Grill",
-          "category": "Bar & Grill",
-          "local": true,
-          "signature": false,
-          "address": "130 E Wooster St, Bowling Green, OH 43402",
-          "website": "https://reverendsbarandgrill.com",
-          "blurb": "Downtown gastropub with Latin and Southwest influences and hand-pattied burgers.",
-          "price": "$$",
-          "sourceUrl": "https://bbb.org/us/oh/bowling-green/category/restaurants",
           "deals": []
         },
         {
@@ -228,7 +300,7 @@
           "local": true,
           "signature": false,
           "address": "145 N Main St, Bowling Green, OH 43402",
-          "website": "",
+          "website": "https://www.facebook.com/docsbg/",
           "blurb": "Downtown saloon known for wings, sharing a building with Cameo Pizza.",
           "price": "$",
           "sourceUrl": "https://startpage.mapquest.com/us/ohio/docs-big-city-saloon-cameo-pizza-365081045",
@@ -252,7 +324,7 @@
           "local": true,
           "signature": true,
           "address": "174 S Main St, Bowling Green, OH 43402",
-          "website": "",
+          "website": "https://www.groundsforthought.com/",
           "blurb": "Downtown coffee shop and used bookstore.",
           "price": "$",
           "sourceUrl": "https://www.happycow.net/widget/north_america/usa/ohio/bowling_green/",
@@ -288,7 +360,7 @@
           "local": true,
           "signature": false,
           "address": "1616 E Wooster St #1, Bowling Green, OH 43402",
-          "website": "",
+          "website": "https://www.el-zarape.com/",
           "blurb": "Family-owned Mexican restaurant and bar east of campus.",
           "price": "$$",
           "sourceUrl": "https://www.bgsu.edu/dining-options",
@@ -300,7 +372,7 @@
           "local": true,
           "signature": false,
           "address": "176 E Wooster St, Bowling Green, OH 43402",
-          "website": "",
+          "website": "https://guajilloscocina.com/",
           "blurb": "Locally owned family Mexican restaurant on East Wooster.",
           "price": "$$",
           "sourceUrl": "https://startpage.mapquest.com/us/ohio/guajillos-cocina-mexicana-375256795",
@@ -316,7 +388,69 @@
           "blurb": "Ohio-based wings and sports bar chain near the I-75 end of Wooster.",
           "price": "$$",
           "sourceUrl": "https://www.mapquest.com/us/ohio/frickers-5630731",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "99-cent boneless wings Monday",
+              "details": "Frickin' Daily Deal: 99-cent boneless Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "price": "$0.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "99-cent wings Tuesday",
+              "details": "Frickin' Daily Deal: 99-cent Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "price": "$0.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$9.99 sirloin steak dinner Wednesday",
+              "details": "Frickin' Daily Deal: $9.99 sirloin steak dinner. Prices and participation vary by location; dine-in only.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$9.99 chicken chunks Thursday",
+              "details": "Frickin' Daily Deal: $9.99 Frickin' Chicken Chunks. Prices and participation vary by location; dine-in only.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Kids eat free",
+              "details": "Listed under every-day Frickin' Daily Deals: kids eat free. Prices and participation vary by location; dine-in only.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
         },
         {
           "name": "Jet's Pizza",
@@ -380,6 +514,416 @@
               "sourceDate": "2024"
             }
           ]
+        },
+        {
+          "name": "The R.O.W.",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "130 E Wooster St, Bowling Green, OH 43402",
+          "website": "https://www.facebook.com/therowbg/",
+          "blurb": "Downtown sports bar and grill (Rollin' on Wooster) with smashburgers, buffalo chicken tacos and TVs everywhere.",
+          "price": "$$",
+          "sourceUrl": "https://bgindependentmedia.org/?p=70379",
+          "deals": []
+        },
+        {
+          "name": "Easystreet Cafe",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "104 S Main St, Bowling Green, OH 43402",
+          "website": "https://www.facebook.com/EasystreetCafeBG/",
+          "blurb": "Bustling downtown cafe with burgers, a huge sandwich menu and classic American eats.",
+          "price": "$$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Pisanello's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "203 N Main St, Bowling Green, OH 43402",
+          "website": "https://www.bgpisanellos.com/",
+          "blurb": "Bowling Green staple since 1964 with dine-in, carry-out and free delivery including the BGSU campus.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Kabob It",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "132 E Wooster St, Bowling Green, OH 43402",
+          "website": "https://www.eatkabobit.com/",
+          "blurb": "Family-owned Mediterranean restaurant downtown.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "The Clay Pot Bistro",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "182 S Main St, Bowling Green, OH 43402",
+          "website": "https://www.theclaypotbistro.com/",
+          "blurb": "Downtown bistro with freshly made European entrees.",
+          "price": "$$$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "title": "$10 happy hour appetizers",
+              "details": "Happy hour Tuesday-Thursday 4-6 p.m.: $10 appetizers (rustic platter, whipped feta with French baguette, naan-bread pizza sampler); also $2 off cocktails and wine.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://www.theclaypotbistro.com/ourhappyhour",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "City Egg",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "121 S Main St, Bowling Green, OH 43402",
+          "website": "https://cityeggrestaurants.com/",
+          "blurb": "Fast-casual breakfast and lunch spot from the Ohio-based City Egg group.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "The Curry Lounge",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "434 E Wooster St, Suite B, Bowling Green, OH 43402",
+          "website": "https://thecurryloungebg.com/",
+          "blurb": "Indian restaurant near campus.",
+          "price": "$$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Novel Blends",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "116 S Main St, Bowling Green, OH 43402",
+          "website": "https://www.facebook.com/novelblends/",
+          "blurb": "Independent bookstore and coffee shop downtown.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Flatlands Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "138 N Main St, Bowling Green, OH 43402",
+          "website": "https://www.flatlandscoffee.com/",
+          "blurb": "Craft coffee roaster and cafe with pastries and breakfast sandwiches.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Sterling's Amish Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "133 E Wooster St, Bowling Green, OH 43402",
+          "website": "https://sterlingsamishdeli.square.site/",
+          "blurb": "Cozy deli with sandwiches, Amish meats, cheeses and pies from Ohio's Amish country.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "China Village",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "134 W Wooster St, Bowling Green, OH 43402",
+          "website": "https://www.facebook.com/pages/China-Village/113996428630981",
+          "blurb": "Chinese restaurant just off Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Old Town Buffet",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1216 N Main St #101, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Extensive Chinese buffet on North Main.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Ninja Hibachi Sushi Steak House",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1080 S Main St, Bowling Green, OH 43402",
+          "website": "https://www.ninjahibachibowlinggreen.com/",
+          "blurb": "Casual Japanese restaurant for hibachi and sushi at lunch and dinner.",
+          "price": "$$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Falcon Family Restaurant",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "1021 S Main St, Bowling Green, OH 43402",
+          "website": "https://www.facebook.com/FalconFamilyRestaurant/",
+          "blurb": "Family diner open for breakfast and lunch.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/dining-options",
+          "deals": []
+        },
+        {
+          "name": "Pagliai's",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "945 S Main St, Bowling Green, OH 43402",
+          "website": "https://www.pagliaisbg.com/",
+          "blurb": "Over 50 years of pizza, sandwiches and pasta on South Main.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Kermit's Family Restaurant",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "307 S Main St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Homey downtown diner serving breakfast all day.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Pho N Thai",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1616 E Wooster St #06, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Vietnamese and Thai spot in the plaza east of campus.",
+          "price": "$$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "Yala Kol",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "1616 E Wooster St #09, Bowling Green, OH 43402",
+          "website": "https://www.yalakol.com/",
+          "blurb": "Mediterranean food east of campus.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
+          "deals": []
+        },
+        {
+          "name": "The Sundae Station",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "1240 W Wooster St #B, Bowling Green, OH 43402",
+          "website": "https://facebook.com/thesundaestation/",
+          "blurb": "Ice cream shop on West Wooster.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/dining-options",
+          "deals": []
+        },
+        {
+          "name": "Sunset Bistro",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1220 W Wooster St A, Bowling Green, OH 43402",
+          "website": "https://www.facebook.com/people/Sunset-Bistro/100028741972304/",
+          "blurb": "Neighborhood bistro on West Wooster.",
+          "price": "$$",
+          "sourceUrl": "https://www.bgsu.edu/dining-options",
+          "deals": []
+        },
+        {
+          "name": "Lupita Mexican Taqueria",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "425 E Wooster St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Taqueria on East Wooster open late on weekends.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/dining-options",
+          "deals": []
+        },
+        {
+          "name": "Zane's Lebanese Grill",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "1424 E Wooster St, Bowling Green, OH 43402",
+          "website": "https://zanesgrill.com/",
+          "blurb": "Family-owned build-your-own Lebanese grill and coffee shop directly across from campus.",
+          "price": "$",
+          "sourceUrl": "https://bgindependentmedia.org/?p=118223",
+          "deals": []
+        },
+        {
+          "name": "Everyday People Cafe",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "309 S Main St D, Bowling Green, OH 43402",
+          "website": "https://www.facebook.com/EverydayCafeBG",
+          "blurb": "Breakfast and lunch cafe on South Main.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/dining-options",
+          "deals": []
+        },
+        {
+          "name": "Jac & Do's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "322 N Grove St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Pizza shop sharing a building with the Brewing Green bar.",
+          "price": "$",
+          "sourceUrl": "https://www.visitbgohio.org/restaurants/",
+          "deals": []
+        },
+        {
+          "name": "B Family Sushi and Asian Cuisine",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1234 N Main St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Sushi and Asian fusion on North Main.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitbgohio.org/restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Lola's Frozen Yogurt",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "183 S Main St, Bowling Green, OH 43402",
+          "website": "https://www.facebook.com/BGlolas/",
+          "blurb": "Downtown frozen yogurt shop.",
+          "price": "$",
+          "sourceUrl": "https://downtownbgohio.org/restaurants-%26-drinks",
+          "deals": []
+        },
+        {
+          "name": "Good Day Cat Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "124 W Wooster St, Bowling Green, OH 43402",
+          "website": "https://gooddaycatcafe.com/",
+          "blurb": "Cat cafe just west of Main Street.",
+          "price": "$",
+          "sourceUrl": "https://downtownbgohio.org/restaurants-%26-drinks",
+          "deals": []
+        },
+        {
+          "name": "Red Sky Pizza and Pints",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "110 N Main St, Bowling Green, OH 43402",
+          "website": "https://m.facebook.com/redskybg/",
+          "blurb": "Downtown pizza and beer spot.",
+          "price": "$",
+          "sourceUrl": "https://downtownbgohio.org/restaurants-%26-drinks",
+          "deals": []
+        },
+        {
+          "name": "Downtown Sports Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "162 N Main St, Bowling Green, OH 43402",
+          "website": "https://www.facebook.com/pg/uptowndowntownbg/about/?ref=page_internal",
+          "blurb": "Sports grill below the Uptown night club on North Main.",
+          "price": "$",
+          "sourceUrl": "https://downtownbgohio.org/restaurants-%26-drinks",
+          "deals": []
+        },
+        {
+          "name": "Campus Quarters",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "107 State St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Sports bar across from campus.",
+          "price": "$",
+          "sourceUrl": "https://www.visitbgohio.org/restaurants/nightlife/",
+          "deals": []
+        },
+        {
+          "name": "Ziggy's",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "300 E Wooster St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Bar on East Wooster between downtown and campus.",
+          "price": "$",
+          "sourceUrl": "https://www.visitbgohio.org/restaurants/nightlife/",
+          "deals": []
+        },
+        {
+          "name": "BG's Frosty Fare",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "990 W Poe Rd, Suite 14, Bowling Green, OH 43402",
+          "website": "https://bgsfrostyfare.com/",
+          "blurb": "Seasonal spot for ice cream and comfort food (closed for the winter until March 1).",
+          "price": "$",
+          "sourceUrl": "https://bgsfrostyfare.com/",
+          "deals": []
+        },
+        {
+          "name": "CJ's Sports Bar & Grille",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "Al-Mar Lanes, Bowling Green, OH",
+          "website": "",
+          "blurb": "Sports bar and grille inside the Al-Mar Lanes bowling alley.",
+          "price": "$",
+          "sourceUrl": "https://bgindependentmedia.org/?p=104301",
+          "deals": []
         }
       ]
     },
@@ -429,7 +973,7 @@
           "local": true,
           "signature": false,
           "address": "Thompson Student Union, University of Toledo, Toledo, OH",
-          "website": "",
+          "website": "https://www.phoeniciaoncampus.com/",
           "blurb": "Lebanese and Mediterranean restaurant inside the UToledo Student Union.",
           "price": "$$",
           "sourceUrl": "https://www.buckeyebroadband.com/blog/restaurants-near-toledo-ohio-university-of-toledo",
@@ -524,8 +1068,8 @@
           "category": "Asian",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "1440 Secor Rd, Toledo, OH 43607",
+          "website": "https://rice-blvd-llc.square.site/",
           "blurb": "Affordable student go-to tucked beside the campus Barnes & Noble.",
           "price": "$",
           "sourceUrl": "https://www.buckeyebroadband.com/blog/restaurants-near-toledo-ohio-university-of-toledo",
@@ -537,7 +1081,7 @@
           "local": true,
           "signature": false,
           "address": "3115 W Bancroft St, Toledo, OH 43606",
-          "website": "",
+          "website": "https://stubbornbrother.com/",
           "blurb": "Pizza bar just behind UToledo's Honors Academic Village.",
           "price": "$$",
           "sourceUrl": "https://www.buckeyebroadband.com/blog/restaurants-near-toledo-ohio-university-of-toledo",
@@ -548,7 +1092,7 @@
           "category": "Sandwiches & Subs",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "5243 Dorr St, Toledo, OH 43615",
           "website": "",
           "blurb": "Neighborhood cafe on Dorr Street praised by reviewers for its Reuben.",
           "price": "$$",
@@ -573,7 +1117,7 @@
           "local": true,
           "signature": false,
           "address": "526 Jackson St, Toledo, OH",
-          "website": "",
+          "website": "https://www.facebook.com/RomansDeliToledo/",
           "blurb": "Tiny downtown deli known for pastrami, corned beef and Reubens.",
           "price": "$",
           "sourceUrl": "https://toledocitypaper.com/?p=52415",
@@ -687,7 +1231,7 @@
           "local": true,
           "signature": true,
           "address": "2103 N Reynolds Rd, Toledo, OH 43615",
-          "website": "",
+          "website": "https://schmuckersrestaurant.com/",
           "blurb": "Family-run diner since 1948 known for around 20 varieties of homemade pie.",
           "price": "$",
           "sourceUrl": "https://mapquest.com/us/ohio/schmuckers-5659529",
@@ -698,8 +1242,8 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "https://bierstubetoledo.com",
+          "address": "5333 Monroe St, Toledo, OH 43623",
+          "website": "https://www.bierstubetoledo.com/",
           "blurb": "Toledo bar with a different dine-in food special every night until midnight.",
           "price": "$",
           "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
@@ -719,12 +1263,12 @@
               "days": [
                 "Tue"
               ],
-              "title": "$1.50 Beef Taco Tuesday",
-              "details": "$1.50 beef tacos and $1 chips and salsa. Daily specials run until midnight, dine-in only.",
-              "price": "$1.50",
+              "title": "Half-price tacos Tuesday",
+              "details": "Half-price The Joint tacos (orders of 3) and $1 tortilla chips & salsa on Tuesdays.",
+              "price": "50% off",
               "studentOnly": false,
-              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
-              "sourceDate": "2026-09"
+              "sourceUrl": "https://www.bierstubetoledo.com/",
+              "sourceDate": "2026-11"
             },
             {
               "days": [
@@ -752,12 +1296,29 @@
               "days": [
                 "Sun"
               ],
-              "title": "75-cent wings Sunday",
-              "details": "75-cent wings. Daily specials run until midnight, dine-in only.",
-              "price": "$0.75",
+              "title": "Half-price jumbo wings Sunday",
+              "details": "Half-price jumbo wings (orders of 6) on Sundays.",
+              "price": "50% off",
               "studentOnly": false,
-              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
-              "sourceDate": "2026-09"
+              "sourceUrl": "https://www.bierstubetoledo.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Free fries with check-in",
+              "details": "Daily deal: free fries with a social media check-in.",
+              "price": "Free",
+              "studentOnly": false,
+              "sourceUrl": "https://www.bierstubetoledo.com/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -767,7 +1328,7 @@
           "local": true,
           "signature": false,
           "address": "",
-          "website": "",
+          "website": "https://www.sidelinessportseatery.com/",
           "blurb": "Toledo-area sports bar chain known for wings, with weekday happy hour and daily specials.",
           "price": "$$",
           "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
@@ -782,12 +1343,104 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "Late night eats (8:30 p.m.-close)",
-              "details": "'Late night eats' from 8:30 p.m. to close with multiple menu items on sale; also a happy hour Monday-Friday 2-5 p.m. and daily specials.",
-              "price": "",
+              "title": "Late Night Eats: half-off pizza (8:30 p.m.-close)",
+              "details": "Every night 8:30 p.m.-close: half off any pizza and $6 select appetizers (fried pickles, mozzarella sticks, garlic dippers, pretzel bites, fried mushrooms).",
+              "price": "50% off",
               "studentOnly": false,
-              "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
-              "sourceDate": "2026-09"
+              "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$6 happy hour appetizers",
+              "details": "Happy hour 2-5 p.m. Monday-Friday: $6 select appetizers (fried pickles, mozzarella sticks, garlic dippers, pretzel bites, fried mushrooms).",
+              "price": "$6",
+              "studentOnly": false,
+              "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$5.99 smash burgers & $2.99 tacos Monday",
+              "details": "Monday special: $5.99 smash burgers and $2.99 beef or chicken soft tacos (a la carte); add thin and crispy fries for $2.99.",
+              "price": "$5.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "BOGO Fowl Balls Tuesday",
+              "details": "Tuesday special: buy one, get one free Fowl Balls.",
+              "price": "BOGO",
+              "studentOnly": false,
+              "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Kids eat free Wednesday",
+              "details": "Wednesday special: kids eat free with one adult purchase, or VIP members get $10 off a $20 minimum purchase.",
+              "price": "Free",
+              "studentOnly": false,
+              "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "99-cent wings Thursday",
+              "details": "Thursday special: $0.99 wings, 5-count minimum.",
+              "price": "$0.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "$17.99 fish & shrimp combo Friday",
+              "details": "Friday special: $17.99 fish and shrimp combo.",
+              "price": "$17.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Sat"
+              ],
+              "title": "$14.99 Saturday Sampler",
+              "details": "Saturday special: choose three items for $14.99.",
+              "price": "$14.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Sun"
+              ],
+              "title": "$9.99 Fowl Balls Sunday",
+              "details": "Sunday special: $9.99 Fowl Balls.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -796,8 +1449,8 @@
           "category": "Mexican",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "7742 W Bancroft St, Toledo, OH 43617",
+          "website": "https://venturasmexicanrestaurant.com/",
           "blurb": "Long-running Toledo Mexican restaurant known for margaritas.",
           "price": "$$",
           "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
@@ -826,8 +1479,8 @@
           "category": "Other",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "144 N Superior St, Toledo, OH 43604",
+          "website": "https://www.registrybistro.com/",
           "blurb": "Downtown Toledo bistro with a $5 \"Take Five\" menu midweek.",
           "price": "$$$",
           "sourceUrl": "https://toledocitypaper.com/food-drink/the-take-five-menu-at-registry-bistro/",
@@ -852,23 +1505,55 @@
           "category": "Coffee & Bakery",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "1440 Secor Rd Suite 120A, Toledo, OH 43607",
+          "website": "https://www.brewcoffeebartoledo.com/",
           "blurb": "Toledo coffee bar on the UToledo Rocket Card discount list.",
           "price": "$",
           "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
           "deals": [
             {
               "days": [
+                "Mon",
                 "Tue",
-                "Thu"
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
               ],
-              "title": "10% off with Rocket Card",
-              "details": "UToledo Rocket Card discount: 10% off total receipt on Tuesdays and Thursdays. Excludes alcohol and some other items.",
+              "title": "10% off beverages with Rocket Card",
+              "details": "UToledo Discount Program: 10% off beverages, dine-in only, with a Rocket Card.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
-              "sourceDate": ""
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "35% off for UToledo students on Mondays",
+              "details": "BREW's site: University of Toledo students get 35% off on Mondays with student ID.",
+              "price": "35% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.brewcoffeebartoledo.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off for UToledo students",
+              "details": "BREW's site: University of Toledo students get 10% off all other days with student ID.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.brewcoffeebartoledo.com/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -905,7 +1590,7 @@
           "category": "Pizza",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "28 S St Clair St, Toledo, OH 43604",
           "website": "https://homeslice419.com",
           "blurb": "Downtown Toledo pizza spot with dine-in pizza specials early in the week.",
           "price": "$",
@@ -945,6 +1630,928 @@
               "sourceDate": "2026-09"
             }
           ]
+        },
+        {
+          "name": "JoJo's Pizza On Campus",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "2645 Bancroft St, Toledo, OH 43607",
+          "website": "https://www.jojospizzaoncampus.com/",
+          "blurb": "Campus pizzeria for pizza, wings, subs and calzones.",
+          "price": "$",
+          "sourceUrl": "https://www.buckeyebroadband.com/blog/restaurants-near-toledo-ohio-university-of-toledo",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Wed"
+              ],
+              "title": "Half-off pizza Monday & Wednesday",
+              "details": "Buckeye Broadband's campus dining guide says JoJo's runs weekly specials like half-off pizza on Mondays and Wednesdays.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.buckeyebroadband.com/blog/restaurants-near-toledo-ohio-university-of-toledo",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Uncle John's Pancake House",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": true,
+          "address": "Next to Rocket Hall, University of Toledo, Toledo, OH",
+          "website": "https://unclejohnspancakehouse.com/",
+          "blurb": "Toledo breakfast institution since the 1960s for pancakes, eggs and lunch sandwiches right by campus.",
+          "price": "$",
+          "sourceUrl": "https://www.buckeyebroadband.com/blog/restaurants-near-toledo-ohio-university-of-toledo",
+          "deals": []
+        },
+        {
+          "name": "Al Smith's Place",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "3550 Executive Pkwy #11, Toledo, OH 43606",
+          "website": "https://alsmithstoledo.com/",
+          "blurb": "Diner serving breakfast all day, homemade soups and roast turkey dinners.",
+          "price": "$",
+          "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "15% off bill with Rocket Card",
+              "details": "UToledo Discount Program: 15% off your bill. Show your Rocket Card (UToledo students, employees and alumni).",
+              "price": "15% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Influence Café",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "3324 Secor Rd Ste. 2 & 3, Toledo, OH 43606",
+          "website": "https://www.influencecafe.co/",
+          "blurb": "Specialty cafe with coffee, loose-leaf Yemeni teas and bites.",
+          "price": "$",
+          "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with Rocket Card",
+              "details": "UToledo Discount Program: 10% off all orders. Show your Rocket Card (UToledo students, employees and alumni).",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Sahara Express Grill",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "2903 Dorr St Unit C, Toledo, OH 43607",
+          "website": "https://www.saharaexpressgrill.com/",
+          "blurb": "Middle Eastern and American grill on Dorr Street known for specialty shawarmas.",
+          "price": "$",
+          "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off bill with Rocket Card",
+              "details": "UToledo Discount Program: 10% off your bill. Show your Rocket Card (UToledo students, employees and alumni).",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Fusian",
+          "category": "Asian",
+          "local": false,
+          "signature": false,
+          "address": "3504 Secor Rd Ste. 305, Toledo, OH 43606",
+          "website": "https://fusian.com",
+          "blurb": "Build-your-own sushi roll and bowl chain.",
+          "price": "$",
+          "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with Rocket Card",
+              "details": "UToledo Discount Program: 10% off all orders. Show your Rocket Card (UToledo students, employees and alumni).",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Houston Hot Chicken",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "3305 W Central Ave Ste. A2-20, Toledo, OH 43606",
+          "website": "",
+          "blurb": "Nashville-style hot chicken chain.",
+          "price": "$",
+          "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "10% off with Rocket Card",
+              "details": "UToledo Discount Program: 10% off all food and beverage purchases. Show your Rocket Card (UToledo students, employees and alumni).",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "ZaZa Wood-Fired Pizza & Mediterranean",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "3550 Executive Pkwy, Toledo, OH 43606",
+          "website": "https://www.zazawoodfiredpizza.com/",
+          "blurb": "Wood-fired pizza and Mediterranean dishes, open evenings.",
+          "price": "$$",
+          "sourceUrl": "https://www.zazawoodfiredpizza.com/",
+          "deals": []
+        },
+        {
+          "name": "The Original Gino's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "3981 Monroe St, Toledo, OH 43606",
+          "website": "https://originalginos.com/",
+          "blurb": "Toledo pizza chain known for its sweet sauce and edge-to-edge caramelized cheese.",
+          "price": "$",
+          "sourceUrl": "https://originalginos.com/",
+          "deals": []
+        },
+        {
+          "name": "Doc Watson's",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1515 S Byrne Rd, Toledo, OH 43614",
+          "website": "https://www.docwatsonstoledo.com/",
+          "blurb": "Neighborhood bar and grill with daily and monthly food specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.docwatsonstoledo.com/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$3 tacos Tuesday",
+              "details": "Hard or soft shell tacos with beef, chicken or black bean, $3 each on Tuesdays.",
+              "price": "$3",
+              "studentOnly": false,
+              "sourceUrl": "https://www.docwatsonstoledo.com/docs-specials/daily-food-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$13.99 enchilada dinner Tuesday",
+              "details": "Two enchiladas (beef, chicken or black bean) with Mexican rice for $13.99.",
+              "price": "$13.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.docwatsonstoledo.com/docs-specials/daily-food-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed"
+              ],
+              "title": "Half-off kids meals",
+              "details": "Half off kids meals Monday-Wednesday; dine-in only, ages 12 and under.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.docwatsonstoledo.com/docs-specials/daily-food-specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Black Kite Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "2499 Collingwood Blvd, Toledo, OH 43620",
+          "website": "https://www.blackkitecoffee.com/",
+          "blurb": "Independent Old West End coffee house with locally roasted coffee, loose-leaf teas and savory pies.",
+          "price": "$",
+          "sourceUrl": "https://www.blackkitecoffee.com/",
+          "deals": []
+        },
+        {
+          "name": "Michael's Bar & Grill",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "901 Monroe St, Toledo, OH 43604",
+          "website": "https://www.michaelsbarandgrill.com/",
+          "blurb": "Family-owned since 1922, known for all-day breakfast specials and burgers.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Manhattan's Pub 'n Cheer",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "1516 Adams St, Toledo, OH 43604",
+          "website": "https://manhattanstoledo.com/",
+          "blurb": "Brick-walled Uptown pub with American fare, live music and a Sunday brunch buffet.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Ye Olde Durty Bird",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "2 S St Clair St, Toledo, OH 43604",
+          "website": "https://yeoldedurtybird.com/",
+          "blurb": "Tavern in an 1867 building with creative burgers, sandwiches and live music.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "The Adams Street Cafe",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "608 Adams St, Toledo, OH 43604",
+          "website": "https://www.theadamsstcafe.com/",
+          "blurb": "Lunch spot known for smoked meats, hearty sandwiches and vegan options.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Poco Loco",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "1809 Adams St, Toledo, OH 43604",
+          "website": "https://pocolocotoledo.com/",
+          "blurb": "Uptown Mexi-Cuban restaurant on Adams Street.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$11 Burrito Sancho Monday",
+              "details": "Burrito Sancho with shredded chicken or ground beef for $11, 4-9 p.m.",
+              "price": "$11",
+              "studentOnly": false,
+              "sourceUrl": "https://pocolocotoledo.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$3 street tacos Tuesday",
+              "details": "Street tacos $3 and Americano tacos $2.25 (except shrimp and vegan), 11 a.m.-9 p.m.",
+              "price": "$3",
+              "studentOnly": false,
+              "sourceUrl": "https://pocolocotoledo.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$14.75 lunch buffet Wednesday",
+              "details": "Lunch buffet for $14.75, 11 a.m.-2 p.m.",
+              "price": "$14.75",
+              "studentOnly": false,
+              "sourceUrl": "https://pocolocotoledo.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$9.75 Cuban sandwich Thursday",
+              "details": "Any Cuban sandwich for $9.75, 11 a.m.-9 p.m.",
+              "price": "$9.75",
+              "studentOnly": false,
+              "sourceUrl": "https://pocolocotoledo.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Fri",
+                "Sat"
+              ],
+              "title": "$2 off nachos supremos",
+              "details": "Nachos supremos $2 off: Friday 4-6 p.m. and Saturday noon-10 p.m.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://pocolocotoledo.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Focaccia's",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "333 N Summit St, Toledo, OH 43604",
+          "website": "https://focaccias419.com/",
+          "blurb": "Family-run downtown spot for breakfast, brunch, sandwiches and homemade soups.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Grumpy's",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "34 S Huron St, Toledo, OH 43604",
+          "website": "https://www.grumpys.net/",
+          "blurb": "Small lunch eatery famous for its Garbage Salad.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "PizzaPapalis",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "519 Monroe St, Toledo, OH 43604",
+          "website": "https://pizzapapalis.com/locations/toledo-ohio/",
+          "blurb": "Regional chain serving deep-dish and thin-crust pizza, sandwiches and pasta.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Kato Ramen",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "40 S St Clair St, Toledo, OH 43604",
+          "website": "https://katoramen.com/",
+          "blurb": "Ramen, sake and beer in a relaxed room with the motto 'Slurp Loud, Eat Fast'.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Papa Kato's Japanese Fried Chicken",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "30 S St Clair St, Toledo, OH 43604",
+          "website": "https://papakato.com/",
+          "blurb": "Fast-casual Japanese fried chicken from the Kengo family, open late.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Kengo Sushi & Yakitori",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "38 S St Clair St, Toledo, OH 43604",
+          "website": "",
+          "blurb": "Tiny 26-seat eatery known for omakase and fresh sushi.",
+          "price": "$$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Hummus Depot",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "337 N St Clair St, Toledo, OH 43604",
+          "website": "https://thehummusdepot.com/en-US",
+          "blurb": "Casual made-to-order Lebanese food and health-conscious plates.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Maumee Bay Brewing Company",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "27 Broadway St, Toledo, OH 43604",
+          "website": "https://mbaybrew.com/",
+          "blurb": "House beer, burgers and American fare in the historic Oliver House.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "The Blarney Irish Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "601 Monroe St, Toledo, OH 43604",
+          "website": "https://theblarneyirishpub.com/",
+          "blurb": "Irish pub near Fifth Third Field serving fish and chips and American favorites since 2006.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Table Forty 4",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "610 Monroe St, Toledo, OH 43604",
+          "website": "https://tableforty4.org/",
+          "blurb": "Restaurant and bar steps from Fifth Third Field and Huntington Center.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Ye Olde Cock N Bull",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "9 N Huron St, Toledo, OH 43604",
+          "website": "https://cocknbulltoledo.com/",
+          "blurb": "Upbeat sports tavern across from the ballpark with live local bands.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "2 beef tacos for $3 Tuesday",
+              "details": "Tequila, Taco & Trivia Tuesday: 2 beef tacos for $3 (trivia 6-8 p.m.).",
+              "price": "$3",
+              "studentOnly": false,
+              "sourceUrl": "https://cocknbulltoledo.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Leandro's Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "300 Madison Ave, Suite 100, Toledo, OH 43604",
+          "website": "https://www.leandrosmexicanrestaurantoh.com/",
+          "blurb": "Downtown spot for tacos, nachos and enchiladas.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Migo's",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "713 Monroe St, Toledo, OH 43604",
+          "website": "https://migostoledo.com/",
+          "blurb": "Margarita bar serving tacos and tapas.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Riverside BBQ Company",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "915 N Summit St, Toledo, OH 43604",
+          "website": "https://www.riversidebbq.company/",
+          "blurb": "Brisket, pork, lamb and chicken barbecue with live music.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$6 pulled pork sandwich Tuesday",
+              "details": "All day Tuesday: $6 pulled pork sandwich, or $10 with mac & cheese. Dine-in only.",
+              "price": "$6",
+              "studentOnly": false,
+              "sourceUrl": "https://www.riversidebbq.company/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Dave's Cosmic Subs",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "116 N Summit St, Toledo, OH 43604",
+          "website": "https://www.davescosmicsubs.com/",
+          "blurb": "Ohio-born sub shop with toasted subs, salads and vegetarian options.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "The Lucy",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "405 Madison Ave, Toledo, OH 43604",
+          "website": "https://www.thelucytoledo.com/",
+          "blurb": "Downtown restaurant and event space (formerly ICE Restaurant) open for weekday lunch.",
+          "price": "$$",
+          "sourceUrl": "https://www.thelucytoledo.com/weekly-lunch-features",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$10 weekly lunch features",
+              "details": "Rotating weekday lunch features, all $10 (for example a bacon & tomato melt with soup of the day); days can vary around holidays.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://www.thelucytoledo.com/weekly-lunch-features",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Souk Mediterranean Kitchen & Bar",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "135 S Huron St, Toledo, OH 43604",
+          "website": "https://soukkitchenbar.com/",
+          "blurb": "Modern Mediterranean restaurant in the Warehouse District.",
+          "price": "$$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Hannon's Block",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "619 Monroe St, Toledo, OH 43604",
+          "website": "https://www.hannonsblockrestaurant.com/",
+          "blurb": "American classics and craft cocktails in a historic space, with brunch.",
+          "price": "$$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "M'Osteria",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "611 Monroe St, Toledo, OH 43604",
+          "website": "https://mosteriatoledo.com/",
+          "blurb": "Warehouse-chic Italian with fancy pizzas and desserts.",
+          "price": "$$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Balance Pan-Asian Grille",
+          "category": "Healthy & Bowls",
+          "local": true,
+          "signature": false,
+          "address": "215 N Summit St, Toledo, OH 43604",
+          "website": "https://balancegrille.com/",
+          "blurb": "Toledo-born fast-casual spot for build-your-own bowls, tacos and bubble tea.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Quenched & Tempered",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1 S Erie St, Toledo, OH 43604",
+          "website": "https://quenchedandtempered.com/",
+          "blurb": "Brewery tavern with wraps, bowls and flatbreads plus trivia nights.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "The Garden by Poco Piatti",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "1521 Front St, Toledo, OH 43605",
+          "website": "https://thegardenbypocopiatti.com/",
+          "blurb": "Fast-casual Mediterranean in the Glass City Metropark Market Hall with wood-fired pizzas and bowls.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Coney Island Hot Dog",
+          "category": "Fast Food",
+          "local": true,
+          "signature": false,
+          "address": "430 N Superior St, Toledo, OH 43604",
+          "website": "https://www.facebook.com/ConeyIslandDowntownToledo/",
+          "blurb": "Classic counter for Coney dogs, hamburgers and gyros.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Sarnie's",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "614 Adams St, Toledo, OH 43604",
+          "website": "https://www.facebook.com/SarniesDowntown/",
+          "blurb": "Deli sandwiches and chopped salads on fresh-baked bread, open weekdays.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Lowrider Cafe",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "316 N Michigan St, Toledo, OH 43604",
+          "website": "https://www.facebook.com/lowridercafe316/",
+          "blurb": "Cali- and Texas-style Mexican with vegan options and breakfast, across from the library.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "First Base Lounge",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "20 N St Clair St, Toledo, OH 43604",
+          "website": "https://www.facebook.com/firstbase419/",
+          "blurb": "Locally owned bar with live music, wings and Detroit-style pizza.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "The Attic on Adams",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1701 Adams St, Toledo, OH 43604",
+          "website": "https://www.facebook.com/AtticonAdams/",
+          "blurb": "Rustic upstairs pub with pool tables, arcade games and creative pub fare.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Bronze Boar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "20 S Huron St, Toledo, OH 43604",
+          "website": "https://www.facebook.com/thebronzeboar/",
+          "blurb": "Sports bar with pool, pub fare and a rear patio.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Fricker's (Downtown)",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "19 N St Clair St, Toledo, OH 43604",
+          "website": "https://www.frickers.com/Locations/Fricker-s-Toledo",
+          "blurb": "Ohio-born wing sports bar overlooking Fifth Third Field.",
+          "price": "$$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "99-cent boneless wings Monday",
+              "details": "Frickin' Daily Deal: 99-cent boneless Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "price": "$0.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "99-cent wings Tuesday",
+              "details": "Frickin' Daily Deal: 99-cent Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "price": "$0.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$9.99 sirloin steak dinner Wednesday",
+              "details": "Frickin' Daily Deal: $9.99 sirloin steak dinner. Prices and participation vary by location; dine-in only.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$9.99 chicken chunks Thursday",
+              "details": "Frickin' Daily Deal: $9.99 Frickin' Chicken Chunks. Prices and participation vary by location; dine-in only.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Kids eat free",
+              "details": "Listed under every-day Frickin' Daily Deals: kids eat free. Prices and participation vary by location; dine-in only.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Grindhrs Coffee & Community",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "625 Adams St, Toledo, OH 43604",
+          "website": "https://www.grindhrs.com/",
+          "blurb": "Woman- and veteran-owned cafe with coffee, teas and ice cream.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Rustbelt Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "119 N Ontario St, Toledo, OH 43604",
+          "website": "https://rustbeltcoffee.com/",
+          "blurb": "Industrial-style coffee bar with lunch items and co-working space.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Maddie & Bella Coffee Roasters",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "44 S St Clair St, Toledo, OH 43604",
+          "website": "https://maddieandbella.com/",
+          "blurb": "Warehouse District roaster with creative themed coffee menus.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "House of Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "420 Madison Ave, Suite 110, Toledo, OH 43604",
+          "website": "https://www.hoctoledo.com/",
+          "blurb": "Coffee, refreshers, sandwiches and snacks in the Ohio Building.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Sweet Nate's Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "27 Broadway St, Toledo, OH 43604",
+          "website": "https://sweetnates.com/",
+          "blurb": "Vinyl-inspired coffee shop with made-to-order breakfast bagel sandwiches.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Earth Coffeehouse",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "1447 N Summit St, Toledo, OH 43604",
+          "website": "https://earth.tolhouse.com/",
+          "blurb": "Coffeehouse and cafe inside TolHouse in the Vistula district.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
+        },
+        {
+          "name": "Brew House Downtown",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "114 N Summit St, Toledo, OH 43604",
+          "website": "https://brewhousedowntown.square.site/",
+          "blurb": "Cozy Fort Industry Square coffee shop known for homemade cheesecake.",
+          "price": "$",
+          "sourceUrl": "https://downtowntoledo.org/explore/dine",
+          "deals": []
         }
       ]
     },
@@ -977,7 +2584,7 @@
           "local": true,
           "signature": false,
           "address": "224 N Main St, Findlay, OH 45840",
-          "website": "",
+          "website": "https://tacofiestahinojosaoh.com/",
           "blurb": "Downtown Findlay taco spot.",
           "price": "$",
           "sourceUrl": "https://visitfindlay.com/restaurantweek/taco-fiesta-hinojosa",
@@ -989,7 +2596,7 @@
           "local": true,
           "signature": true,
           "address": "600 S Main St, Findlay, OH 45840",
-          "website": "",
+          "website": "https://www.facebook.com/pages/Wilsons-Sandwich-Shop/1664395553786353",
           "blurb": "Downtown institution since 1936 known for square 'hamburgs' and frozen malts.",
           "price": "$",
           "sourceUrl": "https://www.mapquest.com/us/ohio/wilsons-sandwich-shop-6011908",
@@ -1013,7 +2620,7 @@
           "local": true,
           "signature": false,
           "address": "513 S Main St, Findlay, OH 45840",
-          "website": "",
+          "website": "https://www.mainstreetdeliarcade.com/",
           "blurb": "Downtown lunch deli.",
           "price": "$",
           "sourceUrl": "https://socialfindlay.com/?p=22378",
@@ -1025,7 +2632,7 @@
           "local": true,
           "signature": false,
           "address": "125 W Sandusky St, Findlay, OH 45840",
-          "website": "",
+          "website": "https://circleoffriendsfindlay.com/",
           "blurb": "Downtown Findlay restaurant listed in the Visit Findlay directory.",
           "price": "$$",
           "sourceUrl": "https://visitfindlay.com/places-to-go-in-northwest-ohio/downtown-new/local/page/2",
@@ -1049,8 +2656,8 @@
           "local": true,
           "signature": false,
           "address": "452 E Sandusky St, Findlay, OH 45840",
-          "website": "",
-          "blurb": "Findlay bar listed on the Visit Findlay bar-events calendar.",
+          "website": "https://www.findlayfern.com/",
+          "blurb": "Full-service bar and family-friendly restaurant known for its meatloaf sandwich and the Big T.",
           "price": "$",
           "sourceUrl": "https://visitfindlay.com/bar-events/",
           "deals": [
@@ -1075,6 +2682,17 @@
               "studentOnly": false,
               "sourceUrl": "https://visitfindlay.com/bar-events/",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Monday Pizza Night & Queen of Hearts",
+              "details": "Visit Findlay's weekly bar events list shows Pizza Night with Queen of Hearts on Mondays at 6 p.m.; no price stated.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://visitfindlay.com/bar-events/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -1083,8 +2701,8 @@
           "category": "Burgers",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "1801 Broad Ave, Findlay, OH 45840",
+          "website": "https://www.findlaybecketts.com/",
           "blurb": "Findlay outpost of the Bowling Green burger bar.",
           "price": "$$",
           "sourceUrl": "https://visitfindlay.com/restaurantweek/becketts-burger-bar/",
@@ -1142,9 +2760,9 @@
           "category": "Coffee & Bakery",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
-          "blurb": "Findlay cafe on the Visit Findlay list of Oiler student specials.",
+          "address": "408 S Main St, Findlay, OH 45840",
+          "website": "https://thebakerscafefindlay.com/",
+          "blurb": "Quaint downtown cafe serving coffee, breakfast sandwiches, paninis, wraps, soups and baked goods.",
           "price": "$",
           "sourceUrl": "https://visitfindlay.com/welcome-oiler-families/oiler-specials",
           "deals": [
@@ -1202,8 +2820,8 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": false,
-          "address": "213 E. Crawford St., Findlay, OH",
-          "website": "",
+          "address": "213 E Crawford St, Findlay, OH 45840",
+          "website": "https://www.findlaybrewing.com/",
           "blurb": "Downtown Findlay craft brewery with a kitchen.",
           "price": "$$",
           "sourceUrl": "https://findlayliving.com/guides/your-guide-to-happy-hour-in-findlay/",
@@ -1225,6 +2843,837 @@
               "sourceDate": ""
             }
           ]
+        },
+        {
+          "name": "Alexandria's",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "132 E Crawford St, Findlay, OH 45840",
+          "website": "https://www.alexandriasfindlay.com/",
+          "blurb": "Multi-level downtown restaurant and craft beer bar with live entertainment and duckpin bowling.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/alexandrias",
+          "deals": []
+        },
+        {
+          "name": "Archie's Drive-in",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "433 N Main St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/ilovearchies/",
+          "blurb": "Seasonal drive-in known for ice cream treats and shredded chicken sandwiches.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/archies-drive-in",
+          "deals": []
+        },
+        {
+          "name": "Asian Grill",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1813 Tiffin Ave, Findlay, OH 45840",
+          "website": "https://www.facebook.com/Asian-Grill-167548746592344/",
+          "blurb": "Japanese and Korean restaurant known for its sushi bar, dine-in or takeout.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/asian-grill",
+          "deals": []
+        },
+        {
+          "name": "Bee Tree Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "118 E Sandusky St, Findlay, OH 45840",
+          "website": "https://beetreebakery.com/",
+          "blurb": "Downtown bakery baking specialty cookies, cinnamon rolls and savory sausage rolls fresh daily.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/bee-tree-bakery",
+          "deals": []
+        },
+        {
+          "name": "Brats N' Tots",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "124 E Sandusky St, Findlay, OH 45840",
+          "website": "https://bratsntotsfindlay.com/",
+          "blurb": "Downtown counter spot for specialty brats, hot dogs, loaded tots and jumbo Bavarian pretzels.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/brats-n-tots",
+          "deals": []
+        },
+        {
+          "name": "Brew U Sports Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "316 N Main St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/Brew-U-Sports-Pub-192477457783721/",
+          "blurb": "Sports pub on North Main Street listed in Visit Findlay's dining directory.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/brew-u-sports-pub",
+          "deals": []
+        },
+        {
+          "name": "Cakes for Heaven's Sake",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "1201 N Main St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/CAKESFORHEAVENSSAKE/",
+          "blurb": "Bakery with grab-and-go cupcakes and homemade candies that rotate daily, plus custom cakes.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/cakes-for-heavens-sake",
+          "deals": []
+        },
+        {
+          "name": "Call of the Canyon",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "208 E Sandusky St, Findlay, OH 45840",
+          "website": "https://callofthecanyonfindlay.com/",
+          "blurb": "Southwest-meets-Midwest cafe known for sandwiches, mac and cheese, quesadillas and pies.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/call-of-the-canyon",
+          "deals": []
+        },
+        {
+          "name": "Campus Pollyeyes",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "339 S Blanchard St, Findlay, OH 45840",
+          "website": "https://campuspollyeyes.com",
+          "blurb": "Findlay location of the Bowling Green pizza pub famous for stuffed breadsticks.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/campus-pollyeyes",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$14 large pizza Tuesday",
+              "details": "On Tuesdays get any large pizza for $14; excludes split pizzas, 6-item max.",
+              "price": "$14",
+              "studentOnly": false,
+              "sourceUrl": "https://campuspollyeyes.com/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Casa Fiesta",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "2411 Tiffin Ave, Findlay, OH 45840",
+          "website": "https://casafiestaohoh.com/",
+          "blurb": "Family-owned Mexican restaurant with a full bar, open seven days a week.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/casa-fiesta",
+          "deals": []
+        },
+        {
+          "name": "China Rose Restaurant",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "2431 S Main St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/chinarosefindlay",
+          "blurb": "Chinese eat-in or carry-out on South Main Street.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/china-rose-restaurant",
+          "deals": []
+        },
+        {
+          "name": "Dark Horse Restaurant",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "4136 N Main St, Findlay, OH 45840",
+          "website": "https://darkhorsefindlay.com/",
+          "blurb": "Family-owned bar and grill serving breakfast, burgers, pasta, steak and Tex-Mex all day.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/dark-horse-restaurant",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$6.99 weekday lunch specials",
+              "details": "Weekday lunch specials 11 a.m.-2 p.m. Monday through Friday; lunch specials are $6.99 unless otherwise noted.",
+              "price": "$6.99",
+              "studentOnly": false,
+              "sourceUrl": "https://darkhorsefindlay.com/specials/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Doughtroit Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "908 Tiffin Ave, Findlay, OH 45840",
+          "website": "https://www.doughtroit.org/",
+          "blurb": "Locally owned pizza shop serving lunch and dinner and active in community events.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/doughtroit-pizza",
+          "deals": []
+        },
+        {
+          "name": "Dougie John's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "106 S Main St, Findlay, OH 45840",
+          "website": "https://www.dougiejohns.com/",
+          "blurb": "Downtown pizzeria with thin and 'fat' crust specialty pizzas, fold-ups, flatbreads and a patio.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/dougie-johns-pizza",
+          "deals": []
+        },
+        {
+          "name": "Fort Findlay Coffee & Doughnut Shoppe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "1016 Tiffin Ave, Findlay, OH 45840",
+          "website": "https://fortfindlaycoffee.com/",
+          "blurb": "Handmade doughnuts made fresh daily with freshly roasted coffee.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/fort-findlay-coffee-doughnut-shoppe",
+          "deals": []
+        },
+        {
+          "name": "Golden Flames Asian Bistro Express",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "2033 Tiffin Ave, Suite 2, Findlay, OH 45840",
+          "website": "https://www.facebook.com/GoldenFlamesAsianBistroExpress/",
+          "blurb": "Build-your-own-box Asian fusion and street food spot.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/golden-flames-asian-bistro-express",
+          "deals": []
+        },
+        {
+          "name": "Heavenly Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "1132 Tiffin Ave, Findlay, OH 45840",
+          "website": "https://www.heavenlypizzafindlay.com/",
+          "blurb": "Findlay staple since 1981 for carry-out and delivery pizza, subs and breadsticks.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/heavenly-pizza",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat"
+              ],
+              "title": "2 slices + 20 oz pop for $6",
+              "details": "Standing special: two slices of pizza with a 20 oz pop for $6. Closed Sundays.",
+              "price": "$6",
+              "studentOnly": false,
+              "sourceUrl": "https://www.heavenlypizzafindlay.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat"
+              ],
+              "title": "Half sub, chips + 20 oz pop for $9.95",
+              "details": "Standing special: half sub with chips and a 20 oz pop for $9.95. Closed Sundays.",
+              "price": "$9.95",
+              "studentOnly": false,
+              "sourceUrl": "https://www.heavenlypizzafindlay.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Hibachi Dash",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1042 Interstate Ct, Findlay, OH 45840",
+          "website": "https://www.hibachidashfindlay.com/",
+          "blurb": "Express hibachi meals and sushi made fast.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/hibachi-dash",
+          "deals": []
+        },
+        {
+          "name": "Hunan Gardens",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1949 E Tiffin Ave, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Full Chinese menu rounded out with a sushi bar.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/hunan-gardens",
+          "deals": []
+        },
+        {
+          "name": "Jack & Jin's Thai Restaurant",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1406 N Main St, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Thai restaurant on North Main Street.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/jack-s-thai-restaurant",
+          "deals": []
+        },
+        {
+          "name": "Jack B's",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "517 W Trenton Ave, Findlay, OH 45840",
+          "website": "https://jackbsfindlay.com/",
+          "blurb": "Tiny home-cooked takeout spot known for burgers, chicken chunks and giant gourmet buckeyes.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/jack-bs",
+          "deals": []
+        },
+        {
+          "name": "Japan West",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "406 S Main St, Findlay, OH 45840",
+          "website": "https://japanwestfindlay.com/",
+          "blurb": "Japanese-owned downtown steakhouse and sushi bar, a Findlay staple since 1994.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/japan-west",
+          "deals": []
+        },
+        {
+          "name": "JK Juices",
+          "category": "Healthy & Bowls",
+          "local": true,
+          "signature": false,
+          "address": "117 E Crawford St, Findlay, OH 45840",
+          "website": "https://jkjuices.com/",
+          "blurb": "Downtown juice bar with cold-pressed juices made from local and organic produce.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/jk-juices",
+          "deals": []
+        },
+        {
+          "name": "Joey Fratello's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "116 E Sandusky St, Findlay, OH 45840",
+          "website": "https://joeyfratellos.com/",
+          "blurb": "Downtown pizzeria with pizzas and calzones in traditional and unusual flavor combinations.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/joey-fratellos-pizza",
+          "deals": []
+        },
+        {
+          "name": "Jolly Dipper",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "510 E Lincoln St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/The-Jolly-Dipper-412494909504924",
+          "blurb": "Seasonal ice cream stand with soft serve, Dole Whip creations, sundaes and shakes.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/jolly-dipper",
+          "deals": []
+        },
+        {
+          "name": "La Charrita",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "3210 N Main St, Findlay, OH 45840",
+          "website": "https://www.lacharritafindlay.com/",
+          "blurb": "Authentic Mexican food with a traditional menu and a full cantina.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/la-charrita",
+          "deals": []
+        },
+        {
+          "name": "Lucky's Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "221 Crystal Ave, Findlay, OH 45840",
+          "website": "https://www.facebook.com/people/Luckys-Tavern-and-Grill/100063746391025/",
+          "blurb": "Locally owned tavern with a full kitchen, local bands and karaoke.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/luckys-tavern",
+          "deals": []
+        },
+        {
+          "name": "Mancy's Steakhouse",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "631 S Main St, Findlay, OH 45840",
+          "website": "https://www.hancockhotel.com/mancys-steakhouse/",
+          "blurb": "Steak and seafood restaurant inside the Hancock Hotel.",
+          "price": "$$$",
+          "sourceUrl": "https://visitfindlay.com/places/mancys-steakhouse",
+          "deals": []
+        },
+        {
+          "name": "Mi Tequila",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "1908 Tiffin Ave, Findlay, OH 45840",
+          "website": "https://www.facebook.com/profile.php?id=100068923675285",
+          "blurb": "Traditional Mexican dishes with lunch specials and a patio.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/mi-tequila",
+          "deals": []
+        },
+        {
+          "name": "Miller's Meats BBQ & Catering",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "400 Trenton Ave, Findlay, OH 45840",
+          "website": "https://www.facebook.com/MillersMeatsFindlay/",
+          "blurb": "Meat market with homemade BBQ, a full deli and daily grab-and-go meals.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/millers-meats-bbq-catering",
+          "deals": []
+        },
+        {
+          "name": "Miller's Root Beer & BBQ Stand",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "830 Lima Ave, Findlay, OH 45840",
+          "website": "https://www.facebook.com/profile.php?id=100092990118963",
+          "blurb": "Seasonal car-side root beer stand known for root beer floats and Spanish dogs.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/lima-avenue-rootbeer-stand",
+          "deals": []
+        },
+        {
+          "name": "Ming's Great Wall",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1535 Broad Ave, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Chinese dine-in or carry-out with a drive-thru for call-ahead orders.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/mings-great-wall",
+          "deals": []
+        },
+        {
+          "name": "Mon Coeur Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "119 E Crawford St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/findlaymoncoeurbakery/",
+          "blurb": "Full-service bakery and restaurant with breakfast, lunch, dinner and a full coffee bar.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/mon-coeur-bakery",
+          "deals": []
+        },
+        {
+          "name": "Mr. Twister Ice Cream & More",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "631 Trenton Ave, Findlay, OH 45840",
+          "website": "https://www.facebook.com/pages/Mr-Twister/408203555927455",
+          "blurb": "Seasonal ice cream stand with soft serve, Toft's hard-dip ice cream and a large food menu.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/mr-twister-ice-cream-more",
+          "deals": []
+        },
+        {
+          "name": "Nara Ramen",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "122 E Sandusky St, Findlay, OH 45840",
+          "website": "https://www.nararamenonline.com/",
+          "blurb": "Downtown ramen shop with rich-broth ramen bowls, rice bowls and fruity bubble tea.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/nara-ramen",
+          "deals": []
+        },
+        {
+          "name": "Oler's Bar & Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "708 Lima Ave, Findlay, OH 45840",
+          "website": "https://www.facebook.com/olersbarandgrill",
+          "blurb": "Local favorite for Tex-Mex and American food, best known for its margaritas.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/olers-bar-grill",
+          "deals": []
+        },
+        {
+          "name": "Paradise Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "542 Sixth St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/paradisepizza.findlay",
+          "blurb": "Carry-out and delivery specialty pizzas, oven-baked subs, salads and wraps.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/paradise-pizza",
+          "deals": []
+        },
+        {
+          "name": "Pilgrim Family Restaurant",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "1505 W Main Cross St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/PilgrimRestaurant/",
+          "blurb": "Family-owned diner by I-75 serving comfort meals for breakfast, lunch and dinner.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/pilgrim-family-restaurant",
+          "deals": []
+        },
+        {
+          "name": "Pressed Drive Thru Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "1101 W Main Cross St, Findlay, OH 45840",
+          "website": "https://pressedfindlay.com/",
+          "blurb": "Drive-thru coffee shop with handcrafted espresso drinks, paninis and breakfast items.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/pressed-drive-thru-coffee",
+          "deals": []
+        },
+        {
+          "name": "Preteroti's Spaghetti House",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1331 N Main St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/preterotisspaghettihouse",
+          "blurb": "Family-friendly Italian restaurant with homemade recipes for lunch and dinner.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/preterotis-spaghetti-house",
+          "deals": []
+        },
+        {
+          "name": "QQ Garden",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "113 S Main St, Findlay, OH 45840",
+          "website": "https://www.qqgardenfindlay.com/",
+          "blurb": "Downtown spot for classic Chinese dishes, dine-in, takeout or delivery.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/qq-garden",
+          "deals": []
+        },
+        {
+          "name": "Ralphie's Family Sports Eatery",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "730 W Trenton Ave, Findlay, OH 45840",
+          "website": "https://ralphies.com/",
+          "blurb": "Family sports eatery from the northwest Ohio regional chain.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/ralphies-family-sports-eatery",
+          "deals": []
+        },
+        {
+          "name": "Rancho Fiesta",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "1739 Tiffin Ave, Findlay, OH 45840",
+          "website": "https://www.facebook.com/profile.php?id=61551594040240",
+          "blurb": "Family Mexican restaurant serving freshly made dishes.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/rancho-fiesta",
+          "deals": []
+        },
+        {
+          "name": "Reading Grounds",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "1041 N Main St, Unit A, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Cozy coffee shop and used bookstore.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/reading-grounds",
+          "deals": []
+        },
+        {
+          "name": "Rossilli's Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "217 S Main St, Findlay, OH 45840",
+          "website": "https://www.rossillis.com/",
+          "blurb": "Downtown staple with a large Italian and American menu and favorite salads.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/rossillis",
+          "deals": []
+        },
+        {
+          "name": "Smoking BBQ",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "3050 S Main St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/profile.php?id=61563308947300",
+          "blurb": "Smoked ribs, chicken, pulled pork and brisket, burgers and 'porky tots', plus breakfast.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/smokin-buckeye-bbq",
+          "deals": []
+        },
+        {
+          "name": "Sol Luna by Ryse",
+          "category": "Healthy & Bowls",
+          "local": true,
+          "signature": false,
+          "address": "409 S Main St, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Smoothies, protein shakes and acai bowls served inside the Ryse studio downtown.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/sol-luna-by-ryse",
+          "deals": []
+        },
+        {
+          "name": "STIX Restaurant",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "110 E Sandusky St, Findlay, OH 45840",
+          "website": "https://www.stixfindlay.com/",
+          "blurb": "Downtown Asian fusion restaurant combining Korean and Mexican flavors.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/stix-restaurant",
+          "deals": []
+        },
+        {
+          "name": "Swan House Tea Room",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "225 W Sandusky St, Findlay, OH 45840",
+          "website": "https://swanhousetea.com/",
+          "blurb": "Tea room and coffee shop serving lunch and reservation-only proper teas.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/swan-house-tea-room",
+          "deals": []
+        },
+        {
+          "name": "Tavern at the Inn Restaurant & Lounge",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "200 E Main Cross St, Findlay, OH 45840",
+          "website": "https://findlayinn.com/the-tavern/",
+          "blurb": "Restaurant and lounge with a patio at the Findlay Inn.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/tavern-at-the-inn",
+          "deals": []
+        },
+        {
+          "name": "The Baking Company and Bread Kneads",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "510 S Blanchard Ave, Findlay, OH 45840",
+          "website": "https://thebakingcompanybreadkneads.square.site/",
+          "blurb": "Bakery and lunch counter with sandwiches, salads, daily lunch specials, cupcakes and fresh bread.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/bread-kneads",
+          "deals": []
+        },
+        {
+          "name": "The Bistro",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "407 S Main St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/FindlayBistro/",
+          "blurb": "Upscale downtown restaurant with an Italian-focused menu.",
+          "price": "$$$",
+          "sourceUrl": "https://visitfindlay.com/places/bistro-on-main",
+          "deals": []
+        },
+        {
+          "name": "The Upper Deck",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "132 E Crawford St, Findlay, OH 45840",
+          "website": "https://www.alexandriasfindlay.com/upper-deck",
+          "blurb": "Sports bar above Alexandria's with a full food menu, pool tables and shuffleboard.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/the-upper-deck",
+          "deals": []
+        },
+        {
+          "name": "Tiger Lily Coffee Company",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "114 E Sandusky St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/TigerLilyCoffeeCompany",
+          "blurb": "Coffee, tea and dirty soda shop from the STIX team with breakfast and lunch options.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/tiger-lily-coffee-company",
+          "deals": []
+        },
+        {
+          "name": "Tony's Restaurant",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "10280 US 224 W, Findlay, OH 45840",
+          "website": "https://tonysrestaurantfindlay.com/",
+          "blurb": "Findlay staple for award-winning ribs, homemade pizza and the Big Ben Burger.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/tonys-restaurant",
+          "deals": []
+        },
+        {
+          "name": "West End Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "506 W Main Cross St, Findlay, OH 45840",
+          "website": "https://www.westendtavernfindlay.com/",
+          "blurb": "Neighborhood bar and restaurant known for tenderloin sandwiches and craft beer.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/west-end-tavern",
+          "deals": []
+        },
+        {
+          "name": "West Main Crust",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "301 W Main Cross St, Findlay, OH 45840",
+          "website": "https://www.facebook.com/WestMainCrust/",
+          "blurb": "Carry-out pizza inside the downtown Great Scot using the legendary Rocking U recipes.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/places/west-main-crust",
+          "deals": []
+        },
+        {
+          "name": "Fricker's",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "1410 W Main Cross St, Findlay, OH 45840",
+          "website": "https://www.frickers.com",
+          "blurb": "Ohio-born sports bar chain known for its Frickin' Chicken wings.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/frickers",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "99-cent boneless wings Monday",
+              "details": "Frickin' Daily Deal: 99-cent boneless Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "price": "$0.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "99-cent wings Tuesday",
+              "details": "Frickin' Daily Deal: 99-cent Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "price": "$0.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$9.99 sirloin steak dinner Wednesday",
+              "details": "Frickin' Daily Deal: $9.99 sirloin steak dinner. Prices and participation vary by location; dine-in only.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$9.99 chicken chunks Thursday",
+              "details": "Frickin' Daily Deal: $9.99 Frickin' Chicken Chunks. Prices and participation vary by location; dine-in only.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Kids eat free",
+              "details": "Listed under every-day Frickin' Daily Deals: kids eat free. Prices and participation vary by location; dine-in only.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.frickers.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Scramblers",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "516 S Main St, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Downtown breakfast and lunch spot from the Toledo-based Scramblers group.",
+          "price": "$$",
+          "sourceUrl": "https://visitfindlay.com/places/scrambler-maries",
+          "deals": []
         }
       ]
     },

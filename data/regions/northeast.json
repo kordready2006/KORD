@@ -1100,6 +1100,65 @@
               "studentOnly": false,
               "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
               "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "$8.99 weekday breakfast special",
+              "details": "7-10:30 AM weekdays: 2 eggs, hash browns or home fries, a breakfast meat and toast, French toast or pancakes for $8.99 (subject to change).",
+              "price": "$8.99",
+              "studentOnly": false,
+              "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Flatbread Monday and $9.99 boneless wing basket",
+              "details": "Mondays: $2 off any hand-pressed flatbread, a 6-piece boneless wing basket with fries and coleslaw for $9.99, and the Reuben for $11.99 (subject to change).",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$13.99 BBQ ribs Wednesday",
+              "details": "St. Louis slow-smoked BBQ ribs with fries, garlic Texas toast and coleslaw for $13.99; 4-piece chicken tenders meal $10.99 (subject to change).",
+              "price": "$13.99",
+              "studentOnly": false,
+              "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$10.49 bacon cheeseburger Thursday",
+              "details": "1/3 lb bacon cheeseburger with fries for $10.49, limit 6 toppings (subject to change).",
+              "price": "$10.49",
+              "studentOnly": false,
+              "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "$14.99 Friday fish special",
+              "details": "Two pieces of hand-breaded fish, a biscuit and two sides for $14.99 (subject to change).",
+              "price": "$14.99",
+              "studentOnly": false,
+              "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -1128,6 +1187,21 @@
               "studentOnly": false,
               "sourceUrl": "https://barrio-tacos.com/locations/kent/",
               "sourceDate": "2026-06"
+            },
+            {
+              "days": [
+                "Sun",
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu"
+              ],
+              "title": "$5 late-night appetizers and nachos",
+              "details": "Sunday-Thursday 9 PM to close, bar area only: $5 appetizers and $5 ballpark or build-your-own nachos.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://barrio-tacos.com/specials/",
+              "sourceDate": "2026-11"
             }
           ]
         },
@@ -1249,7 +1323,7 @@
           "local": true,
           "signature": false,
           "address": "152 Franklin Ave, Kent, OH 44240",
-          "website": "",
+          "website": "https://overeasyatthedepot.com/",
           "blurb": "Breakfast and lunch in Kent's old train depot; Best Breakfast in Best of Kent 2026.",
           "price": "$$",
           "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g50499-d19436931-Reviews-Over_Easy_At_The_Depot-Kent_Ohio.html",
@@ -1261,7 +1335,7 @@
           "local": true,
           "signature": false,
           "address": "132 S Water St, Kent, OH 44240",
-          "website": "https://order.toasttab.com/online/water-street-tavern-kent",
+          "website": "https://www.waterstreettavern.com/",
           "blurb": "Downtown bar with jumbo wings and signature mac and cheese dishes.",
           "price": "$$",
           "sourceUrl": "https://www.yelp.com/biz/water-street-tavern-kent",
@@ -1313,7 +1387,58 @@
           "blurb": "Cafe on West Main Street listed in the Destination Kent dining guide.",
           "price": "$$",
           "sourceUrl": "https://destinationkent.com/kent-dining-2/",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Kids eat free Monday",
+              "details": "Weekday special: kids eat free all day on Mondays.",
+              "price": "Free kids meal",
+              "studentOnly": false,
+              "sourceUrl": "https://wildgoatscafe.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Burger special Tuesday",
+              "details": "Weekday special: burger special all day on Tuesdays (price not listed).",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://wildgoatscafe.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "Free small FizziMoo with any combo",
+              "details": "Fridays: free small FizziMoo drink with every combo or meal.",
+              "price": "Free drink",
+              "studentOnly": false,
+              "sourceUrl": "https://wildgoatscafe.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$13.99 pick-two lunch combo",
+              "details": "Any two of a half lunch sandwich, half salad or bowl of soup for $13.99, available all day every day.",
+              "price": "$13.99",
+              "studentOnly": false,
+              "sourceUrl": "https://wildgoatscafe.com/food-menu",
+              "sourceDate": "2026-11"
+            }
+          ]
         },
         {
           "name": "Dominick's",
@@ -1333,7 +1458,7 @@
           "local": true,
           "signature": false,
           "address": "163 W Erie St, Kent, OH 44240",
-          "website": "",
+          "website": "https://www.venicekent.com/",
           "blurb": "Downtown Kent bar listed by Destination Kent.",
           "price": "$",
           "sourceUrl": "https://destinationkent.com/kent-bars/",
@@ -1409,6 +1534,647 @@
           "blurb": "Burger chain on State Route 43.",
           "price": "$",
           "sourceUrl": "https://www.restaurantji.com/oh/kent/fast-food/",
+          "deals": []
+        },
+        {
+          "name": "157 Lounge",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "157 S Water St, Kent, OH 44240",
+          "website": "https://www.157lounge.com/",
+          "blurb": "Downtown nightlife spot with live music, daily drink specials and a sushi bar.",
+          "price": "$$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "A & J Ramen Spot",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "220 S Depeyster St Unit 1, Kent, OH 44240",
+          "website": "https://www.ajramenspot.com/",
+          "blurb": "Ramen shop a block off Main Street with online ordering.",
+          "price": "$$",
+          "sourceUrl": "https://www.ajramenspot.com/",
+          "deals": []
+        },
+        {
+          "name": "Alley Mac",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "154 E Main St (Acorn Alley), Kent, OH 44240",
+          "website": "https://www.alleymackent.com/",
+          "blurb": "Acorn Alley comfort-food counter known for specialty mac n' cheese bowls, plus pierogies, sandwiches and ice cream.",
+          "price": "$",
+          "sourceUrl": "https://www.alleymackent.com/",
+          "deals": []
+        },
+        {
+          "name": "Bell Tower Brewing Co.",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "310 Park Ave, Kent, OH 44240",
+          "website": "https://belltowerbrewing.com/",
+          "blurb": "Neighborhood craft brewery in a former church with a scratch kitchen and monthly free trivia.",
+          "price": "$$",
+          "sourceUrl": "https://belltowerbrewing.com/",
+          "deals": []
+        },
+        {
+          "name": "Belleria Pizza & Italian",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "135 E Erie St Suite 202, Kent, OH 44240",
+          "website": "https://www.belleriakent.com/",
+          "blurb": "Sit-down pizza and Italian restaurant downtown with a different carry-out or dine-in special each day.",
+          "price": "$$",
+          "sourceUrl": "https://www.belleriakent.com/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$7.99 12-inch pizza Tuesday",
+              "details": "12-inch traditional pizza for $7.99 on Tuesdays; toppings extra, no limit.",
+              "price": "$7.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.belleriakent.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$16.99 chicken parmesan dinner",
+              "details": "Wednesday special: chicken parmesan dinner with salad and dinner roll.",
+              "price": "$16.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.belleriakent.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$16.99 three-topping pizza Thursday",
+              "details": "12-inch traditional pizza with up to 3 toppings for $16.99 on Thursdays (no specialty pizzas; some toppings excluded).",
+              "price": "$16.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.belleriakent.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "Two 12-inch pizzas for $22.99",
+              "details": "Friday special: two 12-inch traditional pizzas for $22.99; toppings extra, no specialty pizzas.",
+              "price": "$22.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.belleriakent.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Sat"
+              ],
+              "title": "Two 1-topping pizzas for $25.99",
+              "details": "Saturday special: two 12-inch traditional pizzas with one topping each.",
+              "price": "$25.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.belleriakent.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Sun"
+              ],
+              "title": "$15.99 lasagna dinner Sunday",
+              "details": "Homemade lasagna with salad and dinner roll on Sundays.",
+              "price": "$15.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.belleriakent.com/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Bent Tree Coffee Roasters",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "313 N Water St, Kent, OH 44240",
+          "website": "https://www.benttreecoffee.com/",
+          "blurb": "Kent's local coffee roaster, roasting globally sourced beans on North Water Street.",
+          "price": "$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "Blind Squirrel Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "802 N Mantua St, Kent, OH 44240",
+          "website": "https://blindsquirrelpub.com/",
+          "blurb": "Neighborhood pub north of downtown serving pub food and drinks.",
+          "price": "$$",
+          "sourceUrl": "https://blindsquirrelpub.com/",
+          "deals": []
+        },
+        {
+          "name": "Board & Bevy",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "141 E Summit St, Kent, OH 44240",
+          "website": "https://www.boardandbevy.com/",
+          "blurb": "Board game lounge near campus with a food menu, drinks and a student discount on games.",
+          "price": "$",
+          "sourceUrl": "https://www.boardandbevy.com/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Early bird: no table fee",
+              "details": "No table fee during the first two hours of each day's opening.",
+              "price": "Free table",
+              "studentOnly": false,
+              "sourceUrl": "https://www.boardandbevy.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$2 off pretzels Wednesday",
+              "details": "$2 off pretzels on Wednesdays.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.boardandbevy.com/specials",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "College ID Night",
+              "details": "Thursdays: no table fee with the purchase of a food item from the Starters or Hot Vittles menu when you show a college ID.",
+              "price": "Free table",
+              "studentOnly": true,
+              "sourceUrl": "https://www.boardandbevy.com/specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Capybara Coffeehouse",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "427 Franklin Ave, Kent, OH 44240",
+          "website": "https://capybaracoffeehouse.toast.site/",
+          "blurb": "Coffeehouse and eatery on Franklin Avenue south of downtown.",
+          "price": "$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "Cleveland Bagel Cafe",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "436 E Main St, Kent, OH 44240",
+          "website": "https://www.clebagelkent.com/",
+          "blurb": "Bagel cafe on East Main Street across from campus.",
+          "price": "$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "Daisy Pops",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "154 N Water St, Kent, OH 44240",
+          "website": "https://daisypops.com/",
+          "blurb": "Cake pop shop on North Water Street with stock, seasonal and custom cake pops.",
+          "price": "$",
+          "sourceUrl": "https://daisypops.com/",
+          "deals": []
+        },
+        {
+          "name": "Erie Street Kitchen",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "163 W Erie St, Kent, OH 44240",
+          "website": "",
+          "blurb": "Kitchen operating inside the Venice Cafe building on West Erie Street.",
+          "price": "$$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "The Fruit Stand",
+          "category": "Healthy & Bowls",
+          "local": true,
+          "signature": false,
+          "address": "175 E Erie St, Kent, OH 44240",
+          "website": "https://thefruitstandohio.com/",
+          "blurb": "Ohio mini-chain serving fresh-cut fruit and build-your-own smoothie bowls.",
+          "price": "$",
+          "sourceUrl": "https://thefruitstandohio.com/",
+          "deals": []
+        },
+        {
+          "name": "Gigi's Ristorante & Market",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "210 S Depeyster St, Kent, OH 44240",
+          "website": "https://gigiskent.com/",
+          "blurb": "Scratch-made Italian restaurant and market downtown with housemade pastas and pizzas.",
+          "price": "$$$",
+          "sourceUrl": "https://gigiskent.com/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$10 burger Tuesdays",
+              "details": "Gigi's burgers are $10 all day on Tuesdays.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://gigiskent.com/menu/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Aperitivo happy hour: $14 pizzas",
+              "details": "Happy hour 3-6 PM (all night from 3 PM on Thursdays): all pizzas $14, plus $9 arancini, meatball and stuffed peppers and $6 garlic cheese bread.",
+              "price": "$14 pizzas",
+              "studentOnly": false,
+              "sourceUrl": "https://gigiskent.com/menu/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Good Golly",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "123 N Water St, Kent, OH 44240",
+          "website": "https://goodgollykent.com/",
+          "blurb": "Soft serve, dirty sodas and hot dogs on North Water Street.",
+          "price": "$",
+          "sourceUrl": "https://goodgollykent.com/",
+          "deals": []
+        },
+        {
+          "name": "Laziza Craft Kitchen",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "195 E Erie St, Kent, OH 44240",
+          "website": "https://yourlaziza.com/",
+          "blurb": "Mediterranean-leaning craft kitchen that was the first restaurant to open in Acorn Alley.",
+          "price": "$$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "Maddalena's",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "252 N Water St, Kent, OH 44240",
+          "website": "https://maddalenaskent.com/",
+          "blurb": "Walk-in-only Italian ristorante with wood-fired pizzas and cocktails, open for dinner Tuesday through Saturday.",
+          "price": "$$$",
+          "sourceUrl": "https://maddalenaskent.com/",
+          "deals": []
+        },
+        {
+          "name": "Nineteen10",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "215 S Depeyster St, Kent, OH 44240",
+          "website": "https://kentstatehotel.com/nineteen10/about-nineteen10",
+          "blurb": "Restaurant inside the Kent State University Hotel serving comfort food with local ingredients.",
+          "price": "$$",
+          "sourceUrl": "https://kentstatehotel.com/nineteen10/about-nineteen10",
+          "deals": []
+        },
+        {
+          "name": "North Water Brewing Co.",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "101 Crain Ave, Kent, OH 44240",
+          "website": "https://northwaterbrewing.com/",
+          "blurb": "Craft brewery by the river with Good Day Oven pizza served Wednesday through Saturday.",
+          "price": "$$",
+          "sourceUrl": "https://northwaterbrewing.com/",
+          "deals": []
+        },
+        {
+          "name": "Pacific East",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "100 E Main St, Kent, OH 44240",
+          "website": "https://www.pacificeastkentoh.com/",
+          "blurb": "Japanese and Malaysian restaurant on Main Street with sushi rolls and lunch specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.pacificeastkentoh.com/",
+          "deals": []
+        },
+        {
+          "name": "Rockne's",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1450 E Main St, Kent, OH 44240",
+          "website": "https://www.rocknes.com/",
+          "blurb": "Northeast Ohio casual eatery chain on East Main known for its Firestone salad.",
+          "price": "$$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "The Rolling Scones Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "154 Cherry St, Kent, OH 44240",
+          "website": "https://therollingsconesbakery.com/",
+          "blurb": "Music-themed bakery in University Plaza selling scones, macarons, cakes and pastries.",
+          "price": "$",
+          "sourceUrl": "https://therollingsconesbakery.com/",
+          "deals": []
+        },
+        {
+          "name": "Santo Matador Street Tacos",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "164 E Main St (Acorn Alley), Kent, OH 44240",
+          "website": "",
+          "blurb": "Street taco shop in Acorn Alley.",
+          "price": "$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "Scribbles Coffee Company",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "237 N Water St, Kent, OH 44240",
+          "website": "https://www.scribblescoffeecompany.com/",
+          "blurb": "Independent coffee shop on North Water Street that also delivers beans around Kent.",
+          "price": "$",
+          "sourceUrl": "https://www.scribblescoffeecompany.com/",
+          "deals": []
+        },
+        {
+          "name": "Steak-EEZ",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "120 S Water St, Kent, OH 44240",
+          "website": "https://www.steak-eez.com/",
+          "blurb": "Late-night cheesesteaks, loaded fry bowls, subs and hot dogs aimed at college students.",
+          "price": "$",
+          "sourceUrl": "https://www.steak-eez.com/",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "BOGO half-off fry bowls",
+              "details": "Mondays: buy one fry bowl (bacon, cheddar or buffalo chicken) and get the second for 50% off.",
+              "price": "50% off 2nd",
+              "studentOnly": false,
+              "sourceUrl": "https://www.steak-eez.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "2 chicken tender baskets for $15.99",
+              "details": "Tuesdays: two chicken tender baskets with dipping sauce for $15.99.",
+              "price": "$15.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.steak-eez.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$2 off Chicken Philly",
+              "details": "Save $2 on the Chicken Philly every Wednesday.",
+              "price": "$2 off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.steak-eez.com/",
+              "sourceDate": "2026-11"
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "2 specialty hot dogs for $9.99",
+              "details": "Thursdays: any two specialty hot dogs for $9.99.",
+              "price": "$9.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.steak-eez.com/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "ThunderStruck Donuts",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "830 N Mantua St, Kent, OH 44240",
+          "website": "https://thunderstruckdonut.com/",
+          "blurb": "Donut shop on North Mantua Street a few minutes from campus.",
+          "price": "$",
+          "sourceUrl": "https://thunderstruckdonut.com/",
+          "deals": []
+        },
+        {
+          "name": "Totally 80's Ice Ice Cream Shoppe",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "138 E Main St, Kent, OH 44240",
+          "website": "https://www.facebook.com/people/Totally-80s-Ice-Ice-Cream-Shoppe/61555647704413/",
+          "blurb": "1980s-themed ice cream shop on East Main Street downtown.",
+          "price": "$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "Tree City Coffee & Pastry",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "135 E Erie St, Kent, OH 44240",
+          "website": "https://rootedinkent.com/",
+          "blurb": "Downtown coffee and pastry shop brewing beans from Akron Coffee Roasters.",
+          "price": "$",
+          "sourceUrl": "https://rootedinkent.com/",
+          "deals": []
+        },
+        {
+          "name": "Troy Grille",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "118 E Main St Suite 1, Kent, OH 44240",
+          "website": "https://troygrille.com/",
+          "blurb": "Turkish street food downtown: kebabs, shawarma, kofte and vegetarian plates made on site daily.",
+          "price": "$$",
+          "sourceUrl": "https://troygrille.com/",
+          "deals": []
+        },
+        {
+          "name": "The River Merchant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "911 N Mantua St, Kent, OH 44240",
+          "website": "https://www.therivermerchantkent.com/",
+          "blurb": "Riverfront restaurant, craft bar and retail wine market.",
+          "price": "$$$",
+          "sourceUrl": "https://www.therivermerchantkent.com/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Weekday bar happy hour",
+              "details": "Happy hour specials at the bar Monday-Friday 4-6 PM (items not listed on the site).",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.therivermerchantkent.com/",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "The Nut House Pub & Grille",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "295 S Water St, Kent, OH 44240",
+          "website": "https://www.facebook.com/profile.php?id=61583831576767",
+          "blurb": "Pub and grille in the South Water Street plaza next to Barrio.",
+          "price": "$$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "The Pub in Kent",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "401 Franklin Ave, Kent, OH 44240",
+          "website": "https://www.thepubinkent.com/",
+          "blurb": "Neighborhood bar in a building dating to 1880, with live music and events.",
+          "price": "$",
+          "sourceUrl": "https://www.thepubinkent.com/",
+          "deals": []
+        },
+        {
+          "name": "D.P. Dough",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "295 S Water St, Kent, OH 44240",
+          "website": "https://www.dpdough.com/",
+          "blurb": "Late-night calzone chain.",
+          "price": "$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "Shah's Halal Food",
+          "category": "Mediterranean",
+          "local": false,
+          "signature": false,
+          "address": "100 E Erie St, Kent, OH 44240",
+          "website": "https://www.shahshalalfood.com/kent-oh/",
+          "blurb": "Halal cart-style chicken and gyro platters over rice.",
+          "price": "$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "Insomnia Cookies",
+          "category": "Dessert & Ice Cream",
+          "local": false,
+          "signature": false,
+          "address": "295 S Water St, Kent, OH 44240",
+          "website": "https://insomniacookies.com/",
+          "blurb": "Late-night warm cookie chain.",
+          "price": "$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "Jimmy John's",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "165 E Main St, Kent, OH 44240",
+          "website": "https://www.jimmyjohns.com/",
+          "blurb": "Sub sandwich chain downtown.",
+          "price": "$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
+          "deals": []
+        },
+        {
+          "name": "Buffalo Wild Wings",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "176 E Main St, Kent, OH 44240",
+          "website": "https://www.buffalowildwings.com/",
+          "blurb": "Wings and sports bar chain downtown.",
+          "price": "$$",
+          "sourceUrl": "https://mainstreetkent.org/eat-drink-shop/eat-drink/",
           "deals": []
         }
       ]
