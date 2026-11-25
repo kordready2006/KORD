@@ -1774,6 +1774,966 @@
    }
   ]
  },
+ "oxford|Krishna": {
+  "source": "https://oxfordkrishna.com/store/",
+  "items": [
+   {
+    "name": "Chicken Shahi Korma",
+    "price": "$16.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Curry",
+    "price": "$15.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Egg Curry",
+    "price": "$17.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Jalfrezi",
+    "price": "$15.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken With Vegetables",
+    "price": "$15.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Dansik",
+    "price": "$15.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Tikka Masala",
+    "price": "$16.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Tikka Masala(Special)",
+    "price": "$18.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Tikka Saag",
+    "price": "$16.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Tikka Saag(Special)",
+    "price": "$18.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Saag",
+    "price": "$16.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Matar",
+    "price": "$15.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Makhani Special",
+    "price": "$18.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Makhani (Butter Chicken)",
+    "price": "$16.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Vindaloo",
+    "price": "$15.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Chicken Mushroom",
+    "price": "$16.95",
+    "section": "Chicken"
+   },
+   {
+    "name": "Malai Kofta",
+    "price": "$13.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Navratan Korma",
+    "price": "$15.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Chana Masala",
+    "price": "$13.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Aloo Gobhi",
+    "price": "$14.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Mushroom Matar",
+    "price": "$13.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Saag Paneer (Special)",
+    "price": "$15.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Vegetable Jalfrezi",
+    "price": "$13.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Dal Makhani",
+    "price": "$13.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Matar Paneer",
+    "price": "$13.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Saag Paneer",
+    "price": "$14.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Saag Choley",
+    "price": "$13.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Aloo Saag",
+    "price": "$13.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Paneer Makhani",
+    "price": "$13.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Mushroom Masala",
+    "price": "$14.95",
+    "section": "Vegetarian"
+   },
+   {
+    "name": "Lamb Bhuna",
+    "price": "$16.95",
+    "section": "Lamb"
+   },
+   {
+    "name": "Bhindi Gosht",
+    "price": "$17.95",
+    "section": "Lamb"
+   },
+   {
+    "name": "Lamb Sabji",
+    "price": "$16.95",
+    "section": "Lamb"
+   },
+   {
+    "name": "Lamb Do Piazza",
+    "price": "$16.95",
+    "section": "Lamb"
+   },
+   {
+    "name": "Lamb Dal",
+    "price": "$16.95",
+    "section": "Lamb"
+   },
+   {
+    "name": "Lamb Mushroom",
+    "price": "$16.95",
+    "section": "Lamb"
+   },
+   {
+    "name": "Lamb Vindaloo",
+    "price": "$16.95",
+    "section": "Lamb"
+   },
+   {
+    "name": "Lamb Korma",
+    "price": "$16.95",
+    "section": "Lamb"
+   },
+   {
+    "name": "Paneer Tikka",
+    "price": "$21.95",
+    "section": "Tandoori Specialties"
+   },
+   {
+    "name": "Chicken Tandoori",
+    "price": "$20.95",
+    "section": "Tandoori Specialties"
+   },
+   {
+    "name": "Special Biriyani",
+    "price": "$20.95",
+    "section": "Rice Specialties"
+   },
+   {
+    "name": "Shrimp Fish Biriyani",
+    "price": "$18.95",
+    "section": "Rice Specialties"
+   },
+   {
+    "name": "Lamb Biriyani",
+    "price": "$17.95",
+    "section": "Rice Specialties"
+   },
+   {
+    "name": "Chicken Biryani",
+    "price": "$16.95",
+    "section": "Rice Specialties"
+   },
+   {
+    "name": "Saag Biriyani",
+    "price": "$15.95",
+    "section": "Rice Specialties"
+   },
+   {
+    "name": "Vegetable Biriyani",
+    "price": "$15.95",
+    "section": "Rice Specialties"
+   },
+   {
+    "name": "Bassi Special",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Tikka",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mixed Platter",
+    "price": "$10.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Special Vegetable Samosas",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Vegetarian Combo Platter",
+    "price": "$9.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Pakoras",
+    "price": "$8.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Paneer Pakoras",
+    "price": "$8.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Vegetable Pakoras",
+    "price": "$7.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Vegetable Samosas",
+    "price": "$5.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Aloo Tikki",
+    "price": "$5.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Papadam",
+    "price": "$3.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Onion Nan",
+    "price": "$4.95",
+    "section": "Breads"
+   },
+   {
+    "name": "Roti",
+    "price": "$3.95",
+    "section": "Breads"
+   },
+   {
+    "name": "Bhatura",
+    "price": "$4.95",
+    "section": "Breads"
+   },
+   {
+    "name": "Nan",
+    "price": "$3.95",
+    "section": "Breads"
+   },
+   {
+    "name": "Garlic Nan",
+    "price": "$4.95",
+    "section": "Breads"
+   },
+   {
+    "name": "Paratha",
+    "price": "$4.95",
+    "section": "Breads"
+   },
+   {
+    "name": "Aloo Paratha",
+    "price": "$4.95",
+    "section": "Breads"
+   },
+   {
+    "name": "Poori",
+    "price": "$4.95",
+    "section": "Breads"
+   },
+   {
+    "name": "Aloo Nan",
+    "price": "$4.95",
+    "section": "Breads"
+   },
+   {
+    "name": "Bullet Naan",
+    "price": "$5.95",
+    "section": "Breads"
+   },
+   {
+    "name": "Shrimp Do Piazza",
+    "price": "$16.95",
+    "section": "Seafood"
+   },
+   {
+    "name": "Shrimp Curry",
+    "price": "$17.95",
+    "section": "Seafood"
+   },
+   {
+    "name": "Fish Curry",
+    "price": "$17.95",
+    "section": "Seafood"
+   },
+   {
+    "name": "Shrimp Vindaloo",
+    "price": "$17.95",
+    "section": "Seafood"
+   },
+   {
+    "name": "Fish Vindaloo",
+    "price": "$17.95",
+    "section": "Seafood"
+   },
+   {
+    "name": "Shrimp Saag",
+    "price": "$17.95",
+    "section": "Seafood"
+   },
+   {
+    "name": "Rasgulla",
+    "price": "$2.95",
+    "section": "Desserts"
+   },
+   {
+    "name": "Gulab Jamun",
+    "price": "$2.95",
+    "section": "Desserts"
+   },
+   {
+    "name": "Mango Ice Cream",
+    "price": "$3.95",
+    "section": "Desserts"
+   },
+   {
+    "name": "Mango Lassi",
+    "price": "$4.95",
+    "section": "Beverages"
+   },
+   {
+    "name": "Sweet Rose Lassi",
+    "price": "$4.95",
+    "section": "Beverages"
+   },
+   {
+    "name": "Salty Lassi",
+    "price": "$4.95",
+    "section": "Beverages"
+   },
+   {
+    "name": "Chilled Rose Milk",
+    "price": "$4.95",
+    "section": "Beverages"
+   }
+  ]
+ },
+ "oxford|Oxford Sushi King": {
+  "source": "https://oxfordsushiking.com/food-menu",
+  "items": [
+   {
+    "name": "Rainbow Roll (8pc)",
+    "price": "$16.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Volcano Roll (8pc)",
+    "price": "$14.50",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Scallop Roll (8pc)",
+    "price": "$16.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Crunch Roll (8pc)",
+    "price": "$15.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Crazy Roll (8pc)",
+    "price": "$15.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Double Dragon Roll (8pc)",
+    "price": "$16.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Shrimp Crunch (8pc)",
+    "price": "$15.50",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Night Time Roll (8pc)",
+    "price": "$15.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Fire Roll (8pc)",
+    "price": "$15.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Ohio Roll (8pc)",
+    "price": "$14.99",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Oxford Roll (8pc)",
+    "price": "$16.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Caterpillar Roll (8pc)",
+    "price": "$15.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "American Roll (10pc)",
+    "price": "$15.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Dragon Roll (8pc)",
+    "price": "$15.50",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Jalapeño Roll (8pc)",
+    "price": "$16.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Miami Roll (8pc)",
+    "price": "$16.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Godzilla Roll (10pc)",
+    "price": "$16.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "King Deluxe (8pc)",
+    "price": "$16.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Crispy Jalapeño Roll (8pc)",
+    "price": "$15.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Crispy Onion (8pc)",
+    "price": "$15.00",
+    "section": "Special Premium Rolls"
+   },
+   {
+    "name": "Avocado Roll (6pc)",
+    "price": "$6.00",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Spicy Avocado Shrimp Tempura Roll (8pc)",
+    "price": "$8.00",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Cucumber Roll (6pc)",
+    "price": "$6.00",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Spicy Cucumber Roll (8pc)",
+    "price": "$7.50",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Tuna Roll (6pc)",
+    "price": "$6.50",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Spicy Tuna Roll (6pc)",
+    "price": "$8.00",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Salmon Roll (6pc)",
+    "price": "$6.50",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Spicy Salmon Roll (6pc)",
+    "price": "$7.00",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Yellowtail Roll",
+    "price": "$6.50",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Spicy Yellowtail Roll (6pc)",
+    "price": "$7.00",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "California Roll (8pc)",
+    "price": "$7.00",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Spicy California Roll",
+    "price": "$7.25",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Avocado Salmon Roll (8pc)",
+    "price": "$7.50",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Avocado Tuna Roll (8pc)",
+    "price": "$8.00",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Philly Roll (8pc)",
+    "price": "$7.75",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Eel Roll (6pc)",
+    "price": "$7.00",
+    "section": "Regular Rolls"
+   },
+   {
+    "name": "Spicy Bokum",
+    "price": "$15.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Lo Mein Noodles / Spicy Lo Mein Noodles",
+    "price": "$12.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Rock Salt",
+    "price": "$16.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Singapore Noodles / Curry Singapore Noodles",
+    "price": "$14.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Yakisoba",
+    "price": "$13.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "B.B.Q Fry (Gangjung)",
+    "price": "$15.50",
+    "section": "Entrees"
+   },
+   {
+    "name": "DolSot Bibimbap",
+    "price": "$13.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Katsu",
+    "price": "$15.50",
+    "section": "Entrees"
+   },
+   {
+    "name": "Pad Thai",
+    "price": "$14.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Teriyaki",
+    "price": "$16.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Fried Rice / Curry Fried Rice",
+    "price": "$13.50",
+    "section": "Entrees"
+   },
+   {
+    "name": "Bul Go Gi",
+    "price": "$17.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Sweet & Sour",
+    "price": "$16.00",
+    "section": "Entrees"
+   },
+   {
+    "name": "Hawaiian Poke Bowl",
+    "price": "$13.00",
+    "section": "Signature Poke"
+   },
+   {
+    "name": "Speedway Poke Bowl",
+    "price": "$12.00",
+    "section": "Signature Poke"
+   },
+   {
+    "name": "Vegan Poke Bowl",
+    "price": "$11.00",
+    "section": "Signature Poke"
+   },
+   {
+    "name": "Miami Poke Bowl",
+    "price": "$12.00",
+    "section": "Signature Poke"
+   },
+   {
+    "name": "King Poke Bowl",
+    "price": "$13.00",
+    "section": "Signature Poke"
+   },
+   {
+    "name": "The Perfect Poke Bowl",
+    "price": "$12.00",
+    "section": "Signature Poke"
+   },
+   {
+    "name": "Steamed Dumpling (6pc)",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Edamame Steamed Soy Beans",
+    "price": "$6.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Spring Roll (2pc)",
+    "price": "$4.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Pork Egg Roll (2pc)",
+    "price": "$4.75",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Lettuce",
+    "price": "$8.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Gyoza (6pc)",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Shrimp Shumai (6pc)",
+    "price": "$6.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Tempura Shrimp (5pc)",
+    "price": "$8.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Tempura Veggie",
+    "price": "$7.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Calamari",
+    "price": "$8.25",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Green Beans",
+    "price": "$8.25",
+    "section": "Appetizers"
+   },
+   {
+    "name": "French Fries",
+    "price": "$5.00",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Sunday Morning Roll (8pc)",
+    "price": "$10.00",
+    "section": "Deep Fried Tempura Rolls"
+   },
+   {
+    "name": "Salmon Tempura Roll (8pc)",
+    "price": "$9.00",
+    "section": "Deep Fried Tempura Rolls"
+   },
+   {
+    "name": "Tempura Jalapeño Roll (10pc)",
+    "price": "$13.00",
+    "section": "Deep Fried Tempura Rolls"
+   },
+   {
+    "name": "Spicy Crab Tempura Roll (6pc)",
+    "price": "$8.75",
+    "section": "Deep Fried Tempura Rolls"
+   },
+   {
+    "name": "Veggie Tempura Roll (10pc)",
+    "price": "$12.00",
+    "section": "Deep Fried Tempura Rolls"
+   },
+   {
+    "name": "Miso Soup",
+    "price": "$3.99",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "Dumpling Soup",
+    "price": "$6.00",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "Kimchi Soup",
+    "price": "$5.50",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "Spicy Ramen Soup",
+    "price": "$7.99",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "House Salad",
+    "price": "$4.00",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "Spicy Crab Salad",
+    "price": "$7.50",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "Kani Salad",
+    "price": "$7.00",
+    "section": "Soup & Salad"
+   },
+   {
+    "name": "Seaweed Salad",
+    "price": "$7.00",
+    "section": "Soup & Salad"
+   }
+  ]
+ },
+ "oxford|Kofenya": {
+  "source": "https://www.kofenyacoffee.com/menu",
+  "items": [
+   {
+    "name": "Diamond Cutter",
+    "price": "",
+    "section": "Drinks"
+   },
+   {
+    "name": "Gold Digger",
+    "price": "",
+    "section": "Drinks"
+   },
+   {
+    "name": "Milky Way",
+    "price": "",
+    "section": "Drinks"
+   },
+   {
+    "name": "Mocha",
+    "price": "",
+    "section": "Drinks"
+   },
+   {
+    "name": "Mudslide",
+    "price": "",
+    "section": "Drinks"
+   },
+   {
+    "name": "Nutty Irishman",
+    "price": "",
+    "section": "Drinks"
+   },
+   {
+    "name": "Zebra",
+    "price": "",
+    "section": "Drinks"
+   },
+   {
+    "name": "Cafe Au Lait",
+    "price": "",
+    "section": "Drinks"
+   },
+   {
+    "name": "Brewed Coffee",
+    "price": "",
+    "section": "Drinks"
+   },
+   {
+    "name": "Americano",
+    "price": "",
+    "section": "Espresso Drinks"
+   },
+   {
+    "name": "Cappuccino",
+    "price": "",
+    "section": "Espresso Drinks"
+   },
+   {
+    "name": "Espresso",
+    "price": "",
+    "section": "Espresso Drinks"
+   },
+   {
+    "name": "Latte",
+    "price": "",
+    "section": "Espresso Drinks"
+   },
+   {
+    "name": "Iced Latte",
+    "price": "",
+    "section": "Espresso Drinks"
+   },
+   {
+    "name": "Apple Cider",
+    "price": "",
+    "section": "Tea & Others"
+   },
+   {
+    "name": "Chai Latte",
+    "price": "",
+    "section": "Tea & Others"
+   },
+   {
+    "name": "Hot Chocolate",
+    "price": "",
+    "section": "Tea & Others"
+   },
+   {
+    "name": "Loose Leaf Tea",
+    "price": "",
+    "section": "Tea & Others"
+   },
+   {
+    "name": "Matcha Latte",
+    "price": "",
+    "section": "Tea & Others"
+   },
+   {
+    "name": "Iced Tea",
+    "price": "",
+    "section": "Tea & Others"
+   },
+   {
+    "name": "Drip Coffee",
+    "price": "",
+    "section": "Tea & Others"
+   },
+   {
+    "name": "Iced Coffee",
+    "price": "",
+    "section": "Tea & Others"
+   },
+   {
+    "name": "Cold Brew",
+    "price": "",
+    "section": "Tea & Others"
+   },
+   {
+    "name": "Avocado Toast",
+    "price": "",
+    "section": "Toasts"
+   },
+   {
+    "name": "Greek Goddess Toast",
+    "price": "",
+    "section": "Toasts"
+   },
+   {
+    "name": "Honey Bunches Toast",
+    "price": "",
+    "section": "Toasts"
+   },
+   {
+    "name": "Classic",
+    "price": "",
+    "section": "Wraps"
+   },
+   {
+    "name": "Veggie",
+    "price": "",
+    "section": "Wraps"
+   },
+   {
+    "name": "Fresh Pastries",
+    "price": "",
+    "section": "Bites"
+   }
+  ]
+ },
  "oxford|Patterson's Cafe": {
   "source": "https://pattersonscafe.com/breakfast/",
   "items": [
@@ -2151,6 +3111,226 @@
     "name": "Espresso",
     "price": "$4.00",
     "section": "Drinks"
+   }
+  ]
+ },
+ "oxford|Paesano's Pasta House": {
+  "source": "https://paesanospastahouse.com/menu-page/",
+  "items": [
+   {
+    "name": "Paesano's Homemade Lasagna",
+    "price": "$26.00",
+    "section": "Preferiti Tradizionali"
+   },
+   {
+    "name": "Eggplant Alla Parmigiana",
+    "price": "$22.00",
+    "section": "Preferiti Tradizionali"
+   },
+   {
+    "name": "Veal Alla Parmigiana",
+    "price": "$29.00",
+    "section": "Preferiti Tradizionali"
+   },
+   {
+    "name": "Chicken Alla Parmigiana",
+    "price": "$25.00",
+    "section": "Preferiti Tradizionali"
+   },
+   {
+    "name": "Jumbo Cheese Ravioli",
+    "price": "$19.00",
+    "section": "Preferiti Tradizionali"
+   },
+   {
+    "name": "Spaghetti Bolognese",
+    "price": "$20.00",
+    "section": "Preferiti Tradizionali"
+   },
+   {
+    "name": "Cacio e Pepe",
+    "price": "$14.00",
+    "section": "Preferiti Tradizionali"
+   },
+   {
+    "name": "Fettuccine Carbonera",
+    "price": "$24.00",
+    "section": "Preferiti Tradizionali"
+   },
+   {
+    "name": "Lemon Garlic Chicken Gnocchi",
+    "price": "$26.00",
+    "section": "Carne Specialita"
+   },
+   {
+    "name": "Veal Marsala",
+    "price": "$32.00",
+    "section": "Carne Specialita"
+   },
+   {
+    "name": "Veal Piccata",
+    "price": "$32.00",
+    "section": "Carne Specialita"
+   },
+   {
+    "name": "Filet Mignon (6 oz)",
+    "price": "$40.00",
+    "section": "Carne Specialita"
+   },
+   {
+    "name": "Chicken Marsala",
+    "price": "$28.00",
+    "section": "Carne Specialita"
+   },
+   {
+    "name": "Chicken Piccata",
+    "price": "$27.00",
+    "section": "Carne Specialita"
+   },
+   {
+    "name": "Chicken Pesto",
+    "price": "$29.00",
+    "section": "Carne Specialita"
+   },
+   {
+    "name": "Tuscan Chicken",
+    "price": "$26.00",
+    "section": "Carne Specialita"
+   },
+   {
+    "name": "Spinach & Cheese Ravioli",
+    "price": "$21.00",
+    "section": "Vegetale Specialita"
+   },
+   {
+    "name": "Mushrooms Alla Pesto",
+    "price": "$20.00",
+    "section": "Vegetale Specialita"
+   },
+   {
+    "name": "Vegetable Risotto",
+    "price": "$23.00",
+    "section": "Vegetale Specialita"
+   },
+   {
+    "name": "Ratatouille Italiano",
+    "price": "$22.00",
+    "section": "Vegetale Specialita"
+   },
+   {
+    "name": "Shrimp Scampi",
+    "price": "$36.00",
+    "section": "Pesce Specialita"
+   },
+   {
+    "name": "Seared Sea Scallops",
+    "price": "$42.00",
+    "section": "Pesce Specialita"
+   },
+   {
+    "name": "Lemon Cream Lobster Fettuccine",
+    "price": "$42.00",
+    "section": "Pesce Specialita"
+   },
+   {
+    "name": "Shrimp and Scallop Florentine",
+    "price": "$44.00",
+    "section": "Pesce Specialita"
+   },
+   {
+    "name": "Branzino",
+    "price": "$46.00",
+    "section": "Pesce Specialita"
+   },
+   {
+    "name": "Pesto Salmon",
+    "price": "$39.00",
+    "section": "Pesce Specialita"
+   },
+   {
+    "name": "Caprese Salad",
+    "price": "$8.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "Crab Cakes",
+    "price": "$11.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "Whole Roasted Garlic",
+    "price": "$7.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "Portobello Mushroom Cap",
+    "price": "$8.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "Calamari",
+    "price": "$9.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "Garlic Bread Sticks",
+    "price": "$7.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "Gnocci",
+    "price": "$9.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "Toasted Ravioli",
+    "price": "$9.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "Soup",
+    "price": "$7.00",
+    "section": "Antipasti"
+   },
+   {
+    "name": "Classic Margarita",
+    "price": "$10.00",
+    "section": "Pizza Persónale"
+   },
+   {
+    "name": "Ricotta Pizza",
+    "price": "$12.00",
+    "section": "Pizza Persónale"
+   },
+   {
+    "name": "Pizza Americano",
+    "price": "$14.00",
+    "section": "Pizza Persónale"
+   },
+   {
+    "name": "Kids Pizza",
+    "price": "$8.00",
+    "section": "Pizza Persónale"
+   },
+   {
+    "name": "House Salad",
+    "price": "$6.00",
+    "section": "Insalata"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "$7.00",
+    "section": "Insalata"
+   },
+   {
+    "name": "Spaghetti & Meatball",
+    "price": "$7.00",
+    "section": "Bambini Menu"
+   },
+   {
+    "name": "Cheese Pizza",
+    "price": "$8.00",
+    "section": "Bambini Menu"
    }
   ]
  },
@@ -2731,6 +3911,346 @@
     "name": "House Salad",
     "price": "$9.00",
     "section": "Intros and Insalata"
+   }
+  ]
+ },
+ "oxford|Bruno's Pizza": {
+  "source": "https://orderbrunospizza.com/oxford-bruno-s-pizza-food-menu",
+  "items": [
+   {
+    "name": "Bruno Dough",
+    "price": "$6.75",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Loaded Cheese Fries",
+    "price": "$8.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Breadsticks",
+    "price": "$8.50",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken Tenders",
+    "price": "$11.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Potato Skins",
+    "price": "$9.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mac & Cheese Bites",
+    "price": "$8.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Fried Pickles",
+    "price": "$6.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Pretzel Bites & Cheese",
+    "price": "$6.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Mozzarella Bites",
+    "price": "$7.45",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Buffalo Cauliflower Bites",
+    "price": "$8.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Bone In Wings",
+    "price": "$13.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Boneless Wings",
+    "price": "$13.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Chicken and Waffles",
+    "price": "$12.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Jalapeno Poppers",
+    "price": "$7.95",
+    "section": "Appetizers"
+   },
+   {
+    "name": "Garden Salad",
+    "price": "$6.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Chef Salad",
+    "price": "$8.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Italian Salad",
+    "price": "$8.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Grilled Chicken Salad",
+    "price": "$7.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Crispy Chicken Salad",
+    "price": "$8.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Caesar Salad",
+    "price": "$8.95",
+    "section": "Salads"
+   },
+   {
+    "name": "Footlong Philly Steak",
+    "price": "$16.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Footlong 1963 Italian",
+    "price": "$16.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Footlong Steak Sub",
+    "price": "$16.95",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Club",
+    "price": "$1.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Buffalo Chicken",
+    "price": "$1.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Meatball Sub",
+    "price": "$1.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Chicken Parmesan",
+    "price": "$1.00",
+    "section": "Sandwiches"
+   },
+   {
+    "name": "Pizza",
+    "price": "$8.45",
+    "section": "Calzones"
+   },
+   {
+    "name": "Meatlovers",
+    "price": "$10.45",
+    "section": "Calzones"
+   },
+   {
+    "name": "Chicken, Bacon & Ranch",
+    "price": "$10.45",
+    "section": "Calzones"
+   },
+   {
+    "name": "Bruno's Slice",
+    "price": "$2.00",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Bruno's Pepperoni Slice",
+    "price": "$2.50",
+    "section": "Specialty Pizza"
+   },
+   {
+    "name": "Baked Chicken Alfredo Pasta",
+    "price": "$13.95",
+    "section": "Pasta"
+   },
+   {
+    "name": "Spaghetti & Meatballs",
+    "price": "$10.95",
+    "section": "Pasta"
+   },
+   {
+    "name": "Baked Lasagna",
+    "price": "$13.25",
+    "section": "Pasta"
+   },
+   {
+    "name": "Chicken Parmesan",
+    "price": "$13.95",
+    "section": "Pasta"
+   },
+   {
+    "name": "Cheese Ravioli",
+    "price": "$13.25",
+    "section": "Pasta"
+   },
+   {
+    "name": "French Fries",
+    "price": "$2.95",
+    "section": "Sides"
+   },
+   {
+    "name": "Parmesan Garlic Fries",
+    "price": "$3.95",
+    "section": "Sides"
+   },
+   {
+    "name": "Onion Rings",
+    "price": "$3.25",
+    "section": "Sides"
+   },
+   {
+    "name": "Sweet Balls",
+    "price": "$7.25",
+    "section": "Desserts"
+   },
+   {
+    "name": "Fried Cheesecake",
+    "price": "$8.95",
+    "section": "Desserts"
+   },
+   {
+    "name": "Chocolate Lava Cake",
+    "price": "$7.95",
+    "section": "Desserts"
+   },
+   {
+    "name": "Waffles",
+    "price": "$6.95",
+    "section": "Desserts"
+   },
+   {
+    "name": "Peanut Butter Chocolate Explosion",
+    "price": "$7.95",
+    "section": "Desserts"
+   }
+  ]
+ },
+ "oxford|Chop Bento": {
+  "source": "https://www.chopbento.com/menu/",
+  "items": [
+   {
+    "name": "Chicken Katsu Curry Bento Set",
+    "price": "$13.99",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Pork Katsu Curry Bento Set",
+    "price": "$15.99",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Cheese Pork Katsu Curry Bento Set",
+    "price": "$17.99",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Chicken Karaage Bento Set",
+    "price": "$15.99",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Gyudon (Japanese Beef Bowl)",
+    "price": "$13.99",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Chicken Teriyaki Bento Set",
+    "price": "$13.99",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Salmon Teriyaki",
+    "price": "$16.99",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Fried Tofu Teriyaki Bento Set",
+    "price": "$13.99",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Side Fried Rice (No Meat)",
+    "price": "$4.00",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Side Fried Udon (No Meat)",
+    "price": "$5.00",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Seaweed Salad",
+    "price": "$4.75",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Passion Fruit Radish",
+    "price": "$4.75",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Fresh Cabbage Salad",
+    "price": "$3.00",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Miso Soup",
+    "price": "$3.00",
+    "section": "Japanese Bento Set"
+   },
+   {
+    "name": "Tiramisu",
+    "price": "$6.50",
+    "section": "Drink & Desserts"
+   },
+   {
+    "name": "Classic Bubble Mike Tea",
+    "price": "$6.50",
+    "section": "Drink & Desserts"
+   },
+   {
+    "name": "Tiger Milk Tea",
+    "price": "$7.50",
+    "section": "Drink & Desserts"
+   },
+   {
+    "name": "Fruit Tea",
+    "price": "$6.50",
+    "section": "Drink & Desserts"
+   },
+   {
+    "name": "Calpico",
+    "price": "$4.65",
+    "section": "Drink & Desserts"
+   },
+   {
+    "name": "Ito En Green Tea",
+    "price": "$4.95",
+    "section": "Drink & Desserts"
+   },
+   {
+    "name": "Ramune Soda",
+    "price": "$4.85",
+    "section": "Drink & Desserts"
    }
   ]
  }

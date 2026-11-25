@@ -5,6 +5,7 @@ Usage: python3 build.py
 """
 import glob
 import json
+import math
 import os
 import re
 
@@ -39,6 +40,21 @@ SCHOOLS = [
 DISHES = [("stromboli", r"stromboli"), ("cheesesteak", r"cheesesteak"), ("shawarma", r"shawarma"), ("chilidog", r"chili dog|hot dog|coney"), ("fish", r"\bfish\b"),
           ("taco", r"taco"), ("wings", r"wing"), ("burrito", r"burrito"), ("calzone", r"calzone"), ("tenders", r"tender|finger"), ("gyro", r"gyro"), ("burger", r"burger"), ("pizza", r"pizza|slice"), ("sandwich", r"sandwich|\bsubs?\b"),
           ("apps", r"appetizer|\bapps\b|sharable|shareable|snack|munchies|flatbread|happy hour|late.night")]
+
+
+# Centre of each campus (lat, lon) and how far out a place may be. 2.5 miles in a straight line is roughly a
+# 10-15 minute drive in town; places further out are left out of the app.
+CAMPUS = {"athens": (39.3252, -82.1013), "columbus": (40.0000, -83.0135), "oxford": (39.5087, -84.7345), "cincinnati": (39.1320, -84.5155),
+          "dayton": (39.7400, -84.1790), "kent": (41.1490, -81.3415), "bowling-green": (41.3780, -83.6400), "toledo": (41.6580, -83.6140),
+          "akron": (41.0760, -81.5110), "cleveland": (41.5045, -81.6085), "youngstown": (41.1065, -80.6470), "portsmouth": (38.7310, -82.9950),
+          "delaware": (40.2960, -83.0650), "westerville": (40.1250, -82.9370), "findlay": (41.0530, -83.6510)}
+RADIUS_MILES = 2.5
+
+
+def miles(a, b):
+    lat1, lon1, lat2, lon2 = map(math.radians, (a[0], a[1], b[0], b[1]))
+    h = math.sin((lat2 - lat1) / 2) ** 2 + math.cos(lat1) * math.cos(lat2) * math.sin((lon2 - lon1) / 2) ** 2
+    return 3958.8 * 2 * math.asin(math.sqrt(h))
 
 
 def slug(s):
@@ -125,9 +141,22 @@ def main():
                     "website": sites.get(t["id"] + "|" + s["name"]) or s.get("website") or (chain or {}).get("website", "") or brand, "blurb": s.get("blurb") or "",
                     "price": s.get("price") or "", "sourceUrl": s.get("sourceUrl") or "", "deals": deals})
 
-    live = []
+    geo = json.load(open(os.path.join(ROOT, "data", "geo.json"))) if os.path.exists(os.path.join(ROOT, "data", "geo.json")) else {}
+    live, far, unknown = [], 0, 0
     for tid, name, abbr, col, ink, url, also in SCHOOLS:
         t = towns[tid]
+        keep = []
+        for sp in t["spots"]:
+            pt = geo.get(sp["address"].strip())
+            if pt:
+                sp["mi"] = round(miles(CAMPUS[tid], pt), 1)
+                if sp["mi"] > RADIUS_MILES:
+                    far += 1
+                    continue
+            else:
+                unknown += 1
+            keep.append(sp)
+        t["spots"] = keep
         t["school"] = {"name": name, "abbr": abbr, "color": col, "ink": ink, "url": url, "also": also}
         if os.path.exists(os.path.join(ROOT, "logos", "schools", tid + ".png")):
             t["school"]["logo"] = "logos/schools/" + tid + ".png"
@@ -191,6 +220,7 @@ def main():
     with open(os.path.join(ROOT, "index.html"), "w") as f:
         f.write(head + frag[:m.start()] + '<script src="app.js"></script>\n</body>\n</html>\n')
 
+    print(far, "places dropped as more than", RADIUS_MILES, "miles from campus;", unknown, "kept with no mappable address")
     for t in live:
         print(f"{t['school']['name']:34} {len(t['spots']):3} places {sum(len(x['deals']) for x in t['spots']):3} deals")
     print(len(live), "schools,", sum(len(t["spots"]) for t in live), "places,", sum(len(x["deals"]) for t in live for x in t["spots"]), "deals")

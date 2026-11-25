@@ -809,6 +809,366 @@
    }
   ]
  },
+ "bowling-green|City Egg": {
+  "source": "https://order.cityeggrestaurants.com/",
+  "items": [
+   {
+    "name": "The Lumberjack",
+    "price": "$11.50",
+    "section": "City Egg Specialties"
+   },
+   {
+    "name": "All American City",
+    "price": "$10.50",
+    "section": "City Egg Specialties"
+   },
+   {
+    "name": "Wisconsin Scrambled",
+    "price": "$10.00",
+    "section": "City Egg Specialties"
+   },
+   {
+    "name": "Avocado Toast",
+    "price": "$10.00",
+    "section": "City Egg Specialties"
+   },
+   {
+    "name": "Big City",
+    "price": "$11.00",
+    "section": "City Egg Specialties"
+   },
+   {
+    "name": "Breakfast Street Tacos",
+    "price": "$10.00",
+    "section": "City Egg Specialties"
+   },
+   {
+    "name": "Build Your Own Omelette",
+    "price": "$8.50",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Spinach & Portabella",
+    "price": "$10.50",
+    "section": "Omelettes"
+   },
+   {
+    "name": "South Of The Border",
+    "price": "$10.50",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Wild Western",
+    "price": "$10.50",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Awesome Avocado",
+    "price": "$10.50",
+    "section": "Omelettes"
+   },
+   {
+    "name": "Build Your Own Skillet",
+    "price": "$9.50",
+    "section": "Skillets"
+   },
+   {
+    "name": "Uncle Moose",
+    "price": "$11.50",
+    "section": "Skillets"
+   },
+   {
+    "name": "Westgate",
+    "price": "$11.50",
+    "section": "Skillets"
+   },
+   {
+    "name": "Build Your Own Breakfast Sandwich",
+    "price": "$5.00",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Build Your Own Big Breakfast Sandwich",
+    "price": "$7.00",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "The Capital",
+    "price": "$6.00",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Jumpstart",
+    "price": "$6.50",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "The \"419\"",
+    "price": "$8.00",
+    "section": "Breakfast Sandwiches"
+   },
+   {
+    "name": "Build Your Own Breakfast Wrap",
+    "price": "$8.00",
+    "section": "Breakfast Wraps"
+   },
+   {
+    "name": "Zesty Smokehouse Wrap",
+    "price": "$9.50",
+    "section": "Breakfast Wraps"
+   },
+   {
+    "name": "Spicy Southwest Wrap",
+    "price": "$9.50",
+    "section": "Breakfast Wraps"
+   },
+   {
+    "name": "Build Your Own Pancakes",
+    "price": "$7.50",
+    "section": "Pancakes/French Toast"
+   },
+   {
+    "name": "Cinnamon Roll Pancakes",
+    "price": "$11.00",
+    "section": "Pancakes/French Toast"
+   },
+   {
+    "name": "Lemon Blueberry Cakes",
+    "price": "$11.00",
+    "section": "Pancakes/French Toast"
+   },
+   {
+    "name": "Build Your Own Toast Of France",
+    "price": "$9.00",
+    "section": "Pancakes/French Toast"
+   },
+   {
+    "name": "Pumpkin Stuffed French Toast",
+    "price": "$8.00",
+    "section": "Pancakes/French Toast"
+   },
+   {
+    "name": "Stuffed French Toast",
+    "price": "$8.00",
+    "section": "Pancakes/French Toast"
+   },
+   {
+    "name": "The Goat",
+    "price": "$11.00",
+    "section": "Breakfast Bowls"
+   },
+   {
+    "name": "The Sweet 'P'",
+    "price": "$11.00",
+    "section": "Breakfast Bowls"
+   },
+   {
+    "name": "The Powerhouse",
+    "price": "$11.00",
+    "section": "Breakfast Bowls"
+   },
+   {
+    "name": "Tropical Acai Bowl",
+    "price": "$10.50",
+    "section": "Acai Bowls"
+   },
+   {
+    "name": "Hearty Acai Bowl",
+    "price": "$10.50",
+    "section": "Acai Bowls"
+   },
+   {
+    "name": "Kickin' Chicken Club",
+    "price": "$9.50",
+    "section": "Lunch Sandwiches"
+   },
+   {
+    "name": "Turkey & Avocado Delight",
+    "price": "$9.50",
+    "section": "Lunch Sandwiches"
+   },
+   {
+    "name": "Grilled Pimiento Cheese & Chicken Sandwich",
+    "price": "$9.50",
+    "section": "Lunch Sandwiches"
+   },
+   {
+    "name": "Chicken Bacon Ranch Wrap",
+    "price": "$9.50",
+    "section": "Lunch Wraps"
+   },
+   {
+    "name": "Chicken Caesar Wrap",
+    "price": "$9.50",
+    "section": "Lunch Wraps"
+   },
+   {
+    "name": "Fiesta Chicken Wrap",
+    "price": "$9.50",
+    "section": "Lunch Wraps"
+   },
+   {
+    "name": "Turkey Club Wrap",
+    "price": "$9.50",
+    "section": "Lunch Wraps"
+   },
+   {
+    "name": "Chicken Bacon Ranch Salad",
+    "price": "$10.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Chicken Caesar Salad",
+    "price": "$10.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Fiesta Chicken Salad",
+    "price": "$10.50",
+    "section": "Salads"
+   },
+   {
+    "name": "Pumpkin Spiced Latte",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Chai Tea Latte With Pumpkin Cold Foam",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "White Lavender Mocha",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Caramel Dream Macchiato",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Butter Pecan Latte",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Cappuccino",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Latte",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Mocha",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Signature Roast Drip",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Dark Roast Drip",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Decaf Roast Drip",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Espresso",
+    "price": "",
+    "section": "Hot Coffee Drinks"
+   },
+   {
+    "name": "Iced Pumpkin Spice Latte",
+    "price": "$6.00",
+    "section": "Iced Coffee Drinks"
+   },
+   {
+    "name": "Iced Chai Tea Latte With Pumpkin Cold Foam",
+    "price": "$6.00",
+    "section": "Iced Coffee Drinks"
+   },
+   {
+    "name": "Iced White Lavender Mocha",
+    "price": "$6.00",
+    "section": "Iced Coffee Drinks"
+   },
+   {
+    "name": "Iced Caramel Dream Macchiato",
+    "price": "$5.50",
+    "section": "Iced Coffee Drinks"
+   },
+   {
+    "name": "Iced Butter Pecan Latte",
+    "price": "$5.50",
+    "section": "Iced Coffee Drinks"
+   },
+   {
+    "name": "Iced Cappuccino",
+    "price": "$5.00",
+    "section": "Iced Coffee Drinks"
+   },
+   {
+    "name": "Iced Latte",
+    "price": "$5.00",
+    "section": "Iced Coffee Drinks"
+   },
+   {
+    "name": "Iced Mocha",
+    "price": "$5.00",
+    "section": "Iced Coffee Drinks"
+   },
+   {
+    "name": "Cold Brew",
+    "price": "$3.50",
+    "section": "Iced Coffee Drinks"
+   },
+   {
+    "name": "Cold Brew With Cold Foam",
+    "price": "$4.00",
+    "section": "Iced Coffee Drinks"
+   },
+   {
+    "name": "Sweet-Green City Limits",
+    "price": "$5.50",
+    "section": "Juices"
+   },
+   {
+    "name": "Urban Berry Detox",
+    "price": "$5.50",
+    "section": "Juices"
+   },
+   {
+    "name": "Metro Mango",
+    "price": "$5.50",
+    "section": "Juices"
+   },
+   {
+    "name": "\"C-Bus\"",
+    "price": "$5.50",
+    "section": "Juices"
+   },
+   {
+    "name": "Orange Juice",
+    "price": "$5.50",
+    "section": "Juices"
+   },
+   {
+    "name": "Apple Juice",
+    "price": "$3.00",
+    "section": "Juices"
+   }
+  ]
+ },
  "bowling-green|The Clay Pot Bistro": {
   "source": "https://www.theclaypotbistro.com/ourfood",
   "items": [
