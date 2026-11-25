@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#FF3B2F">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="KORD">
+<meta name="description" content="The best food deals in every Ohio college town, day by day.">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>KORD</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap">
+<style>
+/* Layout: one phone-width column. Hot header names the town, a sticky day strip switches the week,
+   deals render as tear-off tickets whose stub carries the price. Tab bar fixed to the bottom. */
+:root {
+  --bg: #FFFCF7; --card: #FFFFFF; --ink: #1B1410; --muted: #6E625A; --line: #EBE2D8; --chip: #F4EDE4;
+  --hot: #FF3B2F; --hot-ink: #FFFFFF; --sun: #FFC91F; --sun-ink: #1B1410;
+  --cobalt: #2F4BFF; --mint: #00A870; --grape: #8A3FFC; --pink: #F0338C; --orange: #FF7A1A; --teal: #0097A7;
+  --link: #2F4BFF; --shadow: 0 2px 0 rgba(27,20,16,.08), 0 10px 24px -14px rgba(27,20,16,.35);
+  --display: "Bricolage Grotesque", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --body: "DM Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --gl: max(16px, env(safe-area-inset-left, 0px)); --gr: max(16px, env(safe-area-inset-right, 0px));
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #15100D; --card: #231B16; --ink: #FFF5E9; --muted: #B5A698; --line: #3A2E26; --chip: #2E241D;
+  --hot: #FF4A3D; --cobalt: #7088FF; --mint: #19C98C; --grape: #A970FF; --pink: #FF5AA5; --orange: #FF8A33; --teal: #25B8C8;
+  --link: #8FA2FF; --shadow: 0 2px 0 rgba(0,0,0,.4), 0 10px 24px -14px rgba(0,0,0,.8); color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #15100D; --card: #231B16; --ink: #FFF5E9; --muted: #B5A698; --line: #3A2E26; --chip: #2E241D;
+  --hot: #FF4A3D; --cobalt: #7088FF; --mint: #19C98C; --grape: #A970FF; --pink: #FF5AA5; --orange: #FF8A33; --teal: #25B8C8;
+  --link: #8FA2FF; --shadow: 0 2px 0 rgba(0,0,0,.4), 0 10px 24px -14px rgba(0,0,0,.8); color-scheme: dark }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 15px/1.45 var(--body); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--hot); }
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; border: 0; background: none; padding: 0; }
+a { color: var(--link); }
+:focus-visible { outline: 3px solid var(--cobalt); outline-offset: 2px; }
+.wrap { max-width: 600px; margin-inline: auto; padding-left: var(--gl); padding-right: var(--gr); }
+
+/* header */
+.top { background: var(--hot); color: var(--hot-ink); margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: calc(env(safe-area-inset-top, 0px) + 14px); padding-bottom: 18px; }
+.brandrow { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.brand { font: 800 26px/1 var(--display); letter-spacing: -.02em; display: flex; align-items: center; gap: 8px; }
+.brand i { width: 14px; height: 14px; border-radius: 50%; background: var(--sun); display: block; }
+.avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--sun); color: var(--sun-ink); display: grid; place-items: center; font: 800 15px var(--display); overflow: hidden; flex: none; border: 2px solid var(--hot-ink); }
+.avatar img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.townbtn { display: block; text-align: left; width: 100%; margin-top: 14px; color: inherit; }
+.townbtn small { display: block; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .85; }
+.townbtn strong { display: block; font: 800 clamp(34px, 11vw, 52px)/.95 var(--display); letter-spacing: -.03em; overflow-wrap: anywhere; }
+.townbtn strong::after { content: ""; display: inline-block; width: .28em; height: .28em; margin-left: .25em; border-right: .1em solid; border-bottom: .1em solid; transform: translateY(-.25em) rotate(45deg); }
+.townbtn span { display: block; margin-top: 6px; font-size: 14px; font-weight: 500; opacity: .95; }
+
+/* day strip */
+.days { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); }
+.days .wrap { display: grid; grid-template-columns: repeat(7, 1fr); gap: 4px; padding-block: 8px; }
+.day { border-radius: 12px; padding: 6px 0 5px; text-align: center; color: var(--muted); min-width: 0; }
+.day b { display: block; font: 800 15px/1.1 var(--display); color: var(--ink); }
+.day span { display: block; font-size: 11px; font-weight: 700; font-variant-numeric: tabular-nums; }
+.day.today b::after { content: ""; display: inline-block; width: 5px; height: 5px; border-radius: 50%; background: var(--hot); margin-left: 3px; vertical-align: middle; }
+.day[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.day[aria-pressed="true"] b { color: var(--bg); }
+
+main { padding-block: 16px calc(96px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 16px; min-height: 60vh; }
+h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+.sub { color: var(--muted); font-size: 13px; margin: 2px 0 0; }
+.sechead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 6px; }
+.sechead span { color: var(--muted); font-size: 13px; font-weight: 700; flex: none; }
+
+/* chips */
+.chips { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gl)) calc(-1 * var(--gr)); padding-inline: var(--gl) var(--gr); }
+.chips::-webkit-scrollbar { display: none; }
+.chip { flex: none; padding: 7px 13px; border-radius: 999px; background: var(--chip); font-weight: 700; font-size: 13px; white-space: nowrap; }
+.chip[aria-pressed="true"] { background: var(--sun); color: var(--sun-ink); }
+.chip.alt[aria-pressed="true"] { background: var(--cobalt); color: #fff; }
+.search { width: 100%; padding: 11px 14px; border-radius: 12px; border: 2px solid var(--line); background: var(--card); }
+.search:focus { border-color: var(--ink); outline: none; }
+
+/* logo tile */
+.lg { --c: var(--hot); position: relative; width: 48px; height: 48px; flex: none; border-radius: 13px; background: var(--c); color: #fff; display: grid; place-items: center; overflow: hidden; font: 800 17px var(--display); }
+.lg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 7px; background: #fff; opacity: 0; }
+.lg.has img { opacity: 1; }
+.lg.has { box-shadow: inset 0 0 0 1px var(--line); }
+.lg.big { width: 72px; height: 72px; border-radius: 18px; font-size: 26px; }
+
+/* deal ticket */
+.ticket { --c: var(--hot); display: grid; grid-template-columns: 92px minmax(0, 1fr); width: 100%; text-align: left; background: var(--card); border-radius: 16px; box-shadow: var(--shadow); overflow: hidden; }
+.stub { background: var(--c); color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 12px 6px; text-align: center;
+  -webkit-mask: radial-gradient(circle 7px at 100% 0, #0000 98%, #000) top/100% 51% no-repeat, radial-gradient(circle 7px at 100% 100%, #0000 98%, #000) bottom/100% 51% no-repeat;
+  mask: radial-gradient(circle 7px at 100% 0, #0000 98%, #000) top/100% 51% no-repeat, radial-gradient(circle 7px at 100% 100%, #0000 98%, #000) bottom/100% 51% no-repeat; }
+.stub b { font: 800 24px/1 var(--display); letter-spacing: -.02em; overflow-wrap: anywhere; }
+.stub b.long { font-size: 16px; }
+.stub small { font-size: 10px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .9; }
+.tbody { padding: 12px 14px; border-left: 2px dashed var(--line); min-width: 0; display: flex; flex-direction: column; gap: 4px; }
+.tbody h3 { margin: 0; font: 800 17px/1.15 var(--display); letter-spacing: -.01em; }
+.tbody p { margin: 0; color: var(--muted); font-size: 13px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.who { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13px; min-width: 0; margin-top: 2px; }
+.who .lg { width: 24px; height: 24px; border-radius: 7px; font-size: 10px; }
+.who .lg img { padding: 2px; }
+.who span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tag { font-size: 10.5px; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 2px 7px; border-radius: 6px; background: var(--chip); color: var(--muted); }
+.tag.sig { background: var(--sun); color: var(--sun-ink); }
+.tag.stu { background: var(--cobalt); color: #fff; }
+.ticket.hero { grid-template-columns: 1fr; background: var(--ink); color: var(--bg); }
+.ticket.hero .stub { flex-direction: row; justify-content: space-between; padding: 14px 16px; -webkit-mask: none; mask: none; text-align: left; }
+.ticket.hero .stub b { font-size: 40px; }
+.ticket.hero .stub b.long { font-size: 26px; }
+.ticket.hero .tbody { border-left: 0; padding: 14px 16px 16px; }
+.ticket.hero .tbody h3 { font-size: 24px; }
+.ticket.hero .tbody p { color: inherit; opacity: .8; font-size: 14px; }
+.ticket.hero .tag { background: rgba(127,127,127,.3); color: inherit; }
+.ticket.hero .tag.sig { background: var(--sun); color: var(--sun-ink); }
+.list { display: flex; flex-direction: column; gap: 10px; }
+
+/* spot rows */
+.row { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; padding: 10px 12px; background: var(--card); border-radius: 14px; box-shadow: var(--shadow); }
+.row .mid { flex: 1; min-width: 0; }
+.row h3 { margin: 0; font: 800 16px/1.2 var(--display); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row p { margin: 1px 0 0; font-size: 12.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row .end { flex: none; text-align: right; font-size: 12px; font-weight: 700; color: var(--muted); }
+.row .end b { display: block; font: 800 16px var(--display); color: var(--mint); }
+.rank { width: 30px; flex: none; font: 800 22px var(--display); text-align: center; font-variant-numeric: tabular-nums; }
+.rank.r1 { color: var(--hot); } .rank.r2 { color: var(--orange); } .rank.r3 { color: var(--grape); }
+.stars { display: inline-flex; gap: 1px; }
+.stars button { font-size: 22px; line-height: 1; color: var(--line); padding: 2px; }
+.stars button.on { color: var(--sun); -webkit-text-stroke: .5px var(--sun-ink); }
+.stars.lg2 button { font-size: 34px; }
+.mystars { color: var(--orange); font-weight: 800; letter-spacing: 1px; }
+
+.empty { border: 2px dashed var(--line); border-radius: 16px; padding: 22px 18px; text-align: center; color: var(--muted); }
+.empty b { display: block; color: var(--ink); font: 800 18px var(--display); margin-bottom: 4px; }
+.note { font-size: 12px; color: var(--muted); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 11px 16px; border-radius: 12px; background: var(--ink); color: var(--bg); font-weight: 700; text-decoration: none; }
+.btn.hot { background: var(--hot); color: #fff; }
+.btn.ghost { background: var(--chip); color: var(--ink); }
+.btnrow { display: flex; flex-wrap: wrap; gap: 8px; }
+
+/* tabs */
+.tabs { position: fixed; inset: auto 0 0; z-index: 6; background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); }
+.tabs .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+.tab { padding: 10px 0 9px; text-align: center; font-size: 11.5px; font-weight: 700; color: var(--muted); display: flex; flex-direction: column; align-items: center; gap: 3px; }
+.tab svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.tab[aria-current="page"] { color: var(--hot); }
+
+/* sheet */
+.scrim { position: fixed; inset: 0; z-index: 20; background: rgba(15,10,8,.55); display: flex; align-items: flex-end; justify-content: center; }
+.sheet { background: var(--bg); width: 100%; max-width: 600px; max-height: 92%; border-radius: 22px 22px 0 0; display: flex; flex-direction: column; overflow: hidden; }
+.sheethead { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px var(--gr) 10px var(--gl); }
+.sheethead h2 { font-size: 20px; }
+.x { width: 36px; height: 36px; border-radius: 50%; background: var(--chip); font-size: 20px; line-height: 1; flex: none; }
+.sheetbody { overflow-y: auto; padding: 4px var(--gr) calc(24px + env(safe-area-inset-bottom, 0px)) var(--gl); display: flex; flex-direction: column; gap: 14px; }
+.spothead { display: flex; gap: 14px; align-items: center; }
+.spothead h2 { font-size: 26px; overflow-wrap: anywhere; }
+.week { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--card); }
+.wd { display: grid; grid-template-columns: 48px minmax(0, 1fr); border-top: 1px solid var(--line); }
+.wd:first-child { border-top: 0; }
+.wd > b { padding: 10px 0 10px 12px; font: 800 14px var(--display); }
+.wd.sel > b { color: var(--hot); }
+.wd > div { padding: 10px 12px 10px 4px; display: flex; flex-direction: column; gap: 8px; }
+.wd .none { color: var(--muted); font-size: 13px; }
+.wdeal strong { display: block; font-size: 14px; }
+.wdeal span { display: block; font-size: 13px; color: var(--muted); }
+.wdeal a { font-size: 12px; font-weight: 700; }
+.region { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 8px 0 -6px; }
+.field { display: flex; flex-direction: column; gap: 5px; font-weight: 700; font-size: 13px; }
+.field input, .field select { padding: 11px 12px; border-radius: 12px; border: 2px solid var(--line); background: var(--card); font-weight: 500; width: 100%; }
+.me { display: flex; gap: 14px; align-items: center; }
+.me .avatar { width: 84px; height: 84px; font-size: 32px; border-color: var(--ink); }
+.statrow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+.stat { background: var(--card); border-radius: 12px; padding: 10px 6px; text-align: center; box-shadow: var(--shadow); }
+.stat b { display: block; font: 800 22px var(--display); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 11px; color: var(--muted); font-weight: 700; }
+@media (prefers-reduced-motion: no-preference) { .sheet { animation: up .22s ease-out; } @keyframes up { from { transform: translateY(40px); opacity: .6; } } }
+</style>
+
+<header class="top"><div class="wrap">
+  <div class="brandrow">
+    <div class="brand"><i></i>KORD</div>
+    <button class="avatar" id="meBtn" aria-label="Open your profile"></button>
+  </div>
+  <button class="townbtn" id="townBtn" aria-label="Change town">
+    <small>Deals in</small><strong id="townName">Ohio</strong><span id="townColleges">Loading college towns…</span>
+  </button>
+</div></header>
+<nav class="days" aria-label="Day of the week"><div class="wrap" id="days"></div></nav>
+<main class="wrap" id="view"><div class="empty"><b>Loading deals…</b>Pulling every Ohio college town.</div></main>
+<nav class="tabs" aria-label="Sections"><div class="wrap">
+  <button class="tab" data-tab="deals"><svg viewBox="0 0 24 24"><path d="M3 9a2 2 0 0 0 0 6v3a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-3a2 2 0 0 1 0-6V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1z"/><path d="M14 6v2m0 3v2m0 3v2"/></svg>Deals</button>
+  <button class="tab" data-tab="spots"><svg viewBox="0 0 24 24"><path d="M4 10h16l-1.2-5H5.2zM5 10v9h14v-9M9 19v-5h6v5"/></svg>Spots</button>
+  <button class="tab" data-tab="ranks"><svg viewBox="0 0 24 24"><path d="M8 21V10H3v11zm8 0V3H9v18zm5 0v-7h-5v7z"/></svg>Rankings</button>
+  <button class="tab" data-tab="me"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>Profile</button>
+</div></nav>
+<div id="sheetRoot"></div>
+
+<script>
+(function () {
+  'use strict';
+  var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  var DAYNAME = { Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday', Fri: 'Friday', Sat: 'Saturday', Sun: 'Sunday' };
+  var CATCOLOR = { 'Pizza': 'hot', 'Burgers': 'orange', 'Mexican': 'mint', 'Sandwiches & Subs': 'cobalt', 'Wings & Chicken': 'orange', 'Asian': 'pink',
+    'Boba & Tea': 'grape', 'Coffee & Bakery': 'teal', 'Breakfast & Brunch': 'orange', 'Bar & Grill': 'cobalt', 'Dessert & Ice Cream': 'pink', 'BBQ': 'hot',
+    'Mediterranean': 'teal', 'Healthy & Bowls': 'mint', 'Fast Food': 'hot', 'Other': 'grape' };
+  var NOLOGO = /(^|\.)(facebook|instagram|x|twitter|linktr|toasttab|google|yelp|tripadvisor|doordash|grubhub|ubereats|square|wixsite|wordpress|business)\./;
+  var TODAY = DAYS[(new Date().getDay() + 6) % 7];
+  var DATA = null, SPOTS = {};
+  var S = load('kord.prefs', { town: '', day: TODAY, tab: 'deals' });
+  S.day = TODAY; S.cat = 'All'; S.localOnly = false; S.sort = 'best'; S.q = '';
+  var U = load('kord.user', { name: '', school: '', avatar: '', ratings: {}, saved: {} });
+  U.ratings = U.ratings || {}; U.saved = U.saved || {};
+
+  function load(k, d) { try { var v = JSON.parse(localStorage.getItem(k)); return v && typeof v === 'object' ? v : d; } catch (e) { return d; } }
+  function save(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} }
+  function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function safeUrl(u) { return /^https:\/\//i.test(u || '') ? u : (/^http:\/\//i.test(u || '') ? u.replace(/^http:/i, 'https:') : ''); }
+  function domain(u) { try { return new URL(safeUrl(u)).hostname.replace(/^www\./, ''); } catch (e) { return ''; } }
+  function initials(n) { var w = String(n).replace(/[^A-Za-z0-9 ]/g, '').split(/\s+/).filter(function (x) { return x && !/^(the|of|and)$/i.test(x); }); return ((w[0] || '?')[0] + (w[1] ? w[1][0] : '')).toUpperCase(); }
+  function color(cat) { return 'var(--' + (CATCOLOR[cat] || 'grape') + ')'; }
+  function priceNum(p) { var m = /\$\s?(\d+(?:\.\d+)?)/.exec(p || ''); return m ? parseFloat(m[1]) : null; }
+  function stubText(d) {
+    var p = (d.price || '').trim();
+    if (p && p.length <= 9) return p;
+    var m = /\$\s?\d+(?:\.\d+)?/.exec(p + ' ' + d.title) || /\d+\s?% off/i.exec(p + ' ' + d.title) || /half[- ]price|half off|bogo|free/i.exec(p + ' ' + d.title);
+    return m ? m[0].replace(/\s/g, m[0][0] === '$' ? '' : ' ').toUpperCase() : 'DEAL';
+  }
+  function town() { return DATA.towns.find(function (t) { return t.id === S.town; }) || DATA.towns[0]; }
+  function logo(sp, cls) {
+    var d = domain(sp.website), img = '';
+    if (d && !NOLOGO.test(d + '.')) img = '<img alt="" loading="lazy" data-logo src="https://www.google.com/s2/favicons?sz=128&domain=' + encodeURIComponent(d) + '">';
+    return '<span class="lg ' + (cls || '') + '" style="--c:' + color(sp.category) + '"><span>' + esc(initials(sp.name)) + '</span>' + img + '</span>';
+  }
+  document.addEventListener('load', function (e) { var t = e.target; if (t && t.dataset && 'logo' in t.dataset) { if (t.naturalWidth >= 32) t.parentNode.classList.add('has'); else t.remove(); } }, true);
+  document.addEventListener('error', function (e) { var t = e.target; if (t && t.dataset && 'logo' in t.dataset) t.remove(); }, true);
+
+  function dealsFor(t, day) {
+    var out = [];
+    t.spots.forEach(function (sp) { (sp.deals || []).forEach(function (d, i) { if (d.days.indexOf(day) >= 0) out.push({ sp: sp, d: d, i: i }); }); });
+    return out;
+  }
+  function score(x) { return (x.sp.local ? 4 : 0) + (x.sp.signature ? 2 : 0) + (priceNum(x.d.price) != null ? 1 : 0) + (x.d.national ? -2 : 0); }
+  function sortDeals(a) {
+    return a.sort(function (x, y) {
+      var px = priceNum(x.d.price), py = priceNum(y.d.price);
+      if (S.sort === 'cheap') { if (px == null && py == null) return score(y) - score(x); if (px == null) return 1; if (py == null) return -1; return px - py; }
+      return score(y) - score(x) || (px == null ? 99 : px) - (py == null ? 99 : py);
+    });
+  }
+  function tagsHtml(sp, d) {
+    var h = '';
+    if (sp.signature) h += '<span class="tag sig">Town favorite</span>';
+    if (d && d.studentOnly) h += '<span class="tag stu">Student ID</span>';
+    if (d && d.national) h += '<span class="tag">National offer</span>';
+    else if (!sp.local) h += '<span class="tag">Chain</span>';
+    return h ? '<div class="tags">' + h + '</div>' : '';
+  }
+  function ticket(x, hero) {
+    var st = stubText(x.d);
+    return '<button class="ticket' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" style="--c:' + color(x.sp.category) + '">' +
+      '<div class="stub"><b class="' + (st.length > 5 ? 'long' : '') + '">' + esc(st) + '</b><small>' + esc(hero ? 'Top deal · ' + DAYNAME[S.day] : x.sp.category) + '</small></div>' +
+      '<div class="tbody"><h3>' + esc(x.d.title) + '</h3><p>' + esc(x.d.details) + '</p>' +
+      '<div class="who">' + logo(x.sp) + '<span>' + esc(x.sp.name) + '</span></div>' + tagsHtml(x.sp, x.d) + '</div></button>';
+  }
+  function catChips(list, getCat) {
+    var seen = {}; list.forEach(function (x) { seen[getCat(x)] = 1; });
+    var cats = ['All'].concat(Object.keys(seen).sort());
+    if (cats.indexOf(S.cat) < 0) S.cat = 'All';
+    return cats.map(function (c) { return '<button class="chip" data-cat="' + esc(c) + '" aria-pressed="' + (S.cat === c) + '">' + esc(c) + '</button>'; }).join('');
+  }
+
+  function renderHead() {
+    var t = town();
+    document.getElementById('townName').textContent = t.name;
+    document.getElementById('townColleges').textContent = t.colleges.map(function (c) { return c.name; }).join(' · ');
+    document.getElementById('days').innerHTML = DAYS.map(function (d) {
+      var n = dealsFor(t, d).length;
+      return '<button class="day' + (d === TODAY ? ' today' : '') + '" data-day="' + d + '" aria-pressed="' + (S.day === d) + '" aria-label="' + DAYNAME[d] + ', ' + n + ' deals"><b>' + d + '</b><span>' + n + '</span></button>';
+    }).join('');
+    var a = document.getElementById('meBtn');
+    a.innerHTML = U.avatar ? '<img alt="" src="' + esc(U.avatar) + '">' : esc(U.name ? initials(U.name) : '+');
+    document.querySelectorAll('.tab').forEach(function (b) { if (b.dataset.tab === S.tab) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
+    document.querySelector('.days').hidden = S.tab !== 'deals';
+  }
+
+  function viewDeals() {
+    var t = town(), all = dealsFor(t, S.day);
+    var chips = catChips(all, function (x) { return x.sp.category; });
+    var list = sortDeals(all.filter(function (x) { return (S.cat === 'All' || x.sp.category === S.cat) && (!S.localOnly || x.sp.local); }));
+    var h = '<div class="chips">' +
+      '<button class="chip alt" data-sort="best" aria-pressed="' + (S.sort === 'best') + '">Best</button>' +
+      '<button class="chip alt" data-sort="cheap" aria-pressed="' + (S.sort === 'cheap') + '">Cheapest</button>' +
+      '<button class="chip alt" data-local aria-pressed="' + S.localOnly + '">Local only</button>' + chips + '</div>';
+    if (!list.length) {
+      var other = DAYS.filter(function (d) { return dealsFor(t, d).length; });
+      h += '<div class="empty"><b>No confirmed deals for ' + DAYNAME[S.day] + '</b>' +
+        (all.length ? 'Nothing matches these filters.' : other.length ? 'We only list deals we could source. Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' :
+          'We have not found a sourced weekly deal in ' + esc(t.name) + ' yet. Browse the spots instead.') + '</div>';
+    } else {
+      h += ticket(list[0], true);
+      var local = list.slice(1).filter(function (x) { return x.sp.local; }), chain = list.slice(1).filter(function (x) { return !x.sp.local; });
+      if (local.length) h += '<div class="sechead"><h2>Only in ' + esc(t.name) + '</h2><span>' + local.length + '</span></div><div class="list">' + local.map(function (x) { return ticket(x); }).join('') + '</div>';
+      if (chain.length) h += '<div class="sechead"><h2>Chains nearby</h2><span>' + chain.length + '</span></div><div class="list">' + chain.map(function (x) { return ticket(x); }).join('') + '</div>';
+    }
+    h += '<p class="note">Every deal links to where we found it. Specials change, so check with the restaurant before you go.</p>';
+    return h;
+  }
+  function spotRow(sp, rank) {
+    var n = (sp.deals || []).length, r = U.ratings[sp.id];
+    return '<button class="row" data-spot="' + esc(sp.id) + '">' + (rank ? '<span class="rank r' + rank + '">' + rank + '</span>' : '') + logo(sp) +
+      '<span class="mid"><h3>' + esc(sp.name) + '</h3><p>' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + (sp.signature ? ' · Town favorite' : sp.local ? ' · Local' : ' · Chain') + '</p></span>' +
+      '<span class="end">' + (r ? '<span class="mystars">' + '★'.repeat(r) + '</span>' : '') + (n ? '<b>' + n + '</b>deal' + (n > 1 ? 's' : '') : '') + '</span></button>';
+  }
+  function viewSpots() {
+    var t = town(), q = S.q.toLowerCase();
+    var chips = catChips(t.spots, function (s) { return s.category; });
+    var list = t.spots.filter(function (s) { return (S.cat === 'All' || s.category === S.cat) && (!S.localOnly || s.local) && (!q || (s.name + ' ' + s.category + ' ' + (s.blurb || '')).toLowerCase().indexOf(q) >= 0); });
+    var fav = list.filter(function (s) { return s.signature; }), loc = list.filter(function (s) { return s.local && !s.signature; }), ch = list.filter(function (s) { return !s.local && !s.signature; });
+    var h = '<input class="search" id="spotSearch" type="search" placeholder="Search ' + esc(t.name) + ' food spots" value="' + esc(S.q) + '" aria-label="Search food spots">' +
+      '<div class="chips"><button class="chip alt" data-local aria-pressed="' + S.localOnly + '">Local only</button>' + chips + '</div>';
+    function sec(title, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><div class="list">' + a.map(function (s) { return spotRow(s); }).join('') + '</div>' : ''; }
+    h += sec('Town favorites', fav) + sec('Local spots', loc) + sec('Chains', ch);
+    if (!list.length) h += '<div class="empty"><b>No spots match</b>Clear the search or pick another category.</div>';
+    return h;
+  }
+  function viewRanks() {
+    var t = town();
+    var rated = t.spots.filter(function (s) { return U.ratings[s.id]; }).sort(function (a, b) { return U.ratings[b.id] - U.ratings[a.id] || (b.signature ? 1 : 0) - (a.signature ? 1 : 0) || a.name.localeCompare(b.name); });
+    var rest = t.spots.filter(function (s) { return !U.ratings[s.id]; }).sort(function (a, b) { return (b.signature ? 2 : 0) + (b.local ? 1 : 0) - (a.signature ? 2 : 0) - (a.local ? 1 : 0) || a.name.localeCompare(b.name); });
+    var h = '<div><h2>Best food in ' + esc(t.name) + '</h2><p class="sub">Ranked by star ratings. Tap a spot to rate it.</p></div>';
+    if (rated.length) h += '<div class="list">' + rated.map(function (s, i) { return spotRow(s, i + 1); }).join('') + '</div>';
+    else h += '<div class="empty"><b>No ratings in ' + esc(t.name) + ' yet</b>Rate the places you have eaten at and your ranking builds here.</div>';
+    h += '<div class="sechead"><h2>Still to rate</h2><span>' + rest.length + '</span></div><div class="list">' + rest.map(function (s) { return spotRow(s); }).join('') + '</div>';
+    h += '<p class="note">Ratings are saved on this phone for now. Rankings shared between all students need the accounts server, which is the next build step.</p>';
+    return h;
+  }
+  function viewMe() {
+    var colleges = []; DATA.towns.forEach(function (t) { t.colleges.forEach(function (c) { colleges.push({ n: c.name, t: t.id }); }); });
+    colleges.sort(function (a, b) { return a.n.localeCompare(b.n); });
+    var rated = Object.keys(U.ratings).filter(function (id) { return SPOTS[id]; }), saved = Object.keys(U.saved).filter(function (id) { return SPOTS[id] && U.saved[id]; });
+    var nd = 0, ns = 0, nc = 0; DATA.towns.forEach(function (t) { nc += t.colleges.length; ns += t.spots.length; t.spots.forEach(function (s) { nd += (s.deals || []).length; }); });
+    var h = '<div class="me"><span class="avatar">' + (U.avatar ? '<img alt="" src="' + esc(U.avatar) + '">' : esc(U.name ? initials(U.name) : '?')) + '</span>' +
+      '<div><h2>' + esc(U.name || 'Your profile') + '</h2><p class="sub">' + esc(U.school || 'Pick your school below') + '</p>' +
+      '<div class="btnrow" style="margin-top:8px"><label class="btn ghost" for="avatarFile">Change photo</label><input id="avatarFile" type="file" accept="image/*" hidden></div></div></div>' +
+      '<label class="field" for="nameIn">Name<input id="nameIn" type="text" maxlength="30" autocomplete="nickname" placeholder="What should we call you?" value="' + esc(U.name) + '"></label>' +
+      '<label class="field" for="schoolIn">School<select id="schoolIn"><option value="">Choose your college</option>' +
+      colleges.map(function (c) { return '<option value="' + esc(c.n) + '" data-town="' + esc(c.t) + '"' + (U.school === c.n ? ' selected' : '') + '>' + esc(c.n) + '</option>'; }).join('') + '</select></label>';
+    h += '<div class="sechead"><h2>Your ratings</h2><span>' + rated.length + '</span></div>' + (rated.length ? '<div class="list">' + rated.sort(function (a, b) { return U.ratings[b] - U.ratings[a]; }).map(function (id) { return spotRow(SPOTS[id]); }).join('') + '</div>' : '<div class="empty">Nothing rated yet.</div>');
+    h += '<div class="sechead"><h2>Saved spots</h2><span>' + saved.length + '</span></div>' + (saved.length ? '<div class="list">' + saved.map(function (id) { return spotRow(SPOTS[id]); }).join('') + '</div>' : '<div class="empty">Save a spot from its page to keep it here.</div>');
+    h += '<div class="sechead"><h2>What is in KORD</h2></div><div class="statrow"><div class="stat"><b>' + DATA.towns.length + '</b><span>towns</span></div><div class="stat"><b>' + nc + '</b><span>colleges</span></div><div class="stat"><b>' + ns + '</b><span>food spots</span></div><div class="stat"><b>' + nd + '</b><span>deals</span></div></div>' +
+      '<p class="note">Ohio data researched ' + esc(DATA.researchedOn || '') + '. Each spot and deal carries a link to its source. Your profile, photo and ratings stay on this phone.</p>';
+    return h;
+  }
+  function render() {
+    renderHead();
+    var v = document.getElementById('view');
+    v.innerHTML = S.tab === 'spots' ? viewSpots() : S.tab === 'ranks' ? viewRanks() : S.tab === 'me' ? viewMe() : viewDeals();
+    save('kord.prefs', { town: S.town, tab: S.tab });
+  }
+
+  /* sheets */
+  function openSheet(title, body) {
+    document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="' + esc(title) + '"><div class="sheethead"><h2>' + esc(title) + '</h2><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody">' + body + '</div></div></div>';
+  }
+  function closeSheet() { document.getElementById('sheetRoot').innerHTML = ''; }
+  function starsHtml(id) { var r = U.ratings[id] || 0, h = ''; for (var i = 1; i <= 5; i++) h += '<button class="' + (i <= r ? 'on' : '') + '" data-rate="' + i + '" data-id="' + esc(id) + '" aria-label="' + i + ' star' + (i > 1 ? 's' : '') + '">★</button>'; return '<div class="stars lg2" role="group" aria-label="Your rating">' + h + '</div>'; }
+  function spotSheet(id) {
+    var sp = SPOTS[id]; if (!sp) return;
+    var web = safeUrl(sp.website), src = safeUrl(sp.sourceUrl);
+    var h = '<div class="spothead">' + logo(sp, 'big') + '<div><h2>' + esc(sp.name) + '</h2><p class="sub">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</p>' + tagsHtml(sp) + '</div></div>';
+    if (sp.blurb) h += '<p style="margin:0">' + esc(sp.blurb) + '</p>';
+    h += '<div class="btnrow">' + (web ? '<a class="btn hot" target="_blank" rel="noopener" href="' + esc(web) + '">Visit website</a>' : '') +
+      (sp.address ? '<a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(sp.name + ' ' + sp.address) + '">Directions</a>' : '') +
+      '<button class="btn ghost" data-save="' + esc(id) + '">' + (U.saved[id] ? 'Saved' : 'Save') + '</button></div>';
+    if (sp.address) h += '<p class="note" style="margin:0">' + esc(sp.address) + '</p>';
+    h += '<div><div class="sechead"><h2>Your rating</h2></div>' + starsHtml(id) + '</div>';
+    h += '<div class="sechead"><h2>Deals this week</h2><span>' + (sp.deals || []).length + '</span></div>';
+    if ((sp.deals || []).length) {
+      h += '<div class="week">' + DAYS.map(function (d) {
+        var ds = sp.deals.filter(function (x) { return x.days.indexOf(d) >= 0; });
+        return '<div class="wd' + (d === S.day ? ' sel' : '') + '"><b>' + d + '</b><div>' + (ds.length ? ds.map(function (x) {
+          var u = safeUrl(x.sourceUrl);
+          return '<div class="wdeal"><strong>' + esc(x.title) + (x.price && x.title.indexOf(x.price) < 0 ? ' · ' + esc(x.price) : '') + '</strong><span>' + esc(x.details) + (x.national ? ' National offer at participating locations.' : '') + '</span>' +
+            (u ? '<a target="_blank" rel="noopener" href="' + esc(u) + '">Source: ' + esc(domain(u)) + (x.sourceDate ? ' (' + esc(x.sourceDate) + ')' : '') + '</a>' : '') + '</div>';
+        }).join('') : '<span class="none">No listed deal</span>') + '</div></div>';
+      }).join('') + '</div>';
+    } else h += '<div class="empty">We could not confirm a recurring deal here. Check their website for current specials.</div>';
+    if (src) h += '<p class="note" style="margin:0">Listing source: <a target="_blank" rel="noopener" href="' + esc(src) + '">' + esc(domain(src)) + '</a></p>';
+    openSheet(sp.name, h);
+  }
+  function townList(q) {
+    q = (q || '').toLowerCase(); var h = '', last = '';
+    DATA.towns.forEach(function (t) {
+      var hay = (t.name + ' ' + t.colleges.map(function (c) { return c.name; }).join(' ')).toLowerCase();
+      if (q && hay.indexOf(q) < 0) return;
+      if (t.region !== last) { h += '<div class="region">' + esc(t.region) + '</div>'; last = t.region; }
+      var nd = 0; t.spots.forEach(function (s) { nd += (s.deals || []).length; });
+      h += '<button class="row" data-town="' + esc(t.id) + '"><span class="mid"><h3>' + esc(t.name) + '</h3><p>' + esc(t.colleges.map(function (c) { return c.name; }).join(' · ')) + '</p></span><span class="end"><b>' + nd + '</b>deals · ' + t.spots.length + ' spots</span></button>';
+    });
+    return h || '<div class="empty"><b>No town or college matches</b>Try the college name, like "Ohio University".</div>';
+  }
+  function townSheet() {
+    openSheet('Pick a college town', '<input class="search" id="townSearch" type="search" placeholder="Search a town or college" aria-label="Search towns and colleges"><div class="list" id="townList">' + townList('') + '</div>');
+  }
+
+  /* events */
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest('button, a, [data-close]'); if (!t) return;
+    if (t.matches('[data-close]') && (e.target === t || t.classList.contains('x'))) return closeSheet();
+    if (t.dataset.rate) { var id = t.dataset.id, n = +t.dataset.rate; if (U.ratings[id] === n) delete U.ratings[id]; else U.ratings[id] = n; save('kord.user', U); t.parentNode.outerHTML = starsHtml(id); render(); return; }
+    if (t.dataset.save) { U.saved[t.dataset.save] = !U.saved[t.dataset.save]; save('kord.user', U); t.textContent = U.saved[t.dataset.save] ? 'Saved' : 'Save'; render(); return; }
+    if (t.dataset.spot) return spotSheet(t.dataset.spot);
+    if (t.dataset.town) { S.town = t.dataset.town; S.cat = 'All'; S.q = ''; closeSheet(); render(); window.scrollTo(0, 0); return; }
+    if (t.dataset.day) { S.day = t.dataset.day; return render(); }
+    if (t.dataset.tab) { S.tab = t.dataset.tab; S.cat = 'All'; render(); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + S.tab); } catch (err) {} return; }
+    if (t.dataset.cat) { S.cat = t.dataset.cat; return render(); }
+    if (t.dataset.sort) { S.sort = t.dataset.sort; return render(); }
+    if ('local' in t.dataset) { S.localOnly = !S.localOnly; return render(); }
+    if (t.id === 'townBtn') return townSheet();
+    if (t.id === 'meBtn') { S.tab = 'me'; render(); window.scrollTo(0, 0); }
+  });
+  document.addEventListener('input', function (e) {
+    var t = e.target;
+    if (t.id === 'townSearch') document.getElementById('townList').innerHTML = townList(t.value);
+    if (t.id === 'spotSearch') { S.q = t.value; render(); var n = document.getElementById('spotSearch'); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }
+    if (t.id === 'nameIn') { U.name = t.value.trim(); save('kord.user', U); renderHead(); }
+  });
+  document.addEventListener('change', function (e) {
+    var t = e.target;
+    if (t.id === 'nameIn') render();
+    if (t.id === 'schoolIn') { U.school = t.value; var o = t.selectedOptions[0]; if (o && o.dataset.town) S.town = o.dataset.town; save('kord.user', U); render(); }
+    if (t.id === 'avatarFile' && t.files && t.files[0]) {
+      var fr = new FileReader();
+      fr.onload = function () { var im = new Image(); im.onload = function () {
+        var c = document.createElement('canvas'), s = Math.min(im.width, im.height); c.width = c.height = 192;
+        c.getContext('2d').drawImage(im, (im.width - s) / 2, (im.height - s) / 2, s, s, 0, 0, 192, 192);
+        U.avatar = c.toDataURL('image/jpeg', .82); save('kord.user', U); render();
+      }; im.src = fr.result; };
+      fr.readAsDataURL(t.files[0]);
+    }
+  });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeSheet(); });
+
+  fetch('data/kord.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+    DATA = d;
+    d.towns.forEach(function (t) { t.spots.forEach(function (s) { SPOTS[s.id] = s; }); });
+    var h = (location.hash || '').slice(1); if (['deals', 'spots', 'ranks', 'me'].indexOf(h) >= 0) S.tab = h;
+    if (!d.towns.some(function (t) { return t.id === S.town; })) S.town = d.towns.some(function (t) { return t.id === 'athens'; }) ? 'athens' : d.towns[0].id;
+    render();
+  }).catch(function () {
+    document.getElementById('view').innerHTML = '<div class="empty"><b>Could not load the deals</b>Check your connection and reopen KORD.</div>';
+  });
+})();
+</script>
+
+<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});</script>
+</body>
+</html>

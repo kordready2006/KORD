@@ -1,0 +1,15 @@
+{
+  "name": "KORD",
+  "short_name": "KORD",
+  "description": "The best food deals in every Ohio college town, day by day.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#FF3B2F",
+  "theme_color": "#FF3B2F",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

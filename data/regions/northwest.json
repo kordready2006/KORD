@@ -1,0 +1,463 @@
+{
+  "region": "Northwest Ohio",
+  "researchedOn": "2026-11-25",
+  "towns": [
+    {
+      "id": "bowling-green",
+      "name": "Bowling Green",
+      "colleges": [
+        {
+          "name": "Bowling Green State University",
+          "type": "Public university",
+          "url": "https://www.bgsu.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Campus Pollyeyes",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "440 E Court St, Bowling Green, OH 43402",
+          "website": "https://campuspollyeyes.com",
+          "blurb": "Campus-edge pizza pub famous for its stuffed breadsticks.",
+          "price": "$$",
+          "sourceUrl": "https://www.aaa.com/tripcanvas/restaurant/campus-pollyeyes-AA46740",
+          "deals": []
+        },
+        {
+          "name": "South Side 6",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": true,
+          "address": "737 S Main St, Bowling Green, OH 43402",
+          "website": "https://www.southside6.com/",
+          "blurb": "Carryout and party store known for gyros, shawarma, hummus and game-day wings.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/south-side-6-5631234",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Monday Chicken Shawarma Meal",
+              "details": "Monday daily special: chicken shawarma meal.",
+              "price": "$13.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.southside6.com/deals",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Tuesday Two Jumbo Chili Dogs Meal",
+              "details": "Tuesday daily special: two jumbo chili dogs meal.",
+              "price": "$13.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.southside6.com/deals",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Wednesday Route 25 Burger Meal",
+              "details": "Wednesday daily special: Route 25 burger meal.",
+              "price": "$13.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.southside6.com/deals",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "Thursday Two Gyros",
+              "details": "Thursday daily special: two gyros.",
+              "price": "$19.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.southside6.com/deals",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "Friday Fish & Fries",
+              "details": "Friday daily special: fish and fries.",
+              "price": "$18.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.southside6.com/deals",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Sat"
+              ],
+              "title": "Dollar Wing Day",
+              "details": "Wings $1.00 each on Saturdays for any quantity of 15 pieces or more; sauce is extra.",
+              "price": "$1 per wing",
+              "studentOnly": false,
+              "sourceUrl": "https://www.southside6.com/deals",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Trotters Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "119 N Main St, Bowling Green, OH 43402",
+          "website": "https://www.trottersbg.com/",
+          "blurb": "Long-running downtown tavern known for never-frozen half-pound burgers and hand-cut fries.",
+          "price": "$$",
+          "sourceUrl": "https://www.trottersbg.com/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "10% off for BGSU students",
+              "details": "10% off on Tuesdays with a BGSU student ID. Dine-in only.",
+              "price": "10% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.trottersbg.com/",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Half-off sharables happy hour",
+              "details": "Wednesday happy hour 4-6 pm with half-off sharables. Dine-in only.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.trottersbg.com/",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "$10 Burger Night",
+              "details": "Choice of five never-frozen half-pound specialty burgers with hand-cut fries. Dine-in only.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://www.trottersbg.com/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Mr. Spots",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": true,
+          "address": "206 N Main St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Downtown shop serving Philly cheesesteaks and wings since 1985.",
+          "price": "$",
+          "sourceUrl": "https://order.online/store/-26088210/",
+          "deals": []
+        },
+        {
+          "name": "Beckett's Burger Bar",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "163 S Main St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Downtown burger bar with around 20 specialty burgers and build-your-own options.",
+          "price": "$$",
+          "sourceUrl": "https://wtol.com/article/news/community/go-419/becketts-burger-bar-bowling-green-review/512-74a159c2-76b0-4a65-b559-839ff6bf163c",
+          "deals": []
+        },
+        {
+          "name": "SamB's Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "146 N Main St, Bowling Green, OH 43402",
+          "website": "https://sambs.com/",
+          "blurb": "Downtown American restaurant with rotating weeknight features.",
+          "price": "$$",
+          "sourceUrl": "https://www.yelp.com/biz/sambs-bowling-green-2",
+          "deals": []
+        },
+        {
+          "name": "Pizza Pub 516",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "516 E Wooster St, Bowling Green, OH 43402",
+          "website": "https://order.spoton.com/BL-B99C-F1BB-8918",
+          "blurb": "Pizza pub across from campus in the former Myles Pizza Pub building.",
+          "price": "$$",
+          "sourceUrl": "https://www.yelp.com/biz/pizza-pub-516-bowling-green",
+          "deals": []
+        },
+        {
+          "name": "BG BurGers",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "1424 E Wooster St, Bowling Green, OH 43402",
+          "website": "https://www.toasttab.com/local/bg-burgers-1424-e-wooster-st/r-40b9da7f-c51d-4c4f-95b6-c1eed29681b2",
+          "blurb": "Burger counter on the east side of campus with chicken sandwiches, wraps and salads.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/bg-burgers-1424-e-wooster-st/r-40b9da7f-c51d-4c4f-95b6-c1eed29681b2",
+          "deals": []
+        },
+        {
+          "name": "Reverend's Bar & Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "130 E Wooster St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Downtown gastropub with Latin and Southwest influences and hand-pattied burgers.",
+          "price": "$$",
+          "sourceUrl": "https://bbb.org/us/oh/bowling-green/category/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Doc's Big City Saloon",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "145 N Main St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Downtown saloon known for wings, sharing a building with Cameo Pizza.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/docs-big-city-saloon-cameo-pizza-365081045",
+          "deals": []
+        },
+        {
+          "name": "Call of the Canyon Cafe",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "109 N Main St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Southwest-themed downtown cafe.",
+          "price": "$$",
+          "sourceUrl": "https://www.bgsu.edu/bg-city-tourism",
+          "deals": []
+        },
+        {
+          "name": "Grounds for Thought",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "174 S Main St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Downtown coffee shop and used bookstore.",
+          "price": "$",
+          "sourceUrl": "https://www.happycow.net/widget/north_america/usa/ohio/bowling_green/",
+          "deals": []
+        },
+        {
+          "name": "Juniper Brewing Company",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "145 S Main St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Downtown brewpub.",
+          "price": "$$",
+          "sourceUrl": "https://www.bgsu.edu/dining-options",
+          "deals": []
+        },
+        {
+          "name": "Eric's Ice Cream Factory",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "215 E Wooster St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Ice cream shop between downtown and campus.",
+          "price": "$",
+          "sourceUrl": "https://www.bgsu.edu/dining-options",
+          "deals": []
+        },
+        {
+          "name": "El Zarape",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "1616 E Wooster St #1, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Family-owned Mexican restaurant and bar east of campus.",
+          "price": "$$",
+          "sourceUrl": "https://www.bgsu.edu/dining-options",
+          "deals": []
+        },
+        {
+          "name": "Guajillo's Cocina Mexicana",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "176 E Wooster St, Bowling Green, OH 43402",
+          "website": "",
+          "blurb": "Locally owned family Mexican restaurant on East Wooster.",
+          "price": "$$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/guajillos-cocina-mexicana-375256795",
+          "deals": []
+        },
+        {
+          "name": "Fricker's",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "1720 E Wooster St, Bowling Green, OH 43402",
+          "website": "https://www.frickers.com",
+          "blurb": "Ohio-based wings and sports bar chain near the I-75 end of Wooster.",
+          "price": "$$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/frickers-5630731",
+          "deals": []
+        },
+        {
+          "name": "Jet's Pizza",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "1216 N Main St, Bowling Green, OH 43402",
+          "website": "https://www.jetspizza.com",
+          "blurb": "Detroit-style pizza chain.",
+          "price": "$$",
+          "sourceUrl": "https://www.slicelife.com/restaurants/oh/bowling-green/43402/jet-s-pizza-1216-n-main-st-bowling-green/menu/",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "320 E Wooster St, Bowling Green, OH 43402",
+          "website": "https://www.tacobell.com",
+          "blurb": "Taco chain between downtown and campus.",
+          "price": "$",
+          "sourceUrl": "https://www.tacobell.com/food?store=002188",
+          "deals": []
+        },
+        {
+          "name": "Tim Hortons",
+          "category": "Coffee & Bakery",
+          "local": false,
+          "signature": false,
+          "address": "1508 E Wooster St, Bowling Green, OH 43402",
+          "website": "https://www.timhortons.com",
+          "blurb": "Coffee and donut chain east of campus.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/category/bowling-green-oh/bubble-tea",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "toledo",
+      "name": "Toledo",
+      "colleges": [
+        {
+          "name": "University of Toledo",
+          "type": "Public university",
+          "url": "https://www.utoledo.edu"
+        },
+        {
+          "name": "Mercy College of Ohio",
+          "type": "Private college",
+          "url": "https://mercycollege.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Half Time Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "7702 W Bancroft St, Toledo, OH 43617",
+          "website": "",
+          "blurb": "Old-school pizza hangout making Myles-style pizza from the former Bowling Green favorite.",
+          "price": "$$",
+          "sourceUrl": "https://wtol.com/article/life/food/half-time-pizza-continues-the-legacy-of-old-school-bg-hangout/512-5a6d747f-2acf-49ad-ae49-b44b1f91d0d6",
+          "deals": []
+        },
+        {
+          "name": "The Wings Station",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "4015 Secor Rd, Toledo, OH",
+          "website": "https://www.toasttab.com/local/order/the-wings-station-4015-secor-road",
+          "blurb": "Wing shop on Secor Road north of campus.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/the-wings-station-4015-secor-road",
+          "deals": []
+        },
+        {
+          "name": "Phoenicia Cuisine",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "Thompson Student Union, University of Toledo, Toledo, OH",
+          "website": "",
+          "blurb": "Lebanese and Mediterranean restaurant inside the UToledo Student Union.",
+          "price": "$$",
+          "sourceUrl": "https://www.buckeyebroadband.com/blog/restaurants-near-toledo-ohio-university-of-toledo",
+          "deals": []
+        },
+        {
+          "name": "Chick-fil-A (University of Toledo)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "2801 W Bancroft St, Toledo, OH 43606",
+          "website": "https://www.chick-fil-a.com/universityoftoledo",
+          "blurb": "On-campus Chick-fil-A on UToledo's main campus.",
+          "price": "$",
+          "sourceUrl": "https://www.chick-fil-a.com/universityoftoledo",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "findlay",
+      "name": "Findlay",
+      "colleges": [
+        {
+          "name": "University of Findlay",
+          "type": "Private university",
+          "url": "https://www.findlay.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Logan's Irish Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "414 S Main St, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Irish pub in downtown Findlay.",
+          "price": "$$",
+          "sourceUrl": "https://www.opentable.com/landmark/restaurants-near-findlay-downtown-historic-district",
+          "deals": []
+        },
+        {
+          "name": "Taco Fiesta Hinojosa",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "224 N Main St, Findlay, OH 45840",
+          "website": "",
+          "blurb": "Downtown Findlay taco spot.",
+          "price": "$",
+          "sourceUrl": "https://visitfindlay.com/restaurantweek/taco-fiesta-hinojosa",
+          "deals": []
+        }
+      ]
+    }
+  ]
+}

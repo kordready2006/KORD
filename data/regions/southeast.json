@@ -1,0 +1,522 @@
+{
+  "region": "Southeast Ohio",
+  "researchedOn": "2026-11-25",
+  "towns": [
+    {
+      "id": "athens",
+      "name": "Athens",
+      "colleges": [
+        {
+          "name": "Ohio University",
+          "type": "Public university",
+          "url": "https://www.ohio.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Bagel Street Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": true,
+          "address": "27 S Court St, Athens, OH 45701",
+          "website": "https://www.bagelstreetdeli.com",
+          "blurb": "Tiny Court Street deli with a wall of 70-plus steamed bagel sandwiches.",
+          "price": "$",
+          "sourceUrl": "https://www.onlyinyourstate.com/ohio/tinyohiorestaurant/",
+          "deals": []
+        },
+        {
+          "name": "Big Mamma's Burritos",
+          "category": "Mexican",
+          "local": true,
+          "signature": true,
+          "address": "10 S Court St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Athens burrito staple known for oversized burritos in Baby, Regular and Mega Mamma sizes.",
+          "price": "$",
+          "sourceUrl": "https://www.onlyinyourstate.com/food/ohio/massive-burritos-satisfy-all-your-cravings-oh",
+          "deals": []
+        },
+        {
+          "name": "GoodFella's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "35 N Court St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Late-night Court Street slice shop serving thick, doughy square slices.",
+          "price": "$",
+          "sourceUrl": "https://athensohio.com/dining/goodfellas-pizza-court",
+          "deals": []
+        },
+        {
+          "name": "Courtside Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "85 N Court St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Uptown pizza bar at the north end of Court Street.",
+          "price": "$",
+          "sourceUrl": "https://www.thepostathens.com/article/2023/02/best-pizza-in-athens-goodfellas-courtside-slice",
+          "deals": [
+            {
+              "days": [
+                "Sun"
+              ],
+              "title": "$7.99 14-inch one-topping pizza",
+              "details": "14-inch one-topping pizza for $7.99, dine-in only, on Sundays. Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "price": "$7.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.thepostathens.com/r/0c1b85e22a",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "O'Betty's Red Hot",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "15 W State St, Athens, OH 45701",
+          "website": "https://toast.app/r/obettysredhot/order",
+          "blurb": "Burlesque-themed hot dog shop (and hot dog museum) open late.",
+          "price": "$",
+          "sourceUrl": "https://www.ohiomagazine.com/food-drink/article/how-o-betty-s-red-hot-merges-hot-dogs-and-burlesque",
+          "deals": []
+        },
+        {
+          "name": "Casa Nueva",
+          "category": "Mexican",
+          "local": true,
+          "signature": true,
+          "address": "4 W State St, Athens, OH 45701",
+          "website": "https://casanueva.com",
+          "blurb": "Worker-owned Mexican-inspired restaurant and cantina using local ingredients.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/casa-nueva-4-west-state-street",
+          "deals": []
+        },
+        {
+          "name": "Jackie O's Brewpub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "24 W Union St, Athens, OH 45701",
+          "website": "https://jackieos.com",
+          "blurb": "Athens' flagship craft brewery pub with a food menu and daily specials.",
+          "price": "$$",
+          "sourceUrl": "https://jackieos.com/location/public-house-restaurant",
+          "deals": []
+        },
+        {
+          "name": "Union Street Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": true,
+          "address": "70 W Union St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Classic diner known for all-day breakfast.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/union-street-diner-5997541",
+          "deals": []
+        },
+        {
+          "name": "Broney's Alumni Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "7 W Carpenter St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Bar and grill just off Court Street with burgers, wings and weekly food nights.",
+          "price": "$",
+          "sourceUrl": "https://ohiobrewweek.com/venue/broneys-alumni-grill/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Taco Tuesday",
+              "details": "$1 tacos and $1.50 chicken tacos, dine-in only. Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "price": "$1",
+              "studentOnly": false,
+              "sourceUrl": "https://www.thepostathens.com/r/ca270f47c0",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "75-cent wing night",
+              "details": "75-cent bone-in wings, dine-in only, 4 p.m. to 10 p.m. Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "price": "$0.75",
+              "studentOnly": false,
+              "sourceUrl": "https://www.thepostathens.com/r/ca270f47c0",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "North End Kitchen + Bar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "77 N Court St, Athens, OH 45701",
+          "website": "https://order.toasttab.com/online/northend-77-north-court-street",
+          "blurb": "Bar and kitchen at the north end of Court Street serving tacos, bowls and bar food.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/northend-77-north-court-street",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Taco Tuesday",
+              "details": "Traditional tacos $1 and chicken tacos $1.50 on Tuesdays. Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "price": "$1",
+              "studentOnly": false,
+              "sourceUrl": "https://www.thepostathens.com/r/ca270f47c0",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "The Pigskin Bar and Grille",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "38 N Court St, Athens, OH 45701",
+          "website": "https://www.thepigskin.com/",
+          "blurb": "Court Street sports bar and grille with sandwiches, wraps and wings.",
+          "price": "$",
+          "sourceUrl": "https://superpages.com/athens-oh/bpp/the-pigskin-sports-bar-grill-14396757",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "20% off for OU students on Mondays",
+              "details": "20% discount on Mondays for OU students showing a student ID (or Greek life members wearing letters). Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "price": "20% off",
+              "studentOnly": true,
+              "sourceUrl": "https://www.thepostathens.com/r/0c1b85e22a",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Stephen's On Court",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "66 N Court St, Athens, OH 45701",
+          "website": "https://www.toasttab.com/local/stephens-on-court/r-23bb787c-1220-4af5-a8f3-5ce4c8088545",
+          "blurb": "Slightly more upscale Court Street restaurant and bar with everyday food specials.",
+          "price": "$$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/stephens-275007656",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "$1 tacos",
+              "details": "$1 tacos on Tuesdays. Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "price": "$1",
+              "studentOnly": false,
+              "sourceUrl": "https://www.thepostathens.com/r/0c1b85e22a",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "D.P. Dough",
+          "category": "Pizza",
+          "local": false,
+          "signature": false,
+          "address": "374 Richland Ave, Athens, OH 45701",
+          "website": "",
+          "blurb": "Late-night calzone delivery chain popular with students.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/dp-dough-304126947",
+          "deals": []
+        },
+        {
+          "name": "Bubbles Tea & Juice Company",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "18 S Court St, Athens, OH 45701",
+          "website": "https://www.toasttab.com/local/order/bubbles-tea-juice-company-athens/r-cadaadc2-36a7-499f-af7d-41ad9998b612",
+          "blurb": "Court Street bubble tea, smoothie and juice shop.",
+          "price": "$",
+          "sourceUrl": "https://order.online/store/-35508137/",
+          "deals": []
+        },
+        {
+          "name": "Brenen's Coffee Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "38 S Court St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Court Street coffee shop with baked goods and made-to-order sandwiches.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/brenens-coffee-cafe-5997680",
+          "deals": []
+        },
+        {
+          "name": "Donkey Coffee and Espresso",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "17 1/2 W Washington St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Fair-trade coffeehouse and student study spot.",
+          "price": "$",
+          "sourceUrl": "https://www.thepostathens.com/article/2019/08/coffee-shop-changes-uptown-off-campus",
+          "deals": []
+        },
+        {
+          "name": "Ginger Asian Kitchen",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "28 S Court St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Fast-casual Asian rice and noodle bowls on Court Street.",
+          "price": "$",
+          "sourceUrl": "https://www.doordash.com/es/store/ginger-asian-kitchen-athens-594657",
+          "deals": []
+        },
+        {
+          "name": "Restaurant Salaam",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "21 W Washington St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Mediterranean and Middle Eastern restaurant just off Court Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.happycow.net/widget/north_america/usa/ohio/athens/",
+          "deals": []
+        },
+        {
+          "name": "Purple Chopstix",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "371 1/2 Richland Ave, Athens, OH 45701",
+          "website": "",
+          "blurb": "Eclectic Asian-inspired restaurant on Richland Avenue.",
+          "price": "$$",
+          "sourceUrl": "https://www.happycow.net/widget/north_america/usa/ohio/athens/",
+          "deals": []
+        },
+        {
+          "name": "Miller's Chicken",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": true,
+          "address": "235 W State St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Long-running west side fried chicken counter.",
+          "price": "$",
+          "sourceUrl": "https://maps.roadtrippers.com/us/athens-oh/food-drink/millers-chicken",
+          "deals": []
+        },
+        {
+          "name": "Larry's Dawg House",
+          "category": "Burgers",
+          "local": true,
+          "signature": true,
+          "address": "410 W Union St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Old-school drive-in for hot dogs, burgers and shakes.",
+          "price": "$",
+          "sourceUrl": "https://restaurantji.com/oh/athens",
+          "deals": []
+        },
+        {
+          "name": "Avalanche Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "329 E State St, Athens, OH 45701",
+          "website": "https://www.toasttab.com/local/order/avalanche-pizza",
+          "blurb": "Award-winning local pizzeria known for specialty and pan-crust pies.",
+          "price": "$$",
+          "sourceUrl": "https://roadtrippers.com/us/athens-oh/food-drink/avalanche-pizza",
+          "deals": []
+        },
+        {
+          "name": "Raising Cane's",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "63 S Court St, Athens, OH 45701",
+          "website": "https://locations.raisingcanes.com/oh/athens/63-south-court-street",
+          "blurb": "Chicken finger chain; walk-up uptown location with no drive-through, opened October 2025.",
+          "price": "$",
+          "sourceUrl": "https://locations.raisingcanes.com/oh/athens/63-south-court-street",
+          "deals": []
+        },
+        {
+          "name": "Playa Bowls",
+          "category": "Healthy & Bowls",
+          "local": false,
+          "signature": false,
+          "address": "63 S Court St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Acai, pitaya and coconut bowl and smoothie chain next to Raising Cane's, opened March 2026.",
+          "price": "$$",
+          "sourceUrl": "https://woub.org/2025/03/04/raising-canes-playa-bowls-restaurant-tenants-historic-building-uptown-athens-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Jimmy John's",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "16 S Court St, Athens, OH 45701",
+          "website": "https://locations.jimmyjohns.com/oh/athens/delivery-179.html",
+          "blurb": "Sub sandwich chain with delivery, on Court Street.",
+          "price": "$",
+          "sourceUrl": "https://locations.jimmyjohns.com/oh/athens/delivery-179.html",
+          "deals": []
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "41 S Court St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Burrito and bowl chain on Court Street; a second Athens location is at 960 E State St.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/chipotle-mexican-grill-276691138",
+          "deals": []
+        },
+        {
+          "name": "Wings Over Athens",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "33 N Court St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Wing and tender delivery chain on Court Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.iexitapp.com/best_food/Ohio/33/Athens/30278",
+          "deals": []
+        },
+        {
+          "name": "Insomnia Cookies",
+          "category": "Dessert & Ice Cream",
+          "local": false,
+          "signature": false,
+          "address": "27 N Court St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Late-night warm cookie chain.",
+          "price": "$",
+          "sourceUrl": "https://www.iexitapp.com/best_food/Ohio/33/Athens/30278",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "978 E State St, Athens, OH 45701",
+          "website": "https://locations.tacobell.com/oh/athens/978-e--state-street/fast-food.html",
+          "blurb": "Late-night drive-through tacos and burritos on East State Street.",
+          "price": "$",
+          "sourceUrl": "https://locations.tacobell.com/oh/athens/978-e--state-street/fast-food.html",
+          "deals": []
+        },
+        {
+          "name": "Arby's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "991 E State St, Athens, OH 45701",
+          "website": "https://arbys.com/locations/us/oh/athens/991-e-state-st/store-7443",
+          "blurb": "Roast beef sandwich chain on East State Street.",
+          "price": "$",
+          "sourceUrl": "https://arbys.com/locations/us/oh/athens/991-e-state-st/store-7443",
+          "deals": []
+        },
+        {
+          "name": "IHOP",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "1006 E State St, Athens, OH 45701",
+          "website": "https://restaurants.ihop.com/en-us/oh/athens/breakfast-1006-e.-east-state-street-3663/burgers",
+          "blurb": "Pancake house chain on East State Street.",
+          "price": "$$",
+          "sourceUrl": "https://restaurants.ihop.com/en-us/oh/athens/breakfast-1006-e.-east-state-street-3663/burgers",
+          "deals": []
+        },
+        {
+          "name": "Burger King",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "949 E State St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Burger chain on East State Street.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/dish/athens-oh/burrito",
+          "deals": []
+        },
+        {
+          "name": "Qdoba",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "859 E State St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Burrito and bowl chain on East State Street.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/dish/athens-oh/burrito",
+          "deals": []
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "914 E State St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Sub sandwich chain on East State Street.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/plukup/city/athens-oh",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "922 E State St, Athens, OH 45701",
+          "website": "",
+          "blurb": "Burger chain on East State Street.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/plukup/city/athens-oh",
+          "deals": []
+        },
+        {
+          "name": "Chick-fil-A",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "E State St, Athens, OH 45701",
+          "website": "https://www.chick-fil-a.com/press-room/announcing-chick-fil-a-athens-2",
+          "blurb": "Athens' first Chick-fil-A, opened on East State Street on Oct. 15, 2026.",
+          "price": "$",
+          "sourceUrl": "https://www.chick-fil-a.com/press-room/announcing-chick-fil-a-athens-2",
+          "deals": []
+        }
+      ]
+    }
+  ]
+}

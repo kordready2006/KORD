@@ -1,0 +1,818 @@
+{
+  "region": "Northeast Ohio",
+  "researchedOn": "2026-11-25",
+  "towns": [
+    {
+      "id": "cleveland",
+      "name": "Cleveland",
+      "colleges": [
+        {
+          "name": "Case Western Reserve University",
+          "type": "Private university",
+          "url": "https://case.edu"
+        },
+        {
+          "name": "Cleveland State University",
+          "type": "Public university",
+          "url": "https://www.csuohio.edu"
+        },
+        {
+          "name": "Cleveland Institute of Art",
+          "type": "Private art college",
+          "url": "https://www.cia.edu"
+        },
+        {
+          "name": "Cleveland Institute of Music",
+          "type": "Private music conservatory",
+          "url": "https://www.cim.edu"
+        },
+        {
+          "name": "Cuyahoga Community College (Tri-C)",
+          "type": "Community college",
+          "url": "https://www.tri-c.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Tommy's Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "1824 Coventry Rd, Cleveland Heights, OH 44118",
+          "website": "https://tommyscoventry.com/",
+          "blurb": "Coventry Village landmark at this address since 1993.",
+          "price": "$$",
+          "sourceUrl": "https://tommyscoventry.com/location-hours/",
+          "deals": []
+        },
+        {
+          "name": "Guys Pizza Co.",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "1838 Coventry Rd, Cleveland Heights, OH 44118",
+          "website": "https://www.guyspizzaco.com",
+          "blurb": "Regional pizza shop in Coventry Village.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/neighborhood/coventry-village-cleveland-heights-oh",
+          "deals": []
+        },
+        {
+          "name": "Pho & Rice",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1780 Coventry Rd, Cleveland Heights, OH 44118",
+          "website": "",
+          "blurb": "Vietnamese and Thai spot on Coventry Road.",
+          "price": "$$",
+          "sourceUrl": "https://www.ubereats.com/neighborhood/coventry-village-cleveland-heights-oh",
+          "deals": []
+        },
+        {
+          "name": "Soba Asian Kitchen",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "1827 Coventry Rd, Cleveland Heights, OH 44118",
+          "website": "",
+          "blurb": "Asian kitchen on Coventry Road.",
+          "price": "$$",
+          "sourceUrl": "https://www.ubereats.com/neighborhood/coventry-village-cleveland-heights-oh",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "university-heights",
+      "name": "University Heights",
+      "colleges": [
+        {
+          "name": "John Carroll University",
+          "type": "Private university",
+          "url": "https://www.jcu.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "pepper-pike",
+      "name": "Pepper Pike",
+      "colleges": [
+        {
+          "name": "Ursuline College",
+          "type": "Private college",
+          "url": "https://www.ursuline.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "berea",
+      "name": "Berea",
+      "colleges": [
+        {
+          "name": "Baldwin Wallace University",
+          "type": "Private university",
+          "url": "https://www.bw.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "oberlin",
+      "name": "Oberlin",
+      "colleges": [
+        {
+          "name": "Oberlin College",
+          "type": "Private college",
+          "url": "https://www.oberlin.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "elyria",
+      "name": "Elyria",
+      "colleges": [
+        {
+          "name": "Lorain County Community College",
+          "type": "Community college",
+          "url": "https://www.lorainccc.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "painesville",
+      "name": "Painesville",
+      "colleges": [
+        {
+          "name": "Lake Erie College",
+          "type": "Private college",
+          "url": "https://www.lec.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Panini's Bar & Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "7580 Fredle Dr, Painesville, OH 44077",
+          "website": "",
+          "blurb": "Northeast Ohio sandwich and sports bar chain location in the Painesville area.",
+          "price": "$$",
+          "sourceUrl": "https://www.yelp.com/biz/paninis-bar-and-grill-painesville-2",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "kirtland",
+      "name": "Kirtland",
+      "colleges": [
+        {
+          "name": "Lakeland Community College",
+          "type": "Community college",
+          "url": "https://www.lakelandcc.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "hiram",
+      "name": "Hiram",
+      "colleges": [
+        {
+          "name": "Hiram College",
+          "type": "Private college",
+          "url": "https://www.hiram.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "kent",
+      "name": "Kent",
+      "colleges": [
+        {
+          "name": "Kent State University",
+          "type": "Public university",
+          "url": "https://www.kent.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Ray's Place",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "135 Franklin Ave, Kent, OH 44240",
+          "website": "https://www.raysplacekent.com/",
+          "blurb": "Classic downtown Kent college bar and restaurant known for burgers, especially the two-patty Mo-Fo.",
+          "price": "$$",
+          "sourceUrl": "https://www.yelp.com/biz/rays-place-kent",
+          "deals": []
+        },
+        {
+          "name": "Taco Tontos",
+          "category": "Mexican",
+          "local": true,
+          "signature": true,
+          "address": "123 Franklin Ave, Kent, OH 44240",
+          "website": "https://www.tacotontoskent.com/",
+          "blurb": "Long-running burrito and taco shop, repeatedly voted Best Mexican Food in the Kent Stater's Best of Kent.",
+          "price": "$",
+          "sourceUrl": "https://www.tacotontoskent.com/",
+          "deals": [
+            {
+              "days": [
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat"
+              ],
+              "title": "Rotating daily specials",
+              "details": "A different special each day, posted daily on the shop's Instagram and Facebook. Open Tuesday-Saturday 11 AM-9 PM.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.tacotontoskent.com/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Mike's Place",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "1700 S Water St, Kent, OH 44240",
+          "website": "https://mikesplacerestaurant.com/",
+          "blurb": "Quirky Kent institution open since 1987 with a huge menu and a following for its wings.",
+          "price": "$$",
+          "sourceUrl": "https://www.yelp.com/biz/mikes-place-kent",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Tuesday burger with fries",
+              "details": "Burger with fries $10.99 (limit 6 toppings); smaller 5 oz version $8.99. Listed on the weekly specials page, subject to change.",
+              "price": "$8.99",
+              "studentOnly": false,
+              "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
+              "sourceDate": "2026-11"
+            }
+          ]
+        },
+        {
+          "name": "Barrio Kent",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "295 S Water St, Kent, OH 44240",
+          "website": "https://barrio-tacos.com/locations/kent/",
+          "blurb": "Cleveland-born build-your-own taco bar near Kent State.",
+          "price": "$$",
+          "sourceUrl": "https://barrio-tacos.com/locations/kent/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Happy hour: $1 off tacos, bowls and nachos",
+              "details": "Weekdays 3-6 PM: $1 off tacos, $1 off bowls and $1 off build-your-own nachos.",
+              "price": "$1 off",
+              "studentOnly": false,
+              "sourceUrl": "https://barrio-tacos.com/locations/kent/",
+              "sourceDate": "2026-06"
+            }
+          ]
+        },
+        {
+          "name": "Guy's Pizza Co.",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "146 S Water St, Kent, OH 44240",
+          "website": "https://www.guyspizzaco.com/locations/kent/",
+          "blurb": "Late-night pizza by the downtown bars; a past Best of Kent pizza winner.",
+          "price": "$",
+          "sourceUrl": "https://www.guyspizzaco.com/locations/kent/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Lunch specials before 2 PM",
+              "details": "Lunch specials every day before 2 PM (items not listed on the ordering page).",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://guyspizzakent.hrpos.heartland.us/",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$10.99 large 1-topping pizza",
+              "details": "Large one-topping pizza for $10.99, all day every day, per the shop's Threads page.",
+              "price": "$10.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.threads.com/@guyspizzacokent",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "EuroGyro",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "107 S Depeyster St, Kent, OH 44240",
+          "website": "https://eurogyro.com/locations/eurogyro-kent/",
+          "blurb": "Gyros and pizza open late; voted Best Late Night Snack in Best of Kent 2026.",
+          "price": "$",
+          "sourceUrl": "https://eurogyro.com/locations/eurogyro-kent/",
+          "deals": [
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "2 for Tuesday gyros",
+              "details": "Two gyros for $10.99 on Tuesdays.",
+              "price": "$10.99",
+              "studentOnly": false,
+              "sourceUrl": "https://eurogyro.com/euro-gyro-happenings/",
+              "sourceDate": "2026-05"
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Wacky Wednesday pizza",
+              "details": "Large one-item pizza for $7.99 on Wednesdays, dine-in or pick-up only.",
+              "price": "$7.99",
+              "studentOnly": false,
+              "sourceUrl": "https://eurogyro.com/euro-gyro-happenings/",
+              "sourceDate": "2026-05"
+            }
+          ]
+        },
+        {
+          "name": "Franklin Square Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": true,
+          "address": "108 S Water St, Kent, OH 44240",
+          "website": "https://www.franklinsquaredeli.com/",
+          "blurb": "Downtown Kent deli known for its Reuben and a rotating sandwich special.",
+          "price": "$",
+          "sourceUrl": "https://www.franklinsquaredeli.com/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "Rotating daily sandwich special",
+              "details": "Specials rotate; the deli says to stop in or check its Facebook page for the day's special. Open daily 11-5, Fri and Sat until 7.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.franklinsquaredeli.com/",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Over Easy at the Depot",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "152 Franklin Ave, Kent, OH 44240",
+          "website": "",
+          "blurb": "Breakfast and lunch in Kent's old train depot; Best Breakfast in Best of Kent 2026.",
+          "price": "$$",
+          "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g50499-d19436931-Reviews-Over_Easy_At_The_Depot-Kent_Ohio.html",
+          "deals": []
+        },
+        {
+          "name": "Water Street Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "132 S Water St, Kent, OH 44240",
+          "website": "https://order.toasttab.com/online/water-street-tavern-kent",
+          "blurb": "Downtown bar with jumbo wings and signature mac and cheese dishes.",
+          "price": "$$",
+          "sourceUrl": "https://www.yelp.com/biz/water-street-tavern-kent",
+          "deals": []
+        },
+        {
+          "name": "Fresco Mexican Grill & Salsa Bar",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "100 E Erie St Ste 112, Kent, OH 44240",
+          "website": "",
+          "blurb": "Counter-service burritos, tacos and salads with a salsa bar in downtown Kent.",
+          "price": "$",
+          "sourceUrl": "https://www.yelp.com/biz/fresco-mexican-grill-and-salsa-bar-kent",
+          "deals": []
+        },
+        {
+          "name": "Ming's Bubble Tea",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "1699 E Main St, Kent, OH 44240",
+          "website": "https://www.facebook.com/mingsbubbletea/",
+          "blurb": "Bubble tea shop on East Main Street.",
+          "price": "$",
+          "sourceUrl": "https://maps.apple.com/place?place-id=IA6B3E985BA889524",
+          "deals": []
+        },
+        {
+          "name": "HA!TEA Bubble Tea House",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "836 N Mantua St, Kent, OH 44240",
+          "website": "",
+          "blurb": "Bubble tea house with milk teas around $4.50-$4.99.",
+          "price": "$",
+          "sourceUrl": "https://www.yelp.com/biz/ha-tea-bubble-tea-house-kent?start=40",
+          "deals": []
+        },
+        {
+          "name": "Wild Goats Cafe",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "319 W Main St, Kent, OH 44240",
+          "website": "",
+          "blurb": "Cafe on West Main Street listed in the Destination Kent dining guide.",
+          "price": "$$",
+          "sourceUrl": "https://destinationkent.com/kent-dining-2/",
+          "deals": []
+        },
+        {
+          "name": "Dominick's",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "147 Franklin Ave, Kent, OH 44240",
+          "website": "",
+          "blurb": "Downtown Kent bar and eatery on Franklin Avenue.",
+          "price": "$",
+          "sourceUrl": "https://destinationkent.com/kent-dining-2/",
+          "deals": []
+        },
+        {
+          "name": "Venice Cafe",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "163 W Erie St, Kent, OH 44240",
+          "website": "",
+          "blurb": "Downtown Kent bar listed by Destination Kent.",
+          "price": "$",
+          "sourceUrl": "https://destinationkent.com/kent-bars/",
+          "deals": []
+        },
+        {
+          "name": "Wendy's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "515 E Main St, Kent, OH 44240",
+          "website": "https://www.wendys.com",
+          "blurb": "Burger chain on East Main Street near campus.",
+          "price": "$",
+          "sourceUrl": "https://centralportagevcb.org/dining/fine-dining-casual-fast-food/",
+          "deals": []
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "429 E Main St, Kent, OH 44240",
+          "website": "https://www.chipotle.com",
+          "blurb": "Burrito chain on East Main Street.",
+          "price": "$",
+          "sourceUrl": "https://destinationkent.com/kent-dining-2/",
+          "deals": []
+        },
+        {
+          "name": "Five Guys",
+          "category": "Burgers",
+          "local": false,
+          "signature": false,
+          "address": "623 E Main St, Kent, OH 44240",
+          "website": "https://restaurants.fiveguys.com/623-east-main-street",
+          "blurb": "Burgers, fries and milkshakes on East Main Street.",
+          "price": "$$",
+          "sourceUrl": "https://restaurants.fiveguys.com/623-east-main-street",
+          "deals": []
+        },
+        {
+          "name": "Raising Cane's",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "1801 E Main St, Kent, OH 44240",
+          "website": "https://www.raisingcanes.com",
+          "blurb": "Chicken finger chain on East Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.superpages.com/kent-oh/fast-food-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Taco Bell",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "4098 Maplecrest Pkwy, Kent, OH 44240",
+          "website": "https://www.tacobell.com",
+          "blurb": "Taco chain location in Kent.",
+          "price": "$",
+          "sourceUrl": "https://www.yelp.com/biz/taco-bell-kent-8",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "4223 OH-43, Kent, OH 44240",
+          "website": "https://www.mcdonalds.com",
+          "blurb": "Burger chain on State Route 43.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/kent/fast-food/",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "akron",
+      "name": "Akron",
+      "colleges": [
+        {
+          "name": "University of Akron",
+          "type": "Public university",
+          "url": "https://www.uakron.edu"
+        },
+        {
+          "name": "Stark State College Akron",
+          "type": "Community college",
+          "url": "https://www.starkstate.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "The Lockview",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Akron bar and restaurant about half a mile from campus.",
+          "price": "$$",
+          "sourceUrl": "https://www.downtownakron.com/event/downtown-akron-restaurant-specials-and-happy-hours",
+          "deals": [
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$7 burger Wednesdays",
+              "details": "$7 burger every Wednesday from 4 to 7 PM.",
+              "price": "$7",
+              "studentOnly": false,
+              "sourceUrl": "https://www.downtownakron.com/event/downtown-akron-restaurant-specials-and-happy-hours",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Mr. Zub's Deli & Bar",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "https://mrzubs.com/",
+          "blurb": "Highland Square deli and bar with over-the-top sandwiches, pizzas and wings.",
+          "price": "$",
+          "sourceUrl": "https://mrzubs.com/",
+          "deals": []
+        },
+        {
+          "name": "Buffalo Wild Wings",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "456 E Exchange St, Akron, OH",
+          "website": "https://www.buffalowildwings.com",
+          "blurb": "Wings chain on East Exchange Street by the University of Akron.",
+          "price": "$$",
+          "sourceUrl": "https://redirect.foursquare.com/christyc3839170/list/akron-restaurants",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "rootstown",
+      "name": "Rootstown",
+      "colleges": [
+        {
+          "name": "Northeast Ohio Medical University",
+          "type": "Public medical university",
+          "url": "https://www.neomed.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "north-canton",
+      "name": "North Canton",
+      "colleges": [
+        {
+          "name": "Stark State College",
+          "type": "Community college",
+          "url": "https://www.starkstate.edu"
+        },
+        {
+          "name": "Walsh University",
+          "type": "Private university",
+          "url": "https://www.walsh.edu"
+        },
+        {
+          "name": "Kent State University at Stark",
+          "type": "Public university regional campus",
+          "url": "https://www.kent.edu/stark"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "canton",
+      "name": "Canton",
+      "colleges": [
+        {
+          "name": "Malone University",
+          "type": "Private university",
+          "url": "https://www.malone.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "alliance",
+      "name": "Alliance",
+      "colleges": [
+        {
+          "name": "University of Mount Union",
+          "type": "Private university",
+          "url": "https://www.mountunion.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "wooster",
+      "name": "Wooster",
+      "colleges": [
+        {
+          "name": "The College of Wooster",
+          "type": "Private college",
+          "url": "https://wooster.edu"
+        },
+        {
+          "name": "Ohio State ATI (Agricultural Technical Institute)",
+          "type": "Public university regional campus",
+          "url": "https://ati.osu.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "orrville",
+      "name": "Orrville",
+      "colleges": [
+        {
+          "name": "University of Akron Wayne College",
+          "type": "Public university regional campus",
+          "url": "https://wayne.uakron.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "youngstown",
+      "name": "Youngstown",
+      "colleges": [
+        {
+          "name": "Youngstown State University",
+          "type": "Public university",
+          "url": "https://ysu.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "ashtabula",
+      "name": "Ashtabula",
+      "colleges": [
+        {
+          "name": "Kent State University at Ashtabula",
+          "type": "Public university regional campus",
+          "url": "https://www.kent.edu/ashtabula"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "salem",
+      "name": "Salem",
+      "colleges": [
+        {
+          "name": "Kent State University at Salem",
+          "type": "Public university regional campus",
+          "url": "https://www.kent.edu/columbiana"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "east-liverpool",
+      "name": "East Liverpool",
+      "colleges": [
+        {
+          "name": "Kent State University at East Liverpool",
+          "type": "Public university regional campus",
+          "url": "https://www.kent.edu/columbiana"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "warren",
+      "name": "Warren",
+      "colleges": [
+        {
+          "name": "Kent State University at Trumbull",
+          "type": "Public university regional campus",
+          "url": "https://www.kent.edu/trumbull"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "new-philadelphia",
+      "name": "New Philadelphia",
+      "colleges": [
+        {
+          "name": "Kent State University at Tuscarawas",
+          "type": "Public university regional campus",
+          "url": "https://www.kent.edu/tusc"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "burton",
+      "name": "Burton",
+      "colleges": [
+        {
+          "name": "Kent State University at Geauga",
+          "type": "Public university regional campus",
+          "url": "https://www.kent.edu/geauga"
+        }
+      ],
+      "spots": []
+    }
+  ]
+}

@@ -1,0 +1,786 @@
+{
+  "region": "Southwest Ohio",
+  "researchedOn": "2026-11-25",
+  "towns": [
+    {
+      "id": "cincinnati",
+      "name": "Cincinnati",
+      "colleges": [
+        {
+          "name": "University of Cincinnati",
+          "type": "Public university",
+          "url": "https://www.uc.edu"
+        },
+        {
+          "name": "Xavier University",
+          "type": "Private university",
+          "url": "https://www.xavier.edu"
+        },
+        {
+          "name": "Cincinnati State Technical and Community College",
+          "type": "Community college",
+          "url": "https://www.cincinnatistate.edu"
+        },
+        {
+          "name": "Mount St. Joseph University",
+          "type": "Private university",
+          "url": "https://www.msj.edu"
+        },
+        {
+          "name": "UC Blue Ash College",
+          "type": "Public regional campus",
+          "url": "https://www.ucblueash.edu"
+        },
+        {
+          "name": "Art Academy of Cincinnati",
+          "type": "Private art college",
+          "url": "https://www.artacademy.edu"
+        },
+        {
+          "name": "Good Samaritan College of Nursing and Health Science",
+          "type": "Private nursing college",
+          "url": "https://gscollege.edu"
+        },
+        {
+          "name": "The Christ College of Nursing and Health Sciences",
+          "type": "Private nursing college",
+          "url": "https://www.thechristcollege.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Adriatico's",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "113 W McMillan St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "UC-area pizzeria known for the huge rectangular Bearcat pizza.",
+          "price": "$$",
+          "sourceUrl": "https://www.cincinnatimagazine.com/dining-reviews/weeknight-adriaticos/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue"
+              ],
+              "title": "Monday & Tuesday Night Madness",
+              "details": "Discounted prices on medium, large and Bearcat cheese pizzas after 5 PM. Stated by a third-party listing, not the restaurant's own site; current prices not confirmed.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.atly.com/location/Adriatico's",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Tea 'n' Bowl",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "211 W McMillan St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Bubble tea and bowls on McMillan next to UC.",
+          "price": "$",
+          "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
+          "deals": []
+        },
+        {
+          "name": "Drop In Tea - UC",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "228 W McMillan St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Bubble tea shop on McMillan near UC.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/drop-in-tea-524985140",
+          "deals": []
+        },
+        {
+          "name": "Meet You Cafe",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "129 Calhoun St, Cincinnati, OH 45219",
+          "website": "",
+          "blurb": "Handcrafted boba tea, grape sago and brown sugar milk tea on Calhoun.",
+          "price": "$",
+          "sourceUrl": "https://www.poyst.com/business/meet-you-cafe",
+          "deals": []
+        },
+        {
+          "name": "Kung Fu Tea",
+          "category": "Boba & Tea",
+          "local": false,
+          "signature": false,
+          "address": "W McMillan St, Cincinnati, OH 45219",
+          "website": "https://www.kungfutea.com",
+          "blurb": "Bubble tea chain shop on West McMillan in the Clifton/UC area.",
+          "price": "$",
+          "sourceUrl": "https://wanderlog.com/place/details/3404011/kung-fu-tea",
+          "deals": []
+        },
+        {
+          "name": "Boba Cha",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "1606 Main St, Cincinnati, OH 45202",
+          "website": "",
+          "blurb": "Bubble tea shop in Over-the-Rhine.",
+          "price": "$",
+          "sourceUrl": "https://wanderlog.com/place/details/1245730/boba-cha",
+          "deals": []
+        },
+        {
+          "name": "Quatman Cafe",
+          "category": "Burgers",
+          "local": true,
+          "signature": true,
+          "address": "2434 Quatman Ave, Norwood, OH 45212",
+          "website": "",
+          "blurb": "No-frills Norwood tavern known for its cheeseburgers.",
+          "price": "$",
+          "sourceUrl": "https://www.cincinnatimagazine.com/dining-reviews/fine-diving-quatman-cafe/",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "batavia",
+      "name": "Batavia",
+      "colleges": [
+        {
+          "name": "UC Clermont College",
+          "type": "Public regional campus",
+          "url": "https://www.ucclermont.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "oxford",
+      "name": "Oxford",
+      "colleges": [
+        {
+          "name": "Miami University",
+          "type": "Public university",
+          "url": "https://miamioh.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Bagel & Deli Shop",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": true,
+          "address": "119 E High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Uptown institution since 1975 with 90+ steamed bagel sandwiches, including the Crunch N Munch.",
+          "price": "$",
+          "sourceUrl": "https://travelbutlercounty.com/node/9532",
+          "deals": []
+        },
+        {
+          "name": "Skipper's Pub & Top Deck",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "121 E High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Family-run uptown staple known for gyros and waffle fries, with an upstairs bar.",
+          "price": "$",
+          "sourceUrl": "https://enjoyoxford.org/restaurant/skippers-pub-top-deck",
+          "deals": []
+        },
+        {
+          "name": "Mac & Joe's",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "21 E High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Alley bar and restaurant serving burgers and wings since 1946, kitchen open late.",
+          "price": "$$",
+          "sourceUrl": "https://travelbutlercounty.com/node/10054",
+          "deals": []
+        },
+        {
+          "name": "Left Field Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "12 W Park Pl, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Uptown tavern with pub food and a weekly Wingo Bingo night.",
+          "price": "$$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/left-field-tavern-371191467",
+          "deals": [
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Wingo Bingo wing night",
+              "details": "Weekly Wingo Bingo night with discounted wings and multiple rounds of bingo; wing price not stated in the source.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://www.miamistudent.net/article/2025/09/left-field-tavern-review-craver-cravings-food",
+              "sourceDate": "2025-09"
+            }
+          ]
+        },
+        {
+          "name": "Johnny's Campus Deli",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "209 E Sycamore St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Campus deli with pizza and daily specials.",
+          "price": "$",
+          "sourceUrl": "https://www.travelbutlercounty.com/node/12484",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$4.99 12-inch pizza",
+              "details": "Listed among the deli's daily specials: a 12 inch pizza for $4.99.",
+              "price": "$4.99",
+              "studentOnly": false,
+              "sourceUrl": "https://www.travelbutlercounty.com/node/12484",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Bodega",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "11 W High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Delicatessen with hand-crafted sandwiches, salads, two soups of the day and a daily specials board.",
+          "price": "$",
+          "sourceUrl": "https://www.travelbutlercounty.com/node/13200",
+          "deals": []
+        },
+        {
+          "name": "SoHi Grilled Sandwiches",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "17 E High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Grilled subs, burgers and fries on High Street.",
+          "price": "$",
+          "sourceUrl": "https://www.travelbutlercounty.com/node/12484",
+          "deals": []
+        },
+        {
+          "name": "Doughby's",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "36 W High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Late-night spot for calzones, crepes and sweet treats.",
+          "price": "$",
+          "sourceUrl": "https://enjoyoxford.org/restaurant/doughbys",
+          "deals": []
+        },
+        {
+          "name": "SDS Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "7 E Chestnut St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Local pizza shop on East Chestnut Street.",
+          "price": "$",
+          "sourceUrl": "https://www.travelbutlercounty.com/node/12498",
+          "deals": []
+        },
+        {
+          "name": "Fiesta Charra",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "25 W High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Authentic Mexican restaurant open in Oxford since 2002.",
+          "price": "$$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/fiesta-charra-5890677",
+          "deals": []
+        },
+        {
+          "name": "El Burrito Loco",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "102 S Locust St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Mexican restaurant on South Locust Street.",
+          "price": "$$",
+          "sourceUrl": "https://enjoyoxford.org/latin-american-cuisine/",
+          "deals": []
+        },
+        {
+          "name": "Sabor Azteca",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "5174 College Corner Pike, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Mexican restaurant on College Corner Pike.",
+          "price": "$$",
+          "sourceUrl": "https://www.travelbutlercounty.com/explore/oxford/dining?page=1",
+          "deals": []
+        },
+        {
+          "name": "Krishna",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "28 W High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Uptown Indian restaurant.",
+          "price": "$$",
+          "sourceUrl": "https://www.travelbutlercounty.com/node/12494",
+          "deals": []
+        },
+        {
+          "name": "Oxford Sushi King",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "37 E High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "One of Oxford's favorite sushi spots.",
+          "price": "$$",
+          "sourceUrl": "https://enjoyoxford.org/asian-cuisine",
+          "deals": []
+        },
+        {
+          "name": "Drop In Tea",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "5 S Beech St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Bubble tea shop near Miami University.",
+          "price": "$",
+          "sourceUrl": "https://enjoyoxford.org/restaurant/drop-in-tea",
+          "deals": []
+        },
+        {
+          "name": "Yum Cha",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "411 S Locust St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Bubble milk tea, smoothies, fruit tea, croffles and acai bowls in the plaza near Kroger.",
+          "price": "$",
+          "sourceUrl": "https://miamistudent.net/article/2024/03/bubble-tea-is-popping-uptown-a-ranking-of-oxfords-boba-shops-and-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Aqua Tea",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "33 W High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Bubble tea shop on High Street.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/aqua-tea-425656523",
+          "deals": []
+        },
+        {
+          "name": "Kofenya",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "38 W High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Coffee shop in the uptown district.",
+          "price": "$",
+          "sourceUrl": "https://enjoyoxford.org/wp-content/uploads/2024/10/Enjoy-Oxford-Welcome-Guide-2024.pdf",
+          "deals": []
+        },
+        {
+          "name": "Oxford Doughnut Shoppe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "120 S Locust St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Doughnut shop and a stop on the Butler County Doughnut Trail.",
+          "price": "$",
+          "sourceUrl": "https://www.travelbutlercounty.com/node/194?page=1",
+          "deals": []
+        },
+        {
+          "name": "Patterson's Cafe",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "103 W Spring St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Breakfast served all day, seven days a week, with vegetarian and gluten-free options.",
+          "price": "$$",
+          "sourceUrl": "https://www.travelbutlercounty.com/node/12484",
+          "deals": []
+        },
+        {
+          "name": "Paesano's Pasta House",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "308 S Campus Ave, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Italian pasta house near campus.",
+          "price": "$$",
+          "sourceUrl": "https://www.travelbutlercounty.com/node/12484",
+          "deals": []
+        },
+        {
+          "name": "Steinkeller",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "15 E High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Underground Bavarian bier hall with German entrees and imported beer.",
+          "price": "$$",
+          "sourceUrl": "https://www.journal-news.com/news/steinkeller-brings-a-bavarian-experience-to-oxford/C4JSXA55AZCQRD4W6KFUOEHEQU/",
+          "deals": []
+        },
+        {
+          "name": "O'Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "10 W Park Pl, Oxford, OH 45056",
+          "website": "",
+          "blurb": "Uptown pub with Tuesday trivia and Thursday live music.",
+          "price": "$",
+          "sourceUrl": "https://www.travelbutlercounty.com/node/12484",
+          "deals": []
+        },
+        {
+          "name": "Brick Street Bar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "36 E High St, Oxford, OH 45056",
+          "website": "",
+          "blurb": "High Street college bar with a bar-food menu.",
+          "price": "$",
+          "sourceUrl": "https://www.allmenus.com/oh/oxford/280061-brick-street-bar/menu/",
+          "deals": []
+        },
+        {
+          "name": "Pickle & Pig",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "77 S Main St, Oxford, OH 45056",
+          "website": "https://www.toasttab.com/local/order/pickleandpig",
+          "blurb": "Prohibition-themed burger bar.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/pickleandpig",
+          "deals": []
+        },
+        {
+          "name": "Gaslight Brewhouse",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "325 S College Ave, Oxford, OH 45056",
+          "website": "https://www.toasttab.com/local/order/gaslight-brewhouse-aydwy",
+          "blurb": "Brewhouse with comfort food including burgers, tacos and mac and cheese.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/gaslight-brewhouse-aydwy",
+          "deals": []
+        },
+        {
+          "name": "LaRosa's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "Oxford, OH 45056",
+          "website": "https://www.larosas.com/locations/oxford",
+          "blurb": "Cincinnati-based regional pizza chain with an Oxford location.",
+          "price": "$$",
+          "sourceUrl": "https://www.larosas.com/locations/oxford",
+          "deals": []
+        },
+        {
+          "name": "Chipotle Mexican Grill",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "1 W High St, Oxford, OH 45056",
+          "website": "https://www.chipotle.com",
+          "blurb": "Burritos and bowls at the corner of High and Main.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/chipotle-mexican-grill-303889918",
+          "deals": []
+        },
+        {
+          "name": "Insomnia Cookies",
+          "category": "Dessert & Ice Cream",
+          "local": false,
+          "signature": false,
+          "address": "33 E High St, Oxford, OH 45056",
+          "website": "https://insomniacookies.com",
+          "blurb": "Late-night warm cookie chain.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/city/oxford-oh",
+          "deals": []
+        },
+        {
+          "name": "Jimmy John's",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "470 S Locust St, Oxford, OH 45056",
+          "website": "https://www.jimmyjohns.com",
+          "blurb": "Sub sandwich chain.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/city/oxford-oh",
+          "deals": []
+        },
+        {
+          "name": "Buffalo Wild Wings",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "10 E Walnut St, Oxford, OH 45056",
+          "website": "https://www.buffalowildwings.com",
+          "blurb": "Wings and sports bar chain.",
+          "price": "$$",
+          "sourceUrl": "https://www.opentable.com.au/r/buffalo-wild-wings-oxford-3",
+          "deals": []
+        },
+        {
+          "name": "Chick-fil-A (Armstrong Student Center)",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "550 E Spring St, Oxford, OH 45056",
+          "website": "https://www.chick-fil-a.com/locations/oh/miami-university-armstrong-student-center",
+          "blurb": "Licensed on-campus Chick-fil-A in Miami's Armstrong Student Center.",
+          "price": "$",
+          "sourceUrl": "https://www.chick-fil-a.com/locations/oh/miami-university-armstrong-student-center",
+          "deals": []
+        },
+        {
+          "name": "Waffle House",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "5000 College Corner Pike, Oxford, OH 45056",
+          "website": "https://www.wafflehouse.com",
+          "blurb": "24-hour diner chain.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/waffle-house-778619230",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "hamilton",
+      "name": "Hamilton",
+      "colleges": [
+        {
+          "name": "Miami University Hamilton",
+          "type": "Public regional campus",
+          "url": "https://miamioh.edu/regionals"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "middletown",
+      "name": "Middletown",
+      "colleges": [
+        {
+          "name": "Miami University Middletown",
+          "type": "Public regional campus",
+          "url": "https://miamioh.edu/regionals"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "dayton",
+      "name": "Dayton",
+      "colleges": [
+        {
+          "name": "University of Dayton",
+          "type": "Private university",
+          "url": "https://udayton.edu"
+        },
+        {
+          "name": "Sinclair Community College",
+          "type": "Community college",
+          "url": "https://www.sinclair.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "The Pine Club",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "1926 Brown St, Dayton, OH 45409",
+          "website": "",
+          "blurb": "Long-running steakhouse near the UD campus, one of Dayton's oldest restaurants.",
+          "price": "$$$",
+          "sourceUrl": "https://www.dayton.com/places/restaurant/where-eat-near-the-university-dayton/LhxZ09QL4OMlrFDO7ol5qO/",
+          "deals": []
+        },
+        {
+          "name": "Prime BBQ Smokehouse",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "Brown St, Dayton, OH",
+          "website": "",
+          "blurb": "Barbecue spot that opened on Brown Street near UD.",
+          "price": "$$",
+          "sourceUrl": "https://flyernews.com/campus/brown-street-resturaunts-aim-to-attract-ud-students/02/21/2026/",
+          "deals": []
+        },
+        {
+          "name": "Buffalo Wild Wings",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "Brown St, Dayton, OH",
+          "website": "https://www.buffalowildwings.com",
+          "blurb": "Wings and sports bar chain location on Brown Street by UD.",
+          "price": "$$",
+          "sourceUrl": "https://www.superpages.com/dayton-oh/bpp/buffalo-wild-wings-461774652",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "fairborn",
+      "name": "Fairborn",
+      "colleges": [
+        {
+          "name": "Wright State University",
+          "type": "Public university",
+          "url": "https://www.wright.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "cedarville",
+      "name": "Cedarville",
+      "colleges": [
+        {
+          "name": "Cedarville University",
+          "type": "Private university",
+          "url": "https://www.cedarville.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "wilberforce",
+      "name": "Wilberforce / Xenia",
+      "colleges": [
+        {
+          "name": "Central State University",
+          "type": "Public university",
+          "url": "https://www.centralstate.edu"
+        },
+        {
+          "name": "Wilberforce University",
+          "type": "Private university",
+          "url": "https://wilberforce.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "yellow-springs",
+      "name": "Yellow Springs",
+      "colleges": [
+        {
+          "name": "Antioch College",
+          "type": "Private college",
+          "url": "https://antiochcollege.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "springfield",
+      "name": "Springfield",
+      "colleges": [
+        {
+          "name": "Wittenberg University",
+          "type": "Private university",
+          "url": "https://www.wittenberg.edu"
+        },
+        {
+          "name": "Clark State College",
+          "type": "Community college",
+          "url": "https://www.clarkstate.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "wilmington",
+      "name": "Wilmington",
+      "colleges": [
+        {
+          "name": "Wilmington College",
+          "type": "Private college",
+          "url": "https://www.wilmington.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "hillsboro",
+      "name": "Hillsboro",
+      "colleges": [
+        {
+          "name": "Southern State Community College",
+          "type": "Community college",
+          "url": "https://www.sscc.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "piqua",
+      "name": "Piqua",
+      "colleges": [
+        {
+          "name": "Edison State Community College",
+          "type": "Community college",
+          "url": "https://www.edisonohio.edu"
+        }
+      ],
+      "spots": []
+    }
+  ]
+}

@@ -1,0 +1,982 @@
+{
+  "researchedOn": "2026-11-25",
+  "chains": [
+    {
+      "name": "McDonald's",
+      "category": "Fast Food",
+      "website": "https://www.mcdonalds.com",
+      "blurb": "Burgers, fries, McNuggets and all-day value under the McValue menu.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "McValue Buy One, Add One for $1",
+          "details": "Buy one eligible McValue item at full price and add a second of equal or lesser value for $1. Breakfast: Sausage McMuffin, Sausage Biscuit, Sausage Burrito, Hash Browns; lunch to late night: McChicken, Double Cheeseburger, 6-pc McNuggets, Small Fries. Prices and participation may vary.",
+          "price": "$1 add-on",
+          "studentOnly": false,
+          "sourceUrl": "https://www.mcdonalds.com/us/en-us/deals.html",
+          "sourceDate": ""
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "McValue Meal Deal from $5",
+          "details": "McDouble or McChicken, small fries, 4-pc Chicken McNuggets and a small soft drink. Listed as 'starting at $5'; price may be higher at some restaurants. Prices and participation may vary.",
+          "price": "$5",
+          "studentOnly": false,
+          "sourceUrl": "https://www.mcdonalds.com/us/en-us/deals.html",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Wendy's",
+      "category": "Burgers",
+      "website": "https://www.wendys.com",
+      "blurb": "Ohio-born burger chain known for square patties, the Frosty and Biggie Deals.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$4 Biggie Bites",
+          "details": "Choose one: Crispy Chicken Sandwich, Jr. Cheeseburger, Jr. Bacon Cheeseburger, 4-pc Nuggets or Jr. Fry; then a second: 4-pc Nuggets, Jr. Fry or small soft drink. Participating U.S. restaurants; price and options may vary by location.",
+          "price": "$4",
+          "studentOnly": false,
+          "sourceUrl": "https://www.wendys.com/mealdeals",
+          "sourceDate": "2026-01"
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$6 Biggie Bag",
+          "details": "Choice of Crispy Chicken Sandwich, Jr. Cheeseburger, Jr. Bacon Cheeseburger or Double Stack, plus 4-pc Nuggets, Jr. Fry and small soft drink. Participating U.S. restaurants; price may vary.",
+          "price": "$6",
+          "studentOnly": false,
+          "sourceUrl": "https://www.wendys.com/mealdeals",
+          "sourceDate": "2026-01"
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$8 Biggie Bundle",
+          "details": "Two sandwiches (Crispy Chicken Sandwich, Jr. Cheeseburger, Jr. Bacon Cheeseburger or Double Stack) plus Jr. Fry and small soft drink. Participating U.S. restaurants; price may vary.",
+          "price": "$8",
+          "studentOnly": false,
+          "sourceUrl": "https://www.wendys.com/mealdeals",
+          "sourceDate": "2026-01"
+        }
+      ]
+    },
+    {
+      "name": "Burger King",
+      "category": "Burgers",
+      "website": "https://www.bk.com",
+      "blurb": "Home of the flame-grilled Whopper, with rotating offers in the Royal Perks app.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Taco Bell",
+      "category": "Mexican",
+      "website": "https://www.tacobell.com",
+      "blurb": "Late-night tacos, burritos and Crunchwraps with a dedicated value menu.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "Luxe Value Menu: 10 items at $3 or less",
+          "details": "Ten items priced at $3 or less (five new, five carried over from the former Cravings Value Menu). Prices may vary by location.",
+          "price": "$3 or less",
+          "studentOnly": false,
+          "sourceUrl": "https://www.tacobell.com/newsroom/taco-bell-launches-the-new-luxe-value-menu",
+          "sourceDate": "2026-01"
+        },
+        {
+          "days": [
+            "Tue"
+          ],
+          "title": "Tuesday Drops (app)",
+          "details": "App-only for Taco Bell Rewards members: a new drop every Tuesday at 2 PM PT, first come, first served, in limited quantities. Drops vary week to week (one example was a Luxe Value Menu item for $1).",
+          "price": "",
+          "studentOnly": false,
+          "sourceUrl": "https://www.tacobell.com/newsroom/taco-bell-launches-the-new-luxe-value-menu",
+          "sourceDate": "2026-01"
+        }
+      ]
+    },
+    {
+      "name": "Chipotle",
+      "category": "Mexican",
+      "website": "https://www.chipotle.com",
+      "blurb": "Build-your-own burritos and bowls.",
+      "price": "$$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "Chipotle U Rewards (student loyalty)",
+          "details": "College students who verify enrollment through ID.me earn 12 points per $1 instead of the regular 10, plus 1,000 bonus points on joining. App/rewards account required; this is extra points, not a price discount.",
+          "price": "",
+          "studentOnly": true,
+          "sourceUrl": "https://newsroom.chipotle.com/2025-08-19-CHIPOTLE-UNVEILS-FIRST-EVER-COLLEGE-REWARDS-PROGRAM-AND-EXCLUSIVE-DORM-COLLECTION-WITH-URBAN-OUTFITTERS",
+          "sourceDate": "2025-08"
+        }
+      ]
+    },
+    {
+      "name": "Qdoba",
+      "category": "Mexican",
+      "website": "https://www.qdoba.com",
+      "blurb": "Burritos, bowls and queso with free add-ons like guac.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Subway",
+      "category": "Sandwiches & Subs",
+      "website": "https://www.subway.com",
+      "blurb": "Made-to-order subs with daily featured sandwiches.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$4.99 Sub of the Day",
+          "details": "A different featured six-inch sub each day of the week for $4.99. Prices higher in AK and HI; participation may vary.",
+          "price": "$4.99",
+          "studentOnly": false,
+          "sourceUrl": "https://newsroom.subway.com/2026-04-28-Subway-R-Introduces-Its-First-Ever-Value-Menu-with-15-Entrees-Under-5",
+          "sourceDate": "2026-04"
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$6.99 Meal of the Day",
+          "details": "The day's featured six-inch sub for $6.99 (footlong $9.99) with two cookies or a bag of chips and a small fountain drink. Prices higher in CA, AK and HI; participation may vary.",
+          "price": "$6.99",
+          "studentOnly": false,
+          "sourceUrl": "https://newsroom.subway.com/2026-03-05-Subway-R-Seeks-to-Serve-1-Million-Meatballs-on-National-Meatball-Day-with-Free-Footlong-Upgrades",
+          "sourceDate": "2026-03"
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "Value Menu: 15 entrees under $5",
+          "details": "Subway's value menu launched April 2026 with 15 entrees priced under $5. Prices and participation may vary.",
+          "price": "Under $5",
+          "studentOnly": false,
+          "sourceUrl": "https://newsroom.subway.com/2026-04-28-Subway-R-Introduces-Its-First-Ever-Value-Menu-with-15-Entrees-Under-5",
+          "sourceDate": "2026-04"
+        }
+      ]
+    },
+    {
+      "name": "Jimmy John's",
+      "category": "Sandwiches & Subs",
+      "website": "https://www.jimmyjohns.com",
+      "blurb": "Fast-delivery sub sandwiches on fresh-baked bread.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Jersey Mike's",
+      "category": "Sandwiches & Subs",
+      "website": "https://www.jerseymikes.com",
+      "blurb": "Jersey Shore-style subs sliced to order.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Penn Station East Coast Subs",
+      "category": "Sandwiches & Subs",
+      "website": "https://www.penn-station.com",
+      "blurb": "Cincinnati-based grilled subs, cheesesteaks and fresh-cut fries.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Raising Cane's",
+      "category": "Wings & Chicken",
+      "website": "https://www.raisingcanes.com",
+      "blurb": "Chicken finger combos with Cane's sauce, Texas toast and crinkle fries.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Chick-fil-A",
+      "category": "Wings & Chicken",
+      "website": "https://www.chick-fil-a.com",
+      "blurb": "Chicken sandwiches, nuggets and waffle fries; closed Sundays.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "KFC",
+      "category": "Wings & Chicken",
+      "website": "https://www.kfc.com",
+      "blurb": "Fried chicken buckets, tenders and bowls.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$10 Taste of KFC Fried Chicken Meal",
+          "details": "4 pieces of fried chicken, 2 mashed potato sides and 2 biscuits for $10. Price and participation may vary by location.",
+          "price": "$10",
+          "studentOnly": false,
+          "sourceUrl": "https://www.kfc.com/menu/family-and-kids-meals/taste-of-kfc-4-piece-deal",
+          "sourceDate": ""
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$5 Mac & Cheese Bowl",
+          "details": "Mac and cheese topped with crispy chicken nuggets and a three-cheese blend, listed at $5. Price and participation may vary by location.",
+          "price": "$5",
+          "studentOnly": false,
+          "sourceUrl": "https://www.kfc.com/menu/pot-pies-and-bowls/mac-and-cheese-bowl",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Popeyes",
+      "category": "Wings & Chicken",
+      "website": "https://www.popeyes.com",
+      "blurb": "Louisiana-style fried chicken, tenders and the chicken sandwich.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Arby's",
+      "category": "Sandwiches & Subs",
+      "website": "https://www.arbys.com",
+      "blurb": "Roast beef sandwiches and curly fries.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "2 for $6 Everyday Value",
+          "details": "Mix and match two select sandwiches or wraps for $6. Eligible items, price and participation may vary by location.",
+          "price": "2 for $6",
+          "studentOnly": false,
+          "sourceUrl": "https://www.arbys.com/featured/2-for-6-everyday-value",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Skyline Chili",
+      "category": "Other",
+      "website": "https://www.skylinechili.com",
+      "blurb": "Cincinnati-style chili served as 3-Ways and cheese coneys.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Gold Star Chili",
+      "category": "Other",
+      "website": "https://www.goldstarchili.com",
+      "blurb": "Cincinnati-style chili parlor with coneys, ways and burgers.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Donatos",
+      "category": "Pizza",
+      "website": "https://www.donatos.com",
+      "blurb": "Columbus-born thin-crust pizza with edge-to-edge toppings.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Domino's",
+      "category": "Pizza",
+      "website": "https://www.dominos.com",
+      "blurb": "Delivery and carryout pizza, wings and sides.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "Mix & Match: any 2 or more for $6.99 each",
+          "details": "Choose any two or more eligible items for $6.99 each (2-item minimum). Prices higher at some locations; participation may vary.",
+          "price": "$6.99 each",
+          "studentOnly": false,
+          "sourceUrl": "https://www.dominos.com/deals",
+          "sourceDate": ""
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "Weeklong Carryout Deal $7.99",
+          "details": "Carryout only: large 1-topping pizza, 8-piece wings or boneless chicken, or other eligible items for $7.99 each. Prices and participation may vary by store.",
+          "price": "$7.99",
+          "studentOnly": false,
+          "sourceUrl": "https://www.dominos.com/deals",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Papa Johns",
+      "category": "Pizza",
+      "website": "https://www.papajohns.com",
+      "blurb": "Delivery pizza known for garlic dipping sauce.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "Papa Pairings from $6.99 each",
+          "details": "Choose two or more eligible items (select medium 1-topping pizzas, Oven-Toasted Sandwiches, wings, breadsticks, cheesesticks, garlic knots, desserts) starting at $6.99 each, delivery or carryout. Participating locations; eligible items and prices vary by location.",
+          "price": "$6.99 each",
+          "studentOnly": false,
+          "sourceUrl": "https://www.papajohns.com/specials/",
+          "sourceDate": "2026-03"
+        }
+      ]
+    },
+    {
+      "name": "Little Caesars",
+      "category": "Pizza",
+      "website": "https://littlecaesars.com",
+      "blurb": "Hot-N-Ready carryout pizza and Crazy Bread.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Marco's Pizza",
+      "category": "Pizza",
+      "website": "https://www.marcos.com",
+      "blurb": "Toledo-founded pizza chain with dough made in-store daily.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Pizza Hut",
+      "category": "Pizza",
+      "website": "https://www.pizzahut.com",
+      "blurb": "Pan pizza, wings and Melts for delivery or carryout.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$7 Deal Lover's Menu",
+          "details": "Medium one-topping pizzas, Melts, wings, pastas, sides and desserts at $7 each when you order two or more. Priced higher in some locations; availability and participation vary.",
+          "price": "$7 each",
+          "studentOnly": false,
+          "sourceUrl": "https://www.pizzahut.com/c/content/7-dollar-deal-lovers",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Buffalo Wild Wings",
+      "category": "Wings & Chicken",
+      "website": "https://www.buffalowildwings.com",
+      "blurb": "Sports bar with wings in two dozen sauces and dry rubs.",
+      "price": "$$",
+      "deals": [
+        {
+          "days": [
+            "Tue"
+          ],
+          "title": "BOGO Bone-In Wings Tuesday",
+          "details": "Buy one order of bone-in (traditional) wings on Tuesday and get a second of equal or lesser value discounted. BWW's own pages differ on the discount (homepage: 50% off the second order for Rewards members; promos page: 100% off), so check the app. Participating locations.",
+          "price": "BOGO",
+          "studentOnly": false,
+          "sourceUrl": "https://www.buffalowildwings.com/bogo-days/",
+          "sourceDate": ""
+        },
+        {
+          "days": [
+            "Thu"
+          ],
+          "title": "BOGO Boneless Wings Thursday",
+          "details": "Buy one order of boneless wings on Thursday and get one of equal or lesser value free. Fine print varies on dine-in vs takeout/delivery; participating locations.",
+          "price": "BOGO free",
+          "studentOnly": false,
+          "sourceUrl": "https://www.buffalowildwings.com/bogo-days/",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Wingstop",
+      "category": "Wings & Chicken",
+      "website": "https://www.wingstop.com",
+      "blurb": "Classic and boneless wings in bold flavors with seasoned fries.",
+      "price": "$$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "Boneless Meal Deal",
+          "details": "20 boneless wings in up to 4 flavors, a large seasoned fry and 2 dips. Listed at $16.99 at one location and $18.99 at another; price varies by location.",
+          "price": "From $16.99",
+          "studentOnly": false,
+          "sourceUrl": "https://www.wingstop.com/order/boneless-meal-deal",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Panera Bread",
+      "category": "Coffee & Bakery",
+      "website": "https://www.panerabread.com",
+      "blurb": "Bakery-cafe with soups, sandwiches, salads and the Unlimited Sip Club.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Starbucks",
+      "category": "Coffee & Bakery",
+      "website": "https://www.starbucks.com",
+      "blurb": "Espresso drinks, Refreshers and study-friendly cafes.",
+      "price": "$$",
+      "deals": [
+        {
+          "days": [
+            "Mon"
+          ],
+          "title": "Free Mod Mondays (Rewards)",
+          "details": "Starbucks Rewards members get a coupon for one free drink customization (including cold foam) one Monday a month. App/Rewards account required.",
+          "price": "Free customization",
+          "studentOnly": false,
+          "sourceUrl": "https://about.starbucks.com/starbucks-rewards-faq/",
+          "sourceDate": "2026-03"
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "Free brewed coffee and tea refills in cafe",
+          "details": "Free refills of hot or iced brewed coffee or tea during the same cafe visit. Excludes Cold Brew, Nitro Cold Brew, Iced Tea Lemonade, flavored iced tea and Refreshers.",
+          "price": "Free refill",
+          "studentOnly": false,
+          "sourceUrl": "https://about.starbucks.com/back-to-starbucks/",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Dunkin'",
+      "category": "Coffee & Bakery",
+      "website": "https://www.dunkindonuts.com",
+      "blurb": "Coffee, donuts and breakfast sandwiches.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$6 Meal Deal",
+          "details": "Bacon, Egg and Cheese Sandwich, Hash Browns and a medium hot or iced coffee for $6. Billed by Dunkin' as a limited-time offer but renewed through 2026; participation may vary.",
+          "price": "$6",
+          "studentOnly": false,
+          "sourceUrl": "https://news.dunkindonuts.com/news/dunkin-new-menu-september-2026",
+          "sourceDate": "2026-09"
+        }
+      ]
+    },
+    {
+      "name": "Tim Hortons",
+      "category": "Coffee & Bakery",
+      "website": "https://www.timhortons.com",
+      "blurb": "Canadian coffee and donut chain with breakfast sandwiches and Timbits.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$6 Tims Trio",
+          "details": "Medium hot brewed or iced coffee, one classic or specialty donut and one eligible hot breakfast sandwich for $6 at participating U.S. restaurants, in-store or in the app (higher prices on delivery).",
+          "price": "$6",
+          "studentOnly": false,
+          "sourceUrl": "https://www.timhortons.com/offer-terms",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Dairy Queen",
+      "category": "Dessert & Ice Cream",
+      "website": "https://www.dairyqueen.com",
+      "blurb": "Blizzards, soft serve and burger and chicken strip baskets.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$7 Meal Deal",
+          "details": "Cheeseburger Meal Deal: cheeseburger, fries and a soft drink for $7 (a 3-piece chicken strip version is also listed). Participating locations; prices may vary.",
+          "price": "$7",
+          "studentOnly": false,
+          "sourceUrl": "https://www.dairyqueen.com/en-us/menu/cheeseburger-meal-deal/",
+          "sourceDate": ""
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "2 for $5 Super Snack",
+          "details": "Mix and match two snack items (such as a small sundae or 2-piece chicken strips) for $5. Participating locations; at least one location lists it as 2 for $6.",
+          "price": "2 for $5",
+          "studentOnly": false,
+          "sourceUrl": "https://www.dairyqueen.com/en-us/menu/small-sundae-2-for-5/",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Sonic",
+      "category": "Fast Food",
+      "website": "https://www.sonicdrivein.com",
+      "blurb": "Drive-in with slushes, tots, burgers and coneys.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "Half-price Drinks and Slushes (SONIC Rewards)",
+          "details": "App-only: SONIC Rewards members choose one of three benefit offers each visit, including half-price Drinks and Slushes (others: a free snack or side, or $2 off a $10 order). Exclusions apply; not valid with combos or delivery.",
+          "price": "50% off",
+          "studentOnly": false,
+          "sourceUrl": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
+          "sourceDate": ""
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "$1.99 Menu",
+          "details": "Value menu Sonic described as 'here to stay': items such as a Quarter Pound Double Cheeseburger, Chili Cheese Coney, queso wraps, small tots and 16 oz shakes at $1.99. Lineup has been revised over time; participating locations.",
+          "price": "$1.99",
+          "studentOnly": false,
+          "sourceUrl": "https://stories.inspirebrands.com/sonic-debuts-new-1-99-menu-featuring-new-queso-wraps/",
+          "sourceDate": "2024-07"
+        }
+      ]
+    },
+    {
+      "name": "Five Guys",
+      "category": "Burgers",
+      "website": "https://www.fiveguys.com",
+      "blurb": "Made-to-order burgers with free toppings and fresh-cut fries.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Steak 'n Shake",
+      "category": "Burgers",
+      "website": "https://www.steaknshake.com",
+      "blurb": "Steakburgers and hand-dipped milkshakes.",
+      "price": "$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri"
+          ],
+          "title": "Half Price Happy Hour",
+          "details": "Half-price shakes and drinks on weekdays. The 2-5 pm window is as reported by third-party coverage (the official page was not readable in full); hours and participation vary by location.",
+          "price": "50% off",
+          "studentOnly": false,
+          "sourceUrl": "https://www.steaknshake.com/menu_specials/half-price-happy-hour/",
+          "sourceDate": ""
+        }
+      ]
+    },
+    {
+      "name": "Culver's",
+      "category": "Burgers",
+      "website": "https://www.culvers.com",
+      "blurb": "ButterBurgers, cheese curds and frozen custard with a Flavor of the Day.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Swensons",
+      "category": "Burgers",
+      "website": "https://swensonsdriveins.com",
+      "blurb": "Akron-born drive-in with curbside service and the Galley Boy double cheeseburger.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "White Castle",
+      "category": "Burgers",
+      "website": "https://www.whitecastle.com",
+      "blurb": "Columbus-based home of the original slider.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Panda Express",
+      "category": "Asian",
+      "website": "https://www.pandaexpress.com",
+      "blurb": "American Chinese bowls and plates, including Orange Chicken.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Insomnia Cookies",
+      "category": "Dessert & Ice Cream",
+      "website": "https://insomniacookies.com",
+      "blurb": "Warm cookies delivered late into the night.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Crumbl",
+      "category": "Dessert & Ice Cream",
+      "website": "https://crumblcookies.com",
+      "blurb": "Oversized cookies and desserts on a weekly rotating menu.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Bibibop",
+      "category": "Asian",
+      "website": "https://www.bibibop.com",
+      "blurb": "Columbus-based Korean-inspired build-your-own rice bowls.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Piada",
+      "category": "Other",
+      "website": "https://mypiada.com",
+      "blurb": "Columbus-based Italian street food: piadas, pasta bowls and salads.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Fusian",
+      "category": "Asian",
+      "website": "https://www.fusian.com",
+      "blurb": "Ohio-based build-your-own sushi rolls and bowls.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Condado Tacos",
+      "category": "Mexican",
+      "website": "https://condadotacos.com",
+      "blurb": "Columbus-born build-your-own taco joint with queso and margaritas.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Roosters",
+      "category": "Wings & Chicken",
+      "website": "https://www.roosterswings.com",
+      "blurb": "Ohio-based casual wing joint with daily specials.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Waffle House",
+      "category": "Breakfast & Brunch",
+      "website": "https://www.wafflehouse.com",
+      "blurb": "24-hour diner serving waffles, hashbrowns and breakfast all day.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "IHOP",
+      "category": "Breakfast & Brunch",
+      "website": "https://www.ihop.com",
+      "blurb": "Pancake house with all-day breakfast.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Applebee's",
+      "category": "Bar & Grill",
+      "website": "https://www.applebees.com",
+      "blurb": "Casual bar and grill with appetizers, burgers and late-night hours.",
+      "price": "$$",
+      "deals": [
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "Late Night Half-Price Appetizers",
+          "details": "Half-price select appetizers during late-night hours, dine-in only, at participating restaurants. Hours vary by location (one location page lists 10 pm-close every night); confirm with your local Applebee's.",
+          "price": "50% off",
+          "studentOnly": false,
+          "sourceUrl": "https://www.applebees.com/en/news/2023/cure-late-night-cravings-with-applebees-late-night-half-off-appetizers",
+          "sourceDate": "2023"
+        },
+        {
+          "days": [
+            "Mon",
+            "Tue",
+            "Wed",
+            "Thu",
+            "Fri",
+            "Sat",
+            "Sun"
+          ],
+          "title": "2 for $25",
+          "details": "Two entrees plus one appetizer for $25, dine-in, To Go or delivery. Featured entrees rotate and the menu is billed as limited-time; price and participation vary by location.",
+          "price": "$25 for two",
+          "studentOnly": false,
+          "sourceUrl": "https://www.applebees.com/en/specials/2-for-25",
+          "sourceDate": "2026-07"
+        }
+      ]
+    },
+    {
+      "name": "Kung Fu Tea",
+      "category": "Boba & Tea",
+      "website": "https://www.kungfutea.com",
+      "blurb": "Bubble tea chain with milk teas, slushes and punch.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Bob Evans",
+      "category": "Breakfast & Brunch",
+      "website": "https://www.bobevans.com",
+      "blurb": "Ohio-founded farmhouse restaurant with breakfast and homestyle dinners.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Graeter's",
+      "category": "Dessert & Ice Cream",
+      "website": "https://www.graeters.com",
+      "blurb": "Cincinnati French pot ice cream with oversized chocolate chips.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Jeni's",
+      "category": "Dessert & Ice Cream",
+      "website": "https://jenis.com",
+      "blurb": "Columbus-born scoop shop with inventive ice cream flavors.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Tropical Smoothie Cafe",
+      "category": "Healthy & Bowls",
+      "website": "https://www.tropicalsmoothiecafe.com",
+      "blurb": "Smoothies, wraps, flatbreads and bowls.",
+      "price": "$$",
+      "deals": []
+    },
+    {
+      "name": "Sheetz",
+      "category": "Fast Food",
+      "website": "https://www.sheetz.com",
+      "blurb": "24/7 convenience store with made-to-order food and drinks.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "Wawa",
+      "category": "Fast Food",
+      "website": "https://www.wawa.com",
+      "blurb": "Convenience store known for built-to-order hoagies and coffee.",
+      "price": "$",
+      "deals": []
+    },
+    {
+      "name": "GetGo",
+      "category": "Fast Food",
+      "website": "https://www.getgocafe.com",
+      "blurb": "Convenience store and cafe with made-to-order subs and fuel perks.",
+      "price": "$",
+      "deals": []
+    }
+  ]
+}

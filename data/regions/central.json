@@ -1,0 +1,813 @@
+{
+  "region": "Central Ohio",
+  "researchedOn": "2026-11-25",
+  "towns": [
+    {
+      "id": "columbus",
+      "name": "Columbus",
+      "colleges": [
+        {
+          "name": "The Ohio State University",
+          "type": "Public university",
+          "url": "https://www.osu.edu"
+        },
+        {
+          "name": "Columbus State Community College",
+          "type": "Community college",
+          "url": "https://www.cscc.edu"
+        },
+        {
+          "name": "Capital University",
+          "type": "Private university",
+          "url": "https://www.capital.edu"
+        },
+        {
+          "name": "Ohio Dominican University",
+          "type": "Private university",
+          "url": "https://www.ohiodominican.edu"
+        },
+        {
+          "name": "Franklin University",
+          "type": "Private university",
+          "url": "https://www.franklin.edu"
+        },
+        {
+          "name": "Columbus College of Art & Design",
+          "type": "Private art college",
+          "url": "https://www.ccad.edu"
+        },
+        {
+          "name": "Mount Carmel College of Nursing",
+          "type": "Private nursing college",
+          "url": "https://www.mccn.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Buckeye Donuts",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "1998 N High St, Columbus, OH 43201",
+          "website": "",
+          "blurb": "Long-running High Street donut counter that doubles as a late-night gyro stop for Ohio State students.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/buckeye-donuts-5593952",
+          "deals": []
+        },
+        {
+          "name": "Adriatico's",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Campus pizza staple voted best pizza near campus in The Lantern's 2025 Best of OSU.",
+          "price": "$$",
+          "sourceUrl": "https://www.thelantern.com/?p=425906",
+          "deals": []
+        },
+        {
+          "name": "Mikey's Late Night Slice",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "1030 N High St, Columbus, OH 43201",
+          "website": "https://latenightslice.com",
+          "blurb": "Columbus-born late-night slice shop; this is the Short North shop, with a campus shop at 1839 N Pearl St.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/mikeys-late-night-sh-north-see-hq/r-3fafc331-0329-467c-9137-982f260aff03",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Party Hour: 50% off food",
+              "details": "Short North shop, Monday-Friday 4-5 p.m.; food and drinks 50% off for the one hour. Guide notes deals are subject to change.",
+              "price": "50% off",
+              "studentOnly": false,
+              "sourceUrl": "https://www.columbusnavigator.com/?p=1892",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Ethyl & Tank",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "19 E 13th Ave, Columbus, OH 43201",
+          "website": "",
+          "blurb": "Campus bar, restaurant and coffee shop just off High Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/ethyl-tank-19-e-13th-ave/r-8cd3c5c6-f736-4977-9a33-3b7c6db5064e",
+          "deals": [
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "Friday smashburger special",
+              "details": "Weekly Friday-afternoon smashburger special with discounted single and double patties (price not stated in source).",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://ma.to/venue/ethylandtank",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Varsity Club Restaurant & Bar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "278 W Lane Ave, Columbus, OH",
+          "website": "https://theoriginalvarsityclub.com",
+          "blurb": "Historic game-day bar near the stadium with pizza, subs and pub fare.",
+          "price": "$$",
+          "sourceUrl": "https://www.sluurpy.at/columbus/restaurant/3743787/varsity-club-restaurant-and-bar",
+          "deals": []
+        },
+        {
+          "name": "Jack & Benny's",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Campus-area diner named a student favorite in The Lantern's Best of OSU.",
+          "price": "$",
+          "sourceUrl": "https://issuu.com/thelantern/docs/osl_101724_a01",
+          "deals": []
+        },
+        {
+          "name": "Dirty Frank's Hot Dog Palace",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Columbus gourmet hot dog institution that added a North High Street shop across from Ohio State in 2024.",
+          "price": "$",
+          "sourceUrl": "https://breakfastwithnick.com/2024/11/13/dirty-franks-hot-dogs-campus/",
+          "deals": []
+        },
+        {
+          "name": "Dos Hermanos",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Taco truck voted best campus food truck in The Lantern's 2025 Best of OSU.",
+          "price": "$",
+          "sourceUrl": "https://www.thelantern.com/?p=425904",
+          "deals": []
+        },
+        {
+          "name": "Condado Tacos (Short North)",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "1227 N High St, Columbus, OH",
+          "website": "https://locations.condadotacos.com/oh/1227-n-high-st",
+          "blurb": "Columbus-founded build-your-own taco chain known for queso and margaritas.",
+          "price": "$$",
+          "sourceUrl": "https://locations.condadotacos.com/oh/1227-n-high-st",
+          "deals": []
+        },
+        {
+          "name": "Arch City Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "862 N High St, Columbus, OH",
+          "website": "",
+          "blurb": "Short North tavern known for its Monday burger deal.",
+          "price": "$$",
+          "sourceUrl": "https://columbusfoodletter.substack.com/p/one-day-wonders-our-list-of-weekly",
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$10 Burger Monday",
+              "details": "$10 burger special every Monday, all day.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://columbusfoodletter.substack.com/p/one-day-wonders-our-list-of-weekly",
+              "sourceDate": "2025-09"
+            }
+          ]
+        },
+        {
+          "name": "Fox in the Snow",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "N Fourth St, Columbus, OH",
+          "website": "",
+          "blurb": "Bakery and coffee shop voted best cafe in The Lantern's 2025 Best of OSU.",
+          "price": "$$",
+          "sourceUrl": "https://www.thelantern.com/?p=425868",
+          "deals": []
+        },
+        {
+          "name": "The Brewed Leaf",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "2060 N High St, Columbus, OH",
+          "website": "",
+          "blurb": "Student go-to boba shop on High Street; jasmine green milk tea is a favorite.",
+          "price": "$",
+          "sourceUrl": "https://www.hercampus.com/?p=327877",
+          "deals": []
+        },
+        {
+          "name": "Bubbles Tea & Juice (Ohio State)",
+          "category": "Boba & Tea",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Columbus bubble tea and juice shop with a campus location.",
+          "price": "$",
+          "sourceUrl": "https://ubereats.com/store/bubbles-tea-%26-juice-ohio-state/8y3p0AC3ViSeAJdK8q-Kqg",
+          "deals": []
+        },
+        {
+          "name": "Kung Fu Tea",
+          "category": "Boba & Tea",
+          "local": false,
+          "signature": false,
+          "address": "2202 N High St, Columbus, OH",
+          "website": "https://www.kungfutea.com",
+          "blurb": "Bubble tea chain shop popular with Ohio State students since 2020.",
+          "price": "$",
+          "sourceUrl": "https://www.ubereats.com/store/kung-fu-tea-2202-n-high-st/fMub4lfIWjqoyzMbdB6VyQ/bdf602b9-b5e1-566b-bc49-5220fdedffdd/addb0740-f6f9-5b64-8dec-8f89c057e096",
+          "deals": []
+        },
+        {
+          "name": "Vivi Bubble Tea",
+          "category": "Boba & Tea",
+          "local": false,
+          "signature": false,
+          "address": "2408 N High St, Columbus, OH",
+          "website": "",
+          "blurb": "Bubble tea chain shop on the north end of the High Street strip.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/vivi-bubble-tea-379803779",
+          "deals": []
+        },
+        {
+          "name": "Wings Over Columbus",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Delivery-focused boneless wing shop that is a BuckID merchant.",
+          "price": "$$",
+          "sourceUrl": "https://buckid.osu.edu/merchants/1016",
+          "deals": []
+        },
+        {
+          "name": "Bexley Pizza Plus",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "2540 E Main St, Bexley, OH",
+          "website": "",
+          "blurb": "Homegrown Bexley pizzeria on East Main Street near Capital University.",
+          "price": "$$",
+          "sourceUrl": "https://www.thelantern.com/?p=8741",
+          "deals": []
+        },
+        {
+          "name": "Rubino's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "2643 E Main St, Bexley, OH",
+          "website": "",
+          "blurb": "Old-school Bexley pizzeria on East Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.thelantern.com/?p=8741",
+          "deals": []
+        },
+        {
+          "name": "Kittie's",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Bexley bakery-cafe Capital students named among nearby spots where they would like to use CapBucks.",
+          "price": "$",
+          "sourceUrl": "https://cuchimes.com/?p=155663",
+          "deals": []
+        },
+        {
+          "name": "Graeter's Ice Cream (Bexley)",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://www.graeters.com",
+          "blurb": "Ohio ice cream chain with a Bexley shop near Capital University.",
+          "price": "$",
+          "sourceUrl": "https://cuchimes.com/?p=155663",
+          "deals": []
+        },
+        {
+          "name": "Piada Italian Street Food (Bexley)",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "2585 E Main St, Bexley, OH",
+          "website": "https://mypiada.com",
+          "blurb": "Columbus-based fast-casual Italian wraps and pasta bowls, walking distance from Capital.",
+          "price": "$",
+          "sourceUrl": "https://cuchimes.com/?p=979",
+          "deals": []
+        },
+        {
+          "name": "Jimmy John's (Bexley)",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "https://www.jimmyjohns.com",
+          "blurb": "Sub chain on Main Street two blocks from Capital's stadium; accepts CapBucks.",
+          "price": "$",
+          "sourceUrl": "https://athletics.capital.edu/news/2023/9/13/general-jimmy-johns-to-serve-as-the-preferred-sandwich-provider-of-capital-athletics.aspx",
+          "deals": []
+        },
+        {
+          "name": "Chipotle (Bexley)",
+          "category": "Mexican",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "https://www.chipotle.com",
+          "blurb": "Burrito chain near Capital University.",
+          "price": "$",
+          "sourceUrl": "https://cuchimes.com/?p=155663",
+          "deals": []
+        },
+        {
+          "name": "Raising Cane's",
+          "category": "Wings & Chicken",
+          "local": false,
+          "signature": false,
+          "address": "1816 N High St, Columbus, OH",
+          "website": "https://www.raisingcanes.com",
+          "blurb": "Chicken finger chain on High Street; a Lantern pick for campus-area late-night eats.",
+          "price": "$",
+          "sourceUrl": "https://music.osu.edu/sites/music.osu.edu/files/Restaurants%20Near%20OSU.pdf",
+          "deals": []
+        },
+        {
+          "name": "McDonald's",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1972 N High St, Columbus, OH 43201",
+          "website": "https://www.mcdonalds.com",
+          "blurb": "High Street McDonald's across from campus.",
+          "price": "$",
+          "sourceUrl": "https://music.osu.edu/sites/music.osu.edu/files/Restaurants%20Near%20OSU.pdf",
+          "deals": []
+        },
+        {
+          "name": "Chick-fil-A",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1924 N High St, Columbus, OH 43201",
+          "website": "https://www.chick-fil-a.com",
+          "blurb": "Chicken sandwich chain on High Street.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/chick-fil-a-387972230",
+          "deals": []
+        },
+        {
+          "name": "Dog Haus",
+          "category": "Fast Food",
+          "local": false,
+          "signature": false,
+          "address": "1576 N High St, Columbus, OH",
+          "website": "https://doghaus.com",
+          "blurb": "Hot dog, sausage and burger chain with a sports bar on the south edge of campus.",
+          "price": "$$",
+          "sourceUrl": "https://www.qsrmagazine.com/growth/dog-haus-to-debut-in-ohio/",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "westerville",
+      "name": "Westerville",
+      "colleges": [
+        {
+          "name": "Otterbein University",
+          "type": "Private university",
+          "url": "https://www.otterbein.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Schneider's Bakery",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Uptown Westerville bakery on Otterbein's own list of Uptown spots.",
+          "price": "$",
+          "sourceUrl": "https://www.otterbein.edu/otterbinder/around-the-area/uptown-restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Jimmy V's Grill & Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "1 S State St, Westerville, OH",
+          "website": "",
+          "blurb": "Uptown pub with burgers, gyros, pasta and salads.",
+          "price": "$$",
+          "sourceUrl": "https://www.otterbein.edu/otterbinder/around-the-area/uptown-restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Asterisk Supper Club",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "14 N State St, Westerville, OH",
+          "website": "",
+          "blurb": "Scratch comfort food and afternoon tea in Uptown.",
+          "price": "$$$",
+          "sourceUrl": "https://www.otterbein.edu/otterbinder/around-the-area/uptown-restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Barrel & Boar",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "BBQ restaurant on Otterbein's list of Uptown restaurants.",
+          "price": "$$",
+          "sourceUrl": "https://www.otterbein.edu/otterbinder/around-the-area/uptown-restaurants/",
+          "deals": []
+        },
+        {
+          "name": "Uptown Deli & Brew",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Uptown deli and brewery known for sandwiches and house beer.",
+          "price": "$$",
+          "sourceUrl": "https://wanderlog.com/place/details/2179308/uptown-deli-and-brew",
+          "deals": []
+        },
+        {
+          "name": "Rusty Bucket Restaurant & Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://myrustybucket.com/locations/westerville",
+          "blurb": "Columbus-based neighborhood tavern chain with a Westerville location.",
+          "price": "$$",
+          "sourceUrl": "https://myrustybucket.com/locations/westerville",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri"
+              ],
+              "title": "Happy hour pizza and apps",
+              "details": "Happy hour Monday-Friday 3-6 p.m. with deals on pizza and appetizers (also beer).",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://myrustybucket.com/locations/westerville",
+              "sourceDate": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "granville",
+      "name": "Granville",
+      "colleges": [
+        {
+          "name": "Denison University",
+          "type": "Private liberal arts college",
+          "url": "https://www.denison.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Whit's Frozen Custard",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": true,
+          "address": "226 Broadway E, Granville, OH",
+          "website": "",
+          "blurb": "Frozen custard shop on Broadway on Denison Admissions' list of favorites.",
+          "price": "$",
+          "sourceUrl": "https://lv.foursquare.com/denisonu9841263/list/10-favorite-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Broadway Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "126 Broadway E, Granville, OH",
+          "website": "",
+          "blurb": "Classic downtown pub with wings, burgers, sandwiches and pastas; Denison Admissions tips the pulled pork sandwich.",
+          "price": "$$",
+          "sourceUrl": "https://breakfastwithnick.com/2023/10/11/best-restaurants-in-granville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Day Y Noche",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "134 E Broadway, Granville, OH",
+          "website": "",
+          "blurb": "Family-run Mexican spot for tacos, enchiladas and burritos, plus breakfast.",
+          "price": "$$",
+          "sourceUrl": "https://breakfastwithnick.com/2023/10/11/best-restaurants-in-granville-ohio/",
+          "deals": []
+        },
+        {
+          "name": "Dragon Village",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "127 Broadway E, Granville, OH",
+          "website": "",
+          "blurb": "Chinese restaurant on Broadway; Denison Admissions recommends the lunch special.",
+          "price": "$",
+          "sourceUrl": "https://lv.foursquare.com/denisonu9841263/list/10-favorite-restaurants",
+          "deals": []
+        },
+        {
+          "name": "HASHI",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "128 Broadway E, Granville, OH",
+          "website": "",
+          "blurb": "Japanese spot on Broadway with ramen.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/granville-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Brews Cafe",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "116 Broadway E, Granville, OH",
+          "website": "",
+          "blurb": "Downtown cafe and bar on Denison Admissions' favorites list.",
+          "price": "$$",
+          "sourceUrl": "https://lv.foursquare.com/denisonu9841263/list/10-favorite-restaurants",
+          "deals": []
+        },
+        {
+          "name": "River Road Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Local coffeehouse on Denison's list of suggested coffee stops.",
+          "price": "$",
+          "sourceUrl": "https://www.denison.edu/campus/granville-and-beyond/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Village Coffee Company",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Granville coffee shop listed on Denison's restaurant page.",
+          "price": "$",
+          "sourceUrl": "https://www.denison.edu/campus/granville-and-beyond/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Aladdin Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown diner listed for meals on Denison's restaurant page.",
+          "price": "$",
+          "sourceUrl": "https://www.denison.edu/campus/granville-and-beyond/restaurants",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "newark",
+      "name": "Newark",
+      "colleges": [
+        {
+          "name": "The Ohio State University at Newark",
+          "type": "Public university regional campus",
+          "url": "https://newark.osu.edu"
+        },
+        {
+          "name": "Central Ohio Technical College",
+          "type": "Public technical college",
+          "url": "https://www.cotc.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "delaware",
+      "name": "Delaware",
+      "colleges": [
+        {
+          "name": "Ohio Wesleyan University",
+          "type": "Private liberal arts college",
+          "url": "https://www.owu.edu"
+        },
+        {
+          "name": "Methodist Theological School in Ohio",
+          "type": "Private seminary",
+          "url": "https://www.mtso.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Old Dog Alehouse & Brewery",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "William St, Delaware, OH",
+          "website": "",
+          "blurb": "Downtown Delaware alehouse and brewery.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/delaware-oh-restaurants",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "gambier",
+      "name": "Gambier",
+      "colleges": [
+        {
+          "name": "Kenyon College",
+          "type": "Private liberal arts college",
+          "url": "https://www.kenyon.edu"
+        }
+      ],
+      "spots": [
+        {
+          "name": "Village Inn",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "102 Gaskin Ave, Gambier, OH",
+          "website": "",
+          "blurb": "The VI: Gambier's sandwich, burger and bar spot.",
+          "price": "$$",
+          "sourceUrl": "https://www-archive.kenyon.edu/visit-kenyon/gambier-and-beyond/dining/",
+          "deals": []
+        },
+        {
+          "name": "Wiggin Street Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "101 E Wiggin St, Gambier, OH",
+          "website": "",
+          "blurb": "Coffee, tea, baked goods, breakfast and lunch in the middle of the village.",
+          "price": "$",
+          "sourceUrl": "https://www.kenyon.edu/visit-kenyon/gambier-and-beyond/dining/",
+          "deals": []
+        },
+        {
+          "name": "Gambier Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "110 Gaskin Ave, Gambier, OH",
+          "website": "",
+          "blurb": "Sandwiches, salads and breakfasts for carry-out.",
+          "price": "$",
+          "sourceUrl": "https://www-archive.kenyon.edu/visit-kenyon/gambier-and-beyond/dining/",
+          "deals": []
+        },
+        {
+          "name": "Kenyon Inn & Restaurant",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "100 W Wiggin St, Gambier, OH",
+          "website": "",
+          "blurb": "The upscale option in Gambier, with breakfast and bar service.",
+          "price": "$$$",
+          "sourceUrl": "https://www.kenyon.edu/visit-kenyon/gambier-and-beyond/dining/",
+          "deals": []
+        }
+      ]
+    },
+    {
+      "id": "mount-vernon",
+      "name": "Mount Vernon",
+      "colleges": [
+        {
+          "name": "Mount Vernon Nazarene University",
+          "type": "Private university",
+          "url": "https://www.mvnu.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "marion",
+      "name": "Marion",
+      "colleges": [
+        {
+          "name": "The Ohio State University at Marion",
+          "type": "Public university regional campus",
+          "url": "https://osumarion.osu.edu"
+        },
+        {
+          "name": "Marion Technical College",
+          "type": "Public technical college",
+          "url": "https://www.mtc.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "mansfield",
+      "name": "Mansfield",
+      "colleges": [
+        {
+          "name": "The Ohio State University at Mansfield",
+          "type": "Public university regional campus",
+          "url": "https://mansfield.osu.edu"
+        },
+        {
+          "name": "North Central State College",
+          "type": "Community college",
+          "url": "https://www.ncstatecollege.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "ashland",
+      "name": "Ashland",
+      "colleges": [
+        {
+          "name": "Ashland University",
+          "type": "Private university",
+          "url": "https://www.ashland.edu"
+        }
+      ],
+      "spots": []
+    },
+    {
+      "id": "circleville",
+      "name": "Circleville",
+      "colleges": [
+        {
+          "name": "Ohio Christian University",
+          "type": "Private university",
+          "url": "https://www.ohiochristian.edu"
+        }
+      ],
+      "spots": []
+    }
+  ]
+}
