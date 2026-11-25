@@ -7333,14 +7333,9 @@
   "source": "https://www.elephantwalkcincy.com/northern-indian-menu",
   "items": [
    {
-    "name": "Garam Masala",
+    "name": "Naan Burrito",
     "price": "",
-    "section": "North Indian Favorites"
-   },
-   {
-    "name": "Cold Pressed Fruit Juice",
-    "price": "",
-    "section": "North Indian Favorites"
+    "section": "Naan Burrito"
    },
    {
     "name": "Mixed Platter",
@@ -7426,16 +7421,6 @@
     "name": "Chef’s Salad",
     "price": "",
     "section": "Salads"
-   },
-   {
-    "name": "Pick your protein",
-    "price": "",
-    "section": "Naan Burrito"
-   },
-   {
-    "name": "Served with",
-    "price": "",
-    "section": "Naan Burrito"
    },
    {
     "name": "Hot + Spicy Naan",
@@ -7610,57 +7595,57 @@
    {
     "name": "Makhni",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Saag",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Bhartha",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Ginger",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Rogan Josh",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Curry",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Korma",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Shahi Korma",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Vindaloo",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Jelfrezi",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Tikka Masala",
     "price": "",
-    "section": "Chicken | Lamb | Goat | Veggie"
+    "section": "Curries"
    },
    {
     "name": "Tandoori Chicken",
