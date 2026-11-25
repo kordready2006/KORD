@@ -2854,6 +2854,171 @@
    }
   ]
  },
+ "bowling-green|Mr. Spots": {
+  "source": "https://us.orderspoon.com/mr-spots-bg",
+  "items": [
+   {
+    "name": "Philly Original",
+    "price": "",
+    "section": "Grill Sandwiches"
+   },
+   {
+    "name": "Steak Hoagie",
+    "price": "",
+    "section": "Grill Sandwiches"
+   },
+   {
+    "name": "Fire Steak",
+    "price": "",
+    "section": "Grill Sandwiches"
+   },
+   {
+    "name": "Steak Supreme",
+    "price": "",
+    "section": "Grill Sandwiches"
+   },
+   {
+    "name": "Chicken Bacon Ranch",
+    "price": "",
+    "section": "Grill Sandwiches"
+   },
+   {
+    "name": "Pepper Steak",
+    "price": "",
+    "section": "Grill Sandwiches"
+   },
+   {
+    "name": "The French Dip",
+    "price": "",
+    "section": "Grill Sandwiches"
+   },
+   {
+    "name": "5 Wings",
+    "price": "$7.95",
+    "section": "Wings & Boneless"
+   },
+   {
+    "name": "10 Wings",
+    "price": "$14.75",
+    "section": "Wings & Boneless"
+   },
+   {
+    "name": "20 Wings",
+    "price": "$27.95",
+    "section": "Wings & Boneless"
+   },
+   {
+    "name": "Boneless Wings",
+    "price": "$9.00",
+    "section": "Wings & Boneless"
+   },
+   {
+    "name": "Chicken Strips",
+    "price": "$8.00",
+    "section": "Chicken Strips"
+   },
+   {
+    "name": "Spots Special",
+    "price": "",
+    "section": "Hoagies"
+   },
+   {
+    "name": "Kensington",
+    "price": "",
+    "section": "Hoagies"
+   },
+   {
+    "name": "Ham Hoagie",
+    "price": "",
+    "section": "Hoagies"
+   },
+   {
+    "name": "Turkey Hoagie",
+    "price": "",
+    "section": "Hoagies"
+   },
+   {
+    "name": "Cheese Hoagie",
+    "price": "",
+    "section": "Hoagies"
+   },
+   {
+    "name": "BLT",
+    "price": "",
+    "section": "Hoagies"
+   },
+   {
+    "name": "Italian Salad",
+    "price": "$11.00",
+    "section": "Chef Salads"
+   },
+   {
+    "name": "Chicken Strip Salad",
+    "price": "$11.00",
+    "section": "Chef Salads"
+   },
+   {
+    "name": "Grilled Steak Salad",
+    "price": "$11.00",
+    "section": "Chef Salads"
+   },
+   {
+    "name": "Ham Salad",
+    "price": "$9.25",
+    "section": "Chef Salads"
+   },
+   {
+    "name": "Cheese Chef",
+    "price": "$8.75",
+    "section": "Chef Salads"
+   },
+   {
+    "name": "Turkey Salad",
+    "price": "$9.25",
+    "section": "Chef Salads"
+   },
+   {
+    "name": "Tossed Salad",
+    "price": "$8.00",
+    "section": "Chef Salads"
+   },
+   {
+    "name": "Grilled Chicken Salad",
+    "price": "$11.00",
+    "section": "Chef Salads"
+   },
+   {
+    "name": "Fries",
+    "price": "$4.00",
+    "section": "Extras"
+   },
+   {
+    "name": "Chili Cheese Fries",
+    "price": "$6.95",
+    "section": "Extras"
+   },
+   {
+    "name": "Bowl Of Chili",
+    "price": "$5.75",
+    "section": "Extras"
+   },
+   {
+    "name": "Fried Pickles",
+    "price": "$8.25",
+    "section": "Extras"
+   },
+   {
+    "name": "Onion Rings",
+    "price": "$8.50",
+    "section": "Extras"
+   },
+   {
+    "name": "Chocolate Chip Cookie",
+    "price": "$2.75",
+    "section": "Extras"
+   }
+  ]
+ },
  "bowling-green|Ninja Hibachi Sushi Steak House": {
   "source": "https://order.mealkeyway.com/merchant/4f34797165656c4f55572b754c5145433767356547773d3d/main",
   "items": [

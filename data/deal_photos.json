@@ -195,5 +195,95 @@
   "apps": {
    "source": "https://trollpub.com/includes/images/reviewBackground.jpg"
   }
+ },
+ "belleriakent.com": {
+  "pizza": {
+   "source": "https://images.squarespace-cdn.com/content/v1/5739fffca3360ce2541e5ca4/1464024141865-23N34L59CA9S3ELFCUKC/pizza-Tom.jpg?format=1500w"
+  }
+ },
+ "bgbecketts.com": {
+  "apps": {
+   "source": "https://static.spacecrafted.com/cd0d4a90c7404c768d9576d718313a8d/i/a9e933f292254795ae064c3c9b72cc77/1/4SoifmQpDrHbZJ6Vx83o2/Nachos.jpg"
+  }
+ },
+ "campuspollyeyes.com": {
+  "pizza": {
+   "source": "https://campuspollyeyes.com/wp-content/webpc-passthru.php?src=https://campuspollyeyes.com/wp-content/uploads/2020/07/pizza-845x684.jpeg&nocache=1"
+  }
+ },
+ "cazuelasmexicancantina.com": {
+  "taco": {
+   "source": "https://cazuelasmexicancantina.com/wp-content/uploads/2021/03/tacos-2.jpg"
+  }
+ },
+ "fourthstreetcolumbus.com": {
+  "burger": {
+   "source": "https://pub-ca300eeafde24818ab98dbd0ff84e965.r2.dev/fourth-street/images/fourth-food-hero.webp"
+  }
+ },
+ "hamburgerinndiner.com": {
+  "burger": {
+   "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/39/411de7ea9945c5ab12a35446d9c20f/:original"
+  }
+ },
+ "heavenlypizzafindlay.com": {
+  "pizza": {
+   "source": "https://cdn.prod.website-files.com/5b718dd3e5d6e21fb8ebea93/6a2820c58b34465293d3adc9_AJ%27s%20Breakfast%20Pizza.webp"
+  }
+ },
+ "highbankco.com": {
+  "apps": {
+   "source": "https://images.squarespace-cdn.com/content/v1/61658e6d9e152568153a2567/13e58262-a77d-4f91-9339-9f430f8b8026/Image-158.jpg?format=1500w"
+  }
+ },
+ "lapizzerialittleitaly.com": {
+  "pizza": {
+   "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/30/f56332fc08457fad5fcf770276a565/:original"
+  }
+ },
+ "pauliegee.com": {
+  "pizza": {
+   "source": "https://pauliegee.com/wp-content/uploads/2023/12/IMG_3490.jpg"
+  }
+ },
+ "pocolocotoledo.com": {
+  "burrito": {
+   "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/a3/dc5a5f251943468225c15759b49ed5/:original"
+  }
+ },
+ "submarinehouse.com": {
+  "apps": {
+   "source": "https://res.cloudinary.com/targetable/image/upload/c_fill,g_center,ar_3:2,w_640,f_auto,q_auto/Customers/submarine-house/site/cb_catering-ae262dca"
+  }
+ },
+ "theclaypotbistro.com": {
+  "apps": {
+   "source": "https://images.squarespace-cdn.com/content/v1/5e8a85f8d84c050678c8a686/1591750025896-18QFZDIUMIQYCJ9XJ24O/The+Clay+Pot+Shoot-The+Clay+Pot+Shoot-0007.jpg?format=1500w"
+  }
+ },
+ "thedaytonbeerco.com": {
+  "taco": {
+   "source": "https://images.squarespace-cdn.com/content/v1/641dd0eca9675a18b719bf6e/1679675658800-QDH356XL4DK7Y72P4PVE/03-43-scaled.jpg?format=1500w"
+  }
+ },
+ "theoonlane.com": {
+  "pizza": {
+   "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/71/8706af461e4f4da1a486381d7e50b4/:original"
+  }
+ },
+ "understorycbus.com": {
+  "apps": {
+   "source": "https://images.squarespace-cdn.com/content/v1/60d36778665f283e6b7aab48/8a580bbb-4ebf-4e12-a9c3-344c429c9707/DSC04319.jpg?format=1500w"
+  }
+ },
+ "westervillegrill.com": {
+  "sandwich": {
+   "source": "https://images.squarespace-cdn.com/content/v1/5e1d1155b8c0516ec40e0de5/1579194686578-4EJ5MVZ5WZO1L4WYOSW0/blt1.jpg?format=750w"
+  }
+ },
+ "wildgoatscafe.com": {
+  "burger": {
+   "source": "https://static.spotapps.co/spots/ce/608b92636f440d8194bf1b5151effe/w926"
+  }
  }
 }

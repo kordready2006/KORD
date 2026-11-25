@@ -420,5 +420,133 @@
  "trollpub.com": {
   "source": "https://trollpub.com/includes/images/reviewBackground.jpg",
   "site": "https://trollpub.com/dayton/"
+ },
+ "alsmithstoledo.com": {
+  "source": "https://alsmithstoledo.com/assets/images/image01.jpg?v=e8d23f96",
+  "site": "https://alsmithstoledo.com/"
+ },
+ "belleriakent.com": {
+  "source": "https://images.squarespace-cdn.com/content/v1/5739fffca3360ce2541e5ca4/1464024141865-23N34L59CA9S3ELFCUKC/pizza-Tom.jpg?format=1500w",
+  "site": "https://www.belleriakent.com/",
+  "dish": "pizza"
+ },
+ "bgbecketts.com": {
+  "source": "https://static.spacecrafted.com/cd0d4a90c7404c768d9576d718313a8d/i/f97e2ecd5b3c45b2ae4fe891e65b978e/1/4SoifmQpDrHbZJ6Vx83o2/LAKE-PERCH.jpg",
+  "site": "https://www.bgbecketts.com/",
+  "dish": "burger"
+ },
+ "cazuelasmexicancantina.com": {
+  "source": "https://cazuelasmexicancantina.com/wp-content/uploads/2021/03/tacos-2.jpg",
+  "site": "https://cazuelasmexicancantina.com",
+  "dish": "taco"
+ },
+ "circleoffifthsakron.com": {
+  "source": "https://cdn.prod.website-files.com/67db4478c665aba6d144fe3a/67e2f62e8e0aa419a94088c7_food%20verticle-p-500.webp",
+  "site": "https://www.circleoffifthsakron.com/"
+ },
+ "citytaverncolumbus.com": {
+  "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/49/fdde4dc93b4ae48861386b5ee1bddf/:original",
+  "site": "https://citytaverncolumbus.com"
+ },
+ "desitadkadelaware.com": {
+  "source": "https://desitadkadelaware.com/images/showcase/indian-food-spread.jpg",
+  "site": "https://desitadkadelaware.com"
+ },
+ "elephantwalkcincy.com": {
+  "source": "https://images.squarespace-cdn.com/content/v1/571a18e5746fb922e0ac9088/1604606680048-D0RKGM3E36AHFN7Q451G/Tikka+Masala+and+Saag+Paneer+with+Garlic+Naan.jpg?format=500w",
+  "site": "https://www.elephantwalkcincy.com/"
+ },
+ "fourthstreetcolumbus.com": {
+  "source": "https://pub-ca300eeafde24818ab98dbd0ff84e965.r2.dev/fourth-street/images/fourth-food-hero.webp",
+  "site": "https://fourthstreetcolumbus.com",
+  "dish": "burger"
+ },
+ "hamburgerinndiner.com": {
+  "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/39/411de7ea9945c5ab12a35446d9c20f/:original",
+  "site": "https://hamburgerinndiner.com",
+  "dish": "burger"
+ },
+ "heavenlypizzafindlay.com": {
+  "source": "https://cdn.prod.website-files.com/5b718dd3e5d6e21fb8ebea93/6a2820c58b34465293d3adc9_AJ%27s%20Breakfast%20Pizza.webp",
+  "site": "https://www.heavenlypizzafindlay.com/",
+  "dish": "pizza"
+ },
+ "highbankco.com": {
+  "source": "https://images.squarespace-cdn.com/content/v1/61658e6d9e152568153a2567/a77eeee9-5cf0-4048-a0c3-56866f604f06/IMG_9389.jpg?format=1500w",
+  "site": "https://www.highbankco.com/westerville",
+  "dish": "burger"
+ },
+ "jays.com": {
+  "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/b8/8107d0332449d5add6c05894f965fd/:original",
+  "site": "https://jays.com/"
+ },
+ "lapizzerialittleitaly.com": {
+  "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/30/f56332fc08457fad5fcf770276a565/:original",
+  "site": "https://lapizzerialittleitaly.com/",
+  "dish": "pizza"
+ },
+ "mysittoos.com": {
+  "source": "https://mysittoos.com/wp-content/uploads/2024/08/kofta-falafel-chicken.jpg",
+  "site": "https://mysittoos.com/"
+ },
+ "pauliegee.com": {
+  "source": "https://pauliegee.com/wp-content/uploads/2023/12/IMG_3490.jpg",
+  "site": "https://pauliegee.com/restaurant/paulie-gees-short-north/",
+  "dish": "pizza"
+ },
+ "pocolocotoledo.com": {
+  "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/a3/dc5a5f251943468225c15759b49ed5/:original",
+  "site": "https://pocolocotoledo.com/",
+  "dish": "burrito"
+ },
+ "sonoraportsmouth.com": {
+  "source": "https://d1w7312wesee68.cloudfront.net/EHrnEZTNDjgb-ccFcs4g-SblhNwGjN8Sb73PQVAZOcQ/ext:webp/quality:85/preset:xl/c:719:719:ce:0:0/plain/s3://toast-sites-resources-prod/restaurantImages/43a9daf8-4762-4d0c-8955-aeb32fcc463f/468482612_122126124422487340_506099240640739360_n--399529956578973-FACEBOOK.jpg",
+  "site": "https://sonoraportsmouth.com",
+  "dish": "taco"
+ },
+ "steak-eez.com": {
+  "source": "https://www.steak-eez.com/wp-content/uploads/2026/02/italian-1.jpg",
+  "site": "https://www.steak-eez.com/",
+  "dish": "cheesesteak"
+ },
+ "submarinehouse.com": {
+  "source": "https://res.cloudinary.com/targetable/image/upload/s--0d-cZz-g--/Customers/50611/Submarine%20House/PICS/se-editor-7ecd48a68e27.jpg",
+  "site": "https://www.submarinehouse.com/",
+  "dish": "sandwich"
+ },
+ "tayloredcookie.com": {
+  "source": "https://tayloredcookie.com/cdn/shop/files/ChocoChunk_391c8044-13ae-4148-97fb-6cbe1e8c7669.jpg?v=1735870266&width=1500",
+  "site": "https://tayloredcookie.com/"
+ },
+ "theclaypotbistro.com": {
+  "source": "https://images.squarespace-cdn.com/content/v1/5e8a85f8d84c050678c8a686/1591750025896-18QFZDIUMIQYCJ9XJ24O/The+Clay+Pot+Shoot-The+Clay+Pot+Shoot-0007.jpg?format=1500w",
+  "site": "https://www.theclaypotbistro.com/"
+ },
+ "thedaytonbeerco.com": {
+  "source": "https://images.squarespace-cdn.com/content/v1/641dd0eca9675a18b719bf6e/1679675658800-QDH356XL4DK7Y72P4PVE/03-43-scaled.jpg?format=1500w",
+  "site": "https://www.thedaytonbeerco.com/",
+  "dish": "taco"
+ },
+ "thelucytoledo.com": {
+  "source": "https://static.spacecrafted.com/dce712cd703b4e0782314aba4b897886/i/b895065dbee44bff8444bf1e67a97fac/1/4SoifmQp45JMgBnHjfgmz/IMG_0652.jpg",
+  "site": "https://www.thelucytoledo.com/"
+ },
+ "theoonlane.com": {
+  "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/71/8706af461e4f4da1a486381d7e50b4/:original",
+  "site": "https://theoonlane.com",
+  "dish": "pizza"
+ },
+ "tolicleveland.com": {
+  "source": "https://cdn.spotapps.co/spothopper/image/fetch/f_auto,q_auto:best,c_fit,h_1200/http://static.spotapps.co/spots/62/c6d29a771a401a878438a123eb9b51/:original",
+  "site": "https://tolicleveland.com/"
+ },
+ "understorycbus.com": {
+  "source": "https://images.squarespace-cdn.com/content/v1/60d36778665f283e6b7aab48/8a580bbb-4ebf-4e12-a9c3-344c429c9707/DSC04319.jpg?format=1500w",
+  "site": "https://www.understorycbus.com"
+ },
+ "westervillegrill.com": {
+  "source": "https://images.squarespace-cdn.com/content/v1/5e1d1155b8c0516ec40e0de5/1579194686578-4EJ5MVZ5WZO1L4WYOSW0/blt1.jpg?format=750w",
+  "site": "https://www.westervillegrill.com",
+  "dish": "sandwich"
  }
 }
