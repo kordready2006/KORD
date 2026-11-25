@@ -143,7 +143,25 @@
           "blurb": "No-frills Norwood tavern known for its cheeseburgers.",
           "price": "$",
           "sourceUrl": "https://www.cincinnatimagazine.com/dining-reviews/fine-diving-quatman-cafe/",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue",
+                "Wed",
+                "Thu",
+                "Fri",
+                "Sat",
+                "Sun"
+              ],
+              "title": "$10 daily special",
+              "details": "Daily specials: a main dish plus fries and a drink for $10, per CityBeat's listing; the featured item changes by day and may not run every day.",
+              "price": "$10",
+              "studentOnly": false,
+              "sourceUrl": "https://www.citybeat.com/?p=115130",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Skyline Chili (Clifton)",
@@ -168,41 +186,6 @@
           "price": "$",
           "sourceUrl": "https://campwashingtonchili.com/",
           "deals": []
-        },
-        {
-          "name": "Keystone Bar & Grill (Clifton)",
-          "category": "Bar & Grill",
-          "local": true,
-          "signature": false,
-          "address": "249 Calhoun St, Cincinnati, OH 45219",
-          "website": "",
-          "blurb": "Bar and grill by UC known for its mac and cheese menu.",
-          "price": "$$",
-          "sourceUrl": "https://www.citybeat.com/food-drink/keystone-bar-grill-to-serve-mac-cheese-chicken-and-waffles-for-national-mac-cheese-day-12166502",
-          "deals": [
-            {
-              "days": [
-                "Mon"
-              ],
-              "title": "Mac Monday",
-              "details": "Half-price mac and cheese with the purchase of a drink. Reported by older third-party articles (2019-2023), not the restaurant's own site; confirm it is still running.",
-              "price": "50% off",
-              "studentOnly": false,
-              "sourceUrl": "https://www.wcpo.com/entertainment/cincybuzz/30-under-this-is-the-ooey-gooey-mac-and-cheese-youve-been-looking-for",
-              "sourceDate": ""
-            },
-            {
-              "days": [
-                "Tue"
-              ],
-              "title": "Half-price quesadillas",
-              "details": "Half-price quesadillas on Tuesdays, per the same older article; confirm it is still running.",
-              "price": "50% off",
-              "studentOnly": false,
-              "sourceUrl": "https://www.wcpo.com/entertainment/cincybuzz/30-under-this-is-the-ooey-gooey-mac-and-cheese-youve-been-looking-for",
-              "sourceDate": ""
-            }
-          ]
         },
         {
           "name": "Krishna",
@@ -600,7 +583,19 @@
           "blurb": "Family-run uptown staple known for gyros and waffle fries, with an upstairs bar.",
           "price": "$",
           "sourceUrl": "https://enjoyoxford.org/restaurant/skippers-pub-top-deck",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Monday Burger Night",
+              "details": "Burger and fries for $5 on Mondays, per a Miami Student article (undated); confirm it is still running.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "https://miamistudent.net/skippers-remains-a-college-town-favorite-with-chicago-flavor-and-family-service",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Mac & Joe's",
@@ -818,7 +813,7 @@
           "local": true,
           "signature": true,
           "address": "38 W High St, Oxford, OH 45056",
-          "website": "",
+          "website": "https://kofenyacoffee.com",
           "blurb": "Coffee shop in the uptown district.",
           "price": "$",
           "sourceUrl": "https://enjoyoxford.org/wp-content/uploads/2024/10/Enjoy-Oxford-Welcome-Guide-2024.pdf",
@@ -1251,7 +1246,7 @@
           "local": true,
           "signature": true,
           "address": "1518 Central Ave, Middletown, OH",
-          "website": "",
+          "website": "https://centralpastry.com",
           "blurb": "Longtime bakery and a stop on the Butler County Donut Trail.",
           "price": "$",
           "sourceUrl": "https://www.travelbutlercounty.com/explore/middletown/dining?page=2",
@@ -1401,7 +1396,7 @@
           "local": true,
           "signature": true,
           "address": "1926 Brown St, Dayton, OH 45409",
-          "website": "",
+          "website": "https://thepineclub.com",
           "blurb": "Long-running steakhouse near the UD campus, one of Dayton's oldest restaurants.",
           "price": "$$$",
           "sourceUrl": "https://www.dayton.com/places/restaurant/where-eat-near-the-university-dayton/LhxZ09QL4OMlrFDO7ol5qO/",
@@ -1750,7 +1745,7 @@
           "local": true,
           "signature": true,
           "address": "",
-          "website": "",
+          "website": "https://marionspiazza.com",
           "blurb": "Dayton-area thin-crust, square-cut pizza institution recommended by the Wright State Guardian.",
           "price": "$",
           "sourceUrl": "https://www.wsuguardian.com/article/2024/07/best-local-restaurants-to-try-around-wsu",
@@ -1786,7 +1781,7 @@
           "category": "Coffee & Bakery",
           "local": true,
           "signature": true,
-          "address": "",
+          "address": "65 N Main St, Cedarville, OH",
           "website": "",
           "blurb": "Coffee shop serving breakfast classics and lunch in downtown Cedarville.",
           "price": "$",
@@ -1798,7 +1793,7 @@
           "category": "Pizza",
           "local": true,
           "signature": true,
-          "address": "",
+          "address": "98 N Main St, Cedarville, OH 45314",
           "website": "",
           "blurb": "Family-owned downtown pizza, subs and appetizers since 1981.",
           "price": "$",
@@ -2123,8 +2118,8 @@
           "category": "Sandwiches & Subs",
           "local": true,
           "signature": true,
-          "address": "",
-          "website": "",
+          "address": "330 W McCreight Ave, Springfield, OH",
+          "website": "https://www.mikeandrosysdeli.com",
           "blurb": "Boar's Head deli sandwiches right next to Wittenberg, with Rosy's Press Box bar upstairs.",
           "price": "$",
           "sourceUrl": "https://visitgreaterspringfield.com/where-to-eat",
