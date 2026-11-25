@@ -115,6 +115,12 @@ def main():
     for tid, name, abbr, col, ink, url, also in SCHOOLS:
         t = towns[tid]
         t["school"] = {"name": name, "abbr": abbr, "color": col, "ink": ink, "url": url, "also": also}
+        if os.path.exists(os.path.join(ROOT, "logos", "schools", tid + ".png")):
+            t["school"]["logo"] = "logos/schools/" + tid + ".png"
+        for sp in t["spots"]:  # site icons fetched by tools/fetch_logos.py
+            host = re.sub(r"^www\.", "", re.sub(r"^https?://([^/]+).*$", r"\1", sp["website"])) if sp["website"] else ""
+            if host and os.path.exists(os.path.join(ROOT, "logos", "spots", host + ".png")):
+                sp["logo"] = "logos/spots/" + host + ".png"
         del t["colleges"]
         live.append(t)
     out = {"researchedOn": researched, "towns": live}
