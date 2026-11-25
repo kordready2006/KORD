@@ -1761,18 +1761,6 @@
           "deals": []
         },
         {
-          "name": "Marion's Piazza",
-          "category": "Pizza",
-          "local": true,
-          "signature": true,
-          "address": "",
-          "website": "https://marionspiazza.com",
-          "blurb": "Dayton-area thin-crust, square-cut pizza institution recommended by the Wright State Guardian.",
-          "price": "$",
-          "sourceUrl": "https://www.wsuguardian.com/article/2024/07/best-local-restaurants-to-try-around-wsu",
-          "deals": []
-        },
-        {
           "name": "Tickets Pub & Eatery",
           "category": "Bar & Grill",
           "local": true,

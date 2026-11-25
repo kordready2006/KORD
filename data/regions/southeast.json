@@ -234,17 +234,6 @@
               "studentOnly": true,
               "sourceUrl": "https://www.thepostathens.com/r/0c1b85e22a",
               "sourceDate": ""
-            },
-            {
-              "days": [
-                "Mon"
-              ],
-              "title": "$5.99 sandwiches and wraps",
-              "details": "All sandwiches and wraps $5.99 on Mondays.",
-              "price": "$5.99",
-              "studentOnly": false,
-              "sourceUrl": "https://projects.thepostathens.com/SpecialProjects/the-food-edition/bar-food-specials-athens-ohio.html",
-              "sourceDate": "2018"
             }
           ]
         },
