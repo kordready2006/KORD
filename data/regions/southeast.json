@@ -70,6 +70,17 @@
               "studentOnly": false,
               "sourceUrl": "https://www.thepostathens.com/r/0c1b85e22a",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "$1 pizza slice",
+              "details": "$1 pizza slices on Wednesdays.",
+              "price": "$1",
+              "studentOnly": false,
+              "sourceUrl": "http://projects.thepostathens.com/SpecialProjects/welcome-back-2021/court-street-bar-deals-going-out-on-budget.html",
+              "sourceDate": "2021"
             }
           ]
         },
@@ -177,6 +188,28 @@
               "studentOnly": false,
               "sourceUrl": "https://www.thepostathens.com/r/ca270f47c0",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$6.95 crostini flights",
+              "details": "Crostini flights for $6.95 on Mondays.",
+              "price": "$6.95",
+              "studentOnly": false,
+              "sourceUrl": "https://projects.thepostathens.com/SpecialProjects/the-food-edition/bar-food-specials-athens-ohio.html",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$5 guacamole, queso and salsa trio",
+              "details": "Trio of guacamole, queso and salsa for $5 on Mondays.",
+              "price": "$5",
+              "studentOnly": false,
+              "sourceUrl": "http://projects.thepostathens.com/SpecialProjects/welcome-back-2021/court-street-bar-deals-going-out-on-budget.html",
+              "sourceDate": "2021"
             }
           ]
         },
@@ -201,6 +234,17 @@
               "studentOnly": true,
               "sourceUrl": "https://www.thepostathens.com/r/0c1b85e22a",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "$5.99 sandwiches and wraps",
+              "details": "All sandwiches and wraps $5.99 on Mondays.",
+              "price": "$5.99",
+              "studentOnly": false,
+              "sourceUrl": "https://projects.thepostathens.com/SpecialProjects/the-food-edition/bar-food-specials-athens-ohio.html",
+              "sourceDate": "2018"
             }
           ]
         },
@@ -270,7 +314,7 @@
           "local": true,
           "signature": true,
           "address": "17 1/2 W Washington St, Athens, OH 45701",
-          "website": "",
+          "website": "https://donkeycoffee.com",
           "blurb": "Fair-trade coffeehouse and student study spot.",
           "price": "$",
           "sourceUrl": "https://www.thepostathens.com/article/2019/08/coffee-shop-changes-uptown-off-campus",
@@ -282,7 +326,7 @@
           "local": true,
           "signature": false,
           "address": "28 S Court St, Athens, OH 45701",
-          "website": "",
+          "website": "https://www.gingerathens.com/",
           "blurb": "Fast-casual Asian rice and noodle bowls on Court Street.",
           "price": "$",
           "sourceUrl": "https://www.doordash.com/es/store/ginger-asian-kitchen-athens-594657",
@@ -535,7 +579,7 @@
           "local": true,
           "signature": true,
           "address": "18 Public Sq, Nelsonville, OH 45764",
-          "website": "",
+          "website": "https://rhapsody.hocking.edu",
           "blurb": "Casual fine dining on the Public Square featuring local Appalachian cuisine.",
           "price": "$$",
           "sourceUrl": "https://www.iexitapp.com/guide/Ohio/33/Nelsonville/31712",
@@ -648,7 +692,7 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": true,
-          "address": "",
+          "address": "167 Front St, Marietta, OH 45750",
           "website": "",
           "blurb": "Downtown craft brewery with a bar, kitchen and live music.",
           "price": "$$",
@@ -974,7 +1018,7 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": true,
-          "address": "",
+          "address": "224 2nd St, Portsmouth, OH 45662",
           "website": "",
           "blurb": "Local brewpub pouring beers from its own microbrewery.",
           "price": "$$",
@@ -1732,8 +1776,8 @@
           "category": "BBQ",
           "local": true,
           "signature": true,
-          "address": "",
-          "website": "",
+          "address": "94 E Water St, Chillicothe, OH 45601",
+          "website": "http://www.oldcanalsmokehouse.com",
           "blurb": "Casual spot known for hickory-smoked meats.",
           "price": "$$",
           "sourceUrl": "https://wanderlog.com/list/geoCategory/316904",
@@ -1854,7 +1898,7 @@
           "local": true,
           "signature": true,
           "address": "920 Vernon St, Ironton, OH 45638",
-          "website": "",
+          "website": "https://www.facebook.com/thearmorysmokehousellc",
           "blurb": "Slow-smoked BBQ, burgers, steaks and pizzas with 36 draft beers.",
           "price": "$$",
           "sourceUrl": "https://www.restaurantji.com/oh/ironton/",
@@ -2011,7 +2055,7 @@
           "local": true,
           "signature": true,
           "address": "149 W Main St, Lancaster, OH 43130",
-          "website": "",
+          "website": "https://alehouse1890.squarespace.com",
           "blurb": "Long-running downtown gastropub in a building serving drinks since 1890.",
           "price": "$$",
           "sourceUrl": "https://destinationdowntownlancaster.com/eatdrink-1",
@@ -2233,7 +2277,7 @@
           "local": true,
           "signature": true,
           "address": "51800 National Rd, St. Clairsville, OH 43950",
-          "website": "",
+          "website": "https://mehlman.com",
           "blurb": "Cafeteria serving home-cooked meals for more than 40 years.",
           "price": "$$",
           "sourceUrl": "https://ww2.aaa.com/tripcanvas/restaurant/mehlman-cafeteria-AA43178",
@@ -2377,7 +2421,7 @@
           "category": "Pizza",
           "local": true,
           "signature": true,
-          "address": "",
+          "address": "4531 Sunset Blvd, Steubenville, OH 43952",
           "website": "",
           "blurb": "Home of the Ohio Valley's old-style rectangular tray pizza; downtown and Sunset Blvd shops.",
           "price": "$",

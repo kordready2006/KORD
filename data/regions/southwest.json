@@ -245,7 +245,19 @@
           "blurb": "Pizza and sports pub on McMillan next to UC.",
           "price": "$$",
           "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
-          "deals": []
+          "deals": [
+            {
+              "days": [
+                "Fri"
+              ],
+              "title": "Friday lunch buffet",
+              "details": "All-you-can-eat pizza, salad and a drink for $8.50, Fridays 11 AM-2 PM, per an Only In Your State article (undated); confirm current price.",
+              "price": "$8.50",
+              "studentOnly": false,
+              "sourceUrl": "https://www.onlyinyourstate.com/food/ohio/macs-pizza-pub-lunch-buffet-cincinnati-oh",
+              "sourceDate": ""
+            }
+          ]
         },
         {
           "name": "Rohs Street Cafe",
@@ -265,7 +277,7 @@
           "local": true,
           "signature": false,
           "address": "265 Hosea Ave, Cincinnati, OH 45220",
-          "website": "",
+          "website": "https://deweyspizza.com/location/clifton/",
           "blurb": "Cincinnati-born pizzeria just off the Ludlow strip.",
           "price": "$$",
           "sourceUrl": "https://sites.americanjewisharchives.org/media/docs/localRestaurants.pdf",
@@ -716,7 +728,7 @@
           "local": true,
           "signature": false,
           "address": "7 E Chestnut St, Oxford, OH 45056",
-          "website": "",
+          "website": "https://www.sdspizza.com",
           "blurb": "Local pizza shop on East Chestnut Street.",
           "price": "$",
           "sourceUrl": "https://www.travelbutlercounty.com/node/12498",
@@ -1525,7 +1537,7 @@
           "local": true,
           "signature": false,
           "address": "11 Brown St, Dayton, OH",
-          "website": "",
+          "website": "https://thai9restaurant.com",
           "blurb": "Thai and sushi at Brown and Fifth in the Oregon District.",
           "price": "$$",
           "sourceUrl": "https://lv.foursquare.com/bonkh/list/quick-food-in-the-oregon-district",
@@ -1537,7 +1549,7 @@
           "local": true,
           "signature": false,
           "address": "300 Wayne Ave, Dayton, OH",
-          "website": "",
+          "website": "https://dubpub.com",
           "blurb": "Irish pub at the edge of the Oregon District.",
           "price": "$$",
           "sourceUrl": "https://lv.foursquare.com/m_matthew/list/dayton",
@@ -1645,7 +1657,7 @@
           "local": true,
           "signature": false,
           "address": "430 E 5th St, Dayton, OH",
-          "website": "",
+          "website": "https://www.blindbobs.com",
           "blurb": "Oregon District bar with a full menu, karaoke and trivia.",
           "price": "$",
           "sourceUrl": "https://www.dayton.com/places/restaurant/the-best-spots-for-some-casual-late-night-eats-the-oregon-district/MnGoJtKrVyNzUgoN9dq1OO/",
