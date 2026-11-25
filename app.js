@@ -124,7 +124,7 @@
   function photo(src) { return src || ''; }
   function ticket(x, hero) {
     var st = stubText(x.d), ph = photo(x.d.photo || (x.d.nophoto ? '' : x.sp.photo));
-    return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" style="--c:' + color(x.sp.category) + '">' +
+    return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" data-deal="' + esc(x.d.title) + '" style="--c:' + color(x.sp.category) + '">' +
       '<span class="ph' + (ph ? '' : x.sp.logo ? ' nophoto haslogo' : ' nophoto') + '">' + (ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : x.sp.logo ? '<img alt="" loading="lazy" src="' + esc(x.sp.logo) + '">' : '<span class="mono">' + esc(initials(x.sp.name)) + '</span>') +
       (hero ? '<span class="flag">Cheapest local ' + (S.day === TODAY ? 'today' : DAYNAME[S.day]) + '</span>' : '') +
       '<span class="price' + (st.length > 5 ? ' long' : '') + '">' + esc(st) + '</span></span>' +
@@ -191,6 +191,9 @@
       '<div><h2>' + esc(U.name || 'Your profile') + '</h2><p class="sub">' + esc(town().school.name) + '</p>' +
       '<div class="btnrow" style="margin-top:8px"><label class="btn ghost" for="avatarFile">Add a photo</label><input id="avatarFile" type="file" accept="image/*" hidden></div></div></div>' +
       '<label class="field" for="nameIn">Your name<input id="nameIn" type="text" maxlength="30" autocomplete="nickname" placeholder="What should we call you?" value="' + esc(U.name) + '"></label>' +
+      (U.orders.length ? '<div class="sechead"><h2>Your demo orders</h2><span>' + U.orders.length + '</span></div><div class="lines">' + U.orders.slice(0, 8).map(function (o) {
+        return '<div class="line"><span class="mid"><b>' + esc(o.name) + '</b><small>' + esc(o.no) + ' · ' + o.lines.reduce(function (a, l) { return a + l.qty; }, 0) + ' items · KORD fee ' + usd(o.fee) + '</small></span><b>' + usd(o.total) + '</b></div>';
+      }).join('') + '</div><p class="note">KORD fees across these demo orders: ' + usd(U.orders.reduce(function (a, o) { return a + o.fee; }, 0)) + '</p>' : '') +
       '<div class="sechead"><h2>Dishes you rated</h2><span>' + mine.length + '</span></div>';
     h += mine.length ? '<div class="list">' + mine.map(function (m) {
       return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + '★'.repeat(m.r) + '</span></span></button>';
@@ -219,6 +222,64 @@
 
   /* place sheet */
   function closeSheet() { document.getElementById('sheetRoot').innerHTML = ''; clearInterval(POLL); S.open = null; S.item = null; }
+  /* ---- Demo ordering. No payment is taken and no restaurant is contacted. ---- */
+  var TAX = 0.0725, CART = { place: null, lines: [] };
+  U.orders = U.orders || [];
+  function kordFee(sub) { return sub <= 0 ? 0 : sub < 10 ? 0.5 : 1; }   /* KORD's cut per order */
+  function usd(n) { return '$' + n.toFixed(2); }
+  var OPTSETS = [[/wing/i, 'Sauce', ['Buffalo', 'BBQ', 'Garlic parm', 'Dry rub']], [/taco|burrito|quesadilla|nacho|bowl/i, 'Protein', ['Chicken', 'Steak', 'Pork', 'Veggie']],
+    [/pizza|slice|calzone|stromboli/i, 'Topping', ['Cheese', 'Pepperoni', 'Sausage', 'Veggie']], [/burger/i, 'Cheese', ['American', 'Cheddar', 'Swiss', 'No cheese']],
+    [/sub\b|sandwich|wrap|gyro|bagel/i, 'Side', ['No side', 'Fries', 'Chips']], [/coffee|latte|tea|boba|smoothie|shake/i, 'Size', ['Small', 'Medium', 'Large']]];
+  function optSet(name) { for (var i = 0; i < OPTSETS.length; i++) if (OPTSETS[i][0].test(name)) return OPTSETS[i]; return null; }
+  function cartTotals(lines) { var sub = 0; lines.forEach(function (l) { sub += l.price * l.qty; }); var tax = Math.round(sub * TAX * 100) / 100, fee = kordFee(sub); return { sub: sub, tax: tax, fee: fee, total: sub + tax + fee, count: lines.reduce(function (a, l) { return a + l.qty; }, 0) }; }
+  function orderBox(id, m) {
+    var price = priceNum(m.p), set = optSet(m.n);
+    if (price == null) return '<p class="note">This one has no set price, so order it at the restaurant.</p>';
+    if (set && set[2].indexOf(S.opt) < 0) S.opt = set[2][0];
+    var q = S.qty || 1;
+    return '<div class="orderbox"><span class="demo">Demo order</span>' +
+      (set ? '<span class="lab">' + set[1] + '</span><div class="opts">' + set[2].map(function (o) { return '<button class="opt" data-opt="' + esc(o) + '" aria-pressed="' + (S.opt === o) + '">' + esc(o) + '</button>'; }).join('') + '</div>' : '') +
+      '<div class="qtyrow"><span class="lab">How many</span><span class="qty"><button data-qty="-1" aria-label="One less">−</button><b>' + q + '</b><button data-qty="1" aria-label="One more">+</button></span></div>' +
+      '<input class="search" id="ordNote" type="text" maxlength="80" placeholder="Anything to add? (no onions, extra sauce)" aria-label="Order note">' +
+      '<button class="btn hot" id="addCart" data-id="' + esc(id) + '" data-name="' + esc(m.n) + '" data-price="' + price + '">Add to order · ' + usd(price * q) + '</button></div>';
+  }
+  function paintCart() {
+    var bar = document.getElementById('cartBar'); if (!bar) return;
+    var show = CART.lines.length && CART.place === S.open && S.step !== 'checkout' && S.step !== 'done', t = cartTotals(CART.lines);
+    bar.innerHTML = show ? '<div class="cartbar"><button class="btn hot" id="cartBtn"><span>View order · ' + t.count + ' item' + (t.count > 1 ? 's' : '') + '</span><span>' + usd(t.sub) + '</span></button></div>' : '';
+  }
+  function checkout() {
+    var sp = SPOTS[CART.place], body = document.getElementById('sheetBody'); if (!sp || !body) return;
+    S.step = 'checkout'; S.pick = S.pick || 'ASAP (15 to 20 min)';
+    if (!CART.lines.length) { S.step = ''; return spotSheet(sp.id); }
+    var t = cartTotals(CART.lines);
+    body.innerHTML = '<button class="btn ghost" id="backMenu" style="align-self:flex-start">Back to menu</button>' +
+      '<div><h2>Your order</h2><p class="sub">Pickup from ' + esc(sp.name) + (sp.address ? ', ' + esc(sp.address.split(',')[0]) : '') + '</p></div><span class="demo">Demo: no payment is taken</span>' +
+      '<div class="lines">' + CART.lines.map(function (l, i) {
+        return '<div class="line"><b>' + l.qty + '×</b><span class="mid"><b>' + esc(l.n) + '</b><small>' + esc([l.opt, l.note].filter(Boolean).join(' · ')) + '</small></span><span style="text-align:right"><b>' + usd(l.price * l.qty) + '</b><br><button class="rm" data-rm="' + i + '">Remove</button></span></div>';
+      }).join('') + '</div>' +
+      '<div><span class="lab" style="font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)">Pickup time</span><div class="opts" style="margin-top:6px">' +
+      ['ASAP (15 to 20 min)', 'In 30 min', 'In 1 hour'].map(function (o) { return '<button class="opt" data-pick="' + esc(o) + '" aria-pressed="' + (S.pick === o) + '">' + esc(o) + '</button>'; }).join('') + '</div></div>' +
+      '<label class="field" for="ordName">Name for the order<input id="ordName" type="text" maxlength="30" placeholder="Your name" value="' + esc(U.name) + '"></label>' +
+      '<div class="totals"><div><span>Subtotal</span><span>' + usd(t.sub) + '</span></div><div><span>Estimated tax</span><span>' + usd(t.tax) + '</span></div>' +
+      '<div><span>KORD service fee</span><span>' + usd(t.fee) + '</span></div><div class="grand"><span>Total</span><span>' + usd(t.total) + '</span></div></div>' +
+      '<div class="paycard"><span>Demo card ending 4242</span><span class="demo">Demo</span></div>' +
+      '<button class="btn hot bigbtn" id="placeOrder">Place demo order · ' + usd(t.total) + '</button>' +
+      '<p class="note">This is a demo. Nothing is charged and ' + esc(sp.name) + ' is not sent this order.</p>';
+    body.scrollTop = 0; paintCart();
+  }
+  function placeOrder() {
+    var sp = SPOTS[CART.place], t = cartTotals(CART.lines), body = document.getElementById('sheetBody');
+    var o = { no: 'K' + Math.floor(10000 + Math.random() * 90000), place: sp.id, name: sp.name, lines: CART.lines, sub: t.sub, tax: t.tax, fee: t.fee, total: t.total, pick: S.pick, at: new Date().toISOString() };
+    U.orders.unshift(o); U.orders = U.orders.slice(0, 30); save('kord.user', U);
+    CART = { place: null, lines: [] }; S.step = 'done';
+    body.innerHTML = '<div class="done"><span class="tick">✓</span><h2>Order ' + o.no + ' placed</h2><span class="demo">Demo: nothing was charged or sent</span>' +
+      '<p class="sub">Pickup ' + esc(o.pick.toLowerCase().replace('asap', 'ASAP')) + ' at ' + esc(sp.name) + (sp.address ? ', ' + esc(sp.address.split(',')[0]) : '') + '</p></div>' +
+      '<div class="lines">' + o.lines.map(function (l) { return '<div class="line"><b>' + l.qty + '×</b><span class="mid"><b>' + esc(l.n) + '</b><small>' + esc([l.opt, l.note].filter(Boolean).join(' · ')) + '</small></span><b>' + usd(l.price * l.qty) + '</b></div>'; }).join('') + '</div>' +
+      '<div class="totals"><div><span>Food and tax, paid to ' + esc(sp.name) + '</span><span>' + usd(o.sub + o.tax) + '</span></div><div class="fee"><span>KORD keeps (service fee)</span><span>' + usd(o.fee) + '</span></div><div class="grand"><span>Student paid</span><span>' + usd(o.total) + '</span></div></div>' +
+      '<button class="btn bigbtn" id="doneBtn">Done</button><p class="note">After you eat, come back and rate what you got.</p>';
+    body.scrollTop = 0; paintCart();
+  }
   function menuItems(sp) {
     var out = [], seen = {};
     function add(n, p, sec) { var k = String(n || '').trim().toLowerCase(); if (!k || seen[k]) return; seen[k] = 1; out.push({ n: String(n).trim(), p: p || '', s: sec }); }
@@ -246,7 +307,7 @@
     var open = S.item === m.n, sc = itemScore(id, m.n), nc = cmtsFor(id, m.n).length;
     var meta = (sc ? '<span class="score">★ ' + sc.avg.toFixed(1) + '</span> (' + sc.n + ')' : '<span class="rateit">Rate it</span>') + (nc ? '<br>' + nc + ' comment' + (nc > 1 ? 's' : '') : '');
     var h = '<div class="dish' + (open ? ' open' : '') + '"><button class="dishhead" data-dish="' + esc(m.n) + '" aria-expanded="' + open + '"><span class="mname">' + esc(m.n) + (m.p ? ' <small>' + esc(m.p) + '</small>' : '') + '</span><span class="dmeta">' + meta + '</span></button>';
-    if (open) h += '<div class="dishbody"><div class="yours"><span>Your rating</span>' + miniStars(id, m.n) + '</div><div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
+    if (open) h += '<div class="dishbody">' + orderBox(id, m) + '<div class="yours"><span>Your rating</span>' + miniStars(id, m.n) + '</div><div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
       '<div class="addrow"><input class="search" id="cmtIn" type="text" maxlength="280" placeholder="Worth it? Tell other students" aria-label="Write a comment"><button class="btn" id="cmtBtn" data-id="' + esc(id) + '">Post</button></div>' +
       (SERVER ? '' : '<p class="note">Comments stay on this phone until the shared server is connected.</p>') + '</div>';
     return h + '</div>';
@@ -270,7 +331,7 @@
     box.innerHTML = h;
     var again = document.getElementById('cmtIn'); if (again && draft) again.value = draft;
   }
-  function spotSheet(id) {
+  function spotSheet(id, deal) {
     var sp = SPOTS[id]; if (!sp) return;
     var web = safeUrl(sp.website);
     var h = (photo(sp.photo) ? '<div class="banner" style="--c:' + color(sp.category) + '"><img alt="" src="' + esc(photo(sp.photo)) + '"></div>' : '') + '<div class="spothead">' + logo(sp, 'big') + '<div><h2>' + esc(sp.name) + '</h2><p class="sub">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</p>' + tagsHtml(sp) + '</div></div>';
@@ -294,8 +355,9 @@
       }).join('') + '</div>';
     } else h += '<div class="empty">No weekly deal found here yet.</div>';
     h += '<div><div class="sechead"><h2>What is good here</h2></div><p class="sub">Pick a category or search, then tap a dish to rate it and read what other students said.</p></div><div id="menuBox"></div>';
-    document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="' + esc(sp.name) + '"><div class="sheethead"><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody">' + h + '</div></div></div>';
-    S.mq = ''; S.sec = ''; S.item = null; S.open = id; fillMenu(id);
+    document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="' + esc(sp.name) + '"><div class="sheethead"><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody" id="sheetBody">' + h + '</div><div id="cartBar"></div></div></div>';
+    S.mq = ''; S.sec = deal ? 'Deals' : ''; S.item = deal || null; S.opt = ''; S.qty = 1; S.step = ''; S.open = id; fillMenu(id); paintCart();
+    if (deal) { var mb = document.querySelector('#menuBox .dish.open'); if (mb) mb.scrollIntoView({ block: 'start' }); }
     clearInterval(POLL);
     if (SERVER) { loadComments(id); loadScores(function () { if (S.open === id) fillMenu(id); }); POLL = setInterval(function () { if (S.open === id && !document.hidden) loadComments(id); }, 12000); }
     if (!MENUS) fetch('data/menus.json').then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (m) { MENUS = m || {}; if (S.open === id) fillMenu(id); });
@@ -314,7 +376,21 @@
       return;
     }
     if (t.dataset.sec) { S.sec = t.dataset.sec; S.item = null; return fillMenu(S.open); }
-    if (t.dataset.dish) { S.item = S.item === t.dataset.dish ? null : t.dataset.dish; return fillMenu(S.open); }
+    if (t.dataset.dish) { S.item = S.item === t.dataset.dish ? null : t.dataset.dish; S.opt = ''; S.qty = 1; return fillMenu(S.open); }
+    if (t.dataset.opt) { S.opt = t.dataset.opt; return fillMenu(S.open); }
+    if (t.dataset.qty) { S.qty = Math.max(1, Math.min(20, (S.qty || 1) + (+t.dataset.qty))); return fillMenu(S.open); }
+    if (t.id === 'addCart') {
+      if (CART.place !== t.dataset.id) CART = { place: t.dataset.id, lines: [] };
+      var nt = document.getElementById('ordNote');
+      CART.lines.push({ n: t.dataset.name, price: +t.dataset.price, qty: S.qty || 1, opt: optSet(t.dataset.name) ? S.opt : '', note: nt ? nt.value.trim() : '' });
+      S.qty = 1; S.item = null; fillMenu(S.open); return paintCart();
+    }
+    if (t.id === 'cartBtn') return checkout();
+    if (t.dataset.rm) { CART.lines.splice(+t.dataset.rm, 1); return checkout(); }
+    if (t.dataset.pick) { S.pick = t.dataset.pick; return checkout(); }
+    if (t.id === 'backMenu') { S.step = ''; return spotSheet(CART.place || S.open); }
+    if (t.id === 'placeOrder') return placeOrder();
+    if (t.id === 'doneBtn') { closeSheet(); return render(); }
     if (t.id === 'cmtBtn') {
       var cin = document.getElementById('cmtIn'), body = (cin.value || '').trim(), pid = t.dataset.id, dish = S.item;
       if (!body || !dish) return;
@@ -330,7 +406,7 @@
       return fillMenu(pid);
     }
     if (t.id === 'addItemBtn') { var box = document.getElementById('addItem'), name = (box.value || '').trim(); if (name) { var sid = t.dataset.id; U.custom[sid] = U.custom[sid] || []; if (U.custom[sid].indexOf(name) < 0) U.custom[sid].push(name); save('kord.user', U); S.mq = ''; fillMenu(sid); } return; }
-    if (t.dataset.spot) return spotSheet(t.dataset.spot);
+    if (t.dataset.spot) return spotSheet(t.dataset.spot, t.dataset.deal);
     if (t.dataset.town) { S.town = t.dataset.town; setTimeout(function () { loadScores(function () { if (!S.open) render(); }); }, 0); S.picking = false; S.tab = 'deals'; S.q = ''; S.day = TODAY; render(); window.scrollTo(0, 0); return; }
     if (t.dataset.day) { S.day = t.dataset.day; return render(); }
     if (t.dataset.tab) { S.tab = t.dataset.tab; if (S.tab !== 'deals') loadScores(function () { if (!S.open) render(); }); render(); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + S.tab); } catch (err) {} return; }
@@ -340,7 +416,7 @@
   document.addEventListener('input', function (e) {
     var t = e.target;
     if (t.id === 'spotSearch') { S.q = t.value; render(); var n = document.getElementById('spotSearch'); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }
-    if (t.id === 'nameIn') { U.name = t.value.trim(); save('kord.user', U); }
+    if (t.id === 'nameIn' || t.id === 'ordName') { U.name = t.value.trim(); save('kord.user', U); }
     if (t.id === 'menuSearch') { S.mq = t.value; fillMenu(S.open); var ms = document.getElementById('menuSearch'); if (ms) { ms.focus(); ms.setSelectionRange(ms.value.length, ms.value.length); } }
   });
   document.addEventListener('change', function (e) {

@@ -70,6 +70,30 @@ async function openFirstDeal(p) {
   await p.screenshot({ path: `${out}/a-sheet-dark.png` });
   await p.context().close();
 
+  // 1b. Demo order: tap the deal, customize, check out. 10 wings at $0.75 = $7.50, tax $0.54, fee $0.50.
+  p = await phone(browser, base);
+  await p.click('[data-town="athens"]');
+  await p.click('[data-day="Wed"]');
+  await p.click('.dcard.hero');
+  await p.waitForSelector('.orderbox');
+  await p.click('.opt:has-text("BBQ")');
+  for (let i = 0; i < 9; i++) await p.click('[data-qty="1"]');
+  await p.fill('#ordNote', 'extra ranch');
+  await p.screenshot({ path: `${out}/o-customize.png` });
+  await p.click('#addCart');
+  await p.click('#cartBtn');
+  const sheet = await p.locator('#sheetBody').innerText();
+  for (const want of ['$7.50', '$0.54', '$0.50', '$8.54', 'BBQ', 'extra ranch']) check(sheet.includes(want), 'checkout is missing ' + want);
+  await p.screenshot({ path: `${out}/o-checkout.png` });
+  await p.click('#placeOrder');
+  check(await p.locator('.done h2', { hasText: 'placed' }).count() === 1, 'no order confirmation');
+  await p.screenshot({ path: `${out}/o-done.png` });
+  await p.click('#doneBtn');
+  await p.click('[data-tab="you"]');
+  check(await p.locator('.line', { hasText: '$8.54' }).count() === 1, 'order not listed on the You tab');
+  check(!(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'sideways scroll after ordering');
+  await p.context().close();
+
   // 2. Shared server: two phones see each other's ratings and comments.
   if (!process.argv[3]) {
     const url = base + '?server=' + encodeURIComponent('http://localhost:8799');
@@ -82,7 +106,7 @@ async function openFirstDeal(p) {
     await a.click('#cmtBtn');
     await a.waitForTimeout(800);
     await openFirstDeal(b);
-    await b.waitForTimeout(800);
+    await b.waitForSelector('.saying', { timeout: 8000 }).catch(() => {});
     check(await b.locator('.saying', { hasText: 'Phone A says' }).count() === 1, 'phone B does not see phone A comment');
     await b.click('.chip:has-text("Top rated")');
     check(await b.locator('.dmeta', { hasText: '5.0' }).count() >= 1, 'phone B does not see phone A rating');
