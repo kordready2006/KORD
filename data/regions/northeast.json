@@ -248,6 +248,18 @@
               "sourceDate": ""
             }
           ]
+        },
+        {
+          "name": "Barrio Tacos",
+          "category": "Mexican",
+          "local": true,
+          "signature": true,
+          "address": "2466 Fairmount Blvd, Cleveland Heights, OH",
+          "website": "",
+          "blurb": "Cleveland-born build-your-own taco spot recommended by the CWRU Observer.",
+          "price": "$$",
+          "sourceUrl": "https://observer.case.edu/cleveland-cuisine-for-cwru-students-a-guide-to-your-new-favorite-restaurants",
+          "deals": []
         }
       ]
     },
@@ -261,7 +273,104 @@
           "url": "https://www.jcu.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Pizzazz on the Circle",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "20680 John Carroll Blvd, University Heights, OH 44118",
+          "website": "",
+          "blurb": "Inexpensive Italian and pizza spot beside John Carroll.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/order/pizzazz-on-the-circle",
+          "deals": []
+        },
+        {
+          "name": "Bialy's Bagels",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "2267 Warrensville Center Rd, University Heights, OH 44118",
+          "website": "",
+          "blurb": "Bagel shop on Warrensville Center Road.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/university-heights/",
+          "deals": []
+        },
+        {
+          "name": "Geraci's Restaurant",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "2266 Warrensville Center Rd, University Heights, OH 44118",
+          "website": "",
+          "blurb": "Italian restaurant and pizza place on Warrensville Center Road.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/university-heights/",
+          "deals": []
+        },
+        {
+          "name": "Boaz Fresh Lebanese",
+          "category": "Mediterranean",
+          "local": true,
+          "signature": false,
+          "address": "20630 John Carroll Blvd, University Heights, OH 44118",
+          "website": "",
+          "blurb": "Fast-casual Lebanese spot steps from John Carroll.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/university-heights/",
+          "deals": []
+        },
+        {
+          "name": "Cocky's Bagels",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "13898 Cedar Rd, University Heights, OH 44118",
+          "website": "",
+          "blurb": "Bagel sandwich shop on Cedar Road.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/university-heights/",
+          "deals": []
+        },
+        {
+          "name": "Georgio's Oven Fresh Pizza Co.",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "13942 Cedar Rd, University Heights, OH 44118",
+          "website": "",
+          "blurb": "Regional pizza shop on Cedar Road.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/university-heights/",
+          "deals": []
+        },
+        {
+          "name": "First Watch",
+          "category": "Breakfast & Brunch",
+          "local": false,
+          "signature": false,
+          "address": "13950 Cedar Rd, University Heights, OH 44118",
+          "website": "",
+          "blurb": "Breakfast and brunch chain on Cedar Road.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/university-heights/",
+          "deals": []
+        },
+        {
+          "name": "Saxbys",
+          "category": "Coffee & Bakery",
+          "local": false,
+          "signature": false,
+          "address": "1 John Carroll Blvd (St. Ignatius Hall), University Heights, OH 44118",
+          "website": "https://saxbyscoffee.com/location/jcu",
+          "blurb": "Saxbys cafe on the John Carroll campus.",
+          "price": "$",
+          "sourceUrl": "https://saxbyscoffee.com/location/jcu",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "pepper-pike",
@@ -285,7 +394,92 @@
           "url": "https://www.bw.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Mike's Bar & Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "130 Front St, Berea, OH 44017",
+          "website": "",
+          "blurb": "Neighborhood pub with familiar pub fare and a wide craft beer selection.",
+          "price": "$$",
+          "sourceUrl": "https://www.b-wcommunity.net/file/Berea-Area-Restaurants.pdf",
+          "deals": []
+        },
+        {
+          "name": "Cornerstone Brewing Company",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "58 Front St, Berea, OH 44017",
+          "website": "",
+          "blurb": "Front Street brewpub with house drafts plus pizza, burgers and sandwiches.",
+          "price": "$$",
+          "sourceUrl": "https://www.b-wcommunity.net/file/Berea-Area-Restaurants.pdf",
+          "deals": []
+        },
+        {
+          "name": "Sweet Mango Thai",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "54 Front St, Berea, OH 44017",
+          "website": "",
+          "blurb": "Thai restaurant on Front Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.b-wcommunity.net/file/Berea-Area-Restaurants.pdf",
+          "deals": []
+        },
+        {
+          "name": "Front St Social",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "107 Front St, Berea, OH 44017",
+          "website": "",
+          "blurb": "Casual gastropub on Front Street, open evenings.",
+          "price": "$$",
+          "sourceUrl": "https://www.opentable.com/r/front-st-social-brea",
+          "deals": []
+        },
+        {
+          "name": "Grindstone Tap House",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "826 Front St, Berea, OH 44017",
+          "website": "",
+          "blurb": "New American tap house where wings and burgers are customer favorites.",
+          "price": "$$",
+          "sourceUrl": "https://www.opentable.com/landmark/restaurants-near-berea-station",
+          "deals": []
+        },
+        {
+          "name": "Eastland Inn",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "33 Eastland Rd, Berea, OH 44017",
+          "website": "",
+          "blurb": "Long-running tavern just south of Bagley Road near Baldwin Wallace, with live entertainment.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/eastland-inn-5686550",
+          "deals": []
+        },
+        {
+          "name": "Cafe Ah-Roma",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Downtown Berea coffee and sandwich shop close to Baldwin Wallace.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/cafe-ah-roma-5686226",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "oberlin",
@@ -406,7 +600,44 @@
           "url": "https://www.lorainccc.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Foundry Kitchen & Bar",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "525 Broad St, Elyria, OH",
+          "website": "",
+          "blurb": "Downtown Elyria kitchen and bar; traditional wings are on the menu.",
+          "price": "$$",
+          "sourceUrl": "https://toasttab.com/local/elyria-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Dawghouse Bar & Grille",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "114 Antioch Dr, Elyria, OH",
+          "website": "",
+          "blurb": "Elyria bar and grille.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/elyria-oh-restaurants/best-american",
+          "deals": []
+        },
+        {
+          "name": "Black River Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Tavern at Valley of the Eagles Golf Club advertising happy hour and weeknight specials.",
+          "price": "$$",
+          "sourceUrl": "https://www.opentable.com/features/hot-spot-restaurants-cleveland-akron-canton-elyria",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "painesville",
@@ -430,6 +661,54 @@
           "price": "$$",
           "sourceUrl": "https://www.yelp.com/biz/paninis-bar-and-grill-painesville-2",
           "deals": []
+        },
+        {
+          "name": "Sidewalk Cafe",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "Main St, Painesville, OH",
+          "website": "",
+          "blurb": "Downtown brunch spot with omelettes and breakfast burritos.",
+          "price": "$",
+          "sourceUrl": "https://www.aol.com/articles/ohios-cozy-riverside-city-college-130000961.html",
+          "deals": []
+        },
+        {
+          "name": "China House",
+          "category": "Asian",
+          "local": true,
+          "signature": false,
+          "address": "160 Main St, Painesville, OH 44077",
+          "website": "",
+          "blurb": "Chinese restaurant on Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.superpages.com/fairport-industrial-park-painesville-oh/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Cuzin's Soul Food",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "211 N Saint Clair St, Painesville, OH 44077",
+          "website": "",
+          "blurb": "Soul food restaurant on North St. Clair Street.",
+          "price": "$",
+          "sourceUrl": "https://www.superpages.com/fairport-industrial-park-painesville-oh/restaurants",
+          "deals": []
+        },
+        {
+          "name": "Local Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "11 Chester St, Painesville, OH 44077",
+          "website": "",
+          "blurb": "Tavern with seafood and sandwiches.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/painesville-oh-restaurants/best-american",
+          "deals": []
         }
       ]
     },
@@ -443,7 +722,44 @@
           "url": "https://www.lakelandcc.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Biga Wood Fired Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "9145 Chillicothe Rd, Kirtland, OH 44094",
+          "website": "",
+          "blurb": "Wood-fired pizzeria on Chillicothe Road.",
+          "price": "$$",
+          "sourceUrl": "https://logs.happycow.net/north_america/usa/ohio/kirtland/print",
+          "deals": []
+        },
+        {
+          "name": "Kirtland Creamery",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "9304 Chillicothe Rd, Kirtland, OH 44094",
+          "website": "",
+          "blurb": "Ice cream shop on Chillicothe Road.",
+          "price": "$",
+          "sourceUrl": "https://logs.happycow.net/north_america/usa/ohio/kirtland/print",
+          "deals": []
+        },
+        {
+          "name": "Sausalito Restaurant & Catering",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "American restaurant in Kirtland.",
+          "price": "$$",
+          "sourceUrl": "https://www.opentable.com/nearby/restaurants-near-me-kirtland-oh?lang=es",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "hiram",
@@ -455,7 +771,44 @@
           "url": "https://www.hiram.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Gionino's Pizzeria of Hiram",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "11679 Hayden St, Hiram, OH 44234",
+          "website": "",
+          "blurb": "Northeast Ohio pizza chain's shop in Hiram.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/hiram/",
+          "deals": []
+        },
+        {
+          "name": "The M.O.R.E. Cafe",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": true,
+          "address": "6821 Wakefield Rd, Hiram, OH 44234",
+          "website": "",
+          "blurb": "Coffee and doughnut shop near Hiram College, formerly Maggie's & MORE.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/hiram/",
+          "deals": []
+        },
+        {
+          "name": "Side Street Cafe & Grille",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "8373 Windham St, Garrettsville, OH 44231",
+          "website": "",
+          "blurb": "Cafe and grille in neighboring Garrettsville.",
+          "price": "$",
+          "sourceUrl": "https://bbb.org/us/oh/hiram/category/restaurants",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "kent",
@@ -1038,7 +1391,68 @@
           "url": "https://www.neomed.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Caporaletti's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": true,
+          "address": "4260 State Route 44, Rootstown, OH 44272",
+          "website": "",
+          "blurb": "Pizza, chicken, pasta and subs; serving Rootstown for over 40 years.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/caporalettis-pizza-272822556",
+          "deals": []
+        },
+        {
+          "name": "Romeo's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "4071 State Route 44, Rootstown, OH 44272",
+          "website": "",
+          "blurb": "Northeast Ohio pizza chain location on Route 44.",
+          "price": "$",
+          "sourceUrl": "https://www.mapquest.com/us/ohio/romeos-pizza-698245245",
+          "deals": []
+        },
+        {
+          "name": "Cosentino Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "4139 Tallmadge Rd, Rootstown, OH 44272",
+          "website": "",
+          "blurb": "Take-out pizzeria known for stone oven-baked pizzas.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/cosentino-pizzeria-262784896",
+          "deals": []
+        },
+        {
+          "name": "Gionino's Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "6982 Tallmadge Rd, Rootstown, OH 44272",
+          "website": "",
+          "blurb": "Northeast Ohio pizza chain location on Tallmadge Road.",
+          "price": "$",
+          "sourceUrl": "https://www.yellowpages.com/rootstown-oh/pizza",
+          "deals": []
+        },
+        {
+          "name": "Angelo's Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "4169 Tallmadge Rd, Rootstown, OH 44272",
+          "website": "",
+          "blurb": "Pizzeria on Tallmadge Road.",
+          "price": "$",
+          "sourceUrl": "https://www.yellowpages.com/rootstown-oh/pizza",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "north-canton",
@@ -1060,7 +1474,68 @@
           "url": "https://www.kent.edu/stark"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Walther's Twin Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "430 Applegrove St NW, North Canton, OH 44720",
+          "website": "",
+          "blurb": "Longtime North Canton tavern.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitcanton.com/things-to-do/neighborhoods/north-canton-plain-township/?page=8",
+          "deals": []
+        },
+        {
+          "name": "SOL Pie Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "3159 Whitewood St NW, North Canton, OH",
+          "website": "",
+          "blurb": "Local pizza shop on Whitewood Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/north-canton-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Ohio Roasting Company",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "4870 Frank Ave NW, North Canton, OH",
+          "website": "",
+          "blurb": "Local coffee roaster and cafe on Frank Avenue.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/north-canton-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Rockne's",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "5000 Portage St NW, North Canton, OH",
+          "website": "",
+          "blurb": "Northeast Ohio pub chain's North Canton location.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/north-canton-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "John's Bar & Grille",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "North Canton bar and grille listed by Visit Canton.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitcanton.com/things-to-do/neighborhoods/north-canton-plain-township/?page=4",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "canton",
@@ -1072,7 +1547,93 @@
           "url": "https://www.malone.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Bender's Tavern",
+          "category": "Other",
+          "local": true,
+          "signature": true,
+          "address": "137 Court Ave SW, Canton, OH",
+          "website": "",
+          "blurb": "Canton's oldest restaurant, downtown since 1902.",
+          "price": "$$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/benders-tavern-137-court-ave-sw/r-7cff4be2-2798-40b2-a16a-2262a9093b0e/item-halibut_b4180f6d-07b9-4e65-8025-39fed28d4e01",
+          "deals": []
+        },
+        {
+          "name": "George's Lounge",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Hand-crafted food and drinks in downtown Canton's Arts District and Historic Music Block.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitcanton.com/directory/georges-lounge",
+          "deals": []
+        },
+        {
+          "name": "Lucca Downtown",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Tuscan-inspired downtown dinner spot.",
+          "price": "$$$",
+          "sourceUrl": "https://visitcanton.com/things-to-do/neighborhoods/downtown-canton/downtown-canton-dining/?page=3",
+          "deals": []
+        },
+        {
+          "name": "TD's Tailgate Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Canton sports grill listed by Visit Canton.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitcanton.com/directory/tds-tailgate-grill",
+          "deals": []
+        },
+        {
+          "name": "Winking Lizard Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Northeast Ohio tavern chain's Canton location.",
+          "price": "$$",
+          "sourceUrl": "https://www.visitcanton.com/directory/winking-lizard-tavern-canton/",
+          "deals": [
+            {
+              "days": [
+                "Mon",
+                "Tue"
+              ],
+              "title": "Wing Night",
+              "details": "Chain menu page lists wing night Monday and Tuesday after 3pm, dine-in only. Undated source and no price given; confirm with the Canton location.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://places.singleplatform.com/winking-lizard-tavern-/menu",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Condado Tacos",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "4183 Belden Village Mall Circle NW, Canton, OH",
+          "website": "https://locations.condadotacos.com/oh/4183-belden-village-mall-circle-nw",
+          "blurb": "Ohio-based build-your-own taco chain with a Canton location.",
+          "price": "$$",
+          "sourceUrl": "https://locations.condadotacos.com/oh/4183-belden-village-mall-circle-nw",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "alliance",
@@ -1084,7 +1645,116 @@
           "url": "https://www.mountunion.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Chives Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "2355 S Union Ave, Alliance, OH",
+          "website": "",
+          "blurb": "Sports bar near Mount Union described by reviewers as a longtime student hangout.",
+          "price": "$$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/chives-grill-262882523",
+          "deals": []
+        },
+        {
+          "name": "Mount Union Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "2300 S Union Ave, Alliance, OH",
+          "website": "",
+          "blurb": "Diner on South Union Avenue.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/mount-union-diner-5832660",
+          "deals": []
+        },
+        {
+          "name": "Doug's Classic '57 Diner",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Diner near the University of Mount Union popular with students for brunch and omelets.",
+          "price": "$",
+          "sourceUrl": "https://wanderlog.com/place/details/5225512/dougs-classic-57-diner",
+          "deals": []
+        },
+        {
+          "name": "The College Inn",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "935 W State St, Alliance, OH",
+          "website": "",
+          "blurb": "Home-style food at affordable prices just off the Mount Union campus.",
+          "price": "$",
+          "sourceUrl": "https://www.aol.com/review-college-inn-alliance-offers-110615859.html",
+          "deals": []
+        },
+        {
+          "name": "Old Carolina Barbecue Company",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "https://oldcarolina.com",
+          "blurb": "Stark County barbecue chain's Alliance location down the street from Mount Union, with a drive-thru.",
+          "price": "$$",
+          "sourceUrl": "https://oldcarolina.com/?p=158",
+          "deals": []
+        },
+        {
+          "name": "Al & Dave's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Alliance pizza shop named in the university's 2022 local guide.",
+          "price": "$",
+          "sourceUrl": "https://www.mountunion.edu/news/why-alliance",
+          "deals": []
+        },
+        {
+          "name": "A-Town Burgers and Brews",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Burger and beer spot named in the university's 2022 local guide.",
+          "price": "$$",
+          "sourceUrl": "https://www.mountunion.edu/news/why-alliance",
+          "deals": []
+        },
+        {
+          "name": "Gionino's Pizzeria",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Northeast Ohio pizza chain named in the university's 2022 local guide.",
+          "price": "$",
+          "sourceUrl": "https://www.mountunion.edu/news/why-alliance",
+          "deals": []
+        },
+        {
+          "name": "Jalisco Mexican Restaurant",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Mexican restaurant named in the university's 2022 local guide.",
+          "price": "$$",
+          "sourceUrl": "https://www.mountunion.edu/news/why-alliance",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "wooster",
@@ -1161,6 +1831,18 @@
           "price": "$$",
           "sourceUrl": "https://u.osu.edu/buckeyevoicesati/?p=853",
           "deals": []
+        },
+        {
+          "name": "Beef O'Brady's",
+          "category": "Bar & Grill",
+          "local": false,
+          "signature": false,
+          "address": "",
+          "website": "https://beefobradys.com/wooster",
+          "blurb": "Sports pub chain location in Wooster with a restaurant specials page.",
+          "price": "$$",
+          "sourceUrl": "https://beefobradys.com/wooster",
+          "deals": []
         }
       ]
     },
@@ -1174,7 +1856,80 @@
           "url": "https://wayne.uakron.edu"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Orr Pizza and Subs",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "331 W High St, Orrville, OH 44667",
+          "website": "",
+          "blurb": "Local pizza and sub shop on West High Street.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/orrville/pizza/",
+          "deals": []
+        },
+        {
+          "name": "East of Chicago Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "304 W High St, Orrville, OH 44667",
+          "website": "",
+          "blurb": "Ohio-based pizza chain with oven-baked subs and wings.",
+          "price": "$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/east-of-chicago-pizza-5844270",
+          "deals": []
+        },
+        {
+          "name": "Viaggio Italian Restaurant & Pub",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "219 Hostetler Rd, Orrville, OH 44667",
+          "website": "",
+          "blurb": "Italian restaurant and pub with create-your-own pizzas.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/hickory-ohio-hospitality-inc-219-hostetler-road",
+          "deals": []
+        },
+        {
+          "name": "Que Pasa",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "525 N Main St, Orrville, OH 44667",
+          "website": "",
+          "blurb": "Mexican restaurant on North Main Street.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/orrville-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "La Placita Taqueria",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "513 N Main St, Orrville, OH 44667",
+          "website": "",
+          "blurb": "Taqueria on North Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/orrville-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Orr Valley Creamery",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "1402 N Main St, Orrville, OH 44667",
+          "website": "",
+          "blurb": "Local creamery on North Main Street.",
+          "price": "$",
+          "sourceUrl": "https://www.toasttab.com/local/orrville-oh-restaurants",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "youngstown",
@@ -1357,7 +2112,80 @@
           "url": "https://www.kent.edu/ashtabula"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Bridge Street Tavern",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "1017 Bridge St, Ashtabula, OH 44004",
+          "website": "",
+          "blurb": "Harbor bar and grill known locally for smashburgers.",
+          "price": "$$",
+          "sourceUrl": "https://visitashtabulacounty.com/dine-drink/bar-grill/bridge-street-tavern",
+          "deals": [
+            {
+              "days": [
+                "Wed"
+              ],
+              "title": "Wednesday Wing Night",
+              "details": "Weekly wing night; price not stated in the source.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://visitashtabulacounty.com/dine-drink/bar-grill/bridge-street-tavern",
+              "sourceDate": ""
+            }
+          ]
+        },
+        {
+          "name": "Bascule Bridge Grille",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1006 Bridge St, Ashtabula, OH 44004",
+          "website": "",
+          "blurb": "New American grille and wine bar by the harbor lift bridge.",
+          "price": "$$$",
+          "sourceUrl": "https://www.aaa.com/tripcanvas/restaurant/bascule-bridge-grille-%26-wine-bar-232943",
+          "deals": []
+        },
+        {
+          "name": "Rennick Meat Market",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "1104 Bridge St, Ashtabula, OH 44004",
+          "website": "",
+          "blurb": "Steakhouse-style restaurant in a former butcher shop.",
+          "price": "$$$",
+          "sourceUrl": "https://visitashtabulacounty.com/bridge-street-eats/",
+          "deals": []
+        },
+        {
+          "name": "Bridge St. Galley",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "1001 Bridge St, Ashtabula, OH 44004",
+          "website": "",
+          "blurb": "Weekday breakfast and lunch spot on Bridge Street.",
+          "price": "$",
+          "sourceUrl": "https://visitashtabulacounty.com/bridge-street-eats/",
+          "deals": []
+        },
+        {
+          "name": "Briquettes Smokehouse",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "405 Morton Dr, Ashtabula, OH 44004",
+          "website": "",
+          "blurb": "Southern-style barbecue smokehouse at the harbor.",
+          "price": "$$",
+          "sourceUrl": "https://visitashtabulacounty.com/bridge-street-eats/",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "salem",
@@ -1369,7 +2197,92 @@
           "url": "https://www.kent.edu/columbiana"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Ricky's English Pub",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": true,
+          "address": "151 E State St, Salem, OH 44460",
+          "website": "",
+          "blurb": "Downtown pub known for chef-created daily specials; top-ranked Salem restaurant on TripAdvisor.",
+          "price": "$$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/rickys-english-pub-5819258",
+          "deals": []
+        },
+        {
+          "name": "The OG",
+          "category": "Wings & Chicken",
+          "local": true,
+          "signature": false,
+          "address": "156 N Lincoln Ave, Salem, OH 44460",
+          "website": "",
+          "blurb": "Wings, fried chicken and elevated American fare just off State Street, with weekly entree specials.",
+          "price": "$$",
+          "sourceUrl": "https://postmates.com/city/salem-oh",
+          "deals": []
+        },
+        {
+          "name": "Coaches Burger Bar",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "635 E State St, Salem, OH 44460",
+          "website": "",
+          "blurb": "Regional burger bar on East State Street.",
+          "price": "$$",
+          "sourceUrl": "https://toasttab.com/local/salem-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Kast Iron Soda Works",
+          "category": "Dessert & Ice Cream",
+          "local": true,
+          "signature": false,
+          "address": "420 E State St, Salem, OH 44460",
+          "website": "",
+          "blurb": "Highly rated soda shop on East State Street.",
+          "price": "$",
+          "sourceUrl": "https://toasttab.com/local/salem-oh-restaurants",
+          "deals": []
+        },
+        {
+          "name": "Jalisco's",
+          "category": "Mexican",
+          "local": true,
+          "signature": false,
+          "address": "2488 E State St, Salem, OH 44460",
+          "website": "",
+          "blurb": "Mexican-American restaurant with a big menu.",
+          "price": "$$",
+          "sourceUrl": "https://restaurantji.com/oh/salem",
+          "deals": []
+        },
+        {
+          "name": "LiB's Market",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "474 E State St, Salem, OH 44460",
+          "website": "",
+          "blurb": "Market and cafe rated highly for breakfast.",
+          "price": "$",
+          "sourceUrl": "https://restaurantji.com/oh/salem",
+          "deals": []
+        },
+        {
+          "name": "Horst Sandwich Co.",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "1128 W State St, Salem, OH 44460",
+          "website": "",
+          "blurb": "Highly rated sandwich shop on West State Street.",
+          "price": "$",
+          "sourceUrl": "https://restaurantji.com/oh/salem",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "east-liverpool",
@@ -1381,7 +2294,44 @@
           "url": "https://www.kent.edu/columbiana"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "City Soup",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "500 Walnut St, East Liverpool, OH 43920",
+          "website": "",
+          "blurb": "Downtown spot for fresh, homemade soups.",
+          "price": "$",
+          "sourceUrl": "https://themuseumofceramics.com/here",
+          "deals": []
+        },
+        {
+          "name": "6th St. Cafeteria and Deli",
+          "category": "Sandwiches & Subs",
+          "local": true,
+          "signature": false,
+          "address": "116 E Sixth St, East Liverpool, OH 43920",
+          "website": "",
+          "blurb": "Family cafeteria and deli downtown.",
+          "price": "$",
+          "sourceUrl": "https://themuseumofceramics.com/here",
+          "deals": []
+        },
+        {
+          "name": "Steelnative Coffee",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "201 E Fifth St, East Liverpool, OH 43920",
+          "website": "",
+          "blurb": "Coffee, pastries, breakfast and lunch downtown.",
+          "price": "$",
+          "sourceUrl": "https://themuseumofceramics.com/here",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "warren",
@@ -1393,7 +2343,44 @@
           "url": "https://www.kent.edu/trumbull"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "West & Main",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "Courthouse Square, Warren, OH",
+          "website": "https://www.toasttab.com/west-main",
+          "blurb": "Bar and grill on Courthouse Square downtown; 12-wing orders on the menu.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/west-main",
+          "deals": []
+        },
+        {
+          "name": "The Hot Dog Shoppe",
+          "category": "Fast Food",
+          "local": true,
+          "signature": true,
+          "address": "",
+          "website": "",
+          "blurb": "Warren hot dog institution less than a mile west of Courthouse Square.",
+          "price": "$",
+          "sourceUrl": "https://www.ExploreTrumbullCounty.com/places-to-eat/the-hot-dog-shoppe/",
+          "deals": []
+        },
+        {
+          "name": "Courthouse Grille",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Small diner just off Courthouse Square.",
+          "price": "$",
+          "sourceUrl": "https://businessjournaldaily.com/?p=35228",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "new-philadelphia",
@@ -1405,7 +2392,80 @@
           "url": "https://www.kent.edu/tusc"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "Hog Heaven",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "1290 W High Ave, New Philadelphia, OH 44663",
+          "website": "",
+          "blurb": "Barbecue restaurant on West High Avenue.",
+          "price": "$$",
+          "sourceUrl": "https://startpage.mapquest.com/us/ohio/hog-heaven-5843793",
+          "deals": []
+        },
+        {
+          "name": "J-N-G Grill",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "114 Front Ave SW, New Philadelphia, OH 44663",
+          "website": "",
+          "blurb": "Local grill also listed on Kent State Tuscarawas's Where to Eat page.",
+          "price": "$$",
+          "sourceUrl": "https://www.toasttab.com/local/order/j-n-g-grill-114-front-ave-sw",
+          "deals": []
+        },
+        {
+          "name": "Granato's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "1320 4th St NW, New Philadelphia, OH 44663",
+          "website": "",
+          "blurb": "Local pizza shop on 4th Street NW.",
+          "price": "$",
+          "sourceUrl": "https://www.sirved.com/city/midvale-ohio-usa/all/wings/5",
+          "deals": []
+        },
+        {
+          "name": "Penso's Pizza",
+          "category": "Pizza",
+          "local": true,
+          "signature": false,
+          "address": "923 E High Ave, New Philadelphia, OH 44663",
+          "website": "",
+          "blurb": "Local pizza shop on East High Avenue.",
+          "price": "$",
+          "sourceUrl": "https://www.sirved.com/city/midvale-ohio-usa/all/wings/5",
+          "deals": []
+        },
+        {
+          "name": "Craft Bistro & Lounge",
+          "category": "Burgers",
+          "local": true,
+          "signature": false,
+          "address": "",
+          "website": "",
+          "blurb": "Bistro whose cheeseburger was featured by Ohio Magazine.",
+          "price": "$$",
+          "sourceUrl": "https://www.ohiomagazine.com/travel/article/10-great-food-finds-in-ohio-s-appalachian-region",
+          "deals": []
+        },
+        {
+          "name": "Hoodletown Brewery",
+          "category": "Bar & Grill",
+          "local": true,
+          "signature": false,
+          "address": "424 W 3rd St, Dover, OH",
+          "website": "",
+          "blurb": "Brewery in neighboring Dover listed on Kent State Tuscarawas's Where to Eat page.",
+          "price": "$$",
+          "sourceUrl": "https://www.kent.edu/tuscpac/where-eat",
+          "deals": []
+        }
+      ]
     },
     {
       "id": "burton",
@@ -1417,7 +2477,68 @@
           "url": "https://www.kent.edu/geauga"
         }
       ],
-      "spots": []
+      "spots": [
+        {
+          "name": "JC's Restaurant",
+          "category": "Breakfast & Brunch",
+          "local": true,
+          "signature": false,
+          "address": "13816 W Center St, Burton, OH 44021",
+          "website": "",
+          "blurb": "Inexpensive village diner.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/burton/",
+          "deals": []
+        },
+        {
+          "name": "Coffee Corners Antiques & Coffee House",
+          "category": "Coffee & Bakery",
+          "local": true,
+          "signature": false,
+          "address": "14544 N Cheshire St, Burton, OH 44021",
+          "website": "",
+          "blurb": "Coffee house inside an antiques shop.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/burton/",
+          "deals": []
+        },
+        {
+          "name": "Iron Horse Saloon",
+          "category": "BBQ",
+          "local": true,
+          "signature": false,
+          "address": "13468 Main Market Rd, Burton, OH 44021",
+          "website": "",
+          "blurb": "Barbecue saloon that also serves wood-fired pizza.",
+          "price": "$$",
+          "sourceUrl": "https://www.restaurantji.com/oh/burton/",
+          "deals": []
+        },
+        {
+          "name": "Welshfield Inn",
+          "category": "Other",
+          "local": true,
+          "signature": false,
+          "address": "14001 Main Market Rd, Burton, OH 44021",
+          "website": "",
+          "blurb": "Historic inn serving American fare in Amish country.",
+          "price": "$$$",
+          "sourceUrl": "https://www.opentable.com/r/welshfield-inn",
+          "deals": []
+        },
+        {
+          "name": "Subway",
+          "category": "Sandwiches & Subs",
+          "local": false,
+          "signature": false,
+          "address": "14548 N Cheshire St, Burton, OH 44021",
+          "website": "",
+          "blurb": "Sub chain location in the village.",
+          "price": "$",
+          "sourceUrl": "https://www.restaurantji.com/oh/burton/",
+          "deals": []
+        }
+      ]
     }
   ]
 }
