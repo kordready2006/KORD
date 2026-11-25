@@ -660,6 +660,17 @@
               "studentOnly": false,
               "sourceUrl": "https://www.travelbutlercounty.com/node/12484",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Mon"
+              ],
+              "title": "Monday calzone special",
+              "details": "Monday calzone special with several calzone varieties at about $6 each, per the Grubhub-powered MenuPages listing; confirm current price.",
+              "price": "$6",
+              "studentOnly": false,
+              "sourceUrl": "https://menupages.com/johnnys-campus-deli/209-e-sycamore-st-oxford",
+              "sourceDate": ""
             }
           ]
         },
@@ -1101,8 +1112,8 @@
           "category": "Bar & Grill",
           "local": true,
           "signature": false,
-          "address": "",
-          "website": "",
+          "address": "877 NW Washington Blvd, Hamilton, OH",
+          "website": "https://shootersportsgrill.com",
           "blurb": "Sports grill with daily specials.",
           "price": "$$",
           "sourceUrl": "https://www.journal-news.com/what-to-do/dining/3-food-items-ordered-most-so-far-at-new-shooters-sports-grill-hamilton/ACJ7KQACFJBBXNP3UZDHGDKJOI/",
@@ -1152,6 +1163,28 @@
               "studentOnly": false,
               "sourceUrl": "https://wingbeerspecials.com/r/bronzies-place-hamilton",
               "sourceDate": ""
+            },
+            {
+              "days": [
+                "Tue"
+              ],
+              "title": "Tuesday Combo Night",
+              "details": "Combo Night special after 5 PM; details are on a table card and prices are not shown in the source. Third-party aggregator listing; confirm with the restaurant.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://wingbeerspecials.com/r/bronzies-place-hamilton",
+              "sourceDate": ""
+            },
+            {
+              "days": [
+                "Thu"
+              ],
+              "title": "Thursday lasagna special",
+              "details": "Discounted lasagna after 5 PM; price not captured from the source. Third-party aggregator listing; confirm with the restaurant.",
+              "price": "",
+              "studentOnly": false,
+              "sourceUrl": "https://wingbeerspecials.com/r/bronzies-place-hamilton",
+              "sourceDate": ""
             }
           ]
         },
@@ -1160,7 +1193,7 @@
           "category": "Fast Food",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "2047 Pleasant Ave, Hamilton, OH",
           "website": "",
           "blurb": "Walk-up spot noted for its popular Taco Tuesdays and street tacos.",
           "price": "$",
@@ -1516,7 +1549,7 @@
           "local": true,
           "signature": false,
           "address": "1400 Valley St, Dayton, OH",
-          "website": "",
+          "website": "https://www.theamberrose.com",
           "blurb": "Eastern European restaurant in Old North Dayton.",
           "price": "$$",
           "sourceUrl": "https://www.dayton.com/places/restaurant/your-guide-dayton-top-spots-for-wings/9CfNloMEZdF7fzzRKHLocI/",
@@ -1653,30 +1686,6 @@
           "price": "$",
           "sourceUrl": "https://www.dayton.com/places/restaurant/the-best-spots-for-some-casual-late-night-eats-the-oregon-district/MnGoJtKrVyNzUgoN9dq1OO/",
           "deals": []
-        },
-        {
-          "name": "Basil's on Market",
-          "category": "Bar & Grill",
-          "local": true,
-          "signature": false,
-          "address": "",
-          "website": "",
-          "blurb": "Downtown Dayton restaurant listed in the Dayton Daily News Taco Tuesday roundup as Basil's.",
-          "price": "$$",
-          "sourceUrl": "https://www.dayton.com/news/local/all-the-taco-tuesday-deals-dayton-you-need-know-about/jQIgls2NSdr1FPSlXI9fYO/",
-          "deals": [
-            {
-              "days": [
-                "Tue"
-              ],
-              "title": "$3 Taco Tuesday",
-              "details": "Tacos $3 each on Tuesdays 4-9 PM; sides extra. From an undated roundup; confirm current price.",
-              "price": "$3",
-              "studentOnly": false,
-              "sourceUrl": "https://www.dayton.com/news/local/all-the-taco-tuesday-deals-dayton-you-need-know-about/jQIgls2NSdr1FPSlXI9fYO/",
-              "sourceDate": ""
-            }
-          ]
         },
         {
           "name": "Taqueria Mixteca",
@@ -2130,7 +2139,7 @@
           "category": "Pizza",
           "local": true,
           "signature": false,
-          "address": "",
+          "address": "40 N Fountain Ave, Springfield, OH",
           "website": "",
           "blurb": "Budget-friendly pizzeria largely staffed by Wittenberg students.",
           "price": "$",
@@ -2209,7 +2218,7 @@
           "local": true,
           "signature": false,
           "address": "325 N Fountain Ave, Springfield, OH",
-          "website": "",
+          "website": "https://stationonespringfield.com",
           "blurb": "Bar and restaurant in a former gas station near Wittenberg.",
           "price": "$",
           "sourceUrl": "https://springfieldnewssun.com/news/what-know-about-station-the-springfield-restaurant-that-was-once-gas-station/99tQ4jihI3a1XFz0jkxE0O",
