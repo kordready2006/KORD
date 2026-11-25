@@ -143,8 +143,12 @@ def main():
             '<style>:root{padding:env(safe-area-inset-top,0px) 0 env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>\n'
             '</head>\n<body>\n')
     tail = ("\n<script>if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(function(){});</script>\n</body>\n</html>\n")
+    # The hosted page loads the app script from its own file; the Claude preview keeps it inline in app/kord.html.
+    m = re.search(r"<script>\n(.*)</script>\s*$", frag, re.S)
+    with open(os.path.join(ROOT, "app.js"), "w") as f:
+        f.write(m.group(1) + "\nif ('serviceWorker' in navigator && /^https:/.test(location.href) && !/htmlpreview/.test(location.host)) navigator.serviceWorker.register('sw.js').catch(function () {});\n")
     with open(os.path.join(ROOT, "index.html"), "w") as f:
-        f.write(head + frag + tail)
+        f.write(head + frag[:m.start()] + '<script src="app.js"></script>\n</body>\n</html>\n')
 
     for t in live:
         print(f"{t['school']['name']:34} {len(t['spots']):3} places {sum(len(x['deals']) for x in t['spots']):3} deals")
