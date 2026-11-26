@@ -15,7 +15,8 @@ const SKIP = /facebook|instagram|toasttab|spoton|doordash|ubereats|grubhub/;
   const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'kord.json')));
   const todo = new Map();
   for (const t of data.towns) for (const s of t.spots) {
-    if (!s.local || !s.deals.length || !s.website || SKIP.test(s.website)) continue;
+    const ALL = process.argv[3] === 'all';   // 'all' = every local place with a website, not only those with deals
+    if (!s.local || (!ALL && !s.deals.length) || !s.website || SKIP.test(s.website)) continue;
     const needsDish = s.deals.some((d) => d.nophoto);
     if (s.photo && !needsDish) continue;
     let host; try { host = new URL(s.website).hostname.replace(/^www\./, ''); } catch (e) { continue; }
@@ -35,6 +36,9 @@ const SKIP = /facebook|instagram|toasttab|spoton|doordash|ubereats|grubhub/;
       await page.goto(url, { timeout: 25000, waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(1800);
       for (let k = 0; k < 6; k++) { await page.mouse.wheel(0, 1500); await page.waitForTimeout(400); }
+      const mails = await page.evaluate(() => [...new Set([...document.querySelectorAll('a[href^="mailto:"]')].map((a) => a.href.replace(/^mailto:/i, '').split('?')[0].trim().toLowerCase())
+        .concat((document.body.innerText.match(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/g) || []).map((m) => m.toLowerCase())))].filter((m) => !/\.(png|jpg|jpeg|webp|gif)$/.test(m) && !/sentry|wixpress|example\./.test(m)));
+      store.emails = [...new Set([...(store.emails || []), ...mails])].slice(0, 5);
       const imgs = await page.evaluate(() => [...document.images].filter((im) => im.naturalWidth >= 450 && im.naturalHeight >= 300).map((im) => {
         const fig = im.closest('figure, li, article, div');
         return { src: im.currentSrc, alt: im.alt || '', near: fig ? (fig.innerText || '').slice(0, 120) : '' };
@@ -66,9 +70,9 @@ const SKIP = /facebook|instagram|toasttab|spoton|doordash|ubereats|grubhub/;
       let links = [];
       try {
         links = await page.evaluate(() => [...document.querySelectorAll('a[href]')].map((a) => ({ h: a.href.split('#')[0], t: (a.innerText || '').trim().toLowerCase() }))
-          .filter((a) => a.h.startsWith(location.origin) && /menu|food|gallery|photo|special|wing|taco|pizza|burger|eat|happy/.test(a.t + ' ' + a.h.toLowerCase()) && !/\.pdf|mailto|tel:/.test(a.h)));
+          .filter((a) => a.h.startsWith(location.origin) && /menu|food|gallery|photo|special|wing|taco|pizza|burger|eat|happy|contact|order/.test(a.t + ' ' + a.h.toLowerCase()) && !/\.pdf|mailto|tel:/.test(a.h)));
       } catch (e) {}
-      const uniq = [...new Map(links.map((l) => [l.h.split('?')[0], l])).values()].filter((l) => l.h.split('?')[0] !== page.url().split('?')[0].split('#')[0]).slice(0, 3);
+      const uniq = [...new Map(links.map((l) => [l.h.split('?')[0], l])).values()].filter((l) => l.h.split('?')[0] !== page.url().split('?')[0].split('#')[0]).slice(0, 4);
       for (const l of uniq) { if (store.imgs.length > 45) break; await visit(page, l.h, store, bodies); }
       await page.close();
       delete store.seen;
