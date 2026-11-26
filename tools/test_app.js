@@ -31,6 +31,12 @@ async function openFirstDeal(p) {
   // 1. No shared server: everything works on one phone.
   let p = await phone(browser, base);
   await p.screenshot({ path: `${out}/a-pick.png` });
+  await p.click('[data-town="athens"]');
+  await p.click('[data-day="Wed"]');
+  check((await p.$$('.dcard .hook')).length >= 3, 'deal cards have no value line');
+  check(await p.locator('.sechead h2', { hasText: 'Full meals' }).count() === 1, 'no Full meals section');
+  await p.screenshot({ path: `${out}/a-deals.png`, fullPage: true });
+  await p.click('#swapBtn');
   await openFirstDeal(p);
   await p.click('#menuBox .dishhead >> nth=0');
   await p.click('.dishbody [data-rate="5"]');
@@ -75,27 +81,30 @@ async function openFirstDeal(p) {
   await p.screenshot({ path: `${out}/a-sheet-dark.png` });
   await p.context().close();
 
-  // 1b. Demo order: tap the deal, customize, check out. 10 wings at $0.75 = $7.50, tax $0.54, fee $0.50.
+  // 1b. Demo order: tap a priced deal, customize, check out. Totals must add up: tax 7.25%, fee $0.50 under $10 else $1.
   p = await phone(browser, base);
   await p.click('[data-town="athens"]');
   await p.click('[data-day="Wed"]');
-  await p.click('.dcard.hero');
+  await p.click('.dcard:has(.price:has-text("$")) >> nth=0');
   await p.waitForSelector('.orderbox');
-  await p.click('.opt:has-text("BBQ")');
-  for (let i = 0; i < 9; i++) await p.click('[data-qty="1"]');
+  const opt = await p.$('.orderbox .opt >> nth=1');
+  if (opt) await opt.click();
+  await p.click('[data-qty="1"]');
   await p.fill('#ordNote', 'extra ranch');
   await p.screenshot({ path: `${out}/o-customize.png` });
+  const unit = parseFloat(await p.getAttribute('#addCart', 'data-price'));
+  const subT = unit * 2, taxT = Math.round(subT * 0.0725 * 100) / 100, feeT = subT < 10 ? 0.5 : 1, totalT = subT + taxT + feeT;
   await p.click('#addCart');
   await p.click('#cartBtn');
   const sheet = await p.locator('#sheetBody').innerText();
-  for (const want of ['$7.50', '$0.54', '$0.50', '$8.54', 'BBQ', 'extra ranch']) check(sheet.includes(want), 'checkout is missing ' + want);
+  for (const want of ['$' + subT.toFixed(2), '$' + taxT.toFixed(2), '$' + feeT.toFixed(2), '$' + totalT.toFixed(2), 'extra ranch']) check(sheet.includes(want), 'checkout is missing ' + want);
   await p.screenshot({ path: `${out}/o-checkout.png` });
   await p.click('#placeOrder');
   check(await p.locator('.done h2', { hasText: 'placed' }).count() === 1, 'no order confirmation');
   await p.screenshot({ path: `${out}/o-done.png` });
   await p.click('#doneBtn');
   await p.click('[data-tab="you"]');
-  check(await p.locator('.line', { hasText: '$8.54' }).count() === 1, 'order not listed on the You tab');
+  check(await p.locator('.line', { hasText: '$' + totalT.toFixed(2) }).count() === 1, 'order not listed on the You tab');
   check(!(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'sideways scroll after ordering');
   await p.context().close();
 

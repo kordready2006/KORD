@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261125-222531';
+window.KORD_BUILD = '20261126-043100';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -112,7 +112,7 @@ window.KORD_BUILD = '20261125-222531';
     DAYS.forEach(function (d) { byDay[d] = dealsFor(t, d).filter(function (x) { return x.sp.local; }); });
     function rank(x) {
       var p = priceNum(x.d.price || x.d.title), everyday = x.d.days.length >= 6, discountOnly = p == null || /reward|points/i.test(x.d.title);
-      return [(used[x.sp.id] || 0) >= 2 ? 1 : 0, (discountOnly && everyday) || /reward|points/i.test(x.d.title) ? 1 : 0, p != null && p > 10 ? 1 : 0, used[x.sp.id] || 0, everyday ? 1 : 0, x.d.days.length, discountOnly ? 1 : 0, p == null ? 99 : p];
+      return [(used[x.sp.id] || 0) >= 2 ? 1 : 0, (discountOnly && everyday) || /reward|points/i.test(x.d.title) ? 1 : 0, p != null && p > 10 ? 1 : 0, kind(x.d) === 'meal' ? 0 : kind(x.d) === 'bite' ? 1 : 2, used[x.sp.id] || 0, everyday ? 1 : 0, x.d.days.length, discountOnly ? 1 : 0, p == null ? 99 : p];
     }
     DAYS.slice().sort(function (a, b) { return byDay[a].length - byDay[b].length; }).forEach(function (d) {
       var best = null, br = null;
@@ -126,6 +126,35 @@ window.KORD_BUILD = '20261125-222531';
     return (PICKS[t.id] = picks);
   }
   window.KORD_PICKS = function (id) { var t = DATA.towns.filter(function (x) { return x.id === id; })[0]; return t ? weekPicks(t) : null; };
+  /* What a deal is worth to a student on a budget.
+     meal  = a full plate for the price (burger, sub, bowl, pizza, lunch special...)
+     bite  = priced per piece or a snack (one wing, one taco, a slice, an appetizer)
+     off   = money off with no set price (10% with student ID, half-price apps) */
+  function kind(d) {
+    var p = priceNum(d.price || d.title), t = d.title.toLowerCase();
+    if (p == null || /add[- ]?on|add one|bogo|buy one|buy \d|\boff\b/.test(t)) return 'off';
+    if (/wing|taco(?!.*(salad|bowl|platter|combo|dinner))|slice|nugget|cookie|donut|pretzel|appetizer|\bapps\b|shar(e)?able|starter|nacho|\bbites?\b|slider/.test(t) && p < 7) return 'bite';
+    if (p < 3 && !/meal|sub\b|sandwich|burger|burrito|bowl|combo|lunch|dinner|entree/.test(t)) return 'bite';
+    return 'meal';
+  }
+  function hook(d) {
+    var p = priceNum(d.price || d.title), k = kind(d), t = d.title.toLowerCase(), bits = [];
+    if (d.days.length === 1) bits.push(d.days[0] === TODAY && S.day === TODAY ? 'Today only' : DAYNAME[d.days[0]] + 's only');
+    if (k === 'meal') bits.push('Full meal under $' + (p <= 5 ? 5 : p <= 8 ? 8 : p <= 10 ? 10 : 12));
+    else if (k === 'bite' && p <= 1.5 && /wing/.test(t)) bits.push('Fill up: 8 wings for ' + money(Math.round(p * 8 * 100) / 100));
+    else if (k === 'bite' && p <= 2.5 && /taco/.test(t)) bits.push('Fill up: 3 tacos for ' + money(Math.round(p * 3 * 100) / 100));
+    else if (k === 'bite' && p <= 2 && /slice/.test(t)) bits.push('Fill up: 2 slices for ' + money(Math.round(p * 2 * 100) / 100));
+    else if (k === 'bite') bits.push('Cheap bite under $' + (p <= 3 ? 3 : p <= 5 ? 5 : 7));
+    else bits.push(d.studentOnly ? 'Just show your student ID' : 'Money off your order');
+    return bits.join(' · ');
+  }
+  function byValue(a) {
+    var order = { meal: 0, bite: 1, off: 2 };
+    return a.sort(function (x, y) {
+      var kx = order[kind(x.d)], ky = order[kind(y.d)], px = priceNum(x.d.price || x.d.title), py = priceNum(y.d.price || y.d.title);
+      return kx - ky || (px == null ? 99 : px) - (py == null ? 99 : py) || x.sp.name.localeCompare(y.sp.name);
+    });
+  }
   function cheapest(a) {
     return a.sort(function (x, y) {
       var px = priceNum(x.d.price || x.d.title), py = priceNum(y.d.price || y.d.title);
@@ -152,9 +181,9 @@ window.KORD_BUILD = '20261125-222531';
     var st = stubText(x.d), ph = photo(x.d.photo || (x.d.nophoto ? '' : x.sp.photo));
     return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" data-deal="' + esc(x.d.title) + '" style="--c:' + color(x.sp.category) + '">' +
       '<span class="ph' + (ph ? '' : x.sp.logo ? ' nophoto haslogo' : ' nophoto') + '">' + (ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : x.sp.logo ? '<img alt="" loading="lazy" src="' + esc(x.sp.logo) + '">' : '<span class="mono">' + esc(initials(x.sp.name)) + '</span>') +
-      (hero ? '<span class="flag">' + (S.day === TODAY ? 'Today\'s' : DAYNAME[S.day] + '\'s') + ' local pick</span>' : '') +
-      '<span class="price' + (st.length > 5 ? ' long' : '') + '">' + esc(st) + '</span></span>' +
-      '<span class="dbody"><span class="dtitle">' + esc(x.d.title) + '</span>' +
+      (hero ? '<span class="flag">' + (S.day === TODAY ? 'Today\'s' : DAYNAME[S.day] + '\'s') + ' best value</span>' : '') +
+      '<span class="price' + (st.length > 5 ? ' long' : '') + '">' + esc(st) + (kind(x.d) === 'bite' && priceNum(x.d.price || x.d.title) <= 2.5 && /wing|taco|slice/i.test(x.d.title) ? '<small>each</small>' : '') + '</span></span>' +
+      '<span class="dbody"><span class="hook">' + esc(hook(x.d)) + '</span><span class="dtitle">' + esc(x.d.title) + '</span>' +
       '<span class="who">' + logo(x.sp, 'sm') + '<span>' + esc(x.sp.name) + '</span></span>' +
       (hero ? '<span class="ddet">' + esc(x.d.details) + '</span>' : '') + tagsHtml(x.sp, x.d) + '</span></button>';
   }
@@ -169,20 +198,23 @@ window.KORD_BUILD = '20261125-222531';
   /* step 2: cheapest deals for the day */
   function viewDeals() {
     var t = town(), all = dealsFor(t, S.day);
-    var local = cheapest(all.filter(function (x) { return x.sp.local; })), chain = cheapest(all.filter(function (x) { return !x.sp.local; }));
+    var local = byValue(all.filter(function (x) { return x.sp.local; })), chain = byValue(all.filter(function (x) { return !x.sp.local; }));
     var when = S.day === TODAY ? 'today' : 'on ' + DAYNAME[S.day];
-    var pick = weekPicks(t)[S.day], pi = -1;
-    local.forEach(function (x, i) { if (x.sp.id + '|' + x.d.title === pick) pi = i; });
-    if (pi > 0) local.unshift(local.splice(pi, 1)[0]);
-    var h = '<div><h2>Eat cheap ' + when + '</h2><p class="sub">Good local food near campus, all $12 or less. ' + (S.day === TODAY ? 'Today\'s' : DAYNAME[S.day] + '\'s') + ' pick is up top.</p></div>';
-    if (local.length) {
-      h += ticket(local[0], true);
-      if (local.length > 1) h += '<div class="sechead"><h2>More local deals</h2><span>' + (local.length - 1) + '</span></div><div class="list">' + local.slice(1).map(function (x) { return ticket(x); }).join('') + '</div>';
+    var pick = weekPicks(t)[S.day], top = null;
+    local = local.filter(function (x) { if (!top && x.sp.id + '|' + x.d.title === pick) { top = x; return false; } return true; });
+    if (!top && local.length) top = local.shift();
+    var h = '<div><h2>Eat well for cheap ' + when + '</h2><p class="sub">Real food near campus for $12 or less. Best value first.</p></div>';
+    function sec(title, sub, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><p class="sub" style="margin-top:-8px">' + sub + '</p><div class="list">' + a.map(function (x) { return ticket(x); }).join('') + '</div>' : ''; }
+    if (top) {
+      h += ticket(top, true) +
+        sec('Full meals', 'A whole plate for the price.', local.filter(function (x) { return kind(x.d) === 'meal'; })) +
+        sec('Cheap bites', 'Priced by the piece. Stack a few and it is dinner.', local.filter(function (x) { return kind(x.d) === 'bite'; })) +
+        sec('Money off', 'Discounts on whatever you order.', local.filter(function (x) { return kind(x.d) === 'off'; }));
     } else {
       var other = DAYS.filter(function (d) { return dealsFor(t, d).some(function (x) { return x.sp.local; }); });
       h += '<div class="empty"><b>No cheap local deals found for ' + DAYNAME[S.day] + '</b>' + (other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Check Places for where to eat.') + '</div>';
     }
-    if (chain.length) h += '<div class="sechead"><h2>Chain deals nearby</h2><span>' + chain.length + '</span></div><p class="sub" style="margin-top:-8px">Fast food and national chains.</p><div class="list">' + chain.map(function (x) { return ticket(x); }).join('') + '</div>';
+    h += sec('Chain deals nearby', 'Fast food and national chains.', chain);
     return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos come from each restaurant\'s own website.</p>';
   }
   function spotRow(sp) {
