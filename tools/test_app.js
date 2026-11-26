@@ -43,6 +43,10 @@ async function openFirstDeal(p) {
   check(await p.locator('.dcard .dtitle').count() >= 1 && (await p.$$eval('.list:first-of-type .dtitle', (e) => e.map((n) => n.innerText))).every((n) => /pizza|slice|pick 2/i.test(n)), 'Pizza filter shows non-pizza deals');
   await p.click('.chip:has-text("All")');
   await p.screenshot({ path: `${out}/a-deals.png`, fullPage: true });
+  await p.screenshot({ path: `${out}/a-deals-top.png` });
+  check(await p.evaluate(() => { const b = document.querySelector('.top .brand').getBoundingClientRect(); return b.top < 60 && b.height < 40; }), 'KORD wordmark is out of place');
+  check((await p.$$('.rail .dcard')).length >= 4, 'no swipeable deal rows');
+  check(await p.locator('.chip.cat .ico').count() >= 3, 'no food icons');
   await p.click('#swapBtn');
   await openFirstDeal(p);
   await p.click('#menuBox .dishhead >> nth=0');
@@ -52,7 +56,7 @@ async function openFirstDeal(p) {
   check(await p.locator('.cmt', { hasText: 'huge portion' }).count() > 0, 'local comment not shown');
   check(await p.locator('.chip', { hasText: 'Top rated' }).count() === 1, 'no Top rated chip after rating');
   check(await p.evaluate(() => { const w = document.querySelector('.week'); return w ? w.offsetHeight > 40 : true; }), 'weekly deals box is collapsed');
-  check(await p.evaluate(() => getComputedStyle(document.querySelector('.chip')).borderRadius !== '0px'), 'category chips are unstyled');
+  check(await p.evaluate(() => getComputedStyle(document.querySelector('#menuBox .chip')).borderRadius !== '0px'), 'category chips are unstyled');
   await p.fill('#addItem', 'Buffalo chicken dip');
   await p.click('#addItemBtn');
   await p.fill('#menuSearch', 'buffalo');

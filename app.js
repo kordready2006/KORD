@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261126-045721';
+window.KORD_BUILD = '20261126-051253';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -185,15 +185,25 @@ window.KORD_BUILD = '20261126-045721';
     return h ? '<span class="tags">' + h + '</span>' : '';
   }
   function photo(src) { return src || ''; }
+  function media(sp, d) {
+    var ph = photo((d && d.photo) || (d && d.nophoto ? '' : sp.photo));
+    return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono">' + esc(initials(sp.name)) + '</span>' };
+  }
+  function metaLine(sp) { var sc = spotScore(sp.id), tr = travel(sp); return [sc ? '<span class="score">★ ' + sc.toFixed(1) + '</span>' : '', esc(tr), esc(sp.category)].filter(Boolean).join(' · '); }
   function ticket(x, hero) {
-    var st = stubText(x.d), ph = photo(x.d.photo || (x.d.nophoto ? '' : x.sp.photo));
+    var st = stubText(x.d), m = media(x.sp, x.d);
     return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" data-deal="' + esc(x.d.title) + '" style="--c:' + color(x.sp.category) + '">' +
-      '<span class="ph' + (ph ? '' : x.sp.logo ? ' nophoto haslogo' : ' nophoto') + '">' + (ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : x.sp.logo ? '<img alt="" loading="lazy" src="' + esc(x.sp.logo) + '">' : '<span class="mono">' + esc(initials(x.sp.name)) + '</span>') +
+      '<span class="ph' + (m.has ? '' : ' nophoto') + '">' + m.html +
       (hero ? '<span class="flag">' + (S.day === TODAY ? 'Today\'s' : DAYNAME[S.day] + '\'s') + ' best value</span>' : '') +
       '<span class="price' + (st.length > 5 ? ' long' : '') + '">' + esc(st) + (kind(x.d) === 'bite' && priceNum(x.d.price || x.d.title) <= 2.5 && /wing|taco|slice/i.test(x.d.title) ? '<small>each</small>' : '') + '</span></span>' +
       '<span class="dbody"><span class="hook">' + esc(hook(x.d)) + '</span><span class="dtitle">' + esc(x.d.title) + '</span>' +
-      '<span class="who">' + logo(x.sp, 'sm') + '<span>' + esc(x.sp.name) + '</span></span>' +
+      '<span class="who">' + logo(x.sp, 'sm') + '<span>' + esc(x.sp.name) + '</span></span><span class="meta">' + metaLine(x.sp) + '</span>' +
       (hero ? '<span class="ddet">' + esc(x.d.details) + '</span>' : '') + tagsHtml(x.sp, x.d) + '</span></button>';
+  }
+  function placeCard(sp) {
+    var m = media(sp, null), n = (sp.deals || []).length, lo = spotLow(sp);
+    return '<button class="dcard" data-spot="' + esc(sp.id) + '" style="--c:' + color(sp.category) + '"><span class="ph' + (m.has ? '' : ' nophoto') + '">' + m.html + (lo != null ? '<span class="price">from ' + money(lo) + '</span>' : '') + '</span>' +
+      '<span class="dbody"><span class="dtitle">' + esc(sp.name) + '</span><span class="meta">' + metaLine(sp) + '</span>' + (n ? '<span class="hook">' + n + ' deal' + (n > 1 ? 's' : '') + ' this week</span>' : '') + '</span></button>';
   }
 
   /* step 1: pick a school */
@@ -204,19 +214,21 @@ window.KORD_BUILD = '20261126-045721';
     }).join('') + '</div><p class="note">15 Ohio schools so far. More coming.</p>';
   }
   /* step 2: cheapest deals for the day */
+  var FOODICON = { 'All': '🍽️', 'Pizza': '🍕', 'Burgers': '🍔', 'Wings': '🍗', 'Tacos & burritos': '🌮', 'Subs & sandwiches': '🥪', 'Bowls & salads': '🥗', 'Breakfast & coffee': '☕', 'Sweets': '🍪', 'Other': '🍴' };
   function viewDeals() {
-    var t = town(), all = dealsFor(t, S.day), seen = {}, foods = ['All'];
-    all.forEach(function (x) { var f = food(x); if (x.sp.local && !seen[f]) { seen[f] = 1; } });
+    var t = town(), all = dealsFor(t, S.day), seen = {}, foods = ['All'], q = (S.dq || '').toLowerCase();
+    all.forEach(function (x) { if (x.sp.local) seen[food(x)] = 1; });
     FOODS.forEach(function (f) { if (seen[f[0]]) foods.push(f[0]); }); if (seen.Other) foods.push('Other');
     if (foods.indexOf(S.food) < 0) S.food = 'All';
-    var keep = function (x) { return S.food === 'All' || food(x) === S.food; };
+    var keep = function (x) { return (S.food === 'All' || food(x) === S.food) && (!q || (x.d.title + ' ' + x.sp.name + ' ' + x.sp.category).toLowerCase().indexOf(q) >= 0); };
     var local = byPrice(all.filter(function (x) { return x.sp.local && keep(x); })), chain = byPrice(all.filter(function (x) { return !x.sp.local && keep(x); }));
     var when = S.day === TODAY ? 'today' : 'on ' + DAYNAME[S.day];
-    var pick = weekPicks(t)[S.day], top = null;
-    if (S.food === 'All') local = local.filter(function (x) { if (!top && x.sp.id + '|' + x.d.title === pick) { top = x; return false; } return true; });
-    var h = '<div><h2>Eat well for cheap ' + when + '</h2><p class="sub">Real food near campus for $12 or less, sorted from the lowest price up.</p></div>' +
-      '<div class="chips">' + foods.map(function (f) { return '<button class="chip" data-food="' + esc(f) + '" aria-pressed="' + (S.food === f) + '">' + esc(f) + '</button>'; }).join('') + '</div>';
-    function sec(title, sub, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><p class="sub" style="margin-top:-8px">' + sub + '</p><div class="list">' + a.map(function (x) { return ticket(x); }).join('') + '</div>' : ''; }
+    var pick = weekPicks(t)[S.day], top = null, browsing = S.food === 'All' && !q;
+    if (browsing) local = local.filter(function (x) { if (!top && x.sp.id + '|' + x.d.title === pick) { top = x; return false; } return true; });
+    var h = '<div class="searchbar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input class="search" id="dealSearch" type="search" placeholder="Search wings, pizza, a place…" value="' + esc(S.dq || '') + '" aria-label="Search deals"></div>' +
+      '<div class="cats">' + foods.map(function (f) { return '<button class="chip cat" data-food="' + esc(f) + '" aria-pressed="' + (S.food === f) + '"><span class="ico" aria-hidden="true">' + (FOODICON[f] || '🍴') + '</span>' + esc(f) + '</button>'; }).join('') + '</div>' +
+      '<div><h2>Eat well for cheap ' + when + '</h2><p class="sub">Real food near campus for $12 or less. Swipe each row for more.</p></div>';
+    function sec(title, sub, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><p class="sub" style="margin-top:-8px">' + sub + '</p><div class="list rail">' + a.map(function (x) { return ticket(x); }).join('') + '</div>' : ''; }
     function tier(lo, hi) { return local.filter(function (x) { var p = priceNum(x.d.price || x.d.title); return p != null && kind(x.d) !== 'off' && p >= lo && p < hi; }); }
     if (top || local.length) {
       h += (top ? ticket(top, true) : '') +
@@ -226,7 +238,11 @@ window.KORD_BUILD = '20261126-045721';
         sec('Money off', 'Discounts with no set price, like student ID deals.', local.filter(function (x) { return kind(x.d) === 'off'; }));
     } else {
       var other = DAYS.filter(function (d) { return dealsFor(t, d).some(function (x) { return x.sp.local && keep(x); }); });
-      h += '<div class="empty"><b>No cheap local ' + (S.food === 'All' ? 'deals' : esc(S.food.toLowerCase()) + ' deals') + ' found for ' + DAYNAME[S.day] + '</b>' + (other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Tap All to see everything.') + '</div>';
+      h += '<div class="empty"><b>No cheap local ' + (S.food === 'All' ? 'deals' : esc(S.food.toLowerCase()) + ' deals') + ' found for ' + DAYNAME[S.day] + '</b>' + (q ? 'Try a different word.' : other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Tap All to see everything.') + '</div>';
+    }
+    if (browsing) {
+      var pop = t.spots.filter(function (sp) { return sp.local; }).sort(function (a, b) { return (b.signature ? 4 : 0) + (b.photo ? 2 : 0) + (b.logo ? 1 : 0) - ((a.signature ? 4 : 0) + (a.photo ? 2 : 0) + (a.logo ? 1 : 0)) || b.deals.length - a.deals.length || a.name.localeCompare(b.name); }).slice(0, 10);
+      if (pop.length) h += '<div class="sechead"><h2>Popular near campus</h2><span>' + pop.length + '</span></div><p class="sub" style="margin-top:-8px">Local favorites in ' + esc(t.name) + '.</p><div class="rail" style="display:flex">' + pop.map(placeCard).join('') + '</div>';
     }
     h += sec('Chain deals nearby', 'Fast food and national chains, lowest price first.', chain);
     return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos come from each restaurant\'s own website.</p>';
@@ -554,6 +570,7 @@ window.KORD_BUILD = '20261126-045721';
   });
   document.addEventListener('input', function (e) {
     var t = e.target;
+    if (t.id === 'dealSearch') { S.dq = t.value; render(); var ds = document.getElementById('dealSearch'); ds.focus(); ds.setSelectionRange(ds.value.length, ds.value.length); }
     if (t.id === 'spotSearch') { S.q = t.value; render(); var n = document.getElementById('spotSearch'); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }
     if (t.id === 'nameIn' || t.id === 'ordName') { U.name = t.value.trim(); save('kord.user', U); }
     if (t.id === 'menuSearch') { S.mq = t.value; fillMenu(S.open); var ms = document.getElementById('menuSearch'); if (ms) { ms.focus(); ms.setSelectionRange(ms.value.length, ms.value.length); } }

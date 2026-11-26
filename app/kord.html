@@ -33,7 +33,7 @@ a { color: var(--link); }
 .wrap { max-width: 600px; margin-inline: auto; padding-left: var(--gl); padding-right: var(--gr); }
 
 /* header */
-.top { background: var(--sc); color: var(--si); margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: calc(env(safe-area-inset-top, 0px) + 14px); padding-bottom: 16px; }
+.top { background: var(--sc); background: linear-gradient(160deg, var(--sc), color-mix(in srgb, var(--sc) 76%, #000)); color: var(--si); margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: calc(env(safe-area-inset-top, 0px) + 14px); padding-bottom: 16px; }
 .brand { font: 800 22px/1 var(--display); letter-spacing: -.02em; display: flex; align-items: center; gap: 7px; }
 .brand i { width: 12px; height: 12px; border-radius: 50%; background: var(--sun); display: block; }
 .intro h1 { font: 800 clamp(34px, 10vw, 46px)/.98 var(--display); letter-spacing: -.03em; margin: 18px 0 6px; text-wrap: balance; }
@@ -69,7 +69,7 @@ a { color: var(--link); }
 
 main { padding-block: 16px calc(96px + env(safe-area-inset-bottom, 0px)); display: flex; flex-direction: column; gap: 14px; min-height: 60vh; }
 main.nopad { padding-bottom: calc(28px + env(safe-area-inset-bottom, 0px)); }
-h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-wrap: balance; }
+h2 { font: 800 24px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-wrap: balance; }
 .sub { color: var(--muted); font-size: 14px; margin: 3px 0 0; }
 .sechead { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-top: 8px; }
 .sechead span { color: var(--muted); font-size: 13px; font-weight: 700; flex: none; }
@@ -80,7 +80,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 .search:focus { border-color: var(--ink); outline: none; }
 
 /* logo tile */
-.lg { --c: var(--hot); position: relative; width: 48px; height: 48px; flex: none; border-radius: 13px; background: var(--c); color: #fff; display: grid; place-items: center; overflow: hidden; font: 800 17px var(--display); }
+.lg { --c: var(--hot); position: relative; width: 56px; height: 56px; flex: none; border-radius: 13px; background: var(--c); color: #fff; display: grid; place-items: center; overflow: hidden; font: 800 17px var(--display); }
 .lg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 7px; background: #fff; opacity: 0; }
 .lg.has img { opacity: 1; }
 .lg.has { box-shadow: inset 0 0 0 1px var(--line); }
@@ -114,43 +114,57 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 .ticket.hero .tag { background: rgba(127,127,127,.3); color: inherit; }
 .list { display: flex; flex-direction: column; gap: 10px; }
 
-/* deal photo cards */
-.dcard { --c: var(--hot); display: grid; grid-template-columns: 118px minmax(0, 1fr); width: 100%; text-align: left; background: var(--card); border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; }
-.ph { position: relative; display: block; background: var(--c); min-height: 112px; }
-.ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.ph.haslogo { background: #fff; }
-.ph.haslogo img { object-fit: contain; padding: 16px 16px 30px; }
-.mono { position: absolute; inset: 0 0 22px; display: grid; place-items: center; color: #fff; font: 800 34px var(--display); }
-.dcard.hero .ph.nophoto { aspect-ratio: 16 / 8; }
-.dcard.hero .ph.nophoto::after { display: none; }
-/* logos are small files: never stretch one past its sharp size */
-.dcard.hero .ph.haslogo img { inset: auto; left: 50%; top: 46%; width: 112px; height: 112px; padding: 0; transform: translate(-50%, -50%); }
-.dcard:not(.hero) .ph.haslogo img { inset: auto; left: 50%; top: 42%; width: 72px; height: 72px; padding: 0; transform: translate(-50%, -50%); }
-.dcard.hero .mono { font-size: 64px; }
-.price { position: absolute; left: 8px; bottom: 8px; max-width: calc(100% - 16px); background: var(--sun); color: var(--sun-ink); font: 800 20px/1 var(--display); letter-spacing: -.02em; padding: 6px 9px; border-radius: 10px; transform: rotate(-4deg); box-shadow: 0 2px 0 rgba(0,0,0,.4); }
-.price.long { font-size: 13.5px; }
-.dbody { display: flex; flex-direction: column; justify-content: center; gap: 7px; padding: 12px 14px; min-width: 0; }
-.hook { font: 800 12px/1.2 var(--body); letter-spacing: .07em; text-transform: uppercase; color: var(--hot); }
-.dcard.hero .hook { font-size: 13.5px; }
+/* deal cards: big picture on top, price pill on the picture, text below. Sections scroll sideways as rails. */
+.dcard { --c: var(--hot); display: flex; flex-direction: column; width: 100%; text-align: left; background: var(--card); border-radius: 20px; box-shadow: var(--shadow); overflow: hidden; }
+.ph { position: relative; display: block; flex: none; aspect-ratio: 16 / 10; background: var(--c); background: linear-gradient(135deg, var(--c), color-mix(in srgb, var(--c) 58%, #000)); overflow: hidden; }
+.ph > img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.ph::after { content: ""; position: absolute; inset: 0; pointer-events: none; background: linear-gradient(180deg, rgba(0,0,0,.3), rgba(0,0,0,0) 36%, rgba(0,0,0,0) 58%, rgba(0,0,0,.45)); }
+.ph.nophoto::after { background: radial-gradient(circle at 82% 8%, rgba(255,255,255,.3), rgba(255,255,255,0) 55%); }
+/* a logo sits on its own white tile at a size where it stays sharp */
+.logotile { position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); width: 84px; height: 84px; border-radius: 22px; background: #fff; display: grid; place-items: center; box-shadow: 0 6px 18px rgba(0,0,0,.28); overflow: hidden; }
+.logotile img { width: 64px; height: 64px; object-fit: contain; }
+.mono { position: absolute; inset: 0; display: grid; place-items: center; color: #fff; font: 800 46px var(--display); letter-spacing: -.02em; }
+.price { position: absolute; z-index: 1; left: 10px; bottom: 10px; max-width: calc(100% - 20px); background: var(--sun); color: var(--sun-ink); font: 800 22px/1 var(--display); letter-spacing: -.02em; padding: 7px 11px; border-radius: 12px; box-shadow: 0 3px 0 rgba(0,0,0,.35); }
+.price.long { font-size: 15px; }
 .price small { display: block; font: 700 10px/1 var(--body); letter-spacing: .06em; text-transform: uppercase; margin-top: 2px; }
-.dcard.hero .price small { font-size: 12px; }
+.flag { position: absolute; z-index: 1; left: 10px; top: 10px; background: var(--hot); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 6px 11px; border-radius: 999px; box-shadow: 0 2px 8px rgba(0,0,0,.25); }
+.dbody { display: flex; flex-direction: column; gap: 6px; padding: 12px 14px 14px; min-width: 0; flex: 1; }
+.hook { font: 800 11.5px/1.25 var(--body); letter-spacing: .07em; text-transform: uppercase; color: var(--hot); }
 .dtitle { font: 800 17px/1.15 var(--display); letter-spacing: -.01em; }
 .who { display: flex; align-items: center; gap: 8px; font-weight: 700; font-size: 13.5px; min-width: 0; }
 .who > span:last-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.meta { font-size: 12.5px; font-weight: 700; color: var(--muted); }
+.meta .score { color: var(--orange); }
 .lg.sm { width: 26px; height: 26px; border-radius: 8px; font-size: 10px; }
 .lg.sm img { padding: 2px; }
 .lg img.cover { object-fit: cover; padding: 0; }
 .ddet { color: var(--muted); font-size: 14px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
-.dcard.hero { grid-template-columns: 1fr; }
-.dcard.hero .ph { aspect-ratio: 16 / 10; min-height: 0; }
-.dcard.hero .ph::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,.4), rgba(0,0,0,0) 34%, rgba(0,0,0,0) 58%, rgba(0,0,0,.5)); }
-.dcard.hero .price { z-index: 1; left: 14px; bottom: 14px; font-size: 42px; padding: 8px 14px; border-radius: 14px; }
-.dcard.hero .price.long { font-size: 25px; }
-.flag { position: absolute; z-index: 1; left: 14px; top: 12px; background: var(--hot); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 5px 10px; border-radius: 999px; }
-.dcard.hero .dbody { padding: 14px 16px 16px; gap: 9px; }
-.dcard.hero .dtitle { font-size: 24px; }
+.dcard.hero { border-radius: 24px; }
+.dcard.hero .ph { aspect-ratio: 16 / 9; }
+.dcard.hero .logotile { width: 116px; height: 116px; border-radius: 28px; }
+.dcard.hero .logotile img { width: 90px; height: 90px; }
+.dcard.hero .mono { font-size: 72px; }
+.dcard.hero .price { left: 14px; bottom: 14px; font-size: 40px; padding: 9px 15px; border-radius: 16px; }
+.dcard.hero .price.long { font-size: 24px; }
+.dcard.hero .price small { font-size: 12px; }
+.dcard.hero .flag { left: 14px; top: 14px; font-size: 12px; }
+.dcard.hero .dbody { padding: 16px; gap: 8px; }
+.dcard.hero .hook { font-size: 13px; }
+.dcard.hero .dtitle { font-size: 26px; }
 .dcard.hero .who { font-size: 15px; }
 .dcard.hero .lg.sm { width: 34px; height: 34px; border-radius: 10px; }
+.rail { flex-direction: row; align-items: stretch; overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none; gap: 12px; margin-inline: calc(-1 * var(--gl)) calc(-1 * var(--gr)); padding: 4px var(--gr) 16px var(--gl); scroll-padding-left: var(--gl); }
+.rail::-webkit-scrollbar { display: none; }
+.rail .dcard { flex: 0 0 min(72vw, 264px); width: auto; scroll-snap-align: start; }
+.cats { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin-inline: calc(-1 * var(--gl)) calc(-1 * var(--gr)); padding: 2px var(--gr) 4px var(--gl); }
+.cats::-webkit-scrollbar { display: none; }
+.chip.cat { flex: 0 0 74px; display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 0; background: none; border-radius: 0; white-space: normal; text-align: center; font-size: 12px; line-height: 1.15; color: var(--muted); }
+.chip.cat .ico { width: 60px; height: 60px; border-radius: 50%; background: var(--chip); display: grid; place-items: center; font-size: 28px; line-height: 1; }
+.chip.cat[aria-pressed="true"] { background: none; color: var(--ink); }
+.chip.cat[aria-pressed="true"] .ico { background: var(--sun); box-shadow: 0 0 0 3px var(--ink); }
+.searchbar { position: relative; }
+.searchbar .search { padding-left: 42px; border-radius: 999px; background: var(--chip); border-color: transparent; font-weight: 500; }
+.searchbar svg { position: absolute; left: 15px; top: 50%; width: 18px; height: 18px; transform: translateY(-50%); fill: none; stroke: var(--muted); stroke-width: 2.4; stroke-linecap: round; }
 .banner { position: relative; height: 150px; border-radius: 16px; overflow: hidden; background: var(--c); flex: none; }
 .banner img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .credits { font-size: 12px; color: var(--muted); }
@@ -160,7 +174,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 /* place rows */
 .row { display: flex; align-items: center; gap: 12px; width: 100%; text-align: left; padding: 10px 12px; background: var(--card); border-radius: 14px; box-shadow: var(--shadow); }
 .row .mid { flex: 1; min-width: 0; }
-.row h3 { margin: 0; font: 800 16px/1.2 var(--display); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.row h3 { margin: 0; font: 800 17px/1.2 var(--display); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .row p { margin: 1px 0 0; font-size: 12.5px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .row .end { flex: none; text-align: right; font-size: 11.5px; font-weight: 700; color: var(--muted); }
 .row .end b { display: block; font: 800 18px/1.1 var(--display); color: var(--mint); }
@@ -491,15 +505,25 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     return h ? '<span class="tags">' + h + '</span>' : '';
   }
   function photo(src) { return src || ''; }
+  function media(sp, d) {
+    var ph = photo((d && d.photo) || (d && d.nophoto ? '' : sp.photo));
+    return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono">' + esc(initials(sp.name)) + '</span>' };
+  }
+  function metaLine(sp) { var sc = spotScore(sp.id), tr = travel(sp); return [sc ? '<span class="score">★ ' + sc.toFixed(1) + '</span>' : '', esc(tr), esc(sp.category)].filter(Boolean).join(' · '); }
   function ticket(x, hero) {
-    var st = stubText(x.d), ph = photo(x.d.photo || (x.d.nophoto ? '' : x.sp.photo));
+    var st = stubText(x.d), m = media(x.sp, x.d);
     return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" data-deal="' + esc(x.d.title) + '" style="--c:' + color(x.sp.category) + '">' +
-      '<span class="ph' + (ph ? '' : x.sp.logo ? ' nophoto haslogo' : ' nophoto') + '">' + (ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : x.sp.logo ? '<img alt="" loading="lazy" src="' + esc(x.sp.logo) + '">' : '<span class="mono">' + esc(initials(x.sp.name)) + '</span>') +
+      '<span class="ph' + (m.has ? '' : ' nophoto') + '">' + m.html +
       (hero ? '<span class="flag">' + (S.day === TODAY ? 'Today\'s' : DAYNAME[S.day] + '\'s') + ' best value</span>' : '') +
       '<span class="price' + (st.length > 5 ? ' long' : '') + '">' + esc(st) + (kind(x.d) === 'bite' && priceNum(x.d.price || x.d.title) <= 2.5 && /wing|taco|slice/i.test(x.d.title) ? '<small>each</small>' : '') + '</span></span>' +
       '<span class="dbody"><span class="hook">' + esc(hook(x.d)) + '</span><span class="dtitle">' + esc(x.d.title) + '</span>' +
-      '<span class="who">' + logo(x.sp, 'sm') + '<span>' + esc(x.sp.name) + '</span></span>' +
+      '<span class="who">' + logo(x.sp, 'sm') + '<span>' + esc(x.sp.name) + '</span></span><span class="meta">' + metaLine(x.sp) + '</span>' +
       (hero ? '<span class="ddet">' + esc(x.d.details) + '</span>' : '') + tagsHtml(x.sp, x.d) + '</span></button>';
+  }
+  function placeCard(sp) {
+    var m = media(sp, null), n = (sp.deals || []).length, lo = spotLow(sp);
+    return '<button class="dcard" data-spot="' + esc(sp.id) + '" style="--c:' + color(sp.category) + '"><span class="ph' + (m.has ? '' : ' nophoto') + '">' + m.html + (lo != null ? '<span class="price">from ' + money(lo) + '</span>' : '') + '</span>' +
+      '<span class="dbody"><span class="dtitle">' + esc(sp.name) + '</span><span class="meta">' + metaLine(sp) + '</span>' + (n ? '<span class="hook">' + n + ' deal' + (n > 1 ? 's' : '') + ' this week</span>' : '') + '</span></button>';
   }
 
   /* step 1: pick a school */
@@ -510,19 +534,21 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     }).join('') + '</div><p class="note">15 Ohio schools so far. More coming.</p>';
   }
   /* step 2: cheapest deals for the day */
+  var FOODICON = { 'All': '🍽️', 'Pizza': '🍕', 'Burgers': '🍔', 'Wings': '🍗', 'Tacos & burritos': '🌮', 'Subs & sandwiches': '🥪', 'Bowls & salads': '🥗', 'Breakfast & coffee': '☕', 'Sweets': '🍪', 'Other': '🍴' };
   function viewDeals() {
-    var t = town(), all = dealsFor(t, S.day), seen = {}, foods = ['All'];
-    all.forEach(function (x) { var f = food(x); if (x.sp.local && !seen[f]) { seen[f] = 1; } });
+    var t = town(), all = dealsFor(t, S.day), seen = {}, foods = ['All'], q = (S.dq || '').toLowerCase();
+    all.forEach(function (x) { if (x.sp.local) seen[food(x)] = 1; });
     FOODS.forEach(function (f) { if (seen[f[0]]) foods.push(f[0]); }); if (seen.Other) foods.push('Other');
     if (foods.indexOf(S.food) < 0) S.food = 'All';
-    var keep = function (x) { return S.food === 'All' || food(x) === S.food; };
+    var keep = function (x) { return (S.food === 'All' || food(x) === S.food) && (!q || (x.d.title + ' ' + x.sp.name + ' ' + x.sp.category).toLowerCase().indexOf(q) >= 0); };
     var local = byPrice(all.filter(function (x) { return x.sp.local && keep(x); })), chain = byPrice(all.filter(function (x) { return !x.sp.local && keep(x); }));
     var when = S.day === TODAY ? 'today' : 'on ' + DAYNAME[S.day];
-    var pick = weekPicks(t)[S.day], top = null;
-    if (S.food === 'All') local = local.filter(function (x) { if (!top && x.sp.id + '|' + x.d.title === pick) { top = x; return false; } return true; });
-    var h = '<div><h2>Eat well for cheap ' + when + '</h2><p class="sub">Real food near campus for $12 or less, sorted from the lowest price up.</p></div>' +
-      '<div class="chips">' + foods.map(function (f) { return '<button class="chip" data-food="' + esc(f) + '" aria-pressed="' + (S.food === f) + '">' + esc(f) + '</button>'; }).join('') + '</div>';
-    function sec(title, sub, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><p class="sub" style="margin-top:-8px">' + sub + '</p><div class="list">' + a.map(function (x) { return ticket(x); }).join('') + '</div>' : ''; }
+    var pick = weekPicks(t)[S.day], top = null, browsing = S.food === 'All' && !q;
+    if (browsing) local = local.filter(function (x) { if (!top && x.sp.id + '|' + x.d.title === pick) { top = x; return false; } return true; });
+    var h = '<div class="searchbar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input class="search" id="dealSearch" type="search" placeholder="Search wings, pizza, a place…" value="' + esc(S.dq || '') + '" aria-label="Search deals"></div>' +
+      '<div class="cats">' + foods.map(function (f) { return '<button class="chip cat" data-food="' + esc(f) + '" aria-pressed="' + (S.food === f) + '"><span class="ico" aria-hidden="true">' + (FOODICON[f] || '🍴') + '</span>' + esc(f) + '</button>'; }).join('') + '</div>' +
+      '<div><h2>Eat well for cheap ' + when + '</h2><p class="sub">Real food near campus for $12 or less. Swipe each row for more.</p></div>';
+    function sec(title, sub, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><p class="sub" style="margin-top:-8px">' + sub + '</p><div class="list rail">' + a.map(function (x) { return ticket(x); }).join('') + '</div>' : ''; }
     function tier(lo, hi) { return local.filter(function (x) { var p = priceNum(x.d.price || x.d.title); return p != null && kind(x.d) !== 'off' && p >= lo && p < hi; }); }
     if (top || local.length) {
       h += (top ? ticket(top, true) : '') +
@@ -532,7 +558,11 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
         sec('Money off', 'Discounts with no set price, like student ID deals.', local.filter(function (x) { return kind(x.d) === 'off'; }));
     } else {
       var other = DAYS.filter(function (d) { return dealsFor(t, d).some(function (x) { return x.sp.local && keep(x); }); });
-      h += '<div class="empty"><b>No cheap local ' + (S.food === 'All' ? 'deals' : esc(S.food.toLowerCase()) + ' deals') + ' found for ' + DAYNAME[S.day] + '</b>' + (other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Tap All to see everything.') + '</div>';
+      h += '<div class="empty"><b>No cheap local ' + (S.food === 'All' ? 'deals' : esc(S.food.toLowerCase()) + ' deals') + ' found for ' + DAYNAME[S.day] + '</b>' + (q ? 'Try a different word.' : other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Tap All to see everything.') + '</div>';
+    }
+    if (browsing) {
+      var pop = t.spots.filter(function (sp) { return sp.local; }).sort(function (a, b) { return (b.signature ? 4 : 0) + (b.photo ? 2 : 0) + (b.logo ? 1 : 0) - ((a.signature ? 4 : 0) + (a.photo ? 2 : 0) + (a.logo ? 1 : 0)) || b.deals.length - a.deals.length || a.name.localeCompare(b.name); }).slice(0, 10);
+      if (pop.length) h += '<div class="sechead"><h2>Popular near campus</h2><span>' + pop.length + '</span></div><p class="sub" style="margin-top:-8px">Local favorites in ' + esc(t.name) + '.</p><div class="rail" style="display:flex">' + pop.map(placeCard).join('') + '</div>';
     }
     h += sec('Chain deals nearby', 'Fast food and national chains, lowest price first.', chain);
     return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos come from each restaurant\'s own website.</p>';
@@ -860,6 +890,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   });
   document.addEventListener('input', function (e) {
     var t = e.target;
+    if (t.id === 'dealSearch') { S.dq = t.value; render(); var ds = document.getElementById('dealSearch'); ds.focus(); ds.setSelectionRange(ds.value.length, ds.value.length); }
     if (t.id === 'spotSearch') { S.q = t.value; render(); var n = document.getElementById('spotSearch'); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }
     if (t.id === 'nameIn' || t.id === 'ordName') { U.name = t.value.trim(); save('kord.user', U); }
     if (t.id === 'menuSearch') { S.mq = t.value; fillMenu(S.open); var ms = document.getElementById('menuSearch'); if (ms) { ms.focus(); ms.setSelectionRange(ms.value.length, ms.value.length); } }
