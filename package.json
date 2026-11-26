@@ -1,0 +1,18 @@
+{
+  "name": "kord",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cheap food deals near Ohio college campuses",
+  "scripts": {
+    "build": "python3 build.py && python3 tools/make_site.py _site",
+    "test": "node tools/test_app.js ./shots",
+    "ios": "npm run build && npx cap sync ios && npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/ios": "^6.1.2"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^6.1.2"
+  }
+}

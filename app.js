@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261126-062923';
+window.KORD_BUILD = '20261126-063110';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -17,7 +17,7 @@ window.KORD_BUILD = '20261126-062923';
   /* Dish ratings: U.items[placeId][dish] = 1..5 on this phone. COMMUNITY[placeId][dish] = {sum, n} is where other students'
      ratings go once a shared ratings server is connected; every score below already combines the two. */
   var COMMUNITY = {}, MENUS = null, SERVER = null, LOADED = {}, CMTS = {}, POLL = null;
-  U.comments = U.comments || {};
+  U.comments = U.comments || {}; U.reported = U.reported || {};
   if (!U.device) {
     U.device = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-8xxx-xxxxxxxxxxxx'.replace(/x/g, function () { return (Math.random() * 16 | 0).toString(16); });
     save('kord.user', U);
@@ -42,7 +42,7 @@ window.KORD_BUILD = '20261126-062923';
   }
   function loadComments(id) {
     if (!SERVER) return;
-    api('dish_comments?select=dish,name,body,created_at&order=created_at.desc&limit=80&place_id=eq.' + encodeURIComponent(id)).then(function (rows) {
+    api('dish_comments?select=id,dish,name,body,created_at&order=created_at.desc&limit=80&place_id=eq.' + encodeURIComponent(id)).then(function (rows) {
       CMTS[id] = rows || [];
       if (S.open === id) paintComments(id);
     }).catch(function () {});
@@ -473,12 +473,17 @@ window.KORD_BUILD = '20261126-062923';
     extra.forEach(function (n) { add(n, '', 'Added by students'); });
     return out;
   }
-  function cmtsFor(id, dish) { var a = SERVER ? (CMTS[id] || []) : (U.comments[id] || []); return dish == null ? a : a.filter(function (c) { return c.dish === dish; }); }
+  /* A reported comment disappears for the person who reported it at once; the server hides it for everyone after 3 reports. */
+  function cmtKey(c) { return c.id != null ? 'id' + c.id : (c.dish + '|' + c.body).slice(0, 80); }
+  function cmtsFor(id, dish) {
+    var a = (SERVER ? (CMTS[id] || []) : (U.comments[id] || [])).filter(function (c) { return !U.reported[cmtKey(c)]; });
+    return dish == null ? a : a.filter(function (c) { return c.dish === dish; });
+  }
   function ago(ts) {
     var m = Math.max(0, Math.round((Date.now() - new Date(ts).getTime()) / 60000));
     return m < 1 ? 'just now' : m < 60 ? m + ' min ago' : m < 1440 ? Math.round(m / 60) + ' hr ago' : Math.round(m / 1440) + ' d ago';
   }
-  function cmtHtml(c, withDish) { return '<div class="cmt"><b>' + esc(c.name || 'Student') + '</b>' + (withDish ? ' on ' + esc(c.dish) : '') + ' <small>' + ago(c.created_at) + '</small><p>' + esc(c.body) + '</p></div>'; }
+  function cmtHtml(c, withDish) { return '<div class="cmt"><b>' + esc(c.name || 'Student') + '</b>' + (withDish ? ' on ' + esc(c.dish) : '') + ' <small>' + ago(c.created_at) + '</small><p>' + esc(c.body) + '</p>' + (withDish ? '' : '<button class="rm" data-report="' + esc(cmtKey(c)) + '">Report</button>') + '</div>'; }
   function cmtListHtml(id, dish) { var a = cmtsFor(id, dish); return a.length ? a.slice(0, 30).map(function (c) { return cmtHtml(c); }).join('') : '<p class="note">No comments yet. Be the first to say if it is worth it.</p>'; }
   function sayingHtml(id) { var a = cmtsFor(id).slice(0, 2); return a.length ? '<div class="saying"><b>Students are saying</b>' + a.map(function (c) { return cmtHtml(c, true); }).join('') + '</div>' : ''; }
   function paintComments(id) {
@@ -565,6 +570,11 @@ window.KORD_BUILD = '20261126-062923';
       var pk = PERKS.filter(function (k) { return k.id === t.dataset.perk; })[0];
       if (pk && U.pts >= pk.cost) { U.pts -= pk.cost; if (pk.id === 'waiver') U.waivers++; else U.credits++; save('kord.user', U); toast('Redeemed: ' + pk.name); }
       return render();
+    }
+    if (t.dataset.report) {
+      U.reported[t.dataset.report] = 1; save('kord.user', U); toast('Reported. You will not see that comment again.');
+      if (SERVER && /^id\d+$/.test(t.dataset.report)) api('rpc/report_comment', { p_device: U.device, p_comment: +t.dataset.report.slice(2) }).catch(function () {});
+      return fillMenu(S.open);
     }
     if (t.id === 'creditsBtn') return creditsSheet();
     if (t.id === 'plusBtn') { U.plus = !U.plus; save('kord.user', U); toast(U.plus ? 'KORD Plus is on (demo, nothing charged)' : 'KORD Plus is off'); return render(); }

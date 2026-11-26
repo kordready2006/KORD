@@ -88,7 +88,26 @@ begin
   end if;
 end $$;
 
+-- Reports: one per phone per comment. Three different phones reporting a comment hides it until you review it.
+create table if not exists comment_reports (
+  comment_id bigint not null references comments (id) on delete cascade,
+  device     uuid   not null,
+  created_at timestamptz not null default now(),
+  primary key (comment_id, device)
+);
+alter table comment_reports enable row level security;
+
+create or replace function report_comment(p_device uuid, p_comment bigint)
+returns void language plpgsql security definer set search_path = public as $$
+begin
+  insert into comment_reports (comment_id, device) values (p_comment, p_device) on conflict do nothing;
+  if (select count(*) from comment_reports where comment_id = p_comment) >= 3 then
+    update comments set hidden = true where id = p_comment;
+  end if;
+end $$;
+
 grant select on dish_scores, dish_comments to anon;
+grant execute on function report_comment(uuid, bigint) to anon;
 grant execute on function rate_dish(uuid, text, text, text, int) to anon;
 grant execute on function add_comment(uuid, text, text, text, text, text) to anon;
 grant execute on function log_order(uuid, text, text) to anon;

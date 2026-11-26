@@ -50,6 +50,7 @@ http.createServer((req, res) => {
         comments.push({ id: comments.length + 1, town: b.p_town, place_id: b.p_place, dish: b.p_dish, name: (b.p_name || 'Student').slice(0, 30), body, created_at: new Date().toISOString() });
         return send(res, 204);
       }
+      if (fn === 'report_comment') { const c = comments.find((x) => x.id === b.p_comment); if (c) c.reports = (c.reports || 0) + 1; return send(res, 204); }
       if (fn === 'log_order') { clicks.push(b); return send(res, 204); }
       send(res, 404, { message: 'no such function' });
     });

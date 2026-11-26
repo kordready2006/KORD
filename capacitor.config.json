@@ -1,0 +1,8 @@
+{
+  "appId": "app.kord.deals",
+  "appName": "KORD",
+  "webDir": "_site",
+  "ios": {
+    "contentInset": "always"
+  }
+}

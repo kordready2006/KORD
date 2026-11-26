@@ -55,6 +55,10 @@ async function openFirstDeal(p) {
   await p.click('#cmtBtn');
   check(await p.locator('.cmt', { hasText: 'huge portion' }).count() > 0, 'local comment not shown');
   check(await p.locator('.chip', { hasText: 'Top rated' }).count() === 1, 'no Top rated chip after rating');
+  await p.click('.dishbody [data-report]');
+  check(await p.locator('.dishbody .cmt', { hasText: 'huge portion' }).count() === 0, 'reported comment is still shown');
+  await p.fill('#cmtIn', 'Get these, huge portion again');
+  await p.click('#cmtBtn');
   check(await p.evaluate(() => { const w = document.querySelector('.week'); return w ? w.offsetHeight > 40 : true; }), 'weekly deals box is collapsed');
   check(await p.evaluate(() => getComputedStyle(document.querySelector('#menuBox .chip')).borderRadius !== '0px'), 'category chips are unstyled');
   await p.fill('#addItem', 'Buffalo chicken dip');

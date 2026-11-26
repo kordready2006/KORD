@@ -45,7 +45,7 @@ def file_info(name, group):
     """Read one Commons file page: licence, author and the image address.
     `group` is the search filter the file came from: "unrestricted" (public domain / CC0) or "attribution" (CC BY)."""
     raw = get("https://commons.wikimedia.org/wiki/" + name)
-    time.sleep(1.2)
+    time.sleep(0.6)
     if not raw:
         return None
     h = raw.decode("utf-8", "ignore")
@@ -106,13 +106,13 @@ def main():
                     found.append(info)
                 got = sum(1 for c in found if c["group"] == group)
                 tried += 1
-                if got >= 6 or tried >= 18:
+                if got >= 4 or tried >= 12:
                     break
         for i, c in enumerate(found):
             f = os.path.join(out, f"{key}_{i}.jpg")
             if not os.path.exists(f):
                 b = get(f"https://upload.wikimedia.org/wikipedia/commons/thumb/{c['path']}/{c['file']}/960px-{c['file']}")
-                time.sleep(1)
+                time.sleep(3)  # the image server throttles bursts
                 if b:
                     open(f, "wb").write(b)
         cands[key] = found
