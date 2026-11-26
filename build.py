@@ -69,7 +69,7 @@ ORDER_RX = re.compile(r"toasttab|chownow|square\.site|squareup|clover\.com|olo\.
 
 
 # Dish photos that turned out not to show that dish when reviewed by eye; the deal shows the logo instead.
-PHOTO_SKIP = {"trollpub.com--apps"}
+PHOTO_SKIP = {"trollpub.com--apps", "bgbecketts.com--hotsandwich", "westervillegrill.com--hotsandwich"}
 
 
 def slug(s):

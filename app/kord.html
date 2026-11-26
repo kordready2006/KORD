@@ -84,6 +84,8 @@ h2 { font: 800 24px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 .lg img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; padding: 7px; background: #fff; opacity: 0; }
 .lg.has img { opacity: 1; }
 .lg.has { box-shadow: inset 0 0 0 1px var(--line); }
+.lg.thumb { width: 72px; height: 72px; border-radius: 16px; }
+.lg.thumb img { opacity: 1; padding: 0; object-fit: cover; }
 .lg.big { width: 68px; height: 68px; border-radius: 18px; font-size: 24px; }
 
 /* deal ticket */
@@ -569,7 +571,7 @@ h2 { font: 800 24px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   }
   function spotRow(sp) {
     var lo = spotLow(sp), n = (sp.deals || []).length, r = spotScore(sp.id);
-    return '<button class="row" data-spot="' + esc(sp.id) + '">' + logo(sp) +
+    return '<button class="row" data-spot="' + esc(sp.id) + '">' + (sp.photo ? '<span class="lg thumb has"><img alt="" loading="lazy" class="cover" src="' + esc(sp.photo) + '"></span>' : logo(sp)) +
       '<span class="mid"><h3>' + esc(sp.name) + '</h3><p>' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + (travel(sp) ? ' · ' + travel(sp) : '') + (r ? ' · <span class="score">★ ' + r.toFixed(1) + '</span>' : '') + '</p></span>' +
       '<span class="end">' + (lo != null ? 'from<b>' + money(lo) + '</b>' : n ? '<b>' + n + '</b>deal' + (n > 1 ? 's' : '') : '') + '</span></button>';
   }

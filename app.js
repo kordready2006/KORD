@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261126-051253';
+window.KORD_BUILD = '20261126-061426';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -249,7 +249,7 @@ window.KORD_BUILD = '20261126-051253';
   }
   function spotRow(sp) {
     var lo = spotLow(sp), n = (sp.deals || []).length, r = spotScore(sp.id);
-    return '<button class="row" data-spot="' + esc(sp.id) + '">' + logo(sp) +
+    return '<button class="row" data-spot="' + esc(sp.id) + '">' + (sp.photo ? '<span class="lg thumb has"><img alt="" loading="lazy" class="cover" src="' + esc(sp.photo) + '"></span>' : logo(sp)) +
       '<span class="mid"><h3>' + esc(sp.name) + '</h3><p>' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + (travel(sp) ? ' · ' + travel(sp) : '') + (r ? ' · <span class="score">★ ' + r.toFixed(1) + '</span>' : '') + '</p></span>' +
       '<span class="end">' + (lo != null ? 'from<b>' + money(lo) + '</b>' : n ? '<b>' + n + '</b>deal' + (n > 1 ? 's' : '') : '') + '</span></button>';
   }
