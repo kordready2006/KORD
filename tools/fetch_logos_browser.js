@@ -9,13 +9,16 @@ const ROOT = path.dirname(__dirname);
 const OUT = path.join(ROOT, 'logos', 'spots');
 const SKIP = /(^|\.)(facebook|instagram|x|twitter|linktr|toasttab|google|yelp|tripadvisor|doordash|grubhub|ubereats|square|wixsite|wordpress|business|spoton|toast)\./;
 
+// hosts whose header capture was reviewed and rejected (not the logo)
+const BAD = fs.existsSync(path.join(OUT, '_skip.json')) ? JSON.parse(fs.readFileSync(path.join(OUT, '_skip.json'))) : [];
+
 (async () => {
   const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'kord.json')));
   const todo = new Map();
   for (const t of data.towns) for (const s of t.spots) {
     if (!s.website || s.logo) continue;
     let host; try { host = new URL(s.website).hostname.replace(/^www\./, ''); } catch (e) { continue; }
-    if (SKIP.test(host + '.') || fs.existsSync(path.join(OUT, host + '.png'))) continue;
+    if (SKIP.test(host + '.') || BAD.includes(host) || fs.existsSync(path.join(OUT, host + '.png'))) continue;
     todo.set(host, s.website);
   }
   const hosts = [...todo.keys()];

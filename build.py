@@ -38,9 +38,16 @@ SCHOOLS = [
 
 
 # Dish keywords for deal-specific photos (photos/<host>--<dish>.jpg). First match wins.
-DISHES = [("stromboli", r"stromboli"), ("cheesesteak", r"cheesesteak"), ("shawarma", r"shawarma"), ("chilidog", r"chili dog|hot dog|coney"), ("fish", r"\bfish\b"),
-          ("taco", r"taco"), ("wings", r"wing"), ("burrito", r"burrito"), ("calzone", r"calzone"), ("tenders", r"tender|finger"), ("gyro", r"gyro"), ("burger", r"burger"), ("pizza", r"pizza|slice"), ("sandwich", r"sandwich|\bsubs?\b"),
-          ("apps", r"appetizer|\bapps\b|sharable|shareable|snack|munchies|flatbread|happy hour|late.night")]
+DISHES = [("dips", r"crostini|guac|queso|salsa|hummus|\bdips?\b"), ("hotsandwich", r"roast beef|sloppy joe|reuben"),
+          ("stromboli", r"stromboli"), ("cheesesteak", r"cheesesteak"), ("shawarma", r"shawarma"), ("chilidog", r"chili dog|hot dog|coney"),
+          ("taco", r"taco"), ("wings", r"wing"), ("burrito", r"burrito|quesabirria"), ("calzone", r"calzone"), ("tenders", r"tender|finger|chunk|nugget"), ("gyro", r"gyro"),
+          ("burger", r"burger|slider"), ("pizza", r"pizza|slice|\bpie\b"), ("sandwich", r"sandwich|\bsubs?\b|wrap|bagel|panini|melt"),
+          ("fish", r"\bfish\b|perch|shrimp|crab|lobster|seafood|sushi|\brolls?\b"), ("steak", r"steak|prime rib|\bribs?\b|brisket|bbq"),
+          ("pasta", r"pasta|spaghetti|lasagna|\bmac\b|macaroni|ravioli|noodle|ramen"), ("mexplate", r"nacho|quesadilla|fajita|enchilada|arroz"),
+          ("bowl", r"bowl|salad|soup|rice"), ("breakfast", r"breakfast|brunch|pancake|waffle|\begg|omelet"),
+          ("sweet", r"cookie|donut|cupcake|ice cream|custard|dessert|shake|pint|cinnamon roll|scone"), ("drink", r"coffee|latte|\btea\b|smoothie|boba|fizzimoo"),
+          ("sides", r"pretzel|fries|\btots\b|cheese stick|breadstick"), ("chicken", r"chicken"),
+          ("apps", r"appetizer|\bapps\b|sharable|shareable|snack|munchies|flatbread|starter|small plate|happy hour|late.night")]
 
 
 # Centre of each campus (lat, lon) and how far out a place may be. 2.5 miles in a straight line is roughly a
@@ -59,6 +66,10 @@ def miles(a, b):
 
 
 ORDER_RX = re.compile(r"toasttab|chownow|square\.site|squareup|clover\.com|olo\.com|spoton|popmenu|slicelife|owner\.com|ordering|//order\.|/order", re.I)
+
+
+# Dish photos that turned out not to show that dish when reviewed by eye; the deal shows the logo instead.
+PHOTO_SKIP = {"trollpub.com--apps"}
 
 
 def slug(s):
@@ -184,14 +195,15 @@ def main():
                 sp["photo"] = "photos/" + host + ".jpg"
             tag = place_tags.get(host, "")
             for dl in sp["deals"]:
-                # A deal for a named dish only ever shows that restaurant's photo of that dish; otherwise the app shows the logo.
-                text = (dl["title"] + " " + dl["details"]).lower()
-                dish = next((key for key, rx in DISHES if re.search(rx, text)), "")
-                if dish in ("apps", ""):
-                    if dish and host and os.path.exists(os.path.join(ROOT, "photos", host + "--apps.jpg")):
-                        dl["photo"] = "photos/" + host + "--apps.jpg"
+                # A photo must show the food the deal is for. The dish is read from the deal's name (then its details).
+                # It gets that restaurant's own photo of that dish, or the restaurant's main photo when that photo is
+                # tagged as the same dish. A deal that names a food we have no matching photo for shows the logo instead.
+                # Only a deal that names no food at all (10% off with student ID) may use the restaurant's main photo.
+                title, text = dl["title"].lower(), (dl["title"] + " " + dl["details"]).lower()
+                dish = next((k for k, rx in DISHES if re.search(rx, title)), "") or next((k for k, rx in DISHES if re.search(rx, text)), "")
+                if not dish:
                     continue
-                if host and os.path.exists(os.path.join(ROOT, "photos", host + "--" + dish + ".jpg")):
+                if host and host + "--" + dish not in PHOTO_SKIP and os.path.exists(os.path.join(ROOT, "photos", host + "--" + dish + ".jpg")):
                     dl["photo"] = "photos/" + host + "--" + dish + ".jpg"
                 elif tag != dish:
                     dl["nophoto"] = True

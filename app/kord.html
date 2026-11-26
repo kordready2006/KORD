@@ -123,7 +123,9 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 .mono { position: absolute; inset: 0 0 22px; display: grid; place-items: center; color: #fff; font: 800 34px var(--display); }
 .dcard.hero .ph.nophoto { aspect-ratio: 16 / 8; }
 .dcard.hero .ph.nophoto::after { display: none; }
-.dcard.hero .ph.haslogo img { padding: 34px 90px 40px; }
+/* logos are small files: never stretch one past its sharp size */
+.dcard.hero .ph.haslogo img { inset: auto; left: 50%; top: 46%; width: 112px; height: 112px; padding: 0; transform: translate(-50%, -50%); }
+.dcard:not(.hero) .ph.haslogo img { inset: auto; left: 50%; top: 42%; width: 72px; height: 72px; padding: 0; transform: translate(-50%, -50%); }
 .dcard.hero .mono { font-size: 64px; }
 .price { position: absolute; left: 8px; bottom: 8px; max-width: calc(100% - 16px); background: var(--sun); color: var(--sun-ink); font: 800 20px/1 var(--display); letter-spacing: -.02em; padding: 6px 9px; border-radius: 10px; transform: rotate(-4deg); box-shadow: 0 2px 0 rgba(0,0,0,.4); }
 .price.long { font-size: 13.5px; }
