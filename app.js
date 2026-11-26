@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261126-061426';
+window.KORD_BUILD = '20261126-062923';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -83,15 +83,37 @@ window.KORD_BUILD = '20261126-061426';
   function town() { return DATA.towns.find(function (t) { return t.id === S.town; }); }
   function fav(d) { return 'https://www.google.com/s2/favicons?sz=128&domain=' + encodeURIComponent(d); }
   function logo(sp, cls) {
-    var d = domain(sp.website), img = '';
+    var img = '';
     if (sp.logo) img = '<img alt="" loading="lazy" data-logo src="' + esc(sp.logo) + '">';
-    else if (photo(sp.photo)) img = '<img alt="" loading="lazy" class="cover" data-logo src="' + esc(photo(sp.photo)) + '">';
-    else if (d && !NOLOGO.test(d + '.')) img = '<img alt="" loading="lazy" data-logo src="' + fav(d) + '">';
     return '<span class="lg ' + (cls || '') + '" style="--c:' + color(sp.category) + '"><span>' + esc(initials(sp.name)) + '</span>' + img + '</span>';
   }
   function badge(sc) {
-    var d = domain(sc.url), src = sc.logo || (d ? fav(d) : '');
-    return '<span class="badge" style="--c:' + hex(sc.color) + ';--i:' + hex(sc.ink) + '"><span>' + esc(sc.abbr) + '</span>' + (src ? '<img alt="" data-logo src="' + esc(src) + '">' : '') + '</span>';
+    return '<span class="badge" style="--c:' + hex(sc.color) + ';--i:' + hex(sc.ink) + '"><span>' + esc(sc.abbr) + '</span>' + (sc.logo ? '<img alt="" data-logo src="' + esc(sc.logo) + '">' : '') + '</span>';
+  }
+  /* Licensed example photos. Picks the library photo that fits the words (a wing deal gets wings), falling back to the
+     kind of restaurant. The same dish always gets the same photo; different places get different ones where there is a choice. */
+  var STOCKRULES = [['sushi', /sushi|\broll\b|sashimi/], ['bbq', /\bribs?\b|bbq|brisket|pulled pork/], ['mac', /\bmac\b|macaroni/], ['noodles', /ramen|noodle|\bpho\b|lo mein|pad thai|udon/],
+    ['quesadilla', /quesadilla/], ['salad', /salad/], ['soup', /soup|chowder|bisque/], ['curry', /curry|masala|tikka|korma/], ['eggs', /\beggs?\b|omelet|scramble|benedict/],
+    ['bagel', /bagel/], ['cookie', /cookie|brownie/], ['icecream', /ice cream|custard|sundae|gelato|froyo|frozen yogurt|milkshake|shake/], ['donut', /donut|doughnut/], ['cupcake', /cupcake|muffin/],
+    ['boba', /boba|bubble tea|milk tea/], ['smoothie', /smoothie|juice|lemonade|refresher/], ['pretzel', /pretzel/], ['hotdog', /hot dog|coney|chili dog|\bbrat/], ['stromboli', /stromboli/],
+    ['calzone', /calzone/], ['cheesesteak', /cheesesteak|philly/], ['shawarma', /shawarma|falafel|kabob|kebab/], ['gyro', /gyro/], ['taco', /taco/], ['wings', /wing/],
+    ['burrito', /burrito|quesabirria|chimichanga/], ['tenders', /tender|finger|nugget|chunk/], ['burger', /burger|slider/], ['pizza', /pizza|slice|\bpie\b|flatbread/],
+    ['hotsandwich', /roast beef|sloppy joe|reuben|\bmelt\b/], ['sandwich', /sandwich|\bsubs?\b|wrap|panini|hoagie|\bclub\b|blt/], ['fish', /fish|perch|shrimp|crab|lobster|seafood|salmon|calamari/],
+    ['steak', /steak|prime rib|sirloin|ribeye/], ['pasta', /pasta|spaghetti|lasagna|ravioli|alfredo|fettuccine|penne|gnocchi/], ['mexplate', /nacho|fajita|enchilada|tostada|tamale/],
+    ['breakfast', /breakfast|brunch|pancake|waffle|french toast/], ['bowl', /bowl|\brice\b/], ['sweet', /cake|dessert|pastry|cinnamon roll|scone|crepe|cheesecake|baklava/],
+    ['drink', /coffee|latte|espresso|cappuccino|mocha|\btea\b|chai|americano|cold brew/], ['sides', /fries|\btots\b|breadstick|cheese stick|onion ring|mozzarella stick/],
+    ['dips', /guac|queso|salsa|hummus|\bdips?\b|crostini/], ['chicken', /chicken/], ['apps', /appetizer|\bapps\b|shar(e)?able|starter|small plate|snack/]];
+  var CATSTOCK = { 'Pizza': 'pizza', 'Burgers': 'burger', 'Mexican': 'taco', 'Sandwiches & Subs': 'sandwich', 'Wings & Chicken': 'wings', 'Asian': 'noodles', 'Boba & Tea': 'boba',
+    'Coffee & Bakery': 'drink', 'Breakfast & Brunch': 'breakfast', 'Bar & Grill': 'burger', 'Dessert & Ice Cream': 'icecream', 'BBQ': 'bbq', 'Mediterranean': 'gyro', 'Healthy & Bowls': 'salad', 'Fast Food': 'burger', 'Other': 'plate' };
+  function stockKey(text, cat) {
+    var t = String(text || '').toLowerCase(), lib = DATA.stock || {};
+    for (var i = 0; i < STOCKRULES.length; i++) if (lib[STOCKRULES[i][0]] && STOCKRULES[i][1].test(t)) return STOCKRULES[i][0];
+    return lib[CATSTOCK[cat]] ? CATSTOCK[cat] : lib.plate ? 'plate' : '';
+  }
+  function stock(text, cat, seed) {
+    var a = (DATA.stock || {})[stockKey(text, cat)] || [], h = 0, s = String(seed || '');
+    for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
+    return a.length ? a[h % a.length] : '';
   }
   document.addEventListener('load', function (e) { var t = e.target; if (t && t.dataset && 'logo' in t.dataset) { if (t.naturalWidth >= 32) t.parentNode.classList.add('has'); else t.remove(); } }, true);
   document.addEventListener('error', function (e) { var t = e.target; if (t && t.dataset && 'logo' in t.dataset) t.remove(); }, true);
@@ -186,7 +208,8 @@ window.KORD_BUILD = '20261126-061426';
   }
   function photo(src) { return src || ''; }
   function media(sp, d) {
-    var ph = photo((d && d.photo) || (d && d.nophoto ? '' : sp.photo));
+    /* the restaurant's own photo when it has allowed that; otherwise a licensed example of the same food */
+    var ph = photo(d ? (d.photo || (d.nophoto ? '' : sp.photo)) : sp.photo) || (d ? stock(d.title, sp.category, sp.id) : stock(sp.name, sp.category, sp.id));
     return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono">' + esc(initials(sp.name)) + '</span>' };
   }
   function metaLine(sp) { var sc = spotScore(sp.id), tr = travel(sp); return [sc ? '<span class="score">★ ' + sc.toFixed(1) + '</span>' : '', esc(tr), esc(sp.category)].filter(Boolean).join(' · '); }
@@ -245,11 +268,11 @@ window.KORD_BUILD = '20261126-061426';
       if (pop.length) h += '<div class="sechead"><h2>Popular near campus</h2><span>' + pop.length + '</span></div><p class="sub" style="margin-top:-8px">Local favorites in ' + esc(t.name) + '.</p><div class="rail" style="display:flex">' + pop.map(placeCard).join('') + '</div>';
     }
     h += sec('Chain deals nearby', 'Fast food and national chains, lowest price first.', chain);
-    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos come from each restaurant\'s own website.</p>';
+    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Food photos are examples of each dish, not the restaurant\'s own plate.</p>';
   }
   function spotRow(sp) {
     var lo = spotLow(sp), n = (sp.deals || []).length, r = spotScore(sp.id);
-    return '<button class="row" data-spot="' + esc(sp.id) + '">' + (sp.photo ? '<span class="lg thumb has"><img alt="" loading="lazy" class="cover" src="' + esc(sp.photo) + '"></span>' : logo(sp)) +
+    return '<button class="row" data-spot="' + esc(sp.id) + '">' + (function (ph) { return ph ? '<span class="lg thumb has"><img alt="" loading="lazy" class="cover" src="' + esc(ph) + '"></span>' : logo(sp); })(sp.photo || stock(sp.name, sp.category, sp.id)) +
       '<span class="mid"><h3>' + esc(sp.name) + '</h3><p>' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + (travel(sp) ? ' · ' + travel(sp) : '') + (r ? ' · <span class="score">★ ' + r.toFixed(1) + '</span>' : '') + '</p></span>' +
       '<span class="end">' + (lo != null ? 'from<b>' + money(lo) + '</b>' : n ? '<b>' + n + '</b>deal' + (n > 1 ? 's' : '') : '') + '</span></button>';
   }
@@ -289,7 +312,7 @@ window.KORD_BUILD = '20261126-061426';
     h += mine.length ? '<div class="list">' + mine.map(function (m) {
       return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + '★'.repeat(m.r) + '</span></span></button>';
     }).join('') + '</div>' : '<div class="empty"><b>Nothing rated yet</b>Open any place and tap the stars on what you ordered.</div>';
-    h += '<p class="note">KORD version ' + esc(window.KORD_BUILD || 'preview') + '</p>';
+    h += '<div class="btnrow"><button class="btn ghost" id="creditsBtn">Sources and credits</button><a class="btn ghost" target="_blank" rel="noopener" href="privacy.html">Privacy</a><a class="btn ghost" target="_blank" rel="noopener" href="terms.html">Terms</a></div><p class="note">KORD version ' + esc(window.KORD_BUILD || 'preview') + '</p>';
     return h + '<p class="note">' + (SERVER ? 'Your ratings and comments are shared with other students at your school. Your photo stays on this phone.' : 'Your profile and ratings are saved on this phone.') + '</p>';
   }
 
@@ -314,6 +337,21 @@ window.KORD_BUILD = '20261126-061426';
 
   /* place sheet */
   function renderHeadPts() { var el = document.querySelector('.schoolbar .mid p'); if (el && DATA && town()) el.textContent = town().name + ', Ohio · ' + U.pts + ' points'; }
+  function creditsSheet() {
+    var c = DATA.credits || [], h = '<h2>Sources and credits</h2>' +
+      '<div><div class="sechead"><h2 style="font-size:18px">Deals and places</h2></div><p class="sub">Every deal links to the page it came from: open a restaurant and tap Source under the deal. Places come from each school\'s local business listings and the restaurants\' own websites. Researched ' + esc(DATA.researchedOn || '') + '. Deals change, so confirm before you go.</p></div>' +
+      '<div><div class="sechead"><h2 style="font-size:18px">Menus</h2></div><p class="sub">Dish names and prices were read from each restaurant\'s own menu or ordering page.</p></div>' +
+      '<div><div class="sechead"><h2 style="font-size:18px">Distances</h2></div><p class="sub">Addresses were located with the U.S. Census Bureau Geocoder and OpenStreetMap Nominatim. Map data © OpenStreetMap contributors (ODbL).</p></div>' +
+      '<div><div class="sechead"><h2 style="font-size:18px">Names and trademarks</h2></div><p class="sub">Restaurant and school names belong to their owners. KORD is independent and is not affiliated with, sponsored by or endorsed by any restaurant or school listed.</p></div>' +
+      '<div><div class="sechead"><h2 style="font-size:18px">Fonts</h2></div><p class="sub">Bricolage Grotesque and DM Sans, used under the SIL Open Font License 1.1.</p></div>' +
+      '<div><div class="sechead"><h2 style="font-size:18px">Food photos</h2><span>' + c.length + '</span></div><p class="sub">Photos show an example of each kind of food. They are public domain or Creative Commons Attribution works from Wikimedia Commons, resized and cropped to fit.</p></div>' +
+      '<ul class="credits">' + c.map(function (x) {
+        var pg = safeUrl(x.page), lu = safeUrl(x.licenseUrl);
+        return '<li>' + (pg ? '<a target="_blank" rel="noopener" href="' + esc(pg) + '">' + esc(x.title) + '</a>' : esc(x.title)) + ' by ' + esc(x.artist) + ', ' + (lu ? '<a target="_blank" rel="noopener" href="' + esc(lu) + '">' + esc(x.license) + '</a>' : esc(x.license)) + '</li>';
+      }).join('') + '</ul>' +
+      '<div class="btnrow"><a class="btn ghost" target="_blank" rel="noopener" href="privacy.html">Privacy policy</a><a class="btn ghost" target="_blank" rel="noopener" href="terms.html">Terms of use</a></div>';
+    document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="Sources and credits"><div class="sheethead"><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody" id="sheetBody">' + h + '</div></div></div>';
+  }
   function closeSheet() { document.getElementById('sheetRoot').innerHTML = ''; clearInterval(POLL); S.open = null; S.item = null; }
   /* ---- Points, levels and rewards. Kept on this phone. ---- */
   U.pts = U.pts || 0; U.life = U.life || 0; U.awarded = U.awarded || {}; U.ledger = U.ledger || []; U.stats = U.stats || { ratings: 0, comments: 0, orders: 0 };
@@ -451,7 +489,7 @@ window.KORD_BUILD = '20261126-061426';
   function dishRow(id, m) {
     var open = S.item === m.n, sc = itemScore(id, m.n), nc = cmtsFor(id, m.n).length;
     var meta = (sc ? '<span class="score">★ ' + sc.avg.toFixed(1) + '</span> (' + sc.n + ')' : '<span class="rateit">Rate it</span>') + (nc ? '<br>' + nc + ' comment' + (nc > 1 ? 's' : '') : '');
-    var h = '<div class="dish' + (open ? ' open' : '') + '"><button class="dishhead" data-dish="' + esc(m.n) + '" aria-expanded="' + open + '"><span class="mname">' + esc(m.n) + (m.p ? ' <small>' + esc(m.p) + '</small>' : '') + '</span><span class="dmeta">' + meta + '</span></button>';
+    var h = '<div class="dish' + (open ? ' open' : '') + '"><button class="dishhead" data-dish="' + esc(m.n) + '" aria-expanded="' + open + '">' + (function (ph) { return ph ? '<span class="dthumb"><img alt="" loading="lazy" src="' + esc(ph) + '"></span>' : ''; })(stock(m.n, SPOTS[id].category, m.n)) + '<span class="mname">' + esc(m.n) + (m.p ? ' <small>' + esc(m.p) + '</small>' : '') + '</span><span class="dmeta">' + meta + '</span></button>';
     if (open) h += '<div class="dishbody">' + orderBox(id, m) + '<div class="yours"><span>Your rating</span>' + miniStars(id, m.n) + '</div><div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
       '<div class="addrow"><input class="search" id="cmtIn" type="text" maxlength="280" placeholder="Worth it? Tell other students" aria-label="Write a comment"><button class="btn" id="cmtBtn" data-id="' + esc(id) + '">Post</button></div>' +
       (SERVER ? '' : '<p class="note">Comments stay on this phone until the shared server is connected.</p>') + '</div>';
@@ -481,7 +519,8 @@ window.KORD_BUILD = '20261126-061426';
   function spotSheet(id, deal) {
     var sp = SPOTS[id]; if (!sp) return;
     var web = safeUrl(sp.website);
-    var h = (photo(sp.photo) ? '<div class="banner" style="--c:' + color(sp.category) + '"><img alt="" src="' + esc(photo(sp.photo)) + '"></div>' : '') + '<div class="spothead">' + logo(sp, 'big') + '<div><h2>' + esc(sp.name) + '</h2><p class="sub">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</p>' + tagsHtml(sp) + '</div></div>';
+    var bph = sp.photo || stock(sp.name, sp.category, sp.id);
+    var h = (bph ? '<div class="banner" style="--c:' + color(sp.category) + '"><img alt="" src="' + esc(bph) + '"></div>' : '') + '<div class="spothead">' + logo(sp, 'big') + '<div><h2>' + esc(sp.name) + '</h2><p class="sub">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</p>' + tagsHtml(sp) + '</div></div>';
     if (sp.blurb) h += '<p style="margin:0">' + esc(sp.blurb) + '</p>';
     var order = safeUrl(sp.order), look = 'https://www.google.com/search?q=' + encodeURIComponent(sp.name + ' ' + (sp.address || town().name + ' Ohio'));
     h += '<div class="btnrow">' +
@@ -527,6 +566,7 @@ window.KORD_BUILD = '20261126-061426';
       if (pk && U.pts >= pk.cost) { U.pts -= pk.cost; if (pk.id === 'waiver') U.waivers++; else U.credits++; save('kord.user', U); toast('Redeemed: ' + pk.name); }
       return render();
     }
+    if (t.id === 'creditsBtn') return creditsSheet();
     if (t.id === 'plusBtn') { U.plus = !U.plus; save('kord.user', U); toast(U.plus ? 'KORD Plus is on (demo, nothing charged)' : 'KORD Plus is off'); return render(); }
     if (t.dataset.food) { S.food = t.dataset.food; return render(); }
     if (t.dataset.sec) { S.sec = t.dataset.sec; S.item = null; return fillMenu(S.open); }

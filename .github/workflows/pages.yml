@@ -25,10 +25,7 @@ jobs:
       - name: Build
         run: python3 build.py
       - name: Collect site
-        run: |
-          mkdir _site
-          cp -r index.html app.js version.json sw.js manifest.webmanifest icons logos photos _site/
-          mkdir _site/data && cp data/kord.json data/menus.json _site/data/
+        run: python3 tools/make_site.py _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

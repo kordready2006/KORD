@@ -71,8 +71,8 @@
                 "Mon",
                 "Tue"
               ],
-              "title": "Monday & Tuesday night pizza special",
-              "details": "Menu lists a Monday and Tuesday night deal with medium, large and Buckeye-size pizzas priced below regular menu rates; no substitutions on specials. From a 2023 copy of the menu, so confirm current pricing.",
+              "title": "Monday and Tuesday night pizza special",
+              "details": "Medium, large and Buckeye-size pizzas are priced below regular menu rates on Monday and Tuesday nights, with no substitutions on specials. Source is from 2023; confirm before you go.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://org.osu.edu/themainmenuproject/files/2023/10/Adriatico_s-Menu-ACCESSIBLE.pdf",
@@ -82,8 +82,8 @@
               "days": [
                 "Sun"
               ],
-              "title": "Buck ID Day: 10% off",
-              "details": "Sunday is Buck ID Day: 10% discount on your order when you pay with your BuckID.",
+              "title": "10% off on Buck ID Day",
+              "details": "Sunday is Buck ID Day: get 10% off your order when you pay with your BuckID.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://adriaticososu.com/columbus/specials/",
@@ -94,8 +94,8 @@
                 "Mon",
                 "Tue"
               ],
-              "title": "Monday & Tuesday Night Madness",
-              "details": "Cheese pizzas: medium $12, large $18, Buckeye $34 (toppings extra). Mention the promotion on orders delivered or picked up after 5 PM.",
+              "title": "Monday and Tuesday Night Madness",
+              "details": "Cheese pizzas: medium $12, large $18, Buckeye $34 (toppings extra). Mention the promotion on orders delivered or picked up after 5 p.m.",
               "price": "$12",
               "studentOnly": false,
               "sourceUrl": "https://adriaticososu.com/columbus/specials/",
@@ -110,7 +110,7 @@
           "signature": true,
           "address": "1030 N High St, Columbus, OH 43201",
           "website": "https://latenightslice.com",
-          "blurb": "Columbus-born late-night slice shop; this is the Short North shop, with a campus shop at 1839 N Pearl St.",
+          "blurb": "Columbus-born late-night slice shop in the Short North, with a campus shop at 1839 N Pearl St.",
           "price": "$",
           "sourceUrl": "https://www.toasttab.com/local/mikeys-late-night-sh-north-see-hq/r-3fafc331-0329-467c-9137-982f260aff03",
           "deals": [
@@ -122,8 +122,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Party Hour: 50% off food",
-              "details": "Short North shop, Monday-Friday 4-5 p.m.; food and drinks 50% off for the one hour. Guide notes deals are subject to change.",
+              "title": "50% off food at Party Hour",
+              "details": "Food and drinks are 50% off for one hour, Monday-Friday 4-5 p.m., at the Short North shop. Deals are subject to change.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.columbusnavigator.com/?p=1892",
@@ -147,7 +147,7 @@
                 "Fri"
               ],
               "title": "Friday smashburger special",
-              "details": "Weekly Friday-afternoon smashburger special with discounted single and double patties (price not stated in source).",
+              "details": "Discounted single and double smashburgers every Friday afternoon. The price is not listed; confirm before you go.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://ma.to/venue/ethylandtank",
@@ -157,8 +157,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "$2 Taco Tuesday",
-              "details": "$2 tacos on Tuesdays as part of the Tuesday-Sunday happy hour (a 2024 Lantern article gives happy hour as 4-8 p.m.).",
+              "title": "$2 taco Tuesday",
+              "details": "$2 tacos on Tuesdays during the Tuesday-Sunday happy hour. Happy hour was listed as 4-8 p.m. in 2024; confirm before you go.",
               "price": "$2",
               "studentOnly": false,
               "sourceUrl": "https://ramblercolumbus.com/resources/best-happy-hour-columbus/",
@@ -168,7 +168,7 @@
               "days": [
                 "Thu"
               ],
-              "title": "$2 Tank Nachos Thursday",
+              "title": "$2 Tank nachos Thursday",
               "details": "Tank nachos for $2 on Thursdays.",
               "price": "$2",
               "studentOnly": false,
@@ -196,8 +196,8 @@
                 "Wed",
                 "Thu"
               ],
-              "title": "Happy hour: $5 appetizers",
-              "details": "3-6 PM: $5 appetizers plus $1 off drafts and domestic bottles. Not available during events.",
+              "title": "$5 appetizers at happy hour",
+              "details": "3-6 p.m.: $5 appetizers plus $1 off drafts and domestic bottles. Not available during events.",
               "price": "$5",
               "studentOnly": false,
               "sourceUrl": "https://theoriginalvarsityclub.com/columbus-osu-the-original-varsity-club-happy-hours-specials",
@@ -260,8 +260,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Happy hour: $1 off tacos",
-              "details": "Monday-Friday 3-6 p.m.: $1 off tacos (plus drink specials).",
+              "title": "$1 off tacos at happy hour",
+              "details": "Monday-Friday 3-6 p.m.: $1 off tacos, plus drink specials.",
               "price": "$1 off",
               "studentOnly": false,
               "sourceUrl": "https://www.experiencecolumbus.com/blog/post/top-happy-hours-in-the-short-north/",
@@ -284,7 +284,7 @@
               "days": [
                 "Mon"
               ],
-              "title": "$10 Burger Monday",
+              "title": "$10 burger Monday",
               "details": "$10 burger special every Monday, all day.",
               "price": "$10",
               "studentOnly": false,
@@ -300,7 +300,7 @@
                 "Fri"
               ],
               "title": "Happy hour pizzas",
-              "details": "Monday-Friday 3-6 p.m.: $9 pizzas (another listing says $10) alongside half-off drafts.",
+              "details": "Monday-Friday 3-6 p.m.: $9 pizzas and half-off drafts. Another listing says $10; confirm before you go.",
               "price": "$9",
               "studentOnly": false,
               "sourceUrl": "https://cbustoday.6amcity.com/city-guide/play/happy-hours-in-columbus-ohio",
@@ -327,7 +327,7 @@
           "signature": false,
           "address": "2060 N High St, Columbus, OH",
           "website": "",
-          "blurb": "Student go-to boba shop on High Street; jasmine green milk tea is a favorite.",
+          "blurb": "Student go-to boba shop on High Street, where jasmine green milk tea is a favorite.",
           "price": "$",
           "sourceUrl": "https://www.hercampus.com/?p=327877",
           "deals": []
@@ -411,7 +411,7 @@
           "signature": false,
           "address": "2424 E Main St, Bexley, OH",
           "website": "https://kittiescakes.com",
-          "blurb": "Bexley bakery-cafe Capital students named among nearby spots where they would like to use CapBucks.",
+          "blurb": "Bexley bakery-cafe that Capital students named among nearby spots where they would like to use CapBucks.",
           "price": "$",
           "sourceUrl": "https://cuchimes.com/?p=155663",
           "deals": []
@@ -447,7 +447,7 @@
           "signature": false,
           "address": "",
           "website": "https://www.jimmyjohns.com",
-          "blurb": "Sub chain on Main Street two blocks from Capital's stadium; accepts CapBucks.",
+          "blurb": "Sub chain on Main Street, two blocks from Capital's stadium, that accepts CapBucks.",
           "price": "$",
           "sourceUrl": "https://athletics.capital.edu/news/2023/9/13/general-jimmy-johns-to-serve-as-the-preferred-sandwich-provider-of-capital-athletics.aspx",
           "deals": []
@@ -471,7 +471,7 @@
           "signature": false,
           "address": "1816 N High St, Columbus, OH",
           "website": "https://www.raisingcanes.com",
-          "blurb": "Chicken finger chain on High Street; a Lantern pick for campus-area late-night eats.",
+          "blurb": "Chicken finger chain on High Street and a Lantern pick for campus-area late-night eats.",
           "price": "$",
           "sourceUrl": "https://music.osu.edu/sites/music.osu.edu/files/Restaurants%20Near%20OSU.pdf",
           "deals": []
@@ -559,7 +559,7 @@
                 "Fri"
               ],
               "title": "Half-off happy hour",
-              "details": "Tuesday-Friday late-afternoon happy hour (listed as 4-6 p.m.) with 50% off food and drinks; drink deals at the main bar.",
+              "details": "Tuesday-Friday happy hour, listed as 4-6 p.m.: 50% off food and drinks, with drink deals at the main bar.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.experiencecolumbus.com/blog/post/top-happy-hours-in-the-short-north/",
@@ -601,7 +601,7 @@
                 "Sun"
               ],
               "title": "Happy hour: half-off select appetizers",
-              "details": "Listed as every day 4-7 p.m.: half off select appetizers (plus drink specials). Check which days the restaurant is open.",
+              "details": "Listed as every day 4-7 p.m.: half off select appetizers, plus drink specials. Check which days the restaurant is open.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
@@ -612,7 +612,7 @@
                 "Mon"
               ],
               "title": "$3 off nachos Monday",
-              "details": "Plaza daily special: $3 off nachos.",
+              "details": "$3 off nachos on Mondays.",
               "price": "$3 off",
               "studentOnly": false,
               "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
@@ -623,7 +623,7 @@
                 "Wed"
               ],
               "title": "$5.99 quesadilla Wednesday",
-              "details": "Plaza daily special: $5.99 chicken and cheese quesadilla.",
+              "details": "$5.99 chicken and cheese quesadilla on Wednesdays.",
               "price": "$5.99",
               "studentOnly": false,
               "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
@@ -634,7 +634,7 @@
                 "Thu"
               ],
               "title": "$12.99 arroz con pollo Thursday",
-              "details": "Plaza daily special: $12.99 arroz con pollo.",
+              "details": "$12.99 arroz con pollo on Thursdays.",
               "price": "$12.99",
               "studentOnly": false,
               "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
@@ -645,7 +645,7 @@
                 "Fri"
               ],
               "title": "$13.99 chicken fajita Friday",
-              "details": "Plaza daily special: $13.99 chicken fajita.",
+              "details": "$13.99 chicken fajita on Fridays.",
               "price": "$13.99",
               "studentOnly": false,
               "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
@@ -656,7 +656,7 @@
                 "Sat"
               ],
               "title": "$13.99 quesabirrias Saturday",
-              "details": "Plaza daily special: $13.99 quesabirrias.",
+              "details": "$13.99 quesabirrias on Saturdays.",
               "price": "$13.99",
               "studentOnly": false,
               "sourceUrl": "https://plazamexicangrill.com/columbus-ohio-state-university-main-campus-plaza-mexican-grill-happy-hours-specials",
@@ -684,7 +684,7 @@
                 "Fri"
               ],
               "title": "Half-off happy hour pizzas",
-              "details": "Monday-Friday 4-6 p.m.: half-priced pizzas, shared items and bar snacks (plus drink specials).",
+              "details": "Monday-Friday 4-6 p.m.: half-priced pizzas, shared items and bar snacks, plus drink specials.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://cbustoday.6amcity.com/city-guide/play/happy-hours-in-columbus-ohio",
@@ -711,7 +711,7 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Happy hour: half-off snacks, starters and pub burgers",
+              "title": "Half-off snacks, starters and pub burgers",
               "details": "Monday-Friday 4-6 p.m.: all snacks, starters and pub burgers half off.",
               "price": "50% off",
               "studentOnly": false,
@@ -764,7 +764,7 @@
                 "Sun"
               ],
               "title": "$6 happy hour flatbreads and apps",
-              "details": "Tuesday-Friday and Sunday 4-6 p.m.: $6 flatbreads and $6 appetizers (plus $6 drinks).",
+              "details": "Tuesday-Friday and Sunday 4-6 p.m.: $6 flatbreads and $6 appetizers, plus $6 drinks.",
               "price": "$6",
               "studentOnly": false,
               "sourceUrl": "https://www.hubbardgrille.com/",
@@ -787,7 +787,7 @@
               "days": [
                 "Tue"
               ],
-              "title": "$3 Taco Tuesday",
+              "title": "$3 taco Tuesday",
               "details": "$3 tacos on Tuesdays.",
               "price": "$3",
               "studentOnly": false,
@@ -822,8 +822,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "$6 Burger Night",
-              "details": "$6 signature cheeseburger every Wednesday; the listing's hours are unclear, so confirm timing.",
+              "title": "$6 burger night",
+              "details": "$6 signature cheeseburger every Wednesday. Hours are unclear; confirm before you go.",
               "price": "$6",
               "studentOnly": false,
               "sourceUrl": "https://clinkly.io/happy-hour/columbus/short-north",
@@ -836,7 +836,7 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Happy hour: half off starters",
+              "title": "Half-off starters at happy hour",
               "details": "Tuesday through Friday happy hour with half off starters and more.",
               "price": "50% off",
               "studentOnly": false,
@@ -860,8 +860,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "$2.22 Taco Tuesday",
-              "details": "$2.22 house tacos ($4 top-shelf tacos) all day Tuesday, dine-in only, at its various locations.",
+              "title": "$2.22 taco Tuesday",
+              "details": "$2.22 house tacos and $4 top-shelf tacos all day Tuesday at its various locations. Dine-in only.",
               "price": "$2.22",
               "studentOnly": false,
               "sourceUrl": "https://www.columbusnavigator.com/?p=56485",
@@ -884,7 +884,7 @@
               "days": [
                 "Tue"
               ],
-              "title": "$2.99 Taco Tuesday",
+              "title": "$2.99 taco Tuesday",
               "details": "$2.99 tacos: shredded chicken, ground beef, al pastor or vegetarian.",
               "price": "$2.99",
               "studentOnly": false,
@@ -901,8 +901,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "Happy hour: half off selected appetizers",
-              "details": "Every day 2-6 PM and late night 10-11 PM: half off selected appetizers.",
+              "title": "Half-off selected appetizers at happy hour",
+              "details": "Every day 2-6 p.m. and late night 10-11 p.m.: half off selected appetizers.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://cazuelasmexicancantina.com/specials/",
@@ -1069,8 +1069,8 @@
               "days": [
                 "Mon"
               ],
-              "title": "Half off appetizers and baskets",
-              "details": "Monday: 1/2 off appetizers and baskets (sampler platter and ribs basket not included).",
+              "title": "Half-off appetizers and baskets",
+              "details": "Monday: half off appetizers and baskets (sampler platter and ribs basket not included).",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://theoonlane.com/columbus-osu-campus-the-o-on-lane-happy-hours-specials",
@@ -1080,7 +1080,7 @@
               "days": [
                 "Tue"
               ],
-              "title": "Tavern Tuesday: $2 off tavern-style pizza",
+              "title": "$2 off tavern-style pizza Tuesday",
               "details": "$2 off any 16-inch tavern-style pizza.",
               "price": "$2 off",
               "studentOnly": false,
@@ -1093,7 +1093,7 @@
                 "Sun"
               ],
               "title": "Wing special",
-              "details": "$6 for 6 or $12 for 12 traditional wings; $7 for 6 or $13 for 12 boneless (ranch, bleu cheese and celery not included).",
+              "details": "Traditional wings are $6 for 6 or $12 for 12; boneless are $7 for 6 or $13 for 12. Ranch, bleu cheese and celery are not included.",
               "price": "$6",
               "studentOnly": false,
               "sourceUrl": "https://theoonlane.com/columbus-osu-campus-the-o-on-lane-happy-hours-specials",
@@ -1117,7 +1117,7 @@
                 "Mon"
               ],
               "title": "$5 smash burger with fries",
-              "details": "Monday: smash burger with fries for $5, plus $1 Dollar Dogs.",
+              "details": "Monday: smash burger with fries for $5, plus Dollar Dogs for $1.",
               "price": "$5",
               "studentOnly": false,
               "sourceUrl": "https://fourthstreetcolumbus.com/specials",
@@ -1127,7 +1127,7 @@
               "days": [
                 "Tue"
               ],
-              "title": "$2 Tacos Tuesday",
+              "title": "$2 taco Tuesday",
               "details": "$2 tacos all day and $6 nachos.",
               "price": "$2",
               "studentOnly": false,
@@ -1238,8 +1238,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Weekday happy hour: $2 off select shareables",
-              "details": "Weekdays 2-6 PM: $2 off select shareables and wines by the glass, $1 off draft beers.",
+              "title": "$2 off select shareables at happy hour",
+              "details": "Weekdays 2-6 p.m.: $2 off select shareables and wines by the glass, $1 off draft beers.",
               "price": "$2 off",
               "studentOnly": false,
               "sourceUrl": "https://www.understorycbus.com/commons",
@@ -1491,7 +1491,7 @@
                 "Wed"
               ],
               "title": "3 pizzas for $45",
-              "details": "Any three wood-fired pizzas for $45. Excludes squares, one special per table, not valid on carry-out.",
+              "details": "Any three wood-fired pizzas for $45. Excludes squares. One special per table; not valid on carry-out.",
               "price": "$45",
               "studentOnly": false,
               "sourceUrl": "https://pauliegee.com/restaurant/paulie-gees-short-north/",
@@ -1502,7 +1502,7 @@
                 "Thu"
               ],
               "title": "$22 in-house squares",
-              "details": "Square pizzas $22 in house on Thursdays; not valid on carry-out.",
+              "details": "Square pizzas are $22 in house on Thursdays. Not valid on carry-out.",
               "price": "$22",
               "studentOnly": false,
               "sourceUrl": "https://pauliegee.com/restaurant/paulie-gees-short-north/",
@@ -1513,7 +1513,7 @@
                 "Sun"
               ],
               "title": "Sweatpants Special",
-              "details": "Any two wood-fired pizzas and a salad for $40. Excludes squares, one special per table, not valid on carry-out.",
+              "details": "Any two wood-fired pizzas and a salad for $40. Excludes squares. One special per table; not valid on carry-out.",
               "price": "$40",
               "studentOnly": false,
               "sourceUrl": "https://pauliegee.com/restaurant/paulie-gees-short-north/",
@@ -1671,8 +1671,8 @@
                 "Wed",
                 "Thu"
               ],
-              "title": "Happy hour: $3 off all appetizers",
-              "details": "3-6 PM: $3 off all appetizers, plus drink specials.",
+              "title": "$3 off all appetizers at happy hour",
+              "details": "3-6 p.m.: $3 off all appetizers, plus drink specials.",
               "price": "$3 off",
               "studentOnly": false,
               "sourceUrl": "https://asterisksupperclub.com/westerville-historic-westerville-asterisk-supper-club-happy-hours-specials",
@@ -1712,7 +1712,7 @@
                 "Fri"
               ],
               "title": "Happy hour pizza and apps",
-              "details": "Happy hour Monday-Friday 3-6 p.m. with deals on pizza and appetizers (also beer).",
+              "details": "Happy hour Monday-Friday 3-6 p.m. with deals on pizza, appetizers and beer.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://myrustybucket.com/locations/westerville",
@@ -1742,7 +1742,7 @@
                 "Sun"
               ],
               "title": "15% off with Otterbein student ID",
-              "details": "Mention the discount and show a student ID before paying, per Otterbein's student media list of Uptown Westerville discounts.",
+              "details": "Mention the discount and show your Otterbein student ID before paying.",
               "price": "15% off",
               "studentOnly": true,
               "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
@@ -1772,7 +1772,7 @@
                 "Sun"
               ],
               "title": "10% off with Otterbein student ID",
-              "details": "Mention the discount and show a student ID before paying, per Otterbein's student media list of Uptown Westerville discounts.",
+              "details": "Mention the discount and show your Otterbein student ID before paying.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
@@ -1802,7 +1802,7 @@
                 "Sun"
               ],
               "title": "10% off with Otterbein student ID",
-              "details": "Mention the discount and show a student ID before paying, per Otterbein's student media list of Uptown Westerville discounts.",
+              "details": "Mention the discount and show your Otterbein student ID before paying.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
@@ -1832,7 +1832,7 @@
                 "Sun"
               ],
               "title": "10% off with Otterbein student ID",
-              "details": "Mention the discount and show a student ID before paying, per Otterbein's student media list of Uptown Westerville discounts.",
+              "details": "Mention the discount and show your Otterbein student ID before paying.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.tandcmedia.org/article/2024/02/uptown-westerville-discounts-2024",
@@ -1862,7 +1862,7 @@
                 "Sun"
               ],
               "title": "10% off with Otterbein student ID",
-              "details": "10% student discount per Otterbein student media's 2020 Uptown list; Whit's is also on the 2024 list.",
+              "details": "10% student discount with an Otterbein student ID. Listed in 2020 and again in 2024; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.tandcmedia.org/article/2020/01/gpzmscavxluiz6t",
@@ -1889,8 +1889,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Happy hour: $2 off starters",
-              "details": "Monday-Friday 2-7 PM at all locations: all starters $2 off (excluding appetizer specials), plus drink specials.",
+              "title": "$2 off starters at happy hour",
+              "details": "Monday-Friday 2-7 p.m. at all locations: all starters $2 off (excluding appetizer specials), plus drink specials.",
               "price": "$2 off",
               "studentOnly": false,
               "sourceUrl": "https://www.oldbagofnails.com/menu/ohio",
@@ -1942,8 +1942,8 @@
                 "Fri",
                 "Sat"
               ],
-              "title": "Happy hour: $2 off shareables",
-              "details": "Monday-Saturday 3-6 PM: $2 off shareables, plus drink specials.",
+              "title": "$2 off shareables at happy hour",
+              "details": "Monday-Saturday 3-6 p.m.: $2 off shareables, plus drink specials.",
               "price": "$2 off",
               "studentOnly": false,
               "sourceUrl": "https://www.highbankco.com/westerville",
@@ -1982,8 +1982,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Happy hour: $4 small plates",
-              "details": "Monday-Friday 3-6 PM: $4 gyoza, edamame, miso soup, steamed bun, nori fries or curry tofu.",
+              "title": "$4 small plates at happy hour",
+              "details": "Monday-Friday 3-6 p.m.: $4 gyoza, edamame, miso soup, steamed bun, nori fries or curry tofu.",
               "price": "$4",
               "studentOnly": false,
               "sourceUrl": "https://ampersandasiansupperclub.com/happy-hour/",
@@ -2018,8 +2018,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "Tuesday special: chicken salad sandwich $9.89",
-              "details": "Daily special served with your choice of side.",
+              "title": "$9.89 chicken salad sandwich Tuesday",
+              "details": "Tuesday special, served with your choice of side.",
               "price": "$9.89",
               "studentOnly": false,
               "sourceUrl": "https://www.westervillegrill.com/",
@@ -2029,8 +2029,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Wednesday special: Santa Fe salad $11.49",
-              "details": "Daily special: tossed salad with grilled chicken, corn salsa, black beans and chipotle ranch.",
+              "title": "$11.49 Santa Fe salad Wednesday",
+              "details": "Wednesday special: tossed salad with grilled chicken, corn salsa, black beans and chipotle ranch.",
               "price": "$11.49",
               "studentOnly": false,
               "sourceUrl": "https://www.westervillegrill.com/",
@@ -2040,8 +2040,8 @@
               "days": [
                 "Thu"
               ],
-              "title": "Thursday special: sloppy joe $9.99",
-              "details": "Daily special served with your choice of side.",
+              "title": "$9.99 sloppy joe Thursday",
+              "details": "Thursday special, served with your choice of side.",
               "price": "$9.99",
               "studentOnly": false,
               "sourceUrl": "https://www.westervillegrill.com/",
@@ -2051,8 +2051,8 @@
               "days": [
                 "Fri"
               ],
-              "title": "Friday special: tuna salad sandwich $9.99",
-              "details": "Daily special served with your choice of side.",
+              "title": "$9.99 tuna salad sandwich Friday",
+              "details": "Friday special, served with your choice of side.",
               "price": "$9.99",
               "studentOnly": false,
               "sourceUrl": "https://www.westervillegrill.com/",
@@ -2568,7 +2568,7 @@
                 "Mon"
               ],
               "title": "Free appetizer with 2 burgers or sandwiches",
-              "details": "Monday 4-8 PM: free appetizer with the purchase of 2 burgers or sandwiches.",
+              "details": "Monday 4-8 p.m.: free appetizer with the purchase of 2 burgers or sandwiches.",
               "price": "Free app",
               "studentOnly": false,
               "sourceUrl": "https://hamburgerinndiner.com/specials",
@@ -2578,8 +2578,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "$10 Sandwich Tuesday",
-              "details": "Tuesday 4-8 PM: any sub or sandwich $10 (excludes Reuben and fish sandwich).",
+              "title": "$10 sandwich Tuesday",
+              "details": "Tuesday 4-8 p.m.: any sub or sandwich $10 (excludes Reuben and fish sandwich).",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://hamburgerinndiner.com/specials",
@@ -2589,8 +2589,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Half Price Burgers",
-              "details": "Wednesday 4-8 PM: half price burgers.",
+              "title": "Half-price burgers",
+              "details": "Wednesday 4-8 p.m.: half-price burgers.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://hamburgerinndiner.com/specials",
@@ -2601,7 +2601,7 @@
                 "Thu"
               ],
               "title": "Free cinnamon rolls with $25 purchase",
-              "details": "Thursday 4-8 PM: free cinnamon rolls with a $25 purchase.",
+              "details": "Thursday 4-8 p.m.: free cinnamon rolls with a $25 purchase.",
               "price": "Free",
               "studentOnly": false,
               "sourceUrl": "https://hamburgerinndiner.com/specials",
@@ -2751,7 +2751,7 @@
                 "Sun"
               ],
               "title": "10% off with OWU ID",
-              "details": "10% discount when presenting an Ohio Wesleyan ID. From an undated Ohio Wesleyan post; confirm before relying on it.",
+              "details": "10% off when you show an Ohio Wesleyan ID. Source is undated; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
@@ -2781,7 +2781,7 @@
                 "Sun"
               ],
               "title": "5% off with OWU ID",
-              "details": "5% discount when presenting an Ohio Wesleyan ID. From an undated Ohio Wesleyan post; confirm before relying on it.",
+              "details": "5% off when you show an Ohio Wesleyan ID. Source is undated; confirm before you go.",
               "price": "5% off",
               "studentOnly": true,
               "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
@@ -2811,7 +2811,7 @@
                 "Sun"
               ],
               "title": "10% off with OWU ID",
-              "details": "10% discount when presenting an Ohio Wesleyan ID. From an undated Ohio Wesleyan post; confirm before relying on it.",
+              "details": "10% off when you show an Ohio Wesleyan ID. Source is undated; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
@@ -2841,7 +2841,7 @@
                 "Sun"
               ],
               "title": "10% off with OWU ID",
-              "details": "10% discount when presenting an Ohio Wesleyan ID. From an undated Ohio Wesleyan post; confirm before relying on it.",
+              "details": "10% off when you show an Ohio Wesleyan ID. Source is undated; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://sites.owu.edu/daily/?p=85632",
@@ -2871,7 +2871,7 @@
                 "Sun"
               ],
               "title": "Free chips with OWU ID",
-              "details": "Free bag of chips with a sandwich when presenting an Ohio Wesleyan ID. From an undated Ohio Wesleyan post; confirm before relying on it.",
+              "details": "Free bag of chips with a sandwich when you show an Ohio Wesleyan ID. Source is undated; confirm before you go.",
               "price": "Free chips",
               "studentOnly": true,
               "sourceUrl": "https://sites.owu.edu/daily/?p=85632",

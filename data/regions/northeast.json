@@ -46,7 +46,7 @@
           "deals": []
         },
         {
-          "name": "Guys Pizza Co.",
+          "name": "Guy's Pizza Co.",
           "category": "Pizza",
           "local": true,
           "signature": false,
@@ -208,7 +208,7 @@
           "signature": false,
           "address": "1836 Euclid Ave, Cleveland, OH",
           "website": "https://rascalhouse.com/",
-          "blurb": "Cleveland pizza chain described by the CSU law school guide as a CSU pizza hang-out.",
+          "blurb": "Cleveland pizza chain known as a Cleveland State pizza hangout.",
           "price": "$",
           "sourceUrl": "https://www.law.csuohio.edu/sites/default/files/academics/orientation/restaurant_guide-summer_2016.pdf",
           "deals": [
@@ -223,7 +223,7 @@
                 "Sun"
               ],
               "title": "$3 off two medium pizzas (pickup)",
-              "details": "Order two medium pizzas for pickup and save $3, listed under Daily Specials on the downtown online ordering menu.",
+              "details": "Save $3 when you order two medium pizzas for pickup. Look under Daily Specials on the downtown online ordering menu.",
               "price": "$3 off",
               "studentOnly": false,
               "sourceUrl": "https://rascalhouse.orderexperience.net/rascal_house/menu",
@@ -238,7 +238,7 @@
           "signature": false,
           "address": "",
           "website": "https://drink.brewdog.com/cleveland",
-          "blurb": "Brewpub listing a standing Tuesday taco special.",
+          "blurb": "Brewpub with a standing Tuesday taco special.",
           "price": "$$",
           "sourceUrl": "https://drink.brewdog.com/cleveland",
           "deals": [
@@ -246,8 +246,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "$3 Taco Tuesday",
-              "details": "$3 tacos every Tuesday, per the bar's own site.",
+              "title": "$3 taco Tuesday",
+              "details": "$3 tacos every Tuesday.",
               "price": "$3",
               "studentOnly": false,
               "sourceUrl": "https://drink.brewdog.com/cleveland",
@@ -257,7 +257,7 @@
               "days": [
                 "Wed"
               ],
-              "title": "$1 Wings Wednesday",
+              "title": "$1 wing Wednesday",
               "details": "Wings for $1 apiece every Wednesday at the Cleveland location.",
               "price": "$1",
               "studentOnly": false,
@@ -352,7 +352,7 @@
               "days": [
                 "Tue"
               ],
-              "title": "$2 Tacos Tuesday",
+              "title": "$2 taco Tuesday",
               "details": "$2 tacos on Tuesdays.",
               "price": "$2",
               "studentOnly": false,
@@ -380,7 +380,7 @@
                 "Fri"
               ],
               "title": "Half-price appetizers happy hour",
-              "details": "50% off appetizers (and all liquor, beer and wine) at the bar only, Tuesday-Friday 3-5 PM.",
+              "details": "50% off appetizers, plus all liquor, beer and wine, at the bar only, Tuesday-Friday 3-5 PM.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://thedriftwoodgroup.com/restaurants/republic-food-drink/",
@@ -430,8 +430,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "$12 Tuesday: 3 tacos + a drink",
-              "details": "Three tacos and a soft drink for $12 on Tuesdays (excludes lengua and seafood); in-person orders only.",
+              "title": "$12 for 3 tacos and a drink Tuesday",
+              "details": "Three tacos and a soft drink for $12 on Tuesdays. In-person orders only; excludes lengua and seafood.",
               "price": "$12",
               "studentOnly": false,
               "sourceUrl": "https://cilantrotaqueria.com/",
@@ -442,7 +442,7 @@
                 "Mon"
               ],
               "title": "$8.99 bowls and burritos Monday",
-              "details": "$8.99 bowls and burritos on Mondays; in-person orders only, excludes lengua and seafood.",
+              "details": "$8.99 bowls and burritos on Mondays. In-person orders only; excludes lengua and seafood.",
               "price": "$8.99",
               "studentOnly": false,
               "sourceUrl": "https://cilantrotaqueria.com/",
@@ -453,7 +453,7 @@
                 "Wed"
               ],
               "title": "$8.99 quesadillas Wednesday",
-              "details": "$8.99 quesadillas on Wednesdays; in-person orders only, excludes lengua and seafood.",
+              "details": "$8.99 quesadillas on Wednesdays. In-person orders only; excludes lengua and seafood.",
               "price": "$8.99",
               "studentOnly": false,
               "sourceUrl": "https://cilantrotaqueria.com/",
@@ -464,7 +464,7 @@
                 "Sun"
               ],
               "title": "$12.99 fajitas Sunday",
-              "details": "$12.99 fajitas on Sundays; in-person orders only, excludes lengua and seafood.",
+              "details": "$12.99 fajitas on Sundays. In-person orders only; excludes lengua and seafood.",
               "price": "$12.99",
               "studentOnly": false,
               "sourceUrl": "https://cilantrotaqueria.com/",
@@ -479,7 +479,7 @@
           "signature": false,
           "address": "11409 Euclid Ave, Cleveland, OH",
           "website": "https://tacologist.net",
-          "blurb": "Tacos, tequila and margaritas spot on Euclid Avenue in University Circle's Uptown.",
+          "blurb": "Taco, tequila and margarita spot on Euclid Avenue in University Circle's Uptown.",
           "price": "$$",
           "sourceUrl": "https://www.yelp.com/biz/tacologist-tacos-tequila-margaritas-cleveland-3",
           "deals": [
@@ -695,8 +695,8 @@
                 "Wed",
                 "Thu"
               ],
-              "title": "$5 off gourmet large pizzas",
-              "details": "$5 off any gourmet large pizza, listed for Wednesday and Thursday, 11 AM-9 PM.",
+              "title": "$5 off large gourmet pizzas",
+              "details": "$5 off any large gourmet pizza on Wednesdays and Thursdays, 11 AM-9 PM.",
               "price": "$5 off",
               "studentOnly": false,
               "sourceUrl": "https://lapizzerialittleitaly.com/specials",
@@ -759,7 +759,7 @@
           "signature": false,
           "address": "11444 Uptown Ave, Cleveland, OH 44106",
           "website": "https://www.mitchellshomemade.com/",
-          "blurb": "Cleveland ice cream maker handcrafting small batches with local grass-fed dairy; Uptown scoop shop.",
+          "blurb": "Cleveland ice cream maker handcrafting small batches with local grass-fed dairy, with a scoop shop in Uptown.",
           "price": "$",
           "sourceUrl": "https://www.universitycircle.org/destinations/mitchells-ice-cream",
           "deals": []
@@ -859,7 +859,7 @@
           "signature": false,
           "address": "11300 Juniper Rd, Cleveland, OH 44106",
           "website": "https://www.uc-coffeehouse.com/",
-          "blurb": "Coffee shop in a full house on Juniper Road that is popular for studying.",
+          "blurb": "Coffee shop that fills a whole house on Juniper Road and is popular for studying.",
           "price": "$",
           "sourceUrl": "https://www.universitycircle.org/destinations/the-coffee-house-at-university-circle",
           "deals": []
@@ -871,7 +871,7 @@
           "signature": false,
           "address": "12207 Mayfield Road, Cleveland, OH 44106",
           "website": "",
-          "blurb": "Trattoria Roman Garden has served Italian food in Little Italy since 1984.",
+          "blurb": "Italian restaurant in Cleveland's Little Italy.",
           "price": "$$$",
           "sourceUrl": "https://www.universitycircle.org/destinations/trattoria-on-the-hill",
           "deals": []
@@ -967,7 +967,7 @@
           "signature": false,
           "address": "12038 Mayfield Rd, Cleveland, OH 44106",
           "website": "https://agostinosbistroandpub.com/",
-          "blurb": "Bistro and pub listed in the Little Italy merchant directory.",
+          "blurb": "Bistro and pub in Little Italy.",
           "price": "$$",
           "sourceUrl": "https://littleitalycle.com/shop-dine-drink/agostinos-bistro-and-pub/",
           "deals": []
@@ -1948,7 +1948,7 @@
                 "Tue"
               ],
               "title": "Tuesday burger with fries",
-              "details": "Burger with fries $10.99 (limit 6 toppings); smaller 5 oz version $8.99. Listed on the weekly specials page, subject to change.",
+              "details": "Tuesdays: burger with fries for $10.99 (limit 6 toppings), or a smaller 5 oz version for $8.99. Subject to change.",
               "price": "$8.99",
               "studentOnly": false,
               "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
@@ -1963,7 +1963,7 @@
                 "Fri"
               ],
               "title": "$8.99 weekday breakfast special",
-              "details": "7-10:30 AM weekdays: 2 eggs, hash browns or home fries, a breakfast meat and toast, French toast or pancakes for $8.99 (subject to change).",
+              "details": "Weekdays 7-10:30 AM: two eggs, hash browns or home fries, a breakfast meat, and toast, French toast or pancakes for $8.99. Subject to change.",
               "price": "$8.99",
               "studentOnly": false,
               "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
@@ -1973,8 +1973,8 @@
               "days": [
                 "Mon"
               ],
-              "title": "Flatbread Monday and $9.99 boneless wing basket",
-              "details": "Mondays: $2 off any hand-pressed flatbread, a 6-piece boneless wing basket with fries and coleslaw for $9.99, and the Reuben for $11.99 (subject to change).",
+              "title": "$2 off flatbreads, $9.99 wing basket Monday",
+              "details": "Mondays: $2 off any hand-pressed flatbread, a 6-piece boneless wing basket with fries and coleslaw for $9.99, and the Reuben for $11.99. Subject to change.",
               "price": "$2 off",
               "studentOnly": false,
               "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
@@ -1985,7 +1985,7 @@
                 "Wed"
               ],
               "title": "$13.99 BBQ ribs Wednesday",
-              "details": "St. Louis slow-smoked BBQ ribs with fries, garlic Texas toast and coleslaw for $13.99; 4-piece chicken tenders meal $10.99 (subject to change).",
+              "details": "St. Louis slow-smoked BBQ ribs with fries, garlic Texas toast and coleslaw for $13.99, or a 4-piece chicken tenders meal for $10.99. Subject to change.",
               "price": "$13.99",
               "studentOnly": false,
               "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
@@ -1996,7 +1996,7 @@
                 "Thu"
               ],
               "title": "$10.49 bacon cheeseburger Thursday",
-              "details": "1/3 lb bacon cheeseburger with fries for $10.49, limit 6 toppings (subject to change).",
+              "details": "1/3 lb bacon cheeseburger with fries for $10.49 (limit 6 toppings). Subject to change.",
               "price": "$10.49",
               "studentOnly": false,
               "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
@@ -2007,7 +2007,7 @@
                 "Fri"
               ],
               "title": "$14.99 Friday fish special",
-              "details": "Two pieces of hand-breaded fish, a biscuit and two sides for $14.99 (subject to change).",
+              "details": "Two pieces of hand-breaded fish, a biscuit and two sides for $14.99. Subject to change.",
               "price": "$14.99",
               "studentOnly": false,
               "sourceUrl": "https://mikesplacerestaurant.com/kent-mike-s-place-happy-hours-specials",
@@ -2034,7 +2034,7 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Happy hour: $1 off tacos, bowls and nachos",
+              "title": "$1 off tacos, bowls and nachos happy hour",
               "details": "Weekdays 3-6 PM: $1 off tacos, $1 off bowls and $1 off build-your-own nachos.",
               "price": "$1 off",
               "studentOnly": false,
@@ -2065,7 +2065,7 @@
           "signature": true,
           "address": "146 S Water St, Kent, OH 44240",
           "website": "https://www.guyspizzaco.com/locations/kent/",
-          "blurb": "Late-night pizza by the downtown bars; a past Best of Kent pizza winner.",
+          "blurb": "Late-night pizza shop by the downtown bars and a past Best of Kent pizza winner.",
           "price": "$",
           "sourceUrl": "https://www.guyspizzaco.com/locations/kent/",
           "deals": [
@@ -2080,7 +2080,7 @@
                 "Sun"
               ],
               "title": "Lunch specials before 2 PM",
-              "details": "Lunch specials every day before 2 PM (items not listed on the ordering page).",
+              "details": "Lunch specials every day before 2 PM. The specific items are not listed online.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://guyspizzakent.hrpos.heartland.us/",
@@ -2097,7 +2097,7 @@
                 "Sun"
               ],
               "title": "$10.99 large 1-topping pizza",
-              "details": "Large one-topping pizza for $10.99, all day every day, per the shop's Threads page.",
+              "details": "Large one-topping pizza for $10.99, all day every day.",
               "price": "$10.99",
               "studentOnly": false,
               "sourceUrl": "https://www.threads.com/@guyspizzacokent",
@@ -2112,7 +2112,7 @@
           "signature": true,
           "address": "107 S Depeyster St, Kent, OH 44240",
           "website": "https://eurogyro.com/locations/eurogyro-kent/",
-          "blurb": "Gyros and pizza open late; voted Best Late Night Snack in Best of Kent 2026.",
+          "blurb": "Late-night gyro and pizza shop voted Best Late Night Snack in Best of Kent 2026.",
           "price": "$",
           "sourceUrl": "https://eurogyro.com/locations/eurogyro-kent/",
           "deals": [
@@ -2120,7 +2120,7 @@
               "days": [
                 "Tue"
               ],
-              "title": "2 for Tuesday gyros",
+              "title": "$10.99 two-for-Tuesday gyros",
               "details": "Two gyros for $10.99 on Tuesdays.",
               "price": "$10.99",
               "studentOnly": false,
@@ -2131,8 +2131,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Wacky Wednesday pizza",
-              "details": "Large one-item pizza for $7.99 on Wednesdays, dine-in or pick-up only.",
+              "title": "$7.99 Wacky Wednesday pizza",
+              "details": "Large one-item pizza for $7.99 on Wednesdays, dine-in or pickup only.",
               "price": "$7.99",
               "studentOnly": false,
               "sourceUrl": "https://eurogyro.com/euro-gyro-happenings/",
@@ -2162,7 +2162,7 @@
                 "Sun"
               ],
               "title": "Rotating daily sandwich special",
-              "details": "Specials rotate; the deli says to stop in or check its Facebook page for the day's special. Open daily 11-5, Fri and Sat until 7.",
+              "details": "The special rotates, so stop in or check the deli's Facebook page for the day's special. Open daily 11-5, Friday and Saturday until 7.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.franklinsquaredeli.com/",
@@ -2177,7 +2177,7 @@
           "signature": false,
           "address": "152 Franklin Ave, Kent, OH 44240",
           "website": "https://overeasyatthedepot.com/",
-          "blurb": "Breakfast and lunch in Kent's old train depot; Best Breakfast in Best of Kent 2026.",
+          "blurb": "Breakfast and lunch spot in Kent's old train depot, winner of Best Breakfast in Best of Kent 2026.",
           "price": "$$",
           "sourceUrl": "https://www.tripadvisor.com/Restaurant_Review-g50499-d19436931-Reviews-Over_Easy_At_The_Depot-Kent_Ohio.html",
           "deals": []
@@ -2237,7 +2237,7 @@
           "signature": false,
           "address": "319 W Main St, Kent, OH 44240",
           "website": "https://wildgoatscafe.com/",
-          "blurb": "Cafe on West Main Street listed in the Destination Kent dining guide.",
+          "blurb": "Cafe on West Main Street.",
           "price": "$$",
           "sourceUrl": "https://destinationkent.com/kent-dining-2/",
           "deals": [
@@ -2246,7 +2246,7 @@
                 "Mon"
               ],
               "title": "Kids eat free Monday",
-              "details": "Weekday special: kids eat free all day on Mondays.",
+              "details": "Kids eat free all day on Mondays.",
               "price": "Free kids meal",
               "studentOnly": false,
               "sourceUrl": "https://wildgoatscafe.com/specials",
@@ -2257,7 +2257,7 @@
                 "Tue"
               ],
               "title": "Burger special Tuesday",
-              "details": "Weekday special: burger special all day on Tuesdays (price not listed).",
+              "details": "Burger special all day on Tuesdays (price not listed).",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://wildgoatscafe.com/specials",
@@ -2312,7 +2312,7 @@
           "signature": false,
           "address": "163 W Erie St, Kent, OH 44240",
           "website": "https://www.venicekent.com/",
-          "blurb": "Downtown Kent bar listed by Destination Kent.",
+          "blurb": "Bar in downtown Kent.",
           "price": "$",
           "sourceUrl": "https://destinationkent.com/kent-bars/",
           "deals": []
@@ -2453,7 +2453,7 @@
                 "Tue"
               ],
               "title": "$7.99 12-inch pizza Tuesday",
-              "details": "12-inch traditional pizza for $7.99 on Tuesdays; toppings extra, no limit.",
+              "details": "12-inch traditional pizza for $7.99 on Tuesdays. Toppings are extra, with no limit.",
               "price": "$7.99",
               "studentOnly": false,
               "sourceUrl": "https://www.belleriakent.com/",
@@ -2463,8 +2463,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "$16.99 chicken parmesan dinner",
-              "details": "Wednesday special: chicken parmesan dinner with salad and dinner roll.",
+              "title": "$16.99 chicken parmesan dinner Wednesday",
+              "details": "Wednesdays: chicken parmesan dinner with salad and a dinner roll for $16.99.",
               "price": "$16.99",
               "studentOnly": false,
               "sourceUrl": "https://www.belleriakent.com/",
@@ -2485,8 +2485,8 @@
               "days": [
                 "Fri"
               ],
-              "title": "Two 12-inch pizzas for $22.99",
-              "details": "Friday special: two 12-inch traditional pizzas for $22.99; toppings extra, no specialty pizzas.",
+              "title": "$22.99 two 12-inch pizzas Friday",
+              "details": "Fridays: two 12-inch traditional pizzas for $22.99. Toppings are extra; no specialty pizzas.",
               "price": "$22.99",
               "studentOnly": false,
               "sourceUrl": "https://www.belleriakent.com/",
@@ -2496,8 +2496,8 @@
               "days": [
                 "Sat"
               ],
-              "title": "Two 1-topping pizzas for $25.99",
-              "details": "Saturday special: two 12-inch traditional pizzas with one topping each.",
+              "title": "$25.99 two 1-topping pizzas Saturday",
+              "details": "Saturdays: two 12-inch traditional pizzas with one topping each for $25.99.",
               "price": "$25.99",
               "studentOnly": false,
               "sourceUrl": "https://www.belleriakent.com/",
@@ -2508,7 +2508,7 @@
                 "Sun"
               ],
               "title": "$15.99 lasagna dinner Sunday",
-              "details": "Homemade lasagna with salad and dinner roll on Sundays.",
+              "details": "Homemade lasagna with salad and a dinner roll for $15.99 on Sundays.",
               "price": "$15.99",
               "studentOnly": false,
               "sourceUrl": "https://www.belleriakent.com/",
@@ -2562,7 +2562,7 @@
                 "Sun"
               ],
               "title": "Early bird: no table fee",
-              "details": "No table fee during the first two hours of each day's opening.",
+              "details": "No table fee for the first two hours after opening each day.",
               "price": "Free table",
               "studentOnly": false,
               "sourceUrl": "https://www.boardandbevy.com/specials",
@@ -2583,8 +2583,8 @@
               "days": [
                 "Thu"
               ],
-              "title": "College ID Night",
-              "details": "Thursdays: no table fee with the purchase of a food item from the Starters or Hot Vittles menu when you show a college ID.",
+              "title": "College ID night: no table fee",
+              "details": "Thursdays: no table fee when you show a college ID and buy a food item from the Starters or Hot Vittles menu.",
               "price": "Free table",
               "studentOnly": true,
               "sourceUrl": "https://www.boardandbevy.com/specials",
@@ -2667,7 +2667,7 @@
               "days": [
                 "Tue"
               ],
-              "title": "$10 burger Tuesdays",
+              "title": "$10 burger Tuesday",
               "details": "Gigi's burgers are $10 all day on Tuesdays.",
               "price": "$10",
               "studentOnly": false,
@@ -2684,8 +2684,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "Aperitivo happy hour: $14 pizzas",
-              "details": "Happy hour 3-6 PM (all night from 3 PM on Thursdays): all pizzas $14, plus $9 arancini, meatball and stuffed peppers and $6 garlic cheese bread.",
+              "title": "$14 pizzas at aperitivo happy hour",
+              "details": "Happy hour 3-6 PM (all night from 3 PM on Thursdays): all pizzas $14, plus $9 arancini, meatball and stuffed peppers, and $6 garlic cheese bread.",
               "price": "$14 pizzas",
               "studentOnly": false,
               "sourceUrl": "https://gigiskent.com/menu/",
@@ -2828,7 +2828,7 @@
               "days": [
                 "Mon"
               ],
-              "title": "BOGO half-off fry bowls",
+              "title": "Buy one fry bowl, get one half off",
               "details": "Mondays: buy one fry bowl (bacon, cheddar or buffalo chicken) and get the second for 50% off.",
               "price": "50% off 2nd",
               "studentOnly": false,
@@ -2839,7 +2839,7 @@
               "days": [
                 "Tue"
               ],
-              "title": "2 chicken tender baskets for $15.99",
+              "title": "$15.99 for 2 chicken tender baskets",
               "details": "Tuesdays: two chicken tender baskets with dipping sauce for $15.99.",
               "price": "$15.99",
               "studentOnly": false,
@@ -2861,7 +2861,7 @@
               "days": [
                 "Thu"
               ],
-              "title": "2 specialty hot dogs for $9.99",
+              "title": "$9.99 for 2 specialty hot dogs",
               "details": "Thursdays: any two specialty hot dogs for $9.99.",
               "price": "$9.99",
               "studentOnly": false,
@@ -3047,7 +3047,7 @@
               "days": [
                 "Wed"
               ],
-              "title": "$7 burger Wednesdays",
+              "title": "$7 burger Wednesday",
               "details": "$7 burger every Wednesday from 4 to 7 PM.",
               "price": "$7",
               "studentOnly": false,
@@ -3079,7 +3079,7 @@
                 "Sun"
               ],
               "title": "$8 student grilled cheese meal",
-              "details": "$8 grilled cheese meal with goldfish crackers and a soft drink for students while school is in session.",
+              "details": "$8 grilled cheese meal with Goldfish crackers and a soft drink for students while school is in session.",
               "price": "$8",
               "studentOnly": true,
               "sourceUrl": "https://www.downtownakron.com/event/student-specials",
@@ -3102,8 +3102,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "10 wings for $10 Wednesday",
-              "details": "10 wings for $10 on Wednesdays; specials subject to change based on availability.",
+              "title": "$10 for 10 wings Wednesday",
+              "details": "10 wings for $10 on Wednesdays. Specials may change based on availability.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
@@ -3114,7 +3114,7 @@
                 "Mon"
               ],
               "title": "$2 off specialty pizzas Monday",
-              "details": "$2 off any specialty pizza plus a featured sandwich with fries for $9.99, 11 AM-8 PM.",
+              "details": "Mondays 11 AM-8 PM: $2 off any specialty pizza, plus a featured sandwich with fries for $9.99.",
               "price": "$2 off",
               "studentOnly": false,
               "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
@@ -3125,7 +3125,7 @@
                 "Tue"
               ],
               "title": "$9.99 large pizza Tuesday",
-              "details": "One-topping large 16-inch pizza for $9.99 plus a featured sandwich with fries for $9.99, 11 AM-8 PM.",
+              "details": "Tuesdays 11 AM-8 PM: large 16-inch one-topping pizza for $9.99, plus a featured sandwich with fries for $9.99.",
               "price": "$9.99",
               "studentOnly": false,
               "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
@@ -3136,8 +3136,8 @@
                 "Wed",
                 "Fri"
               ],
-              "title": "2 large pizzas for $19.99",
-              "details": "Two large one-topping 16-inch pizzas for $19.99 plus a featured sandwich with fries for $9.99, 11 AM-8 PM Wednesdays and Fridays.",
+              "title": "$19.99 for 2 large pizzas",
+              "details": "Wednesdays and Fridays 11 AM-8 PM: two large 16-inch one-topping pizzas for $19.99, plus a featured sandwich with fries for $9.99.",
               "price": "$19.99",
               "studentOnly": false,
               "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
@@ -3148,7 +3148,7 @@
                 "Thu"
               ],
               "title": "$6.99 medium pizza Thursday",
-              "details": "Medium one-topping 12-inch pizza for $6.99 plus a featured sandwich with fries for $9.99, 11 AM-8 PM.",
+              "details": "Thursdays 11 AM-8 PM: medium 12-inch one-topping pizza for $6.99, plus a featured sandwich with fries for $9.99.",
               "price": "$6.99",
               "studentOnly": false,
               "sourceUrl": "https://mrzubs.com/akron-highland-square-mr-zubs-deli-and-bar-happy-hours-specials",
@@ -3286,7 +3286,7 @@
                 "Sun"
               ],
               "title": "20% off with student ID",
-              "details": "20% off when a student ID is shown.",
+              "details": "20% off when you show a student ID.",
               "price": "20% off",
               "studentOnly": true,
               "sourceUrl": "https://www.downtownakron.com/event/student-specials",
@@ -3461,7 +3461,7 @@
                 "Sun"
               ],
               "title": "20% off pretzels or wings with UA ID",
-              "details": "20% off an order of pretzels or wings with a valid University of Akron ID; requires an additional appetizer, sandwich or entree purchase; dine-in only.",
+              "details": "20% off an order of pretzels or wings with a valid University of Akron ID. Dine-in only, and you must also buy an appetizer, sandwich or entree.",
               "price": "20% off",
               "studentOnly": true,
               "sourceUrl": "https://www.downtownakron.com/event/student-specials",
@@ -3528,7 +3528,7 @@
                 "Thu"
               ],
               "title": "$10 student taco combo",
-              "details": "Tacos combo with a drink for $10 for students, all day Sunday, Tuesday and Thursday; listed as running August 15 to December 15.",
+              "details": "Taco combo with a drink for $10 for students, all day Sunday, Tuesday and Thursday. Listed as running August 15 to December 15.",
               "price": "$10",
               "studentOnly": true,
               "sourceUrl": "https://www.downtownakron.com/event/student-specials",
@@ -3635,7 +3635,7 @@
               "days": [
                 "Tue"
               ],
-              "title": "2-4-10 Tuesday pints",
+              "title": "$10 for 2 pints Tuesday",
               "details": "Two pints of ice cream for $10 every Tuesday.",
               "price": "$10",
               "studentOnly": false,
@@ -3663,7 +3663,7 @@
           "signature": false,
           "address": "45 E Market St, Akron, OH 44308",
           "website": "https://www.circleoffifthsakron.com/",
-          "blurb": "Cocktail bar with a food menu of sandwiches and small plates, open Wednesday through Saturday.",
+          "blurb": "Cocktail bar with a food menu of sandwiches and small plates.",
           "price": "$$",
           "sourceUrl": "https://www.downtownakron.com/go/the-circle-of-5ths",
           "deals": [
@@ -3676,7 +3676,7 @@
                 "Sat"
               ],
               "title": "$2 off sandwiches at bar happy hour",
-              "details": "Food happy hour at the bar only: all sandwiches $2 off and $5 bar mix; menu lists Tue-Fri 5-7 PM and Fri-Sat 10-11 PM.",
+              "details": "Happy hour at the bar only: $2 off all sandwiches and $5 bar mix, Tuesday-Friday 5-7 PM and Friday-Saturday 10-11 PM.",
               "price": "$2 off",
               "studentOnly": false,
               "sourceUrl": "https://www.circleoffifthsakron.com/menus",
@@ -3699,7 +3699,7 @@
               "days": [
                 "Thu"
               ],
-              "title": "$13 steak night",
+              "title": "$13 steak night Thursday",
               "details": "Every Thursday: steak dinner with a baked potato and side salad for $13.",
               "price": "$13",
               "studentOnly": false,
@@ -4617,7 +4617,7 @@
           "signature": true,
           "address": "318 Elm St, Youngstown, OH",
           "website": "https://bullandbeargrille.com/",
-          "blurb": "Tavern on Elm Street at the edge of YSU's campus, in the former Inner Circle Pizza, opened August 2024.",
+          "blurb": "Tavern on Elm Street at the edge of YSU's campus that opened in August 2024 in the former Inner Circle Pizza.",
           "price": "$$",
           "sourceUrl": "https://ysu.edu/kilcawley-center/dining-locations-where-you-can-pay-your-y-card",
           "deals": [
@@ -4632,7 +4632,7 @@
                 "Sun"
               ],
               "title": "$6 happy hour starters",
-              "details": "Dine-in happy hour 11 AM-6 PM Mon-Fri and 11 AM-2 PM Sat-Sun with $6 select starters (Bull Chips, queso dip, pierogi, cheese sticks, pickle chips, hot chips).",
+              "details": "Dine-in happy hour, 11 AM-6 PM Monday-Friday and 11 AM-2 PM Saturday-Sunday: $6 select starters (Bull Chips, queso dip, pierogi, cheese sticks, pickle chips, hot chips).",
               "price": "$6",
               "studentOnly": false,
               "sourceUrl": "https://bullandbeargrille.com/menu-happy-hour",
@@ -4659,7 +4659,7 @@
                 "Thu"
               ],
               "title": "$6.99 lunch specials",
-              "details": "Wraps with fries Mon, salads Tue, signature burgers with fries Wed, sandwiches with fries Thu. Source is undated; confirm before visiting.",
+              "details": "Wraps with fries on Monday, salads on Tuesday, signature burgers with fries on Wednesday and sandwiches with fries on Thursday. Source is undated; confirm before you go.",
               "price": "$6.99",
               "studentOnly": false,
               "sourceUrl": "https://thejambar.com/?p=85621",
@@ -4675,8 +4675,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "10% student discount",
-              "details": "10 percent off with a valid student ID. Source is undated; confirm before visiting.",
+              "title": "10% off with student ID",
+              "details": "10% off with a valid student ID. Source is undated; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://thejambar.com/?p=85621",
@@ -4691,7 +4691,7 @@
           "signature": true,
           "address": "17 W Federal St, Youngstown, OH 44503",
           "website": "https://avalondowntown.com/",
-          "blurb": "Downtown pizzeria known for Brier Hill pizza; accepts YSU Pete's Points.",
+          "blurb": "Downtown pizzeria known for Brier Hill pizza that accepts YSU Pete's Points.",
           "price": "$$",
           "sourceUrl": "https://book.toasttab.com/r/avalon-downtown-17-w-federal-street",
           "deals": [
@@ -4705,8 +4705,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "10% YSU student discount",
-              "details": "10% discount for all YSU students.",
+              "title": "10% off for YSU students",
+              "details": "10% off for all YSU students.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://thejambar.com/youngstown-restaurants-face-mixed-results/",
@@ -4757,7 +4757,7 @@
           "signature": false,
           "address": "3135 Belmont Ave, Youngstown, OH 44505",
           "website": "https://kravitzdeli.com/",
-          "blurb": "Deli on Belmont Avenue with daily specials and takeout, noted as good for YSU students.",
+          "blurb": "Deli on Belmont Avenue with daily specials and takeout, a good pick for YSU students.",
           "price": "$",
           "sourceUrl": "https://ysu.edu/international-programs-office/admitted-international-students/living-youngstown",
           "deals": []
@@ -4777,8 +4777,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "$10 Taco Tuesday",
-              "details": "$10 taco deal with tacos made to order every Tuesday.",
+              "title": "$10 taco Tuesday",
+              "details": "$10 taco deal, with tacos made to order, every Tuesday.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://www.varsityclubyoungstown.com/lineup/promotions/",
@@ -4788,8 +4788,8 @@
               "days": [
                 "Thu"
               ],
-              "title": "$10 Thursday wings and fries",
-              "details": "10 wings and fries for $10 with purchase of a drink on Thursdays; dine-in only.",
+              "title": "$10 wings and fries Thursday",
+              "details": "10 wings and fries for $10 with the purchase of a drink on Thursdays. Dine-in only.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://www.varsityclubyoungstown.com/lineup/promotions/",
@@ -4814,7 +4814,7 @@
                 "Wed"
               ],
               "title": "$11 Flatbread Fever Wednesday",
-              "details": "Wednesdays: choice of BBQ chicken, buffalo chicken or chicken and greens flatbread for $11 with purchase of a drink; dine-in only.",
+              "details": "Wednesdays: BBQ chicken, buffalo chicken or chicken and greens flatbread for $11 with the purchase of a drink. Dine-in only.",
               "price": "$11",
               "studentOnly": false,
               "sourceUrl": "https://www.varsityclubyoungstown.com/lineup/promotions/",
@@ -4865,7 +4865,7 @@
           "signature": false,
           "address": "372 W Rayen Ave, Youngstown, OH 44502",
           "website": "https://charliestaplespittboss.com/",
-          "blurb": "Southern-style barbecue paired with an esports gaming lounge; accepts Pete's Points.",
+          "blurb": "Southern-style barbecue spot with an esports gaming lounge that accepts Pete's Points.",
           "price": "$$",
           "sourceUrl": "https://exploremahoning.com/restaurant/charlie-staples-barbecue-pitt-boss-esports-lounge/",
           "deals": []
@@ -4937,7 +4937,7 @@
           "signature": false,
           "address": "215 Lincoln Ave, Youngstown, OH 44503",
           "website": "https://pressedcoffeebarandeatery.com/",
-          "blurb": "Campus coffee bar and eatery on Lincoln Avenue with baked goods and a full food menu; accepts Pete's Points.",
+          "blurb": "Campus coffee bar and eatery on Lincoln Avenue that serves baked goods and a full food menu and accepts Pete's Points.",
           "price": "$",
           "sourceUrl": "https://exploremahoning.com/restaurant/pressed-coffee-bar-eatery/",
           "deals": []
@@ -4997,7 +4997,7 @@
           "signature": false,
           "address": "460 E Federal St, Youngstown, OH 44503",
           "website": "https://penguincity.beer/",
-          "blurb": "Downtown brewery taproom whose in-house food truck is Suzie's gourmet hot dogs.",
+          "blurb": "Downtown brewery taproom with Suzie's gourmet hot dogs as its in-house food truck.",
           "price": "$$",
           "sourceUrl": "https://exploremahoning.com/restaurant/penguin-city-brewing-company/",
           "deals": []
@@ -5021,7 +5021,7 @@
           "signature": false,
           "address": "34 N Phelps St, Youngstown, OH",
           "website": "",
-          "blurb": "Phelps Street lounge and sports bar listed on the city's DORA map.",
+          "blurb": "Lounge and sports bar on Phelps Street.",
           "price": "$$",
           "sourceUrl": "https://youngstownohio.gov/sites/default/files/DORA%20Map%20Redesign%20NO%20BLEED.pdf",
           "deals": []

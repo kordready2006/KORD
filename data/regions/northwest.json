@@ -29,7 +29,7 @@
                 "Tue"
               ],
               "title": "$14 large pizza Tuesday",
-              "details": "On Tuesdays get any large pizza for $14; excludes split pizzas, 6-item max.",
+              "details": "On Tuesdays, get any large pizza for $14. Excludes split pizzas; 6-item max.",
               "price": "$14",
               "studentOnly": false,
               "sourceUrl": "https://campuspollyeyes.com/",
@@ -52,8 +52,8 @@
               "days": [
                 "Mon"
               ],
-              "title": "Monday Chicken Shawarma Meal",
-              "details": "Monday daily special: chicken shawarma meal.",
+              "title": "$13.99 chicken shawarma meal Monday",
+              "details": "Monday special: a chicken shawarma meal for $13.99.",
               "price": "$13.99",
               "studentOnly": false,
               "sourceUrl": "https://www.southside6.com/deals",
@@ -63,8 +63,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "Tuesday Two Jumbo Chili Dogs Meal",
-              "details": "Tuesday daily special: two jumbo chili dogs meal.",
+              "title": "$13.99 two jumbo chili dogs meal Tuesday",
+              "details": "Tuesday special: a meal with two jumbo chili dogs for $13.99.",
               "price": "$13.99",
               "studentOnly": false,
               "sourceUrl": "https://www.southside6.com/deals",
@@ -74,8 +74,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Wednesday Route 25 Burger Meal",
-              "details": "Wednesday daily special: Route 25 burger meal.",
+              "title": "$13.99 Route 25 burger meal Wednesday",
+              "details": "Wednesday special: a Route 25 burger meal for $13.99.",
               "price": "$13.99",
               "studentOnly": false,
               "sourceUrl": "https://www.southside6.com/deals",
@@ -85,8 +85,8 @@
               "days": [
                 "Thu"
               ],
-              "title": "Thursday Two Gyros",
-              "details": "Thursday daily special: two gyros.",
+              "title": "$19.99 two gyros Thursday",
+              "details": "Thursday special: two gyros for $19.99.",
               "price": "$19.99",
               "studentOnly": false,
               "sourceUrl": "https://www.southside6.com/deals",
@@ -96,8 +96,8 @@
               "days": [
                 "Fri"
               ],
-              "title": "Friday Fish & Fries",
-              "details": "Friday daily special: fish and fries.",
+              "title": "$18.99 fish and fries Friday",
+              "details": "Friday special: fish and fries for $18.99.",
               "price": "$18.99",
               "studentOnly": false,
               "sourceUrl": "https://www.southside6.com/deals",
@@ -107,8 +107,8 @@
               "days": [
                 "Sat"
               ],
-              "title": "Dollar Wing Day",
-              "details": "Wings $1.00 each on Saturdays for any quantity of 15 pieces or more; sauce is extra.",
+              "title": "$1 wings Saturday (15 or more)",
+              "details": "Wings are $1 each on Saturdays when you order 15 or more. Sauce is extra.",
               "price": "$1 per wing",
               "studentOnly": false,
               "sourceUrl": "https://www.southside6.com/deals",
@@ -142,8 +142,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Half-off sharables happy hour",
-              "details": "Wednesday happy hour 4-6 pm with half-off sharables. Dine-in only.",
+              "title": "Half-off shareables happy hour",
+              "details": "Half-off shareables during Wednesday happy hour, 4-6 p.m. Dine-in only.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.trottersbg.com/",
@@ -153,8 +153,8 @@
               "days": [
                 "Thu"
               ],
-              "title": "$10 Burger Night",
-              "details": "Choice of five never-frozen half-pound specialty burgers with hand-cut fries. Dine-in only.",
+              "title": "$10 burger night",
+              "details": "On Thursdays, choose from five never-frozen half-pound specialty burgers with hand-cut fries for $10. Dine-in only.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://www.trottersbg.com/",
@@ -196,7 +196,7 @@
                 "Sun"
               ],
               "title": "$6 happy hour apps",
-              "details": "Happy hour food special: $6 appetizers 3-5 p.m. every day (exclusions apply).",
+              "details": "$6 appetizers during happy hour, 3-5 p.m. every day. Exclusions apply.",
               "price": "$6",
               "studentOnly": false,
               "sourceUrl": "https://www.bgbecketts.com/specials",
@@ -207,7 +207,7 @@
                 "Sun"
               ],
               "title": "$11.99 open-faced roast beef Sunday",
-              "details": "Slow-roasted beef served open-faced on thick toast with mashed potatoes and bourbon gravy for $11.99. Minimum beverage purchase required; some days not available for carry-out.",
+              "details": "Slow-roasted beef served open-faced on thick toast with mashed potatoes and bourbon gravy for $11.99. Minimum beverage purchase required; not available for carryout on some days.",
               "price": "$11.99",
               "studentOnly": false,
               "sourceUrl": "https://www.bgbecketts.com/specials",
@@ -218,7 +218,7 @@
                 "Mon"
               ],
               "title": "$14.99 surf & turf Monday",
-              "details": "8 oz steak with four fried shrimp, fries and coleslaw for $14.99. Minimum beverage purchase required; some days not available for carry-out.",
+              "details": "An 8 oz steak with four fried shrimp, fries and coleslaw for $14.99. Minimum beverage purchase required; not available for carryout on some days.",
               "price": "$14.99",
               "studentOnly": false,
               "sourceUrl": "https://www.bgbecketts.com/specials",
@@ -229,7 +229,7 @@
                 "Tue"
               ],
               "title": "$16.99 perch dinner Tuesday",
-              "details": "Half-pound golden fried perch with tartar sauce, waffle fries and coleslaw for $16.99. Minimum beverage purchase required; some days not available for carry-out.",
+              "details": "Half-pound golden fried perch with tartar sauce, waffle fries and coleslaw for $16.99. Minimum beverage purchase required; not available for carryout on some days.",
               "price": "$16.99",
               "studentOnly": false,
               "sourceUrl": "https://www.bgbecketts.com/specials",
@@ -240,7 +240,7 @@
                 "Wed"
               ],
               "title": "$9.99 half rack ribs Wednesday",
-              "details": "Half rack of ribs $9.99 or full rack $15.99, served with fries and coleslaw. Minimum beverage purchase required; some days not available for carry-out.",
+              "details": "Half rack of ribs for $9.99 or full rack for $15.99, served with fries and coleslaw. Minimum beverage purchase required; not available for carryout on some days.",
               "price": "$9.99",
               "studentOnly": false,
               "sourceUrl": "https://www.bgbecketts.com/specials",
@@ -251,7 +251,7 @@
                 "Thu"
               ],
               "title": "$10.99 steak dinner Thursday",
-              "details": "Half-pound steak dinner $10.99 or one-pound $15.99, served with fries and coleslaw. Minimum beverage purchase required; some days not available for carry-out.",
+              "details": "Half-pound steak dinner for $10.99 or one-pound for $15.99, served with fries and coleslaw. Minimum beverage purchase required; not available for carryout on some days.",
               "price": "$10.99",
               "studentOnly": false,
               "sourceUrl": "https://www.bgbecketts.com/specials",
@@ -262,7 +262,7 @@
                 "Fri"
               ],
               "title": "$20.99 prime rib Friday",
-              "details": "Prime rib dinner with two house sides and soup for $20.99, after 5 p.m. while supplies last. Minimum beverage purchase required; some days not available for carry-out.",
+              "details": "Prime rib dinner with two house sides and soup for $20.99, after 5 p.m. while supplies last. Minimum beverage purchase required; not available for carryout on some days.",
               "price": "$20.99",
               "studentOnly": false,
               "sourceUrl": "https://www.bgbecketts.com/specials",
@@ -394,7 +394,7 @@
                 "Mon"
               ],
               "title": "99-cent boneless wings Monday",
-              "details": "Frickin' Daily Deal: 99-cent boneless Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Mondays: 99-cent boneless Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
               "price": "$0.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -405,7 +405,7 @@
                 "Tue"
               ],
               "title": "99-cent wings Tuesday",
-              "details": "Frickin' Daily Deal: 99-cent Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Tuesdays: 99-cent Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
               "price": "$0.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -416,7 +416,7 @@
                 "Wed"
               ],
               "title": "$9.99 sirloin steak dinner Wednesday",
-              "details": "Frickin' Daily Deal: $9.99 sirloin steak dinner. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Wednesdays: $9.99 sirloin steak dinner. Prices and participation vary by location; dine-in only.",
               "price": "$9.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -427,7 +427,7 @@
                 "Thu"
               ],
               "title": "$9.99 chicken chunks Thursday",
-              "details": "Frickin' Daily Deal: $9.99 Frickin' Chicken Chunks. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Thursdays: $9.99 Frickin' Chicken Chunks. Prices and participation vary by location; dine-in only.",
               "price": "$9.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -444,7 +444,7 @@
                 "Sun"
               ],
               "title": "Kids eat free",
-              "details": "Listed under every-day Frickin' Daily Deals: kids eat free. Prices and participation vary by location; dine-in only.",
+              "details": "Kids eat free every day as part of the Frickin' Daily Deals. Prices and participation vary by location; dine-in only.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -506,8 +506,8 @@
                 "Wed",
                 "Thu"
               ],
-              "title": "Happy hour: shareables buy one, get one 50% off",
-              "details": "Happy hour Monday-Thursday 5-7 p.m. with a shareables deal: buy one, get the second 50% off.",
+              "title": "BOGO 50% off shareables at happy hour",
+              "details": "Happy hour Monday-Thursday, 5-7 p.m.: buy one shareable, get the second 50% off. Source is from 2024; confirm before you go.",
               "price": "BOGO 50% off",
               "studentOnly": false,
               "sourceUrl": "https://bgfalconmedia.com/160499/news/the-bgsu-dining-experience/",
@@ -546,7 +546,7 @@
           "signature": true,
           "address": "203 N Main St, Bowling Green, OH 43402",
           "website": "https://www.bgpisanellos.com/",
-          "blurb": "Bowling Green staple since 1964 with dine-in, carry-out and free delivery including the BGSU campus.",
+          "blurb": "Bowling Green staple since 1964 with dine-in, carryout and free delivery, including to the BGSU campus.",
           "price": "$",
           "sourceUrl": "https://www.bgsu.edu/bg-city-tourism.html",
           "deals": []
@@ -581,7 +581,7 @@
                 "Thu"
               ],
               "title": "$10 happy hour appetizers",
-              "details": "Happy hour Tuesday-Thursday 4-6 p.m.: $10 appetizers (rustic platter, whipped feta with French baguette, naan-bread pizza sampler); also $2 off cocktails and wine.",
+              "details": "$10 appetizers (rustic platter, whipped feta with French baguette or naan-bread pizza sampler) during happy hour, Tuesday-Thursday 4-6 p.m. Cocktails and wine are also $2 off.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://www.theclaypotbistro.com/ourhappyhour",
@@ -908,7 +908,7 @@
           "signature": false,
           "address": "990 W Poe Rd, Suite 14, Bowling Green, OH 43402",
           "website": "https://bgsfrostyfare.com/",
-          "blurb": "Seasonal spot for ice cream and comfort food (closed for the winter until March 1).",
+          "blurb": "Seasonal spot for ice cream and comfort food, closed for the winter until March 1.",
           "price": "$",
           "sourceUrl": "https://bgsfrostyfare.com/",
           "deals": []
@@ -950,7 +950,7 @@
           "signature": false,
           "address": "7702 W Bancroft St, Toledo, OH 43617",
           "website": "",
-          "blurb": "Old-school pizza hangout making Myles-style pizza from the former Bowling Green favorite.",
+          "blurb": "Old-school pizza hangout making pizza in the style of Myles, the former Bowling Green favorite.",
           "price": "$$",
           "sourceUrl": "https://wtol.com/article/life/food/half-time-pizza-continues-the-legacy-of-old-school-bg-hangout/512-5a6d747f-2acf-49ad-ae49-b44b1f91d0d6",
           "deals": []
@@ -1025,7 +1025,7 @@
                 "Sun"
               ],
               "title": "10% off food with Rocket Card",
-              "details": "UToledo Discounts page lists 10% off all food purchases at the 3348 Secor Rd Packo's with a Rocket Card.",
+              "details": "10% off all food purchases at the 3348 Secor Rd Packo's with a UToledo Rocket Card.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
@@ -1054,8 +1054,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "20% off online orders (UToledo discount)",
-              "details": "UToledo Discounts page lists 20% off online orders at the 1440 Secor Rd Domino's using a promo code shown on that page; the code may change.",
+              "title": "20% off online orders with UToledo code",
+              "details": "20% off online orders at the 1440 Secor Rd Domino's with the promo code listed on the UToledo Discounts page. The code may change.",
               "price": "20% off",
               "studentOnly": true,
               "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
@@ -1190,7 +1190,7 @@
           "signature": false,
           "address": "3330 W Central Ave, Toledo, OH 43606",
           "website": "https://mypiada.com",
-          "blurb": "Ohio-born fast-casual chain for Italian wraps, pasta and salad bowls; shown with a logo on the UToledo Discounts page.",
+          "blurb": "Ohio-born fast-casual chain for Italian wraps, pasta and salad bowls.",
           "price": "$",
           "sourceUrl": "https://startpage.mapquest.com/us/ohio/piada-italian-street-food-364201516",
           "deals": [
@@ -1204,8 +1204,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "$8 entree + large drink with Rocket Card",
-              "details": "UToledo Rocket Card discount: any entree with a large fountain drink for $8. Valid 2-5 p.m. Monday through Sunday and all day Wednesday.",
+              "title": "$8 entree and large drink with Rocket Card",
+              "details": "Any entree with a large fountain drink for $8 with a UToledo Rocket Card. Valid 2-5 p.m. every day and all day Wednesday.",
               "price": "$8",
               "studentOnly": true,
               "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
@@ -1253,7 +1253,7 @@
                 "Mon"
               ],
               "title": "$6 Stube Burger Monday",
-              "details": "$6 Stube burger. Daily specials run until midnight, dine-in only.",
+              "details": "$6 Stube Burger on Mondays. Daily specials run until midnight; dine-in only.",
               "price": "$6",
               "studentOnly": false,
               "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
@@ -1264,7 +1264,7 @@
                 "Tue"
               ],
               "title": "Half-price tacos Tuesday",
-              "details": "Half-price The Joint tacos (orders of 3) and $1 tortilla chips & salsa on Tuesdays.",
+              "details": "Half-price The Joint tacos (orders of 3) and $1 tortilla chips and salsa on Tuesdays.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.bierstubetoledo.com/",
@@ -1275,7 +1275,7 @@
                 "Wed"
               ],
               "title": "Half-price hot dogs Wednesday",
-              "details": "Half-price hot dogs. Daily specials run until midnight, dine-in only.",
+              "details": "Half-price hot dogs on Wednesdays. Daily specials run until midnight; dine-in only.",
               "price": "Half off",
               "studentOnly": false,
               "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
@@ -1286,7 +1286,7 @@
                 "Thu"
               ],
               "title": "$9 chicken chunks & fries Thursday",
-              "details": "$9 chicken chunks with sauce and fries. Daily specials run until midnight, dine-in only.",
+              "details": "$9 chicken chunks with sauce and fries on Thursdays. Daily specials run until midnight; dine-in only.",
               "price": "$9",
               "studentOnly": false,
               "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
@@ -1314,7 +1314,7 @@
                 "Sun"
               ],
               "title": "Free fries with check-in",
-              "details": "Daily deal: free fries with a social media check-in.",
+              "details": "Free fries any day with a social media check-in.",
               "price": "Free",
               "studentOnly": false,
               "sourceUrl": "https://www.bierstubetoledo.com/",
@@ -1343,8 +1343,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "Late Night Eats: half-off pizza (8:30 p.m.-close)",
-              "details": "Every night 8:30 p.m.-close: half off any pizza and $6 select appetizers (fried pickles, mozzarella sticks, garlic dippers, pretzel bites, fried mushrooms).",
+              "title": "Half-off late-night pizza (8:30 p.m.-close)",
+              "details": "Every night from 8:30 p.m. to close: half off any pizza and $6 select appetizers (fried pickles, mozzarella sticks, garlic dippers, pretzel bites, fried mushrooms).",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
@@ -1403,7 +1403,7 @@
                 "Thu"
               ],
               "title": "99-cent wings Thursday",
-              "details": "Thursday special: $0.99 wings, 5-count minimum.",
+              "details": "Thursday special: 99-cent wings, 5-count minimum.",
               "price": "$0.99",
               "studentOnly": false,
               "sourceUrl": "https://www.sidelinessportseatery.com/daily-specials/",
@@ -1466,7 +1466,7 @@
                 "Sun"
               ],
               "title": "Daily happy hour food specials",
-              "details": "Daily happy hour food and drink specials from 2-6 p.m.",
+              "details": "Happy hour food and drink specials every day, 2-6 p.m.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
@@ -1492,7 +1492,7 @@
                 "Thu"
               ],
               "title": "$5 Take Five menu",
-              "details": "On Tuesdays, Wednesdays and Thursdays the Take Five menu offers an assortment of foods, cocktails and wine for $5 each.",
+              "details": "On Tuesdays, Wednesdays and Thursdays, the Take Five menu offers an assortment of foods, cocktails and wine for $5 each.",
               "price": "$5",
               "studentOnly": false,
               "sourceUrl": "https://toledocitypaper.com/food-drink/the-take-five-menu-at-registry-bistro/",
@@ -1507,7 +1507,7 @@
           "signature": false,
           "address": "1440 Secor Rd Suite 120A, Toledo, OH 43607",
           "website": "https://www.brewcoffeebartoledo.com/",
-          "blurb": "Toledo coffee bar on the UToledo Rocket Card discount list.",
+          "blurb": "Toledo coffee bar that gives UToledo Rocket Card discounts.",
           "price": "$",
           "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
           "deals": [
@@ -1522,7 +1522,7 @@
                 "Sun"
               ],
               "title": "10% off beverages with Rocket Card",
-              "details": "UToledo Discount Program: 10% off beverages, dine-in only, with a Rocket Card.",
+              "details": "10% off beverages with a UToledo Rocket Card. Dine-in only.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
@@ -1532,8 +1532,8 @@
               "days": [
                 "Mon"
               ],
-              "title": "35% off for UToledo students on Mondays",
-              "details": "BREW's site: University of Toledo students get 35% off on Mondays with student ID.",
+              "title": "35% off for UToledo students Monday",
+              "details": "University of Toledo students get 35% off on Mondays with a student ID.",
               "price": "35% off",
               "studentOnly": true,
               "sourceUrl": "https://www.brewcoffeebartoledo.com/",
@@ -1549,7 +1549,7 @@
                 "Sun"
               ],
               "title": "10% off for UToledo students",
-              "details": "BREW's site: University of Toledo students get 10% off all other days with student ID.",
+              "details": "University of Toledo students get 10% off Tuesday through Sunday with a student ID.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.brewcoffeebartoledo.com/",
@@ -1576,8 +1576,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Weekday happy hour appetizer & milkshake specials",
-              "details": "Happy hour every weekday 3-6 p.m. with specials on select milkshakes and appetizers.",
+              "title": "Happy hour appetizer and shake specials",
+              "details": "Happy hour every weekday, 3-6 p.m., with specials on select milkshakes and appetizers.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.redrobin.com/locations/oh/toledo/toledo-384",
@@ -1601,7 +1601,7 @@
                 "Mon"
               ],
               "title": "$5 personal pizza Monday",
-              "details": "$5 personal pizza. Specials start at 5 p.m., dine-in.",
+              "details": "$5 personal pizza on Mondays. Dine-in special starting at 5 p.m.",
               "price": "$5",
               "studentOnly": false,
               "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
@@ -1612,7 +1612,7 @@
                 "Tue"
               ],
               "title": "50% off pizzas Tuesday",
-              "details": "50% off pizzas. Specials start at 5 p.m., dine-in.",
+              "details": "50% off pizzas on Tuesdays. Dine-in special starting at 5 p.m.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
@@ -1623,7 +1623,7 @@
                 "Wed"
               ],
               "title": "$5 off specialty pizza Wednesday",
-              "details": "$5 off specialty pizza. Specials start at 5 p.m., dine-in.",
+              "details": "$5 off specialty pizza on Wednesdays. Dine-in special starting at 5 p.m.",
               "price": "$5 off",
               "studentOnly": false,
               "sourceUrl": "https://toledocitypaper.com/food-drink/the-happiest-hours-in-toledo/",
@@ -1648,7 +1648,7 @@
                 "Wed"
               ],
               "title": "Half-off pizza Monday & Wednesday",
-              "details": "Buckeye Broadband's campus dining guide says JoJo's runs weekly specials like half-off pizza on Mondays and Wednesdays.",
+              "details": "Weekly specials include half-off pizza on Mondays and Wednesdays, according to Buckeye Broadband's campus dining guide.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.buckeyebroadband.com/blog/restaurants-near-toledo-ohio-university-of-toledo",
@@ -1690,7 +1690,7 @@
                 "Sun"
               ],
               "title": "15% off bill with Rocket Card",
-              "details": "UToledo Discount Program: 15% off your bill. Show your Rocket Card (UToledo students, employees and alumni).",
+              "details": "15% off your bill when you show a UToledo Rocket Card (students, employees and alumni).",
               "price": "15% off",
               "studentOnly": true,
               "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
@@ -1720,7 +1720,7 @@
                 "Sun"
               ],
               "title": "10% off with Rocket Card",
-              "details": "UToledo Discount Program: 10% off all orders. Show your Rocket Card (UToledo students, employees and alumni).",
+              "details": "10% off all orders when you show a UToledo Rocket Card (students, employees and alumni).",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
@@ -1750,7 +1750,7 @@
                 "Sun"
               ],
               "title": "10% off bill with Rocket Card",
-              "details": "UToledo Discount Program: 10% off your bill. Show your Rocket Card (UToledo students, employees and alumni).",
+              "details": "10% off your bill when you show a UToledo Rocket Card (students, employees and alumni).",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
@@ -1780,7 +1780,7 @@
                 "Sun"
               ],
               "title": "10% off with Rocket Card",
-              "details": "UToledo Discount Program: 10% off all orders. Show your Rocket Card (UToledo students, employees and alumni).",
+              "details": "10% off all orders when you show a UToledo Rocket Card (students, employees and alumni).",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
@@ -1810,7 +1810,7 @@
                 "Sun"
               ],
               "title": "10% off with Rocket Card",
-              "details": "UToledo Discount Program: 10% off all food and beverage purchases. Show your Rocket Card (UToledo students, employees and alumni).",
+              "details": "10% off all food and beverage purchases when you show a UToledo Rocket Card (students, employees and alumni).",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.utoledo.edu/offices/auxiliary/utoledo-discounts/",
@@ -1858,7 +1858,7 @@
                 "Tue"
               ],
               "title": "$3 tacos Tuesday",
-              "details": "Hard or soft shell tacos with beef, chicken or black bean, $3 each on Tuesdays.",
+              "details": "Hard- or soft-shell tacos with beef, chicken or black bean for $3 each on Tuesdays.",
               "price": "$3",
               "studentOnly": false,
               "sourceUrl": "https://www.docwatsonstoledo.com/docs-specials/daily-food-specials",
@@ -1869,7 +1869,7 @@
                 "Tue"
               ],
               "title": "$13.99 enchilada dinner Tuesday",
-              "details": "Two enchiladas (beef, chicken or black bean) with Mexican rice for $13.99.",
+              "details": "Two enchiladas (beef, chicken or black bean) with Mexican rice for $13.99 on Tuesdays.",
               "price": "$13.99",
               "studentOnly": false,
               "sourceUrl": "https://www.docwatsonstoledo.com/docs-specials/daily-food-specials",
@@ -1881,8 +1881,8 @@
                 "Tue",
                 "Wed"
               ],
-              "title": "Half-off kids meals",
-              "details": "Half off kids meals Monday-Wednesday; dine-in only, ages 12 and under.",
+              "title": "Half-off kids' meals",
+              "details": "Half off kids' meals Monday-Wednesday for ages 12 and under. Dine-in only.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.docwatsonstoledo.com/docs-specials/daily-food-specials",
@@ -1966,7 +1966,7 @@
                 "Mon"
               ],
               "title": "$11 Burrito Sancho Monday",
-              "details": "Burrito Sancho with shredded chicken or ground beef for $11, 4-9 p.m.",
+              "details": "Burrito Sancho with shredded chicken or ground beef for $11 on Mondays, 4-9 p.m.",
               "price": "$11",
               "studentOnly": false,
               "sourceUrl": "https://pocolocotoledo.com/specials",
@@ -1977,7 +1977,7 @@
                 "Tue"
               ],
               "title": "$3 street tacos Tuesday",
-              "details": "Street tacos $3 and Americano tacos $2.25 (except shrimp and vegan), 11 a.m.-9 p.m.",
+              "details": "Street tacos for $3 and Americano tacos for $2.25 (except shrimp and vegan) on Tuesdays, 11 a.m.-9 p.m.",
               "price": "$3",
               "studentOnly": false,
               "sourceUrl": "https://pocolocotoledo.com/specials",
@@ -1988,7 +1988,7 @@
                 "Wed"
               ],
               "title": "$14.75 lunch buffet Wednesday",
-              "details": "Lunch buffet for $14.75, 11 a.m.-2 p.m.",
+              "details": "Lunch buffet for $14.75 on Wednesdays, 11 a.m.-2 p.m.",
               "price": "$14.75",
               "studentOnly": false,
               "sourceUrl": "https://pocolocotoledo.com/specials",
@@ -1999,7 +1999,7 @@
                 "Thu"
               ],
               "title": "$9.75 Cuban sandwich Thursday",
-              "details": "Any Cuban sandwich for $9.75, 11 a.m.-9 p.m.",
+              "details": "Any Cuban sandwich for $9.75 on Thursdays, 11 a.m.-9 p.m.",
               "price": "$9.75",
               "studentOnly": false,
               "sourceUrl": "https://pocolocotoledo.com/specials",
@@ -2011,7 +2011,7 @@
                 "Sat"
               ],
               "title": "$2 off nachos supremos",
-              "details": "Nachos supremos $2 off: Friday 4-6 p.m. and Saturday noon-10 p.m.",
+              "details": "$2 off nachos supremos on Fridays 4-6 p.m. and Saturdays noon-10 p.m.",
               "price": "$2 off",
               "studentOnly": false,
               "sourceUrl": "https://pocolocotoledo.com/specials",
@@ -2062,7 +2062,7 @@
           "signature": false,
           "address": "40 S St Clair St, Toledo, OH 43604",
           "website": "https://katoramen.com/",
-          "blurb": "Ramen, sake and beer in a relaxed room with the motto 'Slurp Loud, Eat Fast'.",
+          "blurb": "Ramen, sake and beer in a relaxed room with the motto \"Slurp Loud, Eat Fast.\"",
           "price": "$$",
           "sourceUrl": "https://downtowntoledo.org/explore/dine",
           "deals": []
@@ -2154,8 +2154,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "2 beef tacos for $3 Tuesday",
-              "details": "Tequila, Taco & Trivia Tuesday: 2 beef tacos for $3 (trivia 6-8 p.m.).",
+              "title": "$3 for 2 beef tacos Tuesday",
+              "details": "Tequila, Taco & Trivia Tuesday: two beef tacos for $3, with trivia 6-8 p.m.",
               "price": "$3",
               "studentOnly": false,
               "sourceUrl": "https://cocknbulltoledo.com/specials",
@@ -2203,7 +2203,7 @@
                 "Tue"
               ],
               "title": "$6 pulled pork sandwich Tuesday",
-              "details": "All day Tuesday: $6 pulled pork sandwich, or $10 with mac & cheese. Dine-in only.",
+              "details": "All day Tuesday: $6 pulled pork sandwich, or $10 with mac and cheese. Dine-in only.",
               "price": "$6",
               "studentOnly": false,
               "sourceUrl": "https://www.riversidebbq.company/",
@@ -2243,7 +2243,7 @@
                 "Fri"
               ],
               "title": "$10 weekly lunch features",
-              "details": "Rotating weekday lunch features, all $10 (for example a bacon & tomato melt with soup of the day); days can vary around holidays.",
+              "details": "Rotating weekday lunch features, all $10, such as a bacon and tomato melt with soup of the day. Days can vary around holidays.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://www.thelucytoledo.com/weekly-lunch-features",
@@ -2411,7 +2411,7 @@
                 "Mon"
               ],
               "title": "99-cent boneless wings Monday",
-              "details": "Frickin' Daily Deal: 99-cent boneless Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Mondays: 99-cent boneless Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
               "price": "$0.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -2422,7 +2422,7 @@
                 "Tue"
               ],
               "title": "99-cent wings Tuesday",
-              "details": "Frickin' Daily Deal: 99-cent Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Tuesdays: 99-cent Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
               "price": "$0.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -2433,7 +2433,7 @@
                 "Wed"
               ],
               "title": "$9.99 sirloin steak dinner Wednesday",
-              "details": "Frickin' Daily Deal: $9.99 sirloin steak dinner. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Wednesdays: $9.99 sirloin steak dinner. Prices and participation vary by location; dine-in only.",
               "price": "$9.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -2444,7 +2444,7 @@
                 "Thu"
               ],
               "title": "$9.99 chicken chunks Thursday",
-              "details": "Frickin' Daily Deal: $9.99 Frickin' Chicken Chunks. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Thursdays: $9.99 Frickin' Chicken Chunks. Prices and participation vary by location; dine-in only.",
               "price": "$9.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -2461,7 +2461,7 @@
                 "Sun"
               ],
               "title": "Kids eat free",
-              "details": "Listed under every-day Frickin' Daily Deals: kids eat free. Prices and participation vary by location; dine-in only.",
+              "details": "Kids eat free every day as part of the Frickin' Daily Deals. Prices and participation vary by location; dine-in only.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -2597,7 +2597,7 @@
           "signature": true,
           "address": "600 S Main St, Findlay, OH 45840",
           "website": "https://www.facebook.com/pages/Wilsons-Sandwich-Shop/1664395553786353",
-          "blurb": "Downtown institution since 1936 known for square 'hamburgs' and frozen malts.",
+          "blurb": "Downtown institution since 1936 known for square \"hamburgs\" and frozen malts.",
           "price": "$",
           "sourceUrl": "https://www.mapquest.com/us/ohio/wilsons-sandwich-shop-6011908",
           "deals": []
@@ -2633,7 +2633,7 @@
           "signature": false,
           "address": "125 W Sandusky St, Findlay, OH 45840",
           "website": "https://circleoffriendsfindlay.com/",
-          "blurb": "Downtown Findlay restaurant listed in the Visit Findlay directory.",
+          "blurb": "Downtown Findlay restaurant.",
           "price": "$$",
           "sourceUrl": "https://visitfindlay.com/places-to-go-in-northwest-ohio/downtown-new/local/page/2",
           "deals": []
@@ -2665,8 +2665,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "Tuesday Taco Night & Pub Quiz Trivia",
-              "details": "Visit Findlay's bar events calendar lists a Tuesday Taco Night with pub quiz trivia sessions at 6 and 7 pm; no price stated.",
+              "title": "Taco night and pub quiz trivia Tuesday",
+              "details": "Taco night on Tuesdays with pub quiz trivia sessions at 6 and 7 p.m. No price is listed.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://visitfindlay.com/bar-events/",
@@ -2676,8 +2676,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Wednesday Burger Night & Music Bingo",
-              "details": "Burger night with music bingo on Wednesdays, starting at 7 p.m., per Visit Findlay's weekly bar events list.",
+              "title": "Burger night and music bingo Wednesday",
+              "details": "Burger night with music bingo on Wednesdays, starting at 7 p.m.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://visitfindlay.com/bar-events/",
@@ -2687,8 +2687,8 @@
               "days": [
                 "Mon"
               ],
-              "title": "Monday Pizza Night & Queen of Hearts",
-              "details": "Visit Findlay's weekly bar events list shows Pizza Night with Queen of Hearts on Mondays at 6 p.m.; no price stated.",
+              "title": "Pizza night and Queen of Hearts Monday",
+              "details": "Pizza night with Queen of Hearts on Mondays at 6 p.m. No price is listed.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://visitfindlay.com/bar-events/",
@@ -2777,7 +2777,7 @@
                 "Sun"
               ],
               "title": "15% off with Oiler ID",
-              "details": "15% off with a University of Findlay Oiler ID, per Visit Findlay's Local Specials & Discounts list.",
+              "details": "15% off with a University of Findlay Oiler ID.",
               "price": "15% off",
               "studentOnly": true,
               "sourceUrl": "https://visitfindlay.com/welcome-oiler-families/oiler-specials",
@@ -2792,7 +2792,7 @@
           "signature": false,
           "address": "900 Interstate Drive, Findlay, OH 45840",
           "website": "https://beerbarrel.com/findlay",
-          "blurb": "Northwest Ohio pizza and grill chain with long happy hour food pricing.",
+          "blurb": "Northwest Ohio pizza and grill chain with food specials during long happy hours.",
           "price": "$$",
           "sourceUrl": "https://beerbarrel.com/findlay",
           "deals": [
@@ -2806,7 +2806,7 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "Happy hour food specials ($6 munchies, $10 food deals)",
+              "title": "$6 munchies and $10 food deals at happy hour",
               "details": "Special pricing Monday-Friday 2-6 p.m. and Saturday-Sunday 11 a.m.-4 p.m.: food specials from $4 to $11, including $6 munchies and $10 food deals.",
               "price": "$6",
               "studentOnly": false,
@@ -2836,7 +2836,7 @@
                 "Sun"
               ],
               "title": "$5 happy hour appetizer",
-              "details": "Happy hour Monday-Friday 3-5:30 p.m. or all day Sunday: $1 off pints, paired with a $5 appetizer.",
+              "details": "Happy hour Monday-Friday 3-5:30 p.m. and all day Sunday: $1 off pints, paired with a $5 appetizer.",
               "price": "$5",
               "studentOnly": false,
               "sourceUrl": "https://findlayliving.com/guides/your-guide-to-happy-hour-in-findlay/",
@@ -2911,7 +2911,7 @@
           "signature": false,
           "address": "316 N Main St, Findlay, OH 45840",
           "website": "https://www.facebook.com/Brew-U-Sports-Pub-192477457783721/",
-          "blurb": "Sports pub on North Main Street listed in Visit Findlay's dining directory.",
+          "blurb": "Sports pub on North Main Street.",
           "price": "$",
           "sourceUrl": "https://visitfindlay.com/places/brew-u-sports-pub",
           "deals": []
@@ -2956,7 +2956,7 @@
                 "Tue"
               ],
               "title": "$14 large pizza Tuesday",
-              "details": "On Tuesdays get any large pizza for $14; excludes split pizzas, 6-item max.",
+              "details": "On Tuesdays, get any large pizza for $14. Excludes split pizzas; 6-item max.",
               "price": "$14",
               "studentOnly": false,
               "sourceUrl": "https://campuspollyeyes.com/",
@@ -2983,7 +2983,7 @@
           "signature": false,
           "address": "2431 S Main St, Findlay, OH 45840",
           "website": "https://www.facebook.com/chinarosefindlay",
-          "blurb": "Chinese eat-in or carry-out on South Main Street.",
+          "blurb": "Chinese eat-in or carryout on South Main Street.",
           "price": "$",
           "sourceUrl": "https://visitfindlay.com/places/china-rose-restaurant",
           "deals": []
@@ -3008,7 +3008,7 @@
                 "Fri"
               ],
               "title": "$6.99 weekday lunch specials",
-              "details": "Weekday lunch specials 11 a.m.-2 p.m. Monday through Friday; lunch specials are $6.99 unless otherwise noted.",
+              "details": "Lunch specials Monday-Friday, 11 a.m.-2 p.m., are $6.99 unless otherwise noted.",
               "price": "$6.99",
               "studentOnly": false,
               "sourceUrl": "https://darkhorsefindlay.com/specials/",
@@ -3035,7 +3035,7 @@
           "signature": false,
           "address": "106 S Main St, Findlay, OH 45840",
           "website": "https://www.dougiejohns.com/",
-          "blurb": "Downtown pizzeria with thin and 'fat' crust specialty pizzas, fold-ups, flatbreads and a patio.",
+          "blurb": "Downtown pizzeria with thin and \"fat\" crust specialty pizzas, fold-ups, flatbreads and a patio.",
           "price": "$$",
           "sourceUrl": "https://visitfindlay.com/places/dougie-johns-pizza",
           "deals": []
@@ -3071,7 +3071,7 @@
           "signature": false,
           "address": "1132 Tiffin Ave, Findlay, OH 45840",
           "website": "https://www.heavenlypizzafindlay.com/",
-          "blurb": "Findlay staple since 1981 for carry-out and delivery pizza, subs and breadsticks.",
+          "blurb": "Findlay staple since 1981 for carryout and delivery pizza, subs and breadsticks.",
           "price": "$",
           "sourceUrl": "https://visitfindlay.com/places/heavenly-pizza",
           "deals": [
@@ -3084,8 +3084,8 @@
                 "Fri",
                 "Sat"
               ],
-              "title": "2 slices + 20 oz pop for $6",
-              "details": "Standing special: two slices of pizza with a 20 oz pop for $6. Closed Sundays.",
+              "title": "$6 for 2 slices and a 20 oz pop",
+              "details": "Two slices of pizza with a 20 oz pop for $6, Monday-Saturday. Closed Sundays.",
               "price": "$6",
               "studentOnly": false,
               "sourceUrl": "https://www.heavenlypizzafindlay.com/specials",
@@ -3100,8 +3100,8 @@
                 "Fri",
                 "Sat"
               ],
-              "title": "Half sub, chips + 20 oz pop for $9.95",
-              "details": "Standing special: half sub with chips and a 20 oz pop for $9.95. Closed Sundays.",
+              "title": "$9.95 half sub, chips and 20 oz pop",
+              "details": "Half sub with chips and a 20 oz pop for $9.95, Monday-Saturday. Closed Sundays.",
               "price": "$9.95",
               "studentOnly": false,
               "sourceUrl": "https://www.heavenlypizzafindlay.com/specials",
@@ -3284,7 +3284,7 @@
           "signature": false,
           "address": "1535 Broad Ave, Findlay, OH 45840",
           "website": "",
-          "blurb": "Chinese dine-in or carry-out with a drive-thru for call-ahead orders.",
+          "blurb": "Chinese dine-in or carryout with a drive-thru for call-ahead orders.",
           "price": "$",
           "sourceUrl": "https://visitfindlay.com/places/mings-great-wall",
           "deals": []
@@ -3344,7 +3344,7 @@
           "signature": false,
           "address": "542 Sixth St, Findlay, OH 45840",
           "website": "https://www.facebook.com/paradisepizza.findlay",
-          "blurb": "Carry-out and delivery specialty pizzas, oven-baked subs, salads and wraps.",
+          "blurb": "Carryout and delivery specialty pizzas, oven-baked subs, salads and wraps.",
           "price": "$",
           "sourceUrl": "https://visitfindlay.com/places/paradise-pizza",
           "deals": []
@@ -3404,7 +3404,7 @@
           "signature": false,
           "address": "730 W Trenton Ave, Findlay, OH 45840",
           "website": "https://ralphies.com/",
-          "blurb": "Family sports eatery from the northwest Ohio regional chain.",
+          "blurb": "Family sports eatery from the Northwest Ohio regional chain.",
           "price": "$$",
           "sourceUrl": "https://visitfindlay.com/places/ralphies-family-sports-eatery",
           "deals": []
@@ -3452,7 +3452,7 @@
           "signature": false,
           "address": "3050 S Main St, Findlay, OH 45840",
           "website": "https://www.facebook.com/profile.php?id=61563308947300",
-          "blurb": "Smoked ribs, chicken, pulled pork and brisket, burgers and 'porky tots', plus breakfast.",
+          "blurb": "Smoked ribs, chicken, pulled pork and brisket, plus burgers, \"porky tots\" and breakfast.",
           "price": "$$",
           "sourceUrl": "https://visitfindlay.com/places/smokin-buckeye-bbq",
           "deals": []
@@ -3584,7 +3584,7 @@
           "signature": false,
           "address": "301 W Main Cross St, Findlay, OH 45840",
           "website": "https://www.facebook.com/WestMainCrust/",
-          "blurb": "Carry-out pizza inside the downtown Great Scot using the legendary Rocking U recipes.",
+          "blurb": "Carryout pizza inside the downtown Great Scot using the legendary Rocking U recipes.",
           "price": "$",
           "sourceUrl": "https://visitfindlay.com/places/west-main-crust",
           "deals": []
@@ -3605,7 +3605,7 @@
                 "Mon"
               ],
               "title": "99-cent boneless wings Monday",
-              "details": "Frickin' Daily Deal: 99-cent boneless Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Mondays: 99-cent boneless Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
               "price": "$0.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -3616,7 +3616,7 @@
                 "Tue"
               ],
               "title": "99-cent wings Tuesday",
-              "details": "Frickin' Daily Deal: 99-cent Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Tuesdays: 99-cent Frickin' Chicken wings. Prices and participation vary by location; dine-in only.",
               "price": "$0.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -3627,7 +3627,7 @@
                 "Wed"
               ],
               "title": "$9.99 sirloin steak dinner Wednesday",
-              "details": "Frickin' Daily Deal: $9.99 sirloin steak dinner. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Wednesdays: $9.99 sirloin steak dinner. Prices and participation vary by location; dine-in only.",
               "price": "$9.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -3638,7 +3638,7 @@
                 "Thu"
               ],
               "title": "$9.99 chicken chunks Thursday",
-              "details": "Frickin' Daily Deal: $9.99 Frickin' Chicken Chunks. Prices and participation vary by location; dine-in only.",
+              "details": "Frickin' Daily Deal on Thursdays: $9.99 Frickin' Chicken Chunks. Prices and participation vary by location; dine-in only.",
               "price": "$9.99",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",
@@ -3655,7 +3655,7 @@
                 "Sun"
               ],
               "title": "Kids eat free",
-              "details": "Listed under every-day Frickin' Daily Deals: kids eat free. Prices and participation vary by location; dine-in only.",
+              "details": "Kids eat free every day as part of the Frickin' Daily Deals. Prices and participation vary by location; dine-in only.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.frickers.com/specials",

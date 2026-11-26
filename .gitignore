@@ -2,3 +2,4 @@ scratch/
 __pycache__/
 logos/spots/*.none
 outreach/contacts.csv
+_site/

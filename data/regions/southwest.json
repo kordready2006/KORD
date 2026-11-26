@@ -63,8 +63,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "Tuesday Night Madness",
-              "details": "Cheese pizzas at Madness pricing: medium $11.49, large $16.49, Bearcat $31.99 (toppings extra). Mention the promotion on orders delivered or picked up after 5pm.",
+              "title": "From $11.49 Tuesday Night Madness pizza",
+              "details": "Cheese pizzas at Madness pricing: medium $11.49, large $16.49, Bearcat $31.99, with toppings extra. Mention the promotion on orders delivered or picked up after 5pm.",
               "price": "$11.49",
               "studentOnly": false,
               "sourceUrl": "https://adriaticosuc.com/cincinnati/specials/",
@@ -78,8 +78,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Happy hour half-off appetizers",
-              "details": "Mon-Fri 3-6pm: half off all appetizers (plus beer discounts).",
+              "title": "Half-off appetizers at happy hour",
+              "details": "Mon-Fri 3-6pm: half off all appetizers, plus beer discounts.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://adriaticosuc.com/cincinnati/specials/",
@@ -167,8 +167,8 @@
                 "Fri",
                 "Sat"
               ],
-              "title": "Daily sandwich special with fries and a drink",
-              "details": "Weekly specials, each with fries and your choice of drink: cheeseburger Mon/Thu/Sat $11, hot ham & cheese Tue $11, pork BBQ Wed $11, fish sandwich Fri $12.",
+              "title": "From $11 sandwich with fries and a drink",
+              "details": "Each day's special comes with fries and your choice of drink: cheeseburger $11 on Monday, Thursday and Saturday, hot ham and cheese $11 on Tuesday, pork BBQ $11 on Wednesday, and fish sandwich $12 on Friday.",
               "price": "$11",
               "studentOnly": false,
               "sourceUrl": "https://www.quatmancafe.com/",
@@ -183,7 +183,7 @@
           "signature": true,
           "address": "290 Ludlow Ave, Cincinnati, OH 45220",
           "website": "https://www.skylinechili.com",
-          "blurb": "Cincinnati-style chili parlor in Clifton's Gaslight District: 3-ways and cheese coneys, open late.",
+          "blurb": "Cincinnati-style chili parlor in Clifton's Gaslight District serving 3-ways and cheese coneys, open late.",
           "price": "$",
           "sourceUrl": "https://locations.skylinechili.com/skyline-chili-08634e0c5325",
           "deals": []
@@ -207,7 +207,7 @@
           "signature": false,
           "address": "313 Calhoun St, Cincinnati, OH 45219",
           "website": "https://krishnacarryoutcincy.com/",
-          "blurb": "Tiny carryout-and-booths Indian spot long called UC's best-kept secret.",
+          "blurb": "Tiny Indian spot with carryout and booths, long called UC's best-kept secret.",
           "price": "$",
           "sourceUrl": "https://homepages.uc.edu/~wangyz/CSP2024/Dining.pdf",
           "deals": []
@@ -263,8 +263,8 @@
               "days": [
                 "Fri"
               ],
-              "title": "Friday lunch buffet",
-              "details": "All-you-can-eat pizza, salad and a drink for $8.50, Fridays 11 AM-2 PM, per an Only In Your State article (undated); confirm current price.",
+              "title": "$8.50 Friday lunch buffet",
+              "details": "All-you-can-eat pizza, salad and a drink for $8.50, Fridays 11am-2pm. Source is undated; confirm before you go.",
               "price": "$8.50",
               "studentOnly": false,
               "sourceUrl": "https://www.onlyinyourstate.com/food/ohio/macs-pizza-pub-lunch-buffet-cincinnati-oh",
@@ -315,7 +315,7 @@
           "signature": false,
           "address": "",
           "website": "https://www.goodfellaspizzeria.com/",
-          "blurb": "Late-night pizza by the slice in Over-the-Rhine, open until 3 AM on weekends.",
+          "blurb": "Late-night pizza by the slice in Over-the-Rhine, open until 3am on weekends.",
           "price": "$",
           "sourceUrl": "https://www.citybeat.com/food-drink/29-greater-cincinnati-restaurants-open-for-late-night-eats-19937400",
           "deals": []
@@ -327,7 +327,7 @@
           "signature": false,
           "address": "2014 Elm St, Cincinnati, OH",
           "website": "https://www.latenightslice.com/",
-          "blurb": "Giant foldable pizza slices served until about 2:30-3 AM.",
+          "blurb": "Giant foldable pizza slices served until about 2:30-3am.",
           "price": "$",
           "sourceUrl": "https://www.citybeat.com/food-drink/29-greater-cincinnati-restaurants-open-for-late-night-eats-19937400",
           "deals": []
@@ -339,7 +339,7 @@
           "signature": false,
           "address": "216 E Sixth St, Cincinnati, OH",
           "website": "",
-          "blurb": "Downtown noodle house open until 3 AM on Fridays and Saturdays.",
+          "blurb": "Downtown noodle house open until 3am on Fridays and Saturdays.",
           "price": "$$",
           "sourceUrl": "https://www.citybeat.com/food-drink/29-greater-cincinnati-restaurants-open-for-late-night-eats-19937400",
           "deals": []
@@ -431,8 +431,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "BOGO 50% off traditional wings",
-              "details": "Tuesdays: buy one order of traditional wings, get a second 50% off. Terms vary by location; may require Blazin' Rewards membership.",
+              "title": "BOGO 50% off traditional wings Tuesday",
+              "details": "On Tuesdays, buy one order of traditional wings and get a second 50% off. Terms vary by location and may require a Blazin' Rewards membership.",
               "price": "BOGO 50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
@@ -443,7 +443,7 @@
                 "Thu"
               ],
               "title": "BOGO boneless wings Thursday",
-              "details": "Thursdays: buy one order of boneless wings, get one free. Confirm terms with the location.",
+              "details": "On Thursdays, buy one order of boneless wings and get one free. Confirm terms with the location.",
               "price": "BOGO",
               "studentOnly": false,
               "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
@@ -478,8 +478,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "$3 Taco Tuesday",
-              "details": "$3 tacos every Tuesday (drink specials alongside).",
+              "title": "$3 taco Tuesday",
+              "details": "$3 tacos every Tuesday, with drink specials alongside.",
               "price": "$3",
               "studentOnly": false,
               "sourceUrl": "https://drink.brewdog.com/cincinnati",
@@ -489,8 +489,8 @@
               "days": [
                 "Mon"
               ],
-              "title": "Monday Burger Club",
-              "details": "Mondays: buy one burger or sandwich, get a second for $1.",
+              "title": "$1 second burger at Monday Burger Club",
+              "details": "On Mondays, buy one burger or sandwich and get a second for $1.",
               "price": "$1 second burger",
               "studentOnly": false,
               "sourceUrl": "https://drink.brewdog.com/cincinnati",
@@ -501,7 +501,7 @@
                 "Wed"
               ],
               "title": "Wings Wednesday",
-              "details": "Weekly wing deal. The Cincinnati page lists all-you-can-eat chicken or cauliflower wings for $15 with pre-booking; BrewDog's brand page lists Cincinnati under $1 wings. Confirm which applies.",
+              "details": "Weekly wing deal on Wednesdays. BrewDog's Cincinnati page lists all-you-can-eat chicken or cauliflower wings for $15 with pre-booking, while its brand page lists $1 wings for Cincinnati. Sources disagree; confirm before you go.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://drink.brewdog.com/cincinnati",
@@ -514,8 +514,8 @@
                 "Wed",
                 "Thu"
               ],
-              "title": "Happy hour $9 loaded fries",
-              "details": "Happy hour Mon-Thu (start listed as 3pm or 4pm): $9 loaded fries alongside drink specials.",
+              "title": "$9 loaded fries at happy hour",
+              "details": "$9 loaded fries alongside drink specials at happy hour, Monday to Thursday. The start time is listed as either 3pm or 4pm; confirm before you go.",
               "price": "$9",
               "studentOnly": false,
               "sourceUrl": "https://drink.brewdog.com/cincinnati",
@@ -530,7 +530,7 @@
           "signature": false,
           "address": "",
           "website": "https://ontherhineeatery.com",
-          "blurb": "Food hall-style eatery with a different cheap special each weekday; sources disagree on its current location, so check the address before going.",
+          "blurb": "Food-hall-style eatery with a different cheap special each weekday; check the address before you go, as sources disagree on its current location.",
           "price": "$",
           "sourceUrl": "https://www.everythingcincy.com/on-the-rhine-eatery",
           "deals": [
@@ -538,8 +538,8 @@
               "days": [
                 "Mon"
               ],
-              "title": "$7 Mac Bowls Monday",
-              "details": "Mondays: mac bowls for $7.",
+              "title": "$7 mac bowls Monday",
+              "details": "Mac bowls for $7 on Mondays.",
               "price": "$7",
               "studentOnly": false,
               "sourceUrl": "https://www.everythingcincy.com/savings-deals/food-specials/weekly-deals",
@@ -549,8 +549,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "$3 Taco Tuesday",
-              "details": "Tuesdays: $3 tacos.",
+              "title": "$3 taco Tuesday",
+              "details": "$3 tacos on Tuesdays.",
               "price": "$3",
               "studentOnly": false,
               "sourceUrl": "https://www.everythingcincy.com/savings-deals/food-specials/weekly-deals",
@@ -560,8 +560,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Pick Two Sandwiches & Soup Wednesday",
-              "details": "Wednesdays: pick-two sandwich and soup deal.",
+              "title": "Pick-two sandwich and soup Wednesday",
+              "details": "Pick-two sandwich and soup deal on Wednesdays.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.everythingcincy.com/savings-deals/food-specials/weekly-deals",
@@ -571,8 +571,8 @@
               "days": [
                 "Thu"
               ],
-              "title": "$7.50 Spicy Chicken Sandwich Thursday",
-              "details": "Thursdays: spicy chicken sandwich for $7.50.",
+              "title": "$7.50 spicy chicken sandwich Thursday",
+              "details": "Spicy chicken sandwich for $7.50 on Thursdays.",
               "price": "$7.50",
               "studentOnly": false,
               "sourceUrl": "https://www.everythingcincy.com/savings-deals/food-specials/weekly-deals",
@@ -582,8 +582,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Half-price appetizers at Bar 1883",
-              "details": "Half-priced appetizers every Wednesday at Bar 1883.",
+              "title": "Half-price appetizers Wednesday at Bar 1883",
+              "details": "Half-price appetizers every Wednesday at Bar 1883.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://ontherhineeatery.com/events/",
@@ -598,7 +598,7 @@
           "signature": false,
           "address": "2618 Vine St, Cincinnati, OH 45219",
           "website": "https://martinosonvine.com",
-          "blurb": "Short Vine sports bar near UC with $10 weekday lunch specials.",
+          "blurb": "Short Vine sports bar near UC with weekday lunch and dinner specials.",
           "price": "$",
           "sourceUrl": "https://martinosonvine.com/",
           "deals": [
@@ -607,7 +607,7 @@
                 "Tue"
               ],
               "title": "$10 mini stromboli Tuesday",
-              "details": "Tuesday evening special, 4-9pm: mini stromboli with choice of 3 toppings for $10.",
+              "details": "Tuesdays 4-9pm: mini stromboli with your choice of 3 toppings for $10.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://martinosonvine.com/-specials",
@@ -618,7 +618,7 @@
                 "Wed"
               ],
               "title": "$10 burger, fries and a beer Wednesday",
-              "details": "Wednesday evening special, 4-9pm: burger, fries and a can of beer for $10.",
+              "details": "Wednesdays 4-9pm: burger, fries and a can of beer for $10.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://martinosonvine.com/-specials",
@@ -629,7 +629,7 @@
                 "Thu"
               ],
               "title": "$10 cheesesteak Thursday",
-              "details": "Thursday evening special, 4-6pm: any cheesesteak (chicken or beef) for $10.",
+              "details": "Thursdays 4-6pm: any cheesesteak, chicken or beef, for $10.",
               "price": "$10",
               "studentOnly": false,
               "sourceUrl": "https://martinosonvine.com/-specials",
@@ -643,7 +643,7 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Lunch specials from $7.95",
+              "title": "From $7.95 weekday lunch specials",
               "details": "Weekday lunch specials starting at $7.95, 11am-2pm.",
               "price": "$7.95",
               "studentOnly": false,
@@ -669,7 +669,7 @@
                 "Tue"
               ],
               "title": "Free naan with curry or masala",
-              "details": "Monday and Tuesday: order a curry or masala dish and get plain naan free. Dine-in only.",
+              "details": "Order a curry or masala dish on Monday or Tuesday and get plain naan free. Dine-in only.",
               "price": "Free naan",
               "studentOnly": false,
               "sourceUrl": "https://www.elephantwalkcincy.com/daily-specials",
@@ -679,8 +679,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Student ID 10% off Wednesday",
-              "details": "'I'm Glad to Be a Student' Wednesday: show your student ID for a 10% discount.",
+              "title": "10% off with student ID Wednesday",
+              "details": "On \"I'm Glad to Be a Student\" Wednesdays, show your student ID for 10% off.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.elephantwalkcincy.com/daily-specials",
@@ -690,8 +690,8 @@
               "days": [
                 "Thu"
               ],
-              "title": "Throwback Thursday $5 naan burritos",
-              "details": "Thursdays: $5 naan burritos and naan tacos, $6 vegetarian bowls.",
+              "title": "$5 naan burritos Throwback Thursday",
+              "details": "Thursdays: $5 naan burritos and naan tacos, and $6 vegetarian bowls.",
               "price": "$5",
               "studentOnly": false,
               "sourceUrl": "https://www.elephantwalkcincy.com/daily-specials",
@@ -701,8 +701,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "After Dark $5 naan tacos",
-              "details": "Tuesday 9pm-close: $5 naan tacos and $6 tenders (comedy and karaoke night).",
+              "title": "$5 naan tacos After Dark Tuesday",
+              "details": "Tuesdays from 9pm to close: $5 naan tacos and $6 tenders during comedy and karaoke night.",
               "price": "$5",
               "studentOnly": false,
               "sourceUrl": "https://www.elephantwalkcincy.com/daily-specials",
@@ -712,8 +712,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "After Dark 5 wings for $5",
-              "details": "Wednesday 9pm-close 'Wine x Wings': 5 wings for $5 (half-off wine bottles alongside).",
+              "title": "$5 for 5 wings After Dark Wednesday",
+              "details": "Wednesdays from 9pm to close (\"Wine x Wings\"): 5 wings for $5, with half-off wine bottles alongside.",
               "price": "$5",
               "studentOnly": false,
               "sourceUrl": "https://www.elephantwalkcincy.com/daily-specials",
@@ -815,7 +815,7 @@
                 "Sun"
               ],
               "title": "Half-price sushi",
-              "details": "The menu states all sushi is half priced (regular rolls, nigiri and chef special rolls).",
+              "details": "All sushi is half price, including regular rolls, nigiri and chef special rolls.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.drunkenbento.com/menu",
@@ -1082,7 +1082,7 @@
           "signature": false,
           "address": "364 Ludlow Ave, Cincinnati, OH 45220",
           "website": "https://cincinnati.thewholebowl.com/",
-          "blurb": "One-item menu: a rice, bean and avocado bowl with Tali Sauce.",
+          "blurb": "One-item menu of a rice, bean and avocado bowl with Tali Sauce.",
           "price": "$",
           "sourceUrl": "https://cincinnati.thewholebowl.com/",
           "deals": []
@@ -1264,7 +1264,7 @@
           "signature": true,
           "address": "121 E High St, Oxford, OH 45056",
           "website": "https://www.skipperstopdeck.com/",
-          "blurb": "Family-run uptown staple known for gyros and waffle fries, with an upstairs bar.",
+          "blurb": "Family-run Uptown staple known for gyros and waffle fries, with an upstairs bar.",
           "price": "$",
           "sourceUrl": "https://enjoyoxford.org/restaurant/skippers-pub-top-deck",
           "deals": [
@@ -1272,8 +1272,8 @@
               "days": [
                 "Mon"
               ],
-              "title": "Monday Burger Night",
-              "details": "Burger and fries for $5 on Mondays, per a Miami Student article (undated); confirm it is still running.",
+              "title": "$5 burger and fries Monday",
+              "details": "Burger and fries for $5 on Mondays. Source is undated; confirm before you go.",
               "price": "$5",
               "studentOnly": false,
               "sourceUrl": "https://miamistudent.net/skippers-remains-a-college-town-favorite-with-chicago-flavor-and-family-service",
@@ -1287,8 +1287,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Daily food specials with side and drink",
-              "details": "Menu lists a daily food special that comes with a side and a drink: Monday burger, Tuesday gyro, Wednesday chicken sandwich, Thursday Italian beef / hot dog, Friday Reuben (prices not listed).",
+              "title": "Daily food special with a side and drink",
+              "details": "A daily food special that comes with a side and a drink: burger on Monday, gyro on Tuesday, chicken sandwich on Wednesday, Italian beef or hot dog on Thursday, and Reuben on Friday. Prices are not listed.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.skipperstopdeck.com/menu",
@@ -1303,7 +1303,7 @@
           "signature": true,
           "address": "21 E High St, Oxford, OH 45056",
           "website": "https://www.macandjoes.com/",
-          "blurb": "Alley bar and restaurant serving burgers and wings since 1946, kitchen open late.",
+          "blurb": "Alley bar and restaurant serving burgers and wings since 1946, with the kitchen open late.",
           "price": "$$",
           "sourceUrl": "https://travelbutlercounty.com/node/10054",
           "deals": [
@@ -1311,8 +1311,8 @@
               "days": [
                 "Mon"
               ],
-              "title": "Monday Pitcher Night + .75 wings",
-              "details": "Monday dinner special (4-10pm): 75-cent wings alongside $15 pitchers.",
+              "title": "75-cent wings on Monday Pitcher Night",
+              "details": "Mondays 4-10pm: 75-cent wings alongside $15 pitchers.",
               "price": "$0.75",
               "studentOnly": false,
               "sourceUrl": "https://www.macandjoes.com/",
@@ -1327,7 +1327,7 @@
                 "Fri"
               ],
               "title": "$8.29 lunch special",
-              "details": "Mon-Fri 11am-4pm: featured half sub with side of fries and a soft drink.",
+              "details": "Mon-Fri 11am-4pm: featured half sub with a side of fries and a soft drink.",
               "price": "$8.29",
               "studentOnly": false,
               "sourceUrl": "https://www.macandjoes.com/",
@@ -1350,8 +1350,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Wingo Bingo wing night",
-              "details": "Wing Night + Bingo every Wednesday: discounted wings all night, multiple rounds of bingo with prizes; wing price not stated.",
+              "title": "Wingo Bingo wing night Wednesday",
+              "details": "Every Wednesday: discounted wings all night and multiple rounds of bingo with prizes. Wing price is not listed.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://leftfieldtavern.com/",
@@ -1368,7 +1368,7 @@
                 "Sun"
               ],
               "title": "Daily happy hour 2-6pm",
-              "details": "Happy hour every day 2-6pm with deals on drafts, cocktails and select appetizers (specific prices not listed).",
+              "details": "Happy hour every day 2-6pm with deals on drafts, cocktails and select appetizers. Prices are not listed.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://leftfieldtavern.com/",
@@ -1398,7 +1398,7 @@
                 "Sun"
               ],
               "title": "$4.99 12-inch pizza",
-              "details": "Listed among the deli's daily specials: a 12 inch pizza for $4.99.",
+              "details": "A 12-inch pizza for $4.99, one of the deli's daily specials.",
               "price": "$4.99",
               "studentOnly": false,
               "sourceUrl": "https://www.travelbutlercounty.com/node/12484",
@@ -1408,8 +1408,8 @@
               "days": [
                 "Mon"
               ],
-              "title": "Monday calzone special",
-              "details": "Monday calzone special with several calzone varieties at about $6 each, per the Grubhub-powered MenuPages listing; confirm current price.",
+              "title": "About $6 calzone special Monday",
+              "details": "Several calzone varieties at about $6 each on Mondays. Price comes from a third-party menu listing; confirm before you go.",
               "price": "$6",
               "studentOnly": false,
               "sourceUrl": "https://menupages.com/johnnys-campus-deli/209-e-sycamore-st-oxford",
@@ -1530,8 +1530,8 @@
                 "Mon",
                 "Tue"
               ],
-              "title": "40% off regular rolls",
-              "details": "Sunday-Tuesday 11am-10pm: 40% off regular rolls dine-in, 25% off takeout.",
+              "title": "40% off regular rolls Sunday-Tuesday",
+              "details": "Sunday-Tuesday 11am-10pm: 40% off regular rolls for dine-in, 25% off for takeout.",
               "price": "40% off",
               "studentOnly": false,
               "sourceUrl": "https://oxfordsushiking.com/specials",
@@ -1542,7 +1542,7 @@
                 "Wed",
                 "Thu"
               ],
-              "title": "30% off deep-fried rolls",
+              "title": "30% off deep-fried rolls Wednesday-Thursday",
               "details": "Wednesday and Thursday 11am-10pm: 30% off deep-fried rolls.",
               "price": "30% off",
               "studentOnly": false,
@@ -1594,7 +1594,7 @@
           "signature": true,
           "address": "38 W High St, Oxford, OH 45056",
           "website": "https://kofenyacoffee.com",
-          "blurb": "Coffee shop in the uptown district.",
+          "blurb": "Coffee shop in the Uptown district.",
           "price": "$",
           "sourceUrl": "https://enjoyoxford.org/wp-content/uploads/2024/10/Enjoy-Oxford-Welcome-Guide-2024.pdf",
           "deals": []
@@ -1650,8 +1650,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Wednesday steak night",
-              "details": "12 oz NY strip with choice of potato, onion ring and salad for $23.95; dine-in only.",
+              "title": "$23.95 steak night Wednesday",
+              "details": "12 oz NY strip with your choice of potato, onion ring and salad for $23.95. Dine-in only.",
               "price": "$23.95",
               "studentOnly": false,
               "sourceUrl": "https://www.steinkellercircle.com/",
@@ -1661,8 +1661,8 @@
               "days": [
                 "Thu"
               ],
-              "title": "Thursday schnitzel night",
-              "details": "$10 off schnitzels (plus $10 liters); dine-in only, trivia from 9:30pm.",
+              "title": "$10 off schnitzel night Thursday",
+              "details": "$10 off schnitzels, plus $10 liters. Dine-in only; trivia starts at 9:30pm.",
               "price": "$10 off",
               "studentOnly": false,
               "sourceUrl": "https://www.steinkellercircle.com/",
@@ -1672,8 +1672,8 @@
               "days": [
                 "Sun"
               ],
-              "title": "Sunday prime rib",
-              "details": "Prime rib served with choice of potato and salad for $28; dine-in only.",
+              "title": "$28 prime rib Sunday",
+              "details": "Prime rib with your choice of potato and salad for $28. Dine-in only.",
               "price": "$28",
               "studentOnly": false,
               "sourceUrl": "https://www.steinkellercircle.com/",
@@ -1792,8 +1792,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "BOGO 50% off traditional wings",
-              "details": "Tuesdays: buy one order of traditional wings, get a second 50% off. Terms vary by location; may require Blazin' Rewards membership.",
+              "title": "BOGO 50% off traditional wings Tuesday",
+              "details": "On Tuesdays, buy one order of traditional wings and get a second 50% off. Terms vary by location and may require a Blazin' Rewards membership.",
               "price": "BOGO 50% off",
               "studentOnly": false,
               "sourceUrl": "https://menuguide.com/OH/Oxford/Buffalo-Wild-Wings",
@@ -1804,7 +1804,7 @@
                 "Thu"
               ],
               "title": "BOGO boneless wings Thursday",
-              "details": "Thursdays: buy one order of boneless wings, get one free. Confirm terms with the location.",
+              "details": "On Thursdays, buy one order of boneless wings and get one free. Confirm terms with the location.",
               "price": "BOGO",
               "studentOnly": false,
               "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
@@ -1851,8 +1851,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Buckets & Buddies",
-              "details": "Wednesday weekly special: save on a combo of five beers, one Bello ball and one pizza (price not listed on the site).",
+              "title": "Buckets & Buddies combo Wednesday",
+              "details": "Wednesdays: save on a combo of five beers, one Bello ball and one pizza. Price is not listed.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.bellopizzastudio.com/",
@@ -2095,7 +2095,7 @@
           "signature": false,
           "address": "321 W Spring St, Oxford, OH 45056",
           "website": "https://www.springstreettreats.com/",
-          "blurb": "Seasonal walk-up soft serve stand (open February through October).",
+          "blurb": "Seasonal walk-up soft-serve stand, open February through October.",
           "price": "$",
           "sourceUrl": "https://www.springstreettreats.com/",
           "deals": []
@@ -2616,7 +2616,7 @@
           "signature": false,
           "address": "Brown St, Dayton, OH",
           "website": "https://www.primebbq.com/",
-          "blurb": "Barbecue spot that opened on Brown Street near UD.",
+          "blurb": "Barbecue spot on Brown Street near UD.",
           "price": "$$",
           "sourceUrl": "https://flyernews.com/campus/brown-street-resturaunts-aim-to-attract-ud-students/02/21/2026/",
           "deals": []
@@ -2636,8 +2636,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "BOGO 50% off traditional wings",
-              "details": "Tuesdays: buy one order of traditional wings, get a second 50% off. Terms vary by location; may require Blazin' Rewards membership.",
+              "title": "BOGO 50% off traditional wings Tuesday",
+              "details": "On Tuesdays, buy one order of traditional wings and get a second 50% off. Terms vary by location and may require a Blazin' Rewards membership.",
               "price": "BOGO 50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
@@ -2648,7 +2648,7 @@
                 "Thu"
               ],
               "title": "BOGO boneless wings Thursday",
-              "details": "Thursdays: buy one order of boneless wings, get one free. Confirm terms with the location.",
+              "details": "On Thursdays, buy one order of boneless wings and get one free. Confirm terms with the location.",
               "price": "BOGO",
               "studentOnly": false,
               "sourceUrl": "https://www.chowhound.com/2132338/best-time-bogo-buffalo-wild-wings",
@@ -2755,8 +2755,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Buck-a-wing night",
-              "details": "$1 wings every Wednesday 4-8 PM, dine-in only. From an undated Dayton.com wing guide; confirm it is still running.",
+              "title": "$1 wing night Wednesday",
+              "details": "$1 wings every Wednesday 4-8pm, dine-in only. Source is undated; confirm before you go.",
               "price": "$1",
               "studentOnly": false,
               "sourceUrl": "https://www.dayton.com/places/restaurant/your-guide-dayton-top-spots-for-wings/9CfNloMEZdF7fzzRKHLocI/",
@@ -2795,8 +2795,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "First Quarter lunch specials",
-              "details": "Weekdays 11am-2pm: quarter deli sub & house chips $6.99, quarter grilled sub & house chips $7.99; dine-in and carryout only.",
+              "title": "From $6.99 First Quarter lunch specials",
+              "details": "Weekdays 11am-2pm: quarter deli sub and house chips for $6.99, or quarter grilled sub and house chips for $7.99. Dine-in and carryout only.",
               "price": "$6.99",
               "studentOnly": false,
               "sourceUrl": "https://www.submarinehouse.com/specials",
@@ -2810,8 +2810,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Halftime Happy Hour half-off appetizers",
-              "details": "Mon-Fri 3-6pm: half off cheesy garlic bread, house chips basket, 3 pretzel sticks, chicken tender & fries and house fry basket.",
+              "title": "Half-off appetizers at Halftime Happy Hour",
+              "details": "Mon-Fri 3-6pm: half off cheesy garlic bread, house chips basket, 3 pretzel sticks, chicken tender and fries, and house fry basket.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.submarinehouse.com/specials",
@@ -2822,8 +2822,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "Weekend Overtime $7 baskets",
-              "details": "Sat & Sun 11am-9pm: $7 baskets of house chips, onion rings, Teezers or house fries.",
+              "title": "$7 baskets at Weekend Overtime",
+              "details": "Saturday and Sunday 11am-9pm: $7 baskets of house chips, onion rings, Teezers or house fries.",
               "price": "$7",
               "studentOnly": false,
               "sourceUrl": "https://www.submarinehouse.com/specials",
@@ -2922,7 +2922,7 @@
           "signature": false,
           "address": "416 E 5th St, Dayton, OH",
           "website": "https://www.facebook.com/416diner/",
-          "blurb": "Late-night diner (Fri-Sat until 4:30 AM) known for pepperoni rolls.",
+          "blurb": "Late-night diner known for pepperoni rolls, open until 4:30am on Fridays and Saturdays.",
           "price": "$",
           "sourceUrl": "https://www.dayton.com/places/restaurant/the-best-spots-for-some-casual-late-night-eats-the-oregon-district/MnGoJtKrVyNzUgoN9dq1OO/",
           "deals": []
@@ -2947,7 +2947,7 @@
                 "Fri"
               ],
               "title": "Weekday lunch specials",
-              "details": "Lunch specials Mon-Fri 10am-3pm, e.g. #1 small burrito for $9.49.",
+              "details": "Lunch specials Mon-Fri 10am-3pm, such as the #1 small burrito for $9.49.",
               "price": "$9.49",
               "studentOnly": false,
               "sourceUrl": "https://www.toasttab.com/local/order/taqueria-mixteca",
@@ -2957,8 +2957,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "Tuesday Special: six mini tacos",
-              "details": "Online menu lists a Tuesday Special of six mini tacos; price not shown in the source.",
+              "title": "Six mini tacos Tuesday special",
+              "details": "A Tuesday special of six mini tacos. Price is not listed.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.toasttab.com/local/order/taqueria-mixteca",
@@ -2987,8 +2987,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "Half-price appetizers happy hour",
-              "details": "Happy hour 4-7pm daily: half-price appetizers plus drink specials.",
+              "title": "Half-price appetizers at happy hour",
+              "details": "Happy hour daily 4-7pm: half-price appetizers plus drink specials.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://dayton937.com/happy-hours-around-town",
@@ -2999,7 +2999,7 @@
                 "Tue"
               ],
               "title": "Tuesday spaghetti special",
-              "details": "Listing mentions a Tuesday evening spaghetti special; daily lunch specials Mon-Fri are posted on its Facebook page.",
+              "details": "Spaghetti special on Tuesday evenings. Weekday lunch specials are posted on the tavern's Facebook page. Source is from 2024; confirm before you go.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.daytonlocal.com/directory/profiles/the-trolley-stop/",
@@ -3024,7 +3024,7 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Half-off appetizers happy hour",
+              "title": "Half-off appetizers at happy hour",
               "details": "Wed-Fri 4-7pm: half off appetizers and pints.",
               "price": "50% off",
               "studentOnly": false,
@@ -3049,7 +3049,7 @@
                 "Tue"
               ],
               "title": "Tiki Taco Tuesday",
-              "details": "Tuesday dinner service (from 4:30pm) with a rotating menu of three to four tacos, five to six appetizers and desserts.",
+              "details": "Tuesday dinner from 4:30pm with a rotating menu of three to four tacos, five to six appetizers and desserts.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.daytondailynews.com/what-to-know/oregon-district-restaurant-adds-tuesday-service-with-special-menu/K5AZ3BS4ARBHFM3A55TITAVVRQ",
@@ -3193,7 +3193,7 @@
                 "Thu"
               ],
               "title": "Thursday crab and lobster specials",
-              "details": "Crab and lobster specials every Thursday, 5-9pm (prices not listed).",
+              "details": "Crab and lobster specials every Thursday, 5-9pm. Prices are not listed.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://jays.com/specials",
@@ -3264,8 +3264,8 @@
               "days": [
                 "Wed"
               ],
-              "title": "Pizza Pint Night",
-              "details": "Wednesdays: 1 pizza + 2 pints for $20, or 2 pizzas + 4 pints for $35 (Puzzle Feud 7-9pm).",
+              "title": "$20 Pizza Pint Night Wednesday",
+              "details": "Wednesdays: 1 pizza and 2 pints for $20, or 2 pizzas and 4 pints for $35. Puzzle Feud runs 7-9pm.",
               "price": "$20",
               "studentOnly": false,
               "sourceUrl": "https://www.thedaytonbeerco.com/calendar",
@@ -3275,8 +3275,8 @@
               "days": [
                 "Thu"
               ],
-              "title": "Taco Thursday",
-              "details": "Thursdays: 3 tacos + 1 pint for $13 (karaoke 6:30-9:30pm).",
+              "title": "$13 taco Thursday",
+              "details": "Thursdays: 3 tacos and 1 pint for $13. Karaoke runs 6:30-9:30pm.",
               "price": "$13",
               "studentOnly": false,
               "sourceUrl": "https://www.thedaytonbeerco.com/calendar",

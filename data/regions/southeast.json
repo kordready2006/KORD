@@ -41,8 +41,8 @@
                 "Mon",
                 "Tue"
               ],
-              "title": "Double rewards points Mondays & Tuesdays",
-              "details": "In-store rewards earn 1 point per $1 and a $20 discount per 200 points; points are doubled on Mondays and Tuesdays.",
+              "title": "Double rewards points Monday and Tuesday",
+              "details": "Earn 1 point per $1 with in-store rewards and get a $20 discount for every 200 points. Points are doubled on Mondays and Tuesdays.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.bigmammasburritos.com/",
@@ -78,7 +78,7 @@
                 "Sun"
               ],
               "title": "$7.99 14-inch one-topping pizza",
-              "details": "14-inch one-topping pizza for $7.99, dine-in only, on Sundays. Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "details": "14-inch one-topping pizza for $7.99 on Sundays, dine-in only. Source is undated; confirm before you go.",
               "price": "$7.99",
               "studentOnly": false,
               "sourceUrl": "https://www.thepostathens.com/r/0c1b85e22a",
@@ -88,7 +88,7 @@
               "days": [
                 "Wed"
               ],
-              "title": "$1 pizza slice",
+              "title": "$1 pizza slices",
               "details": "$1 pizza slices on Wednesdays.",
               "price": "$1",
               "studentOnly": false,
@@ -103,7 +103,7 @@
                 "Thu"
               ],
               "title": "$8.99 Monday-Thursday pizza special",
-              "details": "14-inch (large) one-topping pizza for $8.99, Monday through Thursday, per the online ordering menu.",
+              "details": "Large 14-inch one-topping pizza for $8.99, Monday through Thursday, as listed on the online ordering menu.",
               "price": "$8.99",
               "studentOnly": false,
               "sourceUrl": "https://www.toasttab.com/local/order/courtside-pizza",
@@ -118,7 +118,7 @@
           "signature": true,
           "address": "15 W State St, Athens, OH 45701",
           "website": "https://www.obettys.com/",
-          "blurb": "Burlesque-themed hot dog shop (and hot dog museum) open late.",
+          "blurb": "Burlesque-themed hot dog shop and hot dog museum that stays open late.",
           "price": "$",
           "sourceUrl": "https://www.ohiomagazine.com/food-drink/article/how-o-betty-s-red-hot-merges-hot-dogs-and-burlesque",
           "deals": []
@@ -174,8 +174,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "Taco Tuesday",
-              "details": "$1 tacos and $1.50 chicken tacos, dine-in only. Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "title": "$1 Taco Tuesday",
+              "details": "$1 tacos and $1.50 chicken tacos on Tuesdays, dine-in only. Source is undated; confirm before you go.",
               "price": "$1",
               "studentOnly": false,
               "sourceUrl": "https://www.thepostathens.com/r/ca270f47c0",
@@ -186,7 +186,7 @@
                 "Wed"
               ],
               "title": "75-cent wing night",
-              "details": "75-cent bone-in wings, dine-in only, 4 p.m. to 10 p.m. Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "details": "75-cent bone-in wings on Wednesdays from 4 p.m. to 10 p.m., dine-in only. Source is undated; confirm before you go.",
               "price": "$0.75",
               "studentOnly": false,
               "sourceUrl": "https://www.thepostathens.com/r/ca270f47c0",
@@ -197,7 +197,7 @@
                 "Mon"
               ],
               "title": "$5 dozen boneless wings",
-              "details": "12 boneless wings for $5 on Mondays, dine-in only. From the bar's undated daily specials page.",
+              "details": "12 boneless wings for $5 on Mondays, dine-in only. Source is undated; confirm before you go.",
               "price": "$5",
               "studentOnly": false,
               "sourceUrl": "https://www.broneys.net/daily-specials",
@@ -208,7 +208,7 @@
                 "Thu"
               ],
               "title": "$7 classic burgers",
-              "details": "Classic burgers for $7 on Thursdays, dine-in only. From the bar's undated daily specials page.",
+              "details": "Classic burgers for $7 on Thursdays, dine-in only. Source is undated; confirm before you go.",
               "price": "$7",
               "studentOnly": false,
               "sourceUrl": "https://www.broneys.net/daily-specials",
@@ -219,7 +219,7 @@
                 "Fri"
               ],
               "title": "Half-price appetizers",
-              "details": "Half-priced appetizers on Fridays 4-10 p.m., dine-in only.",
+              "details": "Half-price appetizers on Fridays from 4 p.m. to 10 p.m., dine-in only.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.broneys.net/daily-specials",
@@ -230,7 +230,7 @@
                 "Sun"
               ],
               "title": "$3 loaded nachos",
-              "details": "Loaded nachos for $3 on Sundays. From the bar's undated daily specials page.",
+              "details": "Loaded nachos for $3 on Sundays. Source is undated; confirm before you go.",
               "price": "$3",
               "studentOnly": false,
               "sourceUrl": "https://www.broneys.net/daily-specials",
@@ -253,8 +253,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "Taco Tuesday",
-              "details": "Traditional tacos $1 and chicken tacos $1.50 on Tuesdays. Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "title": "$1 Taco Tuesday",
+              "details": "Traditional tacos for $1 and chicken tacos for $1.50 on Tuesdays. Source is undated; confirm before you go.",
               "price": "$1",
               "studentOnly": false,
               "sourceUrl": "https://www.thepostathens.com/r/ca270f47c0",
@@ -287,7 +287,7 @@
                 "Wed"
               ],
               "title": "$5.95 Bobcat Burrito",
-              "details": "Wednesday special: Bobcat Burrito for $5.95.",
+              "details": "Bobcat Burrito for $5.95 on Wednesdays.",
               "price": "$5.95",
               "studentOnly": false,
               "sourceUrl": "https://www.thepostathens.com/article/2024/12/athens-bar-specials-winter-2024",
@@ -298,7 +298,7 @@
                 "Thu"
               ],
               "title": "$6.95 quesabirria",
-              "details": "Thursday special: quesabirria for $6.95.",
+              "details": "Quesabirria for $6.95 on Thursdays.",
               "price": "$6.95",
               "studentOnly": false,
               "sourceUrl": "https://www.thepostathens.com/article/2024/12/athens-bar-specials-winter-2024",
@@ -322,7 +322,7 @@
                 "Mon"
               ],
               "title": "20% off for OU students on Mondays",
-              "details": "20% discount on Mondays for OU students showing a student ID (or Greek life members wearing letters). Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "details": "20% off on Mondays for OU students who show a student ID, or Greek life members wearing their letters. Source is undated; confirm before you go.",
               "price": "20% off",
               "studentOnly": true,
               "sourceUrl": "https://www.thepostathens.com/r/0c1b85e22a",
@@ -333,7 +333,7 @@
                 "Wed"
               ],
               "title": "$7 wing Wednesday",
-              "details": "Boneless, traditional or cauliflower wings for $7 on Wednesdays (a 2024 Post roundup listed 1 lb. for $5.99).",
+              "details": "Boneless, traditional or cauliflower wings for $7 on Wednesdays.",
               "price": "$7",
               "studentOnly": false,
               "sourceUrl": "https://www.thepigskin.com/specials",
@@ -343,8 +343,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "Half-off specialty burgers",
-              "details": "Half off all half-pound specialty burgers with fries or chips; the specials page appears to list this under Tuesday, so confirm the day with the bar.",
+              "title": "Half off specialty burgers",
+              "details": "Half off all half-pound specialty burgers with fries or chips on Tuesdays. The day is uncertain; confirm before you go.",
               "price": "50% off",
               "studentOnly": false,
               "sourceUrl": "https://www.thepigskin.com/specials",
@@ -368,7 +368,7 @@
                 "Tue"
               ],
               "title": "$1 tacos",
-              "details": "$1 tacos on Tuesdays. Listed in an undated roundup by The Post (OU student paper); confirm with the bar before going.",
+              "details": "$1 tacos on Tuesdays. Source is undated; confirm before you go.",
               "price": "$1",
               "studentOnly": false,
               "sourceUrl": "https://www.thepostathens.com/r/0c1b85e22a",
@@ -378,7 +378,7 @@
               "days": [
                 "Wed"
               ],
-              "title": "Wing It Wednesday: 75-cent wings",
+              "title": "75-cent wings on Wing It Wednesday",
               "details": "Bone-in wings for 75 cents each on Wednesdays.",
               "price": "$0.75",
               "studentOnly": false,
@@ -389,8 +389,8 @@
               "days": [
                 "Tue"
               ],
-              "title": "Tuesday wing deal",
-              "details": "Online ordering page lists Tuesday deals with wings at 6 for $3 or 12 for $6.",
+              "title": "$3 for 6 wings on Tuesdays",
+              "details": "Wings are 6 for $3 or 12 for $6 on Tuesdays, as listed on the online ordering page.",
               "price": "$3",
               "studentOnly": false,
               "sourceUrl": "https://www.toasttab.com/local/order/stephens-on-court",
@@ -489,7 +489,7 @@
           "signature": true,
           "address": "235 W State St, Athens, OH 45701",
           "website": "https://millerschicken.com/",
-          "blurb": "Long-running west side fried chicken counter.",
+          "blurb": "Long-running west-side fried chicken counter.",
           "price": "$",
           "sourceUrl": "https://maps.roadtrippers.com/us/athens-oh/food-drink/millers-chicken",
           "deals": []
@@ -525,7 +525,7 @@
           "signature": false,
           "address": "63 S Court St, Athens, OH 45701",
           "website": "https://locations.raisingcanes.com/oh/athens/63-south-court-street",
-          "blurb": "Chicken finger chain; walk-up uptown location with no drive-through, opened October 2025.",
+          "blurb": "Chicken finger chain with a walk-up uptown location, no drive-through, that opened in October 2025.",
           "price": "$",
           "sourceUrl": "https://locations.raisingcanes.com/oh/athens/63-south-court-street",
           "deals": []
@@ -537,7 +537,7 @@
           "signature": false,
           "address": "63 S Court St, Athens, OH 45701",
           "website": "",
-          "blurb": "Acai, pitaya and coconut bowl and smoothie chain next to Raising Cane's, opened March 2026.",
+          "blurb": "Acai, pitaya and coconut bowl and smoothie chain next to Raising Cane's that opened in March 2026.",
           "price": "$$",
           "sourceUrl": "https://woub.org/2025/03/04/raising-canes-playa-bowls-restaurant-tenants-historic-building-uptown-athens-ohio/",
           "deals": []
@@ -984,7 +984,7 @@
                 "Sun"
               ],
               "title": "Buy 10 online orders, get 1 free",
-              "details": "Online ordering loyalty offer: buy 10 orders and get 1 free.",
+              "details": "Loyalty offer for online orders: buy 10 orders and get 1 free.",
               "price": "",
               "studentOnly": false,
               "sourceUrl": "https://www.drmaysthaikitchen.com/",
@@ -1013,8 +1013,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "Large 1-topping pizza $11.99",
-              "details": "Online orders only with promo code WS311.",
+              "title": "$11.99 large 1-topping pizza",
+              "details": "Online orders only, with promo code WS311.",
               "price": "$11.99",
               "studentOnly": false,
               "sourceUrl": "https://www.plusonepizza.com/ohio/athens/specials-coupons",
@@ -1030,8 +1030,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "Pick 2 for $7.99 each",
-              "details": "Choose any two: medium 1-topping pizza, 8-inch sub, spaghetti dinner, stromboli, small cheesy bread or 1/2 lb boneless wings; online orders only with promo code WS312.",
+              "title": "$7.99 each when you pick 2",
+              "details": "Choose any two: medium 1-topping pizza, 8-inch sub, spaghetti dinner, stromboli, small cheesy bread or a half pound of boneless wings. Online orders only, with promo code WS312.",
               "price": "$7.99 each",
               "studentOnly": false,
               "sourceUrl": "https://www.plusonepizza.com/ohio/athens/specials-coupons",
@@ -1047,8 +1047,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "Two large 1-topping pizzas $22.99",
-              "details": "Online orders only with promo code WS315.",
+              "title": "$22.99 for two large 1-topping pizzas",
+              "details": "Online orders only, with promo code WS315.",
               "price": "$22.99",
               "studentOnly": false,
               "sourceUrl": "https://www.plusonepizza.com/ohio/athens/specials-coupons",
@@ -1783,7 +1783,7 @@
                 "Sun"
               ],
               "title": "25% off for SSU students",
-              "details": "Listed under everyday discounts on the pub's own site: 25% off for Shawnee State students.",
+              "details": "Shawnee State students get 25% off every day.",
               "price": "25% off",
               "studentOnly": true,
               "sourceUrl": "https://www.portcitypub.com/",
@@ -1795,8 +1795,8 @@
                 "Thu",
                 "Fri"
               ],
-              "title": "Happy hour appetizers",
-              "details": "Happy hour 4-7 p.m. Wednesday-Friday: $2 off any large appetizer and $1 off any small appetizer.",
+              "title": "$2 off large appetizers at happy hour",
+              "details": "Happy hour runs 4-7 p.m. Wednesday through Friday, with $2 off any large appetizer and $1 off any small appetizer.",
               "price": "$2 off",
               "studentOnly": false,
               "sourceUrl": "https://www.portcitypub.com/",
@@ -1826,7 +1826,7 @@
                 "Sun"
               ],
               "title": "10% off for SSU students",
-              "details": "10% off, alcohol excluded. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "details": "10% off, alcohol excluded, for Shawnee State students with an SSU student ID. Source may be a couple of years old; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
@@ -1856,7 +1856,7 @@
                 "Sun"
               ],
               "title": "10% off for SSU students",
-              "details": "10% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "details": "10% off for Shawnee State students with an SSU student ID. Source may be a couple of years old; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
@@ -1886,7 +1886,7 @@
                 "Sun"
               ],
               "title": "10% off for SSU students",
-              "details": "10% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "details": "10% off for Shawnee State students with an SSU student ID. Source may be a couple of years old; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
@@ -1915,8 +1915,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "10% off total bill for SSU students",
-              "details": "10% off the total bill. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "title": "10% off your total bill for SSU students",
+              "details": "10% off your total bill for Shawnee State students with an SSU student ID. Source may be a couple of years old; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
@@ -1945,8 +1945,8 @@
                 "Sat",
                 "Sun"
               ],
-              "title": "10% off total bill for SSU students",
-              "details": "10% off the total bill, dine-in only. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "title": "10% off your total bill for SSU students",
+              "details": "10% off your total bill, dine-in only, for Shawnee State students with an SSU student ID. Source may be a couple of years old; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
@@ -1976,7 +1976,7 @@
                 "Sun"
               ],
               "title": "10% off for SSU students",
-              "details": "10% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "details": "10% off for Shawnee State students with an SSU student ID. Source may be a couple of years old; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
@@ -2006,7 +2006,7 @@
                 "Sun"
               ],
               "title": "$10.99 buffet special for SSU students",
-              "details": "$10.99 buffet special. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "details": "$10.99 buffet special for Shawnee State students with an SSU student ID. Source may be a couple of years old; confirm before you go.",
               "price": "$10.99",
               "studentOnly": true,
               "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
@@ -2036,7 +2036,7 @@
                 "Sun"
               ],
               "title": "10% off for SSU students",
-              "details": "10% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "details": "10% off for Shawnee State students with an SSU student ID. Source may be a couple of years old; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
@@ -2066,7 +2066,7 @@
                 "Sun"
               ],
               "title": "10% off for SSU students",
-              "details": "10% off. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "details": "10% off for Shawnee State students with an SSU student ID. Source may be a couple of years old; confirm before you go.",
               "price": "10% off",
               "studentOnly": true,
               "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
@@ -2096,7 +2096,7 @@
                 "Sun"
               ],
               "title": "Free drink with a footlong for SSU students",
-              "details": "Free drink with a footlong, or 10% off other purchases, at all Portsmouth-area locations. Listed on Shawnee State University's 'We Feed the Bears' student discount page; show your SSU student ID. The page copy seen may be a couple of years old, so confirm before going.",
+              "details": "Free drink with a footlong, or 10% off other purchases, at all Portsmouth-area locations for Shawnee State students with an SSU student ID. Source may be a couple of years old; confirm before you go.",
               "price": "Free drink",
               "studentOnly": true,
               "sourceUrl": "https://www.shawnee.edu/campus-life/dean-students/student-discounts",
@@ -2147,7 +2147,7 @@
           "signature": false,
           "address": "",
           "website": "",
-          "blurb": "'80s pop-culture themed cupcakery and bakery that appeared on Food Network's Cupcake Wars.",
+          "blurb": "'80s pop-culture-themed cupcakery and bakery that appeared on Food Network's Cupcake Wars.",
           "price": "$",
           "sourceUrl": "https://portsmouthohio.org/83-sweets-bakery/",
           "deals": []
@@ -2171,7 +2171,7 @@
                 "Fri",
                 "Sat"
               ],
-              "title": "Cookies 3 for $4",
+              "title": "$4 for 3 cookies",
               "details": "Classic $1.50 cookies are 3 for $4, 6 for $8 or 12 for $14.",
               "price": "3 for $4",
               "studentOnly": false,
@@ -2187,7 +2187,7 @@
           "signature": false,
           "address": "1714 11th St, Portsmouth, OH 45662",
           "website": "https://jetspopcorn.com/",
-          "blurb": "Shop for gourmet popcorn, chocolates and cotton candy.",
+          "blurb": "Shop selling gourmet popcorn, chocolates and cotton candy.",
           "price": "$",
           "sourceUrl": "https://jetspopcorn.com/",
           "deals": []

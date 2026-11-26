@@ -1,0 +1,16 @@
+{
+  "about": "Who has allowed KORD to show their own logo and photos. Everything else in the app uses the licensed photo library in stock/.",
+  "restaurantPhotos": true,
+  "restaurantLogos": true,
+  "schoolLogos": true,
+  "permitted": {},
+  "permittedExample": {
+    "broneys.net": {
+      "logo": true,
+      "photos": true,
+      "by": "Name, title",
+      "date": "2026-12-01",
+      "how": "email reply"
+    }
+  }
+}

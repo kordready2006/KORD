@@ -5,7 +5,7 @@
       "name": "McDonald's",
       "category": "Fast Food",
       "website": "https://www.mcdonalds.com",
-      "blurb": "Burgers, fries, McNuggets and all-day value under the McValue menu.",
+      "blurb": "Burgers, fries, McNuggets and all-day value on the McValue menu.",
       "price": "$",
       "deals": [
         {
@@ -18,7 +18,7 @@
             "Sat",
             "Sun"
           ],
-          "title": "McValue Buy One, Add One for $1",
+          "title": "$1 add-on: McValue Buy One, Add One",
           "details": "Buy one eligible McValue item at full price and add a second of equal or lesser value for $1. Breakfast: Sausage McMuffin, Sausage Biscuit, Sausage Burrito, Hash Browns; lunch to late night: McChicken, Double Cheeseburger, 6-pc McNuggets, Small Fries. Prices and participation may vary.",
           "price": "$1 add-on",
           "studentOnly": false,
@@ -35,8 +35,8 @@
             "Sat",
             "Sun"
           ],
-          "title": "McValue Meal Deal from $5",
-          "details": "McDouble or McChicken, small fries, 4-pc Chicken McNuggets and a small soft drink. Listed as 'starting at $5'; price may be higher at some restaurants. Prices and participation may vary.",
+          "title": "From $5: McValue Meal Deal",
+          "details": "McDouble or McChicken, small fries, 4-pc Chicken McNuggets and a small soft drink. Starts at $5 and may cost more at some restaurants; participation may vary.",
           "price": "$5",
           "studentOnly": false,
           "sourceUrl": "https://www.mcdonalds.com/us/en-us/deals.html",
@@ -62,7 +62,7 @@
             "Sun"
           ],
           "title": "$4 Biggie Bites",
-          "details": "Choose one: Crispy Chicken Sandwich, Jr. Cheeseburger, Jr. Bacon Cheeseburger, 4-pc Nuggets or Jr. Fry; then a second: 4-pc Nuggets, Jr. Fry or small soft drink. Participating U.S. restaurants; price and options may vary by location.",
+          "details": "Choose one of Crispy Chicken Sandwich, Jr. Cheeseburger, Jr. Bacon Cheeseburger, 4-pc Nuggets or Jr. Fry, then add 4-pc Nuggets, a Jr. Fry or a small soft drink. At participating U.S. restaurants; price and options may vary by location.",
           "price": "$4",
           "studentOnly": false,
           "sourceUrl": "https://www.wendys.com/mealdeals",
@@ -79,7 +79,7 @@
             "Sun"
           ],
           "title": "$6 Biggie Bag",
-          "details": "Choice of Crispy Chicken Sandwich, Jr. Cheeseburger, Jr. Bacon Cheeseburger or Double Stack, plus 4-pc Nuggets, Jr. Fry and small soft drink. Participating U.S. restaurants; price may vary.",
+          "details": "Choice of Crispy Chicken Sandwich, Jr. Cheeseburger, Jr. Bacon Cheeseburger or Double Stack, plus 4-pc Nuggets, a Jr. Fry and a small soft drink. At participating U.S. restaurants; price may vary.",
           "price": "$6",
           "studentOnly": false,
           "sourceUrl": "https://www.wendys.com/mealdeals",
@@ -96,7 +96,7 @@
             "Sun"
           ],
           "title": "$8 Biggie Bundle",
-          "details": "Two sandwiches (Crispy Chicken Sandwich, Jr. Cheeseburger, Jr. Bacon Cheeseburger or Double Stack) plus Jr. Fry and small soft drink. Participating U.S. restaurants; price may vary.",
+          "details": "Two sandwiches (Crispy Chicken Sandwich, Jr. Cheeseburger, Jr. Bacon Cheeseburger or Double Stack) plus a Jr. Fry and a small soft drink. At participating U.S. restaurants; price may vary.",
           "price": "$8",
           "studentOnly": false,
           "sourceUrl": "https://www.wendys.com/mealdeals",
@@ -129,7 +129,7 @@
             "Sat",
             "Sun"
           ],
-          "title": "Luxe Value Menu: 10 items at $3 or less",
+          "title": "$3 or less: 10 Luxe Value Menu items",
           "details": "Ten items priced at $3 or less (five new, five carried over from the former Cravings Value Menu). Prices may vary by location.",
           "price": "$3 or less",
           "studentOnly": false,
@@ -140,8 +140,8 @@
           "days": [
             "Tue"
           ],
-          "title": "Tuesday Drops (app)",
-          "details": "App-only for Taco Bell Rewards members: a new drop every Tuesday at 2 PM PT, first come, first served, in limited quantities. Drops vary week to week (one example was a Luxe Value Menu item for $1).",
+          "title": "Tuesday Drops in the app",
+          "details": "App-only for Taco Bell Rewards members: a new drop every Tuesday at 2 p.m. PT, first come, first served, in limited quantities. Drops vary week to week; one example was a Luxe Value Menu item for $1.",
           "price": "",
           "studentOnly": false,
           "sourceUrl": "https://www.tacobell.com/newsroom/taco-bell-launches-the-new-luxe-value-menu",
@@ -166,7 +166,7 @@
             "Sat",
             "Sun"
           ],
-          "title": "Chipotle U Rewards (student loyalty)",
+          "title": "Chipotle U Rewards for students",
           "details": "College students who verify enrollment through ID.me earn 12 points per $1 instead of the regular 10, plus 1,000 bonus points on joining. App/rewards account required; this is extra points, not a price discount.",
           "price": "",
           "studentOnly": true,
@@ -201,7 +201,7 @@
             "Sun"
           ],
           "title": "$4.99 Sub of the Day",
-          "details": "A different featured six-inch sub each day of the week for $4.99. Prices higher in AK and HI; participation may vary.",
+          "details": "A different featured six-inch sub each day of the week for $4.99. Prices are higher in Alaska and Hawaii; participation may vary.",
           "price": "$4.99",
           "studentOnly": false,
           "sourceUrl": "https://newsroom.subway.com/2026-04-28-Subway-R-Introduces-Its-First-Ever-Value-Menu-with-15-Entrees-Under-5",
@@ -218,7 +218,7 @@
             "Sun"
           ],
           "title": "$6.99 Meal of the Day",
-          "details": "The day's featured six-inch sub for $6.99 (footlong $9.99) with two cookies or a bag of chips and a small fountain drink. Prices higher in CA, AK and HI; participation may vary.",
+          "details": "The day's featured six-inch sub for $6.99 (footlong $9.99) with two cookies or a bag of chips and a small fountain drink. Prices are higher in California, Alaska and Hawaii; participation may vary.",
           "price": "$6.99",
           "studentOnly": false,
           "sourceUrl": "https://newsroom.subway.com/2026-03-05-Subway-R-Seeks-to-Serve-1-Million-Meatballs-on-National-Meatball-Day-with-Free-Footlong-Upgrades",
@@ -234,8 +234,8 @@
             "Sat",
             "Sun"
           ],
-          "title": "Value Menu: 15 entrees under $5",
-          "details": "Subway's value menu launched April 2026 with 15 entrees priced under $5. Prices and participation may vary.",
+          "title": "Under $5: 15 Value Menu entrees",
+          "details": "Subway's value menu launched in April 2026 with 15 entrees priced under $5. Prices and participation may vary.",
           "price": "Under $5",
           "studentOnly": false,
           "sourceUrl": "https://newsroom.subway.com/2026-04-28-Subway-R-Introduces-Its-First-Ever-Value-Menu-with-15-Entrees-Under-5",
@@ -301,7 +301,7 @@
             "Sun"
           ],
           "title": "$10 Taste of KFC Fried Chicken Meal",
-          "details": "4 pieces of fried chicken, 2 mashed potato sides and 2 biscuits for $10. Price and participation may vary by location.",
+          "details": "Four pieces of fried chicken, two mashed potato sides and two biscuits for $10. Price and participation may vary by location.",
           "price": "$10",
           "studentOnly": false,
           "sourceUrl": "https://www.kfc.com/menu/family-and-kids-meals/taste-of-kfc-4-piece-deal",
@@ -318,7 +318,7 @@
             "Sun"
           ],
           "title": "$5 Mac & Cheese Bowl",
-          "details": "Mac and cheese topped with crispy chicken nuggets and a three-cheese blend, listed at $5. Price and participation may vary by location.",
+          "details": "Mac and cheese topped with crispy chicken nuggets and a three-cheese blend for $5. Price and participation may vary by location.",
           "price": "$5",
           "studentOnly": false,
           "sourceUrl": "https://www.kfc.com/menu/pot-pies-and-bowls/mac-and-cheese-bowl",
@@ -401,8 +401,8 @@
             "Sat",
             "Sun"
           ],
-          "title": "Mix & Match: any 2 or more for $6.99 each",
-          "details": "Choose any two or more eligible items for $6.99 each (2-item minimum). Prices higher at some locations; participation may vary.",
+          "title": "$6.99 each Mix & Match (any 2 or more)",
+          "details": "Choose any two or more eligible items for $6.99 each (2-item minimum). Prices are higher at some locations; participation may vary.",
           "price": "$6.99 each",
           "studentOnly": false,
           "sourceUrl": "https://www.dominos.com/deals",
@@ -418,7 +418,7 @@
             "Sat",
             "Sun"
           ],
-          "title": "Weeklong Carryout Deal $7.99",
+          "title": "$7.99 Weeklong Carryout Deal",
           "details": "Carryout only: large 1-topping pizza, 8-piece wings or boneless chicken, or other eligible items for $7.99 each. Prices and participation may vary by store.",
           "price": "$7.99",
           "studentOnly": false,
@@ -444,8 +444,8 @@
             "Sat",
             "Sun"
           ],
-          "title": "Papa Pairings from $6.99 each",
-          "details": "Choose two or more eligible items (select medium 1-topping pizzas, Oven-Toasted Sandwiches, wings, breadsticks, cheesesticks, garlic knots, desserts) starting at $6.99 each, delivery or carryout. Participating locations; eligible items and prices vary by location.",
+          "title": "From $6.99 each: Papa Pairings",
+          "details": "Choose two or more eligible items (select medium 1-topping pizzas, Oven-Toasted Sandwiches, wings, breadsticks, cheesesticks, garlic knots or desserts) starting at $6.99 each, for delivery or carryout. At participating locations; eligible items and prices vary.",
           "price": "$6.99 each",
           "studentOnly": false,
           "sourceUrl": "https://www.papajohns.com/specials/",
@@ -487,7 +487,7 @@
             "Sun"
           ],
           "title": "$7 Deal Lover's Menu",
-          "details": "Medium one-topping pizzas, Melts, wings, pastas, sides and desserts at $7 each when you order two or more. Priced higher in some locations; availability and participation vary.",
+          "details": "Medium one-topping pizzas, Melts, wings, pastas, sides and desserts for $7 each when you order two or more. Prices are higher in some locations; availability and participation vary.",
           "price": "$7 each",
           "studentOnly": false,
           "sourceUrl": "https://www.pizzahut.com/c/content/7-dollar-deal-lovers",
@@ -506,8 +506,8 @@
           "days": [
             "Tue"
           ],
-          "title": "BOGO Bone-In Wings Tuesday",
-          "details": "Buy one order of bone-in (traditional) wings on Tuesday and get a second of equal or lesser value discounted. BWW's own pages differ on the discount (homepage: 50% off the second order for Rewards members; promos page: 100% off), so check the app. Participating locations.",
+          "title": "BOGO bone-in wings Tuesday",
+          "details": "Buy one order of bone-in (traditional) wings on Tuesday and get a second of equal or lesser value at a discount. Buffalo Wild Wings' own pages disagree on the discount (50% off the second order for Rewards members on the homepage, 100% off on the promos page), so check the app. Participating locations only.",
           "price": "BOGO",
           "studentOnly": false,
           "sourceUrl": "https://www.buffalowildwings.com/bogo-days/",
@@ -517,8 +517,8 @@
           "days": [
             "Thu"
           ],
-          "title": "BOGO Boneless Wings Thursday",
-          "details": "Buy one order of boneless wings on Thursday and get one of equal or lesser value free. Fine print varies on dine-in vs takeout/delivery; participating locations.",
+          "title": "BOGO boneless wings Thursday",
+          "details": "Buy one order of boneless wings on Thursday and get one of equal or lesser value free. Rules for dine-in, takeout and delivery vary; participating locations only.",
           "price": "BOGO free",
           "studentOnly": false,
           "sourceUrl": "https://www.buffalowildwings.com/bogo-days/",
@@ -543,7 +543,7 @@
             "Sat",
             "Sun"
           ],
-          "title": "Boneless Meal Deal",
+          "title": "From $16.99: Boneless Meal Deal",
           "details": "20 boneless wings in up to 4 flavors, a large seasoned fry and 2 dips. Listed at $16.99 at one location and $18.99 at another; price varies by location.",
           "price": "From $16.99",
           "studentOnly": false,
@@ -571,7 +571,7 @@
           "days": [
             "Mon"
           ],
-          "title": "Free Mod Mondays (Rewards)",
+          "title": "Free Mod Mondays for Rewards members",
           "details": "Starbucks Rewards members get a coupon for one free drink customization (including cold foam) one Monday a month. App/Rewards account required.",
           "price": "Free customization",
           "studentOnly": false,
@@ -641,7 +641,7 @@
             "Sun"
           ],
           "title": "$6 Tims Trio",
-          "details": "Medium hot brewed or iced coffee, one classic or specialty donut and one eligible hot breakfast sandwich for $6 at participating U.S. restaurants, in-store or in the app (higher prices on delivery).",
+          "details": "Medium hot brewed or iced coffee, one classic or specialty donut and one eligible hot breakfast sandwich for $6. Available at participating U.S. restaurants, in-store or in the app; prices are higher on delivery.",
           "price": "$6",
           "studentOnly": false,
           "sourceUrl": "https://www.timhortons.com/offer-terms",
@@ -667,7 +667,7 @@
             "Sun"
           ],
           "title": "$7 Meal Deal",
-          "details": "Cheeseburger Meal Deal: cheeseburger, fries and a soft drink for $7 (a 3-piece chicken strip version is also listed). Participating locations; prices may vary.",
+          "details": "Cheeseburger Meal Deal: cheeseburger, fries and a soft drink for $7. A 3-piece chicken strip version is also offered. Participating locations; prices may vary.",
           "price": "$7",
           "studentOnly": false,
           "sourceUrl": "https://www.dairyqueen.com/en-us/menu/cheeseburger-meal-deal/",
@@ -709,8 +709,8 @@
             "Sat",
             "Sun"
           ],
-          "title": "Half-price Drinks and Slushes (SONIC Rewards)",
-          "details": "App-only: SONIC Rewards members choose one of three benefit offers each visit, including half-price Drinks and Slushes (others: a free snack or side, or $2 off a $10 order). Exclusions apply; not valid with combos or delivery.",
+          "title": "Half-price drinks and slushes (SONIC Rewards)",
+          "details": "App-only: SONIC Rewards members choose one of three offers each visit, including half-price drinks and slushes (the others are a free snack or side, or $2 off a $10 order). Exclusions apply; not valid with combos or delivery.",
           "price": "50% off",
           "studentOnly": false,
           "sourceUrl": "https://stories.inspirebrands.com/sonic-rewards-new-loyalty-program/",
@@ -726,8 +726,8 @@
             "Sat",
             "Sun"
           ],
-          "title": "$1.99 Menu",
-          "details": "Value menu Sonic described as 'here to stay': items such as a Quarter Pound Double Cheeseburger, Chili Cheese Coney, queso wraps, small tots and 16 oz shakes at $1.99. Lineup has been revised over time; participating locations.",
+          "title": "$1.99 value menu",
+          "details": "Sonic calls this value menu \"here to stay\": items such as a Quarter Pound Double Cheeseburger, Chili Cheese Coney, queso wraps, small tots and 16 oz shakes at $1.99. The lineup has changed over time; participating locations only. Source is from 2024; confirm before you go.",
           "price": "$1.99",
           "studentOnly": false,
           "sourceUrl": "https://stories.inspirebrands.com/sonic-debuts-new-1-99-menu-featuring-new-queso-wraps/",
@@ -758,8 +758,8 @@
             "Thu",
             "Fri"
           ],
-          "title": "Half Price Happy Hour",
-          "details": "Half-price shakes and drinks on weekdays. The 2-5 pm window is as reported by third-party coverage (the official page was not readable in full); hours and participation vary by location.",
+          "title": "Half-price happy hour",
+          "details": "Half-price shakes and drinks on weekdays, reportedly 2-5 p.m. Hours and participation vary by location. Hours come from third-party reports; confirm before you go.",
           "price": "50% off",
           "studentOnly": false,
           "sourceUrl": "https://www.steaknshake.com/menu_specials/half-price-happy-hour/",
@@ -888,8 +888,8 @@
             "Sat",
             "Sun"
           ],
-          "title": "Late Night Half-Price Appetizers",
-          "details": "Half-price select appetizers during late-night hours, dine-in only, at participating restaurants. Hours vary by location (one location page lists 10 pm-close every night); confirm with your local Applebee's.",
+          "title": "Half-price late-night appetizers",
+          "details": "Half-price select appetizers during late-night hours, dine-in only, at participating restaurants. Hours vary by location; one lists 10 p.m.-close every night. Source is from 2023; confirm before you go.",
           "price": "50% off",
           "studentOnly": false,
           "sourceUrl": "https://www.applebees.com/en/news/2023/cure-late-night-cravings-with-applebees-late-night-half-off-appetizers",

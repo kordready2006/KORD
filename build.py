@@ -169,6 +169,8 @@ def main():
                     "price": s.get("price") or "", "sourceUrl": s.get("sourceUrl") or "", "deals": deals})
 
     geo = json.load(open(os.path.join(ROOT, "data", "geo.json"))) if os.path.exists(os.path.join(ROOT, "data", "geo.json")) else {}
+    rights = json.load(open(os.path.join(ROOT, "data", "rights.json"))) if os.path.exists(os.path.join(ROOT, "data", "rights.json")) else {}
+    permitted = rights.get("permitted", {})
     live, far, unknown = [], 0, 0
     for tid, name, abbr, col, ink, url, also in SCHOOLS:
         t = towns[tid]
@@ -185,12 +187,19 @@ def main():
             keep.append(sp)
         t["spots"] = keep
         t["school"] = {"name": name, "abbr": abbr, "color": col, "ink": ink, "url": url, "also": also}
-        if os.path.exists(os.path.join(ROOT, "logos", "schools", tid + ".png")):
+        if rights.get("schoolLogos") and os.path.exists(os.path.join(ROOT, "logos", "schools", tid + ".png")):
             t["school"]["logo"] = "logos/schools/" + tid + ".png"
         for sp in t["spots"]:  # site icons fetched by tools/fetch_logos.py
             host = re.sub(r"^www\.", "", re.sub(r"^https?://([^/]+).*$", r"\1", sp["website"])) if sp["website"] else ""
-            if host and os.path.exists(os.path.join(ROOT, "logos", "spots", host + ".png")):
+            # A restaurant's own logo and photos are its property. They are used only when data/rights.json turns
+            # them on for everyone, or lists that restaurant's website under "permitted" (it said yes in writing).
+            ok = permitted.get(host, {})
+            own_logo = rights.get("restaurantLogos") or ok.get("logo")
+            own_photos = rights.get("restaurantPhotos") or ok.get("photos")
+            if own_logo and host and os.path.exists(os.path.join(ROOT, "logos", "spots", host + ".png")):
                 sp["logo"] = "logos/spots/" + host + ".png"
+            if not own_photos:
+                continue  # the app shows a licensed example photo from the library instead
             if host and os.path.exists(os.path.join(ROOT, "photos", host + ".jpg")):  # the restaurant's own photo, see data/place_photos.json
                 sp["photo"] = "photos/" + host + ".jpg"
             tag = place_tags.get(host, "")
@@ -209,7 +218,16 @@ def main():
                     dl["nophoto"] = True
         del t["colleges"]
         live.append(t)
-    out = {"researchedOn": researched, "towns": live}
+    # Licensed photo library (stock/): every file is public domain or CC BY and is credited in the app.
+    lib = json.load(open(os.path.join(ROOT, "data", "stock_photos.json"))) if os.path.exists(os.path.join(ROOT, "data", "stock_photos.json")) else {}
+    stock = {}
+    for fname, info in sorted(lib.items()):
+        if os.path.exists(os.path.join(ROOT, "stock", fname)):
+            stock.setdefault(info["key"], []).append("stock/" + fname)
+    credits = [{"title": v["title"], "artist": v["artist"], "license": v["license"], "licenseUrl": v.get("licenseUrl", ""), "page": v["page"]}
+               for k, v in sorted(lib.items()) if os.path.exists(os.path.join(ROOT, "stock", k))]
+    out = {"researchedOn": researched, "towns": live, "stock": stock, "credits": credits,
+           "rights": {"logos": bool(rights.get("restaurantLogos")), "photos": bool(rights.get("restaurantPhotos"))}}
     with open(os.path.join(ROOT, "data", "kord.json"), "w") as f:
         json.dump(out, f, ensure_ascii=False, separators=(",", ":"))
 
