@@ -87,8 +87,7 @@ async function openFirstDeal(p) {
   await p.click('[data-day="Wed"]');
   await p.click('.dcard:has(.price:has-text("$")) >> nth=0');
   await p.waitForSelector('.orderbox');
-  const opt = await p.$('.orderbox .opt >> nth=1');
-  if (opt) await opt.click();
+  if (await p.locator('.orderbox .opt').count() > 1) await p.locator('.orderbox .opt').nth(1).click();
   await p.click('[data-qty="1"]');
   await p.fill('#ordNote', 'extra ranch');
   await p.screenshot({ path: `${out}/o-customize.png` });
