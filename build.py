@@ -149,6 +149,8 @@ def main():
                         d = clean_deal(x, national=True)
                         if d and norm(d["title"]) not in titles:
                             deals.append(d)
+                if not s.get("local") and any(not o["local"] and norm(o["name"]) == norm(name) for o in town["spots"]):
+                    continue  # the same chain listed twice in one town
                 town["spots"].append({
                     "id": sid, "name": name, "category": s.get("category") if s.get("category") in CATS else "Other",
                     "local": bool(s.get("local")), "signature": bool(s.get("signature")), "address": s.get("address") or "",

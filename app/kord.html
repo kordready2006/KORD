@@ -204,6 +204,26 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 .paycard { display: flex; align-items: center; justify-content: space-between; gap: 10px; background: var(--card); border-radius: 12px; padding: 12px 14px; box-shadow: var(--shadow); font-weight: 700; }
 .bigbtn { width: 100%; padding: 16px; font-size: 17px; }
 .done { text-align: center; display: flex; flex-direction: column; gap: 8px; align-items: center; padding-top: 10px; }
+.rewards { background: var(--ink); color: var(--bg); border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+.rewards .big { font: 800 44px/1 var(--display); letter-spacing: -.03em; }
+.rewards .big small { font: 700 14px var(--body); letter-spacing: 0; opacity: .8; }
+.rewards .lvl { display: flex; justify-content: space-between; gap: 10px; font-weight: 700; font-size: 13px; }
+.bar { height: 10px; border-radius: 999px; background: rgba(127,127,127,.35); overflow: hidden; }
+.bar i { display: block; height: 100%; background: var(--sun); border-radius: 999px; }
+.perk { display: flex; align-items: center; gap: 12px; background: var(--card); border-radius: 14px; box-shadow: var(--shadow); padding: 12px 14px; }
+.perk .mid { flex: 1; min-width: 0; }
+.perk .mid b { display: block; }
+.perk .mid small { color: var(--muted); }
+.btn[disabled] { opacity: .45; cursor: default; }
+.badges { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.bdg { background: var(--card); border-radius: 14px; box-shadow: var(--shadow); padding: 12px 8px; text-align: center; font-size: 12px; color: var(--muted); }
+.bdg b { display: block; font: 800 14px/1.2 var(--display); color: var(--ink); margin-bottom: 2px; }
+.bdg.off { opacity: .45; box-shadow: inset 0 0 0 1px var(--line); background: none; }
+.plus { background: var(--sun); color: var(--sun-ink); border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+.plus h3 { margin: 0; font: 800 20px var(--display); }
+.plus p { margin: 0; font-size: 14px; }
+.earn { margin: 0; padding-left: 18px; font-size: 14px; display: flex; flex-direction: column; gap: 4px; }
+.toast { position: fixed; left: 50%; bottom: calc(84px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); z-index: 40; background: var(--ink); color: var(--bg); font-weight: 700; padding: 10px 16px; border-radius: 999px; box-shadow: var(--shadow); white-space: nowrap; max-width: calc(100% - 32px); overflow: hidden; text-overflow: ellipsis; }
 .done .tick { width: 72px; height: 72px; border-radius: 50%; background: var(--mint); color: #fff; display: grid; place-items: center; font: 800 38px var(--display); }
 .dishes { display: flex; flex-direction: column; gap: 8px; }
 .dish { background: var(--card); border-radius: 14px; box-shadow: var(--shadow); overflow: hidden; }
@@ -546,7 +566,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     var mine = [];
     Object.keys(U.items).forEach(function (id) { if (SPOTS[id]) Object.keys(U.items[id]).forEach(function (k) { mine.push({ sp: SPOTS[id], item: k, r: U.items[id][k] }); }); });
     mine.sort(function (a, b) { return b.r - a.r || a.item.localeCompare(b.item); });
-    var h = '<div class="me"><span class="avatar">' + (U.avatar ? '<img alt="" src="' + esc(U.avatar) + '">' : esc(U.name ? initials(U.name) : '?')) + '</span>' +
+    var h = rewardsHtml() + '<div class="sechead"><h2>Your profile</h2></div><div class="me"><span class="avatar">' + (U.avatar ? '<img alt="" src="' + esc(U.avatar) + '">' : esc(U.name ? initials(U.name) : '?')) + '</span>' +
       '<div><h2>' + esc(U.name || 'Your profile') + '</h2><p class="sub">' + esc(town().school.name) + '</p>' +
       '<div class="btnrow" style="margin-top:8px"><label class="btn ghost" for="avatarFile">Add a photo</label><input id="avatarFile" type="file" accept="image/*" hidden></div></div></div>' +
       '<label class="field" for="nameIn">Your name<input id="nameIn" type="text" maxlength="30" autocomplete="nickname" placeholder="What should we call you?" value="' + esc(U.name) + '"></label>' +
@@ -567,7 +587,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     if (picking) { root.style.removeProperty('--sc'); root.style.removeProperty('--si'); }
     document.getElementById('top').innerHTML = '<div class="brand"><i></i>KORD</div>' + (picking ?
       '<div class="intro"><h1>Cheap eats near campus.</h1><p>Pick your school to see today\'s deals.</p></div>' :
-      '<div class="schoolbar">' + badge(t.school) + '<div class="mid"><h1>' + esc(t.school.name) + '</h1><p>' + esc(t.name) + ', Ohio</p></div><button class="swap" id="swapBtn">Change</button></div>');
+      '<div class="schoolbar">' + badge(t.school) + '<div class="mid"><h1>' + esc(t.school.name) + '</h1><p>' + esc(t.name) + ', Ohio · ' + U.pts + ' points</p></div><button class="swap" id="swapBtn">Change</button></div>');
     document.getElementById('tabs').hidden = picking;
     document.getElementById('daysNav').hidden = picking || S.tab !== 'deals';
     var v = document.getElementById('view'); v.className = 'wrap' + (picking ? ' nopad' : '');
@@ -581,7 +601,56 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   }
 
   /* place sheet */
+  function renderHeadPts() { var el = document.querySelector('.schoolbar .mid p'); if (el && DATA && town()) el.textContent = town().name + ', Ohio · ' + U.pts + ' points'; }
   function closeSheet() { document.getElementById('sheetRoot').innerHTML = ''; clearInterval(POLL); S.open = null; S.item = null; }
+  /* ---- Points, levels and rewards. Kept on this phone. ---- */
+  U.pts = U.pts || 0; U.life = U.life || 0; U.awarded = U.awarded || {}; U.ledger = U.ledger || []; U.stats = U.stats || { ratings: 0, comments: 0, orders: 0 };
+  U.streak = U.streak || { last: '', n: 0 }; U.waivers = U.waivers || 0; U.credits = U.credits || 0;
+  var LEVELS = [[0, 'Freshman'], [100, 'Sophomore'], [300, 'Junior'], [600, 'Senior'], [1000, 'Campus Legend']];
+  var PLUS_PRICE = 3.99;
+  function level() { var i = 0; while (i + 1 < LEVELS.length && U.life >= LEVELS[i + 1][0]) i++; return { name: LEVELS[i][1], at: LEVELS[i][0], next: LEVELS[i + 1] || null }; }
+  function toast(msg) {
+    var old = document.querySelector('.toast'); if (old) old.remove();
+    var el = document.createElement('div'); el.className = 'toast'; el.setAttribute('role', 'status'); el.textContent = msg; document.body.appendChild(el);
+    setTimeout(function () { el.remove(); }, 2600);
+  }
+  /* Give points once per key (so re-rating the same dish does not farm points). KORD Plus doubles them. */
+  function award(n, why, key) {
+    if (key) { if (U.awarded[key]) return 0; U.awarded[key] = 1; }
+    var before = level().name, got = n * (U.plus ? 2 : 1);
+    U.pts += got; U.life += got; U.ledger.unshift({ n: got, why: why, at: new Date().toISOString() }); U.ledger = U.ledger.slice(0, 20);
+    save('kord.user', U);
+    toast('+' + got + ' points · ' + why + (level().name !== before ? ' · You are now a ' + level().name : ''));
+    return got;
+  }
+  function dayKey(d) { return d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getDate(); }
+  function checkIn() {
+    var now = new Date(), today = dayKey(now), y = new Date(now.getTime() - 864e5);
+    if (U.streak.last === today) return;
+    U.streak = { last: today, n: U.streak.last === dayKey(y) ? U.streak.n + 1 : 1 };
+    award(5 + (U.streak.n % 7 === 0 ? 25 : 0), U.streak.n > 1 ? U.streak.n + '-day streak' : U.life ? 'Welcome back' : 'Welcome to KORD');
+  }
+  var PERKS = [{ id: 'waiver', cost: 100, name: 'No KORD fee on your next order', sub: 'Skips the service fee once.' }, { id: 'credit', cost: 250, name: '$1 off your next order', sub: 'Taken off the total at checkout.' }];
+  function badgeList() {
+    var places = {}; Object.keys(U.items).forEach(function (k) { places[k] = 1; });
+    return [['First bite', 'Rate 1 dish', U.stats.ratings >= 1], ['Critic', 'Rate 10 dishes', U.stats.ratings >= 10], ['Explorer', 'Rate at 5 places', Object.keys(places).length >= 5],
+      ['Talker', 'Post 5 comments', U.stats.comments >= 5], ['Regular', 'Place 3 orders', U.stats.orders >= 3], ['On a roll', '7-day streak', U.streak.n >= 7]];
+  }
+  function rewardsHtml() {
+    var lv = level(), pct = lv.next ? Math.min(100, Math.round((U.life - lv.at) / (lv.next[0] - lv.at) * 100)) : 100;
+    var h = '<div class="rewards"><div class="lvl"><span>' + esc(lv.name) + (U.plus ? ' · KORD Plus' : '') + '</span><span>' + (U.streak.n > 1 ? U.streak.n + '-day streak' : 'Open KORD daily for a streak') + '</span></div>' +
+      '<div class="big">' + U.pts + ' <small>points</small></div><div class="bar"><i style="width:' + pct + '%"></i></div>' +
+      '<div class="lvl"><span>' + (lv.next ? (lv.next[0] - U.life) + ' points to ' + esc(lv.next[1]) : 'Top level reached') + '</span><span>' + (U.waivers ? U.waivers + ' fee waiver' + (U.waivers > 1 ? 's' : '') + ' ready' : '') + (U.credits ? ' ' + U.credits + ' × $1 off ready' : '') + '</span></div></div>';
+    h += '<div class="sechead"><h2>Spend your points</h2></div><div class="list">' + PERKS.map(function (k) {
+      return '<div class="perk"><span class="mid"><b>' + esc(k.name) + '</b><small>' + k.cost + ' points · ' + esc(k.sub) + '</small></span><button class="btn" data-perk="' + k.id + '"' + (U.pts < k.cost ? ' disabled' : '') + '>Redeem</button></div>';
+    }).join('') + '</div>';
+    h += '<div class="plus"><span class="demo" style="background:var(--ink);color:var(--bg)">Demo membership</span><h3>KORD Plus · ' + usd(PLUS_PRICE) + ' a month</h3><p>No KORD fee on any order, double points on everything, and a Plus badge on your comments.</p>' +
+      '<button class="btn" id="plusBtn">' + (U.plus ? 'Leave KORD Plus' : 'Try KORD Plus (demo, no charge)') + '</button></div>';
+    h += '<div class="sechead"><h2>Badges</h2><span>' + badgeList().filter(function (b) { return b[2]; }).length + ' of ' + badgeList().length + '</span></div><div class="badges">' + badgeList().map(function (b) { return '<div class="bdg' + (b[2] ? '' : ' off') + '"><b>' + esc(b[0]) + '</b>' + esc(b[1]) + '</div>'; }).join('') + '</div>';
+    h += '<div class="sechead"><h2>How to earn</h2></div><ul class="earn"><li>Rate a dish you ate: 10 points</li><li>Post a comment: 5 points (up to 3 a day)</li><li>Place an order: 20 points</li><li>Open KORD each day: 5 points, plus 25 every 7th day in a row</li></ul>';
+    if (U.ledger.length) h += '<div class="sechead"><h2>Recent points</h2></div><div class="lines">' + U.ledger.slice(0, 5).map(function (l) { return '<div class="line"><span class="mid"><b>' + esc(l.why) + '</b><small>' + ago(l.at) + '</small></span><b>+' + l.n + '</b></div>'; }).join('') + '</div>';
+    return h;
+  }
   /* ---- Demo ordering. No payment is taken and no restaurant is contacted. ---- */
   var TAX = 0.0725, CART = { place: null, lines: [] };
   U.orders = U.orders || [];
@@ -591,7 +660,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     [/pizza|slice|calzone|stromboli/i, 'Topping', ['Cheese', 'Pepperoni', 'Sausage', 'Veggie']], [/burger/i, 'Cheese', ['American', 'Cheddar', 'Swiss', 'No cheese']],
     [/sub\b|sandwich|wrap|gyro|bagel/i, 'Side', ['No side', 'Fries', 'Chips']], [/coffee|latte|tea|boba|smoothie|shake/i, 'Size', ['Small', 'Medium', 'Large']]];
   function optSet(name) { for (var i = 0; i < OPTSETS.length; i++) if (OPTSETS[i][0].test(name)) return OPTSETS[i]; return null; }
-  function cartTotals(lines) { var sub = 0; lines.forEach(function (l) { sub += l.price * l.qty; }); var tax = Math.round(sub * TAX * 100) / 100, fee = kordFee(sub); return { sub: sub, tax: tax, fee: fee, total: sub + tax + fee, count: lines.reduce(function (a, l) { return a + l.qty; }, 0) }; }
+  function cartTotals(lines) { var sub = 0; lines.forEach(function (l) { sub += l.price * l.qty; }); var tax = Math.round(sub * TAX * 100) / 100, base = kordFee(sub), why = U.plus ? 'KORD Plus' : U.waivers > 0 ? 'reward' : '', fee = why ? 0 : base, off = U.credits > 0 && sub > 0 ? 1 : 0; return { sub: sub, tax: tax, fee: fee, feeWhy: base && why, off: off, total: Math.max(0, sub + tax + fee - off), count: lines.reduce(function (a, l) { return a + l.qty; }, 0) }; }
   function orderBox(id, m) {
     var price = priceNum(m.p), set = optSet(m.n);
     if (price == null) return '<p class="note">This one has no set price, so order it at the restaurant.</p>';
@@ -622,7 +691,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
       ['ASAP (15 to 20 min)', 'In 30 min', 'In 1 hour'].map(function (o) { return '<button class="opt" data-pick="' + esc(o) + '" aria-pressed="' + (S.pick === o) + '">' + esc(o) + '</button>'; }).join('') + '</div></div>' +
       '<label class="field" for="ordName">Name for the order<input id="ordName" type="text" maxlength="30" placeholder="Your name" value="' + esc(U.name) + '"></label>' +
       '<div class="totals"><div><span>Subtotal</span><span>' + usd(t.sub) + '</span></div><div><span>Estimated tax</span><span>' + usd(t.tax) + '</span></div>' +
-      '<div><span>KORD service fee</span><span>' + usd(t.fee) + '</span></div><div class="grand"><span>Total</span><span>' + usd(t.total) + '</span></div></div>' +
+      '<div><span>KORD service fee' + (t.feeWhy ? ' (waived: ' + t.feeWhy + ')' : '') + '</span><span>' + usd(t.fee) + '</span></div>' + (t.off ? '<div class="fee"><span>Reward: $1 off</span><span>-' + usd(t.off) + '</span></div>' : '') + '<div class="grand"><span>Total</span><span>' + usd(t.total) + '</span></div></div>' +
       '<div class="paycard"><span>Demo card ending 4242</span><span class="demo">Demo</span></div>' +
       '<button class="btn hot bigbtn" id="placeOrder">Place demo order · ' + usd(t.total) + '</button>' +
       '<p class="note">This is a demo. Nothing is charged and ' + esc(sp.name) + ' is not sent this order.</p>';
@@ -631,13 +700,17 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   function placeOrder() {
     var sp = SPOTS[CART.place], t = cartTotals(CART.lines), body = document.getElementById('sheetBody');
     var o = { no: 'K' + Math.floor(10000 + Math.random() * 90000), place: sp.id, name: sp.name, lines: CART.lines, sub: t.sub, tax: t.tax, fee: t.fee, total: t.total, pick: S.pick, at: new Date().toISOString() };
+    if (!U.plus && t.feeWhy === 'reward') U.waivers--;
+    if (t.off) U.credits--;
+    U.stats.orders++;
     U.orders.unshift(o); U.orders = U.orders.slice(0, 30); save('kord.user', U);
+    var earned = award(20, 'Order placed');
     CART = { place: null, lines: [] }; S.step = 'done';
     body.innerHTML = '<div class="done"><span class="tick">✓</span><h2>Order ' + o.no + ' placed</h2><span class="demo">Demo: nothing was charged or sent</span>' +
       '<p class="sub">Pickup ' + esc(o.pick.toLowerCase().replace('asap', 'ASAP')) + ' at ' + esc(sp.name) + (sp.address ? ', ' + esc(sp.address.split(',')[0]) : '') + '</p></div>' +
       '<div class="lines">' + o.lines.map(function (l) { return '<div class="line"><b>' + l.qty + '×</b><span class="mid"><b>' + esc(l.n) + '</b><small>' + esc([l.opt, l.note].filter(Boolean).join(' · ')) + '</small></span><b>' + usd(l.price * l.qty) + '</b></div>'; }).join('') + '</div>' +
       '<div class="totals"><div><span>Food and tax, paid to ' + esc(sp.name) + '</span><span>' + usd(o.sub + o.tax) + '</span></div><div class="fee"><span>KORD keeps (service fee)</span><span>' + usd(o.fee) + '</span></div><div class="grand"><span>Student paid</span><span>' + usd(o.total) + '</span></div></div>' +
-      '<button class="btn bigbtn" id="doneBtn">Done</button><p class="note">After you eat, come back and rate what you got.</p>';
+      '<p class="sub" style="text-align:center">You earned ' + earned + ' points. Rate what you got for 10 more.</p><button class="btn bigbtn" id="doneBtn">Done</button>';
     body.scrollTop = 0; paintCart();
   }
   function menuItems(sp) {
@@ -731,12 +804,18 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     if (t.dataset.order && SERVER) api('rpc/log_order', { p_device: U.device, p_town: S.town, p_place: t.dataset.order }).catch(function () {});
     if (t.dataset.rate) {
       var id = t.dataset.id, it = t.dataset.item, n = +t.dataset.rate; U.items[id] = U.items[id] || {};
-      if (U.items[id][it] === n) { delete U.items[id][it]; n = 0; } else U.items[id][it] = n;
+      if (U.items[id][it] === n) { delete U.items[id][it]; n = 0; } else { U.items[id][it] = n; if (!U.awarded['r|' + id + '|' + it]) U.stats.ratings++; award(10, 'Rated ' + it, 'r|' + id + '|' + it); }
       if (!Object.keys(U.items[id]).length) delete U.items[id];
       save('kord.user', U); fillMenu(id);
       if (SERVER) api('rpc/rate_dish', { p_device: U.device, p_town: S.town, p_place: id, p_dish: it, p_stars: n }).then(function () { loadScores(function () { softFill(id); }); }).catch(function () {});
       return;
     }
+    if (t.dataset.perk) {
+      var pk = PERKS.filter(function (k) { return k.id === t.dataset.perk; })[0];
+      if (pk && U.pts >= pk.cost) { U.pts -= pk.cost; if (pk.id === 'waiver') U.waivers++; else U.credits++; save('kord.user', U); toast('Redeemed: ' + pk.name); }
+      return render();
+    }
+    if (t.id === 'plusBtn') { U.plus = !U.plus; save('kord.user', U); toast(U.plus ? 'KORD Plus is on (demo, nothing charged)' : 'KORD Plus is off'); return render(); }
     if (t.dataset.food) { S.food = t.dataset.food; return render(); }
     if (t.dataset.sec) { S.sec = t.dataset.sec; S.item = null; return fillMenu(S.open); }
     if (t.dataset.dish) { S.item = S.item === t.dataset.dish ? null : t.dataset.dish; S.opt = ''; S.qty = 1; return fillMenu(S.open); }
@@ -758,6 +837,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
       var cin = document.getElementById('cmtIn'), body = (cin.value || '').trim(), pid = t.dataset.id, dish = S.item;
       if (!body || !dish) return;
       cin.value = '';
+      U.stats.comments++; var dk = dayKey(new Date()), slot = !U.awarded['c|' + dk + '|0'] ? 0 : !U.awarded['c|' + dk + '|1'] ? 1 : 2; award(5, 'Comment posted', 'c|' + dk + '|' + slot);
       if (SERVER) {
         (CMTS[pid] = CMTS[pid] || []).unshift({ dish: dish, name: U.name || 'Student', body: body, created_at: new Date().toISOString() });
         api('rpc/add_comment', { p_device: U.device, p_town: S.town, p_place: pid, p_dish: dish, p_name: U.name || 'Student', p_body: body }).then(function () { loadComments(pid); })
@@ -812,6 +892,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     d.towns.forEach(function (t) { t.spots.forEach(function (s) { SPOTS[s.id] = s; }); });
     var h = (location.hash || '').slice(1); if (['deals', 'places', 'best', 'you'].indexOf(h) >= 0) S.tab = h;
     render();
+    checkIn(); renderHeadPts();
     loadScores(function () { if (!S.open) render(); });
   }).catch(function () {
     document.getElementById('view').innerHTML = '<div class="empty"><b>Could not load the deals</b>Check your connection and reopen KORD.</div>';

@@ -114,6 +114,53 @@ async function openFirstDeal(p) {
   check(!(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'sideways scroll after ordering');
   await p.context().close();
 
+  // 1c. Points, rewards and membership.
+  p = await phone(browser, base);
+  await openFirstDeal(p);
+  await p.click('#menuBox .dishhead >> nth=0');
+  if (!(await p.$('.dishbody'))) await p.click('#menuBox .dishhead >> nth=0');
+  await p.click('.dishbody [data-rate="4"]');
+  await p.click('.dishbody [data-rate="5"]'); // changing a rating must not pay out twice
+  await p.fill('#cmtIn', 'Solid for the price');
+  await p.click('#cmtBtn');
+  await p.click('.x');
+  await p.click('[data-tab="you"]');
+  let pts = parseInt(await p.locator('.rewards .big').innerText(), 10);
+  check(pts === 20, 'expected 20 points (5 check-in + 10 rating + 5 comment), got ' + pts);
+  check(await p.locator('[data-perk="waiver"]').isDisabled(), 'reward can be redeemed without enough points');
+  check(await p.locator('.bdg:not(.off)', { hasText: 'First bite' }).count() === 1, 'First bite badge not earned');
+  await p.evaluate(() => { const u = JSON.parse(localStorage.getItem('kord.user')); u.pts = 400; u.life = 400; localStorage.setItem('kord.user', JSON.stringify(u)); });
+  await p.reload();
+  await p.waitForSelector('.tabs');
+  await p.click('[data-tab="you"]');
+  check((await p.locator('.rewards').innerText()).includes('Junior'), '400 lifetime points should be Junior');
+  await p.click('[data-perk="waiver"]');
+  await p.click('[data-perk="credit"]');
+  pts = parseInt(await p.locator('.rewards .big').innerText(), 10);
+  check(pts === 50, 'redeeming 100 + 250 from 400 should leave 50, got ' + pts);
+  await p.screenshot({ path: `${out}/r-rewards.png`, fullPage: true });
+  await p.click('[data-tab="deals"]');
+  await p.click('[data-day="Wed"]');
+  await p.click('.dcard:has(.price:has-text("$")) >> nth=0');
+  await p.waitForSelector('.orderbox');
+  const u2 = parseFloat(await p.getAttribute('#addCart', 'data-price'));
+  await p.click('#addCart');
+  await p.click('#cartBtn');
+  const co = await p.locator('#sheetBody').innerText();
+  const tx = Math.round(u2 * 0.0725 * 100) / 100;
+  check(co.includes('waived: reward') && co.includes('Reward: $1 off'), 'fee waiver or $1 credit not applied at checkout');
+  check(co.includes('$' + Math.max(0, u2 + tx - 1).toFixed(2)), 'reward total wrong, expected $' + Math.max(0, u2 + tx - 1).toFixed(2));
+  await p.screenshot({ path: `${out}/r-checkout.png` });
+  await p.click('#placeOrder');
+  await p.click('#doneBtn');
+  await p.click('[data-tab="you"]');
+  pts = parseInt(await p.locator('.rewards .big').innerText(), 10);
+  check(pts === 70, 'order should add 20 points to 50, got ' + pts);
+  await p.click('#plusBtn');
+  check((await p.locator('.rewards').innerText()).includes('KORD Plus'), 'Plus membership did not switch on');
+  check(!(await p.evaluate(() => document.documentElement.scrollWidth > innerWidth)), 'sideways scroll on the rewards page');
+  await p.context().close();
+
   // 2. Shared server: two phones see each other's ratings and comments.
   if (!process.argv[3]) {
     const url = base + '?server=' + encodeURIComponent('http://localhost:8799');
