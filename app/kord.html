@@ -432,6 +432,14 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     else bits.push(d.studentOnly ? 'Just show your student ID' : 'Money off your order');
     return bits.join(' · ');
   }
+  var FOODS = [['Burgers', /burger|slider/], ['Pizza', /pizza|slice|calzone|stromboli/], ['Wings', /wing|tender|nugget|chicken chunk/], ['Tacos & burritos', /taco|burrito|quesa|nacho|fajita|enchilada/],
+    ['Subs & sandwiches', /\bsubs?\b|sandwich|wrap|gyro|hot dog|coney|bagel|cheesesteak/], ['Bowls & salads', /bowl|salad|veggie|rice|noodle|ramen|pho|sushi|roll/], ['Breakfast & coffee', /breakfast|brunch|pancake|coffee|latte|tea\b|donut|egg/], ['Sweets', /cookie|ice cream|custard|cupcake|dessert|shake|pint/]];
+  var CATFOOD = { 'Pizza': 'Pizza', 'Burgers': 'Burgers', 'Mexican': 'Tacos & burritos', 'Sandwiches & Subs': 'Subs & sandwiches', 'Wings & Chicken': 'Wings', 'Asian': 'Bowls & salads', 'Boba & Tea': 'Breakfast & coffee',
+    'Coffee & Bakery': 'Breakfast & coffee', 'Breakfast & Brunch': 'Breakfast & coffee', 'Dessert & Ice Cream': 'Sweets', 'Mediterranean': 'Subs & sandwiches', 'Healthy & Bowls': 'Bowls & salads' };
+  function food(x) { var t = x.d.title.toLowerCase(); for (var i = 0; i < FOODS.length; i++) if (FOODS[i][1].test(t)) return FOODS[i][0]; return CATFOOD[x.sp.category] || 'Other'; }
+  function byPrice(a) {
+    return a.sort(function (x, y) { var px = priceNum(x.d.price || x.d.title), py = priceNum(y.d.price || y.d.title); return (px == null ? 99 : px) - (py == null ? 99 : py) || (kind(x.d) === 'meal' ? 0 : 1) - (kind(y.d) === 'meal' ? 0 : 1) || x.sp.name.localeCompare(y.sp.name); });
+  }
   function byValue(a) {
     var order = { meal: 0, bite: 1, off: 2 };
     return a.sort(function (x, y) {
@@ -481,24 +489,30 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   }
   /* step 2: cheapest deals for the day */
   function viewDeals() {
-    var t = town(), all = dealsFor(t, S.day);
-    var local = byValue(all.filter(function (x) { return x.sp.local; })), chain = byValue(all.filter(function (x) { return !x.sp.local; }));
+    var t = town(), all = dealsFor(t, S.day), seen = {}, foods = ['All'];
+    all.forEach(function (x) { var f = food(x); if (x.sp.local && !seen[f]) { seen[f] = 1; } });
+    FOODS.forEach(function (f) { if (seen[f[0]]) foods.push(f[0]); }); if (seen.Other) foods.push('Other');
+    if (foods.indexOf(S.food) < 0) S.food = 'All';
+    var keep = function (x) { return S.food === 'All' || food(x) === S.food; };
+    var local = byPrice(all.filter(function (x) { return x.sp.local && keep(x); })), chain = byPrice(all.filter(function (x) { return !x.sp.local && keep(x); }));
     var when = S.day === TODAY ? 'today' : 'on ' + DAYNAME[S.day];
     var pick = weekPicks(t)[S.day], top = null;
-    local = local.filter(function (x) { if (!top && x.sp.id + '|' + x.d.title === pick) { top = x; return false; } return true; });
-    if (!top && local.length) top = local.shift();
-    var h = '<div><h2>Eat well for cheap ' + when + '</h2><p class="sub">Real food near campus for $12 or less. Best value first.</p></div>';
+    if (S.food === 'All') local = local.filter(function (x) { if (!top && x.sp.id + '|' + x.d.title === pick) { top = x; return false; } return true; });
+    var h = '<div><h2>Eat well for cheap ' + when + '</h2><p class="sub">Real food near campus for $12 or less, sorted from the lowest price up.</p></div>' +
+      '<div class="chips">' + foods.map(function (f) { return '<button class="chip" data-food="' + esc(f) + '" aria-pressed="' + (S.food === f) + '">' + esc(f) + '</button>'; }).join('') + '</div>';
     function sec(title, sub, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><p class="sub" style="margin-top:-8px">' + sub + '</p><div class="list">' + a.map(function (x) { return ticket(x); }).join('') + '</div>' : ''; }
-    if (top) {
-      h += ticket(top, true) +
-        sec('Full meals', 'A whole plate for the price.', local.filter(function (x) { return kind(x.d) === 'meal'; })) +
-        sec('Cheap bites', 'Priced by the piece. Stack a few and it is dinner.', local.filter(function (x) { return kind(x.d) === 'bite'; })) +
-        sec('Money off', 'Discounts on whatever you order.', local.filter(function (x) { return kind(x.d) === 'off'; }));
+    function tier(lo, hi) { return local.filter(function (x) { var p = priceNum(x.d.price || x.d.title); return p != null && kind(x.d) !== 'off' && p >= lo && p < hi; }); }
+    if (top || local.length) {
+      h += (top ? ticket(top, true) : '') +
+        sec('Under $5', 'The cheapest eats ' + when + '.', tier(0, 5)) +
+        sec('$5 to $8', 'A solid meal without the damage.', tier(5, 8.005)) +
+        sec('$8 to $12', 'Bigger plates, still on budget.', tier(8.005, 99)) +
+        sec('Money off', 'Discounts with no set price, like student ID deals.', local.filter(function (x) { return kind(x.d) === 'off'; }));
     } else {
-      var other = DAYS.filter(function (d) { return dealsFor(t, d).some(function (x) { return x.sp.local; }); });
-      h += '<div class="empty"><b>No cheap local deals found for ' + DAYNAME[S.day] + '</b>' + (other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Check Places for where to eat.') + '</div>';
+      var other = DAYS.filter(function (d) { return dealsFor(t, d).some(function (x) { return x.sp.local && keep(x); }); });
+      h += '<div class="empty"><b>No cheap local ' + (S.food === 'All' ? 'deals' : esc(S.food.toLowerCase()) + ' deals') + ' found for ' + DAYNAME[S.day] + '</b>' + (other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Tap All to see everything.') + '</div>';
     }
-    h += sec('Chain deals nearby', 'Fast food and national chains.', chain);
+    h += sec('Chain deals nearby', 'Fast food and national chains, lowest price first.', chain);
     return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos come from each restaurant\'s own website.</p>';
   }
   function spotRow(sp) {
@@ -723,6 +737,7 @@ h2 { font: 800 22px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
       if (SERVER) api('rpc/rate_dish', { p_device: U.device, p_town: S.town, p_place: id, p_dish: it, p_stars: n }).then(function () { loadScores(function () { softFill(id); }); }).catch(function () {});
       return;
     }
+    if (t.dataset.food) { S.food = t.dataset.food; return render(); }
     if (t.dataset.sec) { S.sec = t.dataset.sec; S.item = null; return fillMenu(S.open); }
     if (t.dataset.dish) { S.item = S.item === t.dataset.dish ? null : t.dataset.dish; S.opt = ''; S.qty = 1; return fillMenu(S.open); }
     if (t.dataset.opt) { S.opt = t.dataset.opt; return fillMenu(S.open); }

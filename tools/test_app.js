@@ -34,7 +34,14 @@ async function openFirstDeal(p) {
   await p.click('[data-town="athens"]');
   await p.click('[data-day="Wed"]');
   check((await p.$$('.dcard .hook')).length >= 3, 'deal cards have no value line');
-  check(await p.locator('.sechead h2', { hasText: 'Full meals' }).count() === 1, 'no Full meals section');
+  check(await p.locator('.sechead h2', { hasText: 'Under $5' }).count() === 1, 'no Under $5 section');
+  const order = await p.$$eval('.sechead h2', (hs) => hs.map((h) => h.innerText));
+  check(order.indexOf('Under $5') < order.indexOf('$5 to $8') && order.indexOf('$5 to $8') < order.indexOf('$8 to $12'), 'price sections out of order: ' + order.join(' | '));
+  const prices = await p.$$eval('.sechead:has(h2:text-is("Under $5")) + .sub + .list .price', (ps) => ps.map((e) => parseFloat(e.innerText.replace('$', ''))));
+  check(prices.every((v, i) => i === 0 || v >= prices[i - 1]) && prices.every((v) => v < 5), 'Under $5 section not sorted or has a price of $5 or more: ' + prices.join(','));
+  await p.click('.chip:has-text("Pizza")');
+  check(await p.locator('.dcard .dtitle').count() >= 1 && (await p.$$eval('.list:first-of-type .dtitle', (e) => e.map((n) => n.innerText))).every((n) => /pizza|slice|pick 2/i.test(n)), 'Pizza filter shows non-pizza deals');
+  await p.click('.chip:has-text("All")');
   await p.screenshot({ path: `${out}/a-deals.png`, fullPage: true });
   await p.click('#swapBtn');
   await openFirstDeal(p);
