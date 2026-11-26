@@ -24,6 +24,9 @@ QUERIES = {
     "donut": "glazed doughnuts", "drink": "latte coffee cup", "boba": "bubble tea", "smoothie": "fruit smoothie glass", "sides": "french fries",
     "pretzel": "soft pretzel", "dips": "guacamole chips", "apps": "mozzarella sticks", "calzone": "calzone", "stromboli": "stromboli food",
     "plate": "diner plate lunch", "hotdog": "hot dog", "cupcake": "cupcakes",
+    "salad2": "garden salad plate", "soup2": "tomato soup bowl", "breakfast2": "stack of pancakes syrup", "boba2": "boba milk tea cup", "plate2": "meatloaf mashed potatoes plate",
+    "beer": "pint of beer glass bar", "icecream2": "ice cream sundae", "waffle": "waffles breakfast plate", "wrap": "chicken wrap sandwich",
+    "boba3": "bubble tea", "plate3": "meatloaf", "beer2": "glass of beer", "soup3": "chicken noodle soup", "salad3": "caesar salad", "plate4": "comfort food dinner plate",
 }
 OK = re.compile(r"^(CC0|Public domain|PD|CC BY [0-9.]+)\b(?!-)", re.I)
 
@@ -106,7 +109,7 @@ def main():
                     found.append(info)
                 got = sum(1 for c in found if c["group"] == group)
                 tried += 1
-                if got >= 4 or tried >= 12:
+                if got >= 5 or tried >= 22:
                     break
         for i, c in enumerate(found):
             f = os.path.join(out, f"{key}_{i}.jpg")

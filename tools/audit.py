@@ -12,6 +12,20 @@ DAYS = {"Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"}
 d = json.load(open(os.path.join(ROOT, "data", "kord.json")))
 menus = json.load(open(os.path.join(ROOT, "data", "menus.json")))
 errors, warns = [], []
+rights = d.get("rights", {})
+permitted = bool(json.load(open(os.path.join(ROOT, "data", "rights.json"))).get("permitted"))
+STORE_SAFE = not (rights.get("photos") or rights.get("logos") or permitted)
+for key, files in d.get("stock", {}).items():
+    for f in files:
+        if not os.path.exists(os.path.join(ROOT, f)):
+            errors.append(f"stock photo missing: {f}")
+if sum(len(v) for v in d.get("stock", {}).values()) != len(d.get("credits", [])):
+    errors.append("photo credits do not match the photo library")
+for c in d.get("credits", []):
+    if not (c.get("title") and c.get("license") and c.get("page", "").startswith("https://commons.wikimedia.org/")):
+        errors.append(f"incomplete photo credit: {c}")
+if STORE_SAFE and not d.get("stock"):
+    errors.append("store-safe mode but the licensed photo library is empty")
 
 
 def price(x):
@@ -22,7 +36,7 @@ def price(x):
 ids = set()
 for t in d["towns"]:
     sc = t["school"]
-    if not os.path.exists(os.path.join(ROOT, sc.get("logo", "missing"))):
+    if sc.get("logo") and not os.path.exists(os.path.join(ROOT, sc["logo"])):
         errors.append(f"{t['id']}: school logo file missing")
     names = collections.Counter(re.sub(r"[^a-z0-9]", "", s["name"].lower()) for s in t["spots"])
     for n, c in names.items():
@@ -34,6 +48,8 @@ for t in d["towns"]:
         if not any(s["local"] and day in x["days"] for s in t["spots"] for x in s["deals"]):
             warns.append(f"{t['id']}: no local deal on {day}")
     for s in t["spots"]:
+        if STORE_SAFE and (s.get("logo") or s.get("photo") or any(x.get("photo") for x in s["deals"])):
+            errors.append(f"{s['id']}: restaurant-owned image in store-safe mode")
         if s["id"] in ids:
             errors.append(f"duplicate place id {s['id']}")
         ids.add(s["id"])

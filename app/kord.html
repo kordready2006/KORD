@@ -417,17 +417,17 @@ h2 { font: 800 24px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
   }
   /* Licensed example photos. Picks the library photo that fits the words (a wing deal gets wings), falling back to the
      kind of restaurant. The same dish always gets the same photo; different places get different ones where there is a choice. */
-  var STOCKRULES = [['sushi', /sushi|\broll\b|sashimi/], ['bbq', /\bribs?\b|bbq|brisket|pulled pork/], ['mac', /\bmac\b|macaroni/], ['noodles', /ramen|noodle|\bpho\b|lo mein|pad thai|udon/],
+  var STOCKRULES = [['sandwich', /salad sandwich|grilled cheese/], ['sweet', /cinnamon roll/], ['sides', /fry bowl|loaded fries/], ['plate', /schnitzel|meatloaf|pot roast/], ['apps', /egg rolls?|spring rolls?/], ['sushi', /sushi|\brolls?\b|sashimi/], ['bbq', /\bribs?\b|bbq|brisket|pulled pork/], ['mac', /\bmac\b|macaroni/], ['noodles', /ramen|noodle|\bpho\b|lo mein|pad thai|udon/],
     ['quesadilla', /quesadilla/], ['salad', /salad/], ['soup', /soup|chowder|bisque/], ['curry', /curry|masala|tikka|korma/], ['eggs', /\beggs?\b|omelet|scramble|benedict/],
     ['bagel', /bagel/], ['cookie', /cookie|brownie/], ['icecream', /ice cream|custard|sundae|gelato|froyo|frozen yogurt|milkshake|shake/], ['donut', /donut|doughnut/], ['cupcake', /cupcake|muffin/],
     ['boba', /boba|bubble tea|milk tea/], ['smoothie', /smoothie|juice|lemonade|refresher/], ['pretzel', /pretzel/], ['hotdog', /hot dog|coney|chili dog|\bbrat/], ['stromboli', /stromboli/],
     ['calzone', /calzone/], ['cheesesteak', /cheesesteak|philly/], ['shawarma', /shawarma|falafel|kabob|kebab/], ['gyro', /gyro/], ['taco', /taco/], ['wings', /wing/],
     ['burrito', /burrito|quesabirria|chimichanga/], ['tenders', /tender|finger|nugget|chunk/], ['burger', /burger|slider/], ['pizza', /pizza|slice|\bpie\b|flatbread/],
-    ['hotsandwich', /roast beef|sloppy joe|reuben|\bmelt\b/], ['sandwich', /sandwich|\bsubs?\b|wrap|panini|hoagie|\bclub\b|blt/], ['fish', /fish|perch|shrimp|crab|lobster|seafood|salmon|calamari/],
+    ['hotsandwich', /roast beef|sloppy joe|reuben|\bmelt\b/], ['wrap', /\bwraps?\b/], ['sandwich', /sandwich|\bsubs?\b|wrap|panini|hoagie|\bclub\b|blt/], ['fish', /fish|perch|shrimp|crab|lobster|seafood|salmon|calamari/],
     ['steak', /steak|prime rib|sirloin|ribeye/], ['pasta', /pasta|spaghetti|lasagna|ravioli|alfredo|fettuccine|penne|gnocchi/], ['mexplate', /nacho|fajita|enchilada|tostada|tamale/],
     ['breakfast', /breakfast|brunch|pancake|waffle|french toast/], ['bowl', /bowl|\brice\b/], ['sweet', /cake|dessert|pastry|cinnamon roll|scone|crepe|cheesecake|baklava/],
     ['drink', /coffee|latte|espresso|cappuccino|mocha|\btea\b|chai|americano|cold brew/], ['sides', /fries|\btots\b|breadstick|cheese stick|onion ring|mozzarella stick/],
-    ['dips', /guac|queso|salsa|hummus|\bdips?\b|crostini/], ['chicken', /chicken/], ['apps', /appetizer|\bapps\b|shar(e)?able|starter|small plate|snack/]];
+    ['dips', /guac|queso|salsa|hummus|\bdips?\b|crostini/], ['chicken', /chicken|fowl/], ['beer', /beer|draft|\bpints?\b|pitcher|domestic|\bbrews?\b/], ['apps', /appetizer|\bapps\b|shar(e)?able|starter|small plate|snack/]];
   var CATSTOCK = { 'Pizza': 'pizza', 'Burgers': 'burger', 'Mexican': 'taco', 'Sandwiches & Subs': 'sandwich', 'Wings & Chicken': 'wings', 'Asian': 'noodles', 'Boba & Tea': 'boba',
     'Coffee & Bakery': 'drink', 'Breakfast & Brunch': 'breakfast', 'Bar & Grill': 'burger', 'Dessert & Ice Cream': 'icecream', 'BBQ': 'bbq', 'Mediterranean': 'gyro', 'Healthy & Bowls': 'salad', 'Fast Food': 'burger', 'Other': 'plate' };
   function stockKey(text, cat) {
@@ -435,6 +435,7 @@ h2 { font: 800 24px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
     for (var i = 0; i < STOCKRULES.length; i++) if (lib[STOCKRULES[i][0]] && STOCKRULES[i][1].test(t)) return STOCKRULES[i][0];
     return lib[CATSTOCK[cat]] ? CATSTOCK[cat] : lib.plate ? 'plate' : '';
   }
+  window.KORD_STOCK = stockKey;
   function stock(text, cat, seed) {
     var a = (DATA.stock || {})[stockKey(text, cat)] || [], h = 0, s = String(seed || '');
     for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;

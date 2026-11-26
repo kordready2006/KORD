@@ -1,0 +1,1058 @@
+{
+ "pizza-1.jpg": {
+  "key": "pizza",
+  "title": "Pepperoni pizza- boella co. 2024-02-17",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pepperoni_pizza-_boella_co._2024-02-17.jpg"
+ },
+ "pizza-2.jpg": {
+  "key": "pizza",
+  "title": "Pepperoni pizza",
+  "artist": "Unknown author",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pepperoni_pizza.jpg"
+ },
+ "pizza-3.jpg": {
+  "key": "pizza",
+  "title": "Pepperoni Pizza from Fellini’s Pizza",
+  "artist": "BullDawg2021",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pepperoni_Pizza_from_Fellini%E2%80%99s_Pizza.jpg"
+ },
+ "burger-1.jpg": {
+  "key": "burger",
+  "title": "Cheeseburger (3)",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheeseburger_(3).jpg"
+ },
+ "burger-2.jpg": {
+  "key": "burger",
+  "title": "Cheeseburger 2",
+  "artist": "Kurtkaiser",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheeseburger_2.jpg"
+ },
+ "burger-3.jpg": {
+  "key": "burger",
+  "title": "Cheeseburger at Bloom Carneros - June 2023 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheeseburger_at_Bloom_Carneros_-_June_2023_-_Sarah_Stierch.jpg"
+ },
+ "wings-1.jpg": {
+  "key": "wings",
+  "title": "Hopmonk - March 2026 - Sarah Stierch 03",
+  "artist": "Missvain",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hopmonk_-_March_2026_-_Sarah_Stierch_03.jpg"
+ },
+ "wings-2.jpg": {
+  "key": "wings",
+  "title": "Homemade buffalo wings",
+  "artist": "stef yau",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Homemade_buffalo_wings.jpg"
+ },
+ "wings-3.jpg": {
+  "key": "wings",
+  "title": "Buffalo Wings (8779045398)",
+  "artist": "Eugene Kim from San Francisco, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Buffalo_Wings_(8779045398).jpg"
+ },
+ "taco-1.jpg": {
+  "key": "taco",
+  "title": "Tacos in a soft tortilla 5",
+  "artist": "Kurt Kaiser",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tacos_in_a_soft_tortilla_5.jpg"
+ },
+ "taco-2.jpg": {
+  "key": "taco",
+  "title": "Short Rib Tacos - 21584093036",
+  "artist": "lauren.topor",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Short_Rib_Tacos_-_21584093036.jpg"
+ },
+ "taco-3.jpg": {
+  "key": "taco",
+  "title": "Tacos with ground turkey - May 2023 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tacos_with_ground_turkey_-_May_2023_-_Sarah_Stierch.jpg"
+ },
+ "burrito-1.jpg": {
+  "key": "burrito",
+  "title": "Burrito",
+  "artist": "samuelfernandezrivera",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Burrito.JPG"
+ },
+ "burrito-2.jpg": {
+  "key": "burrito",
+  "title": "Breakfast burritos",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Breakfast_burritos.jpg"
+ },
+ "burrito-3.jpg": {
+  "key": "burrito",
+  "title": "Oaxacalifornia Burrito cross section",
+  "artist": "RightCowLeftCoast",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Oaxacalifornia_Burrito_cross_section.jpg"
+ },
+ "sandwich-1.jpg": {
+  "key": "sandwich",
+  "title": "Submarine sandwich and chips",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Submarine_sandwich_and_chips.jpg"
+ },
+ "sandwich-2.jpg": {
+  "key": "sandwich",
+  "title": "Submarine sandwich (1)",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Submarine_sandwich_(1).jpg"
+ },
+ "sandwich-3.jpg": {
+  "key": "sandwich",
+  "title": "Mmm... salami, ham, and cheeses on a hoagie roll (6879014927)",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mmm..._salami,_ham,_and_cheeses_on_a_hoagie_roll_(6879014927).jpg"
+ },
+ "hotsandwich-1.jpg": {
+  "key": "hotsandwich",
+  "title": "Beef sandwich at a Earl Of Sandwich restaurant",
+  "artist": "See source page",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Beef_sandwich_at_a_Earl_Of_Sandwich_restaurant.jpg"
+ },
+ "hotsandwich-2.jpg": {
+  "key": "hotsandwich",
+  "title": "Roast Beef Grinder",
+  "artist": "Bobsama",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Roast_Beef_Grinder.JPG"
+ },
+ "hotsandwich-3.jpg": {
+  "key": "hotsandwich",
+  "title": "Roast beef sandwich (hozinja)",
+  "artist": "hozinja",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Roast_beef_sandwich_(hozinja).jpg"
+ },
+ "cheesesteak-1.jpg": {
+  "key": "cheesesteak",
+  "title": "Cheesesteak sandwiches with pickles",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheesesteak_sandwiches_with_pickles.jpg"
+ },
+ "cheesesteak-2.jpg": {
+  "key": "cheesesteak",
+  "title": "Cheesesteak (19386149993)",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheesesteak_(19386149993).jpg"
+ },
+ "cheesesteak-3.jpg": {
+  "key": "cheesesteak",
+  "title": "Cheesesteak & Fries",
+  "artist": "Shoshanah",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheesesteak_%26_Fries.jpg"
+ },
+ "gyro-1.jpg": {
+  "key": "gyro",
+  "title": "Gyro sandwich",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gyro_sandwich.jpg"
+ },
+ "gyro-2.jpg": {
+  "key": "gyro",
+  "title": "Gyro sandwich (3)",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Gyro_sandwich_(3).jpg"
+ },
+ "gyro-3.jpg": {
+  "key": "gyro",
+  "title": "Pitta Mushroom Gyros - Montague Gyros 2025-12-06",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pitta_Mushroom_Gyros_-_Montague_Gyros_2025-12-06.jpg"
+ },
+ "shawarma-1.jpg": {
+  "key": "shawarma",
+  "title": "Handmade Chicken Shawarma Wrap - Lavash",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Handmade_Chicken_Shawarma_Wrap_-_Lavash.jpg"
+ },
+ "shawarma-2.jpg": {
+  "key": "shawarma",
+  "title": "Shawarma, Rostov-on-Don, Russia",
+  "artist": "Vyacheslav Argenberg",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Shawarma,_Rostov-on-Don,_Russia.jpg"
+ },
+ "chilidog-1.jpg": {
+  "key": "chilidog",
+  "title": "Flint coney island",
+  "artist": "See source page",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Flint_coney_island.jpg"
+ },
+ "chilidog-2.jpg": {
+  "key": "chilidog",
+  "title": "Mmm... chili cheese sausage dog (8075525776)",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mmm..._chili_cheese_sausage_dog_(8075525776).jpg"
+ },
+ "chilidog-3.jpg": {
+  "key": "chilidog",
+  "title": "Chili dogs",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chili_dogs.jpg"
+ },
+ "tenders-1.jpg": {
+  "key": "tenders",
+  "title": "Black Bear Diner - December 2024 - Sarah Stierch 02",
+  "artist": "Missvain",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Black_Bear_Diner_-_December_2024_-_Sarah_Stierch_02.jpg"
+ },
+ "tenders-2.jpg": {
+  "key": "tenders",
+  "title": "Chicken tenders and french fries - June 2023 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_tenders_and_french_fries_-_June_2023_-_Sarah_Stierch.jpg"
+ },
+ "tenders-3.jpg": {
+  "key": "tenders",
+  "title": "Forge Napa - October 2025 - Sarah Stierch 08",
+  "artist": "Missvain",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Forge_Napa_-_October_2025_-_Sarah_Stierch_08.jpg"
+ },
+ "chicken-1.jpg": {
+  "key": "chicken",
+  "title": "Willie mae's fried chicken, New Orleans",
+  "artist": "Krista",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Willie_mae%27s_fried_chicken,_New_Orleans.jpg"
+ },
+ "chicken-2.jpg": {
+  "key": "chicken",
+  "title": "GD 廣東 Guangdong 汕頭猛獅凱萊酒店 Shantou Menshine Gloria Plaza Hotel 餐廳 restaurant 早餐 breakfast buffet fried food December 2023 Red7 12",
+  "artist": "Tang HungTze Fat",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:GD_%E5%BB%A3%E6%9D%B1_Guangdong_%E6%B1%95%E9%A0%AD%E7%8C%9B%E7%8D%85%E5%87%B1%E8%90%8A%E9%85%92%E5%BA%97_Shantou_Menshine_Gloria_Plaza_Hotel_%E9%A4%90%E5%BB%B3_restaurant_%E6%97%A9%E9%A4%90_breakfast_buffet_fried_food_December_2023_Red7_12.jpg"
+ },
+ "chicken-3.jpg": {
+  "key": "chicken",
+  "title": "Chicken Fried Bacon",
+  "artist": "cara fealy choate from Austin, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_Fried_Bacon.jpg"
+ },
+ "fish-1.jpg": {
+  "key": "fish",
+  "title": "Our Famous Fish and Chips in a light batter served with hand cut chips and homemade tartare sauce - Applebee’s Fish",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Our_Famous_Fish_and_Chips_in_a_light_batter_served_with_hand_cut_chips_and_homemade_tartare_sauce_-_Applebee%E2%80%99s_Fish.jpg"
+ },
+ "fish-2.jpg": {
+  "key": "fish",
+  "title": "Modern fish and chips (8368723726)",
+  "artist": "LearningLark from United States",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Modern_fish_and_chips_(8368723726).jpg"
+ },
+ "fish-3.jpg": {
+  "key": "fish",
+  "title": "Fish and Chips at Noyo River Grill - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fish_and_Chips_at_Noyo_River_Grill_-_Sarah_Stierch.jpg"
+ },
+ "sushi-1.jpg": {
+  "key": "sushi",
+  "title": "Rolls(food)",
+  "artist": "Кыс",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Rolls(food).JPG"
+ },
+ "sushi-2.jpg": {
+  "key": "sushi",
+  "title": "Homemade sushi rolls, 2009",
+  "artist": "Stacy",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Homemade_sushi_rolls,_2009.jpg"
+ },
+ "sushi-3.jpg": {
+  "key": "sushi",
+  "title": "Sushi and Sashimi",
+  "artist": "ActivBowser9177",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sushi_and_Sashimi.jpg"
+ },
+ "steak-1.jpg": {
+  "key": "steak",
+  "title": "Perfectly grilled steak (8469274783)",
+  "artist": "See source page",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Perfectly_grilled_steak_(8469274783).jpg"
+ },
+ "steak-2.jpg": {
+  "key": "steak",
+  "title": "Grilled steak served with orange slices and sauce on wooden board - Flickr - nenadstojkovicart",
+  "artist": "Nenad Stojkovic",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Grilled_steak_served_with_orange_slices_and_sauce_on_wooden_board_-_Flickr_-_nenadstojkovicart.jpg"
+ },
+ "steak-3.jpg": {
+  "key": "steak",
+  "title": "Grilled steak served on a plate with avocado and sauce",
+  "artist": "Shixart1985",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Grilled_steak_served_on_a_plate_with_avocado_and_sauce.jpg"
+ },
+ "bbq-1.jpg": {
+  "key": "bbq",
+  "title": "Ribs at Jerry's Nugget Casino in North Las Vegas",
+  "artist": "Julianibarra",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ribs_at_Jerry%27s_Nugget_Casino_in_North_Las_Vegas.jpg"
+ },
+ "bbq-2.jpg": {
+  "key": "bbq",
+  "title": "Pork-ribs 01",
+  "artist": "Pannet",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pork-ribs_01.jpg"
+ },
+ "pasta-1.jpg": {
+  "key": "pasta",
+  "title": "Spaghetti Brighton - Napoli Restaurant 2024-10-31",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Spaghetti_Brighton_-_Napoli_Restaurant_2024-10-31.jpg"
+ },
+ "pasta-2.jpg": {
+  "key": "pasta",
+  "title": "Spaghetti with Lamb Meat",
+  "artist": "روتانا",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Spaghetti_with_Lamb_Meat.jpg"
+ },
+ "pasta-3.jpg": {
+  "key": "pasta",
+  "title": "Maya Spaghetti - Maya - March 2023 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Maya_Spaghetti_-_Maya_-_March_2023_-_Sarah_Stierch.jpg"
+ },
+ "mac-1.jpg": {
+  "key": "mac",
+  "title": "Macaroni and cheese (3)",
+  "artist": "@joefoodie from USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Macaroni_and_cheese_(3).jpg"
+ },
+ "mac-2.jpg": {
+  "key": "mac",
+  "title": "Flickr qmnonic 123431456--Kraft Dinner and veggie dogs",
+  "artist": "Matt MacGillivray from Toronto, Ontario, Canada",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Flickr_qmnonic_123431456--Kraft_Dinner_and_veggie_dogs.jpg"
+ },
+ "mac-3.jpg": {
+  "key": "mac",
+  "title": "Homemade macaroni and cheese",
+  "artist": "Dave Walker from Royal Oak, MI, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Homemade_macaroni_and_cheese.jpg"
+ },
+ "mexplate-1.jpg": {
+  "key": "mexplate",
+  "title": "Nachos at Maya Restaurant - 2021-10-03 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Nachos_at_Maya_Restaurant_-_2021-10-03_-_Sarah_Stierch.jpg"
+ },
+ "mexplate-2.jpg": {
+  "key": "mexplate",
+  "title": "Nachos at Maya in Sonoma California - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Nachos_at_Maya_in_Sonoma_California_-_Sarah_Stierch.jpg"
+ },
+ "mexplate-3.jpg": {
+  "key": "mexplate",
+  "title": "NACHOS - Montagues Tex Mex 2026-06-03",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:NACHOS_-_Montagues_Tex_Mex_2026-06-03.jpg"
+ },
+ "quesadilla-1.jpg": {
+  "key": "quesadilla",
+  "title": "Quesadilla from the late night menu at IHOP",
+  "artist": "Ser Amantio di Nicolao",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Quesadilla_from_the_late_night_menu_at_IHOP.jpg"
+ },
+ "quesadilla-2.jpg": {
+  "key": "quesadilla",
+  "title": "Chicken Quesadilla dish at Latin Bistro restaurant Summit NJ",
+  "artist": "Tomwsulcer",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_Quesadilla_dish_at_Latin_Bistro_restaurant_Summit_NJ.JPG"
+ },
+ "quesadilla-3.jpg": {
+  "key": "quesadilla",
+  "title": "Quesadilla",
+  "artist": "Unknown author",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Quesadilla.jpg"
+ },
+ "bowl-1.jpg": {
+  "key": "bowl",
+  "title": "Teriyaki Chicken Rice Bowl from Botejyu (2024-12-21)",
+  "artist": "Wide Awake!",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Teriyaki_Chicken_Rice_Bowl_from_Botejyu_(2024-12-21).jpg"
+ },
+ "bowl-2.jpg": {
+  "key": "bowl",
+  "title": "Bowl of homemade shrimp fried rice - Forsythe 0",
+  "artist": "Forssa01",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bowl_of_homemade_shrimp_fried_rice_-_Forsythe_0.jpg"
+ },
+ "bowl-3.jpg": {
+  "key": "bowl",
+  "title": "Minced Meat Rice Bowl - Noodles Street 2025-11-01",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Minced_Meat_Rice_Bowl_-_Noodles_Street_2025-11-01.jpg"
+ },
+ "noodles-1.jpg": {
+  "key": "noodles",
+  "title": "Bowl of miso ramen",
+  "artist": "Douglas Perkins",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bowl_of_miso_ramen.jpg"
+ },
+ "noodles-2.jpg": {
+  "key": "noodles",
+  "title": "Pork Chashu Bowl (M) - Goemon Ramen Bar",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pork_Chashu_Bowl_(M)_-_Goemon_Ramen_Bar.jpg"
+ },
+ "noodles-3.jpg": {
+  "key": "noodles",
+  "title": "Tsukemen (Dipping Ramen) - Goemon Ramen Bar 2023-07-16",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tsukemen_(Dipping_Ramen)_-_Goemon_Ramen_Bar_2023-07-16.jpg"
+ },
+ "curry-1.jpg": {
+  "key": "curry",
+  "title": "Japanese style chicken curry with rice of Nakau",
+  "artist": "Tokumeigakarinoaoshima",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese_style_chicken_curry_with_rice_of_Nakau.JPG"
+ },
+ "curry-2.jpg": {
+  "key": "curry",
+  "title": "Combination plate with chicken and beef curry, with rice",
+  "artist": "Guilhem Vellut from Amsterdam, Netherlands",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Combination_plate_with_chicken_and_beef_curry,_with_rice.jpg"
+ },
+ "curry-3.jpg": {
+  "key": "curry",
+  "title": "Fried chicken and rice with Korean curry - Kogi Korean cuisine 2025-10-19",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fried_chicken_and_rice_with_Korean_curry_-_Kogi_Korean_cuisine_2025-10-19.jpg"
+ },
+ "eggs-1.jpg": {
+  "key": "eggs",
+  "title": "Bacon and eggs 001",
+  "artist": "Ocdp",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bacon_and_eggs_001.jpg"
+ },
+ "eggs-2.jpg": {
+  "key": "eggs",
+  "title": "Fried Chicken, Bacon & Waffles - The Breakfast Club 2023-09-03",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fried_Chicken,_Bacon_%26_Waffles_-_The_Breakfast_Club_2023-09-03.jpg"
+ },
+ "eggs-3.jpg": {
+  "key": "eggs",
+  "title": "Bacon jam on egg sandwich",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bacon_jam_on_egg_sandwich.jpg"
+ },
+ "bagel-1.jpg": {
+  "key": "bagel",
+  "title": "Bagel fromage blanc, saumon",
+  "artist": "Arnaud 25",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bagel_fromage_blanc,_saumon.jpg"
+ },
+ "bagel-2.jpg": {
+  "key": "bagel",
+  "title": "Salt beef bagel poppy seed",
+  "artist": "Jeremy Keith",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Salt_beef_bagel_poppy_seed.jpg"
+ },
+ "sweet-1.jpg": {
+  "key": "sweet",
+  "title": "Piece of chocolate cake on a white plate decorated with chocolate sauce",
+  "artist": "Daria Yakovleva Minor edits made by Subsidiary account",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg"
+ },
+ "sweet-2.jpg": {
+  "key": "sweet",
+  "title": "Slice of chocolate cheese tart with blueberries",
+  "artist": "Shisma",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Slice_of_chocolate_cheese_tart_with_blueberries.jpg"
+ },
+ "sweet-3.jpg": {
+  "key": "sweet",
+  "title": "Vegan chocolate cake with sliced strawberries",
+  "artist": "ConsciousBurning",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Vegan_chocolate_cake_with_sliced_strawberries.jpg"
+ },
+ "cookie-1.jpg": {
+  "key": "cookie",
+  "title": "Milk and chocolate chip cookies (6858180551)",
+  "artist": "Picdrome Public Domain Pictures",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Milk_and_chocolate_chip_cookies_(6858180551).jpg"
+ },
+ "cookie-2.jpg": {
+  "key": "cookie",
+  "title": "Cookie stack",
+  "artist": "Lisa Fotios",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cookie_stack.jpg"
+ },
+ "cookie-3.jpg": {
+  "key": "cookie",
+  "title": "Chocolate Chip Cookies (4683318188)",
+  "artist": "Jon Åslund from Sweden",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate_Chip_Cookies_(4683318188).jpg"
+ },
+ "icecream-1.jpg": {
+  "key": "icecream",
+  "title": "Dark chocolate chip ice cream cone - August 2025 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Dark_chocolate_chip_ice_cream_cone_-_August_2025_-_Sarah_Stierch.jpg"
+ },
+ "icecream-2.jpg": {
+  "key": "icecream",
+  "title": "Sweet Scoops Ice Cream - July 2023 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Sweet_Scoops_Ice_Cream_-_July_2023_-_Sarah_Stierch.jpg"
+ },
+ "icecream-3.jpg": {
+  "key": "icecream",
+  "title": "Strawberry Ice Cream Sundae (26853326174)",
+  "artist": "Sam Howzit",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Strawberry_Ice_Cream_Sundae_(26853326174).jpg"
+ },
+ "icecream-4.jpg": {
+  "key": "icecream",
+  "title": "Ice Cream Sundae (5684463407)",
+  "artist": "Neil Conway from Oakland, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ice_Cream_Sundae_(5684463407).jpg"
+ },
+ "donut-1.jpg": {
+  "key": "donut",
+  "title": "Glazed Ring Doughnuts",
+  "artist": "Jiddah5212",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Glazed_Ring_Doughnuts.jpg"
+ },
+ "donut-2.jpg": {
+  "key": "donut",
+  "title": "Chocolate-glazed doughnut with sprinkles (7429937320)",
+  "artist": "Kiran Foster from no fixed abode, New Zealand",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate-glazed_doughnut_with_sprinkles_(7429937320).jpg"
+ },
+ "donut-3.jpg": {
+  "key": "donut",
+  "title": "Glazed wedding doughnut (15273067290)",
+  "artist": "Ryan A. Monson",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Glazed_wedding_doughnut_(15273067290).jpg"
+ },
+ "drink-1.jpg": {
+  "key": "drink",
+  "title": "Blue coffee cup (Unsplash)",
+  "artist": "rawpixel.com rawpixel",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Blue_coffee_cup_(Unsplash).jpg"
+ },
+ "drink-2.jpg": {
+  "key": "drink",
+  "title": "Latte art 3",
+  "artist": "Kim Sanso",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Latte_art_3.jpg"
+ },
+ "drink-3.jpg": {
+  "key": "drink",
+  "title": "Latte and dark coffee",
+  "artist": "Bex Walton",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Latte_and_dark_coffee.jpg"
+ },
+ "boba-1.jpg": {
+  "key": "boba",
+  "title": "Thai Iced Bubble Tea - Sonoma Pho - Stierch - 2019",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Thai_Iced_Bubble_Tea_-_Sonoma_Pho_-_Stierch_-_2019.jpg"
+ },
+ "smoothie-1.jpg": {
+  "key": "smoothie",
+  "title": "Fresh fruit smoothie preparation with assorted fruits on a table",
+  "artist": "Shixart1985",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fresh_fruit_smoothie_preparation_with_assorted_fruits_on_a_table.jpg"
+ },
+ "smoothie-2.jpg": {
+  "key": "smoothie",
+  "title": "Healthy lifestyle choices with fresh fruits and smoothies on display",
+  "artist": "Shixart1985",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Healthy_lifestyle_choices_with_fresh_fruits_and_smoothies_on_display.jpg"
+ },
+ "sides-1.jpg": {
+  "key": "sides",
+  "title": "Bat Yaar French Fries",
+  "artist": "Yotam Nachum",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bat_Yaar_French_Fries.jpg"
+ },
+ "sides-2.jpg": {
+  "key": "sides",
+  "title": "French fries of Argentina",
+  "artist": "Horacio Cambeiro",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:French_fries_of_Argentina.jpg"
+ },
+ "sides-3.jpg": {
+  "key": "sides",
+  "title": "French fries in Argentina",
+  "artist": "Horacio Cambeiro",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:French_fries_in_Argentina.jpg"
+ },
+ "pretzel-1.jpg": {
+  "key": "pretzel",
+  "title": "Pretzel Ampersand",
+  "artist": "Windell Oskay",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pretzel_Ampersand.jpg"
+ },
+ "pretzel-2.jpg": {
+  "key": "pretzel",
+  "title": "Philly style pretzel",
+  "artist": "Vinchenzo8",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Philly_style_pretzel.JPG"
+ },
+ "pretzel-3.jpg": {
+  "key": "pretzel",
+  "title": "Pretzel bows🥨",
+  "artist": "Fumikas Sagisavas",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pretzel_bows%F0%9F%A5%A8.jpg"
+ },
+ "dips-1.jpg": {
+  "key": "dips",
+  "title": "2018-02-01-Guacamole mit Nachos-7937",
+  "artist": "Superbass",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:2018-02-01-Guacamole_mit_Nachos-7937.jpg"
+ },
+ "dips-2.jpg": {
+  "key": "dips",
+  "title": "Guacamole (5448812038)",
+  "artist": "Neil Conway from Oakland, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Guacamole_(5448812038).jpg"
+ },
+ "dips-3.jpg": {
+  "key": "dips",
+  "title": "La Casa Restaurant - January 18 2025 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:La_Casa_Restaurant_-_January_18_2025_-_Sarah_Stierch.jpg"
+ },
+ "apps-1.jpg": {
+  "key": "apps",
+  "title": "Applebee's - August 2023 - Sarah Stierch 02",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Applebee%27s_-_August_2023_-_Sarah_Stierch_02.jpg"
+ },
+ "apps-2.jpg": {
+  "key": "apps",
+  "title": "Applebee's Mozzarella Sticks - December 2023 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Applebee%27s_Mozzarella_Sticks_-_December_2023_-_Sarah_Stierch.jpg"
+ },
+ "apps-3.jpg": {
+  "key": "apps",
+  "title": "Steiners Tavern - August 2024 - Sarah Stierch 03",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Steiners_Tavern_-_August_2024_-_Sarah_Stierch_03.jpg"
+ },
+ "calzone-1.jpg": {
+  "key": "calzone",
+  "title": "Pizzeria Bella Italia (Crépieux-la-Pape) - Calzone (octobre 2022)",
+  "artist": "See source page",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pizzeria_Bella_Italia_(Cr%C3%A9pieux-la-Pape)_-_Calzone_(octobre_2022).jpg"
+ },
+ "calzone-2.jpg": {
+  "key": "calzone",
+  "title": "Pizzeria Fantastica Calzone",
+  "artist": "See source page",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pizzeria_Fantastica_Calzone.jpg"
+ },
+ "calzone-3.jpg": {
+  "key": "calzone",
+  "title": "Calzone",
+  "artist": "See source page",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Calzone.jpg"
+ },
+ "stromboli-1.jpg": {
+  "key": "stromboli",
+  "title": "Freshstromboli2",
+  "artist": "Binnybot at English Wikipedia",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Freshstromboli2.jpg"
+ },
+ "stromboli-2.jpg": {
+  "key": "stromboli",
+  "title": "Freshstromboli",
+  "artist": "Binnybot at English Wikipedia",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Freshstromboli.jpg"
+ },
+ "hotdog-1.jpg": {
+  "key": "hotdog",
+  "title": "Miller’s Hot Dog at Ice Oasis Grill",
+  "artist": "pointnshoot",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Miller%E2%80%99s_Hot_Dog_at_Ice_Oasis_Grill.jpg"
+ },
+ "hotdog-2.jpg": {
+  "key": "hotdog",
+  "title": "Hot Dog with Baked Beans and Coleslaw",
+  "artist": "TheCulinaryGeek",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hot_Dog_with_Baked_Beans_and_Coleslaw.jpg"
+ },
+ "hotdog-3.jpg": {
+  "key": "hotdog",
+  "title": "Swedish Special Hot Dog - Ikea Croydon 2025-06-13",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Swedish_Special_Hot_Dog_-_Ikea_Croydon_2025-06-13.jpg"
+ },
+ "cupcake-1.jpg": {
+  "key": "cupcake",
+  "title": "Pink Cupcakes",
+  "artist": "Jess Watters",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pink_Cupcakes.jpg"
+ },
+ "cupcake-2.jpg": {
+  "key": "cupcake",
+  "title": "Cupcakes - New Orleans home made batch",
+  "artist": "Bart Everson",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cupcakes_-_New_Orleans_home_made_batch.jpg"
+ },
+ "cupcake-3.jpg": {
+  "key": "cupcake",
+  "title": "Hat Cupcakes (4366466151)",
+  "artist": "Clever Cupcakes from Montreal, Canada",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hat_Cupcakes_(4366466151).jpg"
+ },
+ "salad-1.jpg": {
+  "key": "salad",
+  "title": "Caesar salad (2)",
+  "artist": "Geoff Peters from Vancouver, BC, Canada",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Caesar_salad_(2).jpg"
+ },
+ "salad-2.jpg": {
+  "key": "salad",
+  "title": "A Caesar salad",
+  "artist": "Altitonantis",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:A_Caesar_salad.jpg"
+ },
+ "salad-3.jpg": {
+  "key": "salad",
+  "title": "Caesar Salad - Nando's 2026-10-11",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Caesar_Salad_-_Nando%27s_2026-10-11.jpg"
+ },
+ "soup-1.jpg": {
+  "key": "soup",
+  "title": "Campbell's Chicken Noodle Soup with Chayote and Potatoes",
+  "artist": "Judgefloro",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Campbell%27s_Chicken_Noodle_Soup_with_Chayote_and_Potatoes.jpg"
+ },
+ "soup-2.jpg": {
+  "key": "soup",
+  "title": "Whole Chicken Noodle Soup (163937285)",
+  "artist": "Eli Hodapp from Naperville, United States",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Whole_Chicken_Noodle_Soup_(163937285).jpg"
+ },
+ "soup-3.jpg": {
+  "key": "soup",
+  "title": "Soup Bowl (cropped)",
+  "artist": "THOR",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Soup_Bowl_(cropped).jpg"
+ },
+ "breakfast-1.jpg": {
+  "key": "breakfast",
+  "title": "The Smoking Stack Pancakes - Laughing Dog 2026-08-25",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:The_Smoking_Stack_Pancakes_-_Laughing_Dog_2026-08-25.jpg"
+ },
+ "breakfast-2.jpg": {
+  "key": "breakfast",
+  "title": "Bacon & maple pancakes - Trading Post Coffee Roasters 2026-02-24",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Bacon_%26_maple_pancakes_-_Trading_Post_Coffee_Roasters_2026-02-24.jpg"
+ },
+ "breakfast-3.jpg": {
+  "key": "breakfast",
+  "title": "Waffles with mixed berries in breakfast",
+  "artist": "City Foodsters",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Waffles_with_mixed_berries_in_breakfast.jpg"
+ },
+ "plate-1.jpg": {
+  "key": "plate",
+  "title": "MeatloafWithSauce",
+  "artist": "Renee Comet (photographer)",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:MeatloafWithSauce.jpg"
+ },
+ "plate-2.jpg": {
+  "key": "plate",
+  "title": "Meatloaf with gravy, broccoli, French fries, and a bun - Massachusetts",
+  "artist": "Daderot",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Meatloaf_with_gravy,_broccoli,_French_fries,_and_a_bun_-_Massachusetts.jpg"
+ },
+ "beer-1.jpg": {
+  "key": "beer",
+  "title": "Beer in glass close up",
+  "artist": "Public Domain Images",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Beer_in_glass_close_up.jpg"
+ },
+ "beer-2.jpg": {
+  "key": "beer",
+  "title": "Beer and pizza on display in a restaurant on a rustic table with focus on the glass of beer",
+  "artist": "Nenad Stojkovic",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Beer_and_pizza_on_display_in_a_restaurant_on_a_rustic_table_with_focus_on_the_glass_of_beer.jpg"
+ },
+ "wrap-1.jpg": {
+  "key": "wrap",
+  "title": "Mix Gyros (Chicken & Pork) Pitta Wrap - Montague Gyros 2025-12-06",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mix_Gyros_(Chicken_%26_Pork)_Pitta_Wrap_-_Montague_Gyros_2025-12-06.jpg"
+ },
+ "wrap-2.jpg": {
+  "key": "wrap",
+  "title": "Classic Crispy Jack Wrap - January 2024 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Classic_Crispy_Jack_Wrap_-_January_2024_-_Sarah_Stierch.jpg"
+ }
+}
