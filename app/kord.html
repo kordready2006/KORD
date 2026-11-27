@@ -788,10 +788,17 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     t.spots.forEach(function (sp) { ratedItems(sp.id).forEach(function (x) { rows.push({ sp: sp, x: x }); }); });
     rows.sort(function (a, b) { return b.x.avg - a.x.avg || b.x.n - a.x.n || a.x.item.localeCompare(b.x.item); });
     var h = pageHead('Standings', new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }), 'Best dishes', 'Every rated dish at ' + t.school.name + ', best first');
-    h += rows.length ? '<div class="list">' + rows.map(function (r, i) {
-      return '<button class="row" data-spot="' + esc(r.sp.id) + '"><span class="rank">' + (i + 1) + '</span>' + logo(r.sp) + '<span class="mid"><h3>' + esc(r.x.item) + '</h3><p>' + esc(r.sp.name) + '</p></span>' +
+    /* A dish needs MINVOTES votes to be ranked, so one perfect score cannot top the list. Dishes below that wait underneath. */
+    var MINVOTES = SERVER ? 3 : 1, ranked = rows.filter(function (r) { return r.x.n >= MINVOTES; }), waiting = rows.filter(function (r) { return r.x.n < MINVOTES; });
+    function bestRow(r, i) {
+      return '<button class="row" data-spot="' + esc(r.sp.id) + '"><span class="rank">' + (i == null ? '·' : i + 1) + '</span>' + logo(r.sp) + '<span class="mid"><h3>' + esc(r.x.item) + '</h3><p>' + esc(r.sp.name) + '</p></span>' +
         '<span class="end"><b>' + r.x.avg.toFixed(1) + '</b>' + r.x.n + ' vote' + (r.x.n > 1 ? 's' : '') + '</span></button>';
-    }).join('') + '</div>' : '<div class="empty"><b>No dishes rated yet</b>Be the first. Open any place, find what you ate and tap Rate.</div>';
+    }
+    if (!rows.length) h += '<div class="empty"><b>No dishes rated yet</b>Be the first. Open any place, find what you ate and tap Rate.</div>';
+    else {
+      h += ranked.length ? '<div class="list">' + ranked.map(function (r, i) { return bestRow(r, i); }).join('') + '</div>' : '<div class="empty"><b>No dish has ' + MINVOTES + ' votes yet</b>Rate what you ate to get the standings started.</div>';
+      if (waiting.length) h += '<div class="sechead"><h2>Needs more votes</h2><span>' + waiting.length + '</span></div><p class="sub">A dish joins the standings once ' + MINVOTES + ' students have rated it.</p><div class="list">' + waiting.slice(0, 40).map(function (r) { return bestRow(r, null); }).join('') + '</div>';
+    }
     return h + '<p class="note">' + (SERVER ? 'Scores combine ratings from every student using KORD at this school.' : 'For now this counts ratings made on this phone. Ratings from every student combine here once the shared ratings server is connected.') + '</p>';
   }
   function viewYou() {
