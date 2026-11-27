@@ -1009,6 +1009,13 @@ select.search { appearance: auto; }
         return '<button class="row" data-spot="' + esc(c.id) + '">' + (cu ? '<span class="lg thumb has"><img alt="" loading="lazy" class="cover" src="' + esc(cu) + '"></span>' : '') + '<span class="mid"><h3>' + esc(c.n) + '</h3><p>' + esc(SPOTS[c.id].name) + (travel(SPOTS[c.id]) ? ' · ' + travel(SPOTS[c.id]) : '') + '</p>' + (c.d ? '<p class="quote">' + esc(c.d) + '</p>' : '') + '</span><span class="end"><b>' + usd(c.p) + '</b></span></button>';
       }).join('') + '</div>';
       var pop = t.spots.filter(function (sp) { return sp.local; }).sort(function (a, b) { return (b.signature ? 4 : 0) + (b.photo ? 2 : 0) + (b.logo ? 1 : 0) - ((a.signature ? 4 : 0) + (a.photo ? 2 : 0) + (a.logo ? 1 : 0)) || b.deals.length - a.deals.length || a.name.localeCompare(b.name); }).slice(0, 10);
+      /* the best-rated dishes at this school, so the home page works as a starting point even on a slow deal day */
+      var best = []; t.spots.forEach(function (sp) { ratedItems(sp.id).forEach(function (x) { if (x.n >= (SERVER ? 3 : 1)) best.push({ sp: sp, x: x }); }); });
+      best.sort(function (a, b) { return b.x.avg - a.x.avg || b.x.n - a.x.n; });
+      if (best.length && (!SERVER || flag('standings'))) h += '<div class="sechead"><h2>Top dishes on campus</h2><span>' + Math.min(5, best.length) + '</span></div><p class="sub">Rated by students at ' + esc(t.school.name) + '.</p><div class="list">' + best.slice(0, 5).map(function (r, i) {
+        var cp = dishCover(r.sp.id, r.x.item), cu = cp ? photoUrl(cp.path) : r.sp.local ? stock(r.x.item, r.sp.category, r.sp.id + r.x.item) : '';
+        return '<button class="row" data-spot="' + esc(r.sp.id) + '"><span class="rank">' + (i + 1) + '</span>' + (cu ? '<span class="lg thumb has"><img alt="" loading="lazy" class="cover" src="' + esc(cu) + '"></span>' : '') + '<span class="mid"><h3>' + esc(r.x.item) + '</h3><p>' + esc(r.sp.name) + '</p></span><span class="end"><b>' + r.x.avg.toFixed(1) + '</b>' + r.x.n + ' vote' + (r.x.n > 1 ? 's' : '') + '</span></button>';
+      }).join('') + '</div><button class="lnk" data-tab="best" style="align-self:flex-start">See the full standings</button>';
       if (pop.length) h += '<div class="sechead"><h2>Popular near campus</h2><span>' + pop.length + '</span></div><p class="sub" style="margin-top:-8px">Local favorites in ' + esc(t.name) + '.</p><div class="rail" style="display:flex">' + pop.map(placeCard).join('') + '</div>';
     }
     h += sec('Chain deals nearby', 'Fast food and national chains, lowest price first.', chain);
