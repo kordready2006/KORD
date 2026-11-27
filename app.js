@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261127-175536';
+window.KORD_BUILD = '20261127-180259';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -35,6 +35,7 @@ window.KORD_BUILD = '20261127-175536';
   }
   function loadScores(then) {
     var t = DATA && town(); if (!SERVER || !t) return;
+    loadPhotos(then);
     api('dish_scores?select=place_id,dish,avg,n&town=eq.' + encodeURIComponent(t.id)).then(function (rows) {
       t.spots.forEach(function (sp) { delete COMMUNITY[sp.id]; });
       (rows || []).forEach(function (r) { (COMMUNITY[r.place_id] = COMMUNITY[r.place_id] || {})[r.dish] = { avg: +r.avg, n: +r.n }; });
@@ -48,6 +49,23 @@ window.KORD_BUILD = '20261127-175536';
       CMTS[id] = rows || [];
       if (S.open === id) paintComments(id);
     }).catch(function () {});
+  }
+  /* Student photos of dishes. PHOTOS[placeId][dish] = [{id, path}], newest first. Files sit in a public storage bucket. */
+  var PHOTOS = {}, HASPHOTOS = false;
+  function photoUrl(path) { return SERVER.url + '/storage/v1/object/public/dish-photos/' + String(path).split('/').map(encodeURIComponent).join('/'); }
+  function loadPhotos(then) {
+    var t = DATA && town(); if (!SERVER || !t) return;
+    api('dish_photos?select=id,place_id,dish,path&order=created_at.desc&limit=600&town=eq.' + encodeURIComponent(t.id)).then(function (rows) {
+      HASPHOTOS = true;
+      t.spots.forEach(function (sp) { delete PHOTOS[sp.id]; });
+      (rows || []).forEach(function (r) { var a = (PHOTOS[r.place_id] = PHOTOS[r.place_id] || {}); (a[r.dish] = a[r.dish] || []).push(r); });
+      if (then) then();
+    }).catch(function () {});
+  }
+  function dishPhotos(id, dish) { return (((PHOTOS[id] || {})[dish]) || []).filter(function (r) { return !U.reported['ph' + r.id]; }); }
+  function placePhoto(id) {
+    var best = null; Object.keys(PHOTOS[id] || {}).forEach(function (k) { dishPhotos(id, k).forEach(function (r) { if (!best || r.id > best.id) best = r; }); });
+    return best ? photoUrl(best.path) : '';
   }
   function myRate(id, item) { return (U.items[id] || {})[item] || 0; }
   function itemScore(id, item) {
@@ -220,7 +238,8 @@ window.KORD_BUILD = '20261127-175536';
   }
   function media(sp, d) {
     /* a deal with no photo of its own gets a licensed example of that food (credited under Sources); a restaurant never does */
-    var ph = (d && d.photo) || (d && d.nophoto ? '' : sp.photo) || (d ? stock(d.title, sp.category, sp.id + d.title) : '') || street(sp);
+    var mine = d ? dishPhotos(sp.id, d.title)[0] : null;
+    var ph = (mine && photoUrl(mine.path)) || (d && d.photo) || (d && d.nophoto ? '' : sp.photo) || (d ? '' : placePhoto(sp.id)) || (d ? stock(d.title, sp.category, sp.id + d.title) : '') || street(sp);
     return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono">' + esc(sp.name) + '</span>' };
   }
   function metaLine(sp) { var sc = spotScore(sp.id), tr = travel(sp); return [sc ? '<span class="score">★ ' + sc.toFixed(1) + '</span>' : '', esc(tr), esc(sp.category)].filter(Boolean).join(' · '); }
@@ -354,7 +373,7 @@ window.KORD_BUILD = '20261127-175536';
       return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + m.r + '</span> / 10</span></button>';
     }).join('') + '</div>' : '<div class="empty"><b>Nothing rated yet</b>Open any place, find what you ordered and tap Rate.</div>';
     h += '<div class="btnrow"><button class="btn ghost" id="creditsBtn">Sources and credits</button><a class="btn ghost" target="_blank" rel="noopener" href="privacy.html">Privacy</a><a class="btn ghost" target="_blank" rel="noopener" href="terms.html">Terms</a></div><p class="note">KORD version ' + esc(window.KORD_BUILD || 'preview') + '</p>';
-    return h + '<p class="note">' + (SERVER ? 'Your ratings and comments are shared with other students at your school. Your photo stays on this phone.' : 'Your profile and ratings are saved on this phone.') + '</p>';
+    return h + '<p class="note">' + (SERVER ? 'Your ratings, comments and dish photos are shared with other students at your school. Your profile photo stays on this phone.' : 'Your profile and ratings are saved on this phone.') + '</p>';
   }
 
   function render() {
@@ -438,7 +457,7 @@ window.KORD_BUILD = '20261127-175536';
     h += '<div class="plus"><span class="demo" style="background:var(--ink);color:var(--bg)">Demo membership</span><h3>KORD Plus · ' + usd(PLUS_PRICE) + ' a month</h3><p>No KORD fee on any order, double points on everything, and a Plus badge on your comments.</p>' +
       '<button class="btn" id="plusBtn">' + (U.plus ? 'Leave KORD Plus' : 'Try KORD Plus (demo, no charge)') + '</button></div>';
     h += '<div class="sechead"><h2>Badges</h2><span>' + badgeList().filter(function (b) { return b[2]; }).length + ' of ' + badgeList().length + '</span></div><div class="badges">' + badgeList().map(function (b) { return '<div class="bdg' + (b[2] ? '' : ' off') + '"><b>' + esc(b[0]) + '</b>' + esc(b[1]) + '</div>'; }).join('') + '</div>';
-    h += '<div class="sechead"><h2>How to earn</h2></div><ul class="earn"><li>Rate a dish you ate: 10 points</li><li>Post a comment: 5 points (up to 3 a day)</li><li>Place an order: 20 points</li><li>Open KORD each day: 5 points, plus 25 every 7th day in a row</li></ul>';
+    h += '<div class="sechead"><h2>How to earn</h2></div><ul class="earn"><li>Rate a dish you ate: 10 points</li><li>Post a comment: 5 points (up to 3 a day)</li><li>Add a photo of a dish: 10 points</li><li>Place an order: 20 points</li><li>Open KORD each day: 5 points, plus 25 every 7th day in a row</li></ul>';
     if (U.ledger.length) h += '<div class="sechead"><h2>Recent points</h2></div><div class="lines">' + U.ledger.slice(0, 5).map(function (l) { return '<div class="line"><span class="mid"><b>' + esc(l.why) + '</b><small>' + ago(l.at) + '</small></span><b>+' + l.n + '</b></div>'; }).join('') + '</div>';
     return h;
   }
@@ -533,12 +552,16 @@ window.KORD_BUILD = '20261127-175536';
     if (list && S.item) list.innerHTML = cmtListHtml(id, S.item);
   }
   function dishRow(id, m) {
-    var open = S.item === m.n, sc = itemScore(id, m.n), nc = cmtsFor(id, m.n).length, mine = myRate(id, m.n);
+    var open = S.item === m.n, sc = itemScore(id, m.n), nc = cmtsFor(id, m.n).length, mine = myRate(id, m.n), pics = dishPhotos(id, m.n);
     var h = '<div class="dish' + (open ? ' open' : '') + '"><div class="dtop"><h4>' + esc(m.n) + '</h4>' + (m.p && m.s !== 'Deals' ? '<span class="dprice">' + esc(m.p) + '</span>' : '') + '</div>' +
       (m.d ? '<p class="ddesc">' + esc(m.d) + '</p>' : '') +
+      (!open && pics.length ? '<div class="pstrip">' + pics.slice(0, 6).map(function (r) { return '<img alt="Student photo of ' + esc(m.n) + '" loading="lazy" src="' + esc(photoUrl(r.path)) + '">'; }).join('') + '</div>' : '') +
       '<div class="dfoot"><span class="dmeta"><b>' + (sc ? sc.avg.toFixed(1) : '—') + '</b>/ 10 · ' + (sc ? sc.n : 0) + ' vote' + (sc && sc.n === 1 ? '' : 's') + (nc ? ' · ' + nc + ' comment' + (nc > 1 ? 's' : '') : '') + '</span>' +
       '<button class="btn ghost sm dishhead" data-dish="' + esc(m.n) + '" aria-expanded="' + open + '">' + (open ? 'Close' : mine ? 'You gave it ' + mine : 'Rate') + '</button></div>';
-    if (open) h += '<div class="dishbody"><div class="yours"><span class="kick">Your score, 1 to 10</span>' + miniStars(id, m.n) + '</div><div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
+    var photoBox = !SERVER || !HASPHOTOS ? '' : '<div class="pbig">' + pics.slice(0, 8).map(function (r) {
+        return '<figure><img alt="Student photo of ' + esc(m.n) + '" loading="lazy" src="' + esc(photoUrl(r.path)) + '"><button class="rm" data-report="ph' + r.id + '">Report photo</button></figure>';
+      }).join('') + '</div><label class="btn ghost sm" for="phFile" id="phLabel">' + (pics.length ? 'Add your photo' : 'Add a photo of this') + '</label><input id="phFile" type="file" accept="image/*" hidden data-id="' + esc(id) + '" data-dish="' + esc(m.n) + '">';
+    if (open) h += '<div class="dishbody"><div class="yours"><span class="kick">Your score, 1 to 10</span>' + miniStars(id, m.n) + '</div>' + photoBox + '<div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
       '<div class="addrow"><input class="search" id="cmtIn" type="text" maxlength="280" placeholder="Worth it? Tell other students" aria-label="Write a comment"><button class="btn" id="cmtBtn" data-id="' + esc(id) + '">Post</button></div>' +
       (SERVER ? '' : '<p class="note">Comments stay on this phone until the shared server is connected.</p>') + orderBox(id, m) + '</div>';
     return h + '</div>';
@@ -572,7 +595,7 @@ window.KORD_BUILD = '20261127-175536';
   function spotSheet(id, deal) {
     var sp = SPOTS[id]; if (!sp) return;
     var web = safeUrl(sp.website);
-    var bph = sp.photo || street(sp);
+    var bph = sp.photo || placePhoto(sp.id) || street(sp);
     var banner = bph ? '<div class="banner"><img alt="" src="' + esc(bph) + '"></div>' : '';
     var h = '<div class="spothead">' + (sp.logo ? logo(sp, 'big') : '') + '<div><span class="kick rust">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</span><h2>' + esc(sp.name) + '</h2>' + tagsHtml(sp) + '</div></div>';
     if (sp.address) h += '<p class="sub" style="margin-top:-6px">' + esc(sp.address) + (travel(sp) ? ' · about ' + travel(sp) + ' from campus' : '') + '</p>';
@@ -622,7 +645,8 @@ window.KORD_BUILD = '20261127-175536';
       return render();
     }
     if (t.dataset.report) {
-      U.reported[t.dataset.report] = 1; save('kord.user', U); toast('Reported. You will not see that comment again.');
+      U.reported[t.dataset.report] = 1; save('kord.user', U); toast(/^ph/.test(t.dataset.report) ? 'Reported. You will not see that photo again.' : 'Reported. You will not see that comment again.');
+      if (SERVER && /^ph\d+$/.test(t.dataset.report)) api('rpc/report_photo', { p_device: U.device, p_photo: +t.dataset.report.slice(2) }).catch(function () {});
       if (SERVER && /^id\d+$/.test(t.dataset.report)) api('rpc/report_comment', { p_device: U.device, p_comment: +t.dataset.report.slice(2) }).catch(function () {});
       return fillMenu(S.open);
     }
@@ -678,6 +702,27 @@ window.KORD_BUILD = '20261127-175536';
   document.addEventListener('change', function (e) {
     var t = e.target;
     if (t.id === 'nameIn') render();
+    if (t.id === 'phFile' && t.files && t.files[0] && SERVER) {
+      var pid = t.dataset.id, dish = t.dataset.dish, lab = document.getElementById('phLabel'), rd = new FileReader();
+      var fail = function () { toast('Could not add that photo. Try again.'); if (lab) lab.textContent = 'Add a photo of this'; };
+      if (lab) lab.textContent = 'Uploading…';
+      rd.onerror = fail;
+      rd.onload = function () { var im = new Image(); im.onerror = fail; im.onload = function () {
+        var k = Math.min(1, 1200 / Math.max(im.width, im.height)), c = document.createElement('canvas');
+        c.width = Math.round(im.width * k); c.height = Math.round(im.height * k);
+        c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+        c.toBlob(function (blob) {
+          if (!blob) return fail();
+          var id4 = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-8xxx-xxxxxxxxxxxx'.replace(/x/g, function () { return (Math.random() * 16 | 0).toString(16); });
+          var path = U.device + '/' + id4 + '.jpg';
+          fetch(SERVER.url + '/storage/v1/object/dish-photos/' + path, { method: 'POST', headers: { apikey: SERVER.key, Authorization: 'Bearer ' + SERVER.key, 'Content-Type': 'image/jpeg' }, body: blob })
+            .then(function (r) { if (!r.ok) throw new Error(r.status); return api('rpc/add_photo', { p_device: U.device, p_town: S.town, p_place: pid, p_dish: dish, p_path: path }); })
+            .then(function () { U.stats.photos = (U.stats.photos || 0) + 1; award(10, 'Photo added', 'p|' + pid + '|' + dish); loadPhotos(function () { if (S.open === pid) fillMenu(pid); }); })
+            .catch(fail);
+        }, 'image/jpeg', 0.82);
+      }; im.src = rd.result; };
+      rd.readAsDataURL(t.files[0]);
+    }
     if (t.id === 'avatarFile' && t.files && t.files[0]) {
       var fr = new FileReader();
       fr.onload = function () { var im = new Image(); im.onload = function () {

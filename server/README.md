@@ -31,3 +31,9 @@ The anon key is meant to be public. It can only read the two summary views and c
 
 `node server/mock.js 8799` is an in-memory stand-in. `node tools/test_app.js <dir>` runs two phones against it.
 `schema.sql` itself has not been run against a real Postgres yet; the first real run is step 2 above.
+
+## Student photos
+
+Run `server/photos.sql` once in the SQL Editor after `schema.sql`. It adds the `photos` table, the `dish-photos` storage bucket
+(JPEG only, 1.5 MB limit) and the functions the app calls. Until it has been run, the app hides the "Add a photo" button.
+To take a photo down, set `hidden` to true on its row in the `photos` table.

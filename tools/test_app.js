@@ -194,6 +194,15 @@ async function openFirstDeal(p) {
     await b.click('#cmtBtn');
     await a.waitForTimeout(13500); // phone A picks it up on its next refresh
     check(await a.locator('.cmt', { hasText: 'Phone B agrees' }).count() >= 1, 'phone A did not receive phone B comment live');
+    await a.setInputFiles('#phFile', require('path').join(__dirname, '..', 'stock', 'pizza-1.jpg'));
+    await a.waitForSelector('.pbig img', { timeout: 8000 }).catch(() => {});
+    check(await a.locator('.pbig img').count() === 1, 'photo did not upload on phone A');
+    await b.click('.x');
+    await b.click('.dcard.hero');
+    await b.waitForSelector('#menuBox .dish');
+    await b.waitForSelector('#menuBox img[src*="dish-photos"]', { timeout: 8000 }).catch(() => {});
+    check(await b.locator('#menuBox img[src*="dish-photos"]').count() >= 1, 'phone B does not see phone A photo');
+    check(await b.evaluate(async () => { const i = document.querySelector('#menuBox img[src*="dish-photos"]'); if (!i) return false; const r = await fetch(i.src); return r.ok && (await r.blob()).size > 5000; }), 'shared photo file is not served');
     await b.screenshot({ path: `${out}/b-shared.png` });
     await b.click('.x');
     await b.click('[data-tab="best"]');

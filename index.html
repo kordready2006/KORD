@@ -461,6 +461,14 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
 .tens button { aspect-ratio: 1; border-radius: 6px; border: 1px solid var(--line); background: var(--card); font: 700 15px var(--display); color: var(--ink); padding: 0; }
 .tens button.on { background: var(--chip); }
 .tens button.mine { background: var(--hot); border-color: var(--hot); color: #fff; }
+.pstrip { display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; margin-top: 12px; }
+.pstrip::-webkit-scrollbar { display: none; }
+.pstrip img { flex: none; width: 132px; height: 99px; object-fit: cover; border-radius: 6px; background: var(--chip); }
+.pbig { display: flex; flex-direction: column; gap: 12px; }
+.pbig figure { margin: 0; }
+.pbig img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; background: var(--chip); }
+.pbig .rm { color: var(--muted); font-size: 12px; font-weight: 600; text-decoration: underline; margin-top: 4px; }
+#phLabel { align-self: flex-start; cursor: pointer; }
 .mystars { color: var(--hot); font: 700 18px var(--display); letter-spacing: 0; }
 .credits a, .wdeal a, .note a { color: var(--link); }
 @media (prefers-reduced-motion: no-preference) { .sheet { animation: up .22s ease-out; } @keyframes up { from { transform: translateY(40px); opacity: .6; } } }
@@ -477,6 +485,6 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
 </div></nav>
 <div id="sheetRoot"></div>
 
-<script src="app.js?v=20261127-175536"></script>
+<script src="app.js?v=20261127-180259"></script>
 </body>
 </html>
