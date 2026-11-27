@@ -453,7 +453,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
 .pbig { display: flex; flex-direction: column; gap: 12px; }
 .pbig figure { margin: 0; }
 .pbig img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 8px; background: var(--chip); }
-.ptag { position: absolute; z-index: 1; right: 8px; top: 8px; background: rgba(22,16,12,.72); color: #fff; font: 600 9.5px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; padding: 5px 7px; border-radius: 4px; }
+.ptag { position: absolute; z-index: 1; right: 8px; bottom: 8px; background: rgba(22,16,12,.72); color: #fff; font: 600 9.5px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; padding: 5px 7px; border-radius: 4px; }
 .pact { display: flex; gap: 16px; }
 .pbig .rm[disabled] { text-decoration: none; cursor: default; }
 .pbig .rm { color: var(--muted); font-size: 12px; font-weight: 600; text-decoration: underline; margin-top: 4px; }
@@ -464,7 +464,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
 /* ===== imagery ===== */
 .collage { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 6px; margin-bottom: 4px; }
 .collage img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; display: block; background: var(--chip); }
-.chip.cat { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px 5px 5px; }
+.chip.cat { display: inline-flex; flex-direction: row; flex: none; align-items: center; gap: 8px; padding: 5px 14px 5px 5px; white-space: nowrap; text-align: left; }
 .chip.cat .cthumb { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; flex: none; background: var(--chip); }
 .chip.cat.noimg { padding-left: 14px; }
 .ph { background: var(--c, var(--chip)); }
