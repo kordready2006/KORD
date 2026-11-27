@@ -492,7 +492,13 @@ select.search { appearance: auto; }
 .compose textarea { min-height: 84px; }
 .tab { font-size: 9.5px; letter-spacing: .12em; }
 .welcome { display: flex; flex-direction: column; gap: 12px; padding-top: 10px; }
-.welcome h2 { font-size: clamp(34px, 10vw, 44px); line-height: 1; }
+.welcome h2 { font-size: clamp(28px, 8.4vw, 36px); line-height: 1.06; text-wrap: balance; }
+.mast h1.longname { font-size: clamp(38px, 12.5vw, 54px); }
+.stats.three { grid-template-columns: 1fr 1fr 1fr; }
+.stats.three .stat { border-bottom: 0; border-right: 1px solid var(--line); } .stats.three .stat:last-child { border-right: 0; }
+.stats.three .stat b { color: var(--hot); }
+.schoolrow { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; }
+.schoolrow .badge { width: 46px; height: 46px; border-radius: 8px; font-size: 12.5px; }
 .welcome #exploreBtn { align-self: center; padding: 10px; font-size: 15px; }
 .steps { list-style: none; margin: 4px 0 6px; padding: 0; counter-reset: st; display: flex; flex-direction: column; gap: 10px; }
 .steps li { counter-increment: st; display: grid; grid-template-columns: 44px 1fr; column-gap: 8px; align-items: baseline; color: var(--muted); font-size: 14.5px; }
@@ -546,6 +552,6 @@ select.search { appearance: auto; }
 </div></nav>
 <div id="sheetRoot"></div>
 
-<script src="app.js?v=20261127-225818"></script>
+<script src="app.js?v=20261127-231005"></script>
 </body>
 </html>

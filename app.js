@@ -1,6 +1,7 @@
-window.KORD_BUILD = '20261127-225818';
+window.KORD_BUILD = '20261127-231005';
 (function () {
   'use strict';
+  var APPNAME = 'Delicious Deals';   /* working name shown on the welcome and school screens; change it here */
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
   var DAYNAME = { Mon: 'Monday', Tue: 'Tuesday', Wed: 'Wednesday', Thu: 'Thursday', Fri: 'Friday', Sat: 'Saturday', Sun: 'Sunday' };
   var CATCOLOR = { 'Pizza': 'hot', 'Burgers': 'orange', 'Mexican': 'mint', 'Sandwiches & Subs': 'cobalt', 'Wings & Chicken': 'orange', 'Asian': 'pink',
@@ -438,8 +439,7 @@ window.KORD_BUILD = '20261127-225818';
 
   /* step 1: pick a school */
   function viewPick() {
-    var lib = DATA.stock || {}, strip = [(lib.wings || [])[0], (lib.pizza || [])[2], (lib.taco || [])[1]].filter(Boolean);
-    return (strip.length === 3 ? '<div class="collage">' + strip.map(function (u) { return '<img alt="" src="' + esc(u) + '">'; }).join('') + '</div>' : '') + '<div class="grid">' + DATA.towns.map(function (t) {
+    return '<div class="grid">' + DATA.towns.map(function (t) {
       return '<button class="tile' + (t.id === S.town ? ' mine' : '') + '" data-town="' + esc(t.id) + '"><span class="tilehead"><span class="kick">Campus</span><span class="kick rust">Open</span></span>' + badge(t.school) +
         '<span class="tbody2"><span class="tname">' + esc(t.name) + ', Ohio</span><span class="tsub">' + esc(t.school.name) + (t.school.also ? ' · also ' + esc(t.school.also) : '') + '</span></span></button>';
     }).join('') + '</div><p class="note" style="text-align:center">15 Ohio campuses so far. More coming.</p>';
@@ -744,16 +744,28 @@ window.KORD_BUILD = '20261127-225818';
   function render() {
     /* First open: a welcome screen that asks people to join or sign in, with a way to look around first. */
     if (SERVER && !AUTH && !U.guest) {
-      var lib0 = DATA.stock || {}, pics = [(lib0.wings || [])[0], (lib0.pizza || [])[2], (lib0.taco || [])[1]].filter(Boolean);
       document.documentElement.style.removeProperty('--sc');
-      document.getElementById('top').innerHTML = '<div class="mast"><div class="mastline"><span class="kick">Ohio edition</span><span class="kick">Student rated</span></div><h1>KORD</h1><span class="kick">— Cheap eats near campus, rated dish by dish —</span><div class="rule"></div></div>';
+      document.getElementById('top').innerHTML = '<div class="mast"><div class="mastline"><span class="kick">For college students</span><span class="kick">Ohio</span></div><h1 class="longname">' + APPNAME + '</h1><span class="kick">— The cheap food near your campus, found for you —</span><div class="rule"></div></div>';
       document.getElementById('tabs').hidden = true; document.getElementById('daysNav').hidden = true;
       var w = document.getElementById('view'); w.className = 'wrap nopad';
-      w.innerHTML = (pics.length === 3 ? '<div class="collage">' + pics.map(function (u) { return '<img alt="" src="' + esc(u) + '">'; }).join('') + '</div>' : '') +
-        '<div class="welcome"><h2>Eat well for cheap.</h2><p class="sub">Daily deals near your campus, every menu with what is in it, and scores from students who actually ate there.</p>' +
-        '<ol class="steps"><li><b>Join free</b>One account, one vote per dish.</li><li><b>Rate what you eat</b>Score any dish from 1 to 10.</li><li><b>Unlock perks</b>Ratings earn you deals around campus.</li></ol>' +
-        '<button class="btn bigbtn" data-auth="up">Create account</button><button class="btn ghost bigbtn" data-auth="in">Sign in</button>' +
-        '<button class="lnk" id="exploreBtn">Just explore first</button>' +
+      /* real numbers and real deals from the data, so the pitch is true */
+      var nPlaces = 0, nDeals = 0, samples = [];
+      DATA.towns.forEach(function (tw) {
+        nPlaces += tw.spots.length; var bestD = null;
+        tw.spots.forEach(function (sp) { nDeals += sp.deals.length; if (sp.local) sp.deals.forEach(function (d) { var pr = priceNum(d.price || d.title); if (pr != null && pr <= 6 && kind(d) !== 'off' && d.title.length <= 34 && (!bestD || pr < bestD.p)) bestD = { p: pr, d: d, tw: tw }; }); });
+        if (bestD) samples.push(bestD);
+      });
+      samples.sort(function (x, y) { return x.p - y.p; });
+      var kinds = {}; samples = samples.filter(function (x) { var k = stockKey(x.d.title, ''); if (kinds[k]) return false; kinds[k] = 1; return true; });
+      w.innerHTML = '<div class="welcome"><span class="kick rust">Broke and hungry? Same.</span><h2>There is cheap food all around your campus. You just do not know where yet.</h2>' +
+        '<p class="sub">Every bar, pizza shop and taco spot near your school runs deals for students. They are buried on websites, chalkboards and Instagram stories. We dug them all up and put them in one place, by day, cheapest first.</p><button class="btn bigbtn" data-auth="up">Create my free account</button>' +
+        '<div class="stats three"><div class="stat"><b>' + DATA.towns.length + '</b><span>Ohio campuses</span></div><div class="stat"><b>' + nPlaces + '</b><span>Places to eat</span></div><div class="stat"><b>' + nDeals + '</b><span>Deals, $12 or less</span></div></div>' +
+        '<div class="schoolrow">' + DATA.towns.map(function (tw) { return '<span class="badge" style="--c:' + hex(tw.school.color) + ';--i:' + hex(tw.school.ink) + '" title="' + esc(tw.school.name) + '">' + esc(tw.school.abbr) + '</span>'; }).join('') + '</div>' +
+        '<p class="note" style="text-align:center;margin-top:-4px">Is your school here? Then there is a deal near you today.</p>' +
+        (samples.length ? '<div class="lines">' + samples.slice(0, 4).map(function (x) { return '<div class="line"><span class="mid"><b>' + esc(x.d.title) + '</b><small>near ' + esc(x.tw.school.name) + '</small></span><b style="color:var(--hot)">' + esc(stubText(x.d)) + '</b></div>'; }).join('') + '</div>' : '') +
+        '<div class="sechead"><h2>Why make an account</h2></div><ol class="steps"><li><b>It is free</b>No card, no catch. Takes 20 seconds.</li><li><b>Rate what you eat</b>Score any dish 1 to 10 so the next student knows if it is worth it.</li><li><b>Earn free stuff</b>Your ratings unlock perks at places around campus.</li><li><b>See what your friends eat</b>Follow people and climb your school\'s leaderboard.</li></ol>' +
+        '<button class="btn bigbtn" data-auth="up">Create my free account</button><button class="btn ghost bigbtn" data-auth="in">I already have one</button>' +
+        '<button class="lnk" id="exploreBtn">Just let me look around first</button>' +
         '<p class="note" style="text-align:center">By continuing you agree to our <a target="_blank" rel="noopener" href="terms.html">Terms</a>, <a target="_blank" rel="noopener" href="privacy.html">Privacy Policy</a> and <a target="_blank" rel="noopener" href="rules.html">Community Rules</a>.</p></div>';
       return;
     }
@@ -761,7 +773,7 @@ window.KORD_BUILD = '20261127-225818';
     root.style.setProperty('--sc', picking ? '' : hex(t.school.color)); root.style.setProperty('--si', picking ? '' : hex(t.school.ink));
     if (picking) { root.style.removeProperty('--sc'); root.style.removeProperty('--si'); }
     document.getElementById('top').innerHTML = picking ?
-      '<div class="mast"><div class="mastline"><span class="kick">Ohio edition</span><span class="kick">Student rated</span></div><h1>KORD</h1><span class="kick">— Cheap eats near campus. Pick your school to get started —</span><div class="rule"></div></div>' :
+      '<div class="mast"><div class="mastline"><span class="kick">Ohio edition</span><span class="kick">Student rated</span></div><h1 class="longname">' + APPNAME + '</h1><span class="kick">— Cheap eats near campus. Pick your school to get started —</span><div class="rule"></div></div>' :
       '<div class="schoolbar">' + badge(t.school) + '<div class="mid"><h1>' + esc(t.school.name) + '</h1><p>' + esc(t.name) + ', Ohio · ' + U.pts + ' points</p></div><button class="swap" id="swapBtn">Change</button></div>';
     document.getElementById('tabs').hidden = picking;
     document.getElementById('daysNav').hidden = picking || S.tab !== 'deals';

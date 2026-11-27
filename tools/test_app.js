@@ -352,7 +352,8 @@ async function openFirstDeal(p) {
       const w = await (await browser.newContext({ viewport: { width: 400, height: 860 } })).newPage();
       await w.goto(url); await w.waitForSelector('#exploreBtn'); await w.screenshot({ path: `${out}/f-welcome.png` });
       check(await w.locator('.tile').count() === 0, 'schools are shown before the welcome screen is answered');
-      await w.click('[data-auth="up"]'); await w.fill('#auName', 'Wendy'); await w.fill('#auEmail', 'wendy-verify@test.dev'); await w.fill('#auPass', 'password1'); await w.click('#auGo');
+      check(await w.locator('.welcome .collage, .welcome img').count() === 0 && await w.locator('.mast h1', { hasText: 'Delicious Deals' }).count() === 1, 'welcome screen should show the working name and no food photos');
+      await w.click('[data-auth="up"] >> nth=0'); await w.fill('#auName', 'Wendy'); await w.fill('#auEmail', 'wendy-verify@test.dev'); await w.fill('#auPass', 'password1'); await w.click('#auGo');
       await w.waitForSelector('h2:has-text("Verify your email")'); await w.click('.x');
       check(await w.locator('#exploreBtn').count() === 1, 'welcome screen vanished before the account was verified');
       await w.click('#exploreBtn'); await w.waitForSelector('.tile'); await w.reload(); await w.waitForSelector('.tile');
