@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261127-224715';
+window.KORD_BUILD = '20261127-225818';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -742,6 +742,21 @@ window.KORD_BUILD = '20261127-224715';
   }
 
   function render() {
+    /* First open: a welcome screen that asks people to join or sign in, with a way to look around first. */
+    if (SERVER && !AUTH && !U.guest) {
+      var lib0 = DATA.stock || {}, pics = [(lib0.wings || [])[0], (lib0.pizza || [])[2], (lib0.taco || [])[1]].filter(Boolean);
+      document.documentElement.style.removeProperty('--sc');
+      document.getElementById('top').innerHTML = '<div class="mast"><div class="mastline"><span class="kick">Ohio edition</span><span class="kick">Student rated</span></div><h1>KORD</h1><span class="kick">— Cheap eats near campus, rated dish by dish —</span><div class="rule"></div></div>';
+      document.getElementById('tabs').hidden = true; document.getElementById('daysNav').hidden = true;
+      var w = document.getElementById('view'); w.className = 'wrap nopad';
+      w.innerHTML = (pics.length === 3 ? '<div class="collage">' + pics.map(function (u) { return '<img alt="" src="' + esc(u) + '">'; }).join('') + '</div>' : '') +
+        '<div class="welcome"><h2>Eat well for cheap.</h2><p class="sub">Daily deals near your campus, every menu with what is in it, and scores from students who actually ate there.</p>' +
+        '<ol class="steps"><li><b>Join free</b>One account, one vote per dish.</li><li><b>Rate what you eat</b>Score any dish from 1 to 10.</li><li><b>Unlock perks</b>Ratings earn you deals around campus.</li></ol>' +
+        '<button class="btn bigbtn" data-auth="up">Create account</button><button class="btn ghost bigbtn" data-auth="in">Sign in</button>' +
+        '<button class="lnk" id="exploreBtn">Just explore first</button>' +
+        '<p class="note" style="text-align:center">By continuing you agree to our <a target="_blank" rel="noopener" href="terms.html">Terms</a>, <a target="_blank" rel="noopener" href="privacy.html">Privacy Policy</a> and <a target="_blank" rel="noopener" href="rules.html">Community Rules</a>.</p></div>';
+      return;
+    }
     var t = DATA && town(), picking = S.picking || !t, root = document.documentElement;
     root.style.setProperty('--sc', picking ? '' : hex(t.school.color)); root.style.setProperty('--si', picking ? '' : hex(t.school.ink));
     if (picking) { root.style.removeProperty('--sc'); root.style.removeProperty('--si'); }
@@ -1040,6 +1055,7 @@ window.KORD_BUILD = '20261127-224715';
       api('rpc/admin_find_users', { p_email: ADM.q }).then(function (r) { ADM.found = r || []; document.getElementById('admBody').innerHTML = adminBody(); }).catch(function () { toast('Search failed.'); }); return; }
     if (t.dataset.setadmin) { var sa = t.dataset.setadmin.split('|'); ADM.found = null; return admDo(api('rpc/admin_set_admin', { p_user: sa[0], p_admin: sa[1] === '1' }), 'Saved'); }
     if (t.id === 'auGo') return authGo();
+    if (t.id === 'exploreBtn') { U.guest = 1; save('kord.user', U); render(); window.scrollTo(0, 0); return; }
     if (t.id === 'signOut') { fresh().then(function (tok) { if (tok) authCall('logout', null, 'POST', tok).catch(function () {}); dropSession(); render(); toast('Signed out'); }); return; }
     if (t.dataset.rate) {
       if (needAccount('rate dishes')) return;

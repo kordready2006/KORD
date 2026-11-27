@@ -10,12 +10,15 @@ const base = process.argv[3] || 'http://localhost:8765/index.html';
 const errs = [];
 const check = (ok, msg) => { if (!ok) errs.push(msg); };
 
+let welcomeSeen = false;
 async function phone(browser, url, scheme) {
   const ctx = await browser.newContext({ viewport: { width: 400, height: 860 }, colorScheme: scheme || 'light' });
   const p = await ctx.newPage();
   p.on('pageerror', (e) => errs.push('PAGEERR ' + e.message));
   // single-phone flows never write to the real ratings server
   await p.goto(/[?&]server=/.test(url) ? url : url + (url.includes('?') ? '&' : '?') + 'server=off');
+  await p.waitForSelector('.tile, #exploreBtn');
+  if (await p.$('#exploreBtn')) { welcomeSeen = true; await p.click('#exploreBtn'); }
   await p.waitForSelector('.tile');
   return p;
 }
@@ -180,6 +183,7 @@ async function openFirstDeal(p) {
   if (!process.argv[3]) {
     const url = base + '?server=' + encodeURIComponent('http://localhost:8799');
     const a = await phone(browser, url), b = await phone(browser, url);
+    check(welcomeSeen, 'no welcome screen on first open');
     await openFirstDeal(a);
     await a.click('#menuBox .dishhead >> nth=0');
     const dish = await a.locator('#menuBox .dish.open .dishhead').getAttribute('data-dish');
@@ -344,6 +348,17 @@ async function openFirstDeal(p) {
     await b.click('#sheetBody [data-auth="up"]'); await b.fill('#auName', 'Casey'); await b.fill('#auEmail', 'casey-verify@test.dev'); await b.fill('#auPass', 'password1'); await b.click('#auGo');
     await b.waitForSelector('h2:has-text("Verify your email")');
     await b.screenshot({ path: `${out}/c-verify.png` });
+    { // the welcome screen: create an account straight from it, and it does not come back afterwards
+      const w = await (await browser.newContext({ viewport: { width: 400, height: 860 } })).newPage();
+      await w.goto(url); await w.waitForSelector('#exploreBtn'); await w.screenshot({ path: `${out}/f-welcome.png` });
+      check(await w.locator('.tile').count() === 0, 'schools are shown before the welcome screen is answered');
+      await w.click('[data-auth="up"]'); await w.fill('#auName', 'Wendy'); await w.fill('#auEmail', 'wendy-verify@test.dev'); await w.fill('#auPass', 'password1'); await w.click('#auGo');
+      await w.waitForSelector('h2:has-text("Verify your email")'); await w.click('.x');
+      check(await w.locator('#exploreBtn').count() === 1, 'welcome screen vanished before the account was verified');
+      await w.click('#exploreBtn'); await w.waitForSelector('.tile'); await w.reload(); await w.waitForSelector('.tile');
+      check(await w.locator('#exploreBtn').count() === 0, 'welcome screen came back after choosing to explore');
+      await w.close();
+    }
     await a.close(); await b.close();
   }
   console.log('errors', JSON.stringify(errs));
