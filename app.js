@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261127-211348';
+window.KORD_BUILD = '20261127-211938';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -19,7 +19,7 @@ window.KORD_BUILD = '20261127-211348';
   /* Dish ratings: U.items[placeId][dish] = 1..5 on this phone. COMMUNITY[placeId][dish] = {sum, n} is where other students'
      ratings go once a shared ratings server is connected; every score below already combines the two. */
   var COMMUNITY = {}, MENUS = null, SERVER = null, LOADED = {}, CMTS = {}, POLL = null;
-  U.comments = U.comments || {}; U.reported = U.reported || {};
+  U.comments = U.comments || {}; U.reported = U.reported || {}; U.liked = U.liked || {};
   if (!U.device) {
     U.device = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-8xxx-xxxxxxxxxxxx'.replace(/x/g, function () { return (Math.random() * 16 | 0).toString(16); });
     save('kord.user', U);
@@ -55,16 +55,25 @@ window.KORD_BUILD = '20261127-211348';
   function photoUrl(path) { return SERVER.url + '/storage/v1/object/public/dish-photos/' + String(path).split('/').map(encodeURIComponent).join('/'); }
   function loadPhotos(then) {
     var t = DATA && town(); if (!SERVER || !t) return;
-    api('dish_photos?select=id,place_id,dish,path&order=created_at.desc&limit=600&town=eq.' + encodeURIComponent(t.id)).then(function (rows) {
+    var q = '&order=created_at.desc&limit=600&town=eq.' + encodeURIComponent(t.id);
+    api('dish_photos?select=id,place_id,dish,path,featured,likes' + q).catch(function () { return api('dish_photos?select=id,place_id,dish,path' + q); }).then(function (rows) {
       HASPHOTOS = true;
       t.spots.forEach(function (sp) { delete PHOTOS[sp.id]; });
       (rows || []).forEach(function (r) { var a = (PHOTOS[r.place_id] = PHOTOS[r.place_id] || {}); (a[r.dish] = a[r.dish] || []).push(r); });
       if (then) then();
     }).catch(function () {});
   }
-  function dishPhotos(id, dish) { return (((PHOTOS[id] || {})[dish]) || []).filter(function (r) { return !U.reported['ph' + r.id]; }); }
+  function likes(r) { return (r.likes || 0) + (U.liked['ph' + r.id] && !r.counted ? 0 : 0); }
+  /* Best first: featured by the owner, then most "Looks right" taps, then newest. */
+  function dishPhotos(id, dish) {
+    return (((PHOTOS[id] || {})[dish]) || []).filter(function (r) { return !U.reported['ph' + r.id]; })
+      .sort(function (x, y) { return (y.featured ? 1 : 0) - (x.featured ? 1 : 0) || likes(y) - likes(x) || y.id - x.id; });
+  }
+  /* A photo may stand in as a cover picture only once it is featured or two students say it looks right. */
+  function coverOk(r) { return r && (r.featured || likes(r) >= 2); }
+  function dishCover(id, dish) { var r = dishPhotos(id, dish)[0]; return coverOk(r) ? r : null; }
   function placePhoto(id) {
-    var best = null; Object.keys(PHOTOS[id] || {}).forEach(function (k) { dishPhotos(id, k).forEach(function (r) { if (!best || r.id > best.id) best = r; }); });
+    var best = null; Object.keys(PHOTOS[id] || {}).forEach(function (k) { var r = dishCover(id, k); if (r && (!best || (r.featured ? 1 : 0) > (best.featured ? 1 : 0) || likes(r) > likes(best))) best = r; });
     return best ? photoUrl(best.path) : '';
   }
   function myRate(id, item) { return (U.items[id] || {})[item] || 0; }
@@ -240,10 +249,17 @@ window.KORD_BUILD = '20261127-211348';
     return k && sp.address ? 'https://maps.googleapis.com/maps/api/streetview?size=640x480&fov=80&source=outdoor&location=' + encodeURIComponent(sp.address) + '&key=' + encodeURIComponent(k) : '';
   }
   function media(sp, d) {
-    /* a deal with no photo of its own gets a licensed example of that food (credited under Sources); a restaurant never does */
-    var mine = d ? dishPhotos(sp.id, d.title)[0] : null;
-    var ph = (mine && photoUrl(mine.path)) || (d && d.photo) || (d && d.nophoto ? '' : sp.photo) || (d ? '' : placePhoto(sp.id)) || (d ? stock(d.title, sp.category, sp.id + d.title) : '') || street(sp);
-    return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono"><span class="emo" aria-hidden="true">' + (TILE[sp.category] || TILE.Other)[1] + '</span>' + esc(sp.name) + '</span>' };
+    /* Order: an approved student photo of that dish, the restaurant's own photo (with permission), an approved student photo
+       from the restaurant, a labelled example of that food, a street view. Chains never get an example photo: their food
+       is well known and a stand-in would mislead. */
+    var mine = d ? dishCover(sp.id, d.title) : null, ph = '', kind = '';
+    if (mine) { ph = photoUrl(mine.path); kind = 'Student photo'; }
+    else if (d && d.photo) ph = d.photo;
+    else if (!(d && d.nophoto) && sp.photo) ph = sp.photo;
+    else if (!d && placePhoto(sp.id)) { ph = placePhoto(sp.id); kind = 'Student photo'; }
+    else if (d && sp.local && (ph = stock(d.title, sp.category, sp.id + d.title))) kind = 'Example photo';
+    else ph = street(sp);
+    return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' + (kind ? '<span class="ptag">' + kind + '</span>' : '') : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono"><span class="emo" aria-hidden="true">' + (TILE[sp.category] || TILE.Other)[1] + '</span>' + esc(sp.name) + '</span>' };
   }
   function metaLine(sp) { var sc = spotScore(sp.id), tr = travel(sp); return [sc ? '<span class="score">★ ' + sc.toFixed(1) + '</span>' : '', esc(tr), esc(sp.category)].filter(Boolean).join(' · '); }
   function ticket(x, hero, dayLabel) {
@@ -306,15 +322,15 @@ window.KORD_BUILD = '20261127-211348';
       for (var k = 1; k < 7; k++) { var dn = DAYS[(di + k) % 7]; byPrice(dealsFor(t, dn).filter(function (x) { return x.sp.local && x.d.days.indexOf(S.day) < 0; })).forEach(function (x) { var key = x.sp.id + '|' + x.d.title; if (!got[key] && later.length < 14) { got[key] = 1; later.push({ x: x, day: dn }); } }); }
       if (later.length) h += '<div class="sechead"><h2>Later this week</h2><span>' + later.length + '</span></div><p class="sub">Deals coming up on other days.</p><div class="list rail">' + later.map(function (l) { return ticket(l.x, false, DAYNAME[l.day]); }).join('') + '</div>';
       var cheap = (t.cheap || []).filter(function (c) { return SPOTS[c.id]; });
-      if (cheap.length >= 3) h += '<div class="sechead"><h2>Cheap any day</h2><span>' + Math.min(15, cheap.length) + '</span></div><p class="sub">Full meals for $9 or less on the regular menu. No deal needed.</p><div class="list">' + cheap.slice(0, 15).map(function (c) {
-        var cp = dishPhotos(c.id, c.n)[0], cu = cp ? photoUrl(cp.path) : stock(c.n, SPOTS[c.id].category, c.id + c.n);
+      if (cheap.length >= 3) h += '<div class="sechead"><h2>Cheap any day</h2><span>' + Math.min(15, cheap.length) + '</span></div><p class="sub">Full meals for $9 or less on the regular menu. No deal needed. Small pictures are examples.</p><div class="list">' + cheap.slice(0, 15).map(function (c) {
+        var cp = dishCover(c.id, c.n), cu = cp ? photoUrl(cp.path) : stock(c.n, SPOTS[c.id].category, c.id + c.n);
         return '<button class="row" data-spot="' + esc(c.id) + '">' + (cu ? '<span class="lg thumb has"><img alt="" loading="lazy" class="cover" src="' + esc(cu) + '"></span>' : '') + '<span class="mid"><h3>' + esc(c.n) + '</h3><p>' + esc(SPOTS[c.id].name) + (travel(SPOTS[c.id]) ? ' · ' + travel(SPOTS[c.id]) : '') + '</p>' + (c.d ? '<p class="quote">' + esc(c.d) + '</p>' : '') + '</span><span class="end"><b>' + usd(c.p) + '</b></span></button>';
       }).join('') + '</div>';
       var pop = t.spots.filter(function (sp) { return sp.local; }).sort(function (a, b) { return (b.signature ? 4 : 0) + (b.photo ? 2 : 0) + (b.logo ? 1 : 0) - ((a.signature ? 4 : 0) + (a.photo ? 2 : 0) + (a.logo ? 1 : 0)) || b.deals.length - a.deals.length || a.name.localeCompare(b.name); }).slice(0, 10);
       if (pop.length) h += '<div class="sechead"><h2>Popular near campus</h2><span>' + pop.length + '</span></div><p class="sub" style="margin-top:-8px">Local favorites in ' + esc(t.name) + '.</p><div class="rail" style="display:flex">' + pop.map(placeCard).join('') + '</div>';
     }
     h += sec('Chain deals nearby', 'Fast food and national chains, lowest price first.', chain);
-    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Deal photos show an example of that kind of food, not the restaurant\'s own plate.</p>';
+    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos marked Example show that kind of food, not the restaurant\'s own plate. Add your own from any dish.</p>';
   }
   function pageHead(left, right, title, tag) {
     return '<div class="pagehead"><div class="mastline"><span class="kick">' + esc(left) + '</span><span class="kick">' + esc(right) + '</span></div><h2>' + esc(title) + '</h2><span class="kick">— ' + esc(tag) + ' —</span><div class="rule"></div></div>';
@@ -565,7 +581,7 @@ window.KORD_BUILD = '20261127-211348';
       '<div class="dfoot"><span class="dmeta"><b>' + (sc ? sc.avg.toFixed(1) : '—') + '</b>/ 10 · ' + (sc ? sc.n : 0) + ' vote' + (sc && sc.n === 1 ? '' : 's') + (nc ? ' · ' + nc + ' comment' + (nc > 1 ? 's' : '') : '') + '</span>' +
       '<button class="btn ghost sm dishhead" data-dish="' + esc(m.n) + '" aria-expanded="' + open + '">' + (open ? 'Close' : mine ? 'You gave it ' + mine : 'Rate') + '</button></div>';
     var photoBox = !SERVER || !HASPHOTOS ? '' : '<div class="pbig">' + pics.slice(0, 8).map(function (r) {
-        return '<figure><img alt="Student photo of ' + esc(m.n) + '" loading="lazy" src="' + esc(photoUrl(r.path)) + '"><button class="rm" data-report="ph' + r.id + '">Report photo</button></figure>';
+        return '<figure><img alt="Student photo of ' + esc(m.n) + '" loading="lazy" src="' + esc(photoUrl(r.path)) + '"><span class="pact"><button class="rm" data-like="' + r.id + '"' + (U.liked['ph' + r.id] ? ' disabled' : '') + '>' + (U.liked['ph' + r.id] ? 'You said it looks right' : 'Looks right') + (likes(r) ? ' · ' + likes(r) : '') + '</button><button class="rm" data-report="ph' + r.id + '">Report photo</button></span></figure>';
       }).join('') + '</div><label class="btn ghost sm" for="phFile" id="phLabel">' + (pics.length ? 'Add your photo' : 'Add a photo of this') + '</label><input id="phFile" type="file" accept="image/*" hidden data-id="' + esc(id) + '" data-dish="' + esc(m.n) + '">';
     if (open) h += '<div class="dishbody"><div class="yours"><span class="kick">Your score, 1 to 10</span>' + miniStars(id, m.n) + '</div>' + photoBox + '<div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
       '<div class="addrow"><input class="search" id="cmtIn" type="text" maxlength="280" placeholder="Worth it? Tell other students" aria-label="Write a comment"><button class="btn" id="cmtBtn" data-id="' + esc(id) + '">Post</button></div>' +
@@ -601,8 +617,8 @@ window.KORD_BUILD = '20261127-211348';
   function spotSheet(id, deal) {
     var sp = SPOTS[id]; if (!sp) return;
     var web = safeUrl(sp.website);
-    var bph = sp.photo || placePhoto(sp.id) || street(sp);
-    var banner = bph ? '<div class="banner"><img alt="" src="' + esc(bph) + '"></div>' : '';
+    var bph = sp.photo || placePhoto(sp.id) || street(sp), btag = !sp.photo && placePhoto(sp.id) ? '<span class="ptag">Student photo</span>' : '';
+    var banner = bph ? '<div class="banner"><img alt="" src="' + esc(bph) + '">' + btag + '</div>' : '';
     var h = '<div class="spothead">' + (sp.logo ? logo(sp, 'big') : '') + '<div><span class="kick rust">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</span><h2>' + esc(sp.name) + '</h2>' + tagsHtml(sp) + '</div></div>';
     if (sp.address) h += '<p class="sub" style="margin-top:-6px">' + esc(sp.address) + (travel(sp) ? ' · about ' + travel(sp) + ' from campus' : '') + '</p>';
     h += banner;
@@ -649,6 +665,13 @@ window.KORD_BUILD = '20261127-211348';
       var pk = PERKS.filter(function (k) { return k.id === t.dataset.perk; })[0];
       if (pk && U.pts >= pk.cost) { U.pts -= pk.cost; if (pk.id === 'waiver') U.waivers++; else U.credits++; save('kord.user', U); toast('Redeemed: ' + pk.name); }
       return render();
+    }
+    if (t.dataset.like) {
+      var lk = 'ph' + t.dataset.like; if (U.liked[lk]) return;
+      U.liked[lk] = 1; save('kord.user', U);
+      Object.keys(PHOTOS[S.open] || {}).forEach(function (k) { PHOTOS[S.open][k].forEach(function (r) { if (String(r.id) === t.dataset.like) r.likes = (r.likes || 0) + 1; }); });
+      api('rpc/like_photo', { p_device: U.device, p_photo: +t.dataset.like }).catch(function () {});
+      return fillMenu(S.open);
     }
     if (t.dataset.report) {
       U.reported[t.dataset.report] = 1; save('kord.user', U); toast(/^ph/.test(t.dataset.report) ? 'Reported. You will not see that photo again.' : 'Reported. You will not see that comment again.');

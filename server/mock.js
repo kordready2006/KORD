@@ -44,7 +44,7 @@ http.createServer((req, res) => {
     return send(res, 200, [...agg.values()].map((a) => ({ place_id: a.place_id, dish: a.dish, avg: Math.round((a.sum / a.n) * 100) / 100, n: a.n })));
   }
   if (req.method === 'GET' && url.pathname === '/rest/v1/dish_photos') {
-    return send(res, 200, photos.filter((c) => c.town === eq('town') && (c.reports || 0) < 2).slice().reverse());
+    return send(res, 200, photos.filter((c) => c.town === eq('town') && (c.reports || 0) < 2).slice().reverse().map((c) => ({ ...c, featured: !!c.featured, likes: (c.likers || []).length })));
   }
   if (req.method === 'GET' && url.pathname === '/rest/v1/dish_comments') {
     return send(res, 200, comments.filter((c) => c.place_id === eq('place_id')).slice().reverse().slice(0, 80));
@@ -73,6 +73,7 @@ http.createServer((req, res) => {
         photos.push({ id: photos.length + 1, town: b.p_town, place_id: b.p_place, dish: b.p_dish, path: b.p_path });
         return send(res, 204);
       }
+      if (fn === 'like_photo') { const c = photos.find((x) => x.id === b.p_photo); if (c) { c.likers = c.likers || []; if (!c.likers.includes(b.p_device)) c.likers.push(b.p_device); } return send(res, 204); }
       if (fn === 'report_photo') { const c = photos.find((x) => x.id === b.p_photo); if (c) c.reports = (c.reports || 0) + 1; return send(res, 204); }
       if (fn === 'log_order') { clicks.push(b); return send(res, 204); }
       send(res, 404, { message: 'no such function' });

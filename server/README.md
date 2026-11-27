@@ -37,3 +37,7 @@ The anon key is meant to be public. It can only read the two summary views and c
 Run `server/photos.sql` once in the SQL Editor after `schema.sql`. It adds the `photos` table, the `dish-photos` storage bucket
 (JPEG only, 1.5 MB limit) and the functions the app calls. Until it has been run, the app hides the "Add a photo" button.
 To take a photo down, set `hidden` to true on its row in the `photos` table.
+
+Then run `server/photos2.sql`. It adds quality controls: a student photo shows on its dish at once, but only becomes the cover
+picture of a deal or restaurant when you set `featured` to true on its row in `photos`, or two phones tap "Looks right" on it.
+Until it has been run, photos still upload and show on dishes, but none can become a cover picture.

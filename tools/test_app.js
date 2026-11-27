@@ -203,6 +203,23 @@ async function openFirstDeal(p) {
     await b.waitForSelector('#menuBox img[src*="dish-photos"]', { timeout: 8000 }).catch(() => {});
     check(await b.locator('#menuBox img[src*="dish-photos"]').count() >= 1, 'phone B does not see phone A photo');
     check(await b.evaluate(async () => { const i = document.querySelector('#menuBox img[src*="dish-photos"]'); if (!i) return false; const r = await fetch(i.src); return r.ok && (await r.blob()).size > 5000; }), 'shared photo file is not served');
+    // a new photo is not a cover picture until two students say it looks right
+    await b.click('.x');
+    await b.click('[data-tab="places"]'); await b.waitForTimeout(1200);
+    check(await b.locator('.pcard img[src*="dish-photos"]').count() === 0, 'an unapproved photo became the cover');
+    await b.click('[data-tab="deals"]');
+    const like = async (p) => {
+      await p.click('.dcard.hero'); await p.waitForSelector('#menuBox .dish');
+      if (!(await p.$('#menuBox .dish.open [data-like]'))) await p.locator('#menuBox .dishhead').filter({ has: p.locator('xpath=self::*[@data-dish=' + JSON.stringify(dish) + ']') }).first().click();
+      await p.waitForSelector('#menuBox .dish.open [data-like]');
+      await p.click('#menuBox [data-like]');
+    };
+    await like(b);
+    await a.click('.x'); await like(a);
+    await a.waitForTimeout(600); await a.click('.x'); await a.click('[data-tab="places"]'); await a.waitForTimeout(1500);
+    check(await a.locator('.pcard img[src*="dish-photos"]').count() === 1, 'a photo with two Looks right taps did not become the cover');
+    check(await a.locator('.pcard .ptag', { hasText: 'Student photo' }).count() === 1, 'student cover photo is not labelled');
+    await a.click('[data-tab="deals"]');
     await b.screenshot({ path: `${out}/b-shared.png` });
     await b.click('.x');
     await b.click('[data-tab="best"]');
