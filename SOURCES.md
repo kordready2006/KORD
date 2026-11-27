@@ -38,3 +38,10 @@
 ## Names and trademarks
 
 - Restaurant, chain and school names are shown to identify them. KORD is not affiliated with any of them.
+
+## Menu ingredient lines
+
+`data/menus_desc/<town>.json` holds the description or ingredient line for each dish, read from the restaurant's own menu page,
+ordering page or menu PDF. Each restaurant entry records the `source` URL it came from. Lines were trimmed to 140 characters and put
+in sentence case; nothing was added that the menu did not say. About 9,400 of 16,500 dishes have one; the rest are menus that list
+names and prices only, or that could not be read (image-only menus and script-only ordering pages).
