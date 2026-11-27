@@ -697,5 +697,45 @@
    "Sundae Your Way": "Choose your soft serve and a topping and we'll add whipped cream, peanuts and a cherry.",
    "Mix-Up": "Your choice of soft serve flavor & 1 topping mixed in a cup."
   }
+ },
+ "oxford|Sorriso Osteria + Bar": {
+  "source": "https://sorrisooxford.com/data/menu.js",
+  "desc": {
+   "Meatballs": "Topped with our house marinara and parmesan.",
+   "Garlic Bread": "Hand-buttered Italian bread, toasted and served with our house marinara.",
+   "Sorriso Bread": "Hand-made bread bowl filled with our four-cheese blend, baked and topped with garlic butter and parmesan.",
+   "Bruschetta": "Garlic crostinis topped with a fresh tomato, basil, and garlic mix, finished with a balsamic glaze.",
+   "Sundried Tomato Flatbread": "Sundried tomato pesto and ricotta cheese, finished with basil and a balsamic glaze.",
+   "House Salad": "Chopped romaine with tomato, croutons, mozzarella/provolone cheese, and choice of dressing.",
+   "Caesar Salad": "Chopped romaine with red onion, croutons, parmesan, caesar dressing, and a toasted parmesan crisp.",
+   "Arugula Salad": "Arugula with tomato, red onion, raspberry, almonds, balsamic glaze, and a dollop of our house four-cheese blend.",
+   "Salmon Salad": "Pan-seared salmon filet over a spinach salad with tomato, red onion, raspberry, parmesan, and our raspberry vinaigrette.",
+   "Meatball": "Our Italian meatballs, mozzarella/provolone cheese, and our house marinara.",
+   "Italian": "Pepperoni, banana peppers, roasted red onion, mozzarella/provolone cheese, and our zesty italian dressing.",
+   "Sliced Steak": "Marinated sirloin steak, mozzarella/provolone cheese, roasted red onion, peppers, and white garlic sauce.",
+   "Steak Caprese": "Marinated sirloin steak, fresh mozzarella, tomato, basil, and balsamic glaze.",
+   "Chicken Bacon Ranch": "Grilled chicken strips, mozzarella/provolone cheese, bacon bits, and ranch dressing.",
+   "Chicken Alfredo": "Grilled chicken strips, our house alfredo, parmesan, and choice of noodle.",
+   "Sausage Pesto": "Sautéed Italian sausage, tomato, mushrooms, feta, and our house pesto sauce, with choice of noodle.",
+   "Pasta Salad": "Rotini noodles tossed with our zesty italian dressing, tomato, and peppers, topped with feta cheese on a bed of arugula.",
+   "Sugar Spiced Salmon": "Pan-seared sugar-spiced salmon over angel hair with sautéed onions and tomatoes in a white wine garlic butter sauce, on spinach.",
+   "Chicken and Pancetta": "Seared chicken and pancetta tossed with sundried tomato, spinach, and a smoked cheddar rosemary sauce.",
+   "Cheese": "Our house marinara, mozzarella/provolone cheese, and fresh mozzarella.",
+   "Pepperoni": "Our house marinara, mozzarella/provolone cheese, and old-world cupping pepperoni.",
+   "BBQ Chicken": "Sweet Baby Ray's BBQ sauce, grilled chicken, red onion, mozzarella/provolone cheese, finished with fresh scallions.",
+   "Steak Pizza": "White garlic sauce, marinated sirloin steak, mozzarella/provolone cheese, arugula, feta, finished with a balsamic glaze."
+  }
+ },
+ "oxford|OxVegas Chicken": {
+  "source": "https://www.oxvegaschicken.com/chicken-tenders-oxford",
+  "desc": {
+   "The Freshman": "Three tenders with waffle fries and a pretzel stick.",
+   "The Sophomore": "Four tenders with waffle fries and a pretzel stick.",
+   "The Junior": "Six tenders with waffle fries and a pretzel stick.",
+   "The Senior": "Eight tenders with waffle fries and a pretzel stick.",
+   "OxBird": "Chicken tenders with a brioche bun, OxSauce and pickles.",
+   "Spicy Bird": "Chicken tenders with Kickin' Sauce and pickles.",
+   "MACtion": "Tenders with white cheddar mac and cheese on a bun."
+  }
  }
 }
