@@ -243,7 +243,7 @@ def main():
     frag = open(os.path.join(ROOT, "app", "kord.html")).read()
     head = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
             '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n'
-            '<meta name="theme-color" content="#FF3B2F">\n<meta name="apple-mobile-web-app-capable" content="yes">\n'
+            '<meta name="theme-color" content="#FFFDFA">\n<meta name="color-scheme" content="light">\n<meta name="apple-mobile-web-app-capable" content="yes">\n'
             '<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">\n<meta name="apple-mobile-web-app-title" content="KORD">\n'
             '<meta name="description" content="The cheapest food deals near Ohio college campuses, day by day.">\n'
             '<link rel="manifest" href="manifest.webmanifest">\n<link rel="icon" href="icons/icon.svg" type="image/svg+xml">\n'

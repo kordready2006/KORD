@@ -367,6 +367,14 @@
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Forge_Napa_-_October_2025_-_Sarah_Stierch_08.jpg"
  },
+ "tenders-4.jpg": {
+  "key": "tenders",
+  "title": "Popeye's \"Chicken Waffle\" Tenders (14345068911)",
+  "artist": "Mike Mozart from Funny YouTube, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Popeye%27s_%22Chicken_Waffle%22_Tenders_(14345068911).jpg"
+ },
  "chicken-1.jpg": {
   "key": "chicken",
   "title": "Willie mae's fried chicken, New Orleans",
@@ -391,6 +399,14 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Chicken_Fried_Bacon.jpg"
  },
+ "chicken-4.jpg": {
+  "key": "chicken",
+  "title": "Fried chicken pieces coated in sauce with sesame seeds 2025",
+  "artist": "Faisal Ahammad",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fried_chicken_pieces_coated_in_sauce_with_sesame_seeds_2025.jpg"
+ },
  "fish-1.jpg": {
   "key": "fish",
   "title": "Our Famous Fish and Chips in a light batter served with hand cut chips and homemade tartare sauce - Applebee’s Fish",
@@ -414,6 +430,22 @@
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Fish_and_Chips_at_Noyo_River_Grill_-_Sarah_Stierch.jpg"
+ },
+ "fish-4.jpg": {
+  "key": "fish",
+  "title": "Fish and Chips at Picazo Kitchen + Bar - 2019 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fish_and_Chips_at_Picazo_Kitchen_%2B_Bar_-_2019_-_Sarah_Stierch.jpg"
+ },
+ "fish-5.jpg": {
+  "key": "fish",
+  "title": "Fish and chips with pees",
+  "artist": "Language081128",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Fish_and_chips_with_pees.jpg"
  },
  "sushi-1.jpg": {
   "key": "sushi",
@@ -503,6 +535,22 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Maya_Spaghetti_-_Maya_-_March_2023_-_Sarah_Stierch.jpg"
  },
+ "pasta-4.jpg": {
+  "key": "pasta",
+  "title": "Japanese-style spaghetti in Shirokane",
+  "artist": "Syced",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Japanese-style_spaghetti_in_Shirokane.jpg"
+ },
+ "pasta-5.jpg": {
+  "key": "pasta",
+  "title": "Maya Spaghetti with Shrimp - September 2022 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Maya_Spaghetti_with_Shrimp_-_September_2022_-_Sarah_Stierch.jpg"
+ },
  "mac-1.jpg": {
   "key": "mac",
   "title": "Macaroni and cheese (3)",
@@ -526,6 +574,14 @@
   "license": "CC BY 2.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Homemade_macaroni_and_cheese.jpg"
+ },
+ "mac-4.jpg": {
+  "key": "mac",
+  "title": "Creamy Mac & Cheese - Costa Coffee 2023-10-04",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Creamy_Mac_%26_Cheese_-_Costa_Coffee_2023-10-04.jpg"
  },
  "mexplate-1.jpg": {
   "key": "mexplate",
@@ -599,6 +655,14 @@
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Minced_Meat_Rice_Bowl_-_Noodles_Street_2025-11-01.jpg"
  },
+ "bowl-4.jpg": {
+  "key": "bowl",
+  "title": "Burrito rice bowl",
+  "artist": "JaredMcKenzie",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Burrito_rice_bowl.jpg"
+ },
  "noodles-1.jpg": {
   "key": "noodles",
   "title": "Bowl of miso ramen",
@@ -623,6 +687,22 @@
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Tsukemen_(Dipping_Ramen)_-_Goemon_Ramen_Bar_2023-07-16.jpg"
  },
+ "noodles-4.jpg": {
+  "key": "noodles",
+  "title": "Shoyu Ramen with Sushi and Tempura",
+  "artist": "Miscellaneous contributor",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Shoyu_Ramen_with_Sushi_and_Tempura.jpg"
+ },
+ "noodles-5.jpg": {
+  "key": "noodles",
+  "title": "Ramen Bowl 2",
+  "artist": "Shisma",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Ramen_Bowl_2.jpg"
+ },
  "curry-1.jpg": {
   "key": "curry",
   "title": "Japanese style chicken curry with rice of Nakau",
@@ -646,6 +726,14 @@
   "license": "CC0 1.0",
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Fried_chicken_and_rice_with_Korean_curry_-_Kogi_Korean_cuisine_2025-10-19.jpg"
+ },
+ "curry-4.jpg": {
+  "key": "curry",
+  "title": "Chicken curry rice with salad Dai@dai-a-log in Ueno Zoo",
+  "artist": "Dai@dai-a-log from Ueno Zoo in Ueno, Taito, Tokyo",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_curry_rice_with_salad_Dai@dai-a-log_in_Ueno_Zoo.jpg"
  },
  "eggs-1.jpg": {
   "key": "eggs",
@@ -711,6 +799,14 @@
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Vegan_chocolate_cake_with_sliced_strawberries.jpg"
  },
+ "sweet-4.jpg": {
+  "key": "sweet",
+  "title": "A slice of white chocolate zuccotto, August 2011",
+  "artist": "stefano Merli",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:A_slice_of_white_chocolate_zuccotto,_August_2011.jpg"
+ },
  "cookie-1.jpg": {
   "key": "cookie",
   "title": "Milk and chocolate chip cookies (6858180551)",
@@ -734,6 +830,30 @@
   "license": "CC BY 2.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Chocolate_Chip_Cookies_(4683318188).jpg"
+ },
+ "cookie-4.jpg": {
+  "key": "cookie",
+  "title": "Chocolate chip cookies on cutting board",
+  "artist": "Mshuang2",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate_chip_cookies_on_cutting_board.jpg"
+ },
+ "cookie-5.jpg": {
+  "key": "cookie",
+  "title": "Chocolate chip cookies (4020277369)",
+  "artist": "Brian Richardson",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate_chip_cookies_(4020277369).jpg"
+ },
+ "cookie-6.jpg": {
+  "key": "cookie",
+  "title": "Chocolate chip cookies (6907445831)",
+  "artist": "Deidre Woollard",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chocolate_chip_cookies_(6907445831).jpg"
  },
  "icecream-1.jpg": {
   "key": "icecream",
@@ -791,6 +911,22 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Glazed_wedding_doughnut_(15273067290).jpg"
  },
+ "donut-4.jpg": {
+  "key": "donut",
+  "title": "Glazed doughnut (1387333)",
+  "artist": "Unknown author Unknown author",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Glazed_doughnut_(1387333).jpg"
+ },
+ "donut-5.jpg": {
+  "key": "donut",
+  "title": "Glazed-Donut",
+  "artist": "Evan-Amos",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Glazed-Donut.jpg"
+ },
  "drink-1.jpg": {
   "key": "drink",
   "title": "Blue coffee cup (Unsplash)",
@@ -814,6 +950,22 @@
   "license": "CC BY 2.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Latte_and_dark_coffee.jpg"
+ },
+ "drink-4.jpg": {
+  "key": "drink",
+  "title": "Close-up of Woman Holding Coffee Cup at Cafe (28217840617)",
+  "artist": "Chevanon Photography",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Close-up_of_Woman_Holding_Coffee_Cup_at_Cafe_(28217840617).jpg"
+ },
+ "drink-5.jpg": {
+  "key": "drink",
+  "title": "Latte art at Balzac's",
+  "artist": "Linda N. from Chicago, USA",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Latte_art_at_Balzac%27s.jpg"
  },
  "boba-1.jpg": {
   "key": "boba",
@@ -863,6 +1015,14 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
   "page": "https://commons.wikimedia.org/wiki/File:French_fries_in_Argentina.jpg"
  },
+ "sides-4.jpg": {
+  "key": "sides",
+  "title": "French fries made in Argentina",
+  "artist": "Horacio Cambeiro",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:French_fries_made_in_Argentina.jpg"
+ },
  "pretzel-1.jpg": {
   "key": "pretzel",
   "title": "Pretzel Ampersand",
@@ -910,6 +1070,14 @@
   "license": "CC0 1.0",
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "page": "https://commons.wikimedia.org/wiki/File:La_Casa_Restaurant_-_January_18_2025_-_Sarah_Stierch.jpg"
+ },
+ "dips-4.jpg": {
+  "key": "dips",
+  "title": "Guacamole y nachos",
+  "artist": "PDPhoto.org",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Guacamole_y_nachos.jpg"
  },
  "apps-1.jpg": {
   "key": "apps",
@@ -1023,6 +1191,14 @@
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Swedish_Special_Hot_Dog_-_Ikea_Croydon_2025-06-13.jpg"
  },
+ "hotdog-4.jpg": {
+  "key": "hotdog",
+  "title": "My hot dog at Hot Doug's",
+  "artist": "Benimoto",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:My_hot_dog_at_Hot_Doug%27s.jpg"
+ },
  "cupcake-1.jpg": {
   "key": "cupcake",
   "title": "Pink Cupcakes",
@@ -1046,6 +1222,14 @@
   "license": "CC BY 2.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Hat_Cupcakes_(4366466151).jpg"
+ },
+ "cupcake-4.jpg": {
+  "key": "cupcake",
+  "title": "Australian butterfly cupcakes 01",
+  "artist": "AlphaLemur",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Australian_butterfly_cupcakes_01.jpg"
  },
  "salad-1.jpg": {
   "key": "salad",
@@ -1071,6 +1255,22 @@
   "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Caesar_Salad_-_Nando%27s_2026-10-11.jpg"
  },
+ "salad-4.jpg": {
+  "key": "salad",
+  "title": "Chicken Caesar Salad at French Market Restaurant",
+  "artist": "pattyonflickr",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Chicken_Caesar_Salad_at_French_Market_Restaurant.jpg"
+ },
+ "salad-5.jpg": {
+  "key": "salad",
+  "title": "Caesar Salad - Purezza 2023-11-22",
+  "artist": "Andy Li",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Caesar_Salad_-_Purezza_2023-11-22.jpg"
+ },
  "soup-1.jpg": {
   "key": "soup",
   "title": "Campbell's Chicken Noodle Soup with Chayote and Potatoes",
@@ -1095,6 +1295,22 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Soup_Bowl_(cropped).jpg"
  },
+ "soup-4.jpg": {
+  "key": "soup",
+  "title": "3133Campbell's Chicken Noodle Soup with Chayote and Potatoes 05",
+  "artist": "Judgefloro",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:3133Campbell%27s_Chicken_Noodle_Soup_with_Chayote_and_Potatoes_05.jpg"
+ },
+ "soup-5.jpg": {
+  "key": "soup",
+  "title": "Mmm...chicken noodle soup (4756396656)",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mmm...chicken_noodle_soup_(4756396656).jpg"
+ },
  "breakfast-1.jpg": {
   "key": "breakfast",
   "title": "The Smoking Stack Pancakes - Laughing Dog 2026-08-25",
@@ -1118,6 +1334,14 @@
   "license": "CC BY 2.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Waffles_with_mixed_berries_in_breakfast.jpg"
+ },
+ "breakfast-4.jpg": {
+  "key": "breakfast",
+  "title": "Eating Pancakes (Unsplash)",
+  "artist": "Gabriel Gurrola gabrielgurrola",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Eating_Pancakes_(Unsplash).jpg"
  },
  "plate-1.jpg": {
   "key": "plate",

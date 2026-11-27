@@ -5,14 +5,16 @@
 /* Layout: step 1 is a grid of school tiles. Step 2 is that school's page: a header in the school's color,
    a day strip, and one list of deals sorted cheapest first, drawn as tear-off tickets with the price on the stub. */
 :root {
-  --bg: #F9F5ED; --card: #FFFFFF; --ink: #16100C; --muted: #5A544F; --line: #DDD6CE; --chip: #EEE7DB; --hot: #B23B1D; --sun: #16100C; --sun-ink: #F9F5ED; --cobalt: #16100C; --mint: #2F6B4F; --grape: #5A544F; --pink: #B23B1D; --orange: #B23B1D; --teal: #2F6B4F; --link: #B23B1D; --dot: rgba(22,16,12,.035); --shadow: 0 1px 2px rgba(22,16,12,.06), 0 8px 24px rgba(22,16,12,.08);
+  /* One light theme on purpose: warm white paper, ink text, one rust accent. */
+  color-scheme: light;
+  --bg: #FFFDFA; --card: #FFFFFF; --ink: #16100C; --muted: #5F5852; --line: #E9E2D9; --chip: #F6F1EA; --hot: #B23B1D; --sun: #16100C; --sun-ink: #FFFDFA;
+  --cobalt: #16100C; --mint: #2F6B4F; --grape: #5F5852; --pink: #B23B1D; --orange: #B23B1D; --teal: #2F6B4F; --link: #B23B1D; --dot: rgba(22,16,12,.022);
+  --shadow: 0 1px 2px rgba(22,16,12,.05), 0 10px 28px rgba(22,16,12,.07);
   --display: "Fraunces", Georgia, "Times New Roman", serif;
   --body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --gl: max(20px, env(safe-area-inset-left, 0px)); --gr: max(20px, env(safe-area-inset-right, 0px));
   --sc: #B23B1D; --si: #FFFFFF;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #110C09; --card: #1F1915; --ink: #F1EEE7; --muted: #A39D97; --line: #3A322C; --chip: #2E2722; --hot: #D25030; --sun: #F1EEE7; --sun-ink: #16100C; --cobalt: #F1EEE7; --mint: #5FB58C; --grape: #A39D97; --pink: #D25030; --orange: #D25030; --teal: #5FB58C; --link: #E0694A; --dot: rgba(255,255,255,.03); --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.5); color-scheme: dark } }
-:root[data-theme="dark"] { --bg: #110C09; --card: #1F1915; --ink: #F1EEE7; --muted: #A39D97; --line: #3A322C; --chip: #2E2722; --hot: #D25030; --sun: #F1EEE7; --sun-ink: #16100C; --cobalt: #F1EEE7; --mint: #5FB58C; --grape: #A39D97; --pink: #D25030; --orange: #D25030; --teal: #5FB58C; --link: #E0694A; --dot: rgba(255,255,255,.03); --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.5); color-scheme: dark }
 
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--ink); font: 400 15px/1.45 var(--body); -webkit-font-smoothing: antialiased; }
@@ -455,6 +457,26 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
 #phLabel { align-self: flex-start; cursor: pointer; }
 .mystars { color: var(--hot); font: 700 18px var(--display); letter-spacing: 0; }
 .credits a, .wdeal a, .note a { color: var(--link); }
+
+/* ===== imagery ===== */
+.collage { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 6px; margin-bottom: 4px; }
+.collage img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; display: block; background: var(--chip); }
+.chip.cat { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px 5px 5px; }
+.chip.cat .cthumb { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; flex: none; background: var(--chip); }
+.chip.cat.noimg { padding-left: 14px; }
+.ph { background: var(--c, var(--chip)); }
+.mono { flex-direction: column; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.mono .emo { font: 400 54px/1 system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; }
+.dcard.hero .mono .emo { font-size: 72px; }
+.pcard .ph.nophoto { aspect-ratio: 16 / 9; }
+.pcard .mono { font-size: 0; gap: 0; }
+.pcard .mono .emo { font-size: 68px; }
+.pcard .ph.nophoto { aspect-ratio: 16 / 7; }
+.lg { background: var(--c, var(--chip)); }
+.row .lg.thumb { width: 64px; height: 64px; }
+.dcard.hero .ph { aspect-ratio: 5 / 4; }
+.dcard.hero { box-shadow: 0 2px 4px rgba(22,16,12,.06), 0 18px 40px rgba(22,16,12,.12); }
+.price { background: #fff; }
 @media (prefers-reduced-motion: no-preference) { .sheet { animation: up .22s ease-out; } @keyframes up { from { transform: translateY(40px); opacity: .6; } } }
 </style>
 
@@ -562,7 +584,10 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
   function safeUrl(u) { return /^https:\/\//i.test(u || '') ? u : (/^http:\/\//i.test(u || '') ? u.replace(/^http:/i, 'https:') : ''); }
   function domain(u) { try { return new URL(safeUrl(u)).hostname.replace(/^www\./, ''); } catch (e) { return ''; } }
   function initials(n) { var w = String(n).replace(/[^A-Za-z0-9 ]/g, '').split(/\s+/).filter(function (x) { return x && !/^(the|of|and)$/i.test(x); }); return ((w[0] || '?')[0] + (w[1] ? w[1][0] : '')).toUpperCase(); }
-  function color(cat) { return 'var(--chip)'; }
+  var TILE = { 'Pizza': ['#FDE7D8', '🍕'], 'Burgers': ['#FDEBC8', '🍔'], 'Mexican': ['#E3F1DC', '🌮'], 'Sandwiches & Subs': ['#E1ECF7', '🥪'], 'Wings & Chicken': ['#FBE0D0', '🍗'], 'Asian': ['#FBE3EA', '🍜'],
+    'Boba & Tea': ['#EFE5F7', '🧋'], 'Coffee & Bakery': ['#F1E6D8', '☕'], 'Breakfast & Brunch': ['#FFF1C9', '🥞'], 'Bar & Grill': ['#E6E9F2', '🍻'], 'Dessert & Ice Cream': ['#FBE3EE', '🍦'], 'BBQ': ['#F6DDD3', '🍖'],
+    'Mediterranean': ['#DFF0EE', '🥙'], 'Healthy & Bowls': ['#E2F2DF', '🥗'], 'Fast Food': ['#FDE5D2', '🍟'], 'Other': ['#F1EADF', '🍽️'] };
+  function color(cat) { return (TILE[cat] || TILE.Other)[0]; }
   function hex(c) { return /^#[0-9a-f]{6}$/i.test(c || '') ? c : '#FF3B2F'; }
   function priceNum(p) { var m = /\$\s?(\d+(?:\.\d+)?)/.exec(p || ''); if (m) return parseFloat(m[1]); m = /(\d+)\s?(?:¢|cents?)/i.exec(p || ''); return m ? parseFloat(m[1]) / 100 : null; }
   function stubText(d) {
@@ -711,7 +736,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     /* a deal with no photo of its own gets a licensed example of that food (credited under Sources); a restaurant never does */
     var mine = d ? dishPhotos(sp.id, d.title)[0] : null;
     var ph = (mine && photoUrl(mine.path)) || (d && d.photo) || (d && d.nophoto ? '' : sp.photo) || (d ? '' : placePhoto(sp.id)) || (d ? stock(d.title, sp.category, sp.id + d.title) : '') || street(sp);
-    return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono">' + esc(sp.name) + '</span>' };
+    return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono"><span class="emo" aria-hidden="true">' + (TILE[sp.category] || TILE.Other)[1] + '</span>' + esc(sp.name) + '</span>' };
   }
   function metaLine(sp) { var sc = spotScore(sp.id), tr = travel(sp); return [sc ? '<span class="score">★ ' + sc.toFixed(1) + '</span>' : '', esc(tr), esc(sp.category)].filter(Boolean).join(' · '); }
   function ticket(x, hero, dayLabel) {
@@ -732,13 +757,15 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
 
   /* step 1: pick a school */
   function viewPick() {
-    return '<div class="grid">' + DATA.towns.map(function (t) {
+    var lib = DATA.stock || {}, strip = [(lib.wings || [])[0], (lib.pizza || [])[2], (lib.taco || [])[1]].filter(Boolean);
+    return (strip.length === 3 ? '<div class="collage">' + strip.map(function (u) { return '<img alt="" src="' + esc(u) + '">'; }).join('') + '</div>' : '') + '<div class="grid">' + DATA.towns.map(function (t) {
       return '<button class="tile' + (t.id === S.town ? ' mine' : '') + '" data-town="' + esc(t.id) + '"><span class="tilehead"><span class="kick">Campus</span><span class="kick rust">Open</span></span>' + badge(t.school) +
         '<span class="tbody2"><span class="tname">' + esc(t.name) + ', Ohio</span><span class="tsub">' + esc(t.school.name) + (t.school.also ? ' · also ' + esc(t.school.also) : '') + '</span></span></button>';
     }).join('') + '</div><p class="note" style="text-align:center">15 Ohio campuses so far. More coming.</p>';
   }
   /* step 2: cheapest deals for the day */
   var FOODICON = { 'All': '🍽️', 'Pizza': '🍕', 'Burgers': '🍔', 'Wings': '🍗', 'Tacos & burritos': '🌮', 'Subs & sandwiches': '🥪', 'Bowls & salads': '🥗', 'Breakfast & coffee': '☕', 'Sweets': '🍪', 'Other': '🍴' };
+  var FOODPIC = { 'All': 'plate', 'Pizza': 'pizza', 'Burgers': 'burger', 'Wings': 'wings', 'Tacos & burritos': 'taco', 'Subs & sandwiches': 'sandwich', 'Bowls & salads': 'salad', 'Breakfast & coffee': 'breakfast', 'Sweets': 'cookie', 'Other': 'sides' };
   function viewDeals() {
     SHOWN = {};
     var t = town(), all = dealsFor(t, S.day), seen = {}, foods = ['All'], q = (S.dq || '').toLowerCase();
@@ -751,7 +778,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     var pick = weekPicks(t)[S.day], top = null, browsing = S.food === 'All' && !q;
     if (browsing) local = local.filter(function (x) { if (!top && x.sp.id + '|' + x.d.title === pick) { top = x; return false; } return true; });
     var h = '<div class="searchbar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input class="search" id="dealSearch" type="search" placeholder="Search wings, pizza, a place…" value="' + esc(S.dq || '') + '" aria-label="Search deals"></div>' +
-      '<div class="cats">' + foods.map(function (f) { return '<button class="chip cat" data-food="' + esc(f) + '" aria-pressed="' + (S.food === f) + '">' + esc(f) + '</button>'; }).join('') + '</div>' +
+      '<div class="cats">' + foods.map(function (f) { return (function (u) { return '<button class="chip cat' + (u ? '' : ' noimg') + '" data-food="' + esc(f) + '" aria-pressed="' + (S.food === f) + '">' + (u ? '<img class="cthumb" alt="" src="' + esc(u) + '">' : '') + esc(f) + '</button>'; })(((DATA.stock || {})[FOODPIC[f]] || [])[FOODPIC[f] === 'pizza' ? 1 : 0]); }).join('') + '</div>' +
       '';
     h = pageHead('The deals', DAYNAME[S.day], 'Eat well for cheap ' + when, 'Real food near campus for $12 or less') + h;
     function sec(title, sub, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><p class="sub" style="margin-top:-8px">' + sub + '</p><div class="list rail">' + a.map(function (x) { return ticket(x); }).join('') + '</div>' : ''; }
@@ -773,7 +800,8 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
       if (later.length) h += '<div class="sechead"><h2>Later this week</h2><span>' + later.length + '</span></div><p class="sub">Deals coming up on other days.</p><div class="list rail">' + later.map(function (l) { return ticket(l.x, false, DAYNAME[l.day]); }).join('') + '</div>';
       var cheap = (t.cheap || []).filter(function (c) { return SPOTS[c.id]; });
       if (cheap.length >= 3) h += '<div class="sechead"><h2>Cheap any day</h2><span>' + Math.min(15, cheap.length) + '</span></div><p class="sub">Full meals for $9 or less on the regular menu. No deal needed.</p><div class="list">' + cheap.slice(0, 15).map(function (c) {
-        return '<button class="row" data-spot="' + esc(c.id) + '"><span class="mid"><h3>' + esc(c.n) + '</h3><p>' + esc(SPOTS[c.id].name) + (travel(SPOTS[c.id]) ? ' · ' + travel(SPOTS[c.id]) : '') + '</p>' + (c.d ? '<p class="quote">' + esc(c.d) + '</p>' : '') + '</span><span class="end"><b>' + usd(c.p) + '</b></span></button>';
+        var cp = dishPhotos(c.id, c.n)[0], cu = cp ? photoUrl(cp.path) : stock(c.n, SPOTS[c.id].category, c.id + c.n);
+        return '<button class="row" data-spot="' + esc(c.id) + '">' + (cu ? '<span class="lg thumb has"><img alt="" loading="lazy" class="cover" src="' + esc(cu) + '"></span>' : '') + '<span class="mid"><h3>' + esc(c.n) + '</h3><p>' + esc(SPOTS[c.id].name) + (travel(SPOTS[c.id]) ? ' · ' + travel(SPOTS[c.id]) : '') + '</p>' + (c.d ? '<p class="quote">' + esc(c.d) + '</p>' : '') + '</span><span class="end"><b>' + usd(c.p) + '</b></span></button>';
       }).join('') + '</div>';
       var pop = t.spots.filter(function (sp) { return sp.local; }).sort(function (a, b) { return (b.signature ? 4 : 0) + (b.photo ? 2 : 0) + (b.logo ? 1 : 0) - ((a.signature ? 4 : 0) + (a.photo ? 2 : 0) + (a.logo ? 1 : 0)) || b.deals.length - a.deals.length || a.name.localeCompare(b.name); }).slice(0, 10);
       if (pop.length) h += '<div class="sechead"><h2>Popular near campus</h2><span>' + pop.length + '</span></div><p class="sub" style="margin-top:-8px">Local favorites in ' + esc(t.name) + '.</p><div class="rail" style="display:flex">' + pop.map(placeCard).join('') + '</div>';
@@ -791,7 +819,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
   }
   function placeBig(sp) {
     var m = media(sp, null), n = (sp.deals || []).length, lo = spotLow(sp);
-    return '<button class="pcard" data-spot="' + esc(sp.id) + '"><span class="ph' + (m.has ? '' : ' nophoto') + '">' + m.html + (lo != null ? '<span class="price">from ' + money(lo) + '</span>' : '') + '</span>' +
+    return '<button class="pcard" data-spot="' + esc(sp.id) + '" style="--c:' + color(sp.category) + '"><span class="ph' + (m.has ? '' : ' nophoto') + '">' + m.html + (lo != null ? '<span class="price">from ' + money(lo) + '</span>' : '') + '</span>' +
       '<span class="pinfo"><span><span class="kick rust">' + esc(sp.category) + '</span><span class="pname">' + esc(sp.name) + '</span><span class="pmeta">' + esc([travel(sp), sp.price, n ? n + ' deal' + (n > 1 ? 's' : '') + ' this week' : ''].filter(Boolean).join(' · ')) + '</span></span>' + scoreBox(sp.id) + '</span></button>';
   }
   function spotRow(sp) {

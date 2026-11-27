@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#FF3B2F">
+<meta name="theme-color" content="#FFFDFA">
+<meta name="color-scheme" content="light">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="KORD">
@@ -21,14 +22,16 @@
 /* Layout: step 1 is a grid of school tiles. Step 2 is that school's page: a header in the school's color,
    a day strip, and one list of deals sorted cheapest first, drawn as tear-off tickets with the price on the stub. */
 :root {
-  --bg: #F9F5ED; --card: #FFFFFF; --ink: #16100C; --muted: #5A544F; --line: #DDD6CE; --chip: #EEE7DB; --hot: #B23B1D; --sun: #16100C; --sun-ink: #F9F5ED; --cobalt: #16100C; --mint: #2F6B4F; --grape: #5A544F; --pink: #B23B1D; --orange: #B23B1D; --teal: #2F6B4F; --link: #B23B1D; --dot: rgba(22,16,12,.035); --shadow: 0 1px 2px rgba(22,16,12,.06), 0 8px 24px rgba(22,16,12,.08);
+  /* One light theme on purpose: warm white paper, ink text, one rust accent. */
+  color-scheme: light;
+  --bg: #FFFDFA; --card: #FFFFFF; --ink: #16100C; --muted: #5F5852; --line: #E9E2D9; --chip: #F6F1EA; --hot: #B23B1D; --sun: #16100C; --sun-ink: #FFFDFA;
+  --cobalt: #16100C; --mint: #2F6B4F; --grape: #5F5852; --pink: #B23B1D; --orange: #B23B1D; --teal: #2F6B4F; --link: #B23B1D; --dot: rgba(22,16,12,.022);
+  --shadow: 0 1px 2px rgba(22,16,12,.05), 0 10px 28px rgba(22,16,12,.07);
   --display: "Fraunces", Georgia, "Times New Roman", serif;
   --body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
   --gl: max(20px, env(safe-area-inset-left, 0px)); --gr: max(20px, env(safe-area-inset-right, 0px));
   --sc: #B23B1D; --si: #FFFFFF;
 }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #110C09; --card: #1F1915; --ink: #F1EEE7; --muted: #A39D97; --line: #3A322C; --chip: #2E2722; --hot: #D25030; --sun: #F1EEE7; --sun-ink: #16100C; --cobalt: #F1EEE7; --mint: #5FB58C; --grape: #A39D97; --pink: #D25030; --orange: #D25030; --teal: #5FB58C; --link: #E0694A; --dot: rgba(255,255,255,.03); --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.5); color-scheme: dark } }
-:root[data-theme="dark"] { --bg: #110C09; --card: #1F1915; --ink: #F1EEE7; --muted: #A39D97; --line: #3A322C; --chip: #2E2722; --hot: #D25030; --sun: #F1EEE7; --sun-ink: #16100C; --cobalt: #F1EEE7; --mint: #5FB58C; --grape: #A39D97; --pink: #D25030; --orange: #D25030; --teal: #5FB58C; --link: #E0694A; --dot: rgba(255,255,255,.03); --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.5); color-scheme: dark }
 
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--ink); font: 400 15px/1.45 var(--body); -webkit-font-smoothing: antialiased; }
@@ -471,6 +474,26 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
 #phLabel { align-self: flex-start; cursor: pointer; }
 .mystars { color: var(--hot); font: 700 18px var(--display); letter-spacing: 0; }
 .credits a, .wdeal a, .note a { color: var(--link); }
+
+/* ===== imagery ===== */
+.collage { display: grid; grid-template-columns: 1.25fr 1fr 1fr; gap: 6px; margin-bottom: 4px; }
+.collage img { width: 100%; height: 120px; object-fit: cover; border-radius: 8px; display: block; background: var(--chip); }
+.chip.cat { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px 5px 5px; }
+.chip.cat .cthumb { width: 34px; height: 34px; border-radius: 50%; object-fit: cover; flex: none; background: var(--chip); }
+.chip.cat.noimg { padding-left: 14px; }
+.ph { background: var(--c, var(--chip)); }
+.mono { flex-direction: column; display: flex; align-items: center; justify-content: center; gap: 10px; }
+.mono .emo { font: 400 54px/1 system-ui, "Apple Color Emoji", "Segoe UI Emoji", sans-serif; }
+.dcard.hero .mono .emo { font-size: 72px; }
+.pcard .ph.nophoto { aspect-ratio: 16 / 9; }
+.pcard .mono { font-size: 0; gap: 0; }
+.pcard .mono .emo { font-size: 68px; }
+.pcard .ph.nophoto { aspect-ratio: 16 / 7; }
+.lg { background: var(--c, var(--chip)); }
+.row .lg.thumb { width: 64px; height: 64px; }
+.dcard.hero .ph { aspect-ratio: 5 / 4; }
+.dcard.hero { box-shadow: 0 2px 4px rgba(22,16,12,.06), 0 18px 40px rgba(22,16,12,.12); }
+.price { background: #fff; }
 @media (prefers-reduced-motion: no-preference) { .sheet { animation: up .22s ease-out; } @keyframes up { from { transform: translateY(40px); opacity: .6; } } }
 </style>
 
@@ -485,6 +508,6 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
 </div></nav>
 <div id="sheetRoot"></div>
 
-<script src="app.js?v=20261127-180259"></script>
+<script src="app.js?v=20261127-211348"></script>
 </body>
 </html>
