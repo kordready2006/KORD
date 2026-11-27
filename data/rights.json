@@ -1,8 +1,8 @@
 {
- "about": "Which images the app shows. The owner chose to show each restaurant's own photos and logo (taken from its website) and each school's logo. stockPhotos turns the licensed example library in stock/ back on.",
- "restaurantPhotos": true,
- "restaurantLogos": true,
- "schoolLogos": true,
+ "about": "Which images the app shows. Store-safe setting: restaurant and school images are OFF unless the owner has given written permission (add them under \"permitted\"). Deals are illustrated with the licensed library in stock/ (public domain or CC BY, credited in the app).",
+ "restaurantPhotos": false,
+ "restaurantLogos": false,
+ "schoolLogos": false,
  "permitted": {},
  "permittedExample": {
   "broneys.net": {
@@ -13,5 +13,5 @@
    "how": "email reply"
   }
  },
- "stockPhotos": false
+ "stockPhotos": true
 }

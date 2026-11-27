@@ -277,6 +277,26 @@ def main():
                 menus[sid] = items
             if sid and ORDER_RX.search(m.get("source") or ""):
                 order[sid] = m["source"]
+    # Cheap any day: full-meal items at $9 or less on local restaurants' regular menus, cheapest first.
+    MEAL = re.compile(r"(?i)burger|sandwich|\\bsubs?\\b|burrito|tacos\\b|bowl|pizza|wrap|gyro|quesadilla|bagel|omelet|noodle|fried rice|"
+                      r"tenders|calzone|panini|\\bmelt\\b|platter|combo|\\bmac\\b|hoagie|cheesesteak|pancakes|waffle|biscuits|coney|hot dogs?\\b|pierogi|stromboli|pho\\b|ramen|curry")
+    NOTMEAL = re.compile(r"(?i)side|drink|beverage|sauce|extra|add[- ]?on|kid|dessert|coffee|tea\\b|soda|topping|dressing|catering|smoothie|juice|beer|wine|cocktail|"
+                         r"cup of|half|mini|small|slice of|single|a la carte|each\\b|per |broth|fries|bites|^bagel|toasted bagel|for \\d+|bread$|starter|salad$|soup|chips|sugar waffle|berry bowl")
+    for t in live:
+        rows = []
+        for sp in t["spots"]:
+            if not sp["local"]:
+                continue
+            got = []
+            for i in menus.get(sp["id"], []):
+                m = re.match(r"\$(\d+(?:\.\d\d)?)$", i["p"])
+                if not m or not 3 <= float(m.group(1)) <= 9:
+                    continue
+                if not MEAL.search(i["n"]) or NOTMEAL.search(i["n"] + " " + i["s"]):
+                    continue
+                got.append({"id": sp["id"], "n": i["n"], "p": float(m.group(1)), "d": i.get("d", "")})
+            rows += sorted(got, key=lambda r: (0 if r["d"] else 1, r["p"]))[:4]
+        t["cheap"] = sorted(rows, key=lambda r: (r["p"], r["n"]))[:40]
     # "Order online" links: an online-ordering page found while reading the menu, a chain's own site, or a partner
     # link from data/partners.json ({"town-id|Place name": "https://order-link-with-your-partner-code"}).
     partners = json.load(open(os.path.join(ROOT, "data", "partners.json"))) if os.path.exists(os.path.join(ROOT, "data", "partners.json")) else {}

@@ -13,12 +13,12 @@ import sys
 from PIL import Image
 
 PICKS = {
-    "pizza": ["pizza:0", "pizza:4", "pizza:6"],
-    "burger": ["burger:4", "burger:3", "burger:7"],
-    "wings": ["wings:1", "wings:4", "wings:7"],
-    "taco": ["taco:1", "taco:7", "taco:6"],
+    "pizza": ["pizza:0", "pizza:4", "pizza:6", "pizza:1", "pizza:7", "pizza:3"],
+    "burger": ["burger:4", "burger:3", "burger:7", "burger:1", "burger:6"],
+    "wings": ["wings:1", "wings:4", "wings:7", "wings:2", "wings:5"],
+    "taco": ["taco:1", "taco:7", "taco:6", "taco:0", "taco:3"],
     "burrito": ["burrito:0", "burrito:7", "burrito:5"],
-    "sandwich": ["sandwich:4", "sandwich:6", "sandwich:7"],
+    "sandwich": ["sandwich:4", "sandwich:6", "sandwich:7", "sandwich:0", "sandwich:5"],
     "hotsandwich": ["hotsandwich:5", "hotsandwich:3", "hotsandwich:4"],
     "cheesesteak": ["cheesesteak:3", "cheesesteak:2", "cheesesteak:4"],
     "gyro": ["gyro:5", "gyro:4", "gyro:0"],
@@ -49,7 +49,7 @@ PICKS = {
     "sides": ["sides:1", "sides:6", "sides:5"],
     "pretzel": ["pretzel:5", "pretzel:3", "pretzel:1"],
     "dips": ["dips:2", "dips:6", "dips:3"],
-    "apps": ["apps:6", "apps:4", "apps:5"],
+    "apps": ["apps:6", "apps:4", "apps:5", "apps:0", "apps:2", "apps:7"],
     "calzone": ["calzone:1", "calzone:7", "calzone:0"],
     "stromboli": ["stromboli:0", "stromboli:1"],
     "hotdog": ["hotdog:6", "hotdog:5", "hotdog:2"],

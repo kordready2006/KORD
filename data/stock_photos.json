@@ -23,6 +23,30 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Pepperoni_Pizza_from_Fellini%E2%80%99s_Pizza.jpg"
  },
+ "pizza-4.jpg": {
+  "key": "pizza",
+  "title": "Round Table Pizza - October 2024 - Sarah Stierch 01",
+  "artist": "Missvain",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Round_Table_Pizza_-_October_2024_-_Sarah_Stierch_01.jpg"
+ },
+ "pizza-5.jpg": {
+  "key": "pizza",
+  "title": "Nice pepperoni pizza",
+  "artist": "YoutubeJarred33 Widower",
+  "license": "CC BY 3.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Nice_pepperoni_pizza.jpg"
+ },
+ "pizza-6.jpg": {
+  "key": "pizza",
+  "title": "Pepperoni pizza (1)",
+  "artist": "Jon Sullivan",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Pepperoni_pizza_(1).jpg"
+ },
  "burger-1.jpg": {
   "key": "burger",
   "title": "Cheeseburger (3)",
@@ -46,6 +70,22 @@
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Cheeseburger_at_Bloom_Carneros_-_June_2023_-_Sarah_Stierch.jpg"
+ },
+ "burger-4.jpg": {
+  "key": "burger",
+  "title": "Cheeseburger and fries 2",
+  "artist": "Kurtkaiser",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheeseburger_and_fries_2.jpg"
+ },
+ "burger-5.jpg": {
+  "key": "burger",
+  "title": "Cheeseburger with potato salad and sweet corn (18443490716)",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Cheeseburger_with_potato_salad_and_sweet_corn_(18443490716).jpg"
  },
  "wings-1.jpg": {
   "key": "wings",
@@ -71,6 +111,22 @@
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Buffalo_Wings_(8779045398).jpg"
  },
+ "wings-4.jpg": {
+  "key": "wings",
+  "title": "Hopmonk - March 2026 - Sarah Stierch 02",
+  "artist": "Missvain",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Hopmonk_-_March_2026_-_Sarah_Stierch_02.jpg"
+ },
+ "wings-5.jpg": {
+  "key": "wings",
+  "title": "Buffalo wings-01",
+  "artist": "Clotee Pridgen Allochuku",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Buffalo_wings-01.jpg"
+ },
  "taco-1.jpg": {
   "key": "taco",
   "title": "Tacos in a soft tortilla 5",
@@ -94,6 +150,22 @@
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Tacos_with_ground_turkey_-_May_2023_-_Sarah_Stierch.jpg"
+ },
+ "taco-4.jpg": {
+  "key": "taco",
+  "title": "Tacos in a soft tortilla 6",
+  "artist": "Kurt Kaiser",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tacos_in_a_soft_tortilla_6.jpg"
+ },
+ "taco-5.jpg": {
+  "key": "taco",
+  "title": "Tacos in a soft tortilla 4",
+  "artist": "Kurt Kaiser",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Tacos_in_a_soft_tortilla_4.jpg"
  },
  "burrito-1.jpg": {
   "key": "burrito",
@@ -142,6 +214,22 @@
   "license": "CC BY 2.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Mmm..._salami,_ham,_and_cheeses_on_a_hoagie_roll_(6879014927).jpg"
+ },
+ "sandwich-4.jpg": {
+  "key": "sandwich",
+  "title": "Submarine sandwich sub subway",
+  "artist": "Pixabay",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Submarine_sandwich_sub_subway.jpg"
+ },
+ "sandwich-5.jpg": {
+  "key": "sandwich",
+  "title": "Submarine sandwich with toppings and dijon mustard",
+  "artist": "jeffreyw",
+  "license": "CC BY 2.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Submarine_sandwich_with_toppings_and_dijon_mustard.jpg"
  },
  "hotsandwich-1.jpg": {
   "key": "hotsandwich",
@@ -846,6 +934,30 @@
   "license": "CC BY 4.0",
   "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
   "page": "https://commons.wikimedia.org/wiki/File:Steiners_Tavern_-_August_2024_-_Sarah_Stierch_03.jpg"
+ },
+ "apps-4.jpg": {
+  "key": "apps",
+  "title": "Mozzarella 394",
+  "artist": "Alvis at English Wikibooks",
+  "license": "Public domain",
+  "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Mozzarella_394.jpg"
+ },
+ "apps-5.jpg": {
+  "key": "apps",
+  "title": "Round Table Pizza - October 2024 - Sarah Stierch",
+  "artist": "Missvain",
+  "license": "CC0 1.0",
+  "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Round_Table_Pizza_-_October_2024_-_Sarah_Stierch.jpg"
+ },
+ "apps-6.jpg": {
+  "key": "apps",
+  "title": "Howard's Restaurant - October 2023 - Sarah Stierch 04",
+  "artist": "Missvain",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "page": "https://commons.wikimedia.org/wiki/File:Howard%27s_Restaurant_-_October_2023_-_Sarah_Stierch_04.jpg"
  },
  "calzone-1.jpg": {
   "key": "calzone",

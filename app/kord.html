@@ -576,10 +576,13 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     return lib[CATSTOCK[cat]] ? CATSTOCK[cat] : lib.plate ? 'plate' : '';
   }
   window.KORD_STOCK = stockKey;
+  var SHOWN = {};
   function stock(text, cat, seed) {
     var a = (DATA.stock || {})[stockKey(text, cat)] || [], h = 0, s = String(seed || '');
     for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0;
-    return a.length ? a[h % a.length] : '';
+    if (!a.length) return '';
+    for (var j = 0; j < a.length; j++) { var pick = a[(h + j) % a.length]; if (!SHOWN[pick]) { SHOWN[pick] = 1; return pick; } }
+    return a[h % a.length];
   }
   document.addEventListener('load', function (e) { var t = e.target; if (t && t.dataset && 'logo' in t.dataset) { if (t.naturalWidth >= 32) t.parentNode.classList.add('has'); else t.remove(); } }, true);
   document.addEventListener('error', function (e) { var t = e.target; if (t && t.dataset && 'logo' in t.dataset) t.remove(); }, true);
@@ -672,24 +675,25 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     if (!sp.local) h += '<span class="tag">Chain</span>';
     return h ? '<span class="tags">' + h + '</span>' : '';
   }
-  /* Pictures, in order: the restaurant's own photo of that food, then a street view of the restaurant (needs a Google
+  /* Pictures, in order: the restaurant's own photo of that food (only with its permission), then a street view of the restaurant (needs a Google
      Maps key in data/server.json), then its logo, then its name. No stand-in photos from anywhere else. */
   function street(sp) {
     var k = DATA.streetViewKey;
     return k && sp.address ? 'https://maps.googleapis.com/maps/api/streetview?size=640x480&fov=80&source=outdoor&location=' + encodeURIComponent(sp.address) + '&key=' + encodeURIComponent(k) : '';
   }
   function media(sp, d) {
-    var ph = (d && d.photo) || (d && d.nophoto ? '' : sp.photo) || street(sp);
+    /* a deal with no photo of its own gets a licensed example of that food (credited under Sources); a restaurant never does */
+    var ph = (d && d.photo) || (d && d.nophoto ? '' : sp.photo) || (d ? stock(d.title, sp.category, sp.id + d.title) : '') || street(sp);
     return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono">' + esc(sp.name) + '</span>' };
   }
   function metaLine(sp) { var sc = spotScore(sp.id), tr = travel(sp); return [sc ? '<span class="score">★ ' + sc.toFixed(1) + '</span>' : '', esc(tr), esc(sp.category)].filter(Boolean).join(' · '); }
-  function ticket(x, hero) {
+  function ticket(x, hero, dayLabel) {
     var st = stubText(x.d), m = media(x.sp, x.d);
     return '<button class="dcard' + (hero ? ' hero' : '') + '" data-spot="' + esc(x.sp.id) + '" data-deal="' + esc(x.d.title) + '" style="--c:' + color(x.sp.category) + '">' +
       '<span class="ph' + (m.has ? '' : ' nophoto') + '">' + m.html +
-      (hero ? '<span class="flag">' + (S.day === TODAY ? 'Today\'s' : DAYNAME[S.day] + '\'s') + ' best value</span>' : '') +
+      (hero ? '<span class="flag">Deal of the day · ' + (S.day === TODAY ? 'today' : DAYNAME[S.day]) + '</span>' : '') +
       '<span class="price' + (st.length > 5 ? ' long' : '') + '">' + esc(st) + (kind(x.d) === 'bite' && priceNum(x.d.price || x.d.title) <= 2.5 && /wing|taco|slice/i.test(x.d.title) ? '<small>each</small>' : '') + '</span></span>' +
-      '<span class="dbody"><span class="hook">' + esc(hook(x.d)) + '</span><span class="dtitle">' + esc(x.d.title) + '</span>' +
+      '<span class="dbody"><span class="hook">' + esc(dayLabel ? dayLabel + ' · ' + hook(x.d).replace(/^[A-Za-z]+s only · /, '') : hook(x.d)) + '</span><span class="dtitle">' + esc(x.d.title) + '</span>' +
       '<span class="who">' + logo(x.sp, 'sm') + '<span>' + esc(x.sp.name) + '</span></span><span class="meta">' + metaLine(x.sp) + '</span>' +
       (hero ? '<span class="ddet">' + esc(x.d.details) + '</span>' : '') + tagsHtml(x.sp, x.d) + '</span></button>';
   }
@@ -709,6 +713,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
   /* step 2: cheapest deals for the day */
   var FOODICON = { 'All': '🍽️', 'Pizza': '🍕', 'Burgers': '🍔', 'Wings': '🍗', 'Tacos & burritos': '🌮', 'Subs & sandwiches': '🥪', 'Bowls & salads': '🥗', 'Breakfast & coffee': '☕', 'Sweets': '🍪', 'Other': '🍴' };
   function viewDeals() {
+    SHOWN = {};
     var t = town(), all = dealsFor(t, S.day), seen = {}, foods = ['All'], q = (S.dq || '').toLowerCase();
     all.forEach(function (x) { if (x.sp.local) seen[food(x)] = 1; });
     FOODS.forEach(function (f) { if (seen[f[0]]) foods.push(f[0]); }); if (seen.Other) foods.push('Other');
@@ -735,11 +740,19 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
       h += '<div class="empty"><b>No cheap local ' + (S.food === 'All' ? 'deals' : esc(S.food.toLowerCase()) + ' deals') + ' found for ' + DAYNAME[S.day] + '</b>' + (q ? 'Try a different word.' : other.length ? 'Try ' + other.map(function (d) { return DAYNAME[d]; }).join(', ') + '.' : 'Tap All to see everything.') + '</div>';
     }
     if (browsing) {
+      /* more to eat when a day is light on deals: the rest of the week, and cheap meals on the regular menu */
+      var later = [], got = {}, di = DAYS.indexOf(S.day);
+      for (var k = 1; k < 7; k++) { var dn = DAYS[(di + k) % 7]; byPrice(dealsFor(t, dn).filter(function (x) { return x.sp.local && x.d.days.indexOf(S.day) < 0; })).forEach(function (x) { var key = x.sp.id + '|' + x.d.title; if (!got[key] && later.length < 14) { got[key] = 1; later.push({ x: x, day: dn }); } }); }
+      if (later.length) h += '<div class="sechead"><h2>Later this week</h2><span>' + later.length + '</span></div><p class="sub">Deals coming up on other days.</p><div class="list rail">' + later.map(function (l) { return ticket(l.x, false, DAYNAME[l.day]); }).join('') + '</div>';
+      var cheap = (t.cheap || []).filter(function (c) { return SPOTS[c.id]; });
+      if (cheap.length >= 3) h += '<div class="sechead"><h2>Cheap any day</h2><span>' + Math.min(15, cheap.length) + '</span></div><p class="sub">Full meals for $9 or less on the regular menu. No deal needed.</p><div class="list">' + cheap.slice(0, 15).map(function (c) {
+        return '<button class="row" data-spot="' + esc(c.id) + '"><span class="mid"><h3>' + esc(c.n) + '</h3><p>' + esc(SPOTS[c.id].name) + (travel(SPOTS[c.id]) ? ' · ' + travel(SPOTS[c.id]) : '') + '</p>' + (c.d ? '<p class="quote">' + esc(c.d) + '</p>' : '') + '</span><span class="end"><b>' + usd(c.p) + '</b></span></button>';
+      }).join('') + '</div>';
       var pop = t.spots.filter(function (sp) { return sp.local; }).sort(function (a, b) { return (b.signature ? 4 : 0) + (b.photo ? 2 : 0) + (b.logo ? 1 : 0) - ((a.signature ? 4 : 0) + (a.photo ? 2 : 0) + (a.logo ? 1 : 0)) || b.deals.length - a.deals.length || a.name.localeCompare(b.name); }).slice(0, 10);
       if (pop.length) h += '<div class="sechead"><h2>Popular near campus</h2><span>' + pop.length + '</span></div><p class="sub" style="margin-top:-8px">Local favorites in ' + esc(t.name) + '.</p><div class="rail" style="display:flex">' + pop.map(placeCard).join('') + '</div>';
     }
     h += sec('Chain deals nearby', 'Fast food and national chains, lowest price first.', chain);
-    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos and logos come from each restaurant.</p>';
+    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Deal photos show an example of that kind of food, not the restaurant\'s own plate.</p>';
   }
   function pageHead(left, right, title, tag) {
     return '<div class="pagehead"><div class="mastline"><span class="kick">' + esc(left) + '</span><span class="kick">' + esc(right) + '</span></div><h2>' + esc(title) + '</h2><span class="kick">— ' + esc(tag) + ' —</span><div class="rule"></div></div>';
@@ -828,7 +841,11 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
       '<div><div class="sechead"><h2 style="font-size:18px">Distances</h2></div><p class="sub">Addresses were located with the U.S. Census Bureau Geocoder and OpenStreetMap Nominatim. Map data © OpenStreetMap contributors (ODbL).</p></div>' +
       '<div><div class="sechead"><h2 style="font-size:18px">Names and trademarks</h2></div><p class="sub">Restaurant and school names belong to their owners. KORD is independent and is not affiliated with, sponsored by or endorsed by any restaurant or school listed.</p></div>' +
       '<div><div class="sechead"><h2 style="font-size:18px">Fonts</h2></div><p class="sub">Fraunces and Inter, used under the SIL Open Font License 1.1.</p></div>' +
-      '<div><div class="sechead"><h2 style="font-size:18px">Photos and logos</h2></div><p class="sub">Photos and logos come from each restaurant\'s own website and belong to that restaurant. They are shown only to identify the restaurant and its food. School marks belong to each school. If you own an image and want it changed or removed, email kordready2006@gmail.com.</p></div>' +
+      '<div><div class="sechead"><h2 style="font-size:18px">Food photos</h2><span>' + c.length + '</span></div><p class="sub">Deal photos show an example of that kind of food. They are public domain or Creative Commons Attribution works from Wikimedia Commons, resized and cropped to fit. A restaurant\'s own photos and logo appear only with its permission.</p></div>' +
+      '<ul class="credits">' + c.map(function (x) {
+        var pg = safeUrl(x.page), lu = safeUrl(x.licenseUrl);
+        return '<li>' + (pg ? '<a target="_blank" rel="noopener" href="' + esc(pg) + '">' + esc(x.title) + '</a>' : esc(x.title)) + ' by ' + esc(x.artist) + ', ' + (lu ? '<a target="_blank" rel="noopener" href="' + esc(lu) + '">' + esc(x.license) + '</a>' : esc(x.license)) + '</li>';
+      }).join('') + '</ul>' +
       '<div class="btnrow"><a class="btn ghost" target="_blank" rel="noopener" href="privacy.html">Privacy policy</a><a class="btn ghost" target="_blank" rel="noopener" href="terms.html">Terms of use</a></div>';
     document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="Sources and credits"><div class="sheethead"><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody" id="sheetBody">' + h + '</div></div></div>';
   }
