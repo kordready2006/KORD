@@ -10,16 +10,13 @@ const base = process.argv[3] || 'http://localhost:8765/index.html';
 const errs = [];
 const check = (ok, msg) => { if (!ok) errs.push(msg); };
 
-let welcomeSeen = false;
 async function phone(browser, url, scheme) {
   const ctx = await browser.newContext({ viewport: { width: 400, height: 860 }, colorScheme: scheme || 'light' });
   const p = await ctx.newPage();
   p.on('pageerror', (e) => errs.push('PAGEERR ' + e.message));
   // single-phone flows never write to the real ratings server
   await p.goto(/[?&]server=/.test(url) ? url : url + (url.includes('?') ? '&' : '?') + 'server=off');
-  await p.waitForSelector('.tile, #exploreBtn');
-  if (await p.$('#exploreBtn')) { welcomeSeen = true; await p.click('#exploreBtn'); }
-  await p.waitForSelector('.tile');
+  await p.waitForSelector('.tile, .welcome');
   return p;
 }
 // fills in the Join sheet that appears the first time a signed-out phone tries to rate
@@ -183,15 +180,20 @@ async function openFirstDeal(p) {
   if (!process.argv[3]) {
     const url = base + '?server=' + encodeURIComponent('http://localhost:8799');
     const a = await phone(browser, url), b = await phone(browser, url);
-    check(welcomeSeen, 'no welcome screen on first open');
+    // an account is required: both phones start on the welcome screen with no way in but signing up or in
+    check(await a.locator('.welcome').count() === 1 && await a.locator('.tile').count() === 0 && await a.locator('#exploreBtn').count() === 0, 'the app can be entered without an account');
+    await a.click('[data-auth="up"] >> nth=0');
+    await a.fill('#auName', 'Alex'); await a.fill('#auEmail', 'alex@test.dev'); await a.fill('#auPass', 'short'); await a.click('#auGo');
+    check(await a.locator('.autherr', { hasText: '8 characters' }).count() === 1, 'short password was not refused with a clear message');
+    await a.fill('#auPass', 'password1'); await a.click('#auGo'); await a.waitForSelector('.tile');
+    await b.click('[data-auth="up"] >> nth=0');
+    await b.fill('#auName', 'Alex'); await b.fill('#auEmail', 'blake@test.dev'); await b.fill('#auPass', 'password1'); await b.click('#auGo');
+    await b.waitForSelector('.autherr');
+    check(await b.locator('.autherr', { hasText: 'taken' }).count() === 1, 'a display name already in use was accepted');
+    await b.fill('#auName', 'Blake'); await b.fill('#auPass', 'password1'); await b.click('#auGo'); await b.waitForSelector('.tile');
     await openFirstDeal(a);
     await a.click('#menuBox .dishhead >> nth=0');
     const dish = await a.locator('#menuBox .dish.open .dishhead').getAttribute('data-dish');
-    await a.click('.dishbody [data-rate="5"]');
-    check(await a.locator('#auEmail').count() === 1, 'rating while signed out did not ask for an account');
-    await a.fill('#auName', 'Alex'); await a.fill('#auEmail', 'alex@test.dev'); await a.fill('#auPass', 'short'); await a.click('#auGo');
-    check(await a.locator('.autherr', { hasText: '8 characters' }).count() === 1, 'short password was not refused with a clear message');
-    await join(a, 'Alex');
     await a.click('.dishbody [data-rate="5"]');
     await a.fill('#cmtIn', 'Phone A says go on Wednesday');
     await a.click('#cmtBtn');
@@ -202,11 +204,6 @@ async function openFirstDeal(p) {
     await b.click('.chip:has-text("Top rated")');
     check(await b.locator('.dmeta', { hasText: '5.0' }).count() >= 1, 'phone B does not see phone A rating');
     await b.click('#menuBox .dishhead >> nth=0');
-    await b.click('.dishbody [data-rate="3"]');
-    await b.fill('#auName', 'Alex'); await b.fill('#auEmail', 'blake@test.dev'); await b.fill('#auPass', 'password1'); await b.click('#auGo');
-    await b.waitForSelector('.autherr');
-    check(await b.locator('.autherr', { hasText: 'taken' }).count() === 1, 'a display name already in use was accepted');
-    await join(b, 'Blake');
     await b.click('.dishbody [data-rate="3"]');
     await b.waitForTimeout(900);
     check(await b.locator('.dish.open .dmeta', { hasText: '4.0' }).count() === 1, 'average of 5 and 3 is not 4.0 on phone B');
@@ -331,10 +328,10 @@ async function openFirstDeal(p) {
     await a.click('.x'); await a.click('[data-tab="you"]'); await a.waitForTimeout(900);
     check((await a.locator('.stat >> nth=1').innerText()).startsWith('0'), 'Remaining is not 0 after using all votes');
     await a.click('#signOut'); await a.waitForTimeout(500);
-    check(await a.locator('.acct [data-auth="up"]').count() === 1, 'sign out did not return to the join card');
-    await a.click('.acct [data-auth="in"]'); await a.fill('#auEmail', 'alex@test.dev'); await a.fill('#auPass', 'wrongpass1'); await a.click('#auGo'); await a.waitForSelector('.autherr');
+    check(await a.locator('.welcome').count() === 1 && await a.locator('.tile, .tabs:not([hidden])').count() === 0, 'sign out did not return to the welcome screen');
+    await a.click('[data-auth="in"]'); await a.fill('#auEmail', 'alex@test.dev'); await a.fill('#auPass', 'wrongpass1'); await a.click('#auGo'); await a.waitForSelector('.autherr');
     check(await a.locator('.autherr', { hasText: 'do not match' }).count() === 1, 'wrong password has no friendly message');
-    await a.fill('#auPass', 'password1'); await a.click('#auGo'); await a.waitForSelector('.acct h2:has-text("Alex")');
+    await a.fill('#auPass', 'password1'); await a.click('#auGo'); await a.waitForSelector('.tile, .dcard'); if (await a.$('.tile')) await a.click('[data-town="athens"]'); await a.click('[data-tab="you"]'); await a.waitForSelector('.acct h2:has-text("Alex")');
     check((await a.locator('.stat >> nth=0').innerText()).startsWith('3'), 'ratings did not come back after signing in again');
     await a.click('[data-auth="del"]'); await a.fill('#auConfirm', 'DELETE'); await a.click('#auGo'); await a.waitForSelector('.autherr');
     check(await a.locator('.autherr', { hasText: 'only admin' }).count() === 1, 'the last admin was allowed to delete their account');
@@ -342,22 +339,20 @@ async function openFirstDeal(p) {
     await b.click('[data-tab="you"]'); await b.waitForTimeout(700);
     await b.click('[data-auth="del"]'); await b.fill('#auConfirm', 'nope'); await b.click('#auGo');
     check(await b.locator('.autherr', { hasText: 'Type DELETE' }).count() === 1, 'account deletion did not require typing DELETE');
-    await b.fill('#auConfirm', 'DELETE'); await b.click('#auGo'); await b.waitForSelector('.acct [data-auth="up"]');
-    await b.click('.acct [data-auth="in"]'); await b.fill('#auEmail', 'blake@test.dev'); await b.fill('#auPass', 'password1'); await b.click('#auGo'); await b.waitForSelector('.autherr');
+    await b.fill('#auConfirm', 'DELETE'); await b.click('#auGo'); await b.waitForSelector('.welcome');
+    await b.click('[data-auth="in"]'); await b.fill('#auEmail', 'blake@test.dev'); await b.fill('#auPass', 'password1'); await b.click('#auGo'); await b.waitForSelector('.autherr');
     check(await b.locator('.autherr', { hasText: 'do not match' }).count() === 1, 'a deleted account can still sign in');
     await b.click('#sheetBody [data-auth="up"]'); await b.fill('#auName', 'Casey'); await b.fill('#auEmail', 'casey-verify@test.dev'); await b.fill('#auPass', 'password1'); await b.click('#auGo');
     await b.waitForSelector('h2:has-text("Verify your email")');
     await b.screenshot({ path: `${out}/c-verify.png` });
-    { // the welcome screen: create an account straight from it, and it does not come back afterwards
+    { // a brand-new visitor: only the welcome screen, and an unverified sign-up does not get in
       const w = await (await browser.newContext({ viewport: { width: 400, height: 860 } })).newPage();
-      await w.goto(url); await w.waitForSelector('#exploreBtn'); await w.screenshot({ path: `${out}/f-welcome.png` });
-      check(await w.locator('.tile').count() === 0, 'schools are shown before the welcome screen is answered');
-      check(await w.locator('.welcome .collage, .welcome img').count() === 0 && await w.locator('.mast h1', { hasText: 'Delicious Deals' }).count() === 1, 'welcome screen should show the working name and no food photos');
+      await w.goto(url); await w.waitForSelector('.welcome'); await w.screenshot({ path: `${out}/f-welcome.png` });
+      check(await w.locator('.tile').count() === 0 && await w.locator('#exploreBtn').count() === 0, 'a new visitor can get past the welcome screen without an account');
+      check(await w.locator('.welcome img').count() === 0 && await w.locator('.mast h1', { hasText: 'Delicious Deals' }).count() === 1, 'welcome screen should show the working name and no food photos');
       await w.click('[data-auth="up"] >> nth=0'); await w.fill('#auName', 'Wendy'); await w.fill('#auEmail', 'wendy-verify@test.dev'); await w.fill('#auPass', 'password1'); await w.click('#auGo');
-      await w.waitForSelector('h2:has-text("Verify your email")'); await w.click('.x');
-      check(await w.locator('#exploreBtn').count() === 1, 'welcome screen vanished before the account was verified');
-      await w.click('#exploreBtn'); await w.waitForSelector('.tile'); await w.reload(); await w.waitForSelector('.tile');
-      check(await w.locator('#exploreBtn').count() === 0, 'welcome screen came back after choosing to explore');
+      await w.waitForSelector('h2:has-text("Verify your email")'); await w.click('.x'); await w.reload(); await w.waitForSelector('.welcome');
+      check(await w.locator('.tile').count() === 0, 'an unverified account got into the app');
       await w.close();
     }
     await a.close(); await b.close();

@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261127-231005';
+window.KORD_BUILD = '20261127-231910';
 (function () {
   'use strict';
   var APPNAME = 'Delicious Deals';   /* working name shown on the welcome and school screens; change it here */
@@ -548,6 +548,10 @@ window.KORD_BUILD = '20261127-231005';
     var tabs = [['overview', 'Overview'], ['flags', 'Switches'], ['perks', 'Perks'], ['merch', 'Merch'], ['reports', 'Reports'], ['admins', 'Admins']];
     var h = '<div class="chips">' + tabs.map(function (x) { return '<button class="chip" data-adm="' + x[0] + '" aria-pressed="' + (ADM.tab === x[0]) + '">' + x[1] + '</button>'; }).join('') + '</div><div id="admBody">' + adminBody() + '</div>';
     infoSheet('Admin', 'Dashboard', h);
+    if (ADM.tab === 'overview') quiet(api('rpc/admin_find_users', { p_email: '@' })).then(function (r) {
+      ADM.recent = (r || []).slice().sort(function (x, y) { return String(y.created_at).localeCompare(String(x.created_at)); });
+      var b0 = document.getElementById('admBody'); if (b0 && ADM.tab === 'overview' && ADM.data) b0.innerHTML = adminBody();
+    });
     if (ADM.data == null) {
       var call = { overview: api('rpc/admin_stats', {}), flags: api('feature_flags?select=key,label,enabled&order=key.asc'), perks: api('rpc/admin_perks', {}), merch: api('merch?select=*&order=sort.asc,id.desc'), reports: api('rpc/admin_reports', {}), admins: api('rpc/admin_log_recent', {}) }[ADM.tab], want = ADM.tab;
       call.then(function (d) { if (ADM.tab !== want) return; ADM.data = d || []; var b = document.getElementById('admBody'); if (b) b.innerHTML = adminBody(); })
@@ -560,6 +564,7 @@ window.KORD_BUILD = '20261127-231005';
     function stat(n, l) { return '<div class="stat"><b>' + (n == null ? '—' : n) + '</b><span>' + l + '</span></div>'; }
     function nm(id) { return SPOTS[id] ? SPOTS[id].name : id; }
     if (ADM.tab === 'overview') return '<div class="stats">' + stat(d.users, 'Accounts') + stat(d.active_7d, 'Rated in last 7 days') + stat(d.ratings, 'Ratings') + stat(d.ratings_7d, 'New ratings, 7 days') + stat(d.comments, 'Comments') + stat(d.photos, 'Photos') + stat(d.views_30d, 'Restaurant views, 30 days') + stat(d.order_clicks_30d, 'Order clicks, 30 days') + stat(d.perk_unlocks, 'Perks unlocked') + stat(d.perk_redemptions, 'Perks redeemed') + stat(d.open_reports, 'Reported items') + stat(d.vote_cap, 'Ratings per 12 hours') + '</div>' +
+      '<div class="sechead"><h2 style="font-size:20px">Newest accounts</h2><span>' + ((ADM.recent || []).length || '') + '</span></div><div class="lines">' + ((ADM.recent || []).slice(0, 12).map(function (u) { return '<div class="line"><span class="mid"><b>' + esc(u.username) + (u.is_admin ? ' · Admin' : '') + '</b><small>' + esc(u.email) + '</small></span><small>' + (u.created_at ? ago(u.created_at) : '') + '</small></div>'; }).join('') || '<div class="line">Nobody yet</div>') + '</div>' +
       '<div class="sechead"><h2 style="font-size:20px">Most rated dishes</h2></div><div class="lines">' + ((d.top_dishes || []).map(function (x) { return '<div class="line"><span class="mid"><b>' + esc(x.dish) + '</b><small>' + esc(nm(x.place_id)) + '</small></span><b>' + x.votes + ' · ' + x.avg + '</b></div>'; }).join('') || '<div class="line">Nothing yet</div>') + '</div>' +
       '<div class="sechead"><h2 style="font-size:20px">Most viewed restaurants</h2></div><div class="lines">' + ((d.top_viewed || []).map(function (x) { return '<div class="line"><span class="mid"><b>' + esc(nm(x.place_id)) + '</b></span><b>' + x.views + '</b></div>'; }).join('') || '<div class="line">Nothing yet</div>') + '</div>' +
       '<div class="sechead"><h2 style="font-size:20px">Voting limit</h2></div>' + admInput('capIn', 'New ratings allowed per account every 12 hours', d.vote_cap, 'number', 'min="1" max="500"') + '<button class="btn" id="capSave">Save limit</button>';
@@ -743,7 +748,8 @@ window.KORD_BUILD = '20261127-231005';
 
   function render() {
     /* First open: a welcome screen that asks people to join or sign in, with a way to look around first. */
-    if (SERVER && !AUTH && !U.guest) {
+    /* An account is required: there is no way past this screen without signing in. */
+    if (SERVER && !AUTH) {
       document.documentElement.style.removeProperty('--sc');
       document.getElementById('top').innerHTML = '<div class="mast"><div class="mastline"><span class="kick">For college students</span><span class="kick">Ohio</span></div><h1 class="longname">' + APPNAME + '</h1><span class="kick">— The cheap food near your campus, found for you —</span><div class="rule"></div></div>';
       document.getElementById('tabs').hidden = true; document.getElementById('daysNav').hidden = true;
@@ -765,7 +771,6 @@ window.KORD_BUILD = '20261127-231005';
         (samples.length ? '<div class="lines">' + samples.slice(0, 4).map(function (x) { return '<div class="line"><span class="mid"><b>' + esc(x.d.title) + '</b><small>near ' + esc(x.tw.school.name) + '</small></span><b style="color:var(--hot)">' + esc(stubText(x.d)) + '</b></div>'; }).join('') + '</div>' : '') +
         '<div class="sechead"><h2>Why make an account</h2></div><ol class="steps"><li><b>It is free</b>No card, no catch. Takes 20 seconds.</li><li><b>Rate what you eat</b>Score any dish 1 to 10 so the next student knows if it is worth it.</li><li><b>Earn free stuff</b>Your ratings unlock perks at places around campus.</li><li><b>See what your friends eat</b>Follow people and climb your school\'s leaderboard.</li></ol>' +
         '<button class="btn bigbtn" data-auth="up">Create my free account</button><button class="btn ghost bigbtn" data-auth="in">I already have one</button>' +
-        '<button class="lnk" id="exploreBtn">Just let me look around first</button>' +
         '<p class="note" style="text-align:center">By continuing you agree to our <a target="_blank" rel="noopener" href="terms.html">Terms</a>, <a target="_blank" rel="noopener" href="privacy.html">Privacy Policy</a> and <a target="_blank" rel="noopener" href="rules.html">Community Rules</a>.</p></div>';
       return;
     }
@@ -1067,8 +1072,7 @@ window.KORD_BUILD = '20261127-231005';
       api('rpc/admin_find_users', { p_email: ADM.q }).then(function (r) { ADM.found = r || []; document.getElementById('admBody').innerHTML = adminBody(); }).catch(function () { toast('Search failed.'); }); return; }
     if (t.dataset.setadmin) { var sa = t.dataset.setadmin.split('|'); ADM.found = null; return admDo(api('rpc/admin_set_admin', { p_user: sa[0], p_admin: sa[1] === '1' }), 'Saved'); }
     if (t.id === 'auGo') return authGo();
-    if (t.id === 'exploreBtn') { U.guest = 1; save('kord.user', U); render(); window.scrollTo(0, 0); return; }
-    if (t.id === 'signOut') { fresh().then(function (tok) { if (tok) authCall('logout', null, 'POST', tok).catch(function () {}); dropSession(); render(); toast('Signed out'); }); return; }
+    if (t.id === 'signOut') { fresh().then(function (tok) { if (tok) authCall('logout', null, 'POST', tok).catch(function () {}); dropSession(); closeSheet(); S.tab = 'deals'; render(); window.scrollTo(0, 0); toast('Signed out'); }); return; }
     if (t.dataset.rate) {
       if (needAccount('rate dishes')) return;
       var id = t.dataset.id, it = t.dataset.item, n = +t.dataset.rate, was = (U.items[id] || {})[it] || 0; U.items[id] = U.items[id] || {};
