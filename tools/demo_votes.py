@@ -1,4 +1,6 @@
-"""Fill the shared ratings server with DEMO votes and comments so the app can be previewed with data in it.
+"""NOTE: this only works before server/accounts.sql has been run (it uses the old device-based functions).
+
+Fill the shared ratings server with DEMO votes and comments so the app can be previewed with data in it.
 
   python3 tools/demo_votes.py
 

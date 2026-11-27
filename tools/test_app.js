@@ -19,6 +19,13 @@ async function phone(browser, url, scheme) {
   await p.waitForSelector('.tile');
   return p;
 }
+// fills in the Join sheet that appears the first time a signed-out phone tries to rate
+async function join(p, name) {
+  await p.waitForSelector('#auEmail');
+  await p.fill('#auName', name); await p.fill('#auEmail', name.toLowerCase() + '@test.dev'); await p.fill('#auPass', 'password1');
+  await p.click('#auGo');
+  await p.waitForSelector('#menuBox .dish.open');
+}
 async function openFirstDeal(p) {
   await p.click('[data-town="athens"]');
   await p.click('[data-day="Wed"]');
@@ -177,6 +184,11 @@ async function openFirstDeal(p) {
     await a.click('#menuBox .dishhead >> nth=0');
     const dish = await a.locator('#menuBox .dish.open .dishhead').getAttribute('data-dish');
     await a.click('.dishbody [data-rate="5"]');
+    check(await a.locator('#auEmail').count() === 1, 'rating while signed out did not ask for an account');
+    await a.fill('#auName', 'Alex'); await a.fill('#auEmail', 'alex@test.dev'); await a.fill('#auPass', 'short'); await a.click('#auGo');
+    check(await a.locator('.autherr', { hasText: '8 characters' }).count() === 1, 'short password was not refused with a clear message');
+    await join(a, 'Alex');
+    await a.click('.dishbody [data-rate="5"]');
     await a.fill('#cmtIn', 'Phone A says go on Wednesday');
     await a.click('#cmtBtn');
     await a.waitForTimeout(800);
@@ -186,6 +198,11 @@ async function openFirstDeal(p) {
     await b.click('.chip:has-text("Top rated")');
     check(await b.locator('.dmeta', { hasText: '5.0' }).count() >= 1, 'phone B does not see phone A rating');
     await b.click('#menuBox .dishhead >> nth=0');
+    await b.click('.dishbody [data-rate="3"]');
+    await b.fill('#auName', 'Alex'); await b.fill('#auEmail', 'blake@test.dev'); await b.fill('#auPass', 'password1'); await b.click('#auGo');
+    await b.waitForSelector('.autherr');
+    check(await b.locator('.autherr', { hasText: 'taken' }).count() === 1, 'a display name already in use was accepted');
+    await join(b, 'Blake');
     await b.click('.dishbody [data-rate="3"]');
     await b.waitForTimeout(900);
     check(await b.locator('.dish.open .dmeta', { hasText: '4.0' }).count() === 1, 'average of 5 and 3 is not 4.0 on phone B');
@@ -226,6 +243,43 @@ async function openFirstDeal(p) {
     await b.waitForTimeout(1500);
     check(await b.locator('.row', { hasText: dish }).count() >= 1, 'Best tab on phone B misses the shared dish');
     await b.screenshot({ path: `${out}/b-best.png` });
+    // ---- accounts: profile stats, the 12-hour limit (the test server allows 3), sign out and in, deleting an account
+    await a.click('[data-tab="you"]'); await a.waitForTimeout(900);
+    check(await a.locator('.acct h2', { hasText: 'Alex' }).count() === 1, 'profile does not show the account name');
+    check((await a.locator('.stat >> nth=0').innerText()).startsWith('1'), 'Last 12 hours is not 1 after one rating');
+    check((await a.locator('.stat >> nth=1').innerText()).startsWith('2'), 'Remaining is not 2 of 3');
+    await a.screenshot({ path: `${out}/c-account.png` });
+    await a.click('[data-tab="deals"]'); await a.click('.dcard.hero'); await a.waitForSelector('#menuBox .dish');
+    await a.waitForTimeout(1500); await a.click('#menuBox .chip:has-text("All")').catch(() => {}); await a.waitForTimeout(600);
+    const rateNth = async (n, v) => { const d = a.locator('#menuBox .dish').nth(n); if (!(await d.locator('.dishbody').count())) await d.locator('.dishhead').click(); await a.locator('#menuBox .dish.open [data-rate="' + v + '"]').click(); await a.waitForTimeout(500); };
+    const unrated = await a.evaluate(() => [...document.querySelectorAll('#menuBox .dish')].map((d, i) => [i, d.querySelector('.dishhead').innerText]).filter((x) => /^Rate$/.test(x[1].trim())).map((x) => x[0]).slice(0, 3));
+    await rateNth(unrated[0], 7); await rateNth(unrated[1], 8);
+    await rateNth(unrated[2], 9); await a.waitForTimeout(700);
+    check(await a.locator('.toast', { hasText: 'used your ratings' }).count() === 1, 'fourth new rating in 12 hours was not refused');
+    check(/^Close$|^Rate$/.test((await a.locator('#menuBox .dish').nth(unrated[2]).locator('.dishhead').innerText()).trim()) && (await a.locator('#menuBox .dish').nth(unrated[2]).locator('.tens .mine').count()) === 0, 'refused rating still shows as given');
+    await a.waitForTimeout(2900); // let the refusal message clear
+    await rateNth(unrated[0], 6); await a.waitForTimeout(700);
+    check(await a.locator('.toast', { hasText: 'used your ratings' }).count() === 0, 'changing an existing rating was blocked by the limit');
+    await a.click('.x'); await a.click('[data-tab="you"]'); await a.waitForTimeout(900);
+    check((await a.locator('.stat >> nth=1').innerText()).startsWith('0'), 'Remaining is not 0 after using all votes');
+    await a.click('#signOut'); await a.waitForTimeout(500);
+    check(await a.locator('.acct [data-auth="up"]').count() === 1, 'sign out did not return to the join card');
+    await a.click('.acct [data-auth="in"]'); await a.fill('#auEmail', 'alex@test.dev'); await a.fill('#auPass', 'wrongpass1'); await a.click('#auGo'); await a.waitForSelector('.autherr');
+    check(await a.locator('.autherr', { hasText: 'do not match' }).count() === 1, 'wrong password has no friendly message');
+    await a.fill('#auPass', 'password1'); await a.click('#auGo'); await a.waitForSelector('.acct h2:has-text("Alex")');
+    check((await a.locator('.stat >> nth=3').innerText()).startsWith('3'), 'ratings did not come back after signing in again');
+    await a.click('[data-auth="del"]'); await a.fill('#auConfirm', 'DELETE'); await a.click('#auGo'); await a.waitForSelector('.autherr');
+    check(await a.locator('.autherr', { hasText: 'only admin' }).count() === 1, 'the last admin was allowed to delete their account');
+    await a.click('.x');
+    await b.click('[data-tab="you"]'); await b.waitForTimeout(700);
+    await b.click('[data-auth="del"]'); await b.fill('#auConfirm', 'nope'); await b.click('#auGo');
+    check(await b.locator('.autherr', { hasText: 'Type DELETE' }).count() === 1, 'account deletion did not require typing DELETE');
+    await b.fill('#auConfirm', 'DELETE'); await b.click('#auGo'); await b.waitForSelector('.acct [data-auth="up"]');
+    await b.click('.acct [data-auth="in"]'); await b.fill('#auEmail', 'blake@test.dev'); await b.fill('#auPass', 'password1'); await b.click('#auGo'); await b.waitForSelector('.autherr');
+    check(await b.locator('.autherr', { hasText: 'do not match' }).count() === 1, 'a deleted account can still sign in');
+    await b.click('#sheetBody [data-auth="up"]'); await b.fill('#auName', 'Casey'); await b.fill('#auEmail', 'casey-verify@test.dev'); await b.fill('#auPass', 'password1'); await b.click('#auGo');
+    await b.waitForSelector('h2:has-text("Verify your email")');
+    await b.screenshot({ path: `${out}/c-verify.png` });
     await a.close(); await b.close();
   }
   console.log('errors', JSON.stringify(errs));

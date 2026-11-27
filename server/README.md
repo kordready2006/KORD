@@ -41,3 +41,18 @@ To take a photo down, set `hidden` to true on its row in the `photos` table.
 Then run `server/photos2.sql`. It adds quality controls: a student photo shows on its dish at once, but only becomes the cover
 picture of a deal or restaurant when you set `featured` to true on its row in `photos`, or two phones tap "Looks right" on it.
 Until it has been run, photos still upload and show on dishes, but none can become a cover picture.
+
+## Accounts
+
+Run `server/accounts.sql` after the photo scripts. Rating, commenting, photos, "Looks right" and reporting then need a signed-in
+account, and the 12-hour rating limit (20 new ratings, the `vote_cap` row in the `settings` table) is enforced in the database.
+
+In Supabase, open Authentication > URL Configuration and set both Site URL and a Redirect URL to the app's address, so the links
+in verification and password-reset emails open the app. Supabase's built-in email sender only sends a few emails an hour; add your
+own SMTP provider under Authentication > Emails before launch.
+
+To make an account an admin (after it has signed up):
+
+    update profiles set is_admin = true where id = (select id from auth.users where email = 'you@example.com');
+
+`tools/demo_votes.py` used the old device-based functions and no longer works once `accounts.sql` has been run.

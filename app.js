@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261127-212358';
+window.KORD_BUILD = '20261127-220816';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -27,11 +27,144 @@ window.KORD_BUILD = '20261127-212358';
   /* Shared server (Supabase REST). Phones read two summary views and call three functions; see server/schema.sql. */
   function api(path, body) {
     if (!SERVER) return Promise.reject(new Error('no server'));
-    var h = { apikey: SERVER.key, Authorization: 'Bearer ' + SERVER.key };
-    if (body) h['Content-Type'] = 'application/json';
-    return fetch(SERVER.url + '/rest/v1/' + path, { method: body ? 'POST' : 'GET', headers: h, body: body ? JSON.stringify(body) : undefined }).then(function (r) {
+    return fresh().then(function (tok) {
+      var h = { apikey: SERVER.key, Authorization: 'Bearer ' + (tok || SERVER.key) };
+      if (body) h['Content-Type'] = 'application/json';
+      return fetch(SERVER.url + '/rest/v1/' + path, { method: body ? 'POST' : 'GET', headers: h, body: body ? JSON.stringify(body) : undefined });
+    }).then(function (r) {
       return r.text().then(function (t) { if (!r.ok) throw new Error(t || r.status); return t ? JSON.parse(t) : null; });
     });
+  }
+  /* ---- Accounts (Supabase Auth, email and password). AUTH holds the session; ME the profile; VOTES the 12-hour tally. ---- */
+  var AUTH = load('kord.auth', null), ME = null, VOTES = null, REFRESHING = null;
+  if (AUTH && !(AUTH.access_token && AUTH.user)) AUTH = null;
+  function authCall(path, body, method, token) {
+    return fetch(SERVER.url + '/auth/v1/' + path, { method: method || 'POST', headers: { apikey: SERVER.key, Authorization: 'Bearer ' + (token || SERVER.key), 'Content-Type': 'application/json' }, body: body ? JSON.stringify(body) : undefined })
+      .then(function (r) { return r.text().then(function (t) { var j = {}; try { j = t ? JSON.parse(t) : {}; } catch (e) {} if (!r.ok) { var er = new Error(j.msg || j.error_description || j.message || j.error || String(r.status)); er.code = j.error_code || j.code || ''; throw er; } return j; }); });
+  }
+  function setSession(j) {
+    AUTH = { access_token: j.access_token, refresh_token: j.refresh_token, expires_at: Math.floor(Date.now() / 1000) + (+j.expires_in || 3600), user: { id: j.user.id, email: j.user.email } };
+    save('kord.auth', AUTH);
+  }
+  function dropSession() { AUTH = null; ME = null; VOTES = null; try { localStorage.removeItem('kord.auth'); } catch (e) {} U.items = {}; save('kord.user', U); }
+  /* A token that is still good, refreshing it first when it is about to run out. Resolves to '' when signed out. */
+  function fresh() {
+    if (!AUTH || !SERVER) return Promise.resolve('');
+    if (AUTH.expires_at - 60 > Date.now() / 1000) return Promise.resolve(AUTH.access_token);
+    if (!REFRESHING) REFRESHING = authCall('token?grant_type=refresh_token', { refresh_token: AUTH.refresh_token }).then(setSession, function (e) { if (!/fetch|network/i.test(e.message)) dropSession(); })
+      .then(function () { REFRESHING = null; return AUTH ? AUTH.access_token : ''; });
+    return REFRESHING;
+  }
+  function authMsg(e) {
+    var m = String(e && e.message || ''), c = String(e && e.code || '');
+    if (/invalid login|invalid_credentials/i.test(m + c)) return 'That email and password do not match. Try again or reset your password.';
+    if (/not confirmed/i.test(m + c)) return 'Verify your email first: open the link we sent you, then sign in.';
+    if (/already registered|user_already_exists/i.test(m + c)) return 'That email already has an account. Sign in instead.';
+    if (/rate limit|too many|over_email/i.test(m + c)) return 'Too many tries. Wait a few minutes and try again.';
+    if (/password/i.test(m) && /least|short|weak/i.test(m)) return 'Use a password with at least 8 characters.';
+    if (/same.*password|different from the old/i.test(m)) return 'Pick a password you have not used here before.';
+    if (/valid email|invalid.*email|email_address_invalid/i.test(m + c)) return 'That does not look like an email address.';
+    if (/fetch|network/i.test(m)) return 'No connection. Check your internet and try again.';
+    return 'Something went wrong. Please try again.';
+  }
+  function loadMe(then) {
+    if (!SERVER || !AUTH) { if (then) then(); return; }
+    Promise.all([api('rpc/my_profile', {}), api('rpc/my_votes', {}), api('rpc/my_ratings', {})]).then(function (r) {
+      ME = r[0] || { username: 'Student' }; VOTES = r[1] || null;
+      U.items = {}; (r[2] || []).forEach(function (x) { (U.items[x.place_id] = U.items[x.place_id] || {})[x.dish] = +x.stars; });
+      U.name = ME.username; save('kord.user', U);
+    }).catch(function () {}).then(function () { if (then) then(); });
+  }
+  function loadVotes(then) { if (!SERVER || !AUTH) return; api('rpc/my_votes', {}).then(function (v) { VOTES = v; if (then) then(); }).catch(function () {}); }
+  /* Rating, commenting and photos need an account once the shared server is on. Returns true when it had to ask. */
+  function needAccount(what) {
+    if (!SERVER || AUTH) return false;
+    authSheet('up', 'Create a free account to ' + what + '. One account, one vote per dish.');
+    return true;
+  }
+  function authSheet(mode, note, err) {
+    if (S.open) S.back = { id: S.open, item: S.item, sec: S.sec };
+    clearInterval(POLL); S.open = null; S.auth = mode;
+    var T = { up: ['Become a member', 'Join KORD'], 'in': ['Members', 'Sign in'], forgot: ['Members', 'Forgot password'], newpass: ['Members', 'Set a new password'], sent: ['Check your email', 'Verify your email'], del: ['Danger zone', 'Delete your account'] }[mode];
+    var h = '<div><span class="kick rust">' + T[0] + '</span><h2 style="margin-top:6px">' + T[1] + '</h2>' + (note ? '<p class="sub" style="margin-top:8px">' + esc(note) + '</p>' : '') + '</div>';
+    if (err) h += '<p class="autherr" role="alert">' + esc(err) + '</p>';
+    var email = '<label class="field" for="auEmail">Email<input id="auEmail" type="email" autocomplete="email" inputmode="email" autocapitalize="none" value="' + esc(S.authEmail || '') + '"></label>';
+    if (mode === 'up') h += '<label class="field" for="auName">Display name<input id="auName" type="text" maxlength="30" autocomplete="nickname" value="' + esc(S.authName || '') + '"></label>' + email +
+      '<label class="field" for="auPass">Password<input id="auPass" type="password" autocomplete="new-password" minlength="8"></label><p class="note">Use at least 8 characters.</p>' +
+      '<button class="btn bigbtn" id="auGo">Create account</button><p class="sub" style="text-align:center">Already have an account? <button class="lnk" data-auth="in">Sign in</button></p>' +
+      '<p class="note" style="text-align:center">By creating an account you agree to our <a target="_blank" rel="noopener" href="terms.html">Terms</a> and <a target="_blank" rel="noopener" href="privacy.html">Privacy Policy</a>.</p>';
+    else if (mode === 'in') h += email + '<label class="field" for="auPass">Password<input id="auPass" type="password" autocomplete="current-password"></label>' +
+      '<button class="btn bigbtn" id="auGo">Sign in</button><p class="sub" style="text-align:center"><button class="lnk" data-auth="forgot">Forgot your password?</button></p>' +
+      '<p class="sub" style="text-align:center">New here? <button class="lnk" data-auth="up">Create an account</button></p>';
+    else if (mode === 'forgot') h += '<p class="sub">Enter your email and we will send you a link to reset your password.</p>' + email + '<button class="btn bigbtn" id="auGo">Send reset link</button><p class="sub" style="text-align:center">Remember it? <button class="lnk" data-auth="in">Sign in</button></p>';
+    else if (mode === 'newpass') h += '<label class="field" for="auPass">New password<input id="auPass" type="password" autocomplete="new-password" minlength="8"></label><p class="note">Use at least 8 characters.</p><button class="btn bigbtn" id="auGo">Save new password</button>';
+    else if (mode === 'sent') h += '<button class="btn bigbtn" data-auth="in">Go to sign in</button>';
+    else if (mode === 'del') h += '<p class="sub">This permanently removes your account, your ratings, your comments and your photos. It cannot be undone.</p><label class="field" for="auConfirm">Type DELETE to confirm<input id="auConfirm" type="text" autocapitalize="characters" autocomplete="off"></label><button class="btn bigbtn" id="auGo" style="background:var(--hot);color:#fff">Delete my account for good</button>';
+    document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="' + T[1] + '"><div class="sheethead"><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody authbody" id="sheetBody">' + h + '</div></div></div>';
+    var first = document.querySelector('#sheetBody input'); if (first && !('ontouchstart' in window)) first.focus();
+  }
+  function authDone(msg) {
+    var back = S.back; S.back = null; S.auth = null; document.getElementById('sheetRoot').innerHTML = '';
+    loadMe(function () {
+      render(); if (msg) toast(msg);
+      if (back && SPOTS[back.id]) { spotSheet(back.id); S.item = back.item; S.sec = back.sec || 'All'; fillMenu(back.id); var mb = document.querySelector('#menuBox .dish.open'); if (mb) mb.scrollIntoView({ block: 'center' }); }
+    });
+  }
+  function authGo() {
+    var mode = S.auth, btn = document.getElementById('auGo'), val = function (id) { var el = document.getElementById(id); return el ? el.value : ''; };
+    var email = val('auEmail').trim(), pass = val('auPass'), name = val('auName').trim(), here = location.origin + location.pathname;
+    S.authEmail = email; S.authName = name;
+    function fail(m) { authSheet(mode, '', m); }
+    if (mode === 'del') {
+      if (val('auConfirm').trim() !== 'DELETE') return fail('Type DELETE in capital letters to confirm.');
+      btn.disabled = true; btn.textContent = 'Deleting…';
+      return api('rpc/my_photo_paths', {}).then(function (paths) {
+        if (!paths || !paths.length) return;
+        return fresh().then(function (tok) { return fetch(SERVER.url + '/storage/v1/object/dish-photos', { method: 'DELETE', headers: { apikey: SERVER.key, Authorization: 'Bearer ' + tok, 'Content-Type': 'application/json' }, body: JSON.stringify({ prefixes: paths }) }); });
+      }).then(function () { return api('rpc/delete_account', {}); }).then(function () {
+        dropSession(); U.name = ''; U.comments = {}; save('kord.user', U); S.auth = null; document.getElementById('sheetRoot').innerHTML = ''; render(); toast('Your account has been deleted.');
+      }).catch(function (e) { fail(/last admin/.test(e.message) ? 'You are the only admin. Make someone else an admin before deleting this account.' : 'Could not delete the account. Please try again.'); });
+    }
+    if (mode !== 'newpass' && !/^\S+@\S+\.\S+$/.test(email)) return fail('Enter your email address.');
+    if ((mode === 'up' || mode === 'newpass') && pass.length < 8) return fail('Use a password with at least 8 characters.');
+    if (mode === 'in' && !pass) return fail('Enter your password.');
+    if (mode === 'up' && !/^[A-Za-z0-9_ .-]{2,30}$/.test(name)) return fail('Pick a display name of 2 to 30 letters or numbers.');
+    btn.disabled = true; btn.textContent = 'One moment…';
+    if (mode === 'up') return api('rpc/username_taken', { p_username: name }).then(function (taken) {
+      if (taken) { fail('That display name is taken. Try another.'); return; }
+      return authCall('signup?redirect_to=' + encodeURIComponent(here), { email: email, password: pass, data: { username: name } }).then(function (j) {
+        if (j.access_token) { setSession(j); return authDone('Welcome to KORD, ' + name); }
+        authSheet('sent', 'We sent a link to ' + email + '. Open it to verify your email, then sign in. It can take a minute, and it may land in spam.');
+      });
+    }).catch(function (e) { fail(authMsg(e)); });
+    if (mode === 'in') return authCall('token?grant_type=password', { email: email, password: pass }).then(function (j) { setSession(j); authDone('Signed in'); }).catch(function (e) { fail(authMsg(e)); });
+    if (mode === 'forgot') return authCall('recover?redirect_to=' + encodeURIComponent(here), { email: email }).then(function () {
+      authSheet('sent', 'If ' + email + ' has an account, a reset link is on its way. Open it on this phone to choose a new password.');
+    }).catch(function (e) { fail(authMsg(e)); });
+    if (mode === 'newpass') return fresh().then(function (tok) { return authCall('user', { password: pass }, 'PUT', tok); }).then(function () { authDone('Password changed. You are signed in.'); }).catch(function (e) { fail(authMsg(e)); });
+  }
+  /* Links in the verification and reset emails come back here with the session, or an error, after the # in the address. */
+  function authFromLink() {
+    var h = (location.hash || '').slice(1); if (!/access_token=|error=/.test(h)) return false;
+    var q = {}; h.split('&').forEach(function (kv) { var i = kv.indexOf('='); if (i > 0) q[kv.slice(0, i)] = decodeURIComponent(kv.slice(i + 1).replace(/\+/g, ' ')); });
+    try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {}
+    if (q.error || !q.access_token) { authSheet('in', '', /expired|invalid|otp/i.test((q.error_code || '') + (q.error_description || '')) ? 'That link is invalid or has expired. Ask for a new one below.' : 'That link did not work. Try again.'); return true; }
+    authCall('user', null, 'GET', q.access_token).then(function (u) {
+      setSession({ access_token: q.access_token, refresh_token: q.refresh_token, expires_in: q.expires_in, user: u });
+      if (q.type === 'recovery') { loadMe(render); authSheet('newpass', 'Choose a new password for ' + u.email + '.'); }
+      else authDone('Email verified. You are signed in.');
+    }).catch(function () { authSheet('in', '', 'That link is invalid or has expired. Ask for a new one below.'); });
+    return true;
+  }
+  function accountHtml() {
+    if (!SERVER) return '';
+    if (!AUTH) return '<div class="acct"><span class="kick rust">Members</span><h2>Join KORD</h2><p class="sub">Create a free account to rate dishes, comment and add photos. One account, one vote per dish.</p><div class="btnrow"><button class="btn" data-auth="up">Create account</button><button class="btn ghost" data-auth="in">Sign in</button></div></div>';
+    var v = VOTES || {}, next = v.next_at && !v.remaining ? new Date(v.next_at).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }) : '';
+    function stat(n, l) { return '<div class="stat"><b>' + (n == null ? '—' : n) + '</b><span>' + l + '</span></div>'; }
+    return '<div class="acct"><span class="kick rust">' + (ME && ME.is_admin ? 'Member · Admin' : 'Member') + '</span><h2>' + esc(ME ? ME.username : 'Your account') + '</h2><p class="sub">' + esc(AUTH.user.email) + '</p>' +
+      '<div class="stats">' + stat(v.used, 'Last 12 hours') + stat(v.remaining, 'Remaining') + stat(v.highest, 'Highest rating given') + stat(v.rated, 'Dishes rated') + '</div>' +
+      '<p class="note">You can rate ' + (v.cap || 20) + ' new dishes every 12 hours. Changing a rating you already gave is free.' + (next ? ' More ratings open up at ' + esc(next) + '.' : '') + '</p>' +
+      '<div class="btnrow"><button class="btn ghost" id="signOut">Sign out</button><button class="lnk" data-auth="del" style="color:var(--muted)">Delete account</button></div></div>';
   }
   function loadScores(then) {
     var t = DATA && town(); if (!SERVER || !t) return;
@@ -383,10 +516,10 @@ window.KORD_BUILD = '20261127-212358';
     var mine = [];
     Object.keys(U.items).forEach(function (id) { if (SPOTS[id]) Object.keys(U.items[id]).forEach(function (k) { mine.push({ sp: SPOTS[id], item: k, r: U.items[id][k] }); }); });
     mine.sort(function (a, b) { return b.r - a.r || a.item.localeCompare(b.item); });
-    var h = rewardsHtml() + '<div class="sechead"><h2>Your profile</h2></div><div class="me"><span class="avatar">' + (U.avatar ? '<img alt="" src="' + esc(U.avatar) + '">' : esc(U.name ? initials(U.name) : '?')) + '</span>' +
+    var h = accountHtml() + rewardsHtml() + '<div class="sechead"><h2>Your profile</h2></div><div class="me"><span class="avatar">' + (U.avatar ? '<img alt="" src="' + esc(U.avatar) + '">' : esc(U.name ? initials(U.name) : '?')) + '</span>' +
       '<div><h2>' + esc(U.name || 'Your profile') + '</h2><p class="sub">' + esc(town().school.name) + '</p>' +
       '<div class="btnrow" style="margin-top:8px"><label class="btn ghost" for="avatarFile">Add a photo</label><input id="avatarFile" type="file" accept="image/*" hidden></div></div></div>' +
-      '<label class="field" for="nameIn">Your name<input id="nameIn" type="text" maxlength="30" autocomplete="nickname" placeholder="What should we call you?" value="' + esc(U.name) + '"></label>' +
+      (SERVER ? '' : '<label class="field" for="nameIn">Your name<input id="nameIn" type="text" maxlength="30" autocomplete="nickname" placeholder="What should we call you?" value="' + esc(U.name) + '"></label>') +
       (U.orders.length ? '<div class="sechead"><h2>Your demo orders</h2><span>' + U.orders.length + '</span></div><div class="lines">' + U.orders.slice(0, 8).map(function (o) {
         return '<div class="line"><span class="mid"><b>' + esc(o.name) + '</b><small>' + esc(o.no) + ' · ' + o.lines.reduce(function (a, l) { return a + l.qty; }, 0) + ' items · KORD fee ' + usd(o.fee) + '</small></span><b>' + usd(o.total) + '</b></div>';
       }).join('') + '</div><p class="note">KORD fees across these demo orders: ' + usd(U.orders.reduce(function (a, o) { return a + o.fee; }, 0)) + '</p>' : '') +
@@ -395,7 +528,7 @@ window.KORD_BUILD = '20261127-212358';
       return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + m.r + '</span> / 10</span></button>';
     }).join('') + '</div>' : '<div class="empty"><b>Nothing rated yet</b>Open any place, find what you ordered and tap Rate.</div>';
     h += '<div class="btnrow"><button class="btn ghost" id="creditsBtn">Sources and credits</button><a class="btn ghost" target="_blank" rel="noopener" href="privacy.html">Privacy</a><a class="btn ghost" target="_blank" rel="noopener" href="terms.html">Terms</a></div><p class="note">KORD version ' + esc(window.KORD_BUILD || 'preview') + '</p>';
-    return h + '<p class="note">' + (SERVER ? 'Your ratings, comments and dish photos are shared with other students at your school. Your profile photo stays on this phone.' : 'Your profile and ratings are saved on this phone.') + '</p>';
+    return h + '<p class="note">' + (SERVER ? 'Your ratings, comments and dish photos are shared with other students at your school. Points, badges and your profile photo stay on this phone.' : 'Your profile and ratings are saved on this phone.') + '</p>';
   }
 
   function render() {
@@ -650,15 +783,25 @@ window.KORD_BUILD = '20261127-212358';
   }
 
   document.addEventListener('click', function (e) {
+    if (e.target.closest('#phLabel') && needAccount('add photos')) { e.preventDefault(); return; }
     var t = e.target.closest('button, a, [data-close]'); if (!t) return;
-    if (t.matches('[data-close]') && (e.target === t || t.classList.contains('x'))) { closeSheet(); return render(); }
+    if (t.matches('[data-close]') && (e.target === t || t.classList.contains('x'))) { S.auth = null; S.back = null; closeSheet(); return render(); }
     if (t.dataset.order && SERVER) api('rpc/log_order', { p_device: U.device, p_town: S.town, p_place: t.dataset.order }).catch(function () {});
+    if (t.dataset.auth) return authSheet(t.dataset.auth);
+    if (t.id === 'auGo') return authGo();
+    if (t.id === 'signOut') { fresh().then(function (tok) { if (tok) authCall('logout', null, 'POST', tok).catch(function () {}); dropSession(); render(); toast('Signed out'); }); return; }
     if (t.dataset.rate) {
-      var id = t.dataset.id, it = t.dataset.item, n = +t.dataset.rate; U.items[id] = U.items[id] || {};
+      if (needAccount('rate dishes')) return;
+      var id = t.dataset.id, it = t.dataset.item, n = +t.dataset.rate, was = (U.items[id] || {})[it] || 0; U.items[id] = U.items[id] || {};
       if (U.items[id][it] === n) { delete U.items[id][it]; n = 0; } else { U.items[id][it] = n; if (!U.awarded['r|' + id + '|' + it]) U.stats.ratings++; award(10, 'Rated ' + it, 'r|' + id + '|' + it); }
       if (!Object.keys(U.items[id]).length) delete U.items[id];
       save('kord.user', U); fillMenu(id);
-      if (SERVER) api('rpc/rate_dish', { p_device: U.device, p_town: S.town, p_place: id, p_dish: it, p_stars: n }).then(function () { loadScores(function () { softFill(id); }); }).catch(function () {});
+      if (SERVER) api('rpc/rate_dish', { p_town: S.town, p_place: id, p_dish: it, p_stars: n }).then(function () { loadVotes(); loadScores(function () { softFill(id); }); }).catch(function (e) {
+        /* the server said no: put the screen back the way it was */
+        if (was) { (U.items[id] = U.items[id] || {})[it] = was; } else if (U.items[id]) { delete U.items[id][it]; if (!Object.keys(U.items[id]).length) delete U.items[id]; }
+        save('kord.user', U); if (S.open === id) fillMenu(id);
+        toast(/vote limit/.test(e.message) ? 'You have used your ratings for now. More open up within 12 hours.' : /sign in|JWT/i.test(e.message) ? 'Please sign in again to rate.' : 'Could not save that rating. Try again.');
+      });
       return;
     }
     if (t.dataset.perk) {
@@ -667,16 +810,18 @@ window.KORD_BUILD = '20261127-212358';
       return render();
     }
     if (t.dataset.like) {
+      if (needAccount('vote on photos')) return;
       var lk = 'ph' + t.dataset.like; if (U.liked[lk]) return;
       U.liked[lk] = 1; save('kord.user', U);
       Object.keys(PHOTOS[S.open] || {}).forEach(function (k) { PHOTOS[S.open][k].forEach(function (r) { if (String(r.id) === t.dataset.like) r.likes = (r.likes || 0) + 1; }); });
-      api('rpc/like_photo', { p_device: U.device, p_photo: +t.dataset.like }).catch(function () {});
+      api('rpc/like_photo', { p_photo: +t.dataset.like }).catch(function () {});
       return fillMenu(S.open);
     }
     if (t.dataset.report) {
+      if (needAccount('report things')) return;
       U.reported[t.dataset.report] = 1; save('kord.user', U); toast(/^ph/.test(t.dataset.report) ? 'Reported. You will not see that photo again.' : 'Reported. You will not see that comment again.');
-      if (SERVER && /^ph\d+$/.test(t.dataset.report)) api('rpc/report_photo', { p_device: U.device, p_photo: +t.dataset.report.slice(2) }).catch(function () {});
-      if (SERVER && /^id\d+$/.test(t.dataset.report)) api('rpc/report_comment', { p_device: U.device, p_comment: +t.dataset.report.slice(2) }).catch(function () {});
+      if (SERVER && /^ph\d+$/.test(t.dataset.report)) api('rpc/report_photo', { p_photo: +t.dataset.report.slice(2) }).catch(function () {});
+      if (SERVER && /^id\d+$/.test(t.dataset.report)) api('rpc/report_comment', { p_comment: +t.dataset.report.slice(2) }).catch(function () {});
       return fillMenu(S.open);
     }
     if (t.id === 'creditsBtn') return creditsSheet();
@@ -701,11 +846,12 @@ window.KORD_BUILD = '20261127-212358';
     if (t.id === 'cmtBtn') {
       var cin = document.getElementById('cmtIn'), body = (cin.value || '').trim(), pid = t.dataset.id, dish = S.item;
       if (!body || !dish) return;
+      if (needAccount('post comments')) return;
       cin.value = '';
       U.stats.comments++; var dk = dayKey(new Date()), slot = !U.awarded['c|' + dk + '|0'] ? 0 : !U.awarded['c|' + dk + '|1'] ? 1 : 2; award(5, 'Comment posted', 'c|' + dk + '|' + slot);
       if (SERVER) {
-        (CMTS[pid] = CMTS[pid] || []).unshift({ dish: dish, name: U.name || 'Student', body: body, created_at: new Date().toISOString() });
-        api('rpc/add_comment', { p_device: U.device, p_town: S.town, p_place: pid, p_dish: dish, p_name: U.name || 'Student', p_body: body }).then(function () { loadComments(pid); })
+        (CMTS[pid] = CMTS[pid] || []).unshift({ dish: dish, name: (ME && ME.username) || 'Student', body: body, created_at: new Date().toISOString() });
+        api('rpc/add_comment', { p_town: S.town, p_place: pid, p_dish: dish, p_body: body }).then(function () { loadComments(pid); })
           .catch(function () { CMTS[pid].shift(); cin.value = body; paintComments(pid); });
       } else {
         (U.comments[pid] = U.comments[pid] || []).unshift({ dish: dish, name: U.name || 'You', body: body, created_at: new Date().toISOString() });
@@ -731,7 +877,7 @@ window.KORD_BUILD = '20261127-212358';
   document.addEventListener('change', function (e) {
     var t = e.target;
     if (t.id === 'nameIn') render();
-    if (t.id === 'phFile' && t.files && t.files[0] && SERVER) {
+    if (t.id === 'phFile' && t.files && t.files[0] && SERVER && AUTH) {
       var pid = t.dataset.id, dish = t.dataset.dish, lab = document.getElementById('phLabel'), rd = new FileReader();
       var fail = function () { toast('Could not add that photo. Try again.'); if (lab) lab.textContent = 'Add a photo of this'; };
       if (lab) lab.textContent = 'Uploading…';
@@ -743,9 +889,9 @@ window.KORD_BUILD = '20261127-212358';
         c.toBlob(function (blob) {
           if (!blob) return fail();
           var id4 = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-8xxx-xxxxxxxxxxxx'.replace(/x/g, function () { return (Math.random() * 16 | 0).toString(16); });
-          var path = U.device + '/' + id4 + '.jpg';
-          fetch(SERVER.url + '/storage/v1/object/dish-photos/' + path, { method: 'POST', headers: { apikey: SERVER.key, Authorization: 'Bearer ' + SERVER.key, 'Content-Type': 'image/jpeg' }, body: blob })
-            .then(function (r) { if (!r.ok) throw new Error(r.status); return api('rpc/add_photo', { p_device: U.device, p_town: S.town, p_place: pid, p_dish: dish, p_path: path }); })
+          var path = AUTH.user.id + '/' + id4 + '.jpg';
+          fresh().then(function (tok) { return fetch(SERVER.url + '/storage/v1/object/dish-photos/' + path, { method: 'POST', headers: { apikey: SERVER.key, Authorization: 'Bearer ' + tok, 'Content-Type': 'image/jpeg' }, body: blob }); })
+            .then(function (r) { if (!r.ok) throw new Error(r.status); return api('rpc/add_photo', { p_town: S.town, p_place: pid, p_dish: dish, p_path: path }); })
             .then(function () { U.stats.photos = (U.stats.photos || 0) + 1; award(10, 'Photo added', 'p|' + pid + '|' + dish); loadPhotos(function () { if (S.open === pid) fillMenu(pid); }); })
             .catch(fail);
         }, 'image/jpeg', 0.82);
@@ -762,7 +908,7 @@ window.KORD_BUILD = '20261127-212358';
       fr.readAsDataURL(t.files[0]);
     }
   });
-  document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { closeSheet(); if (DATA) render(); } });
+  document.addEventListener('keydown', function (e) { if (e.key === 'Enter' && S.auth && e.target.closest && e.target.closest('.authbody') && document.getElementById('auGo')) { e.preventDefault(); return authGo(); } if (e.key === 'Escape') { closeSheet(); if (DATA) render(); } });
 
   /* Self-update: if a newer build is live than the one running, drop saved copies and reload once. */
   if (window.KORD_BUILD) fetch('version.json?t=' + Date.now(), { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (v) {
@@ -779,8 +925,10 @@ window.KORD_BUILD = '20261127-212358';
     var dev = /[?&]server=(http[^&]+)/.exec(location.search); if (dev && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) SERVER = { url: decodeURIComponent(dev[1]), key: 'dev' };
     d.towns.forEach(function (t) { t.spots.forEach(function (s) { SPOTS[s.id] = s; }); });
     var h = (location.hash || '').slice(1); if (['deals', 'places', 'best', 'you'].indexOf(h) >= 0) S.tab = h;
+    if (!SERVER) AUTH = null;
     render();
     checkIn(); renderHeadPts();
+    if (SERVER && !authFromLink()) loadMe(function () { if (!S.open && !S.auth) render(); });
     loadScores(function () { if (!S.open) render(); });
   }).catch(function () {
     document.getElementById('view').innerHTML = '<div class="empty"><b>Could not load the deals</b>Check your connection and reopen KORD.</div>';

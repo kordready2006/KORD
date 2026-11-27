@@ -30,13 +30,14 @@ a { color: #2F4BFF; } .draft { background: #FFC91F; padding: 10px 14px; border-r
 <li>your star ratings for dishes;</li>
 <li>photos of dishes you choose to add (they are shrunk on your phone first, which removes location data), stored in Supabase file storage;</li>
 <li>the comments you post, with the name you entered (or "Student" if you entered none);</li>
-<li>a random ID created on your device, used to keep one rating per dish per device and to limit spam;</li>
+<li>your account: the email address, display name and password you sign up with. Sign-in is handled by Supabase Auth; your password is stored only in hashed form and KORD cannot read it;</li>
+<li>your account ID, used to keep one rating per dish per account and to enforce the 12-hour rating limit;</li>
 <li>a count of taps on a restaurant's Order or Website button.</li>
 </ul>
 <p>Comments and dish photos are public to everyone using KORD at your school. Do not put private information in a comment or a photo, and do not post photos of people. Your profile photo is never uploaded.</p>
 
 <h2>What KORD does not collect</h2>
-<p>KORD does not ask for your email, phone number, student ID, precise location or payment details. Ordering in the current version is a demonstration only: no payment is taken and no order is sent to a restaurant.</p>
+<p>Browsing needs no account. KORD does not ask for your phone number, student ID, precise location or payment details. Your email is used only to sign you in, verify your account and reset your password. Ordering in the current version is a demonstration only: no payment is taken and no order is sent to a restaurant.</p>
 
 <h2>Other services</h2>
 <p>The app loads fonts from Google Fonts, which receives your IP address when the fonts are requested. Links to restaurant websites and maps open those sites, which have their own privacy policies. KORD adds "utm_source=kord" to links so a restaurant can see that a visit came from KORD.</p>
@@ -45,7 +46,7 @@ a { color: #2F4BFF; } .draft { background: #FFC91F; padding: 10px 14px; border-r
 <p>KORD is meant for college students and is not directed at children under 13.</p>
 
 <h2>Removing your data</h2>
-<p>Clear the app's data on your device to remove everything stored there. To have a rating, comment or photo removed from the shared server, email us with the restaurant, dish and the text of the comment.</p>
+<p>Clear the app's data on your device to remove everything stored there. You can delete your account at any time from the You tab; this permanently removes your login, ratings, comments and photos from the shared server. To have a single rating, comment or photo removed from the shared server, email us with the restaurant, dish and the text of the comment.</p>
 
 <h2>Contact</h2>
 <p>kordready2006@gmail.com</p>
