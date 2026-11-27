@@ -36,7 +36,8 @@
    "Influence Tiramisu Affogato": "Classic tiramisu with an affogato twist.",
    "Pure Chocolate Balance": "Rich chocolate dessert crafted for balance.",
    "Pistachio Milk Cake": "Moist milk cake layered with pistachio cream.",
-   "Biscoff Lotus Milk Cake": "Moist milk cake layered with Biscoff Lotus cream."
+   "Biscoff Lotus Milk Cake": "Moist milk cake layered with Biscoff Lotus cream.",
+   "Traditional Honeycomb": "Pull-apart bread filled with cream cheese and honey."
   }
  },
  "toledo|The Adams Street Cafe": {
@@ -72,11 +73,7 @@
    "Brisket Chili": "Topped with cheddar cheese and scallions. Crackers served on the side.",
    "Quinoa and Chickpea Patty Salad": "Asparagus, corn, tomato, radish, cucumber, basil dressing",
    "Smoked Beef Salad": "Tomato, pepper, onion, radish, crouton, parmesan dressing",
-   "Turkey and Dumplings": "Creamy smoked turkey chunks with home made dumplings",
-   "Buttered French Fries": "Gluten free",
-   "Kale Slaw": "Gluten free",
-   "Greens Salad": "Gluten free",
-   "Bottled Root Beer": "© 2019 The Adams Street Cafe"
+   "Turkey and Dumplings": "Creamy smoked turkey chunks with home made dumplings"
   }
  },
  "toledo|Al Smith's Place": {
@@ -109,8 +106,9 @@
    "Wings": "Six wings served with one side sauce of choice",
    "Japanese Potato Salad": "Potato / onion / egg / carrot / cucumber / Kewpie mayo",
    "Coleslaw": "Cabbage / carrots / green onion / Kewpie mayo",
-   "Kimchi": "Kewpie Mayo",
-   "Mochi Ice Cream": "Chewy rice dough wrapped around creamy ice cream. Two per order; choice of strawberry, vanilla, or one of each."
+   "Mochi Ice Cream": "Chewy rice dough wrapped around creamy ice cream. Two per order; choice of strawberry, vanilla, or one of each.",
+   "Chicken Sandwich": "Chicken thigh, house-made pickles, coleslaw or kimchi topper, choice of sauce, potato bun.",
+   "Karaage Donburi": "Karaage chunks and cooked white onion tossed in a sweet and savory sauce, served over a bed of rice topped with pickled ginger"
   }
  },
  "toledo|Black Kite Coffee": {
@@ -133,23 +131,21 @@
    "Bagel Ball": "Bagel stuffed with cream cheese, roasted red peppers & scallions",
    "Cheesecake Cinnamon Roll": "House-made cinnamon roll filled with cheesecake, topped with generous icing and seasonal sprinkles",
    "Breakfast Bar": "House-made with oats, almonds, dried cherries, chocolate chips, and brown sugar, a delicious breakfast or afternoon snack.",
-   "Cookies": "Chocolate chip & peanut butter baked fresh daily"
+   "Cookies": "Chocolate chip & peanut butter baked fresh daily",
+   "Sweet Corn": "Sweet corn + honey"
   }
  },
  "toledo|Sidelines Sports Eatery & Pub": {
   "source": "https://www.sidelinessportseatery.com/wp-content/uploads/2026/10/SSE-NEW-MENU-w-Bleed-_-260819.pdf",
   "desc": {
    "Famous Fowl Balls": "Lightly dusted fresh all white meat chicken tenderloin chunks lightly hand floured, flash fried and shaken in your choice of sauce",
-   "Garbage Balls": "Bacon / cheddar / mozzarella / tomatoes / jalapeños +2.99",
-   "Pizza Balls": "Pizza sauce / four cheese blend / pepperoni +2.99",
    "Santa Fe Chicken Eggrolls": "Chicken / pepper jack / chili peppers spinach / black beans / corn / cilantro chipotle ranch",
-   "Wings": "Choice of sauce 10 count /",
+   "Wings": "Choice of sauce",
    "Pretzel Bites": "White queso cheese sauce / honey mustard",
    "Hand Dipped Mushrooms": "Breaded mushrooms / fried crispy choice of sauce",
    "Hot Pepper Cheese Balls": "Pepperjack cheese / crispy breading ranch",
    "Queso Nachos": "Tortilla chips / white queso lettuce / tomato / jalapeño salsa / sour cream",
    "Mozzarella Sticks": "Crispy batter /pizza sauce",
-   "Housemade Potato Skins": "CHOOSE TOPPINGS: .99 each • Cheddar • Mushroom • Mozzarella",
    "Beef Queso Dip": "Melted white cheese / seasoned ground beef / tortilla chips",
    "Steak Bites": "1/2 lb. seasoned and seared beef tenderloin tips / sautéed mushrooms & onions / garlic aioli dipping sauce",
    "Everything Pickle Bread": "Thin crust / cream cheese / five cheese blend / kosher pickle chips everything bagel seasoning",
@@ -168,17 +164,18 @@
    "Hot Roast Beef": "Tender chopped beef / sliced white bread / roasted beef gravy",
    "Patty Melt": "Swiss / American sautéed onion grilled marbled rye",
    "Cowboy": "BBQ sauce / bacon cheddar cheese",
-   "Boston’s Best Sandwich": "Discovered on a trip to Boston in 2012, this sandwich is loaded with ﬂavor. Grilled sliced corned beef, pepperjack",
+   "Boston’s Best Sandwich": "Grilled sliced corned beef, pepperjack cheese, Carolina Gold mustard sauce, banana peppers, & coleslaw between grilled marbled rye bread",
    "Sidelines Italian Sub": "Pepperoni / smoked ham / four cheese blend / lettuce / tomato / banana peppers / Italian dressing / oven baked / fresh hoagie roll",
    "Reuben": "Grilled thin sliced corned beef Swiss cheese / sauerkraut 1000 island dressing / grilled marble rye",
    "Perch Sandwich": "Hand breaded fillets / fried fresh American cheese / lettuce artisan bun / side of tartar sauce",
    "Cheese Steak": "Thin sliced sirloin / sautéed onions & mushrooms / Swiss cheese white cheddar cheese sauce / hoagie roll",
    "Carolina Cuban": "Slow roasted pork / smoked ham / sweet & tangy mustard sauce mozzarella cheese / pickle crunchy grilled hoagie roll",
    "Crispy Chicken": "Crispy breaded tenders / pickles ranch or chipotle ranch",
-   "Buffalo Chicken Wrap": "BBQ Pulled Pork Sandwich",
+   "Buffalo Chicken Wrap": "Grilled chicken / lettuce / tomato cheddar cheese / bacon / choice of sauce",
    "French Onion": "Our signature recipe / croutons melted mozzarella cheese",
    "Triple Play Chili": "Ground beef / bacon / pulled pork",
-   "Old Fashioned Chicken Noodle": "Made in house with Polish noodles"
+   "Old Fashioned Chicken Noodle": "Made in house with Polish noodles",
+   "Sidelines Pizza Sub": "Pepperoni / sausage / four cheese blend / pizza sauce / oven baked fresh hoagie roll"
   }
  },
  "toledo|Schmucker's Restaurant": {
@@ -202,7 +199,7 @@
    "Hot Chicken Sandwich": "Pulled chicken between your choice of bread, smothered in our homemade gravy and served with your choice of potatoes",
    "Hamburger": "This patty is made from fresh ground chuck and served nice and juicy on a fresh bun",
    "Cheeseburger": "Our ground chuck patty topped with your choice of American or Swiss cheese",
-   "Gardenburger": "No meat here. Served with lettuce and tomato",
+   "Gardenburger": "Served with lettuce and tomato",
    "Chicken & Biscuits": "Pulled chicken piled over our homemade biscuits and smothered in our homemade gravy",
    "Breaded Veal": "Lightly breaded veal deep-fried to a golden brown",
    "Roast Beef": "Slow-roasted sliced roast beef.",
@@ -213,15 +210,15 @@
    "Fried Shrimp": "Six ounces of delicious shrimp breaded and deep-fried",
    "Breaded Cod": "Flaky cod fillets breaded and fried to a crispy finish",
    "Seafood Platter": "A delightful combination of perch, cod, and shrimp",
-   "Home Style Sausage": "Hand-pattied. A generous portion",
-   "Chopped Sirloin": "SANDWICH PLATTER* 1/3 lb. sirloin topped with lettuce, tomato and mayo and served with fries",
-   "Grilled Ham": "Honey-cured for incredible flavor.",
+   "Home Style Sausage": "Hand-pattied.",
+   "Chopped Sirloin": "1/3 lb. grilled sirloin.",
+   "Grilled Ham": "Honey-cured.",
    "Hamburger Steak": "Nine ounces of tender, juicy ground chuck",
    "Grilled Pork Chops": "Two tender center-cut chops grilled just right",
-   "Porterhouse Steak": "For the steak lover. A 14 oz. USDA choice",
+   "Porterhouse Steak": "A 14 oz. USDA choice Porterhouse steak grilled to your perfect temperature",
    "Grilled Chicken": "Two 6 oz. chicken breasts grilled to perfection",
    "Ball Tip Steak": "The most flavorful cut of steak. A 6 oz. USDA choice ball tip grilled just the way you like it",
-   "Steak & Eggs": "Six ounce USDA choice butterflied",
+   "Steak & Eggs": "Six ounce USDA choice butterflied ball tip steak served with two eggs cooked any style, home fries, toast and Smucker’s jelly",
    "Mini": "One egg, one bacon strip, one slice of toast with Smucker’s jelly",
    "Breakfast Sandwich": "Ham, sausage or bacon, egg and cheese on an English muffin",
    "Corned Beef Hash & Eggs": "Served with toast and Smucker’s jelly",
@@ -236,15 +233,21 @@
    "Ham & Cheese Omelette": "Diced ham and melted cheese",
    "Garden Omelette": "Melted cheese, mushrooms, green peppers, onions and tomatoes",
    "Short Stack Plus": "Two big ones. Served with ham, bacon or sausage",
-   "Hungry Man’s Breakfast": "Made with local, hand dipped",
+   "Hungry Man’s Breakfast": "Two eggs, two bacon strips, two sausage links, two pancakes and home fries",
    "Chef’s Salad": "Ham or turkey atop fresh salad greens with shredded cheddar cheese, onions, tomatoes, a hard-boiled egg and croutons.",
-   "Chef’s Salad with Chicken": "Served with your choice of dressing. A great choice for lunch or dinner",
+   "Chef’s Salad with Chicken": "Grilled, crispy or buffalo chicken atop fresh salad greens with shredded cheddar cheese, onions, tomatoes, a hard-boiled egg and croutons",
    "Tuna or Chicken Salad": "Homemade tuna or chicken salad on a bed of lettuce. Served with sliced tomatoes and crackers",
    "Tossed Salad": "Fresh lettuce, shredded cheddar cheese, tomatoes and croutons. Served with your choice of dressing",
    "Old Fashioned Sodas": "Chocolate, cherry or strawberry",
-   "Sundaes": "Rich vanilla ice cream drizzled with lots of hot fudge or caramel and nuts, topped with a dollop of whipped cream and finished off with a",
+   "Sundaes": "Rich vanilla ice cream drizzled with lots of hot fudge or caramel and nuts, topped with a dollop of whipped cream",
    "Banana Splits": "Three scoops of vanilla ice cream with strawberry, chocolate, and pineapple toppings, nuts, whipped cream, and a cherry",
-   "Malts or Shakes": "Chocolate, vanilla, cherry or strawberry"
+   "Malts or Shakes": "Chocolate, vanilla, cherry or strawberry",
+   "Wimpy Burger Platter": "Two of our handcrafted ground chuck patties loaded with all the fixings and served with fries",
+   "Chopped Sirloin Sandwich Platter": "1/3 lb. sirloin topped with lettuce, tomato and mayo and served with fries",
+   "Biscuits & Sausage Gravy": "Our delicious homemade biscuits smothered with thick sausage gravy",
+   "Cinnamon Raisin French Toast": "Three slices served with bacon, ham or sausage",
+   "Rise & Shine": "Two eggs, two pancakes and two strips of bacon or sausage links",
+   "Meatloaf": "A large portion of our homemade meatloaf."
   }
  },
  "toledo|Balance Pan-Asian Grille": {
@@ -348,7 +351,6 @@
    "Iced Tea By Rishi": "Our pre steeped ice teas. Black contains caffeine, while our elderberry healer is a good caffeine free option.",
    "Glass of Milk": "Your choice of our dairy or dairy free milks served alone.",
    "Lemonade": "House made lemonade. Sweet and sour and great on a warm day.",
-   "OJ (Orange Juice)": "We have orange juice for you also",
    "BREW Palmer": "House made lemonade mixed with your choice of our iced teas.",
    "Cold Brew": "Extra strong iced coffee that is steeped overnight. Feel free to add cream or flavor. We get ours from Ohio local brewer Tap Culture.",
    "Matcha Lemonade": "A finely ground green tea floated on top of our house-made lemonade.",
@@ -377,7 +379,6 @@
    "Birthday Cake Muffin": "Funfetti muffin with some icing on it. A delicious treat to go with your coffee or drink. Get it anytime, not just your birthday.",
    "Croissant Egg, Cheese Breakfast Sandwich": "Local croissants used to make a tasty fried egg sandwich with a slice of cheddar cheese",
    "Croissant Sausage, Egg, Cheese Breakfast Sandwich": "Local croissants used to make a tasty pork sausage and fried egg sandwich with a slice of cheddar cheese",
-   "Fruit and Cheese Charcuterie Box by Graze Station": "OHy Sparkling Water",
    "Cinnamon Rolls (Sur Le Pouce)": "Cinnamon rolls by Sur Le Pouce, with a sweet vanilla glaze.",
    "Pound Cake (Sad Snacks) - rotating flavor": "Seasonal pound cake by the slice, made by Sad Snacks.",
    "Coffee Cake (Sur Le Pouce) - morning cake": "Dubbed by SLP as \"morning cake\" this coffee cake pairs great with any of our coffees or teas as a breakfast or snack.",
@@ -432,8 +433,7 @@
    "Chicken Avacado Quesadilla": "Seasoned chicken, bacon, avocado ranch, cheddar cheese between 2 flour tortillas. Served with salsa.",
    "Fajita Tacos": "3 seasoned grilled chicken tacos topped with sautéed onions and peppers, finished with creamy blanco queso and shredded cheese.",
    "10 Chicken Dunks": "Served with your choice of sauce.",
-   "Jumbo Chicken Wings": "Served with your choice of sauce.",
-   "Mac n’ Cheese": "Mini Corn Dogs"
+   "Jumbo Chicken Wings": "Served with your choice of sauce."
   }
  },
  "toledo|Dave's Cosmic Subs": {
@@ -477,13 +477,13 @@
    "Pot Roast": "Slow roasted and served open face with mashed potatoes topped with gravy served on white bread",
    "Breaded Chicken Strips": "Served with your choice of fries, chips, tater tots or onion rings and coleslaw",
    "Shawarma": "Marinated chicken, char-broiled and served with fattoush salad, rice, hummus and pita",
-   "Spinach Pie": "Three cheeses blended with spinach and nestled between layers of phyllo dough with a",
-   "Deep Dish Quiche": "Ham, broccoli and cheese quiche served with choice of caesar, garden, oriental",
+   "Spinach Pie": "Three cheeses blended with spinach and nestled between layers of phyllo dough with a Greek salad or rice",
+   "Deep Dish Quiche": "Ham, broccoli and cheese quiche served with choice of caesar, garden, oriental, fattoush salad and homemade focaccia bread",
    "Battered Cod": "With fries, coleslaw and tartar sauce",
    "Gyro": "Beef and lamb or chicken served on a pita with lettuce, tomato and onion with homemade gyro sauce. served with fries, onion rings",
    "Warsaw’s Pierogi": "Three potato, cheddar cheese and sour cream pierogi topped with grilled onions and served with a side of sour cream",
    "West Bank": "Two potato latke stuffed with corned beef topped with sour cream or applesauce, served with a pickle spear",
-   "Roasted Onion Dip": "Grilled chicken breast, mixed",
+   "Roasted Onion Dip": "Caramelized onions, sour cream, fresh herbs and garnished with green onion. Served with house made chips",
    "Hummus Platter": "With fresh vegetables and pita",
    "Pretzel Bites": "Dusted with kosher salt and served with nacho cheese",
    "Chicken Quesadilla": "Grilled chicken, melted pepper jack, mozzarella, cheddar cheese,onions and tomatoes.",
@@ -492,16 +492,19 @@
    "Focaccia Chef Salad": "Mixed greens, ham, turkey, mozzarella cheese, shredded cheddar cheese, tomatoes, hard-boiled egg, and choice of dressing",
    "Fattoush Salad": "Mixed greens, cucumbers, onions, tomatoes, green peppers, and parsley with toasted pita. served with our housemade dressing",
    "Greek Salad": "Mixed greens, tomatoes, cucumbers, green peppers, kalamata olives, pepperoncinis and feta cheese. served with greek dressing",
-   "Grilled Buffalo Chicken Salad": "Grilled buffalo chicken, mixed",
-   "Soup of the Day": "Focaccia’s original white chicken chili this hearty, zesty homemade chili is made with fresh white chicken",
+   "Grilled Buffalo Chicken Salad": "Grilled buffalo chicken, mixed greens, bleu cheese crumbles, tomatoes, cucumbers, green peppers and shredded cheddar cheese.",
    "Homemade Chicken Soup": "Served with your choice of matzoh balls or homemade noodles",
-   "Beef Barley": "A hearty bowl of barley soup made with pot roast, beef broth, fresh vegetables and spices"
+   "Beef Barley": "A hearty bowl of barley soup made with pot roast, beef broth, fresh vegetables and spices",
+   "Chicken Fruit Salad": "Grilled chicken breast, mixed greens, red onion, slivered almonds, craisins, feta, fresh fruit and homemade poppyseed dressing",
+   "Chicken Salad or Tuna Salad Platter": "A huge serving of salad with cottage cheese or fruit and fresh homemade focaccia bread",
+   "Garden Salad": "Mixed greens with cucumber, green peppers, tomato, and croutons. Served with your choice of dressing",
+   "Focaccia’s Original White Chicken Chili": "Hearty, zesty homemade chili made with fresh white chicken, white northern beans and fresh vegetables"
   }
  },
  "toledo|Fricker's (Downtown)": {
   "source": "https://www.frickers.com/Menu/wings",
   "desc": {
-   "Frickin' Chicken® Wings": "Original or nakedly (no breading). Nope. And they don't have wings either. We got' em. More than a handful.",
+   "Frickin' Chicken® Wings": "Original or Nakedly (no breading).",
    "\"Boneless\" Frickin' Chicken® Wings": "All the fun of our world famous Frickin' chicken wings without the bone.",
    "Frickin' Chicken® Chunks": "Served with your favorite wing sauce and your choice of dressing.",
    "Frickin'® Shrimp": "Shaken in your favorite sauce and served with your choice of dressing.",
@@ -546,7 +549,6 @@
    "Chicken Fillet Strips": "Served with roll and one side",
    "Beer Battered Fish": "Served with roll and one side",
    "1 LB Porterhouse Steak": "Served with roll and one side",
-   "Beef & Bird": "Substitute Frickin' chicken wings for an additional charge.",
    "Charbroiled Chicken Pizza": "Loaded with melted cheese, banana peppers, served on a BBQ pizza crust",
    "Chicken Bacon Ranch Pizza": "A crispy, flatbread pizza crust with charbroiled chicken, bacon, mozzarella cheese and ranch dressing",
    "Mississippi BBQ Pizza": "Traditional Southern pulled pork served with our signature BBQ sauce, cheddar & mozzarella cheese and banana peppers",
@@ -812,7 +814,7 @@
    "Maumee Bay": "Baby spinach, strawberries, gorgonzola, grilled asparagus and sunflower seeds with strawberry-vanilla vinaigrette",
    "Nicoise": "Seared tuna, sugar peas, roasted beets, kalamata olives, cherry tomatoes",
    "Margherita": "With fresh, local basil",
-   "The Carnegie": "6oz each of housemade smoked pastrami and corned beef, Muenster and stone-ground mustard, pickled green tomatoes, seeded rye. TWO HANDS.",
+   "The Carnegie": "6oz each of housemade smoked pastrami and corned beef, Muenster and stone-ground mustard, pickled green tomatoes, seeded rye.",
    "Reuben": "Corned Beef or Turkey, swiss, sauerkraut, 1000 Island, seeded rye",
    "Rachel": "Pastrami, swiss, coleslaw, 1000 Island, seeded rye",
    "NYC Cheese Steak": "Street vendor style, with caramelized onions, julienned sweet peppers, creamy havarti, on home made hoagie roll and au jus",
@@ -1192,7 +1194,7 @@
    "Salsiccia": "Delicious turkey sausage, onions, eggs & shaved Parmesan.",
    "Shrimpy": "Fresh pizza sauce, fresh mozzarella, shrimp, & zaza sauce",
    "Z Vegan": "(no cheese) fresh pizza sauce, spinach, herb-marinated artichokes, black olives, roma tomatoes & onions.",
-   "Buffalo": "Fresh mozzarella, sun-dried tomatoes, capers",
+   "Buffalo": "Buffalo sauce, grilled chicken, fresh mozzarella, roasted peppers, & Feta cheese",
    "Joey ZaZa Pizza": "Barbeque sauce, turkey ham, pineapple, turkey bacon",
    "Chicken Bacon Ranch": "Chicken, turkey bacon, ranch",
    "Zingaro": "Beef peperoni, sauteed mushrooms, turkey ham, spicy extra virgin olive oil",
@@ -1204,13 +1206,12 @@
    "Beef Shawarma": "Marinated beef with tomatoes, pickles, parsley, onion & tahina sauce",
    "Chicken Tawook": "Marinated char-broiled chicken breast",
    "Vegetarian Plate": "Hummus, falafel, grape leaves, tabouli and tahini sauce served with pita bread",
-   "Beef Lasagna": "Served with garlic bread & side salad or",
+   "Beef Lasagna": "Homemade from scratch. Served with garlic bread & side salad or lentil soup.",
    "Classic Gyro": "Rice, Romaine lettuce, Feta, tomato, parsley, drizzled with Tzatziki sauce",
    "Classic Chicken Shawarma": "Rice, romain lettuce, tomato, parsley, Feta, drizzled with garlic sauce",
    "Classic Falafel": "Rice, cabbage, lettuce, tomato, pickles, parsley, drizzled with tahini sauce",
    "Classic Beef Shawarma": "Rice, Romaine lettuce, red onions, pickles, hummus, parsley, drizzled with tahini sauce",
    "Classic Chicken Tawook": "Rice, Romaine lettuce, Feta, tomato, parsley, drizzled with garlic sauce",
-   "Create Your Own Bowl": "Choose one of the protein gyro, chicken Shawarma, chicken tawook, falafel - double it choose toppings",
    "Fattoush Salad": "Mixture of Romaine lettuce, cucumbers, sumac, pita chips, cabbage, lemon, olive oil, garlic & fresh herbs",
    "Greek Salad": "Lettuce, tomatoes, cucumbers, red onions, topped with Feta cheese, Kalamata olives, pepperocini, tossed in our homemade Greek dressing",
    "Spinach Salad": "Fresh spinach leaves, tomatoes, & Feta cheese, lemon juice, olive oil, salt",
@@ -1221,9 +1222,10 @@
    "Veggie Grape Leaves": "Stuffed with rice, tomatoes, onion and spices",
    "Meat Grape Leaves": "Stuffed with fresh ground beef, rice and spices",
    "Fresh Cut Fries": "Fresh cut potatoes cooked in pure, no-cholesterol, 100% peanut oil",
-   "Lentil Soup": "Big slice whole lasagna serves (10-12)",
+   "Lentil Soup": "Homemade from scratch, red split lentils sautéed with onions, olive oil and ZaZa’s specialty spices.",
    "Pepperoni Garlic Cheesy Bread": "Serviced with homemade tomato sauce",
-   "Garlic Cheesy Bread": "Serviced with homemade tomato sauce"
+   "Garlic Cheesy Bread": "Serviced with homemade tomato sauce",
+   "Pollo Diavolo": "Buffalo sauce, grilled chicken, fresh mozzarella, sun-dried tomatoes, capers"
   }
  }
 }

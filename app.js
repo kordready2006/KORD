@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261127-171131';
+window.KORD_BUILD = '20261127-171917';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
