@@ -458,6 +458,15 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
 .pbig .rm[disabled] { text-decoration: none; cursor: default; }
 .pbig .rm { color: var(--muted); font-size: 12px; font-weight: 600; text-decoration: underline; margin-top: 4px; }
 #phLabel { align-self: flex-start; cursor: pointer; }
+.lead { display: flex; flex-direction: column; align-items: center; gap: 8px; text-align: center; width: 100%; position: relative; background: var(--card); border-top: 3px double var(--ink); border-bottom: 3px double var(--ink); padding: 26px 18px 22px; box-shadow: var(--shadow); }
+.leadno { position: absolute; right: 12px; top: 12px; background: var(--hot); color: #fff; font: 600 10.5px var(--body); letter-spacing: .14em; padding: 4px 8px; border-radius: 4px; }
+.leadname { font: 700 clamp(30px, 9vw, 40px)/1.02 var(--display); letter-spacing: -.02em; text-wrap: balance; }
+.leadrule { display: flex; align-items: center; gap: 12px; width: 100%; margin-top: 8px; }
+.leadrule::before, .leadrule::after { content: ""; flex: 1; border-top: 1px solid var(--ink); }
+.leadidx { font: 700 76px/1 var(--display); color: var(--hot); }
+.leadstats { display: flex; justify-content: space-around; width: 100%; border-top: 1px solid var(--ink); padding-top: 12px; margin-top: 6px; }
+.leadstats > span { display: flex; flex-direction: column; gap: 4px; } .leadstats b { font: 700 22px var(--display); }
+select.search { appearance: auto; }
 .acct { background: var(--card); border: 2px solid var(--ink); border-radius: 8px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; box-shadow: var(--shadow); }
 .acct h2 { font-size: 30px; overflow-wrap: anywhere; }
 .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 3px double var(--ink); border-bottom: 1px solid var(--line); }
@@ -675,7 +684,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
   }
   function loadScores(then) {
     var t = DATA && town(); if (!SERVER || !t) return;
-    loadPhotos(then);
+    loadPhotos(then); loadExtras(then);
     api('dish_scores?select=place_id,dish,avg,n&town=eq.' + encodeURIComponent(t.id)).then(function (rows) {
       t.spots.forEach(function (sp) { delete COMMUNITY[sp.id]; });
       (rows || []).forEach(function (r) { (COMMUNITY[r.place_id] = COMMUNITY[r.place_id] || {})[r.dish] = { avg: +r.avg, n: +r.n }; });
@@ -716,6 +725,27 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     var best = null; Object.keys(PHOTOS[id] || {}).forEach(function (k) { var r = dishCover(id, k); if (r && (!best || (r.featured ? 1 : 0) > (best.featured ? 1 : 0) || likes(r) > likes(best))) best = r; });
     return best ? photoUrl(best.path) : '';
   }
+  var FLAGS = {}, STAND = {}, PERKS = [], MYPERKS = {}, MERCH = [], HAS2 = false;
+  function flag(k) { return FLAGS[k] !== false; }
+  function quiet(pr) { return pr.catch(function () { return null; }); }
+  function loadExtras(then) {
+    var t = DATA && town(); if (!SERVER) return;
+    Promise.all([quiet(api('feature_flags?select=key,label,enabled&order=key.asc')), t ? quiet(api('place_standings?select=place_id,votes,avg,idx&order=idx.desc&town=eq.' + encodeURIComponent(t.id))) : null,
+      quiet(api('perks?select=*&order=votes_required.asc')), quiet(api('merch?select=*&order=sort.asc,id.desc')), AUTH ? quiet(api('rpc/my_perks', {})) : null]).then(function (r) {
+      if (r[0]) { HAS2 = true; FLAGS = {}; r[0].forEach(function (f) { FLAGS[f.key] = f.enabled; }); FLAGS._list = r[0]; }
+      if (r[1] && t) STAND[t.id] = r[1];
+      PERKS = r[2] || []; MERCH = r[3] || []; MYPERKS = {}; (r[4] || []).forEach(function (x) { MYPERKS[x.perk_id] = x; });
+      if (then) then();
+    });
+  }
+  /* KORD Index of a restaurant = the sum of every rating its dishes have received (average rating x number of votes). */
+  function standings(t) {
+    if (SERVER && STAND[t.id]) return STAND[t.id].filter(function (r) { return SPOTS[r.place_id]; }).map(function (r) { return { sp: SPOTS[r.place_id], votes: +r.votes, avg: +r.avg, idx: +r.idx }; });
+    var out = [];
+    t.spots.forEach(function (sp) { var n = 0, sum = 0; ratedItems(sp.id).forEach(function (x) { n += x.n; sum += x.avg * x.n; }); if (n) out.push({ sp: sp, votes: n, avg: sum / n, idx: Math.round(sum) }); });
+    return out.sort(function (a, b) { return b.idx - a.idx || b.avg - a.avg; });
+  }
+  var INDEXHELP = 'The KORD Index is the total of every rating a restaurant\'s dishes have received: its average rating multiplied by its number of votes. A place climbs by being rated well and by being rated often, so one perfect score cannot beat a kitchen that many students love.';
   function myRate(id, item) { return (U.items[id] || {})[item] || 0; }
   function itemScore(id, item) {
     var m = myRate(id, item), c = (COMMUNITY[id] || {})[item];
@@ -947,7 +977,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     function sec(title, sub, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><p class="sub" style="margin-top:-8px">' + sub + '</p><div class="list rail">' + a.map(function (x) { return ticket(x); }).join('') + '</div>' : ''; }
     function tier(lo, hi) { return local.filter(function (x) { var p = priceNum(x.d.price || x.d.title); return p != null && kind(x.d) !== 'off' && p >= lo && p < hi; }); }
     if (top || local.length) {
-      h += (top ? ticket(top, true) : '') +
+      h += (top ? ticket(top, true) : '') + perksHtml(t) +
         sec('Under $5', 'The cheapest eats ' + when + '.', tier(0, 5)) +
         sec('$5 to $8', 'A solid meal without the damage.', tier(5, 8.005)) +
         sec('$8 to $12', 'Bigger plates, still on budget.', tier(8.005, 99)) +
@@ -991,6 +1021,80 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
       '<span class="mid"><h3>' + esc(sp.name) + '</h3><p>' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + (travel(sp) ? ' · ' + travel(sp) : '') + (r ? ' · <span class="score">★ ' + r.toFixed(1) + '</span>' : '') + '</p></span>' +
       '<span class="end">' + (lo != null ? 'from<b>' + money(lo) + '</b>' : n ? '<b>' + n + '</b>deal' + (n > 1 ? 's' : '') : '') + '</span></button>';
   }
+  function perksHtml(t) {
+    if (!SERVER || !flag('perks')) return '';
+    var list = PERKS.filter(function (k) { return (!k.town || k.town === t.id) && (!k.place_id || SPOTS[k.place_id]); }); if (!list.length) return '';
+    var rated = (VOTES && VOTES.rated) || 0;
+    return '<div class="sechead"><h2>Perks</h2><span>' + list.length + '</span></div><p class="sub">Rate dishes to unlock these. Show the screen at the counter to redeem.</p><div class="list">' + list.map(function (k) {
+      var mine = MYPERKS[k.id], need = Math.max(0, k.votes_required - rated), where = k.place_id ? SPOTS[k.place_id].name : 'KORD perk';
+      var btn = mine && mine.redeemed_at ? '<span class="tag">Redeemed</span>' : mine ? '<button class="btn" data-redeem="' + k.id + '">Redeem</button>' :
+        !AUTH ? '<button class="btn ghost" data-auth="up">Join to unlock</button>' : need ? '<span class="tag">Rate ' + need + ' more</span>' : '<button class="btn" data-unlock="' + k.id + '">Unlock</button>';
+      return '<div class="perk"><span class="mid"><b>' + esc(k.title) + '</b><small>' + esc(where) + (k.votes_required ? ' · unlocks at ' + k.votes_required + ' ratings' : '') + (k.ends_at ? ' · ends ' + new Date(k.ends_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : '') + '</small>' + (k.description ? '<small style="display:block;margin-top:4px">' + esc(k.description) + '</small>' : '') +
+        (AUTH && !mine && k.votes_required ? '<span class="bar" style="display:block;margin-top:8px;background:var(--chip)"><i style="width:' + Math.min(100, Math.round(rated / k.votes_required * 100)) + '%"></i></span>' : '') + '</span>' + btn + '</div>';
+    }).join('') + '</div>';
+  }
+  function merchHtml() {
+    if (!SERVER || !HAS2) return '';
+    return '<div class="sechead"><h2>The merch</h2><span>' + (MERCH.length || '') + '</span></div>' + (MERCH.length ? '<div class="list">' + MERCH.map(function (m) {
+      var img = safeUrl(m.image_url), link = safeUrl(m.link_url);
+      return '<div class="perk">' + (img ? '<span class="lg thumb has"><img alt="" loading="lazy" class="cover" src="' + esc(img) + '"></span>' : '') + '<span class="mid"><b>' + esc(m.name) + (m.price ? ' · ' + esc(m.price) : '') + '</b><small>' + esc(m.description) + '</small></span>' +
+        (!m.available ? '<span class="tag">Sold out</span>' : link ? '<a class="btn" target="_blank" rel="noopener" href="' + esc(link) + '">View</a>' : '') + '</div>';
+    }).join('') + '</div>' : '<div class="empty">New merch drops coming soon.</div>');
+  }
+  function infoSheet(kick, title, body) {
+    clearInterval(POLL); S.open = null;
+    document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="' + esc(title) + '"><div class="sheethead"><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody authbody" id="sheetBody"><div><span class="kick rust">' + esc(kick) + '</span><h2 style="margin-top:6px">' + esc(title) + '</h2></div>' + body + '</div></div></div>';
+  }
+  /* ---- Admin dashboard. The buttons only show for admins, and every action is checked again in the database. ---- */
+  var ADM = { tab: 'overview', data: null, edit: null, found: null };
+  function admInput(id, label, val, type, extra) { return '<label class="field" for="' + id + '">' + label + '<input id="' + id + '" type="' + (type || 'text') + '" value="' + esc(val == null ? '' : val) + '" ' + (extra || '') + '></label>'; }
+  function adminSheet(tab) {
+    if (tab) { ADM.tab = tab; ADM.data = null; ADM.edit = null; }
+    var tabs = [['overview', 'Overview'], ['flags', 'Switches'], ['perks', 'Perks'], ['merch', 'Merch'], ['reports', 'Reports'], ['admins', 'Admins']];
+    var h = '<div class="chips">' + tabs.map(function (x) { return '<button class="chip" data-adm="' + x[0] + '" aria-pressed="' + (ADM.tab === x[0]) + '">' + x[1] + '</button>'; }).join('') + '</div><div id="admBody">' + adminBody() + '</div>';
+    infoSheet('Admin', 'Dashboard', h);
+    if (ADM.data == null) {
+      var call = { overview: api('rpc/admin_stats', {}), flags: api('feature_flags?select=key,label,enabled&order=key.asc'), perks: api('rpc/admin_perks', {}), merch: api('merch?select=*&order=sort.asc,id.desc'), reports: api('rpc/admin_reports', {}), admins: api('rpc/admin_log_recent', {}) }[ADM.tab], want = ADM.tab;
+      call.then(function (d) { if (ADM.tab !== want) return; ADM.data = d || []; var b = document.getElementById('admBody'); if (b) b.innerHTML = adminBody(); })
+        .catch(function (e) { var b = document.getElementById('admBody'); if (b) b.innerHTML = '<p class="autherr">' + (/not admin/.test(e.message) ? 'This account is not an admin.' : 'Could not load this. If the stage 2 database script has not been run yet, run it first.') + '</p>'; });
+    }
+  }
+  function adminBody() {
+    var d = ADM.data, e = ADM.edit || {};
+    if (d == null) return '<p class="note">Loading…</p>';
+    function stat(n, l) { return '<div class="stat"><b>' + (n == null ? '—' : n) + '</b><span>' + l + '</span></div>'; }
+    function nm(id) { return SPOTS[id] ? SPOTS[id].name : id; }
+    if (ADM.tab === 'overview') return '<div class="stats">' + stat(d.users, 'Accounts') + stat(d.active_7d, 'Rated in last 7 days') + stat(d.ratings, 'Ratings') + stat(d.ratings_7d, 'New ratings, 7 days') + stat(d.comments, 'Comments') + stat(d.photos, 'Photos') + stat(d.views_30d, 'Restaurant views, 30 days') + stat(d.order_clicks_30d, 'Order clicks, 30 days') + stat(d.perk_unlocks, 'Perks unlocked') + stat(d.perk_redemptions, 'Perks redeemed') + stat(d.open_reports, 'Reported items') + stat(d.vote_cap, 'Ratings per 12 hours') + '</div>' +
+      '<div class="sechead"><h2 style="font-size:20px">Most rated dishes</h2></div><div class="lines">' + ((d.top_dishes || []).map(function (x) { return '<div class="line"><span class="mid"><b>' + esc(x.dish) + '</b><small>' + esc(nm(x.place_id)) + '</small></span><b>' + x.votes + ' · ' + x.avg + '</b></div>'; }).join('') || '<div class="line">Nothing yet</div>') + '</div>' +
+      '<div class="sechead"><h2 style="font-size:20px">Most viewed restaurants</h2></div><div class="lines">' + ((d.top_viewed || []).map(function (x) { return '<div class="line"><span class="mid"><b>' + esc(nm(x.place_id)) + '</b></span><b>' + x.views + '</b></div>'; }).join('') || '<div class="line">Nothing yet</div>') + '</div>' +
+      '<div class="sechead"><h2 style="font-size:20px">Voting limit</h2></div>' + admInput('capIn', 'New ratings allowed per account every 12 hours', d.vote_cap, 'number', 'min="1" max="500"') + '<button class="btn" id="capSave">Save limit</button>';
+    if (ADM.tab === 'flags') return '<p class="sub">Turn a feature off for everyone without an update. Off means the app hides it and the database refuses it.</p><div class="list">' + d.map(function (f) {
+      return '<div class="perk"><span class="mid"><b>' + esc(f.label) + '</b><small>' + (f.key === 'community' || f.key === 'friends' ? 'Not built yet · ' : '') + (f.enabled ? 'On' : 'Off') + '</small></span><button class="btn ' + (f.enabled ? '' : 'ghost') + '" data-flag="' + esc(f.key) + '" data-on="' + (f.enabled ? '0' : '1') + '">' + (f.enabled ? 'Turn off' : 'Turn on') + '</button></div>'; }).join('') + '</div>';
+    if (ADM.tab === 'perks') {
+      var t = town(), towns = '<option value="">Every school</option>' + DATA.towns.map(function (x) { return '<option value="' + esc(x.id) + '"' + (e.town === x.id ? ' selected' : '') + '>' + esc(x.school.name) + '</option>'; }).join('');
+      var places = '<option value="">KORD perk (no restaurant)</option>' + t.spots.filter(function (x) { return x.local; }).map(function (x) { return '<option value="' + esc(x.id) + '"' + (e.place_id === x.id ? ' selected' : '') + '>' + esc(x.name) + '</option>'; }).join('');
+      return '<div class="list">' + (d.map(function (k) { return '<div class="perk"><span class="mid"><b>' + esc(k.title) + '</b><small>' + esc(k.place_id ? nm(k.place_id) : 'KORD perk') + ' · ' + k.votes_required + ' ratings · ' + (k.active ? 'live' : 'off') + (k.ends_at ? ' · ends ' + String(k.ends_at).slice(0, 10) : '') + '</small></span><button class="lnk" data-perkedit="' + k.id + '">Edit</button><button class="lnk" data-perkdel="' + k.id + '" style="color:var(--muted)">Delete</button></div>'; }).join('') || '<div class="empty">No perks yet. Add the first one below.</div>') + '</div>' +
+        '<div class="sechead"><h2 style="font-size:20px">' + (e.id ? 'Edit perk' : 'New perk') + '</h2></div>' + admInput('pkTitle', 'Title', e.title, 'text', 'maxlength="80"') + admInput('pkDesc', 'Description', e.description, 'text', 'maxlength="400"') +
+        '<label class="field" for="pkTown">School<select id="pkTown" class="search">' + towns + '</select></label><label class="field" for="pkPlace">Restaurant at ' + esc(t.school.name) + '<select id="pkPlace" class="search">' + places + '</select></label>' +
+        admInput('pkVotes', 'Ratings needed to unlock', e.votes_required == null ? 5 : e.votes_required, 'number', 'min="0" max="1000"') + admInput('pkEnds', 'Ends on (leave empty for no end)', e.ends_at ? String(e.ends_at).slice(0, 10) : '', 'date') +
+        '<label class="field" style="flex-direction:row;align-items:center;gap:8px"><input id="pkActive" type="checkbox" style="width:auto"' + (e.active === false ? '' : ' checked') + '> Live now</label><div class="btnrow"><button class="btn" id="perkSave">Save perk</button>' + (e.id ? '<button class="btn ghost" data-adm="perks">Cancel</button>' : '') + '</div>';
+    }
+    if (ADM.tab === 'merch') return '<div class="list">' + (d.map(function (m) { return '<div class="perk"><span class="mid"><b>' + esc(m.name) + (m.price ? ' · ' + esc(m.price) : '') + '</b><small>' + (m.available ? 'Available' : 'Sold out') + '</small></span><button class="lnk" data-merchedit="' + m.id + '">Edit</button><button class="lnk" data-merchdel="' + m.id + '" style="color:var(--muted)">Delete</button></div>'; }).join('') || '<div class="empty">No merch yet. Add the first item below.</div>') + '</div>' +
+      '<div class="sechead"><h2 style="font-size:20px">' + (e.id ? 'Edit item' : 'New item') + '</h2></div>' + admInput('mcName', 'Name', e.name, 'text', 'maxlength="80"') + admInput('mcPrice', 'Price (for example $25)', e.price, 'text', 'maxlength="20"') + admInput('mcDesc', 'Description', e.description, 'text', 'maxlength="400"') +
+      admInput('mcImg', 'Picture link (https://…)', e.image_url, 'url') + admInput('mcLink', 'Where to buy it (https://…)', e.link_url, 'url') +
+      '<label class="field" style="flex-direction:row;align-items:center;gap:8px"><input id="mcAvail" type="checkbox" style="width:auto"' + (e.available === false ? '' : ' checked') + '> Available</label><div class="btnrow"><button class="btn" id="merchSave">Save item</button>' + (e.id ? '<button class="btn ghost" data-adm="merch">Cancel</button>' : '') + '</div>';
+    if (ADM.tab === 'reports') {
+      var cs = d.comments || [], ps = d.photos || [];
+      function acts(kind, x) { return '<div class="btnrow" style="margin-top:8px">' + (x.hidden ? '' : '<button class="btn sm" data-mod="' + kind + '|' + x.id + '|hide">Hide</button>') + '<button class="btn ghost sm" data-mod="' + kind + '|' + x.id + '|show">Keep it</button><button class="btn ghost sm" data-mod="' + kind + '|' + x.id + '|delete">Delete</button>' + (kind === 'photo' && !x.hidden ? '<button class="btn ghost sm" data-mod="photo|' + x.id + '|' + (x.featured ? 'unfeature' : 'feature') + '">' + (x.featured ? 'Unfeature' : 'Feature') + '</button>' : '') + '</div>'; }
+      return (cs.length || ps.length ? '' : '<div class="empty"><b>Nothing reported</b>Reported comments and photos show up here.</div>') +
+        cs.map(function (c) { return '<div class="dish"><span class="kick rust">Comment · ' + c.reports + ' report' + (c.reports > 1 ? 's' : '') + (c.hidden ? ' · hidden' : '') + '</span><p style="margin:6px 0 0"><b>' + esc(c.name) + '</b> on ' + esc(c.dish) + ' at ' + esc(nm(c.place_id)) + '</p><p style="margin:4px 0 0">' + esc(c.body) + '</p>' + acts('comment', c) + '</div>'; }).join('') +
+        ps.map(function (x) { return '<div class="dish"><span class="kick rust">Photo · ' + x.reports + ' report' + (x.reports > 1 ? 's' : '') + (x.hidden ? ' · hidden' : '') + '</span><p style="margin:6px 0 8px">' + esc(x.dish) + ' at ' + esc(nm(x.place_id)) + '</p><img alt="" style="width:100%;border-radius:8px" src="' + esc(photoUrl(x.path)) + '">' + acts('photo', x) + '</div>'; }).join('');
+    }
+    return admInput('admEmail', 'Find an account by email', ADM.q || '', 'email') + '<button class="btn" id="admFind">Search</button>' +
+      (ADM.found ? '<div class="list" style="margin-top:12px">' + (ADM.found.map(function (u) { return '<div class="perk"><span class="mid"><b>' + esc(u.username) + (u.is_admin ? ' · Admin' : '') + '</b><small>' + esc(u.email) + '</small></span><button class="btn ' + (u.is_admin ? 'ghost' : '') + ' sm" data-setadmin="' + esc(u.id) + '|' + (u.is_admin ? '0' : '1') + '">' + (u.is_admin ? 'Remove admin' : 'Make admin') + '</button></div>'; }).join('') || '<div class="empty">No account matches that email.</div>') + '</div>' : '') +
+      '<div class="sechead"><h2 style="font-size:20px">Recent admin actions</h2></div><div class="lines">' + (d.map(function (l) { return '<div class="line"><span class="mid"><b>' + esc(l.action.replace(/_/g, ' ')) + '</b><small>' + esc(l.by_name || 'admin') + ' · ' + ago(l.at) + '</small></span></div>'; }).join('') || '<div class="line">Nothing yet</div>') + '</div>';
+  }
+  function admDo(pr, okMsg) { return pr.then(function () { if (okMsg) toast(okMsg); ADM.data = null; ADM.edit = null; loadExtras(); adminSheet(); }).catch(function (e) { toast(/last admin/.test(e.message) ? 'You cannot remove the last admin.' : /not admin/.test(e.message) ? 'This account is not an admin.' : 'That did not save. Check the fields and try again.'); }); }
   function viewPlaces() {
     var t = town(), q = S.q.toLowerCase();
     var list = t.spots.filter(function (s) { return !q || (s.name + ' ' + s.category).toLowerCase().indexOf(q) >= 0; });
@@ -1002,10 +1106,25 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
       (list.length ? sec('Local spots', loc) + sec('Chains', ch) : '<div class="empty"><b>Nothing matches</b>Try a different word.</div>');
   }
   function viewBest() {
+    var t0 = town(), seg = '<div class="seg"><button data-best="dishes" aria-pressed="' + (S.best !== 'places') + '">Dishes</button><button data-best="places" aria-pressed="' + (S.best === 'places') + '">Restaurants</button></div>';
+    if (SERVER && !flag('standings')) return pageHead('Standings', '', 'Standings', 'Switched off for now') + '<div class="empty"><b>Standings are taking a break</b>Check back soon.</div>';
+    if (S.best !== 'places') return viewBestDishes(seg);
+    var st = standings(t0), h = pageHead('Standings', new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }), 'Current standings', 'Every kitchen near ' + t0.school.name + ', ranked by students') + seg;
+    if (!st.length) return h + '<div class="empty"><b>No restaurant has been rated yet</b>Open any place, find what you ate and tap Rate.</div>';
+    var top = st[0];
+    h += '<button class="lead" data-spot="' + esc(top.sp.id) + '"><span class="leadno">№ 1</span><span class="kick rust">— Leading the table —</span><span class="leadname">' + esc(top.sp.name) + '</span><span class="kick">' + esc(top.sp.category) + '</span>' +
+      '<span class="leadrule"><span class="kick rust">KORD Index</span></span><span class="leadidx">' + top.idx + '</span><span class="leadstats"><span><span class="kick">Avg</span><b>' + top.avg.toFixed(2) + '</b></span><span><span class="kick">Votes</span><b>' + top.votes + '</b></span></span></button>' +
+      '<button class="lnk" id="indexHelp" style="align-self:center">? How the KORD Index works</button>';
+    if (st.length > 1) h += '<div class="sechead"><h2>The full card</h2><span>' + st.length + ' kitchens</span></div><div class="list">' + st.map(function (r, i) {
+      return '<button class="row" data-spot="' + esc(r.sp.id) + '"><span class="rank">' + (i + 1) + '</span><span class="mid"><h3>' + esc(r.sp.name) + '</h3><p>' + esc(r.sp.category) + ' · ★ ' + r.avg.toFixed(2) + ' · ' + r.votes + ' vote' + (r.votes > 1 ? 's' : '') + '</p></span><span class="end"><b>' + r.idx + '</b>Index</span></button>';
+    }).join('') + '</div>';
+    return h + '<div class="acct" style="border-width:1px"><span class="kick rust">The formula</span><h2 style="font-size:22px">KORD Index = average rating × number of votes</h2><p class="sub">' + INDEXHELP + '</p><p class="note">Example: 10 votes averaging 8.1 gives an Index of 81.</p></div>';
+  }
+  function viewBestDishes(seg) {
     var t = town(), rows = [];
     t.spots.forEach(function (sp) { ratedItems(sp.id).forEach(function (x) { rows.push({ sp: sp, x: x }); }); });
     rows.sort(function (a, b) { return b.x.avg - a.x.avg || b.x.n - a.x.n || a.x.item.localeCompare(b.x.item); });
-    var h = pageHead('Standings', new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }), 'Best dishes', 'Every rated dish at ' + t.school.name + ', best first');
+    var h = pageHead('Standings', new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }), 'Best dishes', 'Every rated dish at ' + t.school.name + ', best first') + (seg || '');
     /* A dish needs MINVOTES votes to be ranked, so one perfect score cannot top the list. Dishes below that wait underneath. */
     var MINVOTES = SERVER ? 3 : 1, ranked = rows.filter(function (r) { return r.x.n >= MINVOTES; }), waiting = rows.filter(function (r) { return r.x.n < MINVOTES; });
     function bestRow(r, i) {
@@ -1034,6 +1153,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     h += mine.length ? '<div class="list">' + mine.map(function (m) {
       return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + m.r + '</span> / 10</span></button>';
     }).join('') + '</div>' : '<div class="empty"><b>Nothing rated yet</b>Open any place, find what you ordered and tap Rate.</div>';
+    h += merchHtml() + (ME && ME.is_admin ? '<button class="btn bigbtn" id="adminBtn">Admin dashboard</button>' : '');
     h += '<div class="btnrow"><button class="btn ghost" id="creditsBtn">Sources and credits</button><a class="btn ghost" target="_blank" rel="noopener" href="privacy.html">Privacy</a><a class="btn ghost" target="_blank" rel="noopener" href="terms.html">Terms</a></div><p class="note">KORD version ' + esc(window.KORD_BUILD || 'preview') + '</p>';
     return h + '<p class="note">' + (SERVER ? 'Your ratings, comments and dish photos are shared with other students at your school. Points, badges and your profile photo stay on this phone.' : 'Your profile and ratings are saved on this phone.') + '</p>';
   }
@@ -1207,7 +1327,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
   }
   function cmtHtml(c, withDish) { return '<div class="cmt"><b>' + esc(c.name || 'Student') + '</b>' + (withDish ? ' on ' + esc(c.dish) : '') + ' <small>' + ago(c.created_at) + '</small><p>' + esc(c.body) + '</p>' + (withDish ? '' : '<button class="rm" data-report="' + esc(cmtKey(c)) + '">Report</button>') + '</div>'; }
   function cmtListHtml(id, dish) { var a = cmtsFor(id, dish); return a.length ? a.slice(0, 30).map(function (c) { return cmtHtml(c); }).join('') : '<p class="note">No comments yet. Be the first to say if it is worth it.</p>'; }
-  function sayingHtml(id) { var a = cmtsFor(id).slice(0, 2); return a.length ? '<div class="saying"><b>Students are saying</b>' + a.map(function (c) { return cmtHtml(c, true); }).join('') + '</div>' : ''; }
+  function sayingHtml(id) { if (SERVER && !flag('comments')) return ''; var a = cmtsFor(id).slice(0, 2); return a.length ? '<div class="saying"><b>Students are saying</b>' + a.map(function (c) { return cmtHtml(c, true); }).join('') + '</div>' : ''; }
   function paintComments(id) {
     var say = document.getElementById('sayBox'), list = document.getElementById('cmtList');
     if (say) say.innerHTML = sayingHtml(id);
@@ -1220,11 +1340,11 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
       (!open && pics.length ? '<div class="pstrip">' + pics.slice(0, 6).map(function (r) { return '<img alt="Student photo of ' + esc(m.n) + '" loading="lazy" src="' + esc(photoUrl(r.path)) + '">'; }).join('') + '</div>' : '') +
       '<div class="dfoot"><span class="dmeta"><b>' + (sc ? sc.avg.toFixed(1) : '—') + '</b>/ 10 · ' + (sc ? sc.n : 0) + ' vote' + (sc && sc.n === 1 ? '' : 's') + (nc ? ' · ' + nc + ' comment' + (nc > 1 ? 's' : '') : '') + '</span>' +
       '<button class="btn ghost sm dishhead" data-dish="' + esc(m.n) + '" aria-expanded="' + open + '">' + (open ? 'Close' : mine ? 'You gave it ' + mine : 'Rate') + '</button></div>';
-    var photoBox = !SERVER || !HASPHOTOS ? '' : '<div class="pbig">' + pics.slice(0, 8).map(function (r) {
+    var photoBox = !SERVER || !HASPHOTOS || !flag('photos') ? '' : '<div class="pbig">' + pics.slice(0, 8).map(function (r) {
         return '<figure><img alt="Student photo of ' + esc(m.n) + '" loading="lazy" src="' + esc(photoUrl(r.path)) + '"><span class="pact"><button class="rm" data-like="' + r.id + '"' + (U.liked['ph' + r.id] ? ' disabled' : '') + '>' + (U.liked['ph' + r.id] ? 'You said it looks right' : 'Looks right') + (likes(r) ? ' · ' + likes(r) : '') + '</button><button class="rm" data-report="ph' + r.id + '">Report photo</button></span></figure>';
       }).join('') + '</div><label class="btn ghost sm" for="phFile" id="phLabel">' + (pics.length ? 'Add your photo' : 'Add a photo of this') + '</label><input id="phFile" type="file" accept="image/*" hidden data-id="' + esc(id) + '" data-dish="' + esc(m.n) + '">';
-    if (open) h += '<div class="dishbody"><div class="yours"><span class="kick">Your score, 1 to 10</span>' + miniStars(id, m.n) + '</div>' + photoBox + '<div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
-      '<div class="addrow"><input class="search" id="cmtIn" type="text" maxlength="280" placeholder="Worth it? Tell other students" aria-label="Write a comment"><button class="btn" id="cmtBtn" data-id="' + esc(id) + '">Post</button></div>' +
+    if (open) h += '<div class="dishbody"><div class="yours"><span class="kick">Your score, 1 to 10</span>' + miniStars(id, m.n) + '</div>' + photoBox + (SERVER && !flag('comments') ? '' : '<div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
+      '<div class="addrow"><input class="search" id="cmtIn" type="text" maxlength="280" placeholder="Worth it? Tell other students" aria-label="Write a comment"><button class="btn" id="cmtBtn" data-id="' + esc(id) + '">Post</button></div>') +
       (SERVER ? '' : '<p class="note">Comments stay on this phone until the shared server is connected.</p>') + orderBox(id, m) + '</div>';
     return h + '</div>';
   }
@@ -1285,7 +1405,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     S.mq = ''; S.sec = deal ? 'Deals' : 'All'; S.item = deal || null; S.opt = ''; S.qty = 1; S.step = ''; S.open = id; fillMenu(id); paintCart();
     if (deal) { var mb = document.querySelector('#menuBox .dish.open'); if (mb) mb.scrollIntoView({ block: 'center' }); }
     clearInterval(POLL);
-    if (SERVER) { loadComments(id); loadScores(function () { softFill(id); }); POLL = setInterval(function () { if (S.open === id && !document.hidden) loadComments(id); }, 12000); }
+    if (SERVER) { api('rpc/log_view', { p_town: S.town, p_place: id, p_viewer: U.device }).catch(function () {}); loadComments(id); loadScores(function () { softFill(id); }); POLL = setInterval(function () { if (S.open === id && !document.hidden) loadComments(id); }, 12000); }
     if (!MENUS) fetch('data/menus.json?v=' + (window.KORD_BUILD || '')).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (m) { MENUS = m || {}; if (S.open === id) fillMenu(id); });
   }
 
@@ -1295,6 +1415,34 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     if (t.matches('[data-close]') && (e.target === t || t.classList.contains('x'))) { S.auth = null; S.back = null; closeSheet(); return render(); }
     if (t.dataset.order && SERVER) api('rpc/log_order', { p_device: U.device, p_town: S.town, p_place: t.dataset.order }).catch(function () {});
     if (t.dataset.auth) return authSheet(t.dataset.auth);
+    if (t.dataset.best) { S.best = t.dataset.best; return render(); }
+    if (t.id === 'indexHelp') return infoSheet('The formula', 'How the KORD Index works', '<p class="sub">' + INDEXHELP + '</p><p class="sub"><b>KORD Index = average rating × number of votes.</b> Ten votes averaging 8.1 gives an Index of 81.</p>');
+    if (t.dataset.unlock) { api('rpc/unlock_perk', { p_perk: +t.dataset.unlock }).then(function () { toast('Perk unlocked'); loadExtras(render); }).catch(function (e) { toast(/not enough/.test(e.message) ? 'Rate a few more dishes to unlock this.' : 'Could not unlock that perk.'); }); return; }
+    if (t.dataset.redeem) { var pk = PERKS.filter(function (k) { return String(k.id) === t.dataset.redeem; })[0]; if (!pk) return;
+      return infoSheet('Redeem', pk.title, '<p class="sub">Only tap the button when you are at the counter. A perk can be redeemed once and this cannot be undone.</p><button class="btn bigbtn" data-redeemgo="' + pk.id + '">Redeem now</button>'); }
+    if (t.dataset.redeemgo) { var pid2 = t.dataset.redeemgo, pk2 = PERKS.filter(function (k) { return String(k.id) === pid2; })[0]; t.disabled = true;
+      api('rpc/redeem_perk', { p_perk: +pid2 }).then(function (when) {
+        MYPERKS[pid2] = { perk_id: +pid2, redeemed_at: when || new Date().toISOString() };
+        infoSheet('Redeemed', pk2 ? pk2.title : 'Perk', '<div class="done"><span class="tick">✓</span><p class="sub">Show this screen to staff.</p><h2>' + esc(new Date(when || Date.now()).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', second: '2-digit' })) + '</h2><p class="note">' + esc((ME && ME.username) || '') + '</p></div>');
+      }).catch(function (e) { toast(/already/.test(e.message) ? 'This perk was already redeemed.' : /switched off/.test(e.message) ? 'Redeeming is switched off right now.' : 'Could not redeem. Try again.'); t.disabled = false; });
+      return; }
+    if (t.id === 'adminBtn') return adminSheet('overview');
+    if (t.dataset.adm) return adminSheet(t.dataset.adm);
+    if (t.dataset.flag) return admDo(api('rpc/admin_set_flag', { p_key: t.dataset.flag, p_enabled: t.dataset.on === '1' }), 'Saved');
+    if (t.id === 'capSave') return admDo(api('rpc/admin_set_vote_cap', { p_cap: +document.getElementById('capIn').value }), 'Limit saved');
+    if (t.dataset.perkedit) { ADM.edit = (ADM.data || []).filter(function (k) { return String(k.id) === t.dataset.perkedit; })[0] || null; document.getElementById('admBody').innerHTML = adminBody(); var pt = document.getElementById('pkTitle'); if (pt) pt.scrollIntoView({ block: 'center' }); return; }
+    if (t.dataset.perkdel) return admDo(api('rpc/admin_delete_perk', { p_id: +t.dataset.perkdel }), 'Perk deleted');
+    if (t.id === 'perkSave') { var gv = function (i) { return document.getElementById(i).value.trim(); }; if (!gv('pkTitle')) return toast('Give the perk a title.');
+      return admDo(api('rpc/admin_save_perk', { p: { id: ADM.edit && ADM.edit.id ? String(ADM.edit.id) : '', title: gv('pkTitle'), description: gv('pkDesc'), town: gv('pkPlace') ? S.town : gv('pkTown'), place_id: gv('pkPlace'), votes_required: gv('pkVotes') || '0', ends_at: gv('pkEnds') ? gv('pkEnds') + 'T23:59:59' : '', active: document.getElementById('pkActive').checked } }), 'Perk saved'); }
+    if (t.dataset.merchedit) { ADM.edit = (ADM.data || []).filter(function (k) { return String(k.id) === t.dataset.merchedit; })[0] || null; document.getElementById('admBody').innerHTML = adminBody(); var mt = document.getElementById('mcName'); if (mt) mt.scrollIntoView({ block: 'center' }); return; }
+    if (t.dataset.merchdel) return admDo(api('rpc/admin_delete_merch', { p_id: +t.dataset.merchdel }), 'Item deleted');
+    if (t.id === 'merchSave') { var mv = function (i) { return document.getElementById(i).value.trim(); }; if (!mv('mcName')) return toast('Give the item a name.');
+      if ((mv('mcImg') && !/^https:\/\//.test(mv('mcImg'))) || (mv('mcLink') && !/^https:\/\//.test(mv('mcLink')))) return toast('Links must start with https://');
+      return admDo(api('rpc/admin_save_merch', { p: { id: ADM.edit && ADM.edit.id ? String(ADM.edit.id) : '', name: mv('mcName'), price: mv('mcPrice'), description: mv('mcDesc'), image_url: mv('mcImg'), link_url: mv('mcLink'), available: document.getElementById('mcAvail').checked } }), 'Item saved'); }
+    if (t.dataset.mod) { var mm = t.dataset.mod.split('|'); return admDo(api('rpc/admin_moderate', { p_kind: mm[0], p_id: +mm[1], p_action: mm[2] }), 'Done'); }
+    if (t.id === 'admFind') { ADM.q = document.getElementById('admEmail').value.trim(); if (ADM.q.length < 2) return toast('Type at least 2 characters.');
+      api('rpc/admin_find_users', { p_email: ADM.q }).then(function (r) { ADM.found = r || []; document.getElementById('admBody').innerHTML = adminBody(); }).catch(function () { toast('Search failed.'); }); return; }
+    if (t.dataset.setadmin) { var sa = t.dataset.setadmin.split('|'); ADM.found = null; return admDo(api('rpc/admin_set_admin', { p_user: sa[0], p_admin: sa[1] === '1' }), 'Saved'); }
     if (t.id === 'auGo') return authGo();
     if (t.id === 'signOut') { fresh().then(function (tok) { if (tok) authCall('logout', null, 'POST', tok).catch(function () {}); dropSession(); render(); toast('Signed out'); }); return; }
     if (t.dataset.rate) {
@@ -1370,7 +1518,7 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
     if (t.dataset.spot) return spotSheet(t.dataset.spot, t.dataset.deal);
     if (t.dataset.town) { S.town = t.dataset.town; setTimeout(function () { loadScores(function () { if (!S.open) render(); }); }, 0); S.picking = false; S.tab = 'deals'; S.q = ''; S.day = TODAY; render(); window.scrollTo(0, 0); return; }
     if (t.dataset.day) { S.day = t.dataset.day; return render(); }
-    if (t.dataset.tab) { S.tab = t.dataset.tab; if (S.tab !== 'deals') loadScores(function () { if (!S.open) render(); }); render(); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + S.tab); } catch (err) {} return; }
+    if (t.dataset.tab) { S.tab = t.dataset.tab; if (S.tab !== 'deals') loadScores(function () { if (!S.open) render(); }); else loadExtras(function () { if (!S.open && !S.auth && S.tab === 'deals' && !(document.activeElement && document.activeElement.id === 'dealSearch')) render(); }); render(); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + S.tab); } catch (err) {} return; }
     if (t.dataset.local) { S.localOnly = t.dataset.local === '1'; return render(); }
     if (t.id === 'swapBtn') { S.picking = true; render(); window.scrollTo(0, 0); }
   });

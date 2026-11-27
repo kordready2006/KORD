@@ -56,3 +56,10 @@ To make an account an admin (after it has signed up):
     update profiles set is_admin = true where id = (select id from auth.users where email = 'you@example.com');
 
 `tools/demo_votes.py` used the old device-based functions and no longer works once `accounts.sql` has been run.
+
+## Stage 2: standings, perks, merch, admin
+
+Run `server/stage2.sql` after `accounts.sql`. It adds feature switches, the restaurant standings view (KORD Index = sum of a
+restaurant's ratings = average x votes), de-duplicated restaurant view counts, perks that unlock by rating count and redeem once,
+the merch table, and the admin functions behind the in-app dashboard. Every admin function checks `is_admin()` in the database
+and writes to `admin_log`.

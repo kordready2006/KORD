@@ -12,6 +12,10 @@ const comments = [];
 const clicks = [];
 const files = new Map();    // storage path -> Buffer
 const photos = [];
+const flags = [['comments', 'Comments on dishes'], ['photos', 'Student photos'], ['standings', 'Standings and leaderboards'], ['perks', 'Perks and deal redemptions'], ['community', 'Community feed'], ['friends', 'Friends and following']].map(([key, label]) => ({ key, label, enabled: true }));
+const flagOn = (k) => (flags.find((f) => f.key === k) || { enabled: true }).enabled;
+const perks = [], unlocks = [], merch = [], log = [], views = new Set();
+let cap = CAP, seq = 0;
 
 function send(res, code, body) {
   res.writeHead(code, {
@@ -93,18 +97,27 @@ http.createServer(async (req, res) => {
     return send(res, 200, comments.filter((c) => c.place_id === eq('place_id') && (c.reports || []).length < 3).slice().reverse().slice(0, 80));
   }
   if (url.pathname === '/_clicks') return send(res, 200, clicks);
+  if (req.method === 'GET' && url.pathname === '/rest/v1/feature_flags') return send(res, 200, flags);
+  if (req.method === 'GET' && url.pathname === '/rest/v1/perks') return send(res, 200, perks.filter((k) => k.active && (!k.ends_at || new Date(k.ends_at) > new Date())));
+  if (req.method === 'GET' && url.pathname === '/rest/v1/merch') return send(res, 200, merch);
+  if (req.method === 'GET' && url.pathname === '/rest/v1/place_standings') {
+    const agg = new Map();
+    for (const r of ratings.values()) { if (r.town !== eq('town')) continue; const a = agg.get(r.place_id) || { place_id: r.place_id, votes: 0, idx: 0 }; a.votes += 1; a.idx += r.stars; agg.set(r.place_id, a); }
+    return send(res, 200, [...agg.values()].map((a) => ({ ...a, avg: Math.round((a.idx / a.votes) * 100) / 100 })).sort((x, y) => y.idx - x.idx));
+  }
 
   // ---- functions
   if (req.method === 'POST' && url.pathname.startsWith('/rest/v1/rpc/')) {
     const b = JSON.parse((await body(req)).toString() || '{}');
     const fn = url.pathname.split('/').pop();
     if (fn === 'log_order') { clicks.push(b); return send(res, 204); }
+    if (fn === 'log_view') { views.add([b.p_place, me ? me.id : b.p_viewer, new Date().toISOString().slice(0, 10)].join('|')); return send(res, 204); }
     if (fn === 'username_taken') return send(res, 200, [...users.values()].some((u) => u.username.toLowerCase() === String(b.p_username || '').trim().toLowerCase()));
     if (!me) return send(res, 400, { message: 'sign in' });
     if (fn === 'my_profile') return send(res, 200, { username: me.username, town: null, is_admin: me.is_admin });
     if (fn === 'my_votes') {
       const mine = [...ratings.values()].filter((r) => r.uid === me.id), rc = recent(me.id);
-      return send(res, 200, { used: rc.length, cap: CAP, remaining: Math.max(0, CAP - rc.length), next_at: rc.length ? new Date(Math.min(...rc.map((v) => v.at)) + 12 * 3600e3).toISOString() : null,
+      return send(res, 200, { used: rc.length, cap, remaining: Math.max(0, cap - rc.length), next_at: rc.length ? new Date(Math.min(...rc.map((v) => v.at)) + 12 * 3600e3).toISOString() : null,
         highest: mine.length ? Math.max(...mine.map((r) => r.stars)) : null, rated: mine.length });
     }
     if (fn === 'my_ratings') return send(res, 200, [...ratings.values()].filter((r) => r.uid === me.id).map((r) => ({ place_id: r.place_id, dish: r.dish, stars: r.stars })));
@@ -112,11 +125,50 @@ http.createServer(async (req, res) => {
       const k = [me.id, b.p_place, b.p_dish].join('|');
       if (b.p_stars === 0) { ratings.delete(k); return send(res, 204); }
       if (!(b.p_stars >= 1 && b.p_stars <= 10)) return send(res, 400, { message: 'bad stars' });
-      if (!ratings.has(k)) { if (recent(me.id).length >= CAP) return send(res, 400, { message: 'vote limit' }); votes.push({ uid: me.id, at: Date.now() }); }
+      if (!ratings.has(k)) { if (recent(me.id).length >= cap) return send(res, 400, { message: 'vote limit' }); votes.push({ uid: me.id, at: Date.now() }); }
       ratings.set(k, { uid: me.id, town: b.p_town, place_id: b.p_place, dish: b.p_dish, stars: b.p_stars });
       return send(res, 204);
     }
+    if (fn === 'my_perks') return send(res, 200, unlocks.filter((u) => u.user_id === me.id));
+    if (fn === 'unlock_perk') {
+      const k = perks.find((x) => x.id === b.p_perk && x.active); if (!k) return send(res, 400, { message: 'not available' });
+      if (!flagOn('perks')) return send(res, 400, { message: 'switched off' });
+      if ([...ratings.values()].filter((r) => r.uid === me.id).length < k.votes_required) return send(res, 400, { message: 'not enough votes' });
+      if (!unlocks.find((u) => u.perk_id === k.id && u.user_id === me.id)) unlocks.push({ perk_id: k.id, user_id: me.id, unlocked_at: new Date().toISOString(), redeemed_at: null });
+      return send(res, 204);
+    }
+    if (fn === 'redeem_perk') {
+      if (!flagOn('perks')) return send(res, 400, { message: 'switched off' });
+      const u = unlocks.find((x) => x.perk_id === b.p_perk && x.user_id === me.id && !x.redeemed_at); if (!u) return send(res, 400, { message: 'not unlocked or already redeemed' });
+      u.redeemed_at = new Date().toISOString(); return send(res, 200, u.redeemed_at);
+    }
+    if (fn.startsWith('admin_')) {
+      if (!me.is_admin) return send(res, 400, { message: 'not admin' });
+      log.unshift({ action: fn.replace('admin_', ''), detail: b, at: new Date().toISOString(), by_name: me.username });
+      if (fn === 'admin_stats') { log.shift(); return send(res, 200, { users: users.size, active_7d: new Set(votes.map((v) => v.uid)).size, ratings: ratings.size, ratings_7d: votes.length, comments: comments.length, photos: photos.length, views_30d: views.size, order_clicks_30d: clicks.length, perk_unlocks: unlocks.length, perk_redemptions: unlocks.filter((u) => u.redeemed_at).length, open_reports: comments.filter((c) => (c.reports || []).length).length + photos.filter((c) => (c.reports || []).length).length, vote_cap: cap, top_dishes: [], top_viewed: [] }); }
+      if (fn === 'admin_set_flag') { const f = flags.find((x) => x.key === b.p_key); if (f) f.enabled = !!b.p_enabled; return send(res, 204); }
+      if (fn === 'admin_set_vote_cap') { cap = +b.p_cap; return send(res, 204); }
+      if (fn === 'admin_perks') { log.shift(); return send(res, 200, perks); }
+      if (fn === 'admin_save_perk' || fn === 'admin_save_merch') {
+        const list = fn === 'admin_save_perk' ? perks : merch, p = b.p || {};
+        let row = list.find((x) => String(x.id) === String(p.id));
+        if (!row) { row = { id: ++seq }; list.unshift(row); }
+        Object.assign(row, p, { id: row.id, votes_required: +p.votes_required || 0, ends_at: p.ends_at || null, town: p.town || null, place_id: p.place_id || null });
+        return send(res, 200, row.id);
+      }
+      if (fn === 'admin_delete_perk' || fn === 'admin_delete_merch') { const list = fn === 'admin_delete_perk' ? perks : merch, i = list.findIndex((x) => x.id === b.p_id); if (i >= 0) list.splice(i, 1); return send(res, 204); }
+      if (fn === 'admin_reports') { log.shift(); return send(res, 200, { comments: comments.filter((c) => (c.reports || []).length).map((c) => ({ ...c, hidden: !!c.hidden, reports: c.reports.length })), photos: photos.filter((c) => (c.reports || []).length).map((c) => ({ ...c, hidden: !!c.hidden, reports: c.reports.length })) }); }
+      if (fn === 'admin_moderate') {
+        const list = b.p_kind === 'comment' ? comments : photos, i = list.findIndex((x) => x.id === b.p_id); if (i < 0) return send(res, 204);
+        if (b.p_action === 'delete') list.splice(i, 1); else if (b.p_action === 'hide') { list[i].hidden = true; list[i].reports = list[i].reports.concat(['x', 'y', 'z']); } else if (b.p_action === 'show') { list[i].hidden = false; list[i].reports = []; } else list[i].featured = b.p_action === 'feature';
+        return send(res, 204);
+      }
+      if (fn === 'admin_find_users') { log.shift(); return send(res, 200, [...users.values()].filter((u) => u.email.includes(String(b.p_email).toLowerCase())).map((u) => ({ id: u.id, email: u.email, username: u.username, is_admin: u.is_admin }))); }
+      if (fn === 'admin_set_admin') { const u = users.get(b.p_user); if (u && !b.p_admin && u.is_admin && [...users.values()].filter((x) => x.is_admin).length <= 1) return send(res, 400, { message: 'last admin' }); if (u) u.is_admin = !!b.p_admin; return send(res, 204); }
+      if (fn === 'admin_log_recent') { log.shift(); return send(res, 200, log.slice(0, 40)); }
+    }
     if (fn === 'add_comment') {
+      if (!flagOn('comments')) return send(res, 400, { message: 'switched off' });
       const text = String(b.p_body || '').trim();
       if (!text || text.length > 280) return send(res, 400, { message: 'bad input' });
       comments.push({ id: comments.length + 1, uid: me.id, town: b.p_town, place_id: b.p_place, dish: b.p_dish, name: me.username, body: text, created_at: new Date().toISOString() });
