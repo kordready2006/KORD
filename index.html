@@ -205,7 +205,7 @@ h2 { font: 800 24px/1.1 var(--display); letter-spacing: -.02em; margin: 0; text-
 
 /* tabs */
 .tabs { position: fixed; inset: auto 0 0; z-index: 6; background: var(--card); border-top: 1px solid var(--line); padding-bottom: env(safe-area-inset-bottom, 0px); }
-.tabs .wrap { display: grid; grid-template-columns: repeat(4, 1fr); }
+.tabs .wrap { display: grid; grid-template-columns: repeat(5, 1fr); }
 .orderbox { background: var(--chip); border-radius: 12px; padding: 12px; display: flex; flex-direction: column; gap: 10px; }
 .orderbox .lab { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .opts { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -484,6 +484,13 @@ h2 { font: 700 26px/1.1 var(--display); letter-spacing: -.015em; }
 .leadstats { display: flex; justify-content: space-around; width: 100%; border-top: 1px solid var(--ink); padding-top: 12px; margin-top: 6px; }
 .leadstats > span { display: flex; flex-direction: column; gap: 4px; } .leadstats b { font: 700 22px var(--display); }
 select.search { appearance: auto; }
+.post .dtop { align-items: center; }
+.who2 { font: 700 17px var(--display); text-decoration: none; color: var(--ink); }
+.pbody { margin: 8px 0 0; font-size: 15.5px; line-height: 1.5; overflow-wrap: anywhere; white-space: pre-wrap; }
+.pimg { display: block; width: 100%; max-height: 420px; object-fit: cover; border-radius: 8px; margin-top: 12px; background: var(--chip); }
+.post .rm { color: var(--muted); font-size: 12px; font-weight: 600; text-decoration: underline; }
+.compose textarea { min-height: 84px; }
+.tab { font-size: 9.5px; letter-spacing: .12em; }
 .acct { background: var(--card); border: 2px solid var(--ink); border-radius: 8px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; box-shadow: var(--shadow); }
 .acct h2 { font-size: 30px; overflow-wrap: anywhere; }
 .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-top: 3px double var(--ink); border-bottom: 1px solid var(--line); }
@@ -527,10 +534,11 @@ select.search { appearance: auto; }
   <button class="tab" data-tab="deals"><svg viewBox="0 0 24 24"><path d="M3 9a2 2 0 0 0 0 6v3a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1v-3a2 2 0 0 1 0-6V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1z"/><path d="M14 6v2m0 3v2m0 3v2"/></svg>Deals</button>
   <button class="tab" data-tab="places"><svg viewBox="0 0 24 24"><path d="M4 10h16l-1.2-5H5.2zM5 10v9h14v-9M9 19v-5h6v5"/></svg>Places</button>
   <button class="tab" data-tab="best"><svg viewBox="0 0 24 24"><path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.400-4.300 6.100-.900z"/></svg>Best</button>
+  <button class="tab" data-tab="wire"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9h8M8 12h5"/></svg>Wire</button>
   <button class="tab" data-tab="you"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>You</button>
 </div></nav>
 <div id="sheetRoot"></div>
 
-<script src="app.js?v=20261127-222512"></script>
+<script src="app.js?v=20261127-224141"></script>
 </body>
 </html>

@@ -15,6 +15,9 @@ const photos = [];
 const flags = [['comments', 'Comments on dishes'], ['photos', 'Student photos'], ['standings', 'Standings and leaderboards'], ['perks', 'Perks and deal redemptions'], ['community', 'Community feed'], ['friends', 'Friends and following']].map(([key, label]) => ({ key, label, enabled: true }));
 const flagOn = (k) => (flags.find((f) => f.key === k) || { enabled: true }).enabled;
 const perks = [], unlocks = [], merch = [], log = [], views = new Set();
+const posts = [], follows = new Set(), blocks = new Set(), notes = [];
+const rated = (uid, town) => [...ratings.values()].filter((r) => r.uid === uid && (!town || r.town === town));
+const board = (town) => [...users.values()].map((u) => ({ user_id: u.id, username: u.username, rated: rated(u.id, town).length })).filter((x) => x.rated).sort((x, y) => y.rated - x.rated).map((x, i) => ({ pos: i + 1, ...x }));
 let cap = CAP, seq = 0;
 
 function send(res, code, body) {
@@ -113,8 +116,51 @@ http.createServer(async (req, res) => {
     if (fn === 'log_order') { clicks.push(b); return send(res, 204); }
     if (fn === 'log_view') { views.add([b.p_place, me ? me.id : b.p_viewer, new Date().toISOString().slice(0, 10)].join('|')); return send(res, 204); }
     if (fn === 'username_taken') return send(res, 200, [...users.values()].some((u) => u.username.toLowerCase() === String(b.p_username || '').trim().toLowerCase()));
+    if (fn === 'wire_feed') {
+      if (!flagOn('community')) return send(res, 200, []);
+      const mine = me ? me.id : '';
+      return send(res, 200, posts.filter((x) => !x.hidden && (x.reports || []).length < 3 && (b.p_friends ? follows.has(mine + '>' + x.user_id) : x.town === b.p_town) && !blocks.has(mine + '>' + x.user_id) && !blocks.has(x.user_id + '>' + mine))
+        .slice().reverse().map((x) => ({ id: x.id, user_id: x.user_id, username: users.get(x.user_id).username, body: x.body, photo_path: x.photo_path, created_at: x.created_at })));
+    }
+    if (fn === 'leaderboard') return send(res, 200, board(b.p_town));
+    if (fn === 'user_profile') {
+      const u = users.get(b.p_user); if (!u || (me && blocks.has(u.id + '>' + me.id))) return send(res, 200, null);
+      const rs = rated(u.id), byPlace = {};
+      rs.forEach((r) => { (byPlace[r.place_id] = byPlace[r.place_id] || []).push(r.stars); });
+      return send(res, 200, { id: u.id, username: u.username, rank: (board(null).find((x) => x.user_id === u.id) || {}).pos || null, rated: rs.length, highest: rs.length ? Math.max(...rs.map((r) => r.stars)) : null,
+        perks: unlocks.filter((x) => x.user_id === u.id).length, followers: [...follows].filter((f) => f.endsWith('>' + u.id)).length, following: [...follows].filter((f) => f.startsWith(u.id + '>')).length,
+        is_following: !!me && follows.has(me.id + '>' + u.id), is_blocked: !!me && blocks.has(me.id + '>' + u.id),
+        been_there: Object.keys(byPlace).map((k) => ({ place_id: k, dishes: byPlace[k].length, avg: byPlace[k].reduce((a, c) => a + c, 0) / byPlace[k].length })),
+        top_tasted: rs.slice().sort((x, y) => y.stars - x.stars).slice(0, 10).map((r) => ({ place_id: r.place_id, dish: r.dish, stars: r.stars })) });
+    }
     if (!me) return send(res, 400, { message: 'sign in' });
-    if (fn === 'my_profile') return send(res, 200, { username: me.username, town: null, is_admin: me.is_admin });
+    if (fn === 'accept_rules') { me.rules = true; return send(res, 204); }
+    if (fn === 'add_post') {
+      if (!flagOn('community')) return send(res, 400, { message: 'switched off' });
+      if (!me.rules) return send(res, 400, { message: 'accept rules' });
+      const text = String(b.p_body || '').trim(); if (!text || text.length > 500) return send(res, 400, { message: 'bad input' });
+      if (b.p_path && (!files.has(b.p_path) || !b.p_path.startsWith(me.id + '/'))) return send(res, 400, { message: 'bad input' });
+      posts.push({ id: posts.length + 1, user_id: me.id, town: b.p_town, body: text, photo_path: b.p_path || null, created_at: new Date().toISOString() });
+      return send(res, 200, posts.length);
+    }
+    if (fn === 'delete_post') { const i = posts.findIndex((x) => x.id === b.p_post && x.user_id === me.id); if (i >= 0) posts[i].hidden = true; return send(res, 204); }
+    if (fn === 'report_post') { const x = posts.find((q) => q.id === b.p_post); if (x) { x.reports = x.reports || []; if (!x.reports.includes(me.id)) x.reports.push(me.id); } return send(res, 204); }
+    if (fn === 'follow_user') {
+      if (!flagOn('friends')) return send(res, 400, { message: 'switched off' });
+      if (b.p_user === me.id) return send(res, 400, { message: 'bad input' });
+      if (blocks.has(me.id + '>' + b.p_user) || blocks.has(b.p_user + '>' + me.id)) return send(res, 400, { message: 'blocked' });
+      if (!follows.has(me.id + '>' + b.p_user)) { follows.add(me.id + '>' + b.p_user); notes.push({ id: notes.length + 1, user_id: b.p_user, kind: 'follow', actor: me.id, username: me.username, created_at: new Date().toISOString(), is_new: true }); }
+      return send(res, 204);
+    }
+    if (fn === 'unfollow_user') { follows.delete(me.id + '>' + b.p_user); return send(res, 204); }
+    if (fn === 'block_user') {
+      if (b.p_user === me.id) return send(res, 400, { message: 'bad input' });
+      if (b.p_block) { blocks.add(me.id + '>' + b.p_user); follows.delete(me.id + '>' + b.p_user); follows.delete(b.p_user + '>' + me.id); } else blocks.delete(me.id + '>' + b.p_user);
+      return send(res, 204);
+    }
+    if (fn === 'my_notifications') return send(res, 200, notes.filter((n) => n.user_id === me.id).slice().reverse());
+    if (fn === 'friends_activity') return send(res, 200, [...ratings.values()].filter((r) => follows.has(me.id + '>' + r.uid)).map((r) => ({ user_id: r.uid, username: users.get(r.uid).username, place_id: r.place_id, dish: r.dish, stars: r.stars, at: new Date().toISOString() })));
+    if (fn === 'my_profile') return send(res, 200, { id: me.id, username: me.username, town: null, is_admin: me.is_admin, rules: !!me.rules });
     if (fn === 'my_votes') {
       const mine = [...ratings.values()].filter((r) => r.uid === me.id), rc = recent(me.id);
       return send(res, 200, { used: rc.length, cap, remaining: Math.max(0, cap - rc.length), next_at: rc.length ? new Date(Math.min(...rc.map((v) => v.at)) + 12 * 3600e3).toISOString() : null,
@@ -157,9 +203,9 @@ http.createServer(async (req, res) => {
         return send(res, 200, row.id);
       }
       if (fn === 'admin_delete_perk' || fn === 'admin_delete_merch') { const list = fn === 'admin_delete_perk' ? perks : merch, i = list.findIndex((x) => x.id === b.p_id); if (i >= 0) list.splice(i, 1); return send(res, 204); }
-      if (fn === 'admin_reports') { log.shift(); return send(res, 200, { comments: comments.filter((c) => (c.reports || []).length).map((c) => ({ ...c, hidden: !!c.hidden, reports: c.reports.length })), photos: photos.filter((c) => (c.reports || []).length).map((c) => ({ ...c, hidden: !!c.hidden, reports: c.reports.length })) }); }
+      if (fn === 'admin_reports') { log.shift(); return send(res, 200, { posts: posts.filter((c) => (c.reports || []).length).map((c) => ({ id: c.id, town: c.town, name: users.get(c.user_id).username, body: c.body, photo_path: c.photo_path, hidden: !!c.hidden, reports: c.reports.length })), comments: comments.filter((c) => (c.reports || []).length).map((c) => ({ ...c, hidden: !!c.hidden, reports: c.reports.length })), photos: photos.filter((c) => (c.reports || []).length).map((c) => ({ ...c, hidden: !!c.hidden, reports: c.reports.length })) }); }
       if (fn === 'admin_moderate') {
-        const list = b.p_kind === 'comment' ? comments : photos, i = list.findIndex((x) => x.id === b.p_id); if (i < 0) return send(res, 204);
+        const list = b.p_kind === 'comment' ? comments : b.p_kind === 'post' ? posts : photos, i = list.findIndex((x) => x.id === b.p_id); if (i < 0) return send(res, 204);
         if (b.p_action === 'delete') list.splice(i, 1); else if (b.p_action === 'hide') { list[i].hidden = true; list[i].reports = list[i].reports.concat(['x', 'y', 'z']); } else if (b.p_action === 'show') { list[i].hidden = false; list[i].reports = []; } else list[i].featured = b.p_action === 'feature';
         return send(res, 204);
       }
@@ -182,11 +228,13 @@ http.createServer(async (req, res) => {
     }
     if (fn === 'like_photo') { const c = photos.find((x) => x.id === b.p_photo); if (c) { c.likers = c.likers || []; if (!c.likers.includes(me.id)) c.likers.push(me.id); } return send(res, 204); }
     if (fn === 'report_photo') { const c = photos.find((x) => x.id === b.p_photo); if (c) { c.reports = c.reports || []; if (!c.reports.includes(me.id)) c.reports.push(me.id); } return send(res, 204); }
-    if (fn === 'my_photo_paths') return send(res, 200, photos.filter((x) => x.uid === me.id).map((x) => x.path));
+    if (fn === 'my_photo_paths') return send(res, 200, photos.filter((x) => x.uid === me.id).map((x) => x.path).concat(posts.filter((x) => x.user_id === me.id && x.photo_path).map((x) => x.photo_path)));
     if (fn === 'delete_account') {
       if (me.is_admin && [...users.values()].filter((u) => u.is_admin).length <= 1) return send(res, 400, { message: 'last admin' });
       for (const [k, r] of ratings) if (r.uid === me.id) ratings.delete(k);
       for (const list of [comments, photos]) for (let i = list.length - 1; i >= 0; i--) if (list[i].uid === me.id) list.splice(i, 1);
+      for (let i = posts.length - 1; i >= 0; i--) if (posts[i].user_id === me.id) posts.splice(i, 1);
+      for (const f of [...follows]) if (f.includes(me.id)) follows.delete(f);
       users.delete(me.id); return send(res, 204);
     }
     return send(res, 404, { message: 'no such function' });

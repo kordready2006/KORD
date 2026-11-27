@@ -10,7 +10,7 @@ import sys
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, sys.argv[1] if len(sys.argv) > 1 else "_site")
 d = json.load(open(os.path.join(ROOT, "data", "kord.json")))
-files = {"index.html", "app.js", "version.json", "sw.js", "manifest.webmanifest", "privacy.html", "terms.html", "data/kord.json", "data/menus.json"}
+files = {"index.html", "app.js", "version.json", "sw.js", "manifest.webmanifest", "privacy.html", "terms.html", "rules.html", "data/kord.json", "data/menus.json"}
 files |= {"icons/" + f for f in os.listdir(os.path.join(ROOT, "icons"))}
 for paths in d.get("stock", {}).values():
     files |= set(paths)

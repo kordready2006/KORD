@@ -243,6 +243,36 @@ async function openFirstDeal(p) {
     await b.waitForTimeout(1500);
     check(await b.locator('.row', { hasText: dish }).count() >= 1, 'Best tab on phone B misses the shared dish');
     await b.screenshot({ path: `${out}/b-best.png` });
+    // ---- stage 3: The Wire, community rules, following, blocking, the Hall
+    const call = (p, fn, body) => p.evaluate(async ([fn, body]) => { const au = JSON.parse(localStorage.getItem('kord.auth')); const r = await fetch('http://localhost:8799/rest/v1/rpc/' + fn, { method: 'POST', headers: { apikey: 'dev', Authorization: 'Bearer ' + au.access_token, 'Content-Type': 'application/json' }, body: JSON.stringify(body) }); return r.ok; }, [fn, body]);
+    const idOf = (p) => p.evaluate(() => JSON.parse(localStorage.getItem('kord.auth')).user.id);
+    await a.click('.x').catch(() => {}); await b.click('.x').catch(() => {});
+    check(!(await call(a, 'add_post', { p_town: 'athens', p_body: 'sneaking past the rules', p_path: '' })), 'a post was accepted before the community rules were agreed to');
+    await a.click('[data-tab="wire"]'); await a.waitForSelector('#postIn');
+    await a.fill('#postIn', 'Courtside slices are huge tonight'); await a.setInputFiles('#postFile', require('path').join(__dirname, '..', 'stock', 'pizza-1.jpg'));
+    await a.click('#postBtn'); await a.waitForSelector('#rulesOk');
+    check(await a.locator('#sheetBody li').count() >= 5, 'community rules are not shown before the first post');
+    await a.click('#rulesOk'); await a.waitForSelector('.post:has-text("Courtside slices")');
+    check(await a.locator('.post .pimg').count() === 1, 'post photo is missing');
+    await b.click('[data-tab="wire"]'); await b.waitForSelector('.post:has-text("Courtside slices")');
+    await b.click('.post .who2'); await b.waitForSelector('[data-follow]');
+    check(await b.locator('#sheetBody h2', { hasText: 'Alex' }).count() >= 1 && await b.locator('#sheetBody .row').count() >= 1, 'member page does not show the name with Been there and Top tasted');
+    await b.screenshot({ path: `${out}/e-profile.png` });
+    await b.click('[data-follow]'); await b.waitForSelector('[data-follow]:has-text("Following")');
+    await b.click('.x'); await b.click('[data-wire="friends"]'); await b.waitForSelector('.post:has-text("Courtside slices")');
+    check(await b.locator('.sechead h2', { hasText: 'Fresh ratings' }).count() === 1, 'Friends page does not show what followed people rated');
+    await b.click('[data-wire="hall"]'); await b.waitForSelector('.row');
+    check(await b.locator('.row').count() === 2, 'the Hall does not list both members');
+    check(!(await call(b, 'follow_user', { p_user: await idOf(b) })), 'an account could follow itself');
+    await a.click('[data-tab="you"]'); await a.waitForTimeout(400); await a.reload(); await a.waitForSelector('.acct'); await a.waitForTimeout(1200);
+    check(await a.locator('.acct .line', { hasText: 'Blake' }).count() === 1, 'no notification for a new follower');
+    await a.screenshot({ path: `${out}/e-you.png` });
+    await b.click('[data-wire="campus"]'); await b.waitForSelector('.post [data-block]'); await b.screenshot({ path: `${out}/e-wire.png` });
+    await b.click('.post [data-block]'); await b.waitForTimeout(1200);
+    check(await b.locator('.post:has-text("Courtside slices")').count() === 0, 'a blocked member\'s post still shows');
+    check(!(await call(b, 'follow_user', { p_user: await idOf(a) })), 'a blocked member could be followed by calling the server directly');
+    check(await call(b, 'block_user', { p_user: await idOf(a), p_block: false }), 'unblocking failed');
+    await a.click('[data-tab="deals"]'); await b.click('[data-tab="deals"]'); await a.waitForTimeout(500);
     // ---- stage 2: standings, admin dashboard, switches, perks, merch (phone A is the admin, phone B is not)
     await a.click('[data-tab="best"]'); await a.waitForTimeout(900); await a.click('[data-best="places"]'); await a.waitForTimeout(400);
     check(await a.locator('.lead .leadidx').innerText() === '8', 'KORD Index of the leading restaurant is not 5 + 3 = 8');
@@ -301,7 +331,7 @@ async function openFirstDeal(p) {
     await a.click('.acct [data-auth="in"]'); await a.fill('#auEmail', 'alex@test.dev'); await a.fill('#auPass', 'wrongpass1'); await a.click('#auGo'); await a.waitForSelector('.autherr');
     check(await a.locator('.autherr', { hasText: 'do not match' }).count() === 1, 'wrong password has no friendly message');
     await a.fill('#auPass', 'password1'); await a.click('#auGo'); await a.waitForSelector('.acct h2:has-text("Alex")');
-    check((await a.locator('.stat >> nth=3').innerText()).startsWith('3'), 'ratings did not come back after signing in again');
+    check((await a.locator('.stat >> nth=0').innerText()).startsWith('3'), 'ratings did not come back after signing in again');
     await a.click('[data-auth="del"]'); await a.fill('#auConfirm', 'DELETE'); await a.click('#auGo'); await a.waitForSelector('.autherr');
     check(await a.locator('.autherr', { hasText: 'only admin' }).count() === 1, 'the last admin was allowed to delete their account');
     await a.click('.x');

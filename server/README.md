@@ -63,3 +63,9 @@ Run `server/stage2.sql` after `accounts.sql`. It adds feature switches, the rest
 restaurant's ratings = average x votes), de-duplicated restaurant view counts, perks that unlock by rating count and redeem once,
 the merch table, and the admin functions behind the in-app dashboard. Every admin function checks `is_admin()` in the database
 and writes to `admin_log`.
+
+## Stage 3: The Wire, following, blocking, the Hall
+
+Run `server/stage3.sql` after `stage2.sql`. It adds posts (with optional photo), community-rules acceptance, post reports (three
+hide a post), follows, blocks (which also remove follows both ways and hide posts in both directions), follow notifications, the
+leaderboard, public member pages, and extends account deletion and the admin moderation queue to cover posts.

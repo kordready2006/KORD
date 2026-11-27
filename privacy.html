@@ -28,13 +28,14 @@ a { color: #2F4BFF; } .draft { background: #FFC91F; padding: 10px 14px; border-r
 <p>When shared ratings are switched on, KORD sends the following to a database hosted by Supabase so that other students can see them:</p>
 <ul>
 <li>your star ratings for dishes;</li>
+<li>posts you write on The Wire and any photo you attach, who you follow and who you have blocked;</li>
 <li>photos of dishes you choose to add (they are shrunk on your phone first, which removes location data), stored in Supabase file storage;</li>
 <li>the comments you post, with the name you entered (or "Student" if you entered none);</li>
 <li>your account: the email address, display name and password you sign up with. Sign-in is handled by Supabase Auth; your password is stored only in hashed form and KORD cannot read it;</li>
 <li>your account ID, used to keep one rating per dish per account and to enforce the 12-hour rating limit;</li>
 <li>a count of taps on a restaurant's Order or Website button.</li>
 </ul>
-<p>Comments and dish photos are public to everyone using KORD at your school. Do not put private information in a comment or a photo, and do not post photos of people. Your profile photo is never uploaded.</p>
+<p>Your display name, your ratings, the restaurants you have rated, your follower counts, your posts, comments and dish photos are public to everyone using KORD at your school. Do not put private information in a comment or a photo, and do not post photos of people. Your profile photo is never uploaded.</p>
 
 <h2>What KORD does not collect</h2>
 <p>Browsing needs no account. KORD does not ask for your phone number, student ID, precise location or payment details. Your email is used only to sign you in, verify your account and reset your password. Ordering in the current version is a demonstration only: no payment is taken and no order is sent to a restaurant.</p>

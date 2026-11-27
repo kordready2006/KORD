@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261127-222512';
+window.KORD_BUILD = '20261127-224141';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -11,7 +11,7 @@ window.KORD_BUILD = '20261127-222512';
   var DATA = null, SPOTS = {};
   var S = load('kord.prefs', { town: '', tab: 'deals' });
   S.day = TODAY; S.localOnly = false; S.q = ''; S.picking = false;
-  if (['deals', 'places', 'best', 'you'].indexOf(S.tab) < 0) S.tab = 'deals';
+  if (['deals', 'places', 'best', 'wire', 'you'].indexOf(S.tab) < 0) S.tab = 'deals';
   var U = load('kord.user', { name: '', avatar: '', ratings: {}, notes: {} });
   U.items = U.items || {}; U.custom = U.custom || {};
   /* Ratings are 1 to 10. Older saves used 1 to 5 stars: double them once. */
@@ -69,6 +69,8 @@ window.KORD_BUILD = '20261127-222512';
   }
   function loadMe(then) {
     if (!SERVER || !AUTH) { if (then) then(); return; }
+    quiet(api('rpc/my_notifications', {})).then(function (n) { NOTES = n; });
+    quiet(api('rpc/user_profile', { p_user: AUTH.user.id })).then(function (u) { MYPAGE = u; });
     Promise.all([api('rpc/my_profile', {}), api('rpc/my_votes', {}), api('rpc/my_ratings', {})]).then(function (r) {
       ME = r[0] || { username: 'Student' }; VOTES = r[1] || null;
       U.items = {}; (r[2] || []).forEach(function (x) { (U.items[x.place_id] = U.items[x.place_id] || {})[x.dish] = +x.stars; });
@@ -162,8 +164,10 @@ window.KORD_BUILD = '20261127-222512';
     var v = VOTES || {}, next = v.next_at && !v.remaining ? new Date(v.next_at).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' }) : '';
     function stat(n, l) { return '<div class="stat"><b>' + (n == null ? '—' : n) + '</b><span>' + l + '</span></div>'; }
     return '<div class="acct"><span class="kick rust">' + (ME && ME.is_admin ? 'Member · Admin' : 'Member') + '</span><h2>' + esc(ME ? ME.username : 'Your account') + '</h2><p class="sub">' + esc(AUTH.user.email) + '</p>' +
-      '<div class="stats">' + stat(v.used, 'Last 12 hours') + stat(v.remaining, 'Remaining') + stat(v.highest, 'Highest rating given') + stat(v.rated, 'Dishes rated') + '</div>' +
+      '<div class="stats">' + stat(v.used, 'Last 12 hours') + stat(v.remaining, 'Remaining') + stat(v.highest, 'Highest rating given') + stat(Object.keys(MYPERKS).length, 'Deals unlocked') + '</div>' +
       '<p class="note">You can rate ' + (v.cap || 20) + ' new dishes every 12 hours. Changing a rating you already gave is free.' + (next ? ' More ratings open up at ' + esc(next) + '.' : '') + '</p>' +
+      (NOTES && NOTES.length ? '<div class="lines">' + NOTES.slice(0, 5).map(function (n) { return '<div class="line"><span class="mid"><b>' + (n.is_new ? 'New: ' : '') + '<button class="lnk" data-user="' + esc(n.actor) + '">' + esc(n.username || 'Someone') + '</button> followed you</b><small>' + ago(n.created_at) + '</small></span></div>'; }).join('') + '</div>' : '') +
+      '<div class="btnrow">' + (ME && ME.id ? '<button class="btn" data-user="' + esc(ME.id) + '">My page' + (MYPAGE && MYPAGE.rank ? ' · № ' + MYPAGE.rank : '') + '</button><button class="lnk" id="seeHall">See the full Hall</button>' : '') + '</div>' +
       '<div class="btnrow"><button class="btn ghost" id="signOut">Sign out</button><button class="lnk" data-auth="del" style="color:var(--muted)">Delete account</button></div></div>';
   }
   function loadScores(then) {
@@ -568,9 +572,10 @@ window.KORD_BUILD = '20261127-222512';
       admInput('mcImg', 'Picture link (https://…)', e.image_url, 'url') + admInput('mcLink', 'Where to buy it (https://…)', e.link_url, 'url') +
       '<label class="field" style="flex-direction:row;align-items:center;gap:8px"><input id="mcAvail" type="checkbox" style="width:auto"' + (e.available === false ? '' : ' checked') + '> Available</label><div class="btnrow"><button class="btn" id="merchSave">Save item</button>' + (e.id ? '<button class="btn ghost" data-adm="merch">Cancel</button>' : '') + '</div>';
     if (ADM.tab === 'reports') {
-      var cs = d.comments || [], ps = d.photos || [];
+      var cs = d.comments || [], ps = d.photos || [], os = d.posts || [];
       function acts(kind, x) { return '<div class="btnrow" style="margin-top:8px">' + (x.hidden ? '' : '<button class="btn sm" data-mod="' + kind + '|' + x.id + '|hide">Hide</button>') + '<button class="btn ghost sm" data-mod="' + kind + '|' + x.id + '|show">Keep it</button><button class="btn ghost sm" data-mod="' + kind + '|' + x.id + '|delete">Delete</button>' + (kind === 'photo' && !x.hidden ? '<button class="btn ghost sm" data-mod="photo|' + x.id + '|' + (x.featured ? 'unfeature' : 'feature') + '">' + (x.featured ? 'Unfeature' : 'Feature') + '</button>' : '') + '</div>'; }
-      return (cs.length || ps.length ? '' : '<div class="empty"><b>Nothing reported</b>Reported comments and photos show up here.</div>') +
+      return (cs.length || ps.length || os.length ? '' : '<div class="empty"><b>Nothing reported</b>Reported posts, comments and photos show up here.</div>') +
+        os.map(function (x) { return '<div class="dish"><span class="kick rust">Wire post · ' + x.reports + ' report' + (x.reports > 1 ? 's' : '') + (x.hidden ? ' · hidden' : '') + '</span><p style="margin:6px 0 0"><b>' + esc(x.name) + '</b></p><p style="margin:4px 0 0">' + esc(x.body) + '</p>' + (x.photo_path ? '<img alt="" style="width:100%;border-radius:8px;margin-top:8px" src="' + esc(photoUrl(x.photo_path)) + '">' : '') + acts('post', x) + '</div>'; }).join('') +
         cs.map(function (c) { return '<div class="dish"><span class="kick rust">Comment · ' + c.reports + ' report' + (c.reports > 1 ? 's' : '') + (c.hidden ? ' · hidden' : '') + '</span><p style="margin:6px 0 0"><b>' + esc(c.name) + '</b> on ' + esc(c.dish) + ' at ' + esc(nm(c.place_id)) + '</p><p style="margin:4px 0 0">' + esc(c.body) + '</p>' + acts('comment', c) + '</div>'; }).join('') +
         ps.map(function (x) { return '<div class="dish"><span class="kick rust">Photo · ' + x.reports + ' report' + (x.reports > 1 ? 's' : '') + (x.hidden ? ' · hidden' : '') + '</span><p style="margin:6px 0 8px">' + esc(x.dish) + ' at ' + esc(nm(x.place_id)) + '</p><img alt="" style="width:100%;border-radius:8px" src="' + esc(photoUrl(x.path)) + '">' + acts('photo', x) + '</div>'; }).join('');
     }
@@ -579,6 +584,93 @@ window.KORD_BUILD = '20261127-222512';
       '<div class="sechead"><h2 style="font-size:20px">Recent admin actions</h2></div><div class="lines">' + (d.map(function (l) { return '<div class="line"><span class="mid"><b>' + esc(l.action.replace(/_/g, ' ')) + '</b><small>' + esc(l.by_name || 'admin') + ' · ' + ago(l.at) + '</small></span></div>'; }).join('') || '<div class="line">Nothing yet</div>') + '</div>';
   }
   function admDo(pr, okMsg) { return pr.then(function () { if (okMsg) toast(okMsg); ADM.data = null; ADM.edit = null; loadExtras(); adminSheet(); }).catch(function (e) { toast(/last admin/.test(e.message) ? 'You cannot remove the last admin.' : /not admin/.test(e.message) ? 'This account is not an admin.' : 'That did not save. Check the fields and try again.'); }); }
+  /* ---- The Wire: campus feed, friends, and the Hall (leaderboard). ---- */
+  var WIRE = { campus: null, friends: null, activity: null, hall: null }, POSTFILE = null, MYPAGE = null, NOTES = null;
+  function loadWire(then) {
+    var t = DATA && town(); if (!SERVER || !t) return;
+    var mode = S.wire || 'campus', done = function () { if (then) then(); };
+    if (mode === 'hall') return quiet(api('rpc/leaderboard', { p_town: S.hall === 'all' ? null : t.id })).then(function (r) { WIRE.hall = r || []; done(); });
+    if (mode === 'friends') { if (!AUTH) return done(); return Promise.all([quiet(api('rpc/wire_feed', { p_town: t.id, p_friends: true })), quiet(api('rpc/friends_activity', {}))]).then(function (r) { WIRE.friends = r[0] || []; WIRE.activity = r[1] || []; done(); }); }
+    return quiet(api('rpc/wire_feed', { p_town: t.id, p_friends: false })).then(function (r) { WIRE.campus = r === null ? false : r; done(); });
+  }
+  function postHtml(x) {
+    var mine = AUTH && AUTH.user.id === x.user_id;
+    return '<div class="dish post"><div class="dtop"><button class="lnk who2" data-user="' + esc(x.user_id) + '">' + esc(x.username) + '</button><span class="kick">' + ago(x.created_at) + '</span></div><p class="pbody">' + esc(x.body) + '</p>' +
+      (x.photo_path ? '<img class="pimg" alt="" loading="lazy" src="' + esc(photoUrl(x.photo_path)) + '">' : '') +
+      '<div class="pact" style="margin-top:10px">' + (mine ? '<button class="rm" data-postdel="' + x.id + '">Delete</button>' : '<button class="rm" data-postreport="' + x.id + '">Report</button><button class="rm" data-block="' + esc(x.user_id) + '|1">Block ' + esc(x.username) + '</button>') + '</div></div>';
+  }
+  function viewWire() {
+    var t = town(), mode = S.wire || 'campus', head = pageHead('The Wire', esc(t.name) + ', Ohio', mode === 'hall' ? 'The Hall' : mode === 'friends' ? 'Friends Gazette' : 'The Wire', mode === 'hall' ? 'Who has rated the most dishes' : mode === 'friends' ? 'What the people you follow are eating' : 'Campus food talk at ' + t.school.name);
+    if (!SERVER) return head + '<div class="empty"><b>The Wire is offline here</b>It needs the shared server.</div>';
+    var seg = '<div class="seg" style="grid-template-columns:1fr 1fr 1fr">' + [['campus', 'Campus'], ['friends', 'Friends'], ['hall', 'The Hall']].map(function (x) { return '<button data-wire="' + x[0] + '" aria-pressed="' + (mode === x[0]) + '">' + x[1] + '</button>'; }).join('') + '</div>';
+    var h = head + seg;
+    if (mode === 'hall') {
+      if (!flag('standings')) return h + '<div class="empty"><b>The Hall is taking a break</b>Check back soon.</div>';
+      h += '<div class="chips"><button class="chip" data-hall="town" aria-pressed="' + (S.hall !== 'all') + '">' + esc(t.school.name) + '</button><button class="chip" data-hall="all" aria-pressed="' + (S.hall === 'all') + '">Every school</button></div>';
+      if (!WIRE.hall) return h + '<p class="note">Loading…</p>';
+      return h + (WIRE.hall.length ? '<div class="list">' + WIRE.hall.map(function (r) { return '<button class="row" data-user="' + esc(r.user_id) + '"><span class="rank">' + r.pos + '</span><span class="mid"><h3>' + esc(r.username) + '</h3></span><span class="end"><b>' + r.rated + '</b>rated</span></button>'; }).join('') + '</div>' : '<div class="empty"><b>Nobody is on the board yet</b>Rate a dish to take the first spot.</div>');
+    }
+    if (mode === 'friends') {
+      if (!flag('friends')) return h + '<div class="empty"><b>Friends is taking a break</b>Check back soon.</div>';
+      if (!AUTH) return h + '<div class="empty"><b>Follow people to fill this page</b>Create an account, then tap a name on The Wire or in the Hall.<div class="btnrow" style="justify-content:center;margin-top:12px"><button class="btn" data-auth="up">Create account</button></div></div>';
+      if (!WIRE.friends) return h + '<p class="note">Loading…</p>';
+      var act = WIRE.activity || [];
+      if (!act.length && !WIRE.friends.length) return h + '<div class="empty"><b>Nothing here yet</b>Tap a name on The Wire or in the Hall and follow them. What they rate and post shows up here.</div>';
+      return h + (act.length ? '<div class="sechead"><h2>Fresh ratings</h2></div><div class="list">' + act.slice(0, 20).map(function (a) { return '<button class="row" data-spot="' + esc(a.place_id) + '"><span class="mid"><h3>' + esc(a.dish) + '</h3><p>' + esc(a.username) + ' at ' + esc(SPOTS[a.place_id] ? SPOTS[a.place_id].name : 'a restaurant') + ' · ' + ago(a.at) + '</p></span><span class="end"><b>' + a.stars + '</b>/ 10</span></button>'; }).join('') + '</div>' : '') +
+        (WIRE.friends.length ? '<div class="sechead"><h2>Their posts</h2></div><div class="dishes">' + WIRE.friends.map(postHtml).join('') + '</div>' : '');
+    }
+    if (!flag('community')) return h + '<div class="empty"><b>The Wire is taking a break</b>Check back soon.</div>';
+    h += AUTH ? '<div class="dish compose"><label class="field" for="postIn">Post to ' + esc(t.school.name) + '<textarea id="postIn" maxlength="500" placeholder="Found something good? Tell campus.">' + esc(S.draft || '') + '</textarea></label><div class="btnrow" style="justify-content:space-between;align-items:center"><label class="lnk" for="postFile" id="postFileLabel">' + (POSTFILE ? 'Photo added ✓' : 'Add a photo') + '</label><input id="postFile" type="file" accept="image/*" hidden><button class="btn" id="postBtn">Post</button></div></div>' :
+      '<div class="acct"><p class="sub" style="margin:0">Create a free account to post on The Wire.</p><div class="btnrow"><button class="btn" data-auth="up">Create account</button><button class="btn ghost" data-auth="in">Sign in</button></div></div>';
+    if (!WIRE.campus) return h + (WIRE.campus === null ? '<p class="note">Loading…</p>' : '<div class="empty"><b>The Wire is not switched on yet</b>The community database script has not been run.</div>');
+    return h + (WIRE.campus.length ? '<div class="dishes">' + WIRE.campus.map(postHtml).join('') + '</div>' : '<div class="empty"><b>Quiet on the wire</b>Be the first to post at ' + esc(t.school.name) + '.</div>');
+  }
+  /* Shrinks a picture on the phone (which also strips location data), uploads it to the account's own folder, gives back its path. */
+  function shrinkUpload(file) {
+    return new Promise(function (ok, no) {
+      var rd = new FileReader(); rd.onerror = no;
+      rd.onload = function () { var im = new Image(); im.onerror = no; im.onload = function () {
+        var k = Math.min(1, 1200 / Math.max(im.width, im.height)), c = document.createElement('canvas'); c.width = Math.round(im.width * k); c.height = Math.round(im.height * k);
+        c.getContext('2d').drawImage(im, 0, 0, c.width, c.height);
+        c.toBlob(function (blob) {
+          if (!blob) return no(new Error('no image'));
+          var id4 = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : 'xxxxxxxx-xxxx-4xxx-8xxx-xxxxxxxxxxxx'.replace(/x/g, function () { return (Math.random() * 16 | 0).toString(16); }), path = AUTH.user.id + '/' + id4 + '.jpg';
+          fresh().then(function (tok) { return fetch(SERVER.url + '/storage/v1/object/dish-photos/' + path, { method: 'POST', headers: { apikey: SERVER.key, Authorization: 'Bearer ' + tok, 'Content-Type': 'image/jpeg' }, body: blob }); })
+            .then(function (r) { if (!r.ok) throw new Error(r.status); ok(path); }).catch(no);
+        }, 'image/jpeg', 0.82);
+      }; im.src = rd.result; };
+      rd.readAsDataURL(file);
+    });
+  }
+  var RULES = ['Be honest. Post about food you actually ate and places you actually went.', 'Be kind. No harassment, hate, threats or bullying, including of restaurant staff.', 'Keep it clean. Nothing sexual, violent or illegal.', 'No spam, ads or fake reviews, and do not post for a restaurant you work for without saying so.', 'Only post photos you took yourself, with no people in them unless they said yes.', 'No private information about anyone.'];
+  function rulesSheet() {
+    infoSheet('Before you post', 'Community rules', '<ol class="earn">' + RULES.map(function (r) { return '<li>' + r + '</li>'; }).join('') + '</ol><p class="note">Posts that break the rules are removed, and accounts that keep breaking them are blocked. Read the full <a target="_blank" rel="noopener" href="rules.html">Community Rules</a> and <a target="_blank" rel="noopener" href="terms.html">Terms</a>.</p><button class="btn bigbtn" id="rulesOk">I agree to the rules</button>');
+  }
+  function sendPost() {
+    var box = document.getElementById('postIn'), body = ((box && box.value) || S.draft || '').trim(), btn = document.getElementById('postBtn');
+    if (!body) return toast('Write something first.');
+    if (!ME || !ME.rules) { S.draft = body; return rulesSheet(); }
+    if (btn) { btn.disabled = true; btn.textContent = 'Posting…'; }
+    (POSTFILE ? shrinkUpload(POSTFILE) : Promise.resolve('')).then(function (path) { return api('rpc/add_post', { p_town: S.town, p_body: body, p_path: path }); }).then(function () {
+      S.draft = ''; POSTFILE = null; award(5, 'Posted on The Wire', 'w|' + dayKey(new Date())); loadWire(render);
+    }).catch(function (e) { toast(/accept rules/.test(e.message) ? 'Agree to the community rules first.' : /slow down/.test(e.message) ? 'That is enough posts for today.' : /switched off/.test(e.message) ? 'The Wire is switched off right now.' : 'Could not post. Try again.'); if (btn) { btn.disabled = false; btn.textContent = 'Post'; } });
+  }
+  /* A member's page: rank in the Hall, numbers, Been There and Top Tasted. */
+  function profileSheet(uid) {
+    infoSheet('The Hall', 'Loading…', '');
+    api('rpc/user_profile', { p_user: uid }).then(function (u) {
+      if (!u) return infoSheet('The Hall', 'Not available', '<p class="sub">This page cannot be shown.</p>');
+      var me = AUTH && AUTH.user.id === u.id;
+      function stat(n, l) { return '<div class="stat"><b>' + (n == null ? '—' : n) + '</b><span>' + l + '</span></div>'; }
+      var h = '<div class="stats">' + stat(u.rated, 'Dishes rated') + stat(u.highest, 'Highest rating given') + stat(u.followers, 'Followers') + stat(u.following, 'Following') + '</div>';
+      if (!me) h += '<div class="btnrow">' + (u.is_blocked ? '' : flag('friends') ? '<button class="btn' + (u.is_following ? ' ghost' : '') + '" data-follow="' + esc(u.id) + '|' + (u.is_following ? '0' : '1') + '">' + (u.is_following ? 'Following ✓' : 'Follow') + '</button>' : '') + '<button class="btn ghost" data-block="' + esc(u.id) + '|' + (u.is_blocked ? '0' : '1') + '">' + (u.is_blocked ? 'Unblock' : 'Block') + '</button></div>';
+      else h += '<button class="lnk" id="seeHall" style="align-self:flex-start">See the full Hall</button>';
+      var bt = (u.been_there || []).filter(function (x) { return SPOTS[x.place_id]; }), tt = (u.top_tasted || []).filter(function (x) { return SPOTS[x.place_id]; });
+      h += '<div class="sechead"><h2>Been there</h2><span>' + bt.length + '</span></div>' + (bt.length ? '<div class="list">' + bt.map(function (x) { return '<button class="row" data-spot="' + esc(x.place_id) + '"><span class="mid"><h3>' + esc(SPOTS[x.place_id].name) + '</h3><p>' + x.dishes + ' dish' + (x.dishes > 1 ? 'es' : '') + ' rated</p></span><span class="end"><b>' + (+x.avg).toFixed(1) + '</b>avg</span></button>'; }).join('') + '</div>' : '<p class="note">No restaurants rated yet.</p>');
+      h += '<div class="sechead"><h2>Top tasted</h2><span>' + tt.length + '</span></div>' + (tt.length ? '<div class="list">' + tt.map(function (x, i) { return '<button class="row" data-spot="' + esc(x.place_id) + '"><span class="rank">' + (i + 1) + '</span><span class="mid"><h3>' + esc(x.dish) + '</h3><p>' + esc(SPOTS[x.place_id].name) + '</p></span><span class="end"><b>' + x.stars + '</b>/ 10</span></button>'; }).join('') + '</div>' : '<p class="note">No dishes rated yet.</p>');
+      infoSheet(u.rank ? '№ ' + u.rank + ' in the Hall' : 'The Hall', u.username, h);
+    }).catch(function () { infoSheet('The Hall', 'Not available', '<p class="sub">This page cannot be shown right now.</p>'); });
+  }
   function viewPlaces() {
     var t = town(), q = S.q.toLowerCase();
     var list = t.spots.filter(function (s) { return !q || (s.name + ' ' + s.category).toLowerCase().indexOf(q) >= 0; });
@@ -638,7 +730,7 @@ window.KORD_BUILD = '20261127-222512';
       return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + m.r + '</span> / 10</span></button>';
     }).join('') + '</div>' : '<div class="empty"><b>Nothing rated yet</b>Open any place, find what you ordered and tap Rate.</div>';
     h += merchHtml() + (ME && ME.is_admin ? '<button class="btn bigbtn" id="adminBtn">Admin dashboard</button>' : '');
-    h += '<div class="btnrow"><button class="btn ghost" id="creditsBtn">Sources and credits</button><a class="btn ghost" target="_blank" rel="noopener" href="privacy.html">Privacy</a><a class="btn ghost" target="_blank" rel="noopener" href="terms.html">Terms</a></div><p class="note">KORD version ' + esc(window.KORD_BUILD || 'preview') + '</p>';
+    h += '<div class="btnrow"><button class="btn ghost" id="creditsBtn">Sources and credits</button><a class="btn ghost" target="_blank" rel="noopener" href="privacy.html">Privacy</a><a class="btn ghost" target="_blank" rel="noopener" href="terms.html">Terms</a><a class="btn ghost" target="_blank" rel="noopener" href="rules.html">Community rules</a></div><p class="note">KORD version ' + esc(window.KORD_BUILD || 'preview') + '</p>';
     return h + '<p class="note">' + (SERVER ? 'Your ratings, comments and dish photos are shared with other students at your school. Points, badges and your profile photo stay on this phone.' : 'Your profile and ratings are saved on this phone.') + '</p>';
   }
 
@@ -657,7 +749,7 @@ window.KORD_BUILD = '20261127-222512';
       return '<button class="day" data-day="' + d + '" aria-pressed="' + (S.day === d) + '" aria-label="' + DAYNAME[d] + '"><small>' + (d === TODAY ? 'Today' : '') + '</small>' + d + '</button>';
     }).join('');
     document.querySelectorAll('.tab').forEach(function (b) { if (b.dataset.tab === S.tab) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
-    v.innerHTML = S.tab === 'places' ? viewPlaces() : S.tab === 'best' ? viewBest() : S.tab === 'you' ? viewYou() : viewDeals();
+    v.innerHTML = S.tab === 'places' ? viewPlaces() : S.tab === 'best' ? viewBest() : S.tab === 'wire' ? viewWire() : S.tab === 'you' ? viewYou() : viewDeals();
     save('kord.prefs', { town: S.town, tab: S.tab });
   }
 
@@ -900,6 +992,19 @@ window.KORD_BUILD = '20261127-222512';
     if (t.dataset.order && SERVER) api('rpc/log_order', { p_device: U.device, p_town: S.town, p_place: t.dataset.order }).catch(function () {});
     if (t.dataset.auth) return authSheet(t.dataset.auth);
     if (t.dataset.best) { S.best = t.dataset.best; return render(); }
+    if (t.dataset.wire) { S.wire = t.dataset.wire; render(); return loadWire(render); }
+    if (t.dataset.hall) { S.hall = t.dataset.hall; WIRE.hall = null; render(); return loadWire(render); }
+    if (t.id === 'seeHall') { closeSheet(); S.tab = 'wire'; S.wire = 'hall'; S.hall = 'all'; WIRE.hall = null; render(); window.scrollTo(0, 0); return loadWire(render); }
+    if (t.id === 'postBtn') { if (needAccount('post on The Wire')) return; return sendPost(); }
+    if (t.id === 'rulesOk') { t.disabled = true; return api('rpc/accept_rules', {}).then(function () { if (ME) ME.rules = true; closeSheet(); render(); sendPost(); }).catch(function () { toast('Could not save that. Try again.'); t.disabled = false; }); }
+    if (t.dataset.postdel) return api('rpc/delete_post', { p_post: +t.dataset.postdel }).then(function () { loadWire(render); }).catch(function () { toast('Could not delete that.'); });
+    if (t.dataset.postreport) { if (needAccount('report posts')) return; var pr = +t.dataset.postreport; ['campus', 'friends'].forEach(function (k) { if (WIRE[k]) WIRE[k] = WIRE[k].filter(function (x) { return x.id !== pr; }); });
+      api('rpc/report_post', { p_post: pr }).catch(function () {}); toast('Reported. You will not see that post again.'); return render(); }
+    if (t.dataset.block) { if (needAccount('block people')) return; var bl = t.dataset.block.split('|');
+      return api('rpc/block_user', { p_user: bl[0], p_block: bl[1] === '1' }).then(function () { toast(bl[1] === '1' ? 'Blocked. You will not see their posts.' : 'Unblocked.'); if (document.getElementById('sheetRoot').innerHTML) closeSheet(); render(); loadWire(render); }).catch(function () { toast('Could not do that. Try again.'); }); }
+    if (t.dataset.follow) { if (needAccount('follow people')) return; var fl = t.dataset.follow.split('|');
+      return api('rpc/' + (fl[1] === '1' ? 'follow_user' : 'unfollow_user'), { p_user: fl[0] }).then(function () { profileSheet(fl[0]); }).catch(function (e) { toast(/switched off/.test(e.message) ? 'Following is switched off right now.' : 'Could not do that. Try again.'); }); }
+    if (t.dataset.user) return profileSheet(t.dataset.user);
     if (t.id === 'indexHelp') return infoSheet('The formula', 'How the KORD Index works', '<p class="sub">' + INDEXHELP + '</p><p class="sub"><b>KORD Index = average rating × number of votes.</b> Ten votes averaging 8.1 gives an Index of 81.</p>');
     if (t.dataset.unlock) { api('rpc/unlock_perk', { p_perk: +t.dataset.unlock }).then(function () { toast('Perk unlocked'); loadExtras(render); }).catch(function (e) { toast(/not enough/.test(e.message) ? 'Rate a few more dishes to unlock this.' : 'Could not unlock that perk.'); }); return; }
     if (t.dataset.redeem) { var pk = PERKS.filter(function (k) { return String(k.id) === t.dataset.redeem; })[0]; if (!pk) return;
@@ -1002,12 +1107,13 @@ window.KORD_BUILD = '20261127-222512';
     if (t.dataset.spot) return spotSheet(t.dataset.spot, t.dataset.deal);
     if (t.dataset.town) { S.town = t.dataset.town; setTimeout(function () { loadScores(function () { if (!S.open) render(); }); }, 0); S.picking = false; S.tab = 'deals'; S.q = ''; S.day = TODAY; render(); window.scrollTo(0, 0); return; }
     if (t.dataset.day) { S.day = t.dataset.day; return render(); }
-    if (t.dataset.tab) { S.tab = t.dataset.tab; if (S.tab !== 'deals') loadScores(function () { if (!S.open) render(); }); else loadExtras(function () { if (!S.open && !S.auth && S.tab === 'deals' && !(document.activeElement && document.activeElement.id === 'dealSearch')) render(); }); render(); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + S.tab); } catch (err) {} return; }
+    if (t.dataset.tab) { S.tab = t.dataset.tab; if (S.tab === 'wire') loadWire(function () { if (S.tab === 'wire' && !S.open && !S.auth && !(document.activeElement && document.activeElement.id === 'postIn')) render(); }); if (S.tab !== 'deals') loadScores(function () { if (!S.open) render(); }); else loadExtras(function () { if (!S.open && !S.auth && S.tab === 'deals' && !(document.activeElement && document.activeElement.id === 'dealSearch')) render(); }); render(); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + S.tab); } catch (err) {} return; }
     if (t.dataset.local) { S.localOnly = t.dataset.local === '1'; return render(); }
     if (t.id === 'swapBtn') { S.picking = true; render(); window.scrollTo(0, 0); }
   });
   document.addEventListener('input', function (e) {
     var t = e.target;
+    if (t.id === 'postIn') S.draft = t.value;
     if (t.id === 'dealSearch') { S.dq = t.value; render(); var ds = document.getElementById('dealSearch'); ds.focus(); ds.setSelectionRange(ds.value.length, ds.value.length); }
     if (t.id === 'spotSearch') { S.q = t.value; render(); var n = document.getElementById('spotSearch'); n.focus(); n.setSelectionRange(n.value.length, n.value.length); }
     if (t.id === 'nameIn' || t.id === 'ordName') { U.name = t.value.trim(); save('kord.user', U); }
@@ -1016,6 +1122,7 @@ window.KORD_BUILD = '20261127-222512';
   document.addEventListener('change', function (e) {
     var t = e.target;
     if (t.id === 'nameIn') render();
+    if (t.id === 'postFile' && t.files && t.files[0]) { POSTFILE = t.files[0]; var pl = document.getElementById('postFileLabel'); if (pl) pl.textContent = 'Photo added ✓'; }
     if (t.id === 'phFile' && t.files && t.files[0] && SERVER && AUTH) {
       var pid = t.dataset.id, dish = t.dataset.dish, lab = document.getElementById('phLabel'), rd = new FileReader();
       var fail = function () { toast('Could not add that photo. Try again.'); if (lab) lab.textContent = 'Add a photo of this'; };
@@ -1063,7 +1170,7 @@ window.KORD_BUILD = '20261127-222512';
     if (/[?&]server=off(&|$)/.test(location.search)) SERVER = null;   /* tests and previews: keep everything on this phone */
     var dev = /[?&]server=(http[^&]+)/.exec(location.search); if (dev && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) SERVER = { url: decodeURIComponent(dev[1]), key: 'dev' };
     d.towns.forEach(function (t) { t.spots.forEach(function (s) { SPOTS[s.id] = s; }); });
-    var h = (location.hash || '').slice(1); if (['deals', 'places', 'best', 'you'].indexOf(h) >= 0) S.tab = h;
+    var h = (location.hash || '').slice(1); if (['deals', 'places', 'best', 'wire', 'you'].indexOf(h) >= 0) S.tab = h;
     if (!SERVER) AUTH = null;
     render();
     checkIn(); renderHeadPts();
