@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261127-175419';
+window.KORD_BUILD = '20261127-175536';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -701,6 +701,7 @@ window.KORD_BUILD = '20261127-175419';
   fetch('data/kord.json?v=' + (window.KORD_BUILD || '')).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
     DATA = d;
     if (d.server && /^https:\/\//.test(d.server.url || '') && d.server.key) SERVER = { url: d.server.url.replace(/\/+$/, ''), key: d.server.key };
+    if (/[?&]server=off(&|$)/.test(location.search)) SERVER = null;   /* tests and previews: keep everything on this phone */
     var dev = /[?&]server=(http[^&]+)/.exec(location.search); if (dev && /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) SERVER = { url: decodeURIComponent(dev[1]), key: 'dev' };
     d.towns.forEach(function (t) { t.spots.forEach(function (s) { SPOTS[s.id] = s; }); });
     var h = (location.hash || '').slice(1); if (['deals', 'places', 'best', 'you'].indexOf(h) >= 0) S.tab = h;

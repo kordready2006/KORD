@@ -14,7 +14,8 @@ async function phone(browser, url, scheme) {
   const ctx = await browser.newContext({ viewport: { width: 400, height: 860 }, colorScheme: scheme || 'light' });
   const p = await ctx.newPage();
   p.on('pageerror', (e) => errs.push('PAGEERR ' + e.message));
-  await p.goto(url);
+  // single-phone flows never write to the real ratings server
+  await p.goto(/[?&]server=/.test(url) ? url : url + (url.includes('?') ? '&' : '?') + 'server=off');
   await p.waitForSelector('.tile');
   return p;
 }
