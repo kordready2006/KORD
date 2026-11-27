@@ -331,7 +331,9 @@ async function openFirstDeal(p) {
     check(await a.locator('.welcome').count() === 1 && await a.locator('.tile, .tabs:not([hidden])').count() === 0, 'sign out did not return to the welcome screen');
     await a.click('[data-auth="in"]'); await a.fill('#auEmail', 'alex@test.dev'); await a.fill('#auPass', 'wrongpass1'); await a.click('#auGo'); await a.waitForSelector('.autherr');
     check(await a.locator('.autherr', { hasText: 'do not match' }).count() === 1, 'wrong password has no friendly message');
-    await a.fill('#auPass', 'password1'); await a.click('#auGo'); await a.waitForSelector('.tile, .dcard'); if (await a.$('.tile')) await a.click('[data-town="athens"]'); await a.click('[data-tab="you"]'); await a.waitForSelector('.acct h2:has-text("Alex")');
+    await a.fill('#auPass', 'password1'); await a.click('#auGo'); await a.waitForSelector('.tile, .dcard');
+    check(await a.locator('.tile').count() === 15 && await a.locator('.dcard').count() === 0, 'signing in did not open the list of all 15 schools');
+    await a.click('[data-town="athens"]'); await a.click('[data-tab="you"]'); await a.waitForSelector('.acct h2:has-text("Alex")');
     check((await a.locator('.stat >> nth=0').innerText()).startsWith('3'), 'ratings did not come back after signing in again');
     await a.click('[data-auth="del"]'); await a.fill('#auConfirm', 'DELETE'); await a.click('#auGo'); await a.waitForSelector('.autherr');
     check(await a.locator('.autherr', { hasText: 'only admin' }).count() === 1, 'the last admin was allowed to delete their account');

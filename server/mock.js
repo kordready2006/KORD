@@ -161,6 +161,7 @@ http.createServer(async (req, res) => {
     if (fn === 'my_notifications') return send(res, 200, notes.filter((n) => n.user_id === me.id).slice().reverse());
     if (fn === 'friends_activity') return send(res, 200, [...ratings.values()].filter((r) => follows.has(me.id + '>' + r.uid)).map((r) => ({ user_id: r.uid, username: users.get(r.uid).username, place_id: r.place_id, dish: r.dish, stars: r.stars, at: new Date().toISOString() })));
     if (fn === 'my_profile') return send(res, 200, { id: me.id, username: me.username, town: null, is_admin: me.is_admin, rules: !!me.rules });
+    if (fn === 'set_profile') { me.town = b.p_town; return send(res, 204); }
     if (fn === 'my_votes') {
       const mine = [...ratings.values()].filter((r) => r.uid === me.id), rc = recent(me.id);
       return send(res, 200, { used: rc.length, cap, remaining: Math.max(0, cap - rc.length), next_at: rc.length ? new Date(Math.min(...rc.map((v) => v.at)) + 12 * 3600e3).toISOString() : null,

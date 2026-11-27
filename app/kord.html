@@ -534,6 +534,7 @@ select.search { appearance: auto; }
   <button class="tab" data-tab="you"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-6 8-6s8 2 8 6"/></svg>You</button>
 </div></nav>
 <div id="sheetRoot"></div>
+<input id="postFile" type="file" accept="image/*" hidden>
 
 <script>
 (function () {
@@ -584,7 +585,7 @@ select.search { appearance: auto; }
     AUTH = { access_token: j.access_token, refresh_token: j.refresh_token, expires_at: Math.floor(Date.now() / 1000) + (+j.expires_in || 3600), user: { id: j.user.id, email: j.user.email } };
     save('kord.auth', AUTH);
   }
-  function dropSession() { AUTH = null; ME = null; VOTES = null; try { localStorage.removeItem('kord.auth'); } catch (e) {} U.items = {}; save('kord.user', U); }
+  function dropSession() { AUTH = null; ME = null; VOTES = null; try { localStorage.removeItem('kord.auth'); } catch (e) {} U.items = {}; save('kord.user', U); S.town = ''; S.picking = false; save('kord.prefs', { town: '', tab: 'deals' }); }
   /* A token that is still good, refreshing it first when it is about to run out. Resolves to '' when signed out. */
   function fresh() {
     if (!AUTH || !SERVER) return Promise.resolve('');
@@ -645,8 +646,10 @@ select.search { appearance: auto; }
   }
   function authDone(msg) {
     var back = S.back; S.back = null; S.auth = null; document.getElementById('sheetRoot').innerHTML = '';
+    /* After signing in or joining, always start on the list of schools so the person picks theirs. */
+    if (!back) { S.picking = true; S.tab = 'deals'; }
     loadMe(function () {
-      render(); if (msg) toast(msg);
+      render(); if (!back) window.scrollTo(0, 0); if (msg) toast(msg);
       if (back && SPOTS[back.id]) { spotSheet(back.id); S.item = back.item; S.sec = back.sec || 'All'; fillMenu(back.id); var mb = document.querySelector('#menuBox .dish.open'); if (mb) mb.scrollIntoView({ block: 'center' }); }
     });
   }
@@ -1169,7 +1172,7 @@ select.search { appearance: auto; }
         (WIRE.friends.length ? '<div class="sechead"><h2>Their posts</h2></div><div class="dishes">' + WIRE.friends.map(postHtml).join('') + '</div>' : '');
     }
     if (!flag('community')) return h + '<div class="empty"><b>The Wire is taking a break</b>Check back soon.</div>';
-    h += AUTH ? '<div class="dish compose"><label class="field" for="postIn">Post to ' + esc(t.school.name) + '<textarea id="postIn" maxlength="500" placeholder="Found something good? Tell campus.">' + esc(S.draft || '') + '</textarea></label><div class="btnrow" style="justify-content:space-between;align-items:center"><label class="lnk" for="postFile" id="postFileLabel">' + (POSTFILE ? 'Photo added ✓' : 'Add a photo') + '</label><input id="postFile" type="file" accept="image/*" hidden><button class="btn" id="postBtn">Post</button></div></div>' :
+    h += AUTH ? '<div class="dish compose"><label class="field" for="postIn">Post to ' + esc(t.school.name) + '<textarea id="postIn" maxlength="500" placeholder="Found something good? Tell campus.">' + esc(S.draft || '') + '</textarea></label><div class="btnrow" style="justify-content:space-between;align-items:center"><label class="lnk" for="postFile" id="postFileLabel">' + (POSTFILE ? 'Photo added ✓' : 'Add a photo') + '</label><button class="btn" id="postBtn">Post</button></div></div>' :
       '<div class="acct"><p class="sub" style="margin:0">Create a free account to post on The Wire.</p><div class="btnrow"><button class="btn" data-auth="up">Create account</button><button class="btn ghost" data-auth="in">Sign in</button></div></div>';
     if (!WIRE.campus) return h + (WIRE.campus === null ? '<p class="note">Loading…</p>' : '<div class="empty"><b>The Wire is not switched on yet</b>The community database script has not been run.</div>');
     return h + (WIRE.campus.length ? '<div class="dishes">' + WIRE.campus.map(postHtml).join('') + '</div>' : '<div class="empty"><b>Quiet on the wire</b>Be the first to post at ' + esc(t.school.name) + '.</div>');
@@ -1201,7 +1204,7 @@ select.search { appearance: auto; }
     if (!ME || !ME.rules) { S.draft = body; return rulesSheet(); }
     if (btn) { btn.disabled = true; btn.textContent = 'Posting…'; }
     (POSTFILE ? shrinkUpload(POSTFILE) : Promise.resolve('')).then(function (path) { return api('rpc/add_post', { p_town: S.town, p_body: body, p_path: path }); }).then(function () {
-      S.draft = ''; POSTFILE = null; award(5, 'Posted on The Wire', 'w|' + dayKey(new Date())); loadWire(render);
+      S.draft = ''; POSTFILE = null; var pf = document.getElementById('postFile'); if (pf) pf.value = ''; award(5, 'Posted on The Wire', 'w|' + dayKey(new Date())); loadWire(render);
     }).catch(function (e) { toast(/accept rules/.test(e.message) ? 'Agree to the community rules first.' : /slow down/.test(e.message) ? 'That is enough posts for today.' : /switched off/.test(e.message) ? 'The Wire is switched off right now.' : 'Could not post. Try again.'); if (btn) { btn.disabled = false; btn.textContent = 'Post'; } });
   }
   /* A member's page: rank in the Hall, numbers, Been There and Top Tasted. */
@@ -1315,7 +1318,7 @@ select.search { appearance: auto; }
     root.style.setProperty('--sc', picking ? '' : hex(t.school.color)); root.style.setProperty('--si', picking ? '' : hex(t.school.ink));
     if (picking) { root.style.removeProperty('--sc'); root.style.removeProperty('--si'); }
     document.getElementById('top').innerHTML = picking ?
-      '<div class="mast"><div class="mastline"><span class="kick">Ohio edition</span><span class="kick">Student rated</span></div><h1 class="longname">' + APPNAME + '</h1><span class="kick">— Cheap eats near campus. Pick your school to get started —</span><div class="rule"></div></div>' :
+      '<div class="mast"><div class="mastline"><span class="kick">Ohio edition</span><span class="kick">Student rated</span></div><h1 class="longname">' + APPNAME + '</h1><span class="kick">— ' + (AUTH && ME ? 'Welcome, ' + esc(ME.username) + '. ' : '') + 'Which school do you go to? —</span><div class="rule"></div></div>' :
       '<div class="schoolbar">' + badge(t.school) + '<div class="mid"><h1>' + esc(t.school.name) + '</h1><p>' + esc(t.name) + ', Ohio · ' + U.pts + ' points</p></div><button class="swap" id="swapBtn">Change</button></div>';
     document.getElementById('tabs').hidden = picking;
     document.getElementById('daysNav').hidden = picking || S.tab !== 'deals';
@@ -1681,7 +1684,7 @@ select.search { appearance: auto; }
     }
     if (t.id === 'addItemBtn') { var box = document.getElementById('addItem'), name = (box.value || '').trim(); if (name) { var sid = t.dataset.id; U.custom[sid] = U.custom[sid] || []; if (U.custom[sid].indexOf(name) < 0) U.custom[sid].push(name); save('kord.user', U); S.mq = ''; fillMenu(sid); } return; }
     if (t.dataset.spot) return spotSheet(t.dataset.spot, t.dataset.deal);
-    if (t.dataset.town) { S.town = t.dataset.town; setTimeout(function () { loadScores(function () { if (!S.open) render(); }); }, 0); S.picking = false; S.tab = 'deals'; S.q = ''; S.day = TODAY; render(); window.scrollTo(0, 0); return; }
+    if (t.dataset.town) { if (SERVER && AUTH && ME && ME.username) quiet(api('rpc/set_profile', { p_username: ME.username, p_town: t.dataset.town })); S.town = t.dataset.town; setTimeout(function () { loadScores(function () { if (!S.open) render(); }); }, 0); S.picking = false; S.tab = 'deals'; S.q = ''; S.day = TODAY; render(); window.scrollTo(0, 0); return; }
     if (t.dataset.day) { S.day = t.dataset.day; return render(); }
     if (t.dataset.tab) { S.tab = t.dataset.tab; if (S.tab === 'wire') loadWire(function () { if (S.tab === 'wire' && !S.open && !S.auth && !(document.activeElement && document.activeElement.id === 'postIn')) render(); }); if (S.tab !== 'deals') loadScores(function () { if (!S.open) render(); }); else loadExtras(function () { if (!S.open && !S.auth && S.tab === 'deals' && !(document.activeElement && document.activeElement.id === 'dealSearch')) render(); }); render(); window.scrollTo(0, 0); try { history.replaceState(null, '', '#' + S.tab); } catch (err) {} return; }
     if (t.dataset.local) { S.localOnly = t.dataset.local === '1'; return render(); }
