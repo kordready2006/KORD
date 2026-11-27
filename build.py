@@ -121,6 +121,15 @@ def clean_deal(d, national=False):
     return out
 
 
+def clean_desc(d):
+    """One tidy ingredient line: single spaces, no trailing price, at most 160 characters."""
+    d = re.sub(r"\s+", " ", str(d or "")).strip()
+    d = re.sub(r"\s*\$\d+(\.\d\d)?\s*$", "", d)
+    if len(d) > 160:
+        d = d[:157].rsplit(" ", 1)[0].rstrip(",;:") + "…"
+    return d
+
+
 def main():
     chains = {}
     chain_path = os.path.join(ROOT, "data", "chains.json")
@@ -219,7 +228,7 @@ def main():
         del t["colleges"]
         live.append(t)
     # Licensed photo library (stock/): every file is public domain or CC BY and is credited in the app.
-    lib = json.load(open(os.path.join(ROOT, "data", "stock_photos.json"))) if os.path.exists(os.path.join(ROOT, "data", "stock_photos.json")) else {}
+    lib = json.load(open(os.path.join(ROOT, "data", "stock_photos.json"))) if rights.get("stockPhotos") and os.path.exists(os.path.join(ROOT, "data", "stock_photos.json")) else {}
     stock = {}
     for fname, info in sorted(lib.items()):
         if os.path.exists(os.path.join(ROOT, "stock", fname)):
@@ -247,11 +256,21 @@ def main():
     for t in live:
         for sp in t["spots"]:
             names[t["id"] + "|" + norm(sp["name"])] = sp["id"]
+    # Ingredient lines read from each restaurant's own menu: data/menus_desc/<town>.json.
+    descs = {}
+    for path in sorted(glob.glob(os.path.join(ROOT, "data", "menus_desc", "*.json"))):
+        try:
+            for key, v in json.load(open(path)).items():
+                descs[key] = {k.strip().lower(): clean_desc(d) for k, d in (v.get("desc") or {}).items()}
+        except (ValueError, AttributeError):
+            print("skipped unreadable", path)
     for path in sorted(glob.glob(os.path.join(ROOT, "data", "menus", "*.json"))):
         for key, m in json.load(open(path)).items():
+            dd = descs.get(key, {})
             tid, _, nm = key.partition("|")
             sid = names.get(tid + "|" + norm(base_name(nm))) or names.get(tid + "|" + norm(nm))
-            items = [{"n": i["name"].strip(), "p": (i.get("price") or "").strip(), "s": (i.get("section") or "Menu").strip()}
+            items = [dict({"n": i["name"].strip(), "p": (i.get("price") or "").strip(), "s": (i.get("section") or "Menu").strip()},
+                          **({"d": dd[i["name"].strip().lower()]} if dd.get(i["name"].strip().lower()) else {}))
                      for i in m.get("items", []) if i.get("name") and 3 <= len(i["name"].strip()) <= 70
                      and not re.match(r"(?i)\s*(add|extra|substitute|sub)\b|.*\b(gift card|party tray|catering|gratuity|t-shirt)\b", i["name"])][:120]
             if sid and items:
@@ -269,6 +288,8 @@ def main():
             if link:
                 sp["order"] = link
     server = json.load(open(os.path.join(ROOT, "data", "server.json"))) if os.path.exists(os.path.join(ROOT, "data", "server.json")) else {}
+    if server.get("streetViewKey"):
+        out["streetViewKey"] = server["streetViewKey"]
     if server.get("url") and server.get("key"):
         out["server"] = {"url": server["url"], "key": server["key"]}
     with open(os.path.join(ROOT, "data", "kord.json"), "w") as f:

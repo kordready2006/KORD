@@ -7,7 +7,7 @@ create table if not exists ratings (
   town       text        not null,
   place_id   text        not null,
   dish       text        not null,
-  stars      smallint    not null check (stars between 1 and 5),
+  stars      smallint    not null check (stars between 1 and 10),
   updated_at timestamptz not null default now(),
   primary key (device, place_id, dish)
 );
@@ -47,7 +47,7 @@ create or replace view dish_comments as
   select id, town, place_id, dish, name, body, created_at
   from comments where not hidden;
 
--- One rating per phone per dish; stars = 0 removes it.
+-- One rating per phone per dish, 1 to 10; stars = 0 removes it.
 create or replace function rate_dish(p_device uuid, p_town text, p_place text, p_dish text, p_stars int)
 returns void language plpgsql security definer set search_path = public as $$
 begin
@@ -56,7 +56,7 @@ begin
   end if;
   if p_stars = 0 then
     delete from ratings where device = p_device and place_id = p_place and dish = p_dish;
-  elsif p_stars between 1 and 5 then
+  elsif p_stars between 1 and 10 then
     insert into ratings (device, town, place_id, dish, stars) values (p_device, p_town, p_place, p_dish, p_stars)
     on conflict (device, place_id, dish) do update set stars = excluded.stars, updated_at = now();
   else

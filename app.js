@@ -1,4 +1,4 @@
-window.KORD_BUILD = '20261126-080509';
+window.KORD_BUILD = '20261127-171042';
 (function () {
   'use strict';
   var DAYS = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
@@ -14,6 +14,8 @@ window.KORD_BUILD = '20261126-080509';
   if (['deals', 'places', 'best', 'you'].indexOf(S.tab) < 0) S.tab = 'deals';
   var U = load('kord.user', { name: '', avatar: '', ratings: {}, notes: {} });
   U.items = U.items || {}; U.custom = U.custom || {};
+  /* Ratings are 1 to 10. Older saves used 1 to 5 stars: double them once. */
+  if (U.scale !== 10) { Object.keys(U.items).forEach(function (id) { Object.keys(U.items[id]).forEach(function (k) { U.items[id][k] = Math.min(10, U.items[id][k] * 2); }); }); U.scale = 10; save('kord.user', U); }
   /* Dish ratings: U.items[placeId][dish] = 1..5 on this phone. COMMUNITY[placeId][dish] = {sum, n} is where other students'
      ratings go once a shared ratings server is connected; every score below already combines the two. */
   var COMMUNITY = {}, MENUS = null, SERVER = null, LOADED = {}, CMTS = {}, POLL = null;
@@ -61,8 +63,8 @@ window.KORD_BUILD = '20261126-080509';
   function spotScore(id) { var r = ratedItems(id), t = 0; if (!r.length) return null; r.forEach(function (x) { t += x.avg; }); return t / r.length; }
   function miniStars(id, item) {
     var r = myRate(id, item), h = '';
-    for (var i = 1; i <= 5; i++) h += '<button class="' + (i <= r ? 'on' : '') + '" data-rate="' + i + '" data-id="' + esc(id) + '" data-item="' + esc(item) + '" aria-label="' + i + ' star' + (i > 1 ? 's' : '') + ' for ' + esc(item) + '">★</button>';
-    return '<span class="stars big" role="group">' + h + '</span>';
+    for (var i = 1; i <= 10; i++) h += '<button class="' + (i === r ? 'mine' : i < r ? 'on' : '') + '" data-rate="' + i + '" data-id="' + esc(id) + '" data-item="' + esc(item) + '" aria-label="' + i + ' out of 10 for ' + esc(item) + '">' + i + '</button>';
+    return '<span class="tens" role="group">' + h + '</span>';
   }
 
   function load(k, d) { try { var v = JSON.parse(localStorage.getItem(k)); return v && typeof v === 'object' ? v : d; } catch (e) { return d; } }
@@ -71,7 +73,7 @@ window.KORD_BUILD = '20261126-080509';
   function safeUrl(u) { return /^https:\/\//i.test(u || '') ? u : (/^http:\/\//i.test(u || '') ? u.replace(/^http:/i, 'https:') : ''); }
   function domain(u) { try { return new URL(safeUrl(u)).hostname.replace(/^www\./, ''); } catch (e) { return ''; } }
   function initials(n) { var w = String(n).replace(/[^A-Za-z0-9 ]/g, '').split(/\s+/).filter(function (x) { return x && !/^(the|of|and)$/i.test(x); }); return ((w[0] || '?')[0] + (w[1] ? w[1][0] : '')).toUpperCase(); }
-  function color(cat) { return 'var(--' + (CATCOLOR[cat] || 'grape') + ')'; }
+  function color(cat) { return 'var(--chip)'; }
   function hex(c) { return /^#[0-9a-f]{6}$/i.test(c || '') ? c : '#FF3B2F'; }
   function priceNum(p) { var m = /\$\s?(\d+(?:\.\d+)?)/.exec(p || ''); if (m) return parseFloat(m[1]); m = /(\d+)\s?(?:¢|cents?)/i.exec(p || ''); return m ? parseFloat(m[1]) / 100 : null; }
   function stubText(d) {
@@ -207,11 +209,15 @@ window.KORD_BUILD = '20261126-080509';
     if (!sp.local) h += '<span class="tag">Chain</span>';
     return h ? '<span class="tags">' + h + '</span>' : '';
   }
-  function photo(src) { return src || ''; }
+  /* Pictures, in order: the restaurant's own photo of that food, then a street view of the restaurant (needs a Google
+     Maps key in data/server.json), then its logo, then its name. No stand-in photos from anywhere else. */
+  function street(sp) {
+    var k = DATA.streetViewKey;
+    return k && sp.address ? 'https://maps.googleapis.com/maps/api/streetview?size=640x480&fov=80&source=outdoor&location=' + encodeURIComponent(sp.address) + '&key=' + encodeURIComponent(k) : '';
+  }
   function media(sp, d) {
-    /* the restaurant's own photo when it has allowed that; otherwise a licensed example of the same food */
-    var ph = photo(d ? (d.photo || (d.nophoto ? '' : sp.photo)) : sp.photo) || (d ? stock(d.title, sp.category, sp.id) : stock(sp.name, sp.category, sp.id));
-    return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono">' + esc(initials(sp.name)) + '</span>' };
+    var ph = (d && d.photo) || (d && d.nophoto ? '' : sp.photo) || street(sp);
+    return { has: !!ph, html: ph ? '<img alt="" loading="lazy" src="' + esc(ph) + '">' : sp.logo ? '<span class="logotile"><img alt="" loading="lazy" src="' + esc(sp.logo) + '"></span>' : '<span class="mono">' + esc(sp.name) + '</span>' };
   }
   function metaLine(sp) { var sc = spotScore(sp.id), tr = travel(sp); return [sc ? '<span class="score">★ ' + sc.toFixed(1) + '</span>' : '', esc(tr), esc(sp.category)].filter(Boolean).join(' · '); }
   function ticket(x, hero) {
@@ -233,9 +239,9 @@ window.KORD_BUILD = '20261126-080509';
   /* step 1: pick a school */
   function viewPick() {
     return '<div class="grid">' + DATA.towns.map(function (t) {
-      return '<button class="tile' + (t.id === S.town ? ' mine' : '') + '" data-town="' + esc(t.id) + '">' + badge(t.school) +
-        '<span><span class="tname">' + esc(t.school.name) + '</span><span class="tsub">' + esc(t.name) + (t.school.also ? ' · also ' + esc(t.school.also) : '') + '</span></span></button>';
-    }).join('') + '</div><p class="note">15 Ohio schools so far. More coming.</p>';
+      return '<button class="tile' + (t.id === S.town ? ' mine' : '') + '" data-town="' + esc(t.id) + '"><span class="tilehead"><span class="kick">Campus</span><span class="kick rust">Open</span></span>' + badge(t.school) +
+        '<span class="tbody2"><span class="tname">' + esc(t.name) + ', Ohio</span><span class="tsub">' + esc(t.school.name) + (t.school.also ? ' · also ' + esc(t.school.also) : '') + '</span></span></button>';
+    }).join('') + '</div><p class="note" style="text-align:center">15 Ohio campuses so far. More coming.</p>';
   }
   /* step 2: cheapest deals for the day */
   var FOODICON = { 'All': '🍽️', 'Pizza': '🍕', 'Burgers': '🍔', 'Wings': '🍗', 'Tacos & burritos': '🌮', 'Subs & sandwiches': '🥪', 'Bowls & salads': '🥗', 'Breakfast & coffee': '☕', 'Sweets': '🍪', 'Other': '🍴' };
@@ -250,8 +256,9 @@ window.KORD_BUILD = '20261126-080509';
     var pick = weekPicks(t)[S.day], top = null, browsing = S.food === 'All' && !q;
     if (browsing) local = local.filter(function (x) { if (!top && x.sp.id + '|' + x.d.title === pick) { top = x; return false; } return true; });
     var h = '<div class="searchbar"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input class="search" id="dealSearch" type="search" placeholder="Search wings, pizza, a place…" value="' + esc(S.dq || '') + '" aria-label="Search deals"></div>' +
-      '<div class="cats">' + foods.map(function (f) { return '<button class="chip cat" data-food="' + esc(f) + '" aria-pressed="' + (S.food === f) + '"><span class="ico" aria-hidden="true">' + (FOODICON[f] || '🍴') + '</span>' + esc(f) + '</button>'; }).join('') + '</div>' +
-      '<div><h2>Eat well for cheap ' + when + '</h2><p class="sub">Real food near campus for $12 or less. Swipe each row for more.</p></div>';
+      '<div class="cats">' + foods.map(function (f) { return '<button class="chip cat" data-food="' + esc(f) + '" aria-pressed="' + (S.food === f) + '">' + esc(f) + '</button>'; }).join('') + '</div>' +
+      '';
+    h = pageHead('The deals', DAYNAME[S.day], 'Eat well for cheap ' + when, 'Real food near campus for $12 or less') + h;
     function sec(title, sub, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><p class="sub" style="margin-top:-8px">' + sub + '</p><div class="list rail">' + a.map(function (x) { return ticket(x); }).join('') + '</div>' : ''; }
     function tier(lo, hi) { return local.filter(function (x) { var p = priceNum(x.d.price || x.d.title); return p != null && kind(x.d) !== 'off' && p >= lo && p < hi; }); }
     if (top || local.length) {
@@ -269,7 +276,20 @@ window.KORD_BUILD = '20261126-080509';
       if (pop.length) h += '<div class="sechead"><h2>Popular near campus</h2><span>' + pop.length + '</span></div><p class="sub" style="margin-top:-8px">Local favorites in ' + esc(t.name) + '.</p><div class="rail" style="display:flex">' + pop.map(placeCard).join('') + '</div>';
     }
     h += sec('Chain deals nearby', 'Fast food and national chains, lowest price first.', chain);
-    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Food photos are examples of each dish, not the restaurant\'s own plate.</p>';
+    return h + '<p class="note">Deals change. Each one links to where we found it, so check before you go. Photos and logos come from each restaurant.</p>';
+  }
+  function pageHead(left, right, title, tag) {
+    return '<div class="pagehead"><div class="mastline"><span class="kick">' + esc(left) + '</span><span class="kick">' + esc(right) + '</span></div><h2>' + esc(title) + '</h2><span class="kick">— ' + esc(tag) + ' —</span><div class="rule"></div></div>';
+  }
+  function scoreBox(id) {
+    var r = ratedItems(id), n = 0; if (!r.length) return '';
+    r.forEach(function (x) { n += x.n; });
+    return '<span class="scorebox"><b>' + spotScore(id).toFixed(1) + '</b><small>' + n + ' vote' + (n > 1 ? 's' : '') + '</small></span>';
+  }
+  function placeBig(sp) {
+    var m = media(sp, null), n = (sp.deals || []).length, lo = spotLow(sp);
+    return '<button class="pcard" data-spot="' + esc(sp.id) + '"><span class="ph' + (m.has ? '' : ' nophoto') + '">' + m.html + (lo != null ? '<span class="price">from ' + money(lo) + '</span>' : '') + '</span>' +
+      '<span class="pinfo"><span><span class="kick rust">' + esc(sp.category) + '</span><span class="pname">' + esc(sp.name) + '</span><span class="pmeta">' + esc([travel(sp), sp.price, n ? n + ' deal' + (n > 1 ? 's' : '') + ' this week' : ''].filter(Boolean).join(' · ')) + '</span></span>' + scoreBox(sp.id) + '</span></button>';
   }
   function spotRow(sp) {
     var lo = spotLow(sp), n = (sp.deals || []).length, r = spotScore(sp.id);
@@ -282,8 +302,8 @@ window.KORD_BUILD = '20261126-080509';
     var list = t.spots.filter(function (s) { return !q || (s.name + ' ' + s.category).toLowerCase().indexOf(q) >= 0; });
     list.sort(function (a, b) { var x = spotLow(a), y = spotLow(b); if (x == null && y == null) return (b.deals.length - a.deals.length) || a.name.localeCompare(b.name); if (x == null) return 1; if (y == null) return -1; return x - y; });
     var loc = list.filter(function (s) { return s.local; }), ch = list.filter(function (s) { return !s.local; });
-    function sec(title, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><div class="list">' + a.map(spotRow).join('') + '</div>' : ''; }
-    return '<div><h2>Where to eat in ' + esc(t.name) + '</h2><p class="sub">Tap a place to see its deals for the week and leave your review.</p></div>' +
+    function sec(title, a) { return a.length ? '<div class="sechead"><h2>' + title + '</h2><span>' + a.length + '</span></div><div class="plist">' + a.map(placeBig).join('') + '</div>' : ''; }
+    return pageHead('The directory', esc(t.name) + ', Ohio', 'The restaurants', 'Every kitchen near campus, cheapest first') +
       '<input class="search" id="spotSearch" type="search" placeholder="Search pizza, tacos, a name…" value="' + esc(S.q) + '" aria-label="Search places">' +
       (list.length ? sec('Local spots', loc) + sec('Chains', ch) : '<div class="empty"><b>Nothing matches</b>Try a different word.</div>');
   }
@@ -291,11 +311,11 @@ window.KORD_BUILD = '20261126-080509';
     var t = town(), rows = [];
     t.spots.forEach(function (sp) { ratedItems(sp.id).forEach(function (x) { rows.push({ sp: sp, x: x }); }); });
     rows.sort(function (a, b) { return b.x.avg - a.x.avg || b.x.n - a.x.n || a.x.item.localeCompare(b.x.item); });
-    var h = '<div><h2>Best food at ' + esc(t.school.name) + '</h2><p class="sub">Every dish that has been rated, best first. To add yours, open a place and tap the stars on what you ordered.</p></div>';
+    var h = pageHead('Standings', new Date().toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }), 'Best dishes', 'Every rated dish at ' + t.school.name + ', best first');
     h += rows.length ? '<div class="list">' + rows.map(function (r, i) {
       return '<button class="row" data-spot="' + esc(r.sp.id) + '"><span class="rank">' + (i + 1) + '</span>' + logo(r.sp) + '<span class="mid"><h3>' + esc(r.x.item) + '</h3><p>' + esc(r.sp.name) + '</p></span>' +
-        '<span class="end"><b>' + r.x.avg.toFixed(1) + '</b>' + r.x.n + ' rating' + (r.x.n > 1 ? 's' : '') + '</span></button>';
-    }).join('') + '</div>' : '<div class="empty"><b>No dishes rated yet</b>Be the first. Open any place and rate what you got.</div>';
+        '<span class="end"><b>' + r.x.avg.toFixed(1) + '</b>' + r.x.n + ' vote' + (r.x.n > 1 ? 's' : '') + '</span></button>';
+    }).join('') + '</div>' : '<div class="empty"><b>No dishes rated yet</b>Be the first. Open any place, find what you ate and tap Rate.</div>';
     return h + '<p class="note">' + (SERVER ? 'Scores combine ratings from every student using KORD at this school.' : 'For now this counts ratings made on this phone. Ratings from every student combine here once the shared ratings server is connected.') + '</p>';
   }
   function viewYou() {
@@ -311,8 +331,8 @@ window.KORD_BUILD = '20261126-080509';
       }).join('') + '</div><p class="note">KORD fees across these demo orders: ' + usd(U.orders.reduce(function (a, o) { return a + o.fee; }, 0)) + '</p>' : '') +
       '<div class="sechead"><h2>Dishes you rated</h2><span>' + mine.length + '</span></div>';
     h += mine.length ? '<div class="list">' + mine.map(function (m) {
-      return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + '★'.repeat(m.r) + '</span></span></button>';
-    }).join('') + '</div>' : '<div class="empty"><b>Nothing rated yet</b>Open any place and tap the stars on what you ordered.</div>';
+      return '<button class="row" data-spot="' + esc(m.sp.id) + '">' + logo(m.sp) + '<span class="mid"><h3>' + esc(m.item) + '</h3><p>' + esc(m.sp.name) + '</p></span><span class="end"><span class="mystars">' + m.r + '</span> / 10</span></button>';
+    }).join('') + '</div>' : '<div class="empty"><b>Nothing rated yet</b>Open any place, find what you ordered and tap Rate.</div>';
     h += '<div class="btnrow"><button class="btn ghost" id="creditsBtn">Sources and credits</button><a class="btn ghost" target="_blank" rel="noopener" href="privacy.html">Privacy</a><a class="btn ghost" target="_blank" rel="noopener" href="terms.html">Terms</a></div><p class="note">KORD version ' + esc(window.KORD_BUILD || 'preview') + '</p>';
     return h + '<p class="note">' + (SERVER ? 'Your ratings and comments are shared with other students at your school. Your photo stays on this phone.' : 'Your profile and ratings are saved on this phone.') + '</p>';
   }
@@ -321,9 +341,9 @@ window.KORD_BUILD = '20261126-080509';
     var t = DATA && town(), picking = S.picking || !t, root = document.documentElement;
     root.style.setProperty('--sc', picking ? '' : hex(t.school.color)); root.style.setProperty('--si', picking ? '' : hex(t.school.ink));
     if (picking) { root.style.removeProperty('--sc'); root.style.removeProperty('--si'); }
-    document.getElementById('top').innerHTML = '<div class="brand"><i></i>KORD</div>' + (picking ?
-      '<div class="intro"><h1>Cheap eats near campus.</h1><p>Pick your school to see today\'s deals.</p></div>' :
-      '<div class="schoolbar">' + badge(t.school) + '<div class="mid"><h1>' + esc(t.school.name) + '</h1><p>' + esc(t.name) + ', Ohio · ' + U.pts + ' points</p></div><button class="swap" id="swapBtn">Change</button></div>');
+    document.getElementById('top').innerHTML = picking ?
+      '<div class="mast"><div class="mastline"><span class="kick">Ohio edition</span><span class="kick">Student rated</span></div><h1>KORD</h1><span class="kick">— Cheap eats near campus. Pick your school to get started —</span><div class="rule"></div></div>' :
+      '<div class="schoolbar">' + badge(t.school) + '<div class="mid"><h1>' + esc(t.school.name) + '</h1><p>' + esc(t.name) + ', Ohio · ' + U.pts + ' points</p></div><button class="swap" id="swapBtn">Change</button></div>';
     document.getElementById('tabs').hidden = picking;
     document.getElementById('daysNav').hidden = picking || S.tab !== 'deals';
     var v = document.getElementById('view'); v.className = 'wrap' + (picking ? ' nopad' : '');
@@ -344,12 +364,8 @@ window.KORD_BUILD = '20261126-080509';
       '<div><div class="sechead"><h2 style="font-size:18px">Menus</h2></div><p class="sub">Dish names and prices were read from each restaurant\'s own menu or ordering page.</p></div>' +
       '<div><div class="sechead"><h2 style="font-size:18px">Distances</h2></div><p class="sub">Addresses were located with the U.S. Census Bureau Geocoder and OpenStreetMap Nominatim. Map data © OpenStreetMap contributors (ODbL).</p></div>' +
       '<div><div class="sechead"><h2 style="font-size:18px">Names and trademarks</h2></div><p class="sub">Restaurant and school names belong to their owners. KORD is independent and is not affiliated with, sponsored by or endorsed by any restaurant or school listed.</p></div>' +
-      '<div><div class="sechead"><h2 style="font-size:18px">Fonts</h2></div><p class="sub">Bricolage Grotesque and DM Sans, used under the SIL Open Font License 1.1.</p></div>' +
-      '<div><div class="sechead"><h2 style="font-size:18px">Food photos</h2><span>' + c.length + '</span></div><p class="sub">Photos show an example of each kind of food. They are public domain or Creative Commons Attribution works from Wikimedia Commons, resized and cropped to fit.</p></div>' +
-      '<ul class="credits">' + c.map(function (x) {
-        var pg = safeUrl(x.page), lu = safeUrl(x.licenseUrl);
-        return '<li>' + (pg ? '<a target="_blank" rel="noopener" href="' + esc(pg) + '">' + esc(x.title) + '</a>' : esc(x.title)) + ' by ' + esc(x.artist) + ', ' + (lu ? '<a target="_blank" rel="noopener" href="' + esc(lu) + '">' + esc(x.license) + '</a>' : esc(x.license)) + '</li>';
-      }).join('') + '</ul>' +
+      '<div><div class="sechead"><h2 style="font-size:18px">Fonts</h2></div><p class="sub">Fraunces and Inter, used under the SIL Open Font License 1.1.</p></div>' +
+      '<div><div class="sechead"><h2 style="font-size:18px">Photos and logos</h2></div><p class="sub">Photos and logos come from each restaurant\'s own website and belong to that restaurant. They are shown only to identify the restaurant and its food. School marks belong to each school. If you own an image and want it changed or removed, email kordready2006@gmail.com.</p></div>' +
       '<div class="btnrow"><a class="btn ghost" target="_blank" rel="noopener" href="privacy.html">Privacy policy</a><a class="btn ghost" target="_blank" rel="noopener" href="terms.html">Terms of use</a></div>';
     document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="Sources and credits"><div class="sheethead"><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody" id="sheetBody">' + h + '</div></div></div>';
   }
@@ -466,9 +482,9 @@ window.KORD_BUILD = '20261126-080509';
   }
   function menuItems(sp) {
     var out = [], seen = {};
-    function add(n, p, sec) { var k = String(n || '').trim().toLowerCase(); if (!k || seen[k]) return; seen[k] = 1; out.push({ n: String(n).trim(), p: p || '', s: sec }); }
-    (sp.deals || []).forEach(function (d) { add(d.title, d.price, 'Deals'); });
-    ((MENUS || {})[sp.id] || []).forEach(function (m) { add(m.n, m.p, m.s || 'Menu'); });
+    function add(n, p, sec, d) { var k = String(n || '').trim().toLowerCase(); if (!k || seen[k]) return; seen[k] = 1; out.push({ n: String(n).trim(), p: p || '', s: sec, d: d || '' }); }
+    (sp.deals || []).forEach(function (d) { add(d.title, d.price, 'Deals', d.details); });
+    ((MENUS || {})[sp.id] || []).forEach(function (m) { add(m.n, m.p, m.s || 'Menu', m.d); });
     var extra = (U.custom[sp.id] || []).concat(Object.keys(U.items[sp.id] || {}), Object.keys(COMMUNITY[sp.id] || {}));
     cmtsFor(sp.id).forEach(function (c) { extra.push(c.dish); });
     extra.forEach(function (n) { add(n, '', 'Added by students'); });
@@ -493,12 +509,14 @@ window.KORD_BUILD = '20261126-080509';
     if (list && S.item) list.innerHTML = cmtListHtml(id, S.item);
   }
   function dishRow(id, m) {
-    var open = S.item === m.n, sc = itemScore(id, m.n), nc = cmtsFor(id, m.n).length;
-    var meta = (sc ? '<span class="score">★ ' + sc.avg.toFixed(1) + '</span> (' + sc.n + ')' : '<span class="rateit">Rate it</span>') + (nc ? '<br>' + nc + ' comment' + (nc > 1 ? 's' : '') : '');
-    var h = '<div class="dish' + (open ? ' open' : '') + '"><button class="dishhead" data-dish="' + esc(m.n) + '" aria-expanded="' + open + '">' + (function (ph) { return ph ? '<span class="dthumb"><img alt="" loading="lazy" src="' + esc(ph) + '"></span>' : ''; })(stock(m.n, SPOTS[id].category, m.n)) + '<span class="mname">' + esc(m.n) + (m.p ? ' <small>' + esc(m.p) + '</small>' : '') + '</span><span class="dmeta">' + meta + '</span></button>';
-    if (open) h += '<div class="dishbody">' + orderBox(id, m) + '<div class="yours"><span>Your rating</span>' + miniStars(id, m.n) + '</div><div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
+    var open = S.item === m.n, sc = itemScore(id, m.n), nc = cmtsFor(id, m.n).length, mine = myRate(id, m.n);
+    var h = '<div class="dish' + (open ? ' open' : '') + '"><div class="dtop"><h4>' + esc(m.n) + '</h4>' + (m.p && m.s !== 'Deals' ? '<span class="dprice">' + esc(m.p) + '</span>' : '') + '</div>' +
+      (m.d ? '<p class="ddesc">' + esc(m.d) + '</p>' : '') +
+      '<div class="dfoot"><span class="dmeta"><b>' + (sc ? sc.avg.toFixed(1) : '—') + '</b>/ 10 · ' + (sc ? sc.n : 0) + ' vote' + (sc && sc.n === 1 ? '' : 's') + (nc ? ' · ' + nc + ' comment' + (nc > 1 ? 's' : '') : '') + '</span>' +
+      '<button class="btn ghost sm dishhead" data-dish="' + esc(m.n) + '" aria-expanded="' + open + '">' + (open ? 'Close' : mine ? 'You gave it ' + mine : 'Rate') + '</button></div>';
+    if (open) h += '<div class="dishbody"><div class="yours"><span class="kick">Your score, 1 to 10</span>' + miniStars(id, m.n) + '</div><div class="cmts" id="cmtList">' + cmtListHtml(id, m.n) + '</div>' +
       '<div class="addrow"><input class="search" id="cmtIn" type="text" maxlength="280" placeholder="Worth it? Tell other students" aria-label="Write a comment"><button class="btn" id="cmtBtn" data-id="' + esc(id) + '">Post</button></div>' +
-      (SERVER ? '' : '<p class="note">Comments stay on this phone until the shared server is connected.</p>') + '</div>';
+      (SERVER ? '' : '<p class="note">Comments stay on this phone until the shared server is connected.</p>') + orderBox(id, m) + '</div>';
     return h + '</div>';
   }
   /* Refresh after new scores arrive, but never while someone is typing: a redraw would close the phone keyboard. */
@@ -508,15 +526,20 @@ window.KORD_BUILD = '20261126-080509';
     var sp = SPOTS[id], q = (S.mq || '').toLowerCase(), items = menuItems(sp), top = ratedItems(id), secs = [], seen = {};
     var draft = document.getElementById('cmtIn'); draft = draft ? draft.value : '';
     items.forEach(function (m) { if (!seen[m.s]) { seen[m.s] = 1; secs.push(m.s); } });
+    var real = secs.slice();
     if (top.length) secs.unshift('Top rated');
-    if (secs.indexOf(S.sec) < 0) S.sec = secs[0] || '';
+    secs.unshift('All');
+    if (secs.indexOf(S.sec) < 0) S.sec = 'All';
     var list = q ? items.filter(function (m) { return m.n.toLowerCase().indexOf(q) >= 0; }) :
-      S.sec === 'Top rated' ? top.map(function (x) { return items.filter(function (m) { return m.n === x.item; })[0] || { n: x.item, p: '', s: '' }; }) :
+      S.sec === 'All' ? items : S.sec === 'Top rated' ? top.map(function (x) { return items.filter(function (m) { return m.n === x.item; })[0] || { n: x.item, p: '', s: '' }; }) :
       items.filter(function (m) { return m.s === S.sec; });
     var h = '<div id="sayBox">' + sayingHtml(id) + '</div>' +
-      '<input class="search" id="menuSearch" type="search" placeholder="What did you get? Search the menu" value="' + esc(S.mq || '') + '" aria-label="Search the menu">';
-    if (!q && secs.length > 1) h += '<div class="chips">' + secs.map(function (c) { return '<button class="chip" data-sec="' + esc(c) + '" aria-pressed="' + (S.sec === c) + '">' + esc(c) + '</button>'; }).join('') + '</div>';
-    h += list.length ? '<div class="dishes">' + list.slice(0, 60).map(function (m) { return dishRow(id, m); }).join('') + '</div>' :
+      '<input class="search" id="menuSearch" type="search" placeholder="Search the menu" value="' + esc(S.mq || '') + '" aria-label="Search the menu">';
+    if (!q && secs.length > 2) h += '<div class="chips">' + secs.map(function (c) { return '<button class="chip" data-sec="' + esc(c) + '" aria-pressed="' + (S.sec === c) + '">' + esc(c) + '</button>'; }).join('') + '</div>';
+    if (!q && S.sec === 'All') h += real.map(function (sec) {
+      return '<h3 class="msec">' + esc(sec) + '</h3><div class="dishes">' + items.filter(function (m) { return m.s === sec; }).map(function (m) { return dishRow(id, m); }).join('') + '</div>';
+    }).join('');
+    else h += list.length ? '<div class="dishes">' + list.slice(0, 80).map(function (m) { return dishRow(id, m); }).join('') + '</div>' :
       '<p class="note">' + (q ? 'No dish matches. Add it below.' : 'We do not have this menu yet. Add what you ordered below.') + '</p>';
     h += '<div class="addrow"><input class="search" id="addItem" type="text" maxlength="60" placeholder="Not listed? Type what you got" aria-label="Add a dish"><button class="btn ghost" id="addItemBtn" data-id="' + esc(id) + '">Add</button></div>';
     box.innerHTML = h;
@@ -525,8 +548,11 @@ window.KORD_BUILD = '20261126-080509';
   function spotSheet(id, deal) {
     var sp = SPOTS[id]; if (!sp) return;
     var web = safeUrl(sp.website);
-    var bph = sp.photo || stock(sp.name, sp.category, sp.id);
-    var h = (bph ? '<div class="banner" style="--c:' + color(sp.category) + '"><img alt="" src="' + esc(bph) + '"></div>' : '') + '<div class="spothead">' + logo(sp, 'big') + '<div><h2>' + esc(sp.name) + '</h2><p class="sub">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</p>' + tagsHtml(sp) + '</div></div>';
+    var bph = sp.photo || street(sp);
+    var banner = bph ? '<div class="banner"><img alt="" src="' + esc(bph) + '"></div>' : '';
+    var h = '<div class="spothead">' + (sp.logo ? logo(sp, 'big') : '') + '<div><span class="kick rust">' + esc(sp.category) + (sp.price ? ' · ' + esc(sp.price) : '') + '</span><h2>' + esc(sp.name) + '</h2>' + tagsHtml(sp) + '</div></div>';
+    if (sp.address) h += '<p class="sub" style="margin-top:-6px">' + esc(sp.address) + (travel(sp) ? ' · about ' + travel(sp) + ' from campus' : '') + '</p>';
+    h += banner;
     if (sp.blurb) h += '<p style="margin:0">' + esc(sp.blurb) + '</p>';
     var order = safeUrl(sp.order), look = 'https://www.google.com/search?q=' + encodeURIComponent(sp.name + ' ' + (sp.address || town().name + ' Ohio'));
     h += '<div class="btnrow">' +
@@ -534,7 +560,6 @@ window.KORD_BUILD = '20261126-080509';
       (web && web !== order ? '<a class="btn ' + (order ? 'ghost' : 'hot') + '" target="_blank" rel="noopener" data-order="' + esc(id) + '" href="' + esc(outLink(web)) + '">Website</a>' : '') +
       (!web && !order ? '<a class="btn hot" target="_blank" rel="noopener" href="' + esc(look) + '">Look it up</a>' : '') +
       '<a class="btn ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(sp.name + ' ' + (sp.address || town().name + ' Ohio')) + '">Directions</a></div>';
-    if (sp.address) h += '<p class="note">' + esc(sp.address) + (travel(sp) ? ' · about ' + travel(sp) + ' from campus' : '') + '</p>';
     h += '<div class="sechead"><h2>Deals this week</h2></div>';
     var withDeals = DAYS.filter(function (d) { return (sp.deals || []).some(function (x) { return x.days.indexOf(d) >= 0; }); });
     if (withDeals.length) {
@@ -546,10 +571,10 @@ window.KORD_BUILD = '20261126-080509';
         }).join('') + '</div></div>';
       }).join('') + '</div>';
     } else h += '<div class="empty">No weekly deal found here yet.</div>';
-    h += '<div><div class="sechead"><h2>What is good here</h2></div><p class="sub">Pick a category or search, then tap a dish to rate it and read what other students said.</p></div><div id="menuBox"></div>';
+    h += '<div><div class="sechead"><h2>The menu</h2><span>Rated by students</span></div><p class="sub">Every dish with what is in it. Tap Rate to score one from 1 to 10 and read what other students said.</p></div><div id="menuBox"></div>';
     document.getElementById('sheetRoot').innerHTML = '<div class="scrim" data-close><div class="sheet" role="dialog" aria-modal="true" aria-label="' + esc(sp.name) + '"><div class="sheethead"><button class="x" data-close aria-label="Close">×</button></div><div class="sheetbody" id="sheetBody">' + h + '</div><div id="cartBar"></div></div></div>';
-    S.mq = ''; S.sec = deal ? 'Deals' : ''; S.item = deal || null; S.opt = ''; S.qty = 1; S.step = ''; S.open = id; fillMenu(id); paintCart();
-    if (deal) { var mb = document.querySelector('#menuBox .dish.open'); if (mb) mb.scrollIntoView({ block: 'start' }); }
+    S.mq = ''; S.sec = deal ? 'Deals' : 'All'; S.item = deal || null; S.opt = ''; S.qty = 1; S.step = ''; S.open = id; fillMenu(id); paintCart();
+    if (deal) { var mb = document.querySelector('#menuBox .dish.open'); if (mb) mb.scrollIntoView({ block: 'center' }); }
     clearInterval(POLL);
     if (SERVER) { loadComments(id); loadScores(function () { softFill(id); }); POLL = setInterval(function () { if (S.open === id && !document.hidden) loadComments(id); }, 12000); }
     if (!MENUS) fetch('data/menus.json?v=' + (window.KORD_BUILD || '')).then(function (r) { return r.ok ? r.json() : {}; }).catch(function () { return {}; }).then(function (m) { MENUS = m || {}; if (S.open === id) fillMenu(id); });

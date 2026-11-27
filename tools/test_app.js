@@ -44,9 +44,8 @@ async function openFirstDeal(p) {
   await p.click('.chip:has-text("All")');
   await p.screenshot({ path: `${out}/a-deals.png`, fullPage: true });
   await p.screenshot({ path: `${out}/a-deals-top.png` });
-  check(await p.evaluate(() => { const b = document.querySelector('.top .brand').getBoundingClientRect(); return b.top < 60 && b.height < 40; }), 'KORD wordmark is out of place');
+  check(await p.locator('.schoolbar h1').count() === 1, 'no school header');
   check((await p.$$('.rail .dcard')).length >= 4, 'no swipeable deal rows');
-  check(await p.locator('.chip.cat .ico').count() >= 3, 'no food icons');
   await p.click('#swapBtn');
   await openFirstDeal(p);
   await p.click('#menuBox .dishhead >> nth=0');
@@ -64,7 +63,7 @@ async function openFirstDeal(p) {
   await p.fill('#addItem', 'Buffalo chicken dip');
   await p.click('#addItemBtn');
   await p.fill('#menuSearch', 'buffalo');
-  check(await p.locator('.dishhead', { hasText: 'Buffalo chicken dip' }).count() === 1, 'search did not find added dish');
+  check(await p.locator('.dish', { hasText: 'Buffalo chicken dip' }).count() === 1, 'search did not find added dish');
   await p.evaluate(() => document.querySelector('.sheetbody').scrollTo(0, 99999));
   await p.fill('#menuSearch', '');
   await p.screenshot({ path: `${out}/a-sheet.png` });
@@ -189,7 +188,7 @@ async function openFirstDeal(p) {
     await b.click('.dishbody [data-rate="3"]');
     await b.waitForTimeout(900);
     check(await b.locator('.dish.open .dmeta', { hasText: '4.0' }).count() === 1, 'average of 5 and 3 is not 4.0 on phone B');
-    check(await b.locator('.dish.open .dmeta', { hasText: '(2)' }).count() === 1, 'rating count is not 2');
+    check(await b.locator('.dish.open .dmeta', { hasText: '2 votes' }).count() === 1, 'rating count is not 2');
     await b.fill('#cmtIn', 'Phone B agrees');
     await b.click('#cmtBtn');
     await a.waitForTimeout(13500); // phone A picks it up on its next refresh
